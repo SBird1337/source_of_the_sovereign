@@ -2,6 +2,6 @@
 .thumb
 .text
 
-.global pkmn_player_y_table
-pkmn_player_y_table:
+.global pokemon_player_y_table
+pokemon_player_y_table:
 .incbin "data/pkmn_tables/pkmn_player_y_table_dump.bin"

@@ -11,7 +11,10 @@
 .include "patches/moves.asm"
 .include "patches/music.asm"
 
-//.include "strings/de_DE/pkmn_names.asm"
+.include "patches/pokemon_data/pokemon_footprints.asm"
+.include "patches/pokemon_data/altitude_table.asm"
+.include "patches/pokemon_data/enemy_y_table.asm"
+.include "patches/pokemon_data/player_y_table.asm"
 .include "patches/pokemon_data/pokedex_order.asm"
 .include "patches/pokemon_data/pokedex.asm"
 .include "patches/pokemon_data/pokemon_egg_moves.asm"
