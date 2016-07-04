@@ -1,0 +1,217 @@
+//Ipatix sound stuff
+  .org 0x080007B4
+    .word  0x0203E000   // new PCM work area
+  .org 0x081DD0B4
+    .word  main_mixer   // new mixer ROM location
+    .word  0x03005F50   // new mixer RAM location (used for loading)
+    .halfword mixer_size
+    .halfword 0x400        // CpuSet, copy code by 32 bit units
+    .word  0x0203E000   // new PCM work area
+  .org 0x081DD0C8
+     // set correct sound driver operation mode
+     // 12 channels at 26758 Hz samplerate
+    .byte  0x00, 0xCC, 0x98, 0x00
+  .org 0x081DC094
+    .word  0x03005F50+1 // new mixer RAM location (used for branch)
+
+   // repoint correctly to the new cry tables
+  .org 0x080720C8
+  .include "patches/disable_cry_table_blocks.s"
+
+   // cry-ID = poke-ID
+  .org 0x08043304
+  LSL	R0, R0, #0x10
+  LSR	R0, R0, #0x10
+  BX  LR
+
+   // music overrides
+  .org 0x081DD0F4
+    LDR R1, =music_override|1
+    BX R1
+  .pool
+
+
+
+//End of sound stuff
+
+//Don't know what thats all about... leaving it commented for now
+//.org 0x0800f268
+//    .halfword 0xE000
+
+//Battle bg use new table
+.org 0x0800F2A0
+    .word battle_bg_table
+
+.org 0x0800F2E0
+    .word battle_bg_table
+
+.org 0x0800F320
+    .word battle_bg_table
+
+.org 0x0800F40E
+    ldr r0, =battle_bg_hook|1
+    bx r0
+    lsl r0, #0
+	.pool
+
+.org 0x0800FD5C
+    .word battle_bg_table
+
+.org 0x0800FD88
+    .word battle_bg_table
+//end of battle bg table
+
+//flag routine
+.org 0x0806E5D6
+	ldr r0, =flag_hook|1
+	bx r0
+	lsl r0, #0
+	.pool
+//end of flag routine
+
+//var routine
+.org 0x0806E45C
+    ldr r0,=var_hook+1
+    bx r0
+	.pool
+
+//end of var routine
+
+//trainer Flag stuff
+.org 0x08080382
+	mov r1, #0x80
+	lsl r1, #0x15
+
+.org 0x080800BA
+	mov r2, #0x80
+	lsl r2, #0x5
+
+.org 0x08080428
+    mov r1, #0x80
+    lsl r1, #0x15
+
+.org 0x08080440
+    mov r1, #0x80
+    lsl r1, #0x15
+
+.org 0x08080454
+    mov r1, #0x80
+    lsl r1, #0x15
+//end of trainer flag stuff
+
+//New behavior bytes for jumping
+
+.org 0x0806811A
+	ldr r0,=jump_behavior|1
+	bx r0
+	.pool
+
+//behavior walk stuff
+.org 0x0806D720
+	ldr r0,=on_step|1
+	bx r0
+	.pool
+
+//end of new behavior bytes for jumping
+
+//transparent textboxes and mugshots
+.org 0x08069410
+    bx r0
+
+.org 0x0806941C
+    .word trans_activate|1
+
+.org 0x08069504
+    bx r1
+
+.org 0x0806950C
+    .word trans_deactivate|1
+
+.org 0x08150000
+    ldr r0, =pal_load_hook_2|1
+    bx r0
+	.pool
+
+.org 0x0815044A
+    bx r1
+
+.org 0x08150450
+    .word pal_load_hook|1
+
+.org 0x0809CEB2
+    ldr r0, =trans_mug_close_fix+1
+    bx r0
+    lsl r0, #0
+	.pool
+
+//end of transparent textboxes and mugshots
+
+//saveblock routine start
+
+.org 0x080D9EDC
+    ldr r0, =load_hijack|1
+    bx r0
+	.pool
+
+.org 0x080d991E
+    bx r7
+.org 0x080d995C
+    .word store_hijack|1
+
+.org 0x083FEC94
+.include "patches/save_table/save_table.S"
+
+//end of saveblock routine
+//new battle script commands
+	//replace tables
+.org 0x08014C1C
+	.word bs_command_table
+.org 0x08015A28
+	.word bs_command_table
+.org 0x08015C6C
+	.word bs_command_table
+.org 0x08015C98
+	.word bs_command_table
+.org 0x0801D054
+	.word bs_command_table
+
+//end of new battle script commands
+
+//move effect table
+
+.org 0x08016364
+	.word m_effect_table
+.org 0x08023328
+	.word m_effect_table
+.org 0x08025CF8
+	.word m_effect_table
+.org 0x08027464
+	.word m_effect_table
+.org 0x080297F0
+	.word m_effect_table
+.org 0x0802BE80
+	.word m_effect_table
+
+//end of move effect table
+
+//move limits
+
+.org 0x080D75FC
+	.byte 0,0,0,0,0,0
+
+//end of move limits
+
+//print string mod
+
+.org 0x080D77C0
+	bx r1
+
+.org 0x080D77CC
+	.word custom_print_string|1
+
+//end of print string mod
+
+//new move animation table
+.org 0x080725d0
+    .word m_animation_table
+//end of new move animation table

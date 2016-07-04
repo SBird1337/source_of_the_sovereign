@@ -1,0 +1,95 @@
+set_callback2 = 0x08000545;
+vblank_handler_set = 0x080006F5;
+malloc = 0x08002BB1;
+free = 0x08002BC4|1;
+memset = 0x081E5ED8|1;
+template_instanciate_forward_search = 0x08006F8D;
+gpu_copy_to_vram_by_bgid = 0x08001298|1;
+bg_set_tilemap = 0x08001FA0|1;
+bg_nullify_tilemap = 0x08001FD4|1;
+bg_get_tilemap = 0x08002008|1;
+bg_send_tilemap = 0x080020BC|1;
+gpu_init_bgs = 0x08001028|1;
+gpu_tile_bg_drop_all_sets = 0x08001618|1;
+bg_vram_setup = 0x08001658|1;
+gpu_bg_show = 0x08001320|1;
+gpu_bg_hide = 0x0800139C|1;
+gpu_sync_bg_visibility_and_mode = 0x080013D0|1;
+gpu_pal_upload = 0x08070474|1;
+gpu_sprites_upload = 0x08007320|1;
+obj_delete_all = 0x8007770|1;
+camera_move_and_redraw = 0x0805ACB4|1;
+calc_circle = 0x0807EE2C|1;
+
+pal_decompress_slice_to_faded_and_unfaded = 0x080703A8|1;
+gpu_tile_obj_decompress_alloc_tag_and_upload = 0x0800F035;
+gpu_pal_obj_alloc_tag_and_apply = 0x08008929;
+gpu_tile_obj_free_by_tag = 0x0800874D;
+gpu_pal_free_by_tag = 0x08008A31;
+obj_delete_and_free_tiles = 0x08007281;
+box_zero_flag = 0x0203709C;
+task_add_func = 0x0807741D;
+lcd_io_set_func = 0x08000A39;
+lcd_io_get = 0x08000AC4|1;
+flag_decrypt_func = 0x0806E6D1;
+var_access = 0x0806E455;
+flag_check = 0x0806E6D1;
+get_bs_elem_env_index = 0x0800FC2D;
+load_battle_screen_elements_1 = 0x0800F261;
+npc_states = 0x02036E38;
+battlescript_counter = 0x02023D74;
+item_table = 0x0876DD80;
+execute_battle_script = 0x0801BC24;
+dp_01_prepare_buffer = 0x0800D8B1;
+wram_decompress = 0x081E3B70|1;
+
+fade_screen = 0x08070589;
+fade_update = 0x080704D1;
+
+callback_overworld = 0x080568C5;
+task_exec = 0x08077579;
+objc_exec = 0x08006B5D;
+obj_sync = 0x08006BA9;
+
+clear_flag = 0x0806E6A9;
+
+
+divide = 0x081E4018;
+
+decompression_buffer = 0x0201C000;
+superstate = 0x030030F0;
+
+fade_controller = 0x02037AB8;
+
+weather_turns = 0x02023F48;
+battle_type_flags = 0x02022B4C;
+battle_active_side = 0x02023BC4;
+battle_num_active_sides = 0x02023BCC;
+battle_mode = 0x02023BE3;
+battle_data	= 0x02023BE4;
+battle_data_ability = 0x02023C04;
+battle_data_current_hp = 0x02023C0C;
+battle_executed_move = 0x02023D4A;
+battle_attacker_bank = 0x02023D6B;
+battle_defender_bank = 0x02023D6C;
+battle_attacker_p_bank = 0x02023D6D;
+battle_defender_p_bank = 0x02023D6E;
+battle_attack_effectivity = 0x02023DCC;
+battle_weather = 0x02023F1C;
+battle_damage_store = 0x02023D50;
+battle_string_message_table = 0x083FDF3C;
+battle_crit_loc = 0x02023D71;
+battle_base_power = 0x02024020;
+battle_side_unknown = 0x02023FDB;
+
+battle_status3_bits_pbs = 0x02023DFC;
+
+mugshots = 0x097007E0;
+battle_bg_table = 0x0824ee34;
+
+
+mplay_table = 0x084A329C;
+
+m4aSongNumStart = 0x081DD0F5;
+MPlayStart_rev01 = 0x081DD859;
+MPlayContinue = 0x081DCFF9;

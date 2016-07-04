@@ -1,0 +1,14 @@
+*.gba
+base/*.gba
+build
+gfx_build
+object
+temp
+assets/pkmn_sprites/*.png
+assets/pkmn_sprites/castform/*.png
+assets/pkmn_icons/*.png
+*.ogg
+*.wav
+*.mid
+*.o
+*.a

@@ -1,0 +1,3 @@
+[submodule "sots-private"]
+	path = sots-private
+	url = ssh://sotshost:/home/sots/sots-private.git

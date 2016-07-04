@@ -1,0 +1,1 @@
+Source Code von Pokémon Sovereign of the skies, ohne Anspruch auf Vollständigkeit oder Funktionsfähigkeit. Diese Repository soll lediglich dazu dienen einen Einblick in die Denkweise hinter Pokémon Sovereign of the Skies bieten.
