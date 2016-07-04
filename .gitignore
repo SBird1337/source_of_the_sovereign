@@ -10,5 +10,5 @@ assets/pkmn_icons/*.png
 *.ogg
 *.wav
 *.mid
-*.o
+object/*.o
 *.a

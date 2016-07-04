@@ -21,7 +21,7 @@ SOURCEDIR := src
 MAIN_OBJ  := $(BLDPATH)/linked.o
 SPRITES   := $(BLDPATH)/pkmn_sprites.o
 ICONS_AR  := $(BLDPATH)/pkmn_icons.a
-DYN_OVER  := $(BLDPATH)/dynamic_overworld.o
+DYN_OVER  := built/dynamic_overworld.o
 
 SND_ROOT := sots-private/sound
 MUSIC_AR := $(SND_ROOT)/Music/music.a
