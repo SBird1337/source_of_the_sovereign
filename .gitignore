@@ -1,7 +1,7 @@
 *.gba
 base/*.gba
 build
-gfx_build
+gfx_build/*.o
 object
 temp
 assets/pkmn_sprites/*.png
