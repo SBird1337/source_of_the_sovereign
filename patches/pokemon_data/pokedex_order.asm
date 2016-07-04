@@ -11,7 +11,7 @@
 .halfword 0x0140	//fix alloc
 
 .org 0x08103920
-.halfword 0x2CF
+.halfword 0x2D0
 
 .org 0x08043220
 .halfword 0x0000	//break limit
