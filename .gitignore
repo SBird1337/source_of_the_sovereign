@@ -1,7 +1,6 @@
 *.gba
 base/*.gba
-build
-gfx_build/*.o
+*.o
 object
 temp
 assets/pkmn_sprites/*.png
@@ -10,5 +9,4 @@ assets/pkmn_icons/*.png
 *.ogg
 *.wav
 *.mid
-object/*.o
 *.a
