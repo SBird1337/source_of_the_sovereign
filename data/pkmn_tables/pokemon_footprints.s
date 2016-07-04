@@ -3,7 +3,7 @@
 
 .global footprint_null
 footprint_null:
-.fill 20,0,1
+.space 0x20,0
 
 .align 2
 .global pokemon_footprints
