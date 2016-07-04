@@ -2,8 +2,6 @@
 .thumb
 .open "base/bpre0.gba","build/Pokémon SotS.gba",0x08000000
 
-.loadtable "strings/de_DE/table.tbl"
-
 .include "patches/split_physical_special.asm"
 .include "patches/hooks.asm"
 .include "patches/dynamic_overworld_hooks.asm"
