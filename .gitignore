@@ -1,11 +1,7 @@
 *.gba
-base/*.gba
 *.o
 object
 temp
-assets/pkmn_sprites/*.png
-assets/pkmn_sprites/castform/*.png
-assets/pkmn_icons/*.png
 *.ogg
 *.wav
 *.mid
