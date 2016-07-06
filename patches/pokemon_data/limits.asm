@@ -32,3 +32,11 @@
 
 .org 0x080971DA
 .halfword 0x0000
+
+//fix evolution animation
+.org 0x0800EC9A
+.halfword 0xE007
+
+//fix trainer card
+.org 0x08097011
+.byte 0xE0
