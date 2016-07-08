@@ -1,0 +1,7 @@
+NUMBER_OF_ITEMS EQU 375
+
+.org 0x08098998
+.halfword NUMBER_OF_ITEMS
+
+.org 0x0809a8ae
+.word 0x00000000

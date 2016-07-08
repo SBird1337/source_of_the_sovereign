@@ -8,6 +8,7 @@
 .include "patches/special.asm"
 .include "patches/moves.asm"
 .include "patches/music.asm"
+.include "patches/items/items.asm"
 
 .include "patches/pokemon_data/pokemon_footprints.asm"
 .include "patches/pokemon_data/altitude_table.asm"

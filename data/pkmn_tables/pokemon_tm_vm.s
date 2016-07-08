@@ -1,7 +1,7 @@
 .text
 .align 2
-.global tm_vm_kompatibilitaet
-tm_vm_kompatibilitaet:
+.global tm_hm_comp_table
+tm_hm_comp_table:
 
 .byte 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 .byte 160, 135, 57, 132, 9, 138, 17, 0, 32, 4, 224, 162, 8, 4, 0, 41
