@@ -1,0 +1,2 @@
+test_symbol=Test123
+test_symbol2=Test1234
