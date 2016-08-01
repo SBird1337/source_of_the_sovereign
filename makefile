@@ -6,6 +6,8 @@ CC      := arm-none-eabi-gcc
 ARS     := armips
 MAKE    := make
 NM      := arm-none-eabi-nm
+LAN		:= de
+STRAGB	:= string2agb
 
 export PATH := $(realpath ../tools):$(PATH)
 
@@ -17,6 +19,7 @@ LDFLAGS   := -z muldefs
 BLDPATH   := object
 OUTPATH	  := build
 SOURCEDIR := src
+STRINGDIR := string
 
 MAIN_OBJ  := $(BLDPATH)/linked.o
 SPRITES   := $(BLDPATH)/pkmn_sprites.o
@@ -37,7 +40,10 @@ ASM_SRC     := $(call rwildcard,src/,*.s)
 C_SRC       := $(call rwildcard,src/,*.c)
 DATA_SRC_PP := $(call rwildcard,data/,*.S)
 DATA_SRC    := $(call rwildcard,data/,*.s)
+STRING		:= $(call rwildcard,string/$(LAN)/,*.txt)
+STRING_SRC	:= $(STRING:%.txt=%.S)
 
+STRING_OBJ	:= $(STRING_SRC:%.S=$(BLDPATH)/%.o)
 ASM_OBJ_PP  := $(ASM_SRC_PP:%.S=$(BLDPATH)/%.o)
 ASM_OBJ     := $(ASM_SRC:%.s=$(BLDPATH)/%.o)
 C_OBJ       := $(C_SRC:%.c=$(BLDPATH)/%.o)
@@ -45,6 +51,11 @@ DATA_OBJ_PP := $(DATA_SRC_PP:%.S=$(BLDPATH)/%.o)
 DATA_OBJ    := $(DATA_SRC:%.s=$(BLDPATH)/%.o)
 ALL_OBJ     := $(C_OBJ) $(ASM_OBJ_PP) $(ASM_OBJ) $(DATA_OBJ_PP) $(DATA_OBJ)
 
+
+
+$(STRINGDIR)/%.S: $(STRINGDIR)/%.txt
+	@echo hello
+	$(STRAGB) -o $@ -i $< -t string/table.tbl -e 0xFF
 
 $(BLDPATH)/%.o: %.c $(ASSETS)
 	$(shell mkdir -p $(dir $@))
@@ -63,11 +74,11 @@ all: rom
 .PHONY: rom
 rom: main.asm $(MAIN_OBJ)
 	$(ARS) $<
-	$(NM) $(BLDPATH)/linked.o -n -g --defined-only | \
-		sed -e '{s/^/0x/g};{/.*\sA\s.*/d};{s/\sT\s/ /g}' > $(OUTPATH)/__symbols.sym
+	#$(NM) $(BLDPATH)/linked.o -n -g --defined-only | \
+	#	sed -e '{s/^/0x/g};{/.*\sA\s.*/d};{s/\sT\s/ /g}' > $(OUTPATH)/__symbols.sym
 	@echo "*** SUCCESSFULLY BUILT PROJECT ***"
-
-$(MAIN_OBJ): $(ALL_OBJ) $(ICONS_AR) $(SPRITES) $(DYN_OVER) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR)
+	
+$(MAIN_OBJ): $(ALL_OBJ) $(ICONS_AR) $(SPRITES) $(DYN_OVER) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR) $(STRING_OBJ)
 	$(LD) $(LDFLAGS) -T linker.ld -T bpre.sym --whole-archive -r -o $@ --start-group $^ --end-group
 
 .PHONY: clean
