@@ -5,7 +5,7 @@ GRIT    := grit
 CC      := arm-none-eabi-gcc
 ARS     := armips
 MAKE    := make
-NM      := arm-none-eabi-nm
+NM      := @arm-none-eabi-nm
 LAN		:= de
 STRAGB	:= string2agb
 
@@ -54,7 +54,6 @@ ALL_OBJ     := $(C_OBJ) $(ASM_OBJ_PP) $(ASM_OBJ) $(DATA_OBJ_PP) $(DATA_OBJ)
 
 
 $(STRINGDIR)/%.S: $(STRINGDIR)/%.txt
-	@echo hello
 	$(STRAGB) -o $@ -i $< -t string/table.tbl -e 0xFF
 
 $(BLDPATH)/%.o: %.c $(ASSETS)
@@ -74,8 +73,8 @@ all: rom
 .PHONY: rom
 rom: main.asm $(MAIN_OBJ)
 	$(ARS) $<
-	#$(NM) $(BLDPATH)/linked.o -n -g --defined-only | \
-	#	sed -e '{s/^/0x/g};{/.*\sA\s.*/d};{s/\sT\s/ /g}' > $(OUTPATH)/__symbols.sym
+	$(NM) $(BLDPATH)/linked.o -n -g --defined-only | \
+		sed -e '{s/^/0x/g};{/.*\sA\s.*/d};{s/\sT\s/ /g}' > $(OUTPATH)/__symbols.sym
 	@echo "*** SUCCESSFULLY BUILT PROJECT ***"
 	
 $(MAIN_OBJ): $(ALL_OBJ) $(ICONS_AR) $(SPRITES) $(DYN_OVER) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR) $(STRING_OBJ)

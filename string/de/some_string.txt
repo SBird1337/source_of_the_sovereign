@@ -1,1 +1,1 @@
-first_string=Hello darkness my old friend!
+first_string=Hallo Dunkelheit, du alter Freund.

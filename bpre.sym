@@ -86,6 +86,7 @@ battle_status3_bits_pbs = 0x02023DFC;
 
 mugshots = 0x097007E0;
 battle_bg_table = 0x0824ee34;
+custom_battle_struct = 0x0203FE00;
 
 
 mplay_table = 0x084A329C;

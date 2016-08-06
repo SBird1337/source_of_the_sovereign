@@ -6,3 +6,4 @@ temp
 *.wav
 *.mid
 *.a
+base/*.*
