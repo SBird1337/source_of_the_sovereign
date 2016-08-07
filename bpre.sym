@@ -1,6 +1,6 @@
 set_callback2 = 0x08000545;
 vblank_handler_set = 0x080006F5;
-malloc = 0x08002BB1;
+malloc = 0x08002BB0|1;
 free = 0x08002BC4|1;
 memset = 0x081E5ED8|1;
 template_instanciate_forward_search = 0x08006F8D;

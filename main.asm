@@ -28,6 +28,8 @@
 .include "patches/pokemon_data/pokemon_shiny_pal.asm"
 .include "patches/pokemon_data/pokemon_icons.asm"
 
+.include "patches/battle_engine/malloc.asm"
+
 
 .org 0x09000000
 .importobj "object/linked.o"
