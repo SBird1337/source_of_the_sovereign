@@ -24,6 +24,7 @@ ldrb r3, [r0, #2]
 lsl r3, #0x10
 orr r2, r3
 ldrb r3, [r0, #3]
+lsl r3, #0x18
 orr r2, r3
 str r2, [r1]
 add r0, #4

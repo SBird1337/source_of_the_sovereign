@@ -12,6 +12,8 @@
 #define TYPE_GHOST 0x7
 #define TYPE_STEEL 0x8
 
+#define TYPE_EGG 0x9
+
 #define TYPE_FIRE 0xA
 #define TYPE_WATER 0xB
 #define TYPE_GRASS 0xC
@@ -20,5 +22,7 @@
 #define TYPE_ICE 0xF
 #define TYPE_DRAGON 0x10
 #define TYPE_DARK 0x11
+
+#define TYPE_FAIRY 0x17
 
 #endif

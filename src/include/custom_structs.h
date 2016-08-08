@@ -58,8 +58,8 @@ struct side_affecting {
     u8 toxic_spikes_psn : 1;
     u8 toxic_spikes_badpsn : 1;
     u8 toxic_spikes_done : 1;
-    u8 stealthrock : 1;
-    u8 stealthrock_done : 1;
+    u8 stealth_rock : 1;
+    u8 stealth_rock_done : 1;
     u8 lucky_chant : 3;
     u8 lucky_chant_bank : 2;
     u8 tailwind : 3;

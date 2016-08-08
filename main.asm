@@ -1,6 +1,6 @@
 .gba
 .thumb
-.open "base/bpre0.gba","build/Pokémon SotS.gba",0x08000000
+.open "base/bpre0.gba","build/pkmn_sots.gba",0x08000000
 
 .include "patches/split_physical_special.asm"
 .include "patches/hooks.asm"
@@ -29,7 +29,7 @@
 .include "patches/pokemon_data/pokemon_icons.asm"
 
 .include "patches/battle_engine/malloc.asm"
-
+.include "patches/battle_engine/battle_engine.asm"
 
 .org 0x09000000
 .importobj "object/linked.o"

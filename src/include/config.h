@@ -96,52 +96,6 @@
 
 /*For hacking the miracle eye command into set foresight*/
 /*Comment out the first define to deactivate the miracleeye injection in the command table*/
-#define MIRACLEEYE
-#define MIRACLEEYEADDRESS		0x08C158A0
-
-/*Ability index numbers*/
-#define	ABILITY_SAND_VEIL		0x08	/*Is included in vanilla firered*/
-#define ABILITY_NATURAL_CURE	0x1E
-#define	ABILITY_HUSTLE			0x37	/*Is included in vanilla firered*/
-#define ABILITY_GUTS			0x3E	/*Is included in vanilla firered*/
-#define ABILITY_MARVEL_SCALE	0x3F	/*Is included in vanilla firered*/
-#define ABILITY_SAND_STREAM		0x2D	/*Is included in vanilla firered*/
-#define ABILITY_AIR_LOCK		0x4D	/*Is included in vanilla firered*/
-#define	ABILITY_TANGLED_FEET	0x4E
-#define	ABILITY_SNOW_CLOAK		0x52
-#define ABILITY_HEAT_PROOF		0x56
-#define ABILITY_SIMPLE			0x57
-#define ABILITY_SKILL_LINK		0x5D
-#define	ABILITY_SNIPER			0x62
-#define	ABILITY_MAGIC_GUARD		0x63	/*Is not included in the project but needs to be here for consistancy reasons*/
-
-#define	ABILITY_TECHNICIAN		0x66
-#define ABILITY_MOLD_BREAK		0x69
-#define ABILITY_SUPER_LUCK		0x6A
-#define ABILITY_UNAWARE			0x6E
-#define ABILITY_TINTED_LENS		0x6F
-#define ABILITY_FILTER			0x70
-#define ABILITY_SCRAPPY			0x72
-
-#define ABILITY_SOLID_ROCK		0x75
-#define ABILITY_SNOW_WARNING	0x76
-#define	ABILITY_DEFEATIST		0x82
-#define ABILITY_MULTI_SCALE		0x89
-#define ABILITY_TOXIC_BOOST		0x8A
-#define ABILITY_FLARE_BOOST		0x8B
-
-#define ABILITY_REGENERATOR		0x91
-#define ABILITY_BIG_PECKS		0x92
-#define ABILITY_WONDER_SKIN		0x94
-
-#define ABILITY_MOXIE			0x9A
-#define ABILITY_MAGIC_BOUNCE	0x9D
-
-#define ABILITY_VICTORY_STAR	0xA3
-
-#define ABILITY_FUR_COAT		0xAA
-#define ABILITY_TURBOBLAZE		0xA4
-#define ABILITY_TERAVOLT		0xA5
 
 /*Some move effect IDs important for correct implementation*/
 #define MOVE_EFFECT_SACRED_SWORD	0xFF
