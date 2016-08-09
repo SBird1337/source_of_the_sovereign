@@ -116,7 +116,7 @@ m_effect_table:
 	.word 0x081D774D @109
 	.word 0x081D6900 @110
 	.word 0x081D7816 @111
-	.word 0x081D7829 @112
+	.word hazards_script @112 (Spikes, Toxic Spikes, Stealth Rock, Sticky Web)
 	.word 0x081D783E @113
 	.word 0x081D7856 @114
 	.word 0x081D7897 @115

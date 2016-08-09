@@ -93,3 +93,29 @@ u16 type_effectiveness_calc(u16 move, u8 move_type, u8 atk_bank, u8 def_bank, u8
 	//TODO: effect_handling_and_recoring
 	return chained_effect;
 }
+
+u8 has_type(u8 bank, u8 type)
+{
+	return battle_participants[bank].type1 == type || battle_participants[bank].type2 == type;
+}
+
+u8 cant_poison(u8 bank, u8 self_inflicted)
+{   //0 == can poison
+    //1 == is already poisoned
+    //2 == has other major condition
+    //3 == type doesn't allow it
+    //4 == ability doesn't allow it
+    //5 == safeguard protection
+    //8 == misty terrain doesn't allow it !TODO!
+    if (battle_participants[bank].status.flags.poison || battle_participants[bank].status.flags.toxic_poison)
+        return 1;
+    if (battle_participants[bank].status.int_status)
+        return 2;
+    if (has_type(bank, TYPE_POISON) || has_type(bank, TYPE_STEEL))
+        return 3;
+    if (((battle_participants[bank].ability_id == ABILITY_IMMUNITY || (battle_participants[bank].ability_id == ABILITY_LEAF_GUARD && (battle_weather.flags.sun || battle_weather.flags.permament_sun || battle_weather.flags.harsh_sun)))))
+        return 4;
+    if (side_affecting_halfword[get_side_from_bank(bank)].safeguard_on && !self_inflicted)
+        return 5;
+    return 0;
+}

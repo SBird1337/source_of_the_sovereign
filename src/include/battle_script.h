@@ -9,6 +9,8 @@
 #define DELAY_HALFSECOND	0x20
 #define DELAY_1SECOND		0x40
 
+#define STRING_LOADER		0x0203C020
+
 @@ Compare operands
 .equ Equal, 0x0
 .equ Notequal, 0x1

@@ -1,6 +1,7 @@
+#include <moves.h>
+
 .text
 .align 2
-.text
 .global moveset_table
 moveset_table:
 
@@ -1213,11 +1214,11 @@ moveset_unknown:
 
 .align 2
 moveset_bisasam: 
-.hword 0x21 
+.hword MOVE_TACKLE
 .byte 0x1 
 .hword 0x2D 
 .byte 0x3 
-.hword 0x49 
+.hword MOVE_SPIKES 
 .byte 0x7 
 .hword 0x16 
 .byte 0x9 

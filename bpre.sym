@@ -57,6 +57,8 @@ clear_flag = 0x0806E6A9;
 divide = 0x081E4018;
 
 get_side_from_bank = 0x080751C4|1;
+prepare_setattributes_in_battle = 0x0800DFF0|1;
+mark_buffer_bank_for_execution = 0x8017248|1;
 
 decompression_buffer = 0x0201C000;
 superstate = 0x030030F0;
@@ -85,7 +87,10 @@ battle_base_power = 0x02024020;
 battle_side_unknown = 0x02023FDB;
 battle_side_timers = 0x02023DE4;
 battle_hitmarker = 0x02023dd0;
+battle_stat_changer = 0x02023FDE;
 side_affecting_halfword = 0x2023DDE;
+
+battle_custom_string = 0x0203C020;
 
 battle_status3_bits_pbs = 0x02023DFC;
 

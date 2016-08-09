@@ -127,4 +127,29 @@ struct side_timer{
 
 extern struct side_timer battle_side_timers[2];
 
+struct in_battle_weather{
+    u32 rain : 1;
+    u32 downpour : 1;
+    u32 permament_rain : 1;
+    u32 sandstorm : 1;
+    u32 permament_sandstorm : 1;
+    u32 sun : 1;
+    u32 permament_sun : 1;
+    u32 hail : 1;
+    //custom flags
+    u32 permament_hail : 1;
+    u32 fog : 1;
+    u32 permament_fog : 1;
+    u32 harsh_sun : 1;
+    u32 heavy_rain : 1;
+    u32 air_current : 1;
+};
+
+union battle_weather{
+    u32 int_bw;
+    struct in_battle_weather flags;
+};
+
+extern union battle_weather battle_weather;
+
 #endif
