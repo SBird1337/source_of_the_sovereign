@@ -4594,6 +4594,7 @@
             <in>hazards.S</in>
           </df>
           <in>battle_help.c</in>
+          <in>battle_switch_in_hook.S</in>
           <in>custom_structs_malloc.c</in>
           <in>custom_structs_malloc_hook.S</in>
           <in>entry_hazards.c</in>
@@ -27131,6 +27132,11 @@
       <item path="src/battle_bg/battle_bg_hook.S" ex="false" tool="4" flavor2="0">
       </item>
       <item path="src/battle_engine/battle_help.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/battle_engine/battle_switch_in_hook.S"
+            ex="false"
+            tool="4"
+            flavor2="0">
       </item>
       <item path="src/battle_engine/custom_structs_malloc.c"
             ex="false"

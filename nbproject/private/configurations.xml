@@ -4733,6 +4733,7 @@
           </df>
           <in>battle_help.c</in>
           <in>battle_help.h</in>
+          <in>battle_switch_in_hook.S</in>
           <in>custom_structs_malloc.c</in>
           <in>custom_structs_malloc.h</in>
           <in>custom_structs_malloc_hook.S</in>
@@ -4864,10 +4865,18 @@
       <runprofile version="9">
         <runcommandpicklist>
           <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>"./tools/vba buld/pkmn_sots.gba"</runcommandpicklistitem>
+          <runcommandpicklistitem>"./tools/vba" "build/pkmn_sots.gba"</runcommandpicklistitem>
+          <runcommandpicklistitem>"../tools/vba" "build/pkmn_sots.gba"</runcommandpicklistitem>
+          <runcommandpicklistitem>"../tools/vbam.exe --verbose=128" "build/pkmn_sots.gba"</runcommandpicklistitem>
+          <runcommandpicklistitem>"../tools/vbam.exe"  --verbose=128 "build/pkmn_sots.gba"</runcommandpicklistitem>
+          <runcommandpicklistitem>"../tools/vbam.exe" "build/pkmn_sots.gba" --agb-print --verbose=128</runcommandpicklistitem>
+          <runcommandpicklistitem>"../tools/vbam.exe" "build/pkmn_sots.gba"</runcommandpicklistitem>
+          <runcommandpicklistitem>"../tools/vba.exe" "build/pkmn_sots.gba"</runcommandpicklistitem>
         </runcommandpicklist>
-        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <runcommand>"../tools/vba.exe" "build/pkmn_sots.gba"</runcommand>
         <rundir>.</rundir>
-        <buildfirst>false</buildfirst>
+        <buildfirst>true</buildfirst>
         <terminal-type>0</terminal-type>
         <remove-instrumentation>0</remove-instrumentation>
         <environment>

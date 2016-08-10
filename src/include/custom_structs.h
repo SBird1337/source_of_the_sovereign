@@ -4,7 +4,7 @@
 #include <types.h>
 
 struct bank_affecting {
-	u8 embargo : 3;
+    u8 embargo : 3;
     u8 electrify : 1;
     u8 telekinesis: 3;
     u8 magnet_rise : 3;
@@ -53,7 +53,7 @@ struct bank_affecting {
 };
 
 struct side_affecting {
-	u8 sticky_web : 1;
+    u8 sticky_web : 1;
     u8 sticky_web_done : 1;
     u8 toxic_spikes_psn : 1;
     u8 toxic_spikes_badpsn : 1;
@@ -81,7 +81,7 @@ struct side_affecting {
 };
 
 struct field_affecting {
-	u8 trick_room : 3;
+    u8 trick_room : 3;
     u8 wonder_room : 3;
     u8 magic_room : 3;
     u8 grassy_terrain : 3;
@@ -94,7 +94,7 @@ struct field_affecting {
 };
 
 struct various {
-	u8 eaten_berry_player : 6;
+    u8 eaten_berry_player : 6;
     u8 eaten_berry_opponent : 6;
     u8 active_bank : 2;
     u8 inverse_battle : 1;
@@ -117,6 +117,6 @@ struct custom_battle_struct_ptr{
     struct custom_battle_struct *ptr;
 };
 
-extern struct custom_battle_struct_ptr custom_battle_struct;
+extern struct custom_battle_struct_ptr custom_battle_elements;
 
 #endif

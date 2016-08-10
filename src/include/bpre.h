@@ -15,6 +15,10 @@ void clear_flag(u16 flag);
 void* malloc(int size);
 void free(void* address);
 
+//debug
+void agbprintf(const char* pBuf, ...);
+void agbprint_flush();
+void agb_assert(const char *file, int line, const char *expression, u32 stop);
 
 // sound related stuff
 extern MPlayTable mplay_table[];

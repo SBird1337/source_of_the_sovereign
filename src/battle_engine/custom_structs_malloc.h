@@ -3,5 +3,6 @@
 
 void malloc_battle_structs();
 void free_battle_structs();
+void battle_switch_in();
 
 #endif

@@ -37,7 +37,7 @@ u16 damage_type_effectiveness_update(u8 attacking_type, u8 defending_type, u8 at
         dtype=dtype-5;
 	effect=type_effectiveness_table[atype][dtype];
 	
-	if (custom_battle_struct.ptr->various.inverse_battle)
+	if (custom_battle_elements.ptr->various.inverse_battle)
     {
         if (effect == 20)
         {

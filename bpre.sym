@@ -1,8 +1,12 @@
+agbprintf = 0x081E39D8|1;
+agbprint_flush = 0x081E3B04|1;
+agb_assert = 0x081E3B14|1;
 set_callback2 = 0x08000545;
 vblank_handler_set = 0x080006F5;
 malloc = 0x08002BB0|1;
 free = 0x08002BC4|1;
 memset = 0x081E5ED8|1;
+memcpy = 0x081E5E78|1;
 template_instanciate_forward_search = 0x08006F8D;
 gpu_copy_to_vram_by_bgid = 0x08001298|1;
 bg_set_tilemap = 0x08001FA0|1;
@@ -96,7 +100,7 @@ battle_status3_bits_pbs = 0x02023DFC;
 
 mugshots = 0x097007E0;
 battle_bg_table = 0x0824ee34;
-custom_battle_struct = 0x0203FE00;
+custom_battle_elements = 0x0203FE00;
 
 
 mplay_table = 0x084A329C;
