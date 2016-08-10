@@ -4634,6 +4634,10 @@
           <df name="hazards">
             <in>hazards_scripts.S</in>
           </df>
+          <df name="power_trick">
+            <in>power_trick.c</in>
+            <in>power_trick_script.S</in>
+          </df>
         </df>
         <df name="music">
           <in>main_mixer.S</in>
@@ -4654,6 +4658,11 @@
           <in>cutscene_meteor.c</in>
         </df>
       </df>
+      <df name="string">
+        <df name="en">
+          <in>move_strings.txt</in>
+        </df>
+      </df>
       <df name="todo">
         <in>pokemon_evolution.s</in>
         <in>pokemon_habitats.s</in>
@@ -4667,6 +4676,7 @@
       <itemPath>nbproject/private/launcher.properties</itemPath>
       <itemPath>makefile</itemPath>
     </logicalFolder>
+    <itemPath>string/de/move_strings.txt</itemPath>
   </logicalFolder>
   <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
   <sourceRootList>
@@ -27225,6 +27235,16 @@
             tool="4"
             flavor2="0">
       </item>
+      <item path="src/moves/power_trick/power_trick.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/moves/power_trick/power_trick_script.S"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
       <item path="src/music/main_mixer.S" ex="false" tool="4" flavor2="0">
       </item>
       <item path="src/music/music_override.c" ex="false" tool="0" flavor2="0">
@@ -27247,6 +27267,10 @@
       <item path="src/specials/custom_specials.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="src/specials/cutscene_meteor.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="string/de/move_strings.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="string/en/move_strings.txt" ex="false" tool="3" flavor2="0">
       </item>
       <item path="todo/pokemon_evolution.s" ex="false" tool="4" flavor2="0">
       </item>

@@ -4,7 +4,8 @@
 
 .global m_effect_table
 m_effect_table:
-	.word 0x081D6900 @0
+	.word bs_power_trick    @for testing
+        @.word 0x081D6900 @0
 	.word 0x081D696D @1
 	.word 0x081D69DC @2
 	.word 0x081D69E7 @3

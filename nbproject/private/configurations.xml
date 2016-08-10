@@ -3807,6 +3807,8 @@
             </df>
             <df name="hazards">
             </df>
+            <df name="power_trick">
+            </df>
           </df>
           <df name="music">
           </df>
@@ -4793,6 +4795,10 @@
           <df name="hazards">
             <in>hazards_scripts.S</in>
           </df>
+          <df name="power_trick">
+            <in>power_trick.c</in>
+            <in>power_trick_script.S</in>
+          </df>
         </df>
         <df name="music">
           <in>main_mixer.S</in>
@@ -4819,6 +4825,7 @@
         <df name="de">
         </df>
         <df name="en">
+          <in>move_strings.txt</in>
         </df>
       </df>
       <df name="todo">
@@ -4827,6 +4834,7 @@
       </df>
       <in>main.asm</in>
     </df>
+    <itemPath>string/de/move_strings.txt</itemPath>
   </logicalFolder>
   <projectmakefile>makefile</projectmakefile>
   <confs>
