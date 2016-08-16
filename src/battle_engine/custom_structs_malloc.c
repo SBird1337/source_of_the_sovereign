@@ -6,9 +6,6 @@
 void malloc_battle_structs()
 {
 	custom_battle_elements.ptr=(struct custom_battle_struct*)malloc(sizeof(struct custom_battle_struct));
-        custom_battle_elements.ptr->side_affecting[0].stealth_rock=1;
-        custom_battle_elements.ptr->side_affecting[0].toxic_spikes_psn=1;
-        custom_battle_elements.ptr->side_affecting[0].sticky_web=1;
 }
 
 void free_battle_structs()

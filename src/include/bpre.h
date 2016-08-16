@@ -11,7 +11,7 @@
 u16 *var_access(int index);
 u8 flag_check(int flag);
 void clear_flag(u16 flag);
-
+u16 random();
 void* malloc(int size);
 void free(void* address);
 

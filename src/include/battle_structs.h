@@ -250,4 +250,14 @@ struct move_info{
     u8 arg2;
 };
 
+struct b_enigma_berry{
+    u8 field0[7];
+    u8 battle_effect_x12;
+    u8 field8[18];
+    u8 quality;
+    u8 field1B;
+};
+
+extern struct b_enigma_berry battle_enigma_berry[4];
+
 #endif

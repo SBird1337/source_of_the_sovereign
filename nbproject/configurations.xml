@@ -4593,6 +4593,7 @@
           <df name="scripts">
             <in>hazards.S</in>
           </df>
+          <in>battle_abilities.c</in>
           <in>battle_help.c</in>
           <in>battle_initiative.c</in>
           <in>battle_initiative.h</in>
@@ -4605,6 +4606,12 @@
         </df>
         <df name="encode">
           <in>crc32.c</in>
+        </df>
+        <df name="include">
+          <in>battle_abilities.h</in>
+          <in>item_effects.h</in>
+          <in>items.h</in>
+          <in>pokemon.h</in>
         </df>
         <df name="interface">
           <in>lcd_io_test.S</in>
@@ -27158,6 +27165,11 @@
       </item>
       <item path="src/battle_bg/battle_bg_hook.S" ex="false" tool="4" flavor2="0">
       </item>
+      <item path="src/battle_engine/battle_abilities.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
       <item path="src/battle_engine/battle_help.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="src/battle_engine/battle_initiative.c"
@@ -27200,6 +27212,14 @@
             flavor2="0">
       </item>
       <item path="src/encode/crc32.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/include/battle_abilities.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/item_effects.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/items.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/pokemon.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/interface/lcd_io_test.S" ex="false" tool="4" flavor2="0">
       </item>

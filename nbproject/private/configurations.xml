@@ -4731,6 +4731,7 @@
           <df name="scripts">
             <in>hazards.S</in>
           </df>
+          <in>battle_abilities.c</in>
           <in>battle_help.c</in>
           <in>battle_help.h</in>
           <in>battle_initiative.c</in>
@@ -4750,6 +4751,7 @@
           <in>abilities.h</in>
           <in>attack_names.h</in>
           <in>battle.h</in>
+          <in>battle_abilities.h</in>
           <in>battle_locations.h</in>
           <in>battle_script.h</in>
           <in>battle_structs.h</in>
@@ -4758,10 +4760,13 @@
           <in>config.h</in>
           <in>custom_structs.h</in>
           <in>fade.h</in>
+          <in>item_effects.h</in>
+          <in>items.h</in>
           <in>lcd.h</in>
           <in>moves.h</in>
           <in>objects.h</in>
           <in>pkmn_types.h</in>
+          <in>pokemon.h</in>
           <in>sound.h</in>
           <in>types.h</in>
         </df>

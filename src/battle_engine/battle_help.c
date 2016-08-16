@@ -89,6 +89,18 @@ u8 has_type(u8 bank, u8 type) {
     return battle_participants[bank].type1 == type || battle_participants[bank].type2 == type;
 }
 
+u8 get_item_effect(u8 bank, u8 check_negating_effects) {
+    if (check_negating_effects) {
+        if (battle_participants[bank].ability_id == ABILITY_KLUTZ || custom_battle_elements.ptr->bank_affecting[bank].embargo)
+            return ITEM_EFFECT_NOEFFECT;
+    }
+    if (battle_participants[bank].held_item == ITEM_ENIGMABERRY) {
+        return battle_enigma_berry[bank].battle_effect_x12;
+    } else {
+        return item_get_x12(battle_participants[bank].held_item);
+    }
+}
+
 u8 cant_poison(u8 bank, u8 self_inflicted) { //0 == can poison
     //1 == is already poisoned
     //2 == has other major condition

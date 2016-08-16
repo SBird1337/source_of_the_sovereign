@@ -24,6 +24,7 @@ gpu_sprites_upload = 0x08007320|1;
 obj_delete_all = 0x8007770|1;
 camera_move_and_redraw = 0x0805ACB4|1;
 calc_circle = 0x0807EE2C|1;
+random = 0x08044EC8|1;
 
 pal_decompress_slice_to_faded_and_unfaded = 0x080703A8|1;
 gpu_tile_obj_decompress_alloc_tag_and_upload = 0x0800F035;
@@ -94,9 +95,11 @@ battle_hitmarker = 0x02023dd0;
 battle_stat_changer = 0x02023FDE;
 battle_menu_chosen_item = 0x02023D7C;
 battle_stuff_ptr = 0x02023FE8;
+battle_enigma_berry = 0x02023F54;
 side_affecting_halfword = 0x2023DDE;
 
 item_get_quality = 0x0809A948|1;
+item_get_x12 = 0x0809A924|1;
 
 
 battle_status3_bits_pbs = 0x02023DFC;
