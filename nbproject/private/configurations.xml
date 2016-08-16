@@ -3820,8 +3820,6 @@
           </df>
         </df>
         <df name="string">
-          <df name="de">
-          </df>
           <df name="DE">
           </df>
         </df>
@@ -4735,12 +4733,15 @@
           </df>
           <in>battle_help.c</in>
           <in>battle_help.h</in>
+          <in>battle_initiative.c</in>
+          <in>battle_initiative.h</in>
           <in>battle_switch_in_hook.S</in>
           <in>custom_structs_malloc.c</in>
           <in>custom_structs_malloc.h</in>
           <in>custom_structs_malloc_hook.S</in>
           <in>entry_hazards.c</in>
           <in>entry_hazards_hook.S</in>
+          <in>move_table.c</in>
         </df>
         <df name="encode">
           <in>crc32.c</in>

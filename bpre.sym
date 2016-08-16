@@ -92,9 +92,12 @@ battle_side_unknown = 0x02023FDB;
 battle_side_timers = 0x02023DE4;
 battle_hitmarker = 0x02023dd0;
 battle_stat_changer = 0x02023FDE;
+battle_menu_chosen_item = 0x02023D7C;
+battle_stuff_ptr = 0x02023FE8;
 side_affecting_halfword = 0x2023DDE;
 
-battle_custom_string = 0x0203C020;
+item_get_quality = 0x0809A948|1;
+
 
 battle_status3_bits_pbs = 0x02023DFC;
 

@@ -4594,11 +4594,14 @@
             <in>hazards.S</in>
           </df>
           <in>battle_help.c</in>
+          <in>battle_initiative.c</in>
+          <in>battle_initiative.h</in>
           <in>battle_switch_in_hook.S</in>
           <in>custom_structs_malloc.c</in>
           <in>custom_structs_malloc_hook.S</in>
           <in>entry_hazards.c</in>
           <in>entry_hazards_hook.S</in>
+          <in>move_table.c</in>
         </df>
         <df name="encode">
           <in>crc32.c</in>
@@ -4781,6 +4784,20 @@
       </item>
       <item path="data/pkmn_tables/pokemon_tm_vm.s" ex="false" tool="4" flavor2="0">
       </item>
+      <folder path="0">
+        <cTool>
+          <incDir>
+            <pElem>src/include</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/battle_engine">
+        <cTool>
+          <incDir>
+            <pElem>src/include</pElem>
+          </incDir>
+        </cTool>
+      </folder>
       <item path="gfx_build/sprites/back_sprites/normal_0000.s"
             ex="false"
             tool="4"
@@ -27143,6 +27160,16 @@
       </item>
       <item path="src/battle_engine/battle_help.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="src/battle_engine/battle_initiative.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/battle_engine/battle_initiative.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="src/battle_engine/battle_switch_in_hook.S"
             ex="false"
             tool="4"
@@ -27164,6 +27191,8 @@
             ex="false"
             tool="4"
             flavor2="0">
+      </item>
+      <item path="src/battle_engine/move_table.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="src/battle_engine/scripts/hazards.S"
             ex="false"

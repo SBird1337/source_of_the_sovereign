@@ -152,4 +152,102 @@ union battle_weather{
 
 extern union battle_weather battle_weather;
 
+struct mirror_move_set_per_bank
+{
+    u16 moves_per_target[4];
+};
+
+struct battle_stuff{
+    u8 end_turn_statetracker1; //0x0
+    u8 end_turn_checked_bank; //0x1
+    u8 field_2; //0x2
+    u8 end_turn_statetracker2; //0x3
+    u16 trapped_move[4]; //0x4 - 0xB
+    u8 move_target[4]; //0xC - 0xF
+    u8 field_10; //0x10
+    u8 field_11; //0x11
+    u8 field_12; //0x12
+    u8 dynamic_move_type; //0x13
+    u8 trapper[4];//0x14-0x17
+    u8 field_18[48]; //0x18-0x47
+    u8 pre_attacks_bank_counter; //0x48
+    u8 field_49; //0x49
+    u8 money_multiplier; //0x4A
+    u8 field_4B; //0x4B
+    u8 switch_in_ability_bank_counter; //0x4C
+    u8 field_4D[7]; //0x4D-0x53
+    u8 field_54; //0x54
+    u8 field_55; //0x55
+    u8 field_56; //0x56
+    u8 field_57; //0x57
+    u8 field_58[4];
+    u8 field_5C[35];
+    u8 castform_switch_form; //0x7F
+    u8 chosen_move_position[4]; //0x80
+    u8 field_84[13]; //0x84-0x90
+    u8 absent_bank_flags_prev_turn; //0x91
+    u8 field_92[6]; //0x92-0x97
+    u16 mirror_moves_pbs[4]; //0x98-0x9F
+    u8 field_A0[18]; //0xA0-0xB1
+    u8 synchronize_effect_chooser; //0xB2
+    u8 field_B3[5];
+    u16 used_held_items[4]; //0xB8-0xBF
+    u8 field_C0[8]; //0xC0-0xC7
+    u16 choiced_move[4]; //0xC8-0xCF (checked in cmd49)
+    u16 changed_held_items[4]; //0xD0-0xD8 (later written to battlestruct in cmd49)
+    u8 intimidate_user; //0xD8
+    u8 switch_in_item_bank_counter; //0xD9
+    u8 field_DA; //0xDA
+    u8 field_DB; //0xDB
+    u8 field_DC; //0xDC
+    u8 field_DD; //0xDD
+    u8 field_DE; //0xDE
+    u8 field_DF; //0xDF
+    struct mirror_move_set_per_bank mirror_move_set_pbs[4]; //0xE0-0xFF
+    u8 field_100[162]; //0x100-0x1A1
+    u8 battle_load_weather_from_map_flag; //0x1A2
+    u8 atk_canceller_state_tracker; //0x1A3
+    u8 field_1A4[240]; //0x1A4-0x293
+    u8 switchout_index[4]; //0x294-0x297
+    u8 field_298[11];
+    u8 field_2A3;
+};
+
+struct battle_stuff_struct{
+    struct battle_stuff *ptr;
+};
+
+extern struct battle_stuff_struct battle_stuff_ptr;
+
+struct prop_flags{
+    u8 makes_contact : 1;//1
+    u8 affected_by_protect : 1;//2
+    u8 affected_by_magic_coat : 1;//4
+    u8 affected_by_snatch : 1;//8
+    u8 affected_by_mirrormove :1;//x10
+    u8 affected_by_kingsrock :1;//x20
+    u8 raised_crit_ratio :1;//x40
+    u8 unused_bit : 1;//x80
+};
+
+union move_flags{
+    u8 int_flag;
+    struct prop_flags flags;
+};
+
+struct move_info{
+    u8 script_id;
+    u8 base_power;
+    u8 type;
+    u8 accuracy;
+    u8 pp;
+    u8 effect_chance;
+    u8 target;
+    s8 priority;
+    union move_flags move_flags;
+    u8 arg1;
+    u8 split;
+    u8 arg2;
+};
+
 #endif
