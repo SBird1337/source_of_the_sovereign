@@ -9,15 +9,17 @@ PNG_MET_SKY    := assets/meteor/bg1.png
 PNG_MET_FG     := assets/meteor/bg2.png
 PNG_MET_CLOUDS := assets/meteor/clouds.png
 PNG_MET_METEOR := assets/meteor/oam.png
+PNG_AS_T       := assets/render/ascii.png
 
 C_MET_BG     := src/assets/meteor/met_background.c
 C_MET_SKY    := src/assets/meteor/met_sky.c
 C_MET_FG     := src/assets/meteor/met_foreground.c
 C_MET_CLOUDS := src/assets/meteor/met_clouds.c
 C_MET_METEOR := src/assets/meteor/met_meteor.c
+C_AS_T       := src/include/assets/ascii.c
 
 .PHONY: all
-all: $(C_MET_BG) $(C_MET_SKY) $(C_MET_FG) $(C_MET_CLOUDS) $(C_MET_METEOR)
+all: $(C_MET_BG) $(C_MET_SKY) $(C_MET_FG) $(C_MET_CLOUDS) $(C_MET_METEOR) $(C_AS_T)
 
 
 
@@ -53,5 +55,7 @@ $(C_MET_CLOUDS): $(PNG_MET_CLOUDS)
 $(C_MET_METEOR): $(PNG_MET_METEOR)
 	$(GRIT) $< -gu32 -gzl -gB 4 -gt -p -pu16 -pz! -ftc -o $@
 
+$(C_AS_T): $(PNG_AS_T)
+	$(GRIT) $< -gu32 -gzl -gB 4 -gt -p -pu16 -pz! -m! -ftc -o $@
 
 	

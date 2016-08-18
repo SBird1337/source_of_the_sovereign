@@ -1,6 +1,7 @@
 #include <bpre.h>
 #include "cutscene_meteor.h"
 #include "camera_move.h"
+#include <debug.h>
 
 void init_script()
 {
@@ -10,10 +11,11 @@ void init_script()
   }
 }
 
-static callback special_routines[3] = {
+static callback special_routines[4] = {
 	play_meteor,
 	sp_move_camera,
 	init_script,
+        some_test,
 };
 
 

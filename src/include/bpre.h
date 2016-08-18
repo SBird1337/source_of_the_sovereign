@@ -14,6 +14,7 @@ void clear_flag(u16 flag);
 u16 random();
 void* malloc(int size);
 void free(void* address);
+void* memcpy (void * destination, const void* source, u32 num);
 
 //debug
 void agbprintf(const char* pBuf, ...);

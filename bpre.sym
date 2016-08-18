@@ -26,6 +26,7 @@ camera_move_and_redraw = 0x0805ACB4|1;
 calc_circle = 0x0807EE2C|1;
 random = 0x08044EC8|1;
 
+vram_decompress = 0x081E3B6C|1;
 pal_decompress_slice_to_faded_and_unfaded = 0x080703A8|1;
 gpu_tile_obj_decompress_alloc_tag_and_upload = 0x0800F035;
 gpu_pal_obj_alloc_tag_and_apply = 0x08008929;

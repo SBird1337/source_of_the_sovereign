@@ -4604,11 +4604,15 @@
           <in>entry_hazards_hook.S</in>
           <in>move_table.c</in>
         </df>
+        <df name="debug">
+          <in>debug.c</in>
+        </df>
         <df name="encode">
           <in>crc32.c</in>
         </df>
         <df name="include">
           <in>battle_abilities.h</in>
+          <in>debug.h</in>
           <in>item_effects.h</in>
           <in>items.h</in>
           <in>pokemon.h</in>
@@ -4696,7 +4700,7 @@
   <confs>
     <conf name="Default" type="0">
       <toolsSet>
-        <compilerSet>default</compilerSet>
+        <compilerSet>Cygwin|Cygwin</compilerSet>
         <dependencyChecking>false</dependencyChecking>
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
@@ -27211,9 +27215,13 @@
             tool="4"
             flavor2="0">
       </item>
+      <item path="src/debug/debug.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="src/encode/crc32.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="src/include/battle_abilities.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/debug.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/include/item_effects.h" ex="false" tool="3" flavor2="0">
       </item>

@@ -157,13 +157,6 @@ void end_playback()
 	free(memory->cloud_map);
 }
 
-static struct bg_config standard_bg[4] = {
-	{0,0,0x19,0,0,0},
-	{1,1,0x1A,0,0,1},
-	{2,2,0x1B,0,0,2},
-	{3,3,0x1C,0,0,3}
-};
-
 void setup_scrolling()
 {
 	lcd_io_set_func(0x14, 0x0);
