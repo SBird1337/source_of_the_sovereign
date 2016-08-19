@@ -14,6 +14,8 @@ typedef     signed long long int    s64;
 typedef     float                   f32;
 typedef     double                  f64;
 
+typedef     unsigned int            size_t;
+
 #define true 1
 #define false 0
 

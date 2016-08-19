@@ -14,10 +14,11 @@ SECTIONS {
                 *(.text)
                 *(.ctors)
                 *(.dtors)
-                *(.rodata)
                 *(.fini)
                 *(COMMON)
                 __text_end  = . ;
+                *(.rodata*)
+                *(.rdata)
                 *(.data)
                 __bss_start__ = . ;
                 *(.bss)

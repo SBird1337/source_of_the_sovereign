@@ -13,7 +13,7 @@ export PATH := $(realpath ../tools):$(PATH)
 
 DEFINES   := -DBPRE -DSOFTWARE_VERSION=0
 ASFLAGS   := -mthumb
-CFLAGS    := -g -mthumb -mno-thumb-interwork -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -O3 -std=gnu99 -Isrc/include $(DEFINES)
+CFLAGS    := -g -mthumb -mno-thumb-interwork -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -O3 -std=c99 -Wall -Isrc/include $(DEFINES)
 GRITFLAGS := -ftc -fa
 LDFLAGS   := -z muldefs
 BLDPATH   := object
@@ -73,7 +73,7 @@ all: rom
 .PHONY: rom
 rom: main.asm $(MAIN_OBJ)
 	$(ARS) $<
-	$(NM) $(BLDPATH)/linked.o -n -g --defined-only | \
+	$(NM) $(BLDPATH)/linked.o -l -n -g --defined-only | \
 		sed -e '{s/^/0x/g};{/.*\sA\s.*/d};{s/\sT\s/ /g}' > $(OUTPATH)/__symbols.sym
 	@echo "*** SUCCESSFULLY BUILT PROJECT ***"
 	

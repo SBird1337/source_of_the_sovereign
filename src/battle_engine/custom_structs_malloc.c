@@ -2,10 +2,12 @@
 #include <battle.h>
 #include "custom_structs.h"
 #include "custom_structs_malloc.h"
+#include <debug.h>
 
 void malloc_battle_structs()
 {
 	custom_battle_elements.ptr=(struct custom_battle_struct*)malloc(sizeof(struct custom_battle_struct));
+        some_test();
 }
 
 void free_battle_structs()

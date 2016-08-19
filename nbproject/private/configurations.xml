@@ -5467,13 +5467,13 @@
         <df name="battle_engine">
           <df name="scripts">
             <in>hazards.S</in>
+            <in>test.S</in>
           </df>
           <in>battle_abilities.c</in>
           <in>battle_help.c</in>
-          <in>battle_help.h</in>
           <in>battle_initiative.c</in>
-          <in>battle_initiative.h</in>
           <in>battle_switch_in_hook.S</in>
+          <in>battle_test.c</in>
           <in>custom_structs_malloc.c</in>
           <in>custom_structs_malloc.h</in>
           <in>custom_structs_malloc_hook.S</in>
@@ -5496,9 +5496,12 @@
           <in>attack_names.h</in>
           <in>battle.h</in>
           <in>battle_abilities.h</in>
+          <in>battle_help.h</in>
+          <in>battle_initiative.h</in>
           <in>battle_locations.h</in>
           <in>battle_script.h</in>
           <in>battle_structs.h</in>
+          <in>battle_test.h</in>
           <in>bpre.h</in>
           <in>callback.h</in>
           <in>config.h</in>
@@ -5612,8 +5615,6 @@
         <gdb_interceptlist>
           <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
         </gdb_interceptlist>
-        <gdb_signals>
-        </gdb_signals>
         <gdb_options>
           <DebugOptions>
             <option name="gdb_init_file"

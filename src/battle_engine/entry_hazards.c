@@ -1,4 +1,4 @@
-#include "battle_help.h"
+#include <battle_help.h>
 #include <bpre.h>
 
 extern void* bs_stealth_rock;

@@ -4592,12 +4592,13 @@
         <df name="battle_engine">
           <df name="scripts">
             <in>hazards.S</in>
+            <in>test.S</in>
           </df>
           <in>battle_abilities.c</in>
           <in>battle_help.c</in>
           <in>battle_initiative.c</in>
-          <in>battle_initiative.h</in>
           <in>battle_switch_in_hook.S</in>
+          <in>battle_test.c</in>
           <in>custom_structs_malloc.c</in>
           <in>custom_structs_malloc_hook.S</in>
           <in>entry_hazards.c</in>
@@ -4612,6 +4613,8 @@
         </df>
         <df name="include">
           <in>battle_abilities.h</in>
+          <in>battle_initiative.h</in>
+          <in>battle_test.h</in>
           <in>debug.h</in>
           <in>item_effects.h</in>
           <in>items.h</in>
@@ -27181,15 +27184,12 @@
             tool="0"
             flavor2="0">
       </item>
-      <item path="src/battle_engine/battle_initiative.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="src/battle_engine/battle_switch_in_hook.S"
             ex="false"
             tool="4"
             flavor2="0">
+      </item>
+      <item path="src/battle_engine/battle_test.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="src/battle_engine/custom_structs_malloc.c"
             ex="false"
@@ -27215,11 +27215,17 @@
             tool="4"
             flavor2="0">
       </item>
+      <item path="src/battle_engine/scripts/test.S" ex="false" tool="4" flavor2="0">
+      </item>
       <item path="src/debug/debug.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="src/encode/crc32.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="src/include/battle_abilities.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/battle_initiative.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/battle_test.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/include/debug.h" ex="false" tool="3" flavor2="0">
       </item>

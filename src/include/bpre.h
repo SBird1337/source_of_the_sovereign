@@ -8,13 +8,15 @@
 #include <callback.h>
 #include <config.h>
 
+u32 __aeabi_uidivmod(u32 a, u32 b);
 u16 *var_access(int index);
 u8 flag_check(int flag);
 void clear_flag(u16 flag);
 u16 random();
 void* malloc(int size);
 void free(void* address);
-void* memcpy (void * destination, const void* source, u32 num);
+void* memcpy (void * destination, const void* source, size_t num);
+void* memset (void* dst, int value, size_t size);
 
 //debug
 void agbprintf(const char* pBuf, ...);

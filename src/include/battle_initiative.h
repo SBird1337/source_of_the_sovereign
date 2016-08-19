@@ -1,9 +1,7 @@
 #ifndef BATTLE_INITIATIVE_H
 #define BATTLE_INITIATIVE_H
 
-#include <battle.h>
-#include "battle_help.h"
-#include <bpre.h>
+#include <types.h>
 
 enum init_enum {ONE, TWO, TIE};
 
