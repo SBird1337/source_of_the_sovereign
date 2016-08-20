@@ -73,7 +73,7 @@ all: rom
 .PHONY: rom
 rom: main.asm $(MAIN_OBJ)
 	$(ARS) $<
-	$(NM) $(BLDPATH)/linked.o -l -n -g --defined-only | \
+	$(NM) $(BLDPATH)/linked.o -n -g --defined-only | \
 		sed -e '{s/^/0x/g};{/.*\sA\s.*/d};{s/\sT\s/ /g}' > $(OUTPATH)/__symbols.sym
 	@echo "*** SUCCESSFULLY BUILT PROJECT ***"
 	

@@ -5,7 +5,7 @@
 struct move_info move_table[1024];
 
 u16 get_speed(u8 bank) {
-    u16 speed = battle_participants[bank].spd;
+    u32 speed = battle_participants[bank].spd << 16;
     switch (get_item_effect(bank, 1)) {
         case ITEM_EFFECT_IRONBALL:
             speed >>= 1;
@@ -35,19 +35,23 @@ u16 get_speed(u8 bank) {
                 break;
             case ABILITY_QUICK_FEET:
                 if (battle_participants[bank].status.flags.burn || battle_participants[bank].status.flags.poison || battle_participants[bank].status.flags.toxic_poison)
-                    speed *= 2;
+                    speed = speed + ((speed * 50) / 100);
                 else if (battle_participants[bank].status.flags.paralysis)
+                {
+                    //cancel para
                     speed *= 4;
+                    speed = speed + ((speed * 50) / 100);
+                }
                 break;
         }
     }
     if (battle_participants[bank].status.flags.paralysis)
-        speed >= 2;
+        speed >>= 2;
     if (custom_battle_elements.ptr->side_affecting[get_side_from_bank(bank)].tailwind)
         speed *= 2;
     //TODO: unburden
     speed = (speed * stat_buffs[battle_participants[bank].spd_buff].dividend) / (stat_buffs[battle_participants[bank].spd_buff].divisor);
-    return speed;
+    return (u16)(speed >> 16);
 }
 
 enum init_enum get_first_to_strike(u8 bank_one, u8 bank_two, u8 ignore_prio) {

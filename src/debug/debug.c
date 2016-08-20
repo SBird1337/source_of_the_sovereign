@@ -65,7 +65,7 @@ void reset_scrolling_debug() {
 }
 
 void init_unit_test() {
-    test_battle();
+    test_speed();
 }
 
 void print_string(u16 line, u16 row, u8 color, char* pBuf) {
