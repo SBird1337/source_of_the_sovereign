@@ -16,6 +16,7 @@
       </df>
       <df name="data">
         <df name="item">
+          <in>item_scripts.S</in>
           <in>tm_hm_move_table.S</in>
         </df>
         <df name="moves">
@@ -34,6 +35,7 @@
           <in>pokemon_enemy_y_table.s</in>
           <in>pokemon_footprints.s</in>
           <in>pokemon_front_sprites.S</in>
+          <in>pokemon_habitats.S</in>
           <in>pokemon_move_tutor.s</in>
           <in>pokemon_moveset_table.S</in>
           <in>pokemon_names.S</in>
@@ -3857,6 +3859,7 @@
           <in>pokemon_egg_moves.asm</in>
           <in>pokemon_footprints.asm</in>
           <in>pokemon_front_sprites.asm</in>
+          <in>pokemon_habitats.asm</in>
           <in>pokemon_icons.asm</in>
           <in>pokemon_names.asm</in>
           <in>pokemon_normal_pal.asm</in>

@@ -1,5 +1,5 @@
 .org 0x08104B10
-.word 0x0203C000 //Pokédex SEEN flags
+.word 0x0203C000 //PokÃ©dex SEEN flags
 
 .org 0x08104B00
 .halfword 0x0000
@@ -8,7 +8,7 @@
 .halfword 0x0000
 
 .org 0x08104B5C
-.word 0x0203C100 //Pokédex CAUGHT flags
+.word 0x0203C100 //PokÃ©dex CAUGHT flags
 
 .org 0x08104B16
 .halfword 0x0000
@@ -26,8 +26,8 @@
 .halfword 0xE00F
 
 .org 0x08104B94
-.word 0x0203C000 //Pokédex SEEN flags
-.word 0x0203C000 //Pokédex SEEN flags
+.word 0x0203C000 //Pokï¿½dex SEEN flags
+.word 0x0203C000 //Pokï¿½dex SEEN flags
 
 .org 0x08104B6A
 .halfword 0x1C01
@@ -38,7 +38,7 @@
 .org 0x08104B78
 .halfword 0xE01A
 
-.org 0x08104BB8 //Pokédex  CAUGHT flags
+.org 0x08104BB8 //Pokï¿½dex  CAUGHT flags
 .word 0x0203C100
 
 .org 0x08104BA2

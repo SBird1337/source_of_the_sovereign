@@ -3785,6 +3785,7 @@
           <in>pokemon_egg_moves.asm</in>
           <in>pokemon_footprints.asm</in>
           <in>pokemon_front_sprites.asm</in>
+          <in>pokemon_habitats.asm</in>
           <in>pokemon_icons.asm</in>
           <in>pokemon_names.asm</in>
           <in>pokemon_normal_pal.asm</in>
@@ -23464,6 +23465,11 @@
             flavor2="0">
       </item>
       <item path="patches/pokemon_data/pokemon_front_sprites.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="patches/pokemon_data/pokemon_habitats.asm"
             ex="false"
             tool="4"
             flavor2="0">

@@ -36,8 +36,7 @@ u16 get_speed(u8 bank) {
             case ABILITY_QUICK_FEET:
                 if (battle_participants[bank].status.flags.burn || battle_participants[bank].status.flags.poison || battle_participants[bank].status.flags.toxic_poison)
                     speed = speed + ((speed * 50) / 100);
-                else if (battle_participants[bank].status.flags.paralysis)
-                {
+                else if (battle_participants[bank].status.flags.paralysis) {
                     //cancel para
                     speed *= 4;
                     speed = speed + ((speed * 50) / 100);
@@ -51,13 +50,36 @@ u16 get_speed(u8 bank) {
         speed *= 2;
     //TODO: unburden
     speed = (speed * stat_buffs[battle_participants[bank].spd_buff].dividend) / (stat_buffs[battle_participants[bank].spd_buff].divisor);
-    return (u16)(speed >> 16);
+    return (u16) (speed >> 16);
+}
+
+u8 speed_alt_from_item(u8 bank, u8 item_effect) {
+    switch (item_effect) {
+        case ITEM_EFFECT_QUICKCLAW:
+            if (__aeabi_uidivmod(battle_turn_random, 100) > item_get_quality(battle_participants[bank].held_item)) {
+                return 1;
+            }
+            break;
+        case ITEM_EFFECT_CUSTAPBERRY:
+            //TODO: implement HP CONDITION
+            return 1;
+            break;
+        case ITEM_EFFECT_LAGGINGTAIL:
+            return -1;
+    }
+    return 0;
 }
 
 enum init_enum get_first_to_strike(u8 bank_one, u8 bank_two, u8 ignore_prio) {
     enum init_enum result = TIE;
-    //TODO: implement quash
-    if (!ignore_prio) {
+
+    u8 quash_one = custom_battle_elements.ptr->bank_affecting[bank_one].quashed;
+    u8 quash_two = custom_battle_elements.ptr->bank_affecting[bank_two].quashed;
+    if (quash_one && !quash_two)
+        result = TWO;
+    else if (!quash_one && quash_two)
+        result = ONE;
+    else if (!ignore_prio) {
         u16 move_one = battle_participants[bank_one].moves[battle_stuff_ptr.ptr->chosen_move_position[bank_one]];
         u16 move_two = battle_participants[bank_two].moves[battle_stuff_ptr.ptr->chosen_move_position[bank_two]];
 
@@ -74,28 +96,34 @@ enum init_enum get_first_to_strike(u8 bank_one, u8 bank_two, u8 ignore_prio) {
             result = TWO;
     }
     if (result == TIE) {
-        //TODO: calculate item bracket effects
-        //TODO: calculate speed
-        u8 stall_one = has_ability(bank_one, ABILITY_STALL);
-        u8 stall_two = has_ability(bank_two, ABILITY_STALL);
-        if (stall_one && !stall_two)
-            result = TWO;
-        else if (stall_two && !stall_one)
+        s8 brack_one = speed_alt_from_item(bank_one, get_item_effect(bank_one, true));
+        s8 brack_two = speed_alt_from_item(bank_two, get_item_effect(bank_two, true));
+        if (brack_one > brack_two)
             result = ONE;
+        else if (brack_two > brack_one)
+            result = TWO;
         else {
-            u16 speed_one = get_speed(bank_one);
-            u16 speed_two = get_speed(bank_two);
-            if (custom_battle_elements.ptr->field_affecting.trick_room || (stall_one && stall_two)) {
-                u16 swap_speed = speed_one;
-                speed_one = speed_two;
-                speed_two = swap_speed;
-            }
-            if (speed_one > speed_two)
-                result = ONE;
-            else if (speed_two > speed_one)
+            u8 stall_one = has_ability(bank_one, ABILITY_STALL);
+            u8 stall_two = has_ability(bank_two, ABILITY_STALL);
+            if (stall_one && !stall_two)
                 result = TWO;
-            else if (random() & 1)
+            else if (stall_two && !stall_one)
                 result = ONE;
+            else {
+                u16 speed_one = get_speed(bank_one);
+                u16 speed_two = get_speed(bank_two);
+                if (custom_battle_elements.ptr->field_affecting.trick_room || (stall_one && stall_two)) {
+                    u16 swap_speed = speed_one;
+                    speed_one = speed_two;
+                    speed_two = swap_speed;
+                }
+                if (speed_one > speed_two)
+                    result = ONE;
+                else if (speed_two > speed_one)
+                    result = TWO;
+                else if (random() & 1)
+                    result = ONE;
+            }
         }
     }
     return result;

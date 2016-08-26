@@ -7,4 +7,22 @@
         <activeConfTypeElem>0</activeConfTypeElem>
         <activeConfIndexElem>0</activeConfIndexElem>
     </data>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/string/table.tbl</file>
+            <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/main.asm</file>
+            <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/string/de/item_data.txt</file>
+            <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/data/item/item_scripts.S</file>
+            <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/string/de/item_data.S</file>
+            <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/patches/items/item_limits.asm</file>
+            <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/patches/items/tm_fixes.asm</file>
+            <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/string/de/item_descriptions.txt</file>
+            <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/string/de/move_strings.txt</file>
+            <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/patches/items/item_routines.asm</file>
+            <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/patches/items/item_tables.asm</file>
+            <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/makefile</file>
+            <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/patches/items/items.asm</file>
+        </group>
+    </open-files>
 </project-private>

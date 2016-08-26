@@ -27,6 +27,7 @@
 .include "patches/pokemon_data/pokemon_normal_pal.asm"
 .include "patches/pokemon_data/pokemon_shiny_pal.asm"
 .include "patches/pokemon_data/pokemon_icons.asm"
+.include "patches/pokemon_data/pokemon_habitats.asm"
 
 .include "patches/battle_engine/malloc.asm"
 .include "patches/battle_engine/battle_engine.asm"
