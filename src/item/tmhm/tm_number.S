@@ -25,8 +25,8 @@ bl refresh
 
 ldr r4, ram
 ldr r0, value
-ldr r1, return3
-bx r1
+ldr r0, return3
+bx r0
 
 old_tm:
 ldr r1, return2
@@ -43,7 +43,7 @@ return1: .word 0x08131D65
 return2: .word 0x08131DA5
 ram: .word 0x02021CD0
 value: .word 0xFFFFFEBC
-return3: .word 0x08131DB1
+return3: .word 0x08131DAF
 
 string_no:
 	.byte 0xF9, 0x08, 0xFC, 0x11, 0x01, 0xFF

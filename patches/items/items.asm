@@ -49,25 +49,25 @@
 .word str_item_name0
 
 .org 0x0803A2B0 
-.word item_script_table
+.word item_flagtable
 
 .org 0x08041548 
-.word item_script_table
+.word item_flagtable
 
 .org 0x08042524 
-.word item_script_table
+.word item_flagtable
 
 .org 0x08042C30 
-.word item_script_table
+.word item_flagtable
 
 .org 0x08042E3C 
-.word item_script_table
+.word item_flagtable
 
 .org 0x0812504C 
-.word item_script_table
+.word item_flagtable
 
 .org 0x0812574C 
-.word item_script_table
+.word item_flagtable
 
 .org 0x08126CC4 
-.word item_script_table
+.word item_flagtable

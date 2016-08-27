@@ -6,3 +6,5 @@
 .org 0x0812AAAC
 .word tm_hm_move_table
 
+.org 0x0809899C
+.word item_gfx_table

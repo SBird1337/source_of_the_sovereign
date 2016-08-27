@@ -1,20 +1,8 @@
 .align 2
-.global item_script_table
-item_script_table:
 
-.word 0
-.word 0
-.word 0
-.word 0
-.word 0
-.word 0
-.word 0
-.word 0
-.word 0
-.word 0
-.word 0
-.word 0
-.word 0
+.global item_flagtable
+item_flagtable:
+
 .word itemflag_trank
 .word itemflag_gegengift
 .word itemflag_feuerheiler
@@ -36,8 +24,8 @@ item_script_table:
 .word itemflag_kraftwurzel
 .word itemflag_heilpuder
 .word itemflag_vitalkraut
-.word itemflag_äther
-.word itemflag_top_äther
+.word itemflag_aether
+.word itemflag_top_aether
 .word itemflag_elixier
 .word itemflag_top_elixier
 .word itemflag_lavakeks
@@ -659,9 +647,9 @@ itemflag_heilpuder:
 .byte 0x0 ,0x0 ,0x0 ,0x3F ,0x0 ,0xE0 ,0xFB ,0xFB ,0xF6 ,0x0
 itemflag_vitalkraut:
 .byte 0x0 ,0x0 ,0x0 ,0x44 ,0xE0 ,0xFF ,0xF1 ,0xF1 ,0xEC ,0x0
-itemflag_äther:
+itemflag_aether:
 .byte 0x0 ,0x0 ,0x0 ,0x0 ,0x18 ,0x0 ,0x0A
-itemflag_top_äther:
+itemflag_top_aether:
 .byte 0x0 ,0x0 ,0x0 ,0x0 ,0x18 ,0x0 ,0x7F
 itemflag_elixier:
 .byte 0x0 ,0x0 ,0x0 ,0x0 ,0x8 ,0x0 ,0x0A

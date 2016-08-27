@@ -12,3 +12,6 @@ NUMBER_OF_ITEMS EQU 638
 
 .org 0x0804152C 
 .word 0
+
+.org 0x08126C7A
+lsl r0, #0

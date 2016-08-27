@@ -17,3 +17,9 @@ bx r0
 ldr r0, =tm_save_slot+1
 bx r0
 .pool
+
+.org 0x08131DB0
+bx r0
+
+.org 0x08131E04
+.word tm_fix_index_num+1

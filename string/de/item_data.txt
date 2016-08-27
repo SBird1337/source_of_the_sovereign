@@ -41,7 +41,7 @@ str_item_name3=Superball
 @word 0x80A1E1D 
 @byte 2, 0, 0, 0
 
-str_item_name4=PokÃ©ball 
+str_item_name4=Pok�ball 
 @hword 4, 200 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_pokeball 
@@ -341,7 +341,7 @@ str_item_name33=Vitalkraut
 @word 0x80A1FBD 
 @byte 0, 0, 0, 0
 
-str_item_name34=Ã„ther 
+str_item_name34=�ther 
 @hword 34, 1200 
 @byte ITEM_EFFECT_NOEFFECT, 10 
 @word str_item_description_aether 
@@ -351,7 +351,7 @@ str_item_name34=Ã„ther
 @word 0x80A1FF5 
 @byte 0, 0, 0, 0
 
-str_item_name35=Top-Ã„ther 
+str_item_name35=Top-�ther 
 @hword 35, 2000 
 @byte ITEM_EFFECT_NOEFFECT, 255 
 @word str_item_description_top_aether 
@@ -391,7 +391,7 @@ str_item_name38=Lavakeks
 @word 0x80A1FBD 
 @byte 0, 0, 0, 0
 
-str_item_name39=Blaue FlÃ¶te 
+str_item_name39=Blaue Fl�te 
 @hword 39, 100 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_blaue_floete 
@@ -401,7 +401,7 @@ str_item_name39=Blaue FlÃ¶te
 @word 0x80A1FBD 
 @byte 0, 0, 0, 0
 
-str_item_name40=Gelbe FlÃ¶te 
+str_item_name40=Gelbe Fl�te 
 @hword 40, 200 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_gelbe_floete 
@@ -411,7 +411,7 @@ str_item_name40=Gelbe FlÃ¶te
 @word 0x80A1FBD 
 @byte 0, 0, 0, 0
 
-str_item_name41=Rote FlÃ¶te 
+str_item_name41=Rote Fl�te 
 @hword 41, 300 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_rote_floete 
@@ -421,7 +421,7 @@ str_item_name41=Rote FlÃ¶te
 @word 0x80A1FBD 
 @byte 0, 0, 0, 0
 
-str_item_name42=Schw. FlÃ¶te 
+str_item_name42=Schw. Fl�te 
 @hword 42, 400 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_schw._floete 
@@ -431,7 +431,7 @@ str_item_name42=Schw. FlÃ¶te
 @word 0x80A1FBD 
 @byte 0, 0, 0, 0
 
-str_item_name43=WeiÃŸe FlÃ¶te 
+str_item_name43=Wei�e Fl�te 
 @hword 43, 500 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_weisse_floete 
@@ -461,7 +461,7 @@ str_item_name45=Zauberasche
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name46=KÃ¼stensalz 
+str_item_name46=K�stensalz 
 @hword 46, 20 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_kuestensalz 
@@ -471,7 +471,7 @@ str_item_name46=KÃ¼stensalz
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name47=KÃ¼stenschale 
+str_item_name47=K�stenschale 
 @hword 47, 20 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_kuestenschale 
@@ -481,7 +481,7 @@ str_item_name47=KÃ¼stenschale
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name48=PurpurstÃ¼ck 
+str_item_name48=Purpurst�ck 
 @hword 48, 1500 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_purpurstueck 
@@ -491,7 +491,7 @@ str_item_name48=PurpurstÃ¼ck
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name49=InidgostÃ¼ck 
+str_item_name49=Inidgost�ck 
 @hword 49, 1500 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_inidgostueck 
@@ -501,7 +501,7 @@ str_item_name49=InidgostÃ¼ck
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name50=GelbstÃ¼ck 
+str_item_name50=Gelbst�ck 
 @hword 50, 1500 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_gelbstueck 
@@ -511,7 +511,7 @@ str_item_name50=GelbstÃ¼ck
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name51=GrÃ¼nstÃ¼ck 
+str_item_name51=Gr�nst�ck 
 @hword 51, 1500 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_gruenstueck 
@@ -541,7 +541,7 @@ str_item_name53=Galette
 @word 0x80A1FBD 
 @byte 0, 0, 0, 0
 
-str_item_name54=SpezialitÃ¤t 
+str_item_name54=Spezialit�t 
 @hword 54, 100 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_spezialitaet 
@@ -571,7 +571,7 @@ str_item_name56=Wutkeks
 @word 0x80A1FBD 
 @byte 0, 0, 0, 0
 
-str_item_name57=YantarasablÃ© 
+str_item_name57=Yantarasabl� 
 @hword 57, 100 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_yantarasable 
@@ -601,7 +601,7 @@ str_item_name59=Honig
 @word 0x80A1FBD 
 @byte 0, 0, 0, 0
 
-str_item_name60=PokÃ©wedel 
+str_item_name60=Pok�wedel 
 @hword 60, 1000 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_pokewedel 
@@ -621,7 +621,7 @@ str_item_name61=Rabattmarke
 @word 0x80A1FBD 
 @byte 0, 0, 0, 0
 
-str_item_name62=FÃ¤hig.Kapsel 
+str_item_name62=F�hig.Kapsel 
 @hword 62, 1000 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_faehig.kapsel 
@@ -801,7 +801,7 @@ str_item_name79=X-Spezial
 @word 0x80A1E7D 
 @byte 0, 0, 0, 0
 
-str_item_name80=PokÃ©puppe 
+str_item_name80=Pok�puppe 
 @hword 80, 1000 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_pokepuppe 
@@ -1091,7 +1091,7 @@ str_item_name108=Sternenstaub
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name109=SternenstÃ¼ck 
+str_item_name109=Sternenst�ck 
 @hword 109, 4900 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_sternenstueck 
@@ -1781,7 +1781,7 @@ str_item_name177=Tarabeere
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name178=BanngefÃ¤ÃŸ 
+str_item_name178=Banngef�� 
 @hword 178, 0 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_banngefaess 
@@ -1891,7 +1891,7 @@ str_item_name188=Silberstaub
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name189=MÃ¼nzamulett 
+str_item_name189=M�nzamulett 
 @hword 189, 100 
 @byte ITEM_EFFECT_AMULETCOIN, 10 
 @word str_item_description_muenzamulett 
@@ -1971,7 +1971,7 @@ str_item_name196=Fokus-Band
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name197=GlÃ¼cks-Ei 
+str_item_name197=Gl�cks-Ei 
 @hword 197, 200 
 @byte ITEM_EFFECT_LUCKYEGG, 0 
 @word str_item_description_gluecks_ei 
@@ -2001,7 +2001,7 @@ str_item_name199=Metallmantel
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name200=Ãœberreste 
+str_item_name200=�berreste 
 @hword 200, 200 
 @byte ITEM_EFFECT_LEFTOVERS, 10 
 @word str_item_description_ueberreste 
@@ -2141,7 +2141,7 @@ str_item_name213=Bannsticker
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name214=KrummlÃ¶ffel 
+str_item_name214=Krumml�ffel 
 @hword 214, 100 
 @byte ITEM_EFFECT_TWISTEDSPOON, 20 
 @word str_item_description_krummloeffel 
@@ -2301,7 +2301,7 @@ str_item_name229=Glattbrocken
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name230=HeiÃŸbrocken 
+str_item_name230=Hei�brocken 
 @hword 230, 200 
 @byte ITEM_EFFECT_HEATROCK, 0 
 @word str_item_description_heissbrocken 
@@ -2371,7 +2371,7 @@ str_item_name236=Giftschleim
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name237=GroÃŸlinse 
+str_item_name237=Gro�linse 
 @hword 237, 200 
 @byte ITEM_EFFECT_WIDELENS, 0 
 @word str_item_description_grosslinse 
@@ -2411,7 +2411,7 @@ str_item_name240=Griffklaue
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name241=GroÃŸwurzel 
+str_item_name241=Gro�wurzel 
 @hword 241, 200 
 @byte ITEM_EFFECT_BIGROOT, 0 
 @word str_item_description_grosswurzel 
@@ -2551,7 +2551,7 @@ str_item_name254=Offen.weste
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name255=HeiÃŸ-Orb 
+str_item_name255=Hei�-Orb 
 @hword 255, 200 
 @byte ITEM_EFFECT_FLAMEORB, 0 
 @word str_item_description_heiss_orb 
@@ -2671,7 +2671,7 @@ str_item_name266=Wahlschal
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name267=WechselhÃ¼lle 
+str_item_name267=Wechselh�lle 
 @hword 267, 100 
 @byte ITEM_EFFECT_EMPTY_EFFECT, 0 
 @word str_item_description_wechselhuelle 
@@ -2781,7 +2781,7 @@ str_item_name277=Flugjuwel
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name278=KÃ¤ferjuwel 
+str_item_name278=K�ferjuwel 
 @hword 278, 200 
 @byte ITEM_EFFECT_EMPTY_EFFECT, 50 
 @word str_item_description_kaeferjuwel 
@@ -3395,7 +3395,7 @@ str_item_name339=VM 01
 @hword 339, 0 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_vm_01 
-@byte 0, 0, 4, 1 
+@byte 1, 0, 4, 1 
 @word 0x0 
 @byte 0, 0, 0, 0 
 @word 0x0 
@@ -3405,7 +3405,7 @@ str_item_name340=VM 02
 @hword 340, 0 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_vm_02 
-@byte 0, 0, 4, 1 
+@byte 1, 0, 4, 1 
 @word 0x0 
 @byte 0, 0, 0, 0 
 @word 0x0 
@@ -3415,7 +3415,7 @@ str_item_name341=VM 03
 @hword 341, 0 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_vm_03 
-@byte 0, 0, 4, 1 
+@byte 1, 0, 4, 1 
 @word 0x0 
 @byte 0, 0, 0, 0 
 @word 0x0 
@@ -3425,7 +3425,7 @@ str_item_name342=VM 04
 @hword 342, 0 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_vm_04 
-@byte 0, 0, 4, 1 
+@byte 1, 0, 4, 1 
 @word 0x0 
 @byte 0, 0, 0, 0 
 @word 0x0 
@@ -3435,7 +3435,7 @@ str_item_name343=VM 05
 @hword 343, 0 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_vm_05 
-@byte 0, 0, 4, 1 
+@byte 1, 0, 4, 1 
 @word 0x0 
 @byte 0, 0, 0, 0 
 @word 0x0 
@@ -3445,7 +3445,7 @@ str_item_name344=VM 06
 @hword 344, 0 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_vm_06 
-@byte 0, 0, 4, 1 
+@byte 1, 0, 4, 1 
 @word 0x0 
 @byte 0, 0, 0, 0 
 @word 0x0 
@@ -3455,7 +3455,7 @@ str_item_name345=VM 07
 @hword 345, 0 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_vm_07 
-@byte 0, 0, 4, 1 
+@byte 1, 0, 4, 1 
 @word 0x0 
 @byte 0, 0, 0, 0 
 @word 0x0 
@@ -3465,7 +3465,7 @@ str_item_name346=VM 08
 @hword 346, 0 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_vm_08 
-@byte 0, 0, 4, 1 
+@byte 1, 0, 4, 1 
 @word 0x0 
 @byte 0, 0, 0, 0 
 @word 0x0 
@@ -3651,7 +3651,7 @@ str_item_name364=VM/TM-Box
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name365=BeerentÃ¼te 
+str_item_name365=Beerent�te 
 @hword 365, 0 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_beerentuete 
@@ -3671,7 +3671,7 @@ str_item_name366=Itemradar
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name367=MÃ¼nzkorb 
+str_item_name367=M�nzkorb 
 @hword 367, 0 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_muenzkorb 
@@ -3681,7 +3681,7 @@ str_item_name367=MÃ¼nzkorb
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name368=PokÃ©flÃ¶te 
+str_item_name368=Pok�fl�te 
 @hword 368, 0 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_pokefloete 
@@ -3731,7 +3731,7 @@ str_item_name372=Entonkanne
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name373=WÃ¼stenglas 
+str_item_name373=W�stenglas 
 @hword 373, 0 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_wuestenglas 
@@ -4661,7 +4661,7 @@ str_item_name465=Platinum-Orb
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name466=WeiÃŸ-Orb 
+str_item_name466=Wei�-Orb 
 @hword 466, 10000 
 @byte ITEM_EFFECT_LUSTROUSORB, 0 
 @word str_item_description_weiss_orb 
@@ -4781,7 +4781,7 @@ str_item_name477=Hirntafel
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name478=KÃ¤fertafel 
+str_item_name478=K�fertafel 
 @hword 478, 2000 
 @byte ITEM_EFFECT_EMPTY_EFFECT, 30 
 @word str_item_description_kaefertafel 
@@ -5371,7 +5371,7 @@ str_item_name536=B. Edelstein
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name537=Ã„. Edelstein 
+str_item_name537=�. Edelstein 
 @hword 537, 100 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_ae_edelstein 
@@ -5381,7 +5381,7 @@ str_item_name537=Ã„. Edelstein
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name538=GlÃ¼cksrauch 
+str_item_name538=Gl�cksrauch 
 @hword 538, 1500 
 @byte ITEM_EFFECT_EMPTY_EFFECT, 0 
 @word str_item_description_gluecksrauch 
@@ -5421,7 +5421,7 @@ str_item_name541=Scheuchrauch
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name542=SchrÃ¤grauch 
+str_item_name542=Schr�grauch 
 @hword 542, 1500 
 @byte ITEM_EFFECT_EMPTY_EFFECT, 0 
 @word str_item_description_schraegrauch 
@@ -5511,7 +5511,7 @@ str_item_name550=Machtreif
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name551=AtemgerÃ¤t 
+str_item_name551=Atemger�t 
 @hword 551, 0 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_atemgeraet 
@@ -5561,7 +5561,7 @@ str_item_name555=Levelball
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name556=KÃ¶derball 
+str_item_name556=K�derball 
 @hword 556, 1000 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_koederball 
@@ -5821,7 +5821,7 @@ str_item_name581=Steinknochen
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name582=AzurflÃ¶te 
+str_item_name582=Azurfl�te 
 @hword 582, 0 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_azurfloete 
@@ -5841,7 +5841,7 @@ str_item_name583=Skulptur
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name584=KosmetstÃ¼ck 
+str_item_name584=Kosmetst�ck 
 @hword 584, 8000 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_kosmetstueck 
@@ -5871,7 +5871,7 @@ str_item_name586=Duftbeutel
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name587=DÃ¼sterumhang 
+str_item_name587=D�sterumhang 
 @hword 587, 15000 
 @byte ITEM_EFFECT_EMPTY_EFFECT, 0 
 @word str_item_description_duesterumhang 
@@ -5901,7 +5901,7 @@ str_item_name589=Ovaler Stein
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name590=SahnehÃ¤ubch. 
+str_item_name590=Sahneh�ubch. 
 @hword 590, 15000 
 @byte ITEM_EFFECT_EMPTY_EFFECT, 0 
 @word str_item_description_sahnehaeubch. 
@@ -5911,7 +5911,7 @@ str_item_name590=SahnehÃ¤ubch.
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name591=SchÃ¶nespuppe 
+str_item_name591=Sch�nespuppe 
 @hword 591, 15000 
 @byte ITEM_EFFECT_EMPTY_EFFECT, 0 
 @word str_item_description_schoenespuppe 
@@ -5921,7 +5921,7 @@ str_item_name591=SchÃ¶nespuppe
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name592=SchÃ¼tzer 
+str_item_name592=Sch�tzer 
 @hword 592, 15000 
 @byte ITEM_EFFECT_EMPTY_EFFECT, 0 
 @word str_item_description_schuetzer 
@@ -5961,7 +5961,7 @@ str_item_name595=Blaue Kugel
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name596=GrÃ¼ne Kugel 
+str_item_name596=Gr�ne Kugel 
 @hword 596, 0 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_gruene_kugel 
@@ -6021,7 +6021,7 @@ str_item_name605=Geheimtrank
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name606=MeteorstÃ¼ck 
+str_item_name606=Meteorst�ck 
 @hword 606, 0 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_meteorstueck 
@@ -6041,7 +6041,7 @@ str_item_name608=Buntschwinge
 @word 0x0 
 @byte 0, 0, 0, 0
 
-str_item_name609=SilberflÃ¼gel 
+str_item_name609=Silberfl�gel 
 @hword 609, 0 
 @byte ITEM_EFFECT_NOEFFECT, 0 
 @word str_item_description_silberfluegel 

@@ -9,6 +9,7 @@
         <df name="moves">
           <in>animation_table.S</in>
           <in>effect_table.S</in>
+          <in>move_descriptions.S</in>
         </df>
         <df name="pkmn_tables">
           <in>icon_sprites.S</in>
@@ -4631,6 +4632,7 @@
           <df name="tmhm">
             <in>tm_compatability.S</in>
             <in>tm_index.S</in>
+            <in>tm_index_fix.S</in>
             <in>tm_number.S</in>
             <in>tm_save_block.S</in>
           </df>
@@ -4677,6 +4679,10 @@
         </df>
       </df>
       <df name="string">
+        <df name="de">
+          <in>move_descriptions.txt</in>
+          <in>move_names.txt</in>
+        </df>
         <df name="en">
           <in>move_strings.txt</in>
         </df>
@@ -4727,6 +4733,8 @@
       <item path="data/moves/animation_table.S" ex="false" tool="4" flavor2="0">
       </item>
       <item path="data/moves/effect_table.S" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="data/moves/move_descriptions.S" ex="false" tool="4" flavor2="0">
       </item>
       <item path="data/pkmn_tables/icon_sprites.S" ex="false" tool="4" flavor2="0">
       </item>
@@ -27256,6 +27264,8 @@
       </item>
       <item path="src/item/tmhm/tm_index.S" ex="false" tool="4" flavor2="0">
       </item>
+      <item path="src/item/tmhm/tm_index_fix.S" ex="false" tool="4" flavor2="0">
+      </item>
       <item path="src/item/tmhm/tm_number.S" ex="false" tool="4" flavor2="0">
       </item>
       <item path="src/item/tmhm/tm_save_block.S" ex="false" tool="4" flavor2="0">
@@ -27336,6 +27346,10 @@
       <item path="src/specials/custom_specials.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="src/specials/cutscene_meteor.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="string/de/move_descriptions.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="string/de/move_names.txt" ex="false" tool="3" flavor2="0">
       </item>
       <item path="string/de/move_strings.txt" ex="false" tool="3" flavor2="0">
       </item>

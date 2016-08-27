@@ -16,12 +16,14 @@
       </df>
       <df name="data">
         <df name="item">
+          <in>item_gfx.S</in>
           <in>item_scripts.S</in>
           <in>tm_hm_move_table.S</in>
         </df>
         <df name="moves">
           <in>animation_table.S</in>
           <in>effect_table.S</in>
+          <in>move_descriptions.S</in>
         </df>
         <df name="pkmn_tables">
           <in>icon_sprites.S</in>
@@ -5531,6 +5533,7 @@
           <df name="tmhm">
             <in>tm_compatability.S</in>
             <in>tm_index.S</in>
+            <in>tm_index_fix.S</in>
             <in>tm_number.S</in>
             <in>tm_save_block.S</in>
           </df>
@@ -5580,6 +5583,8 @@
       </df>
       <df name="string">
         <df name="de">
+          <in>move_descriptions.txt</in>
+          <in>move_names.txt</in>
         </df>
         <df name="en">
           <in>move_strings.txt</in>
