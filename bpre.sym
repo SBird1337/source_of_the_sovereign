@@ -71,6 +71,8 @@ superstate = 0x030030F0;
 
 fade_controller = 0x02037AB8;
 
+npc_states = 0x02036E38;
+
 weather_turns = 0x02023F48;
 battle_type_flags = 0x02022B4C;
 battle_active_bank = 0x02023BC4;
@@ -97,7 +99,7 @@ battle_stat_changer = 0x02023FDE;
 battle_menu_chosen_item = 0x02023D7C;
 battle_stuff_ptr = 0x02023FE8;
 battle_enigma_berry = 0x02023F54;
-battle_turn_random = 0x02033e80;
+battle_turn_random = 0x02023e80;
 side_affecting_halfword = 0x2023DDE;
 
 item_get_quality = 0x0809A948|1;

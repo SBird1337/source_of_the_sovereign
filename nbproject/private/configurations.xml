@@ -3824,6 +3824,8 @@
           </df>
           <df name="music">
           </df>
+          <df name="overworld">
+          </df>
           <df name="player_interaction">
           </df>
           <df name="savefile">
@@ -3847,6 +3849,9 @@
           <in>item_tables.asm</in>
           <in>items.asm</in>
           <in>tm_fixes.asm</in>
+        </df>
+        <df name="overworlds">
+          <in>overworld.asm</in>
         </df>
         <df name="pokemon_data">
           <in>altitude_table.asm</in>
@@ -3874,6 +3879,7 @@
         <in>disable_cry_table_blocks.s</in>
         <in>dynamic_overworld_hooks.asm</in>
         <in>hooks.asm</in>
+        <in>move_table.asm</in>
         <in>moves.asm</in>
         <in>music.asm</in>
         <in>special.asm</in>
@@ -5563,6 +5569,10 @@
         <df name="music">
           <in>main_mixer.S</in>
           <in>music_override.c</in>
+        </df>
+        <df name="overworld">
+          <in>overworld.c</in>
+          <in>overworld_hooks.S</in>
         </df>
         <df name="player_interaction">
           <in>jump_behavior.S</in>
