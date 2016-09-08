@@ -51,6 +51,8 @@
       <df name="gfx_build">
         <df name="icons">
         </df>
+        <df name="overworlds">
+        </df>
         <df name="sprites">
           <df name="back_sprites">
             <in>normal_0000.s</in>
@@ -3852,6 +3854,7 @@
         </df>
         <df name="overworlds">
           <in>overworld.asm</in>
+          <in>trainer.asm</in>
         </df>
         <df name="pokemon_data">
           <in>altitude_table.asm</in>
@@ -3887,6 +3890,8 @@
       </df>
       <df name="sots-private">
         <df name="assets">
+          <df name="overworld">
+          </df>
           <df name="pkmn_icons">
           </df>
           <df name="pkmn_sprites">
@@ -5573,6 +5578,7 @@
         <df name="overworld">
           <in>overworld.c</in>
           <in>overworld_hooks.S</in>
+          <in>trainer_run.S</in>
         </df>
         <df name="player_interaction">
           <in>jump_behavior.S</in>
@@ -5593,8 +5599,14 @@
       </df>
       <df name="string">
         <df name="de">
+          <in>hazards.S</in>
+          <in>item_data.S</in>
+          <in>item_descriptions.S</in>
+          <in>move_descriptions.S</in>
           <in>move_descriptions.txt</in>
+          <in>move_names.S</in>
           <in>move_names.txt</in>
+          <in>move_strings.S</in>
         </df>
         <df name="en">
           <in>move_strings.txt</in>

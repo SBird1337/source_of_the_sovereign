@@ -3775,6 +3775,7 @@
         </df>
         <df name="overworlds">
           <in>overworld.asm</in>
+          <in>trainer.asm</in>
         </df>
         <df name="pokemon_data">
           <in>altitude_table.asm</in>
@@ -4670,6 +4671,7 @@
         <df name="overworld">
           <in>overworld.c</in>
           <in>overworld_hooks.S</in>
+          <in>trainer_run.S</in>
         </df>
         <df name="player_interaction">
           <in>jump_behavior.S</in>
@@ -4727,7 +4729,7 @@
       <makefileType>
         <makeTool>
           <buildCommandWorkingDir>.</buildCommandWorkingDir>
-          <buildCommand>${MAKE} -f makefile LAN=DE -j8</buildCommand>
+          <buildCommand>${MAKE} -f makefile LAN=DE -j4</buildCommand>
           <cleanCommand>${MAKE} -f makefile clean</cleanCommand>
           <executablePath></executablePath>
         </makeTool>
@@ -23435,6 +23437,8 @@
       </item>
       <item path="patches/overworlds/overworld.asm" ex="false" tool="4" flavor2="0">
       </item>
+      <item path="patches/overworlds/trainer.asm" ex="false" tool="4" flavor2="0">
+      </item>
       <item path="patches/pokemon_data/altitude_table.asm"
             ex="false"
             tool="4"
@@ -27343,6 +27347,8 @@
       <item path="src/overworld/overworld.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="src/overworld/overworld_hooks.S" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="src/overworld/trainer_run.S" ex="false" tool="4" flavor2="0">
       </item>
       <item path="src/player_interaction/jump_behavior.S"
             ex="false"
