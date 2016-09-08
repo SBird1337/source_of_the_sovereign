@@ -1,1 +1,1 @@
-str_power_swap=\hFD\h0F tauscht Angriff und\nVerteidigung!
+﻿str_power_swap=\hFD\h0F tauscht Angriff und\nVerteidigung!

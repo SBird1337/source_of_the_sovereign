@@ -5599,14 +5599,8 @@
       </df>
       <df name="string">
         <df name="de">
-          <in>hazards.S</in>
-          <in>item_data.S</in>
-          <in>item_descriptions.S</in>
-          <in>move_descriptions.S</in>
           <in>move_descriptions.txt</in>
-          <in>move_names.S</in>
           <in>move_names.txt</in>
-          <in>move_strings.S</in>
         </df>
         <df name="en">
           <in>move_strings.txt</in>

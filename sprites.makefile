@@ -60,7 +60,7 @@ $(GFX_BUILD_DIR)/overworlds/%.o: $(GFX_BUILD_DIR)/overworlds/%.s
 
 .PRECIOUS: $(GFX_BUILD_DIR)/overworlds/%.s
 $(GFX_BUILD_DIR)/overworlds/%.s: $(ASSET_ROOT)/overworld/%.png
-	grit $< -fts -fh! -gt -gB4 -gz! -p -pzl -m! -pu16
+	grit $< -fts -fh! -gt -gB4 -gz! -p -pzl -m! -pu16 -o $@
 
 # Normal Palette Targets
 $(GFX_BUILD_DIR)/sprites/normal_pal/%.o: $(GFX_BUILD_DIR)/sprites/normal_pal/%.s
