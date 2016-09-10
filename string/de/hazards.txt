@@ -1,45 +1,9 @@
-﻿@include <item_effects.h>
-
-@string_len=14
-
-str_item_name0=Kein Item
-@hword 0, 0
-@byte ITEM_EFFECT_NOEFFECT, 0
-@word str_item_description_kein_item
-@byte 0, 0, 1, 4
-@word 0x0
-@byte 0, 0, 0, 0
-@word 0x0
-@byte 0, 0, 0, 0
-
-str_item_name1=Meisterball
-@hword 1, 0
-@byte ITEM_EFFECT_NOEFFECT, 0
-@word str_item_description_meisterball
-@byte 0, 0, 3, 0
-@word 0x0
-@byte 2, 0, 0, 0
-@word 0x80A1E1D
-@byte 0, 0, 0, 0
-
-str_item_name2=Hyperball
-@hword 2, 1200
-@byte ITEM_EFFECT_NOEFFECT, 0
-@word str_item_description_hyperball
-@byte 0, 0, 3, 1
-@word 0x0
-@byte 2, 0, 0, 0
-@word 0x80A1E1D
-@byte 1, 0, 0, 0
-
-str_item_name3=Superball
-@hword 3, 600
-@byte ITEM_EFFECT_NOEFFECT, 0
-@word str_item_description_superball
-@byte 0, 0, 3, 2
-@word 0x0
-@byte 2, 0, 0, 0
-@word 0x80A1E1D
-@byte 2, 0, 0, 0
-
-str_item_name4=Pok
+﻿str_stealth_rock=\hFD\h13 wurde von Tarnsteinen\nverletzt!
+str_got_poison=\hFD\h13 wurde vergiftet!
+str_got_bad_poison=\hFD\h13 wurde schwer vergiftet!
+str_sticky_web=\hFD\h13 wurde in einem Klebenetz\ngefangen!
+str_toxic_resolve=Giftspitzen wurden von \hFD\h13\nabsorbiert!
+str_spikes_lain=STACHELN AUSGELEGT TEXT (ENGLISCH)
+str_toxic_lain=GIFTSPITZEN AUSGELEGT TEXT (ENGLISCH)
+str_rocks_lain=TARNSTEINE AUSGELEGT TEXT (ENGLISCH)
+str_sticky_lain=KLEBENETZ AUSGELEGT TEXT (ENGLISCH)
