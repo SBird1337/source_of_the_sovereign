@@ -38,7 +38,7 @@ m_effect_table:
 	.word 0x081D6CD9 @29
 	.word 0x081D6D9D @30
 	.word script_fang_flinch @31 (FLINCH + FIRE/ICE/THUNDER FANG FANG)
-	.word 0x081D6DBD @32
+	.word bs_roost @32
 	.word 0x081D6DE0 @33
 	.word 0x081D6E69 @34
 	.word 0x081D6E74 @35
@@ -220,3 +220,5 @@ m_effect_table:
 	.word 0x081D8583 @211
 	.word 0x081D85FB @212
 	.word 0x081D865F @213
+        .word bs_bride   @214
+        //.word bs_lower_user_stat @215 lowers the stat of a user, for example hammer arm

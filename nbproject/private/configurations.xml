@@ -23,6 +23,7 @@
         <df name="moves">
           <in>animation_table.S</in>
           <in>effect_table.S</in>
+          <in>move_data.S</in>
           <in>move_descriptions.S</in>
         </df>
         <df name="pkmn_tables">
@@ -52,6 +53,237 @@
         <df name="icons">
         </df>
         <df name="overworlds">
+          <in>000_reformed.s</in>
+          <in>000_reformed_g2.s</in>
+          <in>001_reformed.s</in>
+          <in>001_reformed_g2.s</in>
+          <in>002_reformed.s</in>
+          <in>002_reformed_g2.s</in>
+          <in>003_reformed.s</in>
+          <in>003_reformed_g2.s</in>
+          <in>004_reformed.s</in>
+          <in>004_reformed_g2.s</in>
+          <in>005_reformed.s</in>
+          <in>005_reformed_g2.s</in>
+          <in>006_reformed.s</in>
+          <in>006_reformed_g2.s</in>
+          <in>007_reformed.s</in>
+          <in>007_reformed_g2.s</in>
+          <in>008_reformed.s</in>
+          <in>008_reformed_g2.s</in>
+          <in>009_reformed.s</in>
+          <in>009_reformed_g2.s</in>
+          <in>010_reformed.s</in>
+          <in>010_reformed_g2.s</in>
+          <in>011_reformed.s</in>
+          <in>011_reformed_g2.s</in>
+          <in>012_reformed.s</in>
+          <in>012_reformed_g2.s</in>
+          <in>013_reformed.s</in>
+          <in>013_reformed_g2.s</in>
+          <in>014_reformed.s</in>
+          <in>014_reformed_g2.s</in>
+          <in>015_reformed.s</in>
+          <in>015_reformed_g2.s</in>
+          <in>016_reformed.s</in>
+          <in>016_reformed_g2.s</in>
+          <in>017_reformed.s</in>
+          <in>017_reformed_g2.s</in>
+          <in>018_reformed.s</in>
+          <in>018_reformed_g2.s</in>
+          <in>019_reformed.s</in>
+          <in>019_reformed_g2.s</in>
+          <in>020_reformed.s</in>
+          <in>020_reformed_g2.s</in>
+          <in>021_reformed.s</in>
+          <in>021_reformed_g2.s</in>
+          <in>022_reformed.s</in>
+          <in>022_reformed_g2.s</in>
+          <in>023_reformed.s</in>
+          <in>023_reformed_g2.s</in>
+          <in>024_reformed.s</in>
+          <in>024_reformed_g2.s</in>
+          <in>025_reformed.s</in>
+          <in>025_reformed_g2.s</in>
+          <in>026_reformed.s</in>
+          <in>026_reformed_g2.s</in>
+          <in>027_reformed.s</in>
+          <in>027_reformed_g2.s</in>
+          <in>028_reformed.s</in>
+          <in>028_reformed_g2.s</in>
+          <in>029_reformed.s</in>
+          <in>029_reformed_g2.s</in>
+          <in>030_reformed.s</in>
+          <in>030_reformed_g2.s</in>
+          <in>031_reformed.s</in>
+          <in>031_reformed_g2.s</in>
+          <in>032_reformed.s</in>
+          <in>032_reformed_g2.s</in>
+          <in>033_reformed.s</in>
+          <in>033_reformed_g2.s</in>
+          <in>034_reformed.s</in>
+          <in>034_reformed_g2.s</in>
+          <in>035_reformed.s</in>
+          <in>035_reformed_g2.s</in>
+          <in>036_reformed.s</in>
+          <in>036_reformed_g2.s</in>
+          <in>037_reformed.s</in>
+          <in>037_reformed_g2.s</in>
+          <in>038_reformed.s</in>
+          <in>038_reformed_g2.s</in>
+          <in>039_reformed.s</in>
+          <in>039_reformed_g2.s</in>
+          <in>040_reformed.s</in>
+          <in>040_reformed_g2.s</in>
+          <in>041_reformed.s</in>
+          <in>041_reformed_g2.s</in>
+          <in>042_reformed.s</in>
+          <in>042_reformed_g2.s</in>
+          <in>043_reformed.s</in>
+          <in>043_reformed_g2.s</in>
+          <in>044_reformed.s</in>
+          <in>044_reformed_g2.s</in>
+          <in>045_reformed.s</in>
+          <in>045_reformed_g2.s</in>
+          <in>046_reformed.s</in>
+          <in>046_reformed_g2.s</in>
+          <in>047_reformed.s</in>
+          <in>047_reformed_g2.s</in>
+          <in>048_reformed.s</in>
+          <in>048_reformed_g2.s</in>
+          <in>049_reformed.s</in>
+          <in>049_reformed_g2.s</in>
+          <in>050_reformed.s</in>
+          <in>050_reformed_g2.s</in>
+          <in>051_reformed.s</in>
+          <in>051_reformed_g2.s</in>
+          <in>052_reformed.s</in>
+          <in>052_reformed_g2.s</in>
+          <in>053_reformed.s</in>
+          <in>053_reformed_g2.s</in>
+          <in>054_reformed.s</in>
+          <in>054_reformed_g2.s</in>
+          <in>055_reformed.s</in>
+          <in>055_reformed_g2.s</in>
+          <in>056_reformed.s</in>
+          <in>056_reformed_g2.s</in>
+          <in>057_reformed.s</in>
+          <in>057_reformed_g2.s</in>
+          <in>058_reformed.s</in>
+          <in>058_reformed_g2.s</in>
+          <in>059_reformed.s</in>
+          <in>059_reformed_g2.s</in>
+          <in>060_reformed.s</in>
+          <in>060_reformed_g2.s</in>
+          <in>061_reformed.s</in>
+          <in>061_reformed_g2.s</in>
+          <in>062_reformed.s</in>
+          <in>062_reformed_g2.s</in>
+          <in>063_reformed.s</in>
+          <in>063_reformed_g2.s</in>
+          <in>064_reformed.s</in>
+          <in>064_reformed_g2.s</in>
+          <in>065_reformed.s</in>
+          <in>065_reformed_g2.s</in>
+          <in>066_reformed.s</in>
+          <in>066_reformed_g2.s</in>
+          <in>067_reformed.s</in>
+          <in>067_reformed_g2.s</in>
+          <in>068_reformed.s</in>
+          <in>068_reformed_g2.s</in>
+          <in>069_reformed.s</in>
+          <in>069_reformed_g2.s</in>
+          <in>070_reformed.s</in>
+          <in>070_reformed_g2.s</in>
+          <in>071_reformed.s</in>
+          <in>071_reformed_g2.s</in>
+          <in>072_reformed.s</in>
+          <in>072_reformed_g2.s</in>
+          <in>073_reformed.s</in>
+          <in>073_reformed_g2.s</in>
+          <in>074_reformed.s</in>
+          <in>074_reformed_g2.s</in>
+          <in>075_reformed.s</in>
+          <in>075_reformed_g2.s</in>
+          <in>076_reformed.s</in>
+          <in>076_reformed_g2.s</in>
+          <in>077_reformed.s</in>
+          <in>077_reformed_g2.s</in>
+          <in>078_reformed.s</in>
+          <in>078_reformed_g2.s</in>
+          <in>079_reformed.s</in>
+          <in>079_reformed_g2.s</in>
+          <in>080_reformed.s</in>
+          <in>080_reformed_g2.s</in>
+          <in>081_reformed.s</in>
+          <in>081_reformed_g2.s</in>
+          <in>082_reformed.s</in>
+          <in>082_reformed_g2.s</in>
+          <in>083_reformed.s</in>
+          <in>083_reformed_g2.s</in>
+          <in>084_reformed.s</in>
+          <in>084_reformed_g2.s</in>
+          <in>085_reformed.s</in>
+          <in>085_reformed_g2.s</in>
+          <in>086_reformed.s</in>
+          <in>086_reformed_g2.s</in>
+          <in>087_reformed.s</in>
+          <in>087_reformed_g2.s</in>
+          <in>088_reformed.s</in>
+          <in>088_reformed_g2.s</in>
+          <in>089_reformed.s</in>
+          <in>089_reformed_g2.s</in>
+          <in>090_reformed.s</in>
+          <in>090_reformed_g2.s</in>
+          <in>091_reformed.s</in>
+          <in>091_reformed_g2.s</in>
+          <in>092_reformed.s</in>
+          <in>092_reformed_g2.s</in>
+          <in>093_reformed.s</in>
+          <in>093_reformed_g2.s</in>
+          <in>094_reformed.s</in>
+          <in>094_reformed_g2.s</in>
+          <in>095_reformed.s</in>
+          <in>095_reformed_g2.s</in>
+          <in>096_reformed.s</in>
+          <in>096_reformed_g2.s</in>
+          <in>097_reformed.s</in>
+          <in>097_reformed_g2.s</in>
+          <in>098_reformed_g2.s</in>
+          <in>099_reformed_g2.s</in>
+          <in>100_reformed.s</in>
+          <in>100_reformed_g2.s</in>
+          <in>101_reformed.s</in>
+          <in>101_reformed_g2.s</in>
+          <in>102_reformed.s</in>
+          <in>102_reformed_g2.s</in>
+          <in>103_reformed_g2.s</in>
+          <in>104_reformed_g2.s</in>
+          <in>105_reformed_g2.s</in>
+          <in>106_reformed_g2.s</in>
+          <in>107_reformed_g2.s</in>
+          <in>108_reformed_g2.s</in>
+          <in>109_reformed_g2.s</in>
+          <in>110_reformed_g2.s</in>
+          <in>111_reformed_g2.s</in>
+          <in>112_reformed_g2.s</in>
+          <in>113_reformed_g2.s</in>
+          <in>114_reformed_g2.s</in>
+          <in>115_reformed_g2.s</in>
+          <in>116_reformed_g2.s</in>
+          <in>117_reformed_g2.s</in>
+          <in>118_reformed_g2.s</in>
+          <in>119_reformed_g2.s</in>
+          <in>120_reformed_g2.s</in>
+          <in>121_reformed_g2.s</in>
+          <in>122_reformed_g2.s</in>
+          <in>123_reformed_g2.s</in>
+          <in>124_reformed_g2.s</in>
+          <in>125_reformed_g2.s</in>
+          <in>126_reformed_g2.s</in>
+          <in>127_reformed_g2.s</in>
+          <in>98_reformed.s</in>
+          <in>99_reformed.s</in>
         </df>
         <df name="sprites">
           <df name="back_sprites">
@@ -3817,11 +4049,15 @@
           <df name="moves">
             <df name="battle_engine">
             </df>
+            <df name="bride">
+            </df>
             <df name="fang_moves">
             </df>
             <df name="hazards">
             </df>
             <df name="power_trick">
+            </df>
+            <df name="roost">
             </df>
           </df>
           <df name="music">
@@ -5486,6 +5722,8 @@
             <in>test.S</in>
           </df>
           <in>battle_abilities.c</in>
+          <in>battle_end_of_turn.c</in>
+          <in>battle_end_of_turn_hook.S</in>
           <in>battle_help.c</in>
           <in>battle_initiative.c</in>
           <in>battle_switch_in_hook.S</in>
@@ -5495,7 +5733,6 @@
           <in>custom_structs_malloc_hook.S</in>
           <in>entry_hazards.c</in>
           <in>entry_hazards_hook.S</in>
-          <in>move_table.c</in>
         </df>
         <df name="debug">
           <in>debug.c</in>
@@ -5559,6 +5796,10 @@
             <in>new_move_second.S</in>
             <in>new_move_third.S</in>
           </df>
+          <df name="bride">
+            <in>bride.c</in>
+            <in>bride_scripts.S</in>
+          </df>
           <df name="fang_moves">
             <in>fang_animations.S</in>
             <in>fang_effect.S</in>
@@ -5569,6 +5810,10 @@
           <df name="power_trick">
             <in>power_trick.c</in>
             <in>power_trick_script.S</in>
+          </df>
+          <df name="roost">
+            <in>roost.c</in>
+            <in>roost_scripts.S</in>
           </df>
         </df>
         <df name="music">

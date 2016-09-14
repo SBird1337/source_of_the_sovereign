@@ -9,6 +9,7 @@
         <df name="moves">
           <in>animation_table.S</in>
           <in>effect_table.S</in>
+          <in>move_data.S</in>
           <in>move_descriptions.S</in>
         </df>
         <df name="pkmn_tables">
@@ -4602,6 +4603,8 @@
             <in>test.S</in>
           </df>
           <in>battle_abilities.c</in>
+          <in>battle_end_of_turn.c</in>
+          <in>battle_end_of_turn_hook.S</in>
           <in>battle_help.c</in>
           <in>battle_initiative.c</in>
           <in>battle_switch_in_hook.S</in>
@@ -4610,7 +4613,6 @@
           <in>custom_structs_malloc_hook.S</in>
           <in>entry_hazards.c</in>
           <in>entry_hazards_hook.S</in>
-          <in>move_table.c</in>
         </df>
         <df name="debug">
           <in>debug.c</in>
@@ -4652,6 +4654,10 @@
             <in>new_move_second.S</in>
             <in>new_move_third.S</in>
           </df>
+          <df name="bride">
+            <in>bride.c</in>
+            <in>bride_scripts.S</in>
+          </df>
           <df name="fang_moves">
             <in>fang_animations.S</in>
             <in>fang_effect.S</in>
@@ -4662,6 +4668,10 @@
           <df name="power_trick">
             <in>power_trick.c</in>
             <in>power_trick_script.S</in>
+          </df>
+          <df name="roost">
+            <in>roost.c</in>
+            <in>roost_scripts.S</in>
           </df>
         </df>
         <df name="music">
@@ -4743,6 +4753,8 @@
       <item path="data/moves/animation_table.S" ex="false" tool="4" flavor2="0">
       </item>
       <item path="data/moves/effect_table.S" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="data/moves/move_data.S" ex="false" tool="4" flavor2="0">
       </item>
       <item path="data/moves/move_descriptions.S" ex="false" tool="4" flavor2="0">
       </item>
@@ -27207,6 +27219,16 @@
             tool="0"
             flavor2="0">
       </item>
+      <item path="src/battle_engine/battle_end_of_turn.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/battle_engine/battle_end_of_turn_hook.S"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
       <item path="src/battle_engine/battle_help.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="src/battle_engine/battle_initiative.c"
@@ -27237,8 +27259,6 @@
             ex="false"
             tool="4"
             flavor2="0">
-      </item>
-      <item path="src/battle_engine/move_table.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="src/battle_engine/scripts/hazards.S"
             ex="false"
@@ -27318,6 +27338,10 @@
             tool="4"
             flavor2="0">
       </item>
+      <item path="src/moves/bride/bride.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/moves/bride/bride_scripts.S" ex="false" tool="4" flavor2="0">
+      </item>
       <item path="src/moves/fang_moves/fang_animations.S"
             ex="false"
             tool="4"
@@ -27339,6 +27363,10 @@
             ex="false"
             tool="4"
             flavor2="0">
+      </item>
+      <item path="src/moves/roost/roost.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/moves/roost/roost_scripts.S" ex="false" tool="4" flavor2="0">
       </item>
       <item path="src/music/main_mixer.S" ex="false" tool="4" flavor2="0">
       </item>

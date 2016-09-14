@@ -12,3 +12,9 @@ bx r4
 ldr r3, =get_first_to_strike|1
 bx r3
 .pool
+
+.org 0x08013BBC
+.word battle_end_of_turn_hook+1
+
+.org 0x08018254
+.word battle_end_of_turn_hook+1

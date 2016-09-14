@@ -2,13 +2,16 @@
 .thumb
 .open "base/bpre0.gba","build/pkmn_sots.gba",0x08000000
 
-.include "patches/split_physical_special.asm"
+//exclude for now
+//.include "patches/split_physical_special.asm"
 .include "patches/hooks.asm"
 .include "patches/dynamic_overworld_hooks.asm"
 .include "patches/special.asm"
 .include "patches/moves.asm"
 .include "patches/music.asm"
 .include "patches/items/items.asm"
+
+.include "patches/move_table.asm"
 
 .include "patches/pokemon_data/pokemon_footprints.asm"
 .include "patches/pokemon_data/altitude_table.asm"
