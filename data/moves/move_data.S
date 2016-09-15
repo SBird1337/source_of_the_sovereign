@@ -381,12 +381,12 @@ move_data_beerenkraefte:	.byte	MOVE_EFFECT_NONE,	1,		0,		100,		15,		0,		0,		0,		
 move_data_offenlegung:		.byte	216,            	30,		0,		100,		10,		0,		0,		2,		0,		0,		0,		0
 @TODO PFLUECKER
 move_data_pfluecker:		.byte	MOVE_EFFECT_NONE,	60,		2,		100,		20,		0,		0,		0,		51,		0,		0,		0
-move_data_rueckenwind:		.byte	215,	0,		2,		0,		15,		0,		16,		0,		4,		0,		2,		0
+move_data_rueckenwind:		.byte	215,                    0,		2,		0,		15,		0,		16,		0,		4,		0,		2,		0
 @TODO AKUPRESSUR
 move_data_akupressur:		.byte	214,			0,		0,		0,		30,		0,		16,		0,		4,		0,		2,		0
-move_data_metallstoss:		.byte	89,	1,		8,		100,		10,		0,		1,		0,		0,		0,		0,		0
+move_data_metallstoss:		.byte	89,                     1,		8,		100,		10,		0,		1,		0,		0,		0,		0,		0
 @TODO KEHRTWENDE
-move_data_kehrtwende:		.byte	MOVE_EFFECT_NONE,	70,		6,		100,		20,		0,		0,		0,		51,		0,		0,		0
+move_data_kehrtwende:		.byte	127,            	70,		6,		100,		20,		0,		0,		0,		51,		0,		0,		0
 move_data_nahkampf:		.byte	MOVE_EFFECT_NONE,	120,		1,		100,		5,		100,		0,		0,		51,		0,		0,		0
 move_data_gegenstoss:		.byte	MOVE_EFFECT_NONE,	50,		17,		100,		10,		0,		0,		0,		51,		0,		0,		0
 move_data_gewissheit:		.byte	215,			60,		17,		100,		10,		0,		0,		0,		51,		0,		0,		0

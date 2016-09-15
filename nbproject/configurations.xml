@@ -4685,6 +4685,9 @@
             <in>tailwind.c</in>
             <in>tailwind_scripts.S</in>
           </df>
+          <df name="uturn">
+            <in>u_turn_script.S</in>
+          </df>
         </df>
         <df name="music">
           <in>main_mixer.S</in>
@@ -27400,6 +27403,8 @@
             ex="false"
             tool="4"
             flavor2="0">
+      </item>
+      <item path="src/moves/uturn/u_turn_script.S" ex="false" tool="4" flavor2="0">
       </item>
       <item path="src/music/main_mixer.S" ex="false" tool="4" flavor2="0">
       </item>

@@ -133,7 +133,7 @@ m_effect_table:
 	.word 0x081D796E @124
 	.word 0x081D7977 @125
 	.word 0x081D7982 @126
-	.word 0x081D7995 @127
+	.word bs_uturn_btpass @127 (uturn, volt switch, baton pass)
 	.word 0x081D6900 @128
 	.word 0x081D79C2 @129
 	.word 0x081D79CD @130

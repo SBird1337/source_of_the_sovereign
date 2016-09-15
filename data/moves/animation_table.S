@@ -372,8 +372,8 @@ m_animation_table:
 .word 0x081C6F34 @365
 .word 0x081C6F34 @366
 .word 0x081C6F34 @367
-.word 0x081C6F34 @368
-.word 0x081C6F34 @369
+.word as_metal_burst @368
+.word as_uturn @369
 .word 0x081C6F34 @370
 .word 0x081C6F34 @371
 .word 0x081C6F34 @372

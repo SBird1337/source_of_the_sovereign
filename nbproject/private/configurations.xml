@@ -4065,6 +4065,8 @@
             </df>
             <df name="tailwind">
             </df>
+            <df name="uturn">
+            </df>
           </df>
           <df name="music">
           </df>
@@ -5833,6 +5835,9 @@
           <df name="tailwind">
             <in>tailwind.c</in>
             <in>tailwind_scripts.S</in>
+          </df>
+          <df name="uturn">
+            <in>u_turn_script.S</in>
           </df>
         </df>
         <df name="music">
