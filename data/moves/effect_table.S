@@ -95,7 +95,7 @@ m_effect_table:
 	.word 0x081D73E7 @86
 	.word 0x081D7403 @87
 	.word 0x081D741B @88
-	.word 0x081D7433 @89
+	.word bs_metal_burst_counter @89 COUNTER and METAL_BURST in one script for AI purposes
 	.word 0x081D7449 @90
 	.word 0x081D7465 @91
 	.word 0x081D749C @92
@@ -221,4 +221,6 @@ m_effect_table:
 	.word 0x081D85FB @212
 	.word 0x081D865F @213
         .word bs_bride   @214
-        //.word bs_lower_user_stat @215 lowers the stat of a user, for example hammer arm
+        .word bs_tailwind@215
+        .word bs_feint   @216
+        //.word bs_lower_user_stat @217 lowers the stat of a user, for example hammer arm

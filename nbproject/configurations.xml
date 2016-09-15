@@ -4662,8 +4662,16 @@
             <in>fang_animations.S</in>
             <in>fang_effect.S</in>
           </df>
+          <df name="feint">
+            <in>feint.c</in>
+            <in>feint_scripts.S</in>
+          </df>
           <df name="hazards">
             <in>hazards_scripts.S</in>
+          </df>
+          <df name="metal_burst">
+            <in>metal_burst.c</in>
+            <in>metal_burst_script.S</in>
           </df>
           <df name="power_trick">
             <in>power_trick.c</in>
@@ -4672,6 +4680,10 @@
           <df name="roost">
             <in>roost.c</in>
             <in>roost_scripts.S</in>
+          </df>
+          <df name="tailwind">
+            <in>tailwind.c</in>
+            <in>tailwind_scripts.S</in>
           </df>
         </df>
         <df name="music">
@@ -27349,7 +27361,21 @@
       </item>
       <item path="src/moves/fang_moves/fang_effect.S" ex="false" tool="4" flavor2="0">
       </item>
+      <item path="src/moves/feint/feint.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/moves/feint/feint_scripts.S" ex="false" tool="4" flavor2="0">
+      </item>
       <item path="src/moves/hazards/hazards_scripts.S"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/moves/metal_burst/metal_burst.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/moves/metal_burst/metal_burst_script.S"
             ex="false"
             tool="4"
             flavor2="0">
@@ -27367,6 +27393,13 @@
       <item path="src/moves/roost/roost.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="src/moves/roost/roost_scripts.S" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="src/moves/tailwind/tailwind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/moves/tailwind/tailwind_scripts.S"
+            ex="false"
+            tool="4"
+            flavor2="0">
       </item>
       <item path="src/music/main_mixer.S" ex="false" tool="4" flavor2="0">
       </item>

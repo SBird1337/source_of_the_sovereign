@@ -4053,11 +4053,17 @@
             </df>
             <df name="fang_moves">
             </df>
+            <df name="feint">
+            </df>
             <df name="hazards">
+            </df>
+            <df name="metal_burst">
             </df>
             <df name="power_trick">
             </df>
             <df name="roost">
+            </df>
+            <df name="tailwind">
             </df>
           </df>
           <df name="music">
@@ -5278,6 +5284,7 @@
               <in>SEQ_BGM_CITY_03.s</in>
               <in>SEQ_BGM_CITY_04.s</in>
               <in>SEQ_BGM_CITY_05.s</in>
+              <in>SEQ_BGM_CITY_06.s</in>
               <in>SEQ_BGM_DEMO_AMER.s</in>
               <in>SEQ_BGM_DEMO_R.s</in>
               <in>SEQ_BGM_DEMO_RL.s</in>
@@ -5804,8 +5811,16 @@
             <in>fang_animations.S</in>
             <in>fang_effect.S</in>
           </df>
+          <df name="feint">
+            <in>feint.c</in>
+            <in>feint_scripts.S</in>
+          </df>
           <df name="hazards">
             <in>hazards_scripts.S</in>
+          </df>
+          <df name="metal_burst">
+            <in>metal_burst.c</in>
+            <in>metal_burst_script.S</in>
           </df>
           <df name="power_trick">
             <in>power_trick.c</in>
@@ -5814,6 +5829,10 @@
           <df name="roost">
             <in>roost.c</in>
             <in>roost_scripts.S</in>
+          </df>
+          <df name="tailwind">
+            <in>tailwind.c</in>
+            <in>tailwind_scripts.S</in>
           </df>
         </df>
         <df name="music">

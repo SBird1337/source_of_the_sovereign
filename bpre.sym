@@ -101,6 +101,7 @@ battle_stuff_ptr = 0x02023FE8;
 battle_enigma_berry = 0x02023F54;
 battle_turn_random = 0x02023e80;
 battle_damage_multiplier = 0x02023FD2;
+battle_protect = 0x02023E8C;
 side_affecting_halfword = 0x2023DDE;
 
 item_get_quality = 0x0809A948|1;

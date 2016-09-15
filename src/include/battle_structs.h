@@ -31,6 +31,38 @@ union main_status{
     struct status_main flags;
 };
 
+struct protect_struct{
+    u8 flag0_protect : 1;
+    u8 flag0_endure : 1;
+    u8 flag0_onlystruggle : 1;
+    u8 flag0_helpinghand : 1;
+    u8 flag0_bouncemove : 1;
+    u8 flag0_stealmove : 1;
+    u8 flag0_unknown: 1;
+    u8 flag0_prlz_immobility: 1;
+    u8 flag1_confusion_self_damage: 1;
+    u8 flag1_noteffective: 1;
+    u8 flag1_chargingturn: 1; //dive, dig etc.
+    u8 flag1_smokeballflee: 1;
+    u8 flag1_runaway_flee: 1;
+    u8 flag1_used_imprisoned_move: 1;
+    u8 flag1_love_immobility: 1;
+    u8 flag1_used_disabled_move: 1;
+    u8 flag2_used_taunted_move: 1;
+    u8 flag2_unknown: 1;
+    u8 flag2_flinch_immobility : 1;
+    u8 flag2_notfirststrike : 1;
+    u8 flag2_free: 4;
+    u8 field3;
+    u32 physical_damage;
+    u32 special_damage;
+    u8 counter_target;
+    u8 mirrorcoat_target;
+    u16 fieldE;
+};
+
+extern struct protect_struct battle_protect[4];
+
 #define STATUS_SLEEP 0x7
 #define STATUS_POISON 0x8
 #define STATUS_BURN 0x10

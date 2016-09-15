@@ -40,7 +40,7 @@ move_data_kopfnuss:		.byte	31,			70,		0,		100,		15,		30,		0,		0,		51,		0,		0,		0
 move_data_hornattacke:		.byte	0,			65,		0,		100,		25,		0,		0,		0,		51,		0,		0,		0
 move_data_furienschlag:		.byte	29,			15,		0,		85,		20,		0,		0,		0,		51,		0,		0,		0
 move_data_hornbohrer:		.byte	38,			1,		0,		30,		5,		0,		0,		0,		19,		0,		0,		0
-move_data_tackle:		.byte	214,			40,		0,		100,		35,		0,		0,		0,		51,		0,		0,		0
+move_data_tackle:		.byte	0,			40,		0,		100,		35,		0,		0,		0,		51,		0,		0,		0
 move_data_bodyslam:		.byte	6,			85,		0,		100,		15,		30,		0,		0,		19,		0,		0,		0
 move_data_wickel:		.byte	42,			15,		0,		90,		20,		100,		0,		0,		51,		0,		0,		0
 move_data_bodycheck:		.byte	48,			90,		0,		85,		20,		0,		0,		0,		51,		0,		0,		0
@@ -376,12 +376,16 @@ move_data_gyroball:		.byte	MOVE_EFFECT_NONE,	25,		8,		100,		5,		0,		0,		0,		51,	
 @TODO HEILOPFER
 move_data_heilopfer:		.byte	MOVE_EFFECT_NONE,	0,		14,		0,		10,		0,		16,		0,		0,		0,		2,		0
 move_data_lake:                 .byte	214,			65,		11,		100,		10,		0,		0,		0,		50,		0,		1,		0
+@TODO BEERENKRAEFTE
 move_data_beerenkraefte:	.byte	MOVE_EFFECT_NONE,	1,		0,		100,		15,		0,		0,		0,		18,		0,		0,		0
-move_data_offenlegung:		.byte	MOVE_EFFECT_NONE,	30,		0,		100,		10,		0,		0,		2,		0,		0,		0,		0
+move_data_offenlegung:		.byte	216,            	30,		0,		100,		10,		0,		0,		2,		0,		0,		0,		0
+@TODO PFLUECKER
 move_data_pfluecker:		.byte	MOVE_EFFECT_NONE,	60,		2,		100,		20,		0,		0,		0,		51,		0,		0,		0
-move_data_rueckenwind:		.byte	MOVE_EFFECT_NONE,	0,		2,		0,		15,		0,		16,		0,		4,		0,		2,		0
+move_data_rueckenwind:		.byte	215,	0,		2,		0,		15,		0,		16,		0,		4,		0,		2,		0
+@TODO AKUPRESSUR
 move_data_akupressur:		.byte	214,			0,		0,		0,		30,		0,		16,		0,		4,		0,		2,		0
-move_data_metallstoss:		.byte	MOVE_EFFECT_NONE,	1,		8,		100,		10,		0,		1,		0,		0,		0,		0,		0
+move_data_metallstoss:		.byte	89,	1,		8,		100,		10,		0,		1,		0,		0,		0,		0,		0
+@TODO KEHRTWENDE
 move_data_kehrtwende:		.byte	MOVE_EFFECT_NONE,	70,		6,		100,		20,		0,		0,		0,		51,		0,		0,		0
 move_data_nahkampf:		.byte	MOVE_EFFECT_NONE,	120,		1,		100,		5,		100,		0,		0,		51,		0,		0,		0
 move_data_gegenstoss:		.byte	MOVE_EFFECT_NONE,	50,		17,		100,		10,		0,		0,		0,		51,		0,		0,		0

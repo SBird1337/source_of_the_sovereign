@@ -1,0 +1,2 @@
+﻿str_shield_break_normal=Schilde gebrochen und so.
+str_shield_break_feint=Offenlegung und so.

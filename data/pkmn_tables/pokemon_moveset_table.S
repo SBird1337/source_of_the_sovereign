@@ -1218,7 +1218,7 @@ moveset_bisasam:
 .byte 0x1 
 .hword 0x2D 
 .byte 0x3 
-.hword MOVE_ROOST 
+.hword MOVE_FEINT 
 .byte 0x7 
 .hword 0x16 
 .byte 0x9 
@@ -1764,12 +1764,15 @@ moveset_tauboss:
 
 .align 2
 moveset_rattfratz: 
-.hword 0x27 
-.byte 0x1 
-.hword 0x21 
-.byte 0x1 
-.hword 0x62 
-.byte 0x4 
+
+.hword MOVE_METAL_BURST
+.byte 1
+//.hword 0x27 
+//.byte 0x1 
+//.hword 0x21 
+//.byte 0x1 
+//.hword 0x62 
+//.byte 0x4 
 .hword 0x74 
 .byte 0x7 
 .hword 0x2C 
