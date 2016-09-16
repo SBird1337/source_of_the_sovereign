@@ -223,4 +223,4 @@ m_effect_table:
         .word bs_bride   @214
         .word bs_tailwind@215
         .word bs_feint   @216
-        //.word bs_lower_user_stat @217 lowers the stat of a user, for example hammer arm
+        .word bs_close_combat @217

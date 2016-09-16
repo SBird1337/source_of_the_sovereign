@@ -1218,7 +1218,7 @@ moveset_bisasam:
 .byte 0x1 
 .hword 0x2D 
 .byte 0x3 
-.hword MOVE_UTURN 
+.hword MOVE_CLOSE_COMBAT 
 .byte 0x7 
 .hword 0x16 
 .byte 0x9 
