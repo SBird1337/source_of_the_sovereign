@@ -224,3 +224,5 @@ m_effect_table:
         .word bs_tailwind@215
         .word bs_feint   @216
         .word bs_close_combat @217
+        .word bs_pay_back@218
+        .word bs_assurance@219

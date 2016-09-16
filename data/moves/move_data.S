@@ -383,13 +383,13 @@ move_data_offenlegung:		.byte	216,            	30,		0,		100,		10,		0,		0,		2,		0
 move_data_pfluecker:		.byte	MOVE_EFFECT_NONE,	60,		2,		100,		20,		0,		0,		0,		51,		0,		0,		0
 move_data_rueckenwind:		.byte	215,                    0,		2,		0,		15,		0,		16,		0,		4,		0,		2,		0
 @TODO AKUPRESSUR
-move_data_akupressur:		.byte	214,			0,		0,		0,		30,		0,		16,		0,		4,		0,		2,		0
+move_data_akupressur:		.byte	MOVE_EFFECT_NONE,			0,		0,		0,		30,		0,		16,		0,		4,		0,		2,		0
 move_data_metallstoss:		.byte	89,                     1,		8,		100,		10,		0,		1,		0,		0,		0,		0,		0
 move_data_kehrtwende:		.byte	127,            	70,		6,		100,		20,		0,		0,		0,		51,		0,		0,		0
 
 move_data_nahkampf:		.byte	217,            	120,		1,		100,		5,		100,		0,		0,		51,		0,		0,		0
-move_data_gegenstoss:		.byte	MOVE_EFFECT_NONE,	50,		17,		100,		10,		0,		0,		0,		51,		0,		0,		0
-move_data_gewissheit:		.byte	215,			60,		17,		100,		10,		0,		0,		0,		51,		0,		0,		0
+move_data_gegenstoss:		.byte	218,            	50,		17,		100,		10,		0,		0,		0,		51,		0,		0,		0
+move_data_gewissheit:		.byte	219,			60,		17,		100,		10,		0,		0,		0,		51,		0,		0,		0
 move_data_itemsperre:		.byte	MOVE_EFFECT_NONE,	0,		17,		100,		15,		0,		0,		0,		26,		0,		2,		0
 move_data_schleuder:		.byte	MOVE_EFFECT_NONE,	1,		17,		100,		10,		0,		0,		0,		18,		0,		0,		0
 move_data_psybann:		.byte	MOVE_EFFECT_NONE,	0,		14,		100,		10,		0,		0,		0,		18,		0,		2,		0
@@ -439,9 +439,9 @@ move_data_patronenhieb:		.byte	0,			40,		8,		100,		30,		0,		0,		1,		51,		0,		0,	
 move_data_lawine:		.byte	185,			60,		15,		100,		10,		0,		8,		252,		51,		0,		0,		0
 move_data_eissplitter:		.byte	0,			40,		15,		100,		30,		0,		0,		1,		50,		0,		0,		0
 move_data_dunkelklaue:		.byte	43,			70,		7,		100,		15,		0,		0,		0,		51,		0,		0,		0
-move_data_donnerzahn:		.byte	MOVE_EFFECT_NONE,	65,		13,		95,		15,		0,		0,		0,		51,		0,		0,		0
-move_data_eiszahn:		.byte	MOVE_EFFECT_NONE,	65,		15,		95,		15,		0,		0,		0,		51,		0,		0,		0
-move_data_feuerzahn:		.byte	MOVE_EFFECT_NONE,	65,		10,		95,		15,		0,		0,		0,		51,		0,		0,		0
+move_data_donnerzahn:		.byte	31,             	65,		13,		95,		15,		0,		0,		0,		51,		0,		0,		0
+move_data_eiszahn:		.byte	31,             	65,		15,		95,		15,		0,		0,		0,		51,		0,		0,		0
+move_data_feuerzahn:		.byte	31,                     65,		10,		95,		15,		0,		0,		0,		51,		0,		0,		0
 move_data_schattenstoss:	.byte	MOVE_EFFECT_NONE,	40,		7,		100,		30,		0,		0,		0,		51,		0,		0,		0
 move_data_schlammbombe:		.byte	73,			65,		4,		85,		10,		30,		0,		0,		50,		0,		1,		0
 move_data_psychoklinge:		.byte	43,			70,		14,		100,		20,		0,		0,		0,		51,		0,		0,		0

@@ -4047,6 +4047,8 @@
             </df>
           </df>
           <df name="moves">
+            <df name="assurance">
+            </df>
             <df name="battle_engine">
             </df>
             <df name="bride">
@@ -4060,6 +4062,8 @@
             <df name="hazards">
             </df>
             <df name="metal_burst">
+            </df>
+            <df name="pay_back">
             </df>
             <df name="power_trick">
             </df>
@@ -5798,6 +5802,10 @@
           </df>
         </df>
         <df name="moves">
+          <df name="assurance">
+            <in>assurance.c</in>
+            <in>assurance_script.S</in>
+          </df>
           <df name="battle_engine">
             <in>bs_table.S</in>
             <in>cmd_callasm.S</in>
@@ -5829,6 +5837,10 @@
           <df name="metal_burst">
             <in>metal_burst.c</in>
             <in>metal_burst_script.S</in>
+          </df>
+          <df name="pay_back">
+            <in>pay_back.c</in>
+            <in>pay_back_script.S</in>
           </df>
           <df name="power_trick">
             <in>power_trick.c</in>
