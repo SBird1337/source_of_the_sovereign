@@ -82,6 +82,7 @@ battle_participants	= 0x02023BE4;
 battle_data_ability = 0x02023C04;
 battle_data_current_hp = 0x02023C0C;
 battle_executed_move = 0x02023D4A;
+battle_last_used_ability = 0x02023D6A;
 battle_attacker_bank = 0x02023D6B;
 battle_defender_bank = 0x02023D6C;
 battle_attacker_p_bank = 0x02023D6D;

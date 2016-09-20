@@ -626,7 +626,7 @@ moveset_table:
 .word moveset_karippas
 .word moveset_flapteryx
 .word moveset_aeropteryx
-.word moveset_unrat¸tox
+.word moveset_unrat√ºtox
 .word moveset_deponitox
 .word moveset_zorua
 .word moveset_zoroark
@@ -689,7 +689,7 @@ moveset_table:
 .word moveset_washakwil
 .word moveset_skallyk
 .word moveset_grypheldis
-.word moveset_furnifraﬂ
+.word moveset_furnifra√ü
 .word moveset_fermicula
 .word moveset_kapuno
 .word moveset_duodino
@@ -727,10 +727,10 @@ moveset_table:
 .word moveset_vivillon
 .word moveset_leufeo
 .word moveset_pyroleo
-.word moveset_flabÈbÈ
+.word moveset_flab√©b√©
 .word moveset_floette
 .word moveset_florges
-.word moveset_m‰hikel
+.word moveset_m√§hikel
 .word moveset_chevrumm
 .word moveset_pam_pam
 .word moveset_pandagro
@@ -1054,16 +1054,16 @@ moveset_table:
 .word moveset_barschuft
 .word moveset_schalellos
 .word moveset_gastrodon
-.word moveset_flabÈbÈ
+.word moveset_flab√©b√©
 .word moveset_floette
 .word moveset_florges
-.word moveset_flabÈbÈ
+.word moveset_flab√©b√©
 .word moveset_floette
 .word moveset_florges
-.word moveset_flabÈbÈ
+.word moveset_flab√©b√©
 .word moveset_floette
 .word moveset_florges
-.word moveset_flabÈbÈ
+.word moveset_flab√©b√©
 .word moveset_floette
 .word moveset_florges
 .word moveset_zygarde
@@ -1218,9 +1218,9 @@ moveset_bisasam:
 .byte 0x1 
 .hword MOVE_HOWL 
 .byte 0x3 
-.hword MOVE_PUNISHMENT
+.hword MOVE_WORRY_SEED
 .byte 0x7 
-.hword MOVE_GUARD_SWAP
+.hword MOVE_HYPNOSIS
 .byte 0x7
 .hword 0x4D 
 .byte 0xD 
@@ -21651,7 +21651,7 @@ moveset_aeropteryx:
 .byte 0xFF, 0x0
 
 .align 2
-moveset_unrat¸tox: 
+moveset_unrat√ºtox: 
 .hword 0x8B 
 .byte 0x1 
 .hword 0x1 
@@ -24112,7 +24112,7 @@ moveset_grypheldis:
 .byte 0xFF, 0x0
 
 .align 2
-moveset_furnifraﬂ: 
+moveset_furnifra√ü: 
 .hword 0x1FE 
 .byte 0x1 
 .hword 0x205 
@@ -25556,7 +25556,7 @@ moveset_pyroleo:
 .byte 0xFF, 0x0
 
 .align 2
-moveset_flabÈbÈ: 
+moveset_flab√©b√©: 
 .hword 0x21 
 .byte 0x1 
 .hword 0x16 
@@ -25651,7 +25651,7 @@ moveset_florges:
 .byte 0xFF, 0x0
 
 .align 2
-moveset_m‰hikel: 
+moveset_m√§hikel: 
 .hword 0x21 
 .byte 0x1 
 .hword 0x4A 

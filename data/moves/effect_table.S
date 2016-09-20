@@ -232,3 +232,4 @@ m_effect_table:
         .word bs_gastro_acid        @223
         .word bs_swap_moves         @224
         .word bs_punishment         @225
+        .word bs_change_ability     @226

@@ -398,15 +398,17 @@ move_data_auswringen:		.byte	220,			1,		0,		100,		5,		0,		0,		0,		51,		0,		1,		0
 move_data_krafttrick:		.byte	221,            	0,		14,		0,		10,		0,		0,		0,		4,		0,		2,		0
 move_data_magensaefte:		.byte	223,            	0,		3,		100,		10,		0,		0,		0,		50,		0,		2,		0
 move_data_beschwoerung:		.byte	222,            	0,		0,		0,		30,		0,		16,		0,		4,		0,		2,		0
+@TODO EGOTRIP
 move_data_egotrip:		.byte	MOVE_EFFECT_NONE,	0,		0,		0,		20,		0,		0,		0,		2,		0,		2,		0
 move_data_imitator:		.byte	9,			0,		0,		0,		20,		0,		1,		0,		0,		0,		2,		0
 move_data_krafttausch:		.byte	224,            	0,		14,		0,		10,		0,		16,		0,		2,		0,		2,		0
 move_data_schutztausch:		.byte	224,                	0,		14,		0,		10,		0,		0,		0,		2,		0,		2,		0
 move_data_strafattacke:		.byte	225,            	1,		17,		100,		5,		0,		0,		0,		51,		0,		0,		0
+@TODO LAST RESORT
 move_data_zuflucht:		.byte	MOVE_EFFECT_NONE,	140,		0,		100,		5,		0,		0,		0,		51,		0,		0,		0
-move_data_sorgensamen:		.byte	MOVE_EFFECT_NONE,	0,		12,		100,		10,		0,		0,		0,		26,		0,		2,		0
+move_data_sorgensamen:		.byte	226,            	0,		12,		100,		10,		0,		0,		0,		26,		0,		2,		0
 move_data_tiefschlag:		.byte	MOVE_EFFECT_NONE,	80,		17,		100,		5,		0,		0,		1,		51,		0,		0,		0
-move_data_giftspitzen:		.byte	MOVE_EFFECT_NONE,	0,		3,		0,		20,		0,		64,		0,		0,		0,		2,		0
+move_data_giftspitzen:		.byte	112,            	0,		3,		0,		20,		0,		64,		0,		0,		0,		2,		0
 move_data_statustausch:		.byte	224,            	0,		14,		0,		10,		0,		0,		0,		2,		0,		2,		0
 move_data_wasserring:		.byte	181,			0,		11,		0,		20,		0,		16,		0,		4,		0,		2,		0
 move_data_magnetflug:		.byte	MOVE_EFFECT_NONE,	0,		13,		0,		10,		0,		16,		0,		0,		0,		2,		0

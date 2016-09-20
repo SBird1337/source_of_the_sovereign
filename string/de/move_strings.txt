@@ -7,3 +7,4 @@ str_gastro_acid=Die Fähigkeit von \hFD\h10\nwurde unterdrückt!
 str_power_swap=\hFD\h0F tauscht seinen Angriff\nund Spezialangriff mit dem Ziel!
 str_guard_swap=\hFD\h0F tauscht seine Verteidigung\nund Spezialverteidigung mit dem Ziel!
 str_heart_swap=\hFD\h0F tauscht seine Statusveränderungen\nmit den Ziel!
+str_worry_seed=\hFD\h10 nimmt die Fähigkeit\nInsomnia an!

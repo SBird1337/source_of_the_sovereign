@@ -4047,6 +4047,8 @@
             </df>
           </df>
           <df name="moves">
+            <df name="ability_changers">
+            </df>
             <df name="assurance">
             </df>
             <df name="battle_engine">
@@ -5812,6 +5814,10 @@
           </df>
         </df>
         <df name="moves">
+          <df name="ability_changers">
+            <in>ability_change_script.S</in>
+            <in>worry_seed.c</in>
+          </df>
           <df name="assurance">
             <in>assurance.c</in>
             <in>assurance_script.S</in>

@@ -4645,6 +4645,10 @@
           </df>
         </df>
         <df name="moves">
+          <df name="ability_changers">
+            <in>ability_change_script.S</in>
+            <in>worry_seed.c</in>
+          </df>
           <df name="assurance">
             <in>assurance.c</in>
             <in>assurance_script.S</in>
@@ -27352,6 +27356,16 @@
       <item path="src/item/tmhm/tm_number.S" ex="false" tool="4" flavor2="0">
       </item>
       <item path="src/item/tmhm/tm_save_block.S" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="src/moves/ability_changers/ability_change_script.S"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/moves/ability_changers/worry_seed.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
       </item>
       <item path="src/moves/assurance/assurance.c" ex="false" tool="0" flavor2="0">
       </item>
