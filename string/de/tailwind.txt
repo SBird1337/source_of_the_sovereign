@@ -1,1 +1,0 @@
-﻿str_tailwind=Die Pokémon, die auf deiner Seite\nkämpfen, erhalten Rückenwind!

@@ -91,6 +91,7 @@ battle_weather = 0x02023F1C;
 battle_damage_store = 0x02023D50;
 battle_base_power = 0x02023F50;
 battle_string_message_table = 0x083FDF3C;
+battle_string_chooser = 0x0203C020;
 battle_crit_loc = 0x02023D71;
 battle_side_unknown = 0x02023FDB;
 battle_side_timers = 0x02023DE4;

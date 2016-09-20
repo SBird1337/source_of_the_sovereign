@@ -3,6 +3,7 @@
 
 u8 battle_active_bank;
 u8 battle_stat_changer;
+void* battle_string_chooser;
 u16 battle_executed_move;
 u8 battle_attacker_bank;
 u8 battle_defender_bank;

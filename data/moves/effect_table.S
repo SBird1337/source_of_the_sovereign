@@ -222,9 +222,13 @@ m_effect_table:
 	.word 0x081D865F @213
         .word bs_bride   @214
         .word bs_tailwind@215
-        .word bs_feint   @216
-        .word bs_close_combat @217
-        .word bs_pay_back@218
-        .word bs_assurance@219
+        .word bs_feint              @216
+        .word bs_close_combat       @217
+        .word bs_pay_back           @218
+        .word bs_assurance          @219
         .word bs_crush_grip_like    @220
-        .word bs_power_trick    @221
+        .word bs_power_trick        @221
+        .word bs_lucky_chant        @222
+        .word bs_gastro_acid        @223
+        .word bs_swap_moves         @224
+        .word bs_punishment         @225

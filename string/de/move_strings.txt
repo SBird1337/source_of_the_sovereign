@@ -1,1 +1,9 @@
-﻿str_power_swap=\hFD\h0F tauscht Angriff und\nVerteidigung!
+﻿str_power_trick=\hFD\h0F tauscht Angriff und\nVerteidigung!
+str_lucky_chant=Beschwörung schützt dein Team\nvor kritischen Treffern!
+str_shield_break_normal=Schilde gebrochen und so.
+str_shield_break_feint=Offenlegung und so.
+str_tailwind=Die Pokémon, die auf deiner Seite\nkämpfen, erhalten Rückenwind!
+str_gastro_acid=Die Fähigkeit von \hFD\h10\nwurde unterdrückt!
+str_power_swap=\hFD\h0F tauscht seinen Angriff\nund Spezialangriff mit dem Ziel!
+str_guard_swap=\hFD\h0F tauscht seine Verteidigung\nund Spezialverteidigung mit dem Ziel!
+str_heart_swap=\hFD\h0F tauscht seine Statusveränderungen\nmit den Ziel!

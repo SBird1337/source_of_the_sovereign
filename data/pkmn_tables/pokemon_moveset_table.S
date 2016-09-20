@@ -1216,12 +1216,12 @@ moveset_unknown:
 moveset_bisasam: 
 .hword MOVE_TACKLE
 .byte 0x1 
-.hword 0x2D 
+.hword MOVE_HOWL 
 .byte 0x3 
-.hword MOVE_WRING_OUT
+.hword MOVE_PUNISHMENT
 .byte 0x7 
-.hword 0x16 
-.byte 0x9 
+.hword MOVE_GUARD_SWAP
+.byte 0x7
 .hword 0x4D 
 .byte 0xD 
 .hword 0x4F 
@@ -1765,7 +1765,7 @@ moveset_tauboss:
 .align 2
 moveset_rattfratz: 
 
-.hword MOVE_METAL_BURST
+.hword MOVE_SWORDS_DANCE
 .byte 1
 //.hword 0x27 
 //.byte 0x1 

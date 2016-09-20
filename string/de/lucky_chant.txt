@@ -1,0 +1,1 @@
+﻿str_lucky_chant=Beschwörung schützt dein Team\nvor kritischen Treffern!

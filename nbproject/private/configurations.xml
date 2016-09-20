@@ -4061,7 +4061,11 @@
             </df>
             <df name="feint">
             </df>
+            <df name="gastro_acid">
+            </df>
             <df name="hazards">
+            </df>
+            <df name="lucky_chant">
             </df>
             <df name="metal_burst">
             </df>
@@ -4069,7 +4073,11 @@
             </df>
             <df name="power_trick">
             </df>
+            <df name="punishment">
+            </df>
             <df name="roost">
+            </df>
+            <df name="swap_moves">
             </df>
             <df name="tailwind">
             </df>
@@ -5837,8 +5845,16 @@
             <in>feint.c</in>
             <in>feint_scripts.S</in>
           </df>
+          <df name="gastro_acid">
+            <in>gastro_acid.c</in>
+            <in>gastro_acid_script.S</in>
+          </df>
           <df name="hazards">
             <in>hazards_scripts.S</in>
+          </df>
+          <df name="lucky_chant">
+            <in>lucky_chant.c</in>
+            <in>lucky_chant_script.S</in>
           </df>
           <df name="metal_burst">
             <in>metal_burst.c</in>
@@ -5852,9 +5868,17 @@
             <in>power_trick.c</in>
             <in>power_trick_script.S</in>
           </df>
+          <df name="punishment">
+            <in>punishment.c</in>
+            <in>punishment_script.S</in>
+          </df>
           <df name="roost">
             <in>roost.c</in>
             <in>roost_scripts.S</in>
+          </df>
+          <df name="swap_moves">
+            <in>swap_moves.c</in>
+            <in>swap_moves_script.S</in>
           </df>
           <df name="tailwind">
             <in>tailwind.c</in>
