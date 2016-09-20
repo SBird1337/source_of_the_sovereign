@@ -177,6 +177,30 @@ struct in_battle_weather{
     u32 air_current : 1;
 };
 
+struct status_3{
+    u32 leech_seed_hp_receiver : 2; // 2 bits
+    u32 leech_seed : 1; //4
+    u32 always_hits : 2; //x8 | x10
+    u32 perish_song : 1; //x20
+    u32 on_air : 1; //x40
+    u32 underground : 1;//80
+    u32 minimized : 1; //x100
+    u32 charged_up : 1; //x200
+    u32 rooted : 1; //x400
+    u32 yawn : 2; //x800 || x1000
+    u32 imprision : 1; //x2000
+    u32 grudge : 1; //x4000
+    u32 unkown_no_crit : 1; //x8000
+    u32 mud_sport : 1; //x10 000
+    u32 watersport : 1; //x20 000
+    u32 underwater : 1; //x40 000
+    u32 switchinlock : 1; //x80 000
+    u32 unburden : 1; //x100 000 (previously trace)
+    u32 phantomforce : 1; //x200 000
+};
+
+extern struct status_3 battle_status_3[4];
+
 union battle_weather{
     u32 int_bw;
     struct in_battle_weather flags;

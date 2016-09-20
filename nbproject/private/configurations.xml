@@ -4063,11 +4063,15 @@
             </df>
             <df name="feint">
             </df>
+            <df name="flare_blitz">
+            </df>
             <df name="gastro_acid">
             </df>
             <df name="hazards">
             </df>
             <df name="lucky_chant">
+            </df>
+            <df name="magnet_rise">
             </df>
             <df name="metal_burst">
             </df>
@@ -5851,6 +5855,9 @@
             <in>feint.c</in>
             <in>feint_scripts.S</in>
           </df>
+          <df name="flare_blitz">
+            <in>flare_blitz_script.S</in>
+          </df>
           <df name="gastro_acid">
             <in>gastro_acid.c</in>
             <in>gastro_acid_script.S</in>
@@ -5861,6 +5868,10 @@
           <df name="lucky_chant">
             <in>lucky_chant.c</in>
             <in>lucky_chant_script.S</in>
+          </df>
+          <df name="magnet_rise">
+            <in>magnet_rise.c</in>
+            <in>magnet_rise_script.S</in>
           </df>
           <df name="metal_burst">
             <in>metal_burst.c</in>

@@ -106,6 +106,7 @@ battle_damage_multiplier = 0x02023FD2;
 battle_protect = 0x02023E8C;
 side_affecting_halfword = 0x2023DDE;
 battle_turn_order = 0x02023bde;
+battle_status_3 = 0x02023DFC;
 
 item_get_quality = 0x0809A948|1;
 item_get_x12 = 0x0809A924|1;

@@ -8,3 +8,4 @@ str_power_swap=\hFD\h0F tauscht seinen Angriff\nund Spezialangriff mit dem Ziel!
 str_guard_swap=\hFD\h0F tauscht seine Verteidigung\nund Spezialverteidigung mit dem Ziel!
 str_heart_swap=\hFD\h0F tauscht seine Statusveränderungen\nmit den Ziel!
 str_worry_seed=\hFD\h10 nimmt die Fähigkeit\nInsomnia an!
+str_magnet_rise=\hFD\h0F schwebt aufgrund von\nElektromagnetismus!

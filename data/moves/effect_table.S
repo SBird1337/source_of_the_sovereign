@@ -131,7 +131,7 @@ m_effect_table:
 	.word 0x081D7962 @122
 	.word 0x081D7954 @123
 	.word 0x081D796E @124
-	.word 0x081D7977 @125
+	.word bs_flare_blitz @125   also used for flame wheel, scald, steam eruption
 	.word 0x081D7982 @126
 	.word bs_uturn_btpass @127 (uturn, volt switch, baton pass)
 	.word 0x081D6900 @128
@@ -233,3 +233,4 @@ m_effect_table:
         .word bs_swap_moves         @224
         .word bs_punishment         @225
         .word bs_change_ability     @226
+        .word bs_magnet_rise        @227

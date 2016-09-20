@@ -4682,6 +4682,9 @@
             <in>feint.c</in>
             <in>feint_scripts.S</in>
           </df>
+          <df name="flare_blitz">
+            <in>flare_blitz_script.S</in>
+          </df>
           <df name="gastro_acid">
             <in>gastro_acid.c</in>
             <in>gastro_acid_script.S</in>
@@ -4692,6 +4695,10 @@
           <df name="lucky_chant">
             <in>lucky_chant.c</in>
             <in>lucky_chant_script.S</in>
+          </df>
+          <df name="magnet_rise">
+            <in>magnet_rise.c</in>
+            <in>magnet_rise_script.S</in>
           </df>
           <df name="metal_burst">
             <in>metal_burst.c</in>
@@ -27441,6 +27448,11 @@
       </item>
       <item path="src/moves/feint/feint_scripts.S" ex="false" tool="4" flavor2="0">
       </item>
+      <item path="src/moves/flare_blitz/flare_blitz_script.S"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
       <item path="src/moves/gastro_acid/gastro_acid.c"
             ex="false"
             tool="0"
@@ -27462,6 +27474,16 @@
             flavor2="0">
       </item>
       <item path="src/moves/lucky_chant/lucky_chant_script.S"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/moves/magnet_rise/magnet_rise.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/moves/magnet_rise/magnet_rise_script.S"
             ex="false"
             tool="4"
             flavor2="0">

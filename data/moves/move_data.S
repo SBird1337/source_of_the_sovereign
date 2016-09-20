@@ -411,8 +411,8 @@ move_data_tiefschlag:		.byte	MOVE_EFFECT_NONE,	80,		17,		100,		5,		0,		0,		1,		5
 move_data_giftspitzen:		.byte	112,            	0,		3,		0,		20,		0,		64,		0,		0,		0,		2,		0
 move_data_statustausch:		.byte	224,            	0,		14,		0,		10,		0,		0,		0,		2,		0,		2,		0
 move_data_wasserring:		.byte	181,			0,		11,		0,		20,		0,		16,		0,		4,		0,		2,		0
-move_data_magnetflug:		.byte	MOVE_EFFECT_NONE,	0,		13,		0,		10,		0,		16,		0,		0,		0,		2,		0
-move_data_flammenblitz:		.byte	MOVE_EFFECT_NONE,	120,		10,		100,		15,		0,		0,		0,		51,		0,		0,		0
+move_data_magnetflug:		.byte	227,            	0,		13,		0,		10,		0,		16,		0,		0,		0,		2,		0
+move_data_flammenblitz:		.byte	125,            	120,		10,		100,		15,		0,		0,		0,		51,		0,		0,		0
 move_data_kraftwelle:		.byte	6,			60,		1,		100,		10,		0,		0,		0,		51,		0,		0,		0
 move_data_aurasphaere:		.byte	17,			80,		1,		0,		20,		0,		0,		0,		50,		0,		1,		0
 move_data_steinpolitur:		.byte	52,			0,		5,		0,		20,		0,		0,		0,		4,		0,		2,		0
