@@ -12,5 +12,6 @@ u32 battle_hitmarker;
 void* battlescript_cursor;
 u8 battle_menu_chosen_item[4];
 u8 battle_turn_order[4];
+u16 battle_base_power;
 
 #endif

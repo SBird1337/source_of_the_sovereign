@@ -226,3 +226,5 @@ m_effect_table:
         .word bs_close_combat @217
         .word bs_pay_back@218
         .word bs_assurance@219
+        .word bs_crush_grip_like    @220
+        .word bs_power_trick    @221

@@ -386,7 +386,6 @@ move_data_rueckenwind:		.byte	215,                    0,		2,		0,		15,		0,		16,		
 move_data_akupressur:		.byte	MOVE_EFFECT_NONE,			0,		0,		0,		30,		0,		16,		0,		4,		0,		2,		0
 move_data_metallstoss:		.byte	89,                     1,		8,		100,		10,		0,		1,		0,		0,		0,		0,		0
 move_data_kehrtwende:		.byte	127,            	70,		6,		100,		20,		0,		0,		0,		51,		0,		0,		0
-
 move_data_nahkampf:		.byte	217,            	120,		1,		100,		5,		100,		0,		0,		51,		0,		0,		0
 move_data_gegenstoss:		.byte	218,            	50,		17,		100,		10,		0,		0,		0,		51,		0,		0,		0
 move_data_gewissheit:		.byte	219,			60,		17,		100,		10,		0,		0,		0,		51,		0,		0,		0
@@ -395,8 +394,8 @@ move_data_schleuder:		.byte	MOVE_EFFECT_NONE,	1,		17,		100,		10,		0,		0,		0,		18
 move_data_psybann:		.byte	MOVE_EFFECT_NONE,	0,		14,		100,		10,		0,		0,		0,		18,		0,		2,		0
 move_data_trumpfkarte:		.byte	MOVE_EFFECT_NONE,	1,		0,		100,		5,		0,		0,		0,		51,		0,		1,		0
 move_data_heilblockade:		.byte	MOVE_EFFECT_NONE,	0,		14,		100,		15,		0,		8,		0,		18,		0,		2,		0
-move_data_auswringen:		.byte	MOVE_EFFECT_NONE,	120,		0,		100,		5,		0,		0,		0,		51,		0,		1,		0
-move_data_krafttrick:		.byte	MOVE_EFFECT_NONE,	0,		14,		0,		10,		0,		0,		0,		4,		0,		2,		0
+move_data_auswringen:		.byte	220,			1,		0,		100,		5,		0,		0,		0,		51,		0,		1,		0
+move_data_krafttrick:		.byte	221,            	0,		14,		0,		10,		0,		0,		0,		4,		0,		2,		0
 move_data_magensaefte:		.byte	MOVE_EFFECT_NONE,	0,		3,		100,		10,		0,		0,		0,		50,		0,		2,		0
 move_data_beschwoerung:		.byte	MOVE_EFFECT_NONE,	0,		0,		0,		30,		0,		16,		0,		4,		0,		2,		0
 move_data_egotrip:		.byte	MOVE_EFFECT_NONE,	0,		0,		0,		20,		0,		0,		0,		2,		0,		2,		0

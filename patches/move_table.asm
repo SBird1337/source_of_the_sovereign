@@ -204,9 +204,13 @@
 .word move_table
 .org 0x0803ECE8
 .word move_table
+.org 0x0803ED3C
+.word move_table
 .org 0x0803ED60
 .word move_table
 .org 0x0803F254
+.word move_table
+.org 0x0803F3B4
 .word move_table
 .org 0x0803F510
 .word move_table

@@ -4055,6 +4055,8 @@
             </df>
             <df name="close_combat">
             </df>
+            <df name="crush_grip_like">
+            </df>
             <df name="fang_moves">
             </df>
             <df name="feint">
@@ -5822,6 +5824,10 @@
           <df name="close_combat">
             <in>close_combat.c</in>
             <in>close_combat_scripts.S</in>
+          </df>
+          <df name="crush_grip_like">
+            <in>crush_grip_like_script.S</in>
+            <in>hp_damage_mod.c</in>
           </df>
           <df name="fang_moves">
             <in>fang_animations.S</in>

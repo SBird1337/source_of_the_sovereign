@@ -4666,6 +4666,10 @@
             <in>close_combat.c</in>
             <in>close_combat_scripts.S</in>
           </df>
+          <df name="crush_grip_like">
+            <in>crush_grip_like_script.S</in>
+            <in>hp_damage_mod.c</in>
+          </df>
           <df name="fang_moves">
             <in>fang_animations.S</in>
             <in>fang_effect.S</in>
@@ -27384,6 +27388,16 @@
       <item path="src/moves/close_combat/close_combat_scripts.S"
             ex="false"
             tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/moves/crush_grip_like/crush_grip_like_script.S"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/moves/crush_grip_like/hp_damage_mod.c"
+            ex="false"
+            tool="0"
             flavor2="0">
       </item>
       <item path="src/moves/fang_moves/fang_animations.S"
