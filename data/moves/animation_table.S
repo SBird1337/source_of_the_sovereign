@@ -465,7 +465,7 @@ m_animation_table:
 .word 0x081C6F34 @458
 .word 0x081C6F34 @459
 .word 0x081C6F34 @460
-.word 0x081C6F34 @461
+.word as_lunar_dance @461
 .word 0x081C6F34 @462
 .word 0x081C6F34 @463
 .word 0x081C6F34 @464

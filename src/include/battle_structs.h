@@ -104,6 +104,31 @@ struct iv_set
     u32 iv_sp_def: 5;
 };
 
+struct pokemon{
+	u32 PID;
+	u32 OTID;
+	char name[10];
+	u16 language;
+	u8 OT_name[7];
+	u8 markings;
+	u16 checksum;
+	u16 padding_maybe;
+	u8 data[48];
+	u32 ailment;
+	u8 level;
+	u8 pokerus;
+	u16 current_hp;
+	u16 total_hp;
+	u16 attack;
+	u16 defense;
+	u16 speed;
+	u16 sp_attack;
+	u16 sp_defense;
+};
+
+extern struct pokemon party_opponent[6];
+extern struct pokemon party_player[6];
+
 struct battle_participant {
     u16 poke_species;
     u16 atk;

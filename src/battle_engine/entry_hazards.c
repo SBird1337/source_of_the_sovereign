@@ -12,11 +12,27 @@ extern void* bs_rocks_lain;
 extern void* bs_toxic_lain;
 extern void* bs_sticky_lain;
 
+extern void* bs_lunar_dance_exec;
+
+extern void* str_lunardance_executed_ref;
+
 u8 execute_entry_hazards() {
     u8 active_side = get_side_from_bank(battle_active_bank);
     u8 has_effect = 0;
     struct side_affecting* active_side_affecting = &custom_battle_elements.ptr->side_affecting[active_side];
-    if (side_affecting_halfword[active_side].spikes_on && !(side_affecting_halfword[active_side].spikes_damage_done)) {
+    if (active_side_affecting->lunardance && !(active_side_affecting->lunardance_done)) {
+        battle_damage_store = ((s32)battle_participants[battle_active_bank].max_hp - (s32)battle_participants[battle_active_bank].current_hp) * -1;
+        active_side_affecting->lunardance = 0;
+        
+        battle_participants[battle_active_bank].status.int_status = 0;
+        prepare_setattributes_in_battle(0, REQUEST_STATUS_BATTLE, 0, 4, &battle_participants[battle_active_bank].status);
+        mark_buffer_bank_for_execution(battle_active_bank);
+        
+        battle_script_push();
+        battle_string_chooser = str_lunardance_executed_ref;
+        battlescript_cursor = bs_lunar_dance_exec;
+        has_effect = 1;
+    } else if (side_affecting_halfword[active_side].spikes_on && !(side_affecting_halfword[active_side].spikes_damage_done)) {
         //spikes lay down, deal spiky damage
         u32 damage = (battle_participants[battle_active_bank].max_hp) / ((5 - battle_side_timers[active_side].spikes_amount) * 2);
         if (damage == 0)
@@ -68,8 +84,7 @@ u8 execute_entry_hazards() {
                 battle_participants[battle_active_bank].status.flags.toxic_poison = 1;
                 battle_script_push();
                 battlescript_cursor = bs_toxic_spikes_bad;
-            }
-            else {
+            } else {
                 battle_participants[battle_active_bank].status.flags.poison = 1;
                 battle_script_push();
                 battlescript_cursor = bs_toxic_spikes;

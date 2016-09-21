@@ -56,6 +56,10 @@ u8 set_swap_moves() {
             attacker->sp_atk_buff = defender->sp_atk_buff;
             defender->sp_atk_buff = swap;
             battle_string_chooser = str_heart_swap_ref;
+            
+            swap = attacker->acc_buff;
+            attacker->acc_buff = defender->acc_buff;
+            defender->acc_buff = swap;
             break;
     }
     return false;

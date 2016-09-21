@@ -4627,6 +4627,7 @@
           <in>debug.h</in>
           <in>item_effects.h</in>
           <in>items.h</in>
+          <in>pkmn_attributes.h</in>
           <in>pokemon.h</in>
         </df>
         <df name="interface">
@@ -4674,6 +4675,10 @@
             <in>crush_grip_like_script.S</in>
             <in>hp_damage_mod.c</in>
           </df>
+          <df name="defog">
+            <in>defog.c</in>
+            <in>defog_script.S</in>
+          </df>
           <df name="fang_moves">
             <in>fang_animations.S</in>
             <in>fang_effect.S</in>
@@ -4691,6 +4696,10 @@
           </df>
           <df name="hazards">
             <in>hazards_scripts.S</in>
+          </df>
+          <df name="healing_wish">
+            <in>healing_wish.c</in>
+            <in>healing_wish_script.S</in>
           </df>
           <df name="lucky_chant">
             <in>lucky_chant.c</in>
@@ -4715,6 +4724,10 @@
           <df name="punishment">
             <in>punishment.c</in>
             <in>punishment_script.S</in>
+          </df>
+          <df name="rooms">
+            <in>rooms.c</in>
+            <in>rooms_script.S</in>
           </df>
           <df name="roost">
             <in>roost.c</in>
@@ -27341,6 +27354,8 @@
       </item>
       <item path="src/include/items.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/include/pkmn_attributes.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/include/pokemon.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/interface/lcd_io_test.S" ex="false" tool="4" flavor2="0">
@@ -27437,6 +27452,10 @@
             tool="0"
             flavor2="0">
       </item>
+      <item path="src/moves/defog/defog.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/moves/defog/defog_script.S" ex="false" tool="4" flavor2="0">
+      </item>
       <item path="src/moves/fang_moves/fang_animations.S"
             ex="false"
             tool="4"
@@ -27464,6 +27483,16 @@
             flavor2="0">
       </item>
       <item path="src/moves/hazards/hazards_scripts.S"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/moves/healing_wish/healing_wish.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/moves/healing_wish/healing_wish_script.S"
             ex="false"
             tool="4"
             flavor2="0">
@@ -27521,6 +27550,10 @@
             ex="false"
             tool="4"
             flavor2="0">
+      </item>
+      <item path="src/moves/rooms/rooms.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/moves/rooms/rooms_script.S" ex="false" tool="4" flavor2="0">
       </item>
       <item path="src/moves/roost/roost.c" ex="false" tool="0" flavor2="0">
       </item>

@@ -7,6 +7,7 @@
 #include "lcd.h"
 #include <callback.h>
 #include <config.h>
+#include <pkmn_attributes.h>
 
 u32 __aeabi_uidivmod(u32 a, u32 b);
 u16 *var_access(int index);
@@ -38,5 +39,9 @@ void obj_sync();
 
 //task related stuff
 void task_exec();
+
+//attribute setter and getter
+u8 get_attributes(struct pokemon* poke_address, u8 request, void* destination);
+void set_attributes(struct pokemon* poke_address, u8 request, void* new_value);
 
 #endif

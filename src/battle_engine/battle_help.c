@@ -120,3 +120,19 @@ u8 cant_poison(u8 bank, u8 self_inflicted) { //0 == can poison
         return 5;
     return 0;
 }
+
+u8 count_party_pokemon(u8 bank)
+{
+    struct pokemon* poke;
+    if (get_side_from_bank(bank))
+        poke = &party_opponent[0];
+    else
+        poke = &party_player[0];
+    u8 usable_pokes = 0;
+    for (u8 i = 0; i < 6; i ++)
+    {
+        if (get_attributes(&poke[i], ATTR_CURRENT_HP, 0) != 0 && get_attributes(&poke[i], ATTR_IS_EGG, 0) != 1 && get_attributes(&poke[i], ATTR_SPECIES, 0) != 0)
+            usable_pokes++;
+    }
+    return usable_pokes;
+}

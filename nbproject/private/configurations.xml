@@ -4059,6 +4059,8 @@
             </df>
             <df name="crush_grip_like">
             </df>
+            <df name="defog">
+            </df>
             <df name="fang_moves">
             </df>
             <df name="feint">
@@ -4068,6 +4070,8 @@
             <df name="gastro_acid">
             </df>
             <df name="hazards">
+            </df>
+            <df name="healing_wish">
             </df>
             <df name="lucky_chant">
             </df>
@@ -4080,6 +4084,8 @@
             <df name="power_trick">
             </df>
             <df name="punishment">
+            </df>
+            <df name="rooms">
             </df>
             <df name="roost">
             </df>
@@ -5797,6 +5803,7 @@
           <in>lcd.h</in>
           <in>moves.h</in>
           <in>objects.h</in>
+          <in>pkmn_attributes.h</in>
           <in>pkmn_types.h</in>
           <in>pokemon.h</in>
           <in>sound.h</in>
@@ -5847,6 +5854,10 @@
             <in>crush_grip_like_script.S</in>
             <in>hp_damage_mod.c</in>
           </df>
+          <df name="defog">
+            <in>defog.c</in>
+            <in>defog_script.S</in>
+          </df>
           <df name="fang_moves">
             <in>fang_animations.S</in>
             <in>fang_effect.S</in>
@@ -5864,6 +5875,10 @@
           </df>
           <df name="hazards">
             <in>hazards_scripts.S</in>
+          </df>
+          <df name="healing_wish">
+            <in>healing_wish.c</in>
+            <in>healing_wish_script.S</in>
           </df>
           <df name="lucky_chant">
             <in>lucky_chant.c</in>
@@ -5888,6 +5903,10 @@
           <df name="punishment">
             <in>punishment.c</in>
             <in>punishment_script.S</in>
+          </df>
+          <df name="rooms">
+            <in>rooms.c</in>
+            <in>rooms_script.S</in>
           </df>
           <df name="roost">
             <in>roost.c</in>

@@ -30,7 +30,7 @@ m_effect_table:
 	.word 0x081D6900 @21
 	.word 0x081D6900 @22
 	.word 0x081D6C02 @23
-	.word 0x081D6C0D @24
+	.word bs_defog   @24    Also used for sweet scent
 	.word 0x081D6C72 @25
 	.word 0x081D6C83 @26
 	.word 0x081D6C97 @27
@@ -234,3 +234,5 @@ m_effect_table:
         .word bs_punishment         @225
         .word bs_change_ability     @226
         .word bs_magnet_rise        @227
+        .word bs_rooms              @228
+        .word bs_healing_wish       @229

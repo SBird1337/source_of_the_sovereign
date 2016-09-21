@@ -44,6 +44,7 @@ void battle_switch_in()
             *def = switch_var;
         }
     }
+    
     struct side_affecting* active_side = &custom_battle_elements.ptr->side_affecting[get_side_from_bank(battle_active_bank)];
     active_side->stealth_rock_done = 0;
     active_side->sticky_web_done = 0;

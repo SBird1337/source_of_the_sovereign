@@ -1218,9 +1218,9 @@ moveset_bisasam:
 .byte 0x1 
 .hword MOVE_HOWL 
 .byte 0x3 
-.hword MOVE_MAGNET_RISE
+.hword MOVE_LUNAR_DANCE
 .byte 0x7 
-.hword MOVE_HYPNOSIS
+.hword MOVE_WONDER_ROOM
 .byte 0x7
 .hword 0x4D 
 .byte 0xD 

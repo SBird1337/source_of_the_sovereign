@@ -173,11 +173,11 @@
 .word \jumpifstatus_address
 .endm
 
-.macro jumpifsecondarytstatus jumpifsecondarytstatus_bank jumpifsecondarytstatus_status jumpifsecondarytstatus_address
+.macro jumpifsecondarystatus jumpifsecondarystatus_bank jumpifsecondarystatus_status jumpifsecondarystatus_address
 .byte 0x1D
-.byte \jumpifsecondarytstatus_bank
-.word \jumpifsecondarytstatus_status
-.word \jumpifsecondarytstatus_address
+.byte \jumpifsecondarystatus_bank
+.word \jumpifsecondarystatus_status
+.word \jumpifsecondarystatus_address
 .endm
 
 .macro jumpifability jumpifability_bank jumpifability_ability jumpifability_address

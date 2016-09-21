@@ -111,6 +111,12 @@ battle_status_3 = 0x02023DFC;
 item_get_quality = 0x0809A948|1;
 item_get_x12 = 0x0809A924|1;
 
+party_player = 0x02024284;
+party_opponent = 0x0202402C;
+
+get_attributes = 0x0803FBE8|1;
+set_attributes = 0x0804037C|1;
+
 
 battle_status3_bits_pbs = 0x02023DFC;
 
