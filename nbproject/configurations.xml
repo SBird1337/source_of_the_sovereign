@@ -4647,8 +4647,8 @@
         </df>
         <df name="moves">
           <df name="ability_changers">
+            <in>ability_change.c</in>
             <in>ability_change_script.S</in>
-            <in>worry_seed.c</in>
           </df>
           <df name="assurance">
             <in>assurance.c</in>
@@ -4701,6 +4701,9 @@
             <in>healing_wish.c</in>
             <in>healing_wish_script.S</in>
           </df>
+          <df name="hone_claws">
+            <in>hone_claws_script.S</in>
+          </df>
           <df name="lucky_chant">
             <in>lucky_chant.c</in>
             <in>lucky_chant_script.S</in>
@@ -4733,6 +4736,13 @@
             <in>roost.c</in>
             <in>roost_scripts.S</in>
           </df>
+          <df name="seed_flare">
+            <in>seed_flare_script.S</in>
+          </df>
+          <df name="split_moves">
+            <in>split_moves.c</in>
+            <in>split_moves_script.S</in>
+          </df>
           <df name="swap_moves">
             <in>swap_moves.c</in>
             <in>swap_moves_script.S</in>
@@ -4743,6 +4753,10 @@
           </df>
           <df name="uturn">
             <in>u_turn_script.S</in>
+          </df>
+          <df name="veno_shock">
+            <in>veno_shock_script.S</in>
+            <in>venoshock_has_multiplier.c</in>
           </df>
         </df>
         <df name="music">
@@ -27379,14 +27393,14 @@
       </item>
       <item path="src/item/tmhm/tm_save_block.S" ex="false" tool="4" flavor2="0">
       </item>
+      <item path="src/moves/ability_changers/ability_change.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
       <item path="src/moves/ability_changers/ability_change_script.S"
             ex="false"
             tool="4"
-            flavor2="0">
-      </item>
-      <item path="src/moves/ability_changers/worry_seed.c"
-            ex="false"
-            tool="0"
             flavor2="0">
       </item>
       <item path="src/moves/assurance/assurance.c" ex="false" tool="0" flavor2="0">
@@ -27497,6 +27511,11 @@
             tool="4"
             flavor2="0">
       </item>
+      <item path="src/moves/hone_claws/hone_claws_script.S"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
       <item path="src/moves/lucky_chant/lucky_chant.c"
             ex="false"
             tool="0"
@@ -27559,6 +27578,21 @@
       </item>
       <item path="src/moves/roost/roost_scripts.S" ex="false" tool="4" flavor2="0">
       </item>
+      <item path="src/moves/seed_flare/seed_flare_script.S"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/moves/split_moves/split_moves.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/moves/split_moves/split_moves_script.S"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
       <item path="src/moves/swap_moves/swap_moves.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="src/moves/swap_moves/swap_moves_script.S"
@@ -27574,6 +27608,16 @@
             flavor2="0">
       </item>
       <item path="src/moves/uturn/u_turn_script.S" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="src/moves/veno_shock/veno_shock_script.S"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/moves/veno_shock/venoshock_has_multiplier.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
       </item>
       <item path="src/music/main_mixer.S" ex="false" tool="4" flavor2="0">
       </item>

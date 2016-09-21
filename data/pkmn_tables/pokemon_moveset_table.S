@@ -1218,12 +1218,12 @@ moveset_bisasam:
 .byte 0x1 
 .hword MOVE_HOWL 
 .byte 0x3 
-.hword MOVE_LUNAR_DANCE
+.hword MOVE_SKILL_SWAP
 .byte 0x7 
-.hword MOVE_WONDER_ROOM
+.hword MOVE_ENTRAINMENT
 .byte 0x7
-.hword 0x4D 
-.byte 0xD 
+.hword MOVE_ROLE_PLAY 
+.byte 0x7 
 .hword 0x4F 
 .byte 0xD 
 .hword 0x24 

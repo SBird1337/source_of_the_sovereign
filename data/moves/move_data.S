@@ -292,7 +292,7 @@ move_data_gaehner:		.byte	187,			0,		0,		0,		10,		0,		0,		0,		26,		0,		2,		0
 move_data_abschlag:		.byte	188,			65,		17,		100,		25,		100,		0,		0,		19,		0,		0,		0
 move_data_notsituation:		.byte	189,			1,		0,		100,		5,		0,		0,		0,		51,		0,		0,		0
 move_data_eruption:		.byte	190,			1,		10,		100,		5,		0,		8,		0,		50,		0,		1,		0
-move_data_wertewechsel:		.byte	191,			0,		14,		0,		10,		0,		0,		0,		18,		0,		2,		0
+move_data_wertewechsel:		.byte	178,			0,		14,		0,		10,		0,		0,		0,		18,		0,		2,		0
 move_data_begrenzer:		.byte	192,			0,		14,		0,		10,		0,		8,		0,		2,		0,		2,		0
 move_data_heilung:		.byte	193,			0,		0,		0,		20,		0,		16,		0,		4,		0,		2,		0
 move_data_nachspiel:		.byte	194,			0,		7,		0,		5,		0,		16,		0,		18,		0,		2,		0
@@ -406,7 +406,7 @@ move_data_schutztausch:		.byte	224,                	0,		14,		0,		10,		0,		0,		0,
 move_data_strafattacke:		.byte	225,            	1,		17,		100,		5,		0,		0,		0,		51,		0,		0,		0
 @TODO LAST RESORT
 move_data_zuflucht:		.byte	MOVE_EFFECT_NONE,	140,		0,		100,		5,		0,		0,		0,		51,		0,		0,		0
-move_data_sorgensamen:		.byte	226,            	0,		12,		100,		10,		0,		0,		0,		26,		0,		2,		0
+move_data_sorgensamen:		.byte	178,            	0,		12,		100,		10,		0,		0,		0,		26,		0,		2,		0
 move_data_tiefschlag:		.byte	MOVE_EFFECT_NONE,	80,		17,		100,		5,		0,		0,		1,		51,		0,		0,		0
 move_data_giftspitzen:		.byte	112,            	0,		3,		0,		20,		0,		64,		0,		0,		0,		2,		0
 move_data_statustausch:		.byte	224,            	0,		14,		0,		10,		0,		0,		0,		2,		0,		2,		0
@@ -483,16 +483,17 @@ move_data_lunartanz:		.byte	229,            	0,		14,		0,		10,		0,		0,		0,		0,		0
 move_data_quetschgriff:		.byte	220,            	120,		0,		100,		5,		0,		0,		0,		51,		0,		0,		0
 move_data_lavasturm:		.byte	42,			100,		10,		75,		5,		100,		0,		0,		50,		0,		1,		0
 move_data_schlummerort:		.byte	1,			0,		17,		80,		10,		100,		8,		0,		26,		0,		2,		0
-move_data_schocksamen:		.byte	MOVE_EFFECT_NONE,	120,		12,		85,		5,		40,		0,		0,		50,		0,		1,		0
+move_data_schocksamen:		.byte	69,             	120,		12,		85,		5,		40,		0,		0,		50,		0,		1,		0
 move_data_unheilboeen:		.byte	140,			60,		7,		100,		5,		10,		0,		0,		50,		0,		1,		0
 move_data_schemenkraft:		.byte	MOVE_EFFECT_NONE,	120,		7,		100,		5,		0,		0,		0,		49,		0,		0,		0
-move_data_klauenwetzer:		.byte	MOVE_EFFECT_NONE,	0,		17,		0,		15,		0,		16,		0,		4,		0,		2,		0
+move_data_klauenwetzer:		.byte	10,             	0,		17,		0,		15,		0,		16,		0,		4,		0,		2,		0
 move_data_rundumschutz:		.byte	MOVE_EFFECT_NONE,	0,		5,		0,		10,		0,		16,		3,		0,		0,		2,		0
-move_data_schutzteiler:		.byte	MOVE_EFFECT_NONE,	0,		14,		0,		10,		0,		16,		0,		0,		0,		2,		0
-move_data_kraftteiler:		.byte	MOVE_EFFECT_NONE,	0,		14,		0,		10,		0,		16,		0,		0,		0,		2,		0
+move_data_schutzteiler:		.byte	230,            	0,		14,		0,		10,		0,		16,		0,		0,		0,		2,		0
+move_data_kraftteiler:		.byte	230,                	0,		14,		0,		10,		0,		16,		0,		0,		0,		2,		0
 move_data_wunderraum:		.byte	228,                	0,		14,		0,		10,		0,		16,		0,		0,		0,		2,		0
+@@TODO PHYCHOSCHOK (rewrite damage calc)
 move_data_psychoschock:		.byte	MOVE_EFFECT_NONE,	80,		14,		100,		10,		0,		0,		0,		50,		0,		1,		0
-move_data_giftschock:		.byte	MOVE_EFFECT_NONE,	65,		3,		100,		10,		0,		0,		0,		50,		0,		1,		0
+move_data_giftschock:		.byte	231,            	65,		3,		100,		10,		0,		0,		0,		50,		0,		1,		0
 move_data_autotomie:		.byte	MOVE_EFFECT_NONE,	0,		8,		0,		15,		0,		0,		0,		4,		0,		2,		0
 move_data_wutpulver:		.byte	172,			0,		6,		0,		20,		0,		16,		2,		0,		0,		2,		0
 move_data_telekinese:		.byte	MOVE_EFFECT_NONE,	0,		14,		0,		15,		0,		0,		0,		26,		0,		2,		0
@@ -511,8 +512,8 @@ move_data_einrollen:		.byte	MOVE_EFFECT_NONE,	0,		3,		0,		20,		0,		16,		0,		4,		
 move_data_fusstritt:		.byte	70,			65,		1,		100,		20,		100,		0,		0,		51,		0,		0,		0
 move_data_saeurespeier:		.byte	72,			40,		3,		100,		20,		100,		0,		0,		50,		0,		1,		0
 move_data_schmarotzer:		.byte	MOVE_EFFECT_NONE,	95,		17,		100,		15,		0,		0,		0,		51,		0,		0,		0
-move_data_wankelstrahl:		.byte	MOVE_EFFECT_NONE,	0,		0,		100,		15,		0,		0,		0,		26,		0,		2,		0
-move_data_zwango:		.byte	MOVE_EFFECT_NONE,	0,		0,		100,		15,		0,		0,		0,		26,		0,		2,		0
+move_data_wankelstrahl:		.byte	178,            	0,		0,		100,		15,		0,		0,		0,		26,		0,		2,		0
+move_data_zwango:		.byte	178,                	0,		0,		100,		15,		0,		0,		0,		26,		0,		2,		0
 move_data_galanterie:		.byte	MOVE_EFFECT_NONE,	0,		0,		0,		15,		0,		0,		0,		0,		0,		2,		0
 move_data_kanon:		.byte	MOVE_EFFECT_NONE,	60,		0,		100,		15,		0,		0,		0,		50,		0,		1,		0
 move_data_widerhall:		.byte	MOVE_EFFECT_NONE,	40,		0,		100,		15,		0,		0,		0,		50,		0,		1,		0

@@ -16,7 +16,7 @@ m_effect_table:
 	.word 0x081D6A76 @7
 	.word 0x081D6AF6 @8
 	.word 0x081D6B5F @9
-	.word 0x081D6B77 @10
+	.word bs_hone_claws @10
 	.word 0x081D6B82 @11
 	.word 0x081D6900 @12
 	.word 0x081D6B8D @13
@@ -75,7 +75,7 @@ m_effect_table:
 	.word 0x081D7181 @66
 	.word 0x081D71E2 @67
 	.word 0x081D725F @68
-	.word 0x081D726A @69
+	.word bs_lower_def_moves @69
 	.word 0x081D7275 @70
 	.word 0x081D7280 @71
 	.word 0x081D728B @72
@@ -184,7 +184,7 @@ m_effect_table:
 	.word 0x081D80C7 @175
 	.word 0x081D80E3 @176
 	.word 0x081D80F8 @177
-	.word 0x081D8126 @178
+	.word bs_change_ability  @178       used for role play, skill swap, worry seed, simple beam and entrainment
 	.word 0x081D8142 @179
 	.word 0x081D8152 @180
 	.word 0x081D8169 @181
@@ -197,7 +197,7 @@ m_effect_table:
 	.word 0x081D8263 @188
 	.word 0x081D826E @189
 	.word 0x081D82A9 @190
-	.word 0x081D82AF @191
+	.word 0x081D82AF @191   THIS IS AN UNUSED EFFECT
 	.word 0x081D82CB @192
 	.word 0x081D82E0 @193
 	.word 0x081D82F7 @194
@@ -232,7 +232,11 @@ m_effect_table:
         .word bs_gastro_acid        @223
         .word bs_swap_moves         @224
         .word bs_punishment         @225
-        .word bs_change_ability     @226
+
+        .word bs_change_ability     @226        THIS IS AN UNUSED EFFECT
+
         .word bs_magnet_rise        @227
         .word bs_rooms              @228
         .word bs_healing_wish       @229
+        .word bs_split_status       @230
+        .word bs_venoshock          @231
