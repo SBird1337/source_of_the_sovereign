@@ -496,6 +496,7 @@ move_data_psychoschock:		.byte	MOVE_EFFECT_NONE,	80,		14,		100,		10,		0,		0,		0,
 move_data_giftschock:		.byte	231,            	65,		3,		100,		10,		0,		0,		0,		50,		0,		1,		0
 move_data_autotomie:		.byte	MOVE_EFFECT_NONE,	0,		8,		0,		15,		0,		0,		0,		4,		0,		2,		0
 move_data_wutpulver:		.byte	172,			0,		6,		0,		20,		0,		16,		2,		0,		0,		2,		0
+@TODO also substitute
 move_data_telekinese:		.byte	MOVE_EFFECT_NONE,	0,		14,		0,		15,		0,		0,		0,		26,		0,		2,		0
 move_data_magieraum:		.byte	228,                	0,		14,		0,		10,		0,		16,		0,		0,		0,		2,		0
 move_data_katapult:		.byte	MOVE_EFFECT_NONE,	50,		5,		100,		15,		0,		0,		0,		50,		0,		0,		0

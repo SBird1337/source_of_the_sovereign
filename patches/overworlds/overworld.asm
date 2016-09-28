@@ -59,3 +59,34 @@ strb r0, [r4, #0x1A]
     ldr r5, =overworld_h_six+1
     bx r5
     .pool
+
+.org 0x0805F4D8
+    .word ow_pal_table
+
+.org 0x0805F570
+    .word ow_pal_table
+
+.org 0x0805F2F4
+    .word ow_pal_table
+
+.org 0x0805F5C8
+    .word ow_pal_table
+
+.org 0x0805F4D4
+    .halfword 0x13FF
+
+.org 0x0805F5CC
+    .halfword 0x13FF
+
+.org 0x0805F5D2
+    lsl r0, r0, #0x10
+    lsr r2, r0, #0x10
+
+.org 0x0805F548
+    lsl r0, r0, #0x10
+.org 0x0805F54C
+    lsr r0, r0, #0xD
+
+.org 0x0805F4BA
+    lsl r0, #0x10
+    lsr r1, r0, #0x10

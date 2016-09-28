@@ -24,10 +24,15 @@ struct npc_type {
     u32 rot_scale_anims;
 };
 
-struct npc_type** npc_tables[] = {(struct npc_type**)0x0839FDB0, (struct npc_type**)0x09E00000};
+extern struct npc_type* ow_main_table;
+extern struct npc_type* ow_second_table;
+extern struct npc_type* ow_third_table;
+
+
 
 struct npc_type* npc_get_type(u16 npc_id)
 {
+    struct npc_type** npc_tables[] = {ow_main_table, ow_second_table, ow_third_table};
     u16* replace_ow = var_access(OW_REPLACE_VAR);
     if(*replace_ow > 0 && *replace_ow - 1 == npc_id)
     {
