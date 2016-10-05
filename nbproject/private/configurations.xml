@@ -4279,6 +4279,8 @@
           </df>
           <df name="debug">
           </df>
+          <df name="dns">
+          </df>
           <df name="encode">
           </df>
           <df name="include">
@@ -4369,6 +4371,9 @@
         <df name="battle_engine">
           <in>battle_engine.asm</in>
           <in>malloc.asm</in>
+        </df>
+        <df name="dns">
+          <in>core.asm</in>
         </df>
         <df name="items">
           <in>item_limits.asm</in>
@@ -6026,6 +6031,9 @@
         </df>
         <df name="debug">
           <in>debug.c</in>
+        </df>
+        <df name="dns">
+          <in>dns_core.c</in>
         </df>
         <df name="encode">
           <in>crc32.c</in>

@@ -5,6 +5,7 @@ set_callback2 = 0x08000545;
 vblank_handler_set = 0x080006F5;
 malloc = 0x08002BB0|1;
 free = 0x08002BC4|1;
+memmove = 0x081E8E60|1;
 memset = 0x081E5ED8|1;
 memcpy = 0x081E5E78|1;
 template_instanciate_forward_search = 0x08006F8D;
@@ -25,6 +26,17 @@ obj_delete_all = 0x8007770|1;
 camera_move_and_redraw = 0x0805ACB4|1;
 calc_circle = 0x0807EE2C|1;
 random = 0x08044EC8|1;
+
+palette_unfaded_buffer = 0x020371F8;
+palette_faded_buffer = 0x020375F8;
+current_mapheader = 0x02036DFC;
+
+blockset_load_palette_to_gpu = 0x080599C8|1;
+npc_pal_idx_for_given_tag = 0x0805F5A0|1;
+gpu_pal_apply = 0x080703EC|1;
+tint_palette = 0x08083598|1;
+tint_filter = 0x02036E28;
+gpu_pal_tags_index_of = 0x080089E8|1;
 
 vram_decompress = 0x081E3B6C|1;
 pal_decompress_slice_to_faded_and_unfaded = 0x080703A8|1;

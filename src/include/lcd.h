@@ -19,9 +19,15 @@ struct map_entry {
     u16 pal : 4;
 };
 
-union t_map_entry{
+union t_map_entry {
     u16 short_map;
     struct map_entry entry;
+};
+
+struct color {
+    u16 r : 5;
+    u16 g : 5;
+    u16 b : 5;
 };
 
 static struct bg_config standard_bg[4] = {
@@ -49,7 +55,7 @@ void lcd_io_set_func(u8 id, u16 value);
 void gpu_pal_upload();
 void gpu_sprites_upload();
 
-void gpu_pal_obj_alloc_tag_and_apply(resource *pal);
+u8 gpu_pal_obj_alloc_tag_and_apply(resource *pal);
 void gpu_pal_free_by_tag(u16 tag);
 void gpu_tile_obj_free_by_tag(u16 tag);
 void obj_delete_and_free_tiles(object *obj);
@@ -57,7 +63,7 @@ void obj_delete_all();
 
 u16 lcd_io_get(u8 id);
 
-#define palette_unfaded_buffer ((void*)0x020371F8)
-#define palette_faded_buffer ((void*)0x020375F8)
+#define palette_faded_buffer ((struct color*) 0x020375F8)
+#define palette_unfaded_buffer ((struct color*) 0x020371F8)
 
 #endif

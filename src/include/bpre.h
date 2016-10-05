@@ -8,6 +8,7 @@
 #include <callback.h>
 #include <config.h>
 #include <pkmn_attributes.h>
+#include <battle_structs.h>
 
 u32 __aeabi_uidivmod(u32 a, u32 b);
 u16 *var_access(int index);

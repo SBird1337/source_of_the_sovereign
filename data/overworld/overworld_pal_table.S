@@ -1540,3 +1540,7 @@ ow_pal_table:
 .byte 254, 19, 0, 0
 .word ow_00000Pal
 .byte 255, 19, 0, 0
+
+.global npc_palettes
+npc_palettes:
+    .word ow_pal_table
