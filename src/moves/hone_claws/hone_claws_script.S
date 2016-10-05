@@ -8,7 +8,7 @@
 .global bs_hone_claws
 bs_hone_claws:
     jumpifhalfword 0x0 0x2023D4A MOVE_HONE_CLAWS hone_claws
-    goto 0x1D6B77
+    goto 0x081D6B77
 
 hone_claws:
     attackcanceler
