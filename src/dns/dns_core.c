@@ -1,4 +1,5 @@
 #include <bpre.h>
+#include <dns_core.h>
 
 enum time_type get_time_of_day() {
     volatile u8* time_pointer = (u8*) (0x0203FAB1);
