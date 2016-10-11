@@ -12,3 +12,13 @@
     ldr r2, =pal_patch_for_npc+1
     bx r2
     .pool
+
+.org 0x08083614
+    ldr r1, =overworld_anim_load_pal+1
+    bx r1
+    .pool
+
+.org 0x08056578
+    ldr r0, =overworld_loop+1
+    bx r0
+    .pool

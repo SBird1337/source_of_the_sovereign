@@ -31,12 +31,27 @@ palette_unfaded_buffer = 0x020371F8;
 palette_faded_buffer = 0x020375F8;
 current_mapheader = 0x02036DFC;
 
+script_something = 0x08069AA8|1;
+camera_update = 0x0805ABB0|1;
+foo_115798 = 0x08115798|1;
+foo_5ae28 = 0x0805AE28|1;
+foo_6ffbc = 0x0806ffbc|1;
+tilemaps_sync = 0x080F67B8|1;
+
+mapdata_load_palettes_to_gpu = 0x08059AD8|1;
+npc_paltag_by_palslot = 0x0805FF34|1;
+
+oe_read_word = 0x08083550|1;
+some_weather_func = 0x0807AA8C|1;
+
 blockset_load_palette_to_gpu = 0x080599C8|1;
 npc_pal_idx_for_given_tag = 0x0805F5A0|1;
 gpu_pal_apply = 0x080703EC|1;
 tint_palette = 0x08083598|1;
 tint_filter = 0x02036E28;
 gpu_pal_tags_index_of = 0x080089E8|1;
+load_palette_3 = 0x080598CC|1;
+lz77u_wram = 0x0800EBB4|1;
 
 vram_decompress = 0x081E3B6C|1;
 pal_decompress_slice_to_faded_and_unfaded = 0x080703A8|1;

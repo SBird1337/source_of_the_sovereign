@@ -3,6 +3,13 @@
 #include "camera_move.h"
 #include <debug.h>
 
+void dns_switch()
+{
+    volatile u8* test_pointer = (u8*) (0x0203FAB0);
+    *(test_pointer+1) = (*(test_pointer+1) == 3 ? 0 : (*(test_pointer+1)) + 1);
+    *test_pointer = 1;
+}
+
 void init_script()
 {
   for(u16 i = 0x1000; i < 0x1800; ++i)
@@ -11,11 +18,12 @@ void init_script()
   }
 }
 
-static callback special_routines[4] = {
+static callback special_routines[5] = {
 	play_meteor,
 	sp_move_camera,
 	init_script,
         some_test,
+        dns_switch,
 };
 
 
