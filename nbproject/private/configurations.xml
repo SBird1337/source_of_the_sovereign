@@ -6058,6 +6058,7 @@
           <in>config.h</in>
           <in>custom_structs.h</in>
           <in>debug.h</in>
+          <in>dns_core.h</in>
           <in>fade.h</in>
           <in>item_effects.h</in>
           <in>items.h</in>

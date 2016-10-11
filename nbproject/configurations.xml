@@ -4631,6 +4631,7 @@
           <in>battle_initiative.h</in>
           <in>battle_test.h</in>
           <in>debug.h</in>
+          <in>dns_core.h</in>
           <in>item_effects.h</in>
           <in>items.h</in>
           <in>pkmn_attributes.h</in>
@@ -27373,6 +27374,8 @@
       <item path="src/include/battle_test.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/include/debug.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/dns_core.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/include/item_effects.h" ex="false" tool="3" flavor2="0">
       </item>
