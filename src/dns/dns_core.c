@@ -1,10 +1,7 @@
 #include <bpre.h>
 #include <dns_core.h>
 
-enum time_type get_time_of_day() {
-    volatile u8* time_pointer = (u8*) (0x0203FAB1);
-    return *time_pointer;
-}
+
 
 static struct pal_replace lightmap[] = {
     {(void*) 0x082D4AAC, 9, 10, {
@@ -39,6 +36,11 @@ void overworld_loop() {
         update_dns_palettes();
         *test_pointer = 0;
     }
+}
+
+enum time_type get_time_of_day() {
+    volatile u8* time_pointer = (u8*) (0x0203FAB1);
+    return *time_pointer;
 }
 
 static struct color_shade color_shade_day = {

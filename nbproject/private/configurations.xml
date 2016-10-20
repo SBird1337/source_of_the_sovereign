@@ -6065,6 +6065,7 @@
           <in>lcd.h</in>
           <in>moves.h</in>
           <in>objects.h</in>
+          <in>oe_animation.h</in>
           <in>pkmn_attributes.h</in>
           <in>pkmn_types.h</in>
           <in>pokemon.h</in>
@@ -6205,6 +6206,7 @@
           <in>music_override.c</in>
         </df>
         <df name="overworld">
+          <in>grass_animation.c</in>
           <in>overworld.c</in>
           <in>overworld_hooks.S</in>
           <in>trainer_run.S</in>

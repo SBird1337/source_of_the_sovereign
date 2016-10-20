@@ -60,6 +60,7 @@
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/src/battle_engine/battle_switch_in_hook.S</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/data/item/tm_hm_move_table.S</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/patches/items/item_routines.asm</file>
+            <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/src/dns/dns_core.c</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/data/moves/animation_table.S</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/src/moves/uturn/u_turn_script.S</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/data/item/item_scripts.S</file>
@@ -84,7 +85,6 @@
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/gfx_build/sprites/back_sprites/.gitignore</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/patches/split_physical_special.asm</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/patches/battle_engine/malloc.asm</file>
-            <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/string/de/tailwind.txt</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/bpre.sym</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/src/moves/roost/roost.c</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/src/moves/hazards/hazards_scripts.S</file>

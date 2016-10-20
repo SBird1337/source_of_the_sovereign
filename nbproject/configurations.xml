@@ -4634,6 +4634,7 @@
           <in>dns_core.h</in>
           <in>item_effects.h</in>
           <in>items.h</in>
+          <in>oe_animation.h</in>
           <in>pkmn_attributes.h</in>
           <in>pokemon.h</in>
         </df>
@@ -4771,6 +4772,7 @@
           <in>music_override.c</in>
         </df>
         <df name="overworld">
+          <in>grass_animation.c</in>
           <in>overworld.c</in>
           <in>overworld_hooks.S</in>
           <in>trainer_run.S</in>
@@ -27381,6 +27383,8 @@
       </item>
       <item path="src/include/items.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/include/oe_animation.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/include/pkmn_attributes.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/include/pokemon.h" ex="false" tool="3" flavor2="0">
@@ -27635,6 +27639,8 @@
       <item path="src/music/main_mixer.S" ex="false" tool="4" flavor2="0">
       </item>
       <item path="src/music/music_override.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/overworld/grass_animation.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="src/overworld/overworld.c" ex="false" tool="0" flavor2="0">
       </item>
