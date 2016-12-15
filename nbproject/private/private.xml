@@ -49,6 +49,7 @@
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/src/include/battle.h</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/patches/moves.asm</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/data/pkmn_tables/pokemon_moveset_table.S</file>
+            <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/src/include/types.h</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/src/overworld/overworld_hooks.S</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/patches/battle_engine/battle_engine.asm</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/src/moves/feint/feint.c</file>
@@ -91,6 +92,7 @@
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/src/include/battle_script.h</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/src/battle_engine/entry_hazards_hook.S</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/data/moves/move_data.S</file>
+            <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/src/interface/textbox_mugshots.c</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/string/de/move_strings.txt</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/src/include/battle_abilities.h</file>
             <file>file:/C:/cygwin64/home/auerp/sots/source_of_the_sovereign/patches/items/items.asm</file>

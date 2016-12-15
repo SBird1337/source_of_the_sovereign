@@ -170,7 +170,7 @@ void debug_update() {
     objc_exec();
     obj_sync();
     gpu_pal_upload();
-    gpu_sprites_upload();
+    obj_gpu_sprites_upload();
 }
 
 void int_to_char(u32 i, char* ref) {

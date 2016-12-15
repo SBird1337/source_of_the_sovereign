@@ -12,7 +12,7 @@ void play_meteor();
 void setup_vram();
 void cutscene();
 void update_screen();
-void meteor_callback(object* self);
+void meteor_callback(struct obj_entity* self);
 void end_playback();
 
 #endif

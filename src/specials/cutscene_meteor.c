@@ -29,30 +29,30 @@ struct meteor_memory{
 
 static struct meteor_memory* memory = (struct meteor_memory*)(0x0203FFC0);
 
-static struct sprite sprite_meteor = {0, 0x8000, 0x800, 0x0};
+static struct obj_oam_attributes sprite_meteor = {0, 0x8000, 0x800, 0x0};
 
-static struct frame meteor_frames [4] = {
+static struct obj_frame meteor_frames [4] = {
 	{0, 10},
 	{16, 10},
 	{32, 10},
 	{0xFFFE, 0}
 };
 
-static struct frame* meteor_frames_a [1] = {
+static struct obj_frame* meteor_frames_a [1] = {
 	meteor_frames
 };
 
-static struct template template_meteor = {
+static struct obj_template template_meteor = {
 	TAG_METEOR,
 	TAG_METEOR,
 	&sprite_meteor,
 	meteor_frames_a,
 	0,
-	(rotscale_frame **) 0x08231CFC,
+	(struct obj_rotscale_frame **) 0x08231CFC,
 	meteor_callback
 };
 
-void meteor_callback(object* self)
+void meteor_callback(struct obj_entity* self)
 {
 	if(memory->meteor_moving > 0)
 	{
@@ -239,14 +239,14 @@ void setup_vram()
 
 	//setup oam
 	obj_delete_all();
-	resource gfx_meteor = {(void*)met_meteorTiles, 0x1C00, TAG_METEOR};
-	resource pal_meteor = {(void*)met_meteorPal, TAG_METEOR};
-	gpu_pal_obj_alloc_tag_and_apply(&pal_meteor);
-	gpu_tile_obj_decompress_alloc_tag_and_upload(&gfx_meteor);
+	struct obj_resource gfx_meteor = {(void*)met_meteorTiles, 0x1C00, TAG_METEOR};
+	struct obj_resource pal_meteor = {(void*)met_meteorPal, TAG_METEOR};
+	obj_gpu_pal_alloc_tag_and_apply(&pal_meteor);
+	obj_gpu_tile_decompress_alloc_tag_and_upload(&gfx_meteor);
 
-	u8 meteor_id = template_instanciate_forward_search(&template_meteor, 0, 100, 1);
-	objects[meteor_id].x = 200;
-	objects[meteor_id].y = 0;
+	u8 meteor_id = obj_template_instanciate_forward_search(&template_meteor, 0, 100, 1);
+	superstate.sprites[meteor_id].x = 200;
+	superstate.sprites[meteor_id].y = 0;
 
 	memory->animate_clouds = 1;
 }
@@ -258,7 +258,7 @@ void update_screen()
 	objc_exec();
 	obj_sync();
 	gpu_pal_upload();
-	gpu_sprites_upload();
+	obj_gpu_sprites_upload();
 	if(memory->cloud_animation_state == 0 && memory->animate_clouds != 0)
 	{
 		u16 sky_h = lcd_io_get(0x18);

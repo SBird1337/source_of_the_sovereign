@@ -2,7 +2,7 @@ AS      := arm-none-eabi-as
 LD      := arm-none-eabi-ld
 OBJCOPY := arm-none-eabi-objcopy
 GRIT    := grit
-CC      := arm-none-eabi-gcc
+CC      := @arm-none-eabi-gcc
 ARS     := armips
 MAKE    := make
 NM      := @arm-none-eabi-nm
@@ -13,7 +13,7 @@ export PATH := $(realpath ../tools):$(PATH)
 
 DEFINES   := -DBPRE -DSOFTWARE_VERSION=0
 ASFLAGS   := -mthumb
-CFLAGS    := -mthumb -mno-thumb-interwork -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -O3 -std=c99 -Wall -Isrc/include $(DEFINES)
+CFLAGS    := -mthumb -mno-thumb-interwork -g -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -O3 -std=c99 -Wall -Isrc/include $(DEFINES)
 GRITFLAGS := -ftc -fa
 LDFLAGS   := -z muldefs
 BLDPATH   := object
@@ -80,6 +80,7 @@ rom: main.asm $(MAIN_OBJ)
 $(MAIN_OBJ): $(ALL_OBJ) $(ICONS_AR) $(SPRITES) $(DYN_OVER) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR) $(STRING_OBJ)
 	$(MAKE) -f assets.makefile
 	$(LD) $(LDFLAGS) -T linker.ld -T bpre.sym --whole-archive -r -o $@ --start-group $^ --end-group
+	$(LD) $(LDFLAGS) -T linker.ld -T bpre.sym -o object/debug.o object/linked.o
 
 .PHONY: clean
 clean:

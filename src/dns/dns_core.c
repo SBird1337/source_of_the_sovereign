@@ -108,8 +108,8 @@ void overworld_anim_load_pal(void** oe_script_pointer) {
     memcpy(temp_color, pal_to_apply->palette, 32);
     apply_shaders(0, 0, temp_color);
 
-    struct resource temp_resource = {temp_color, pal_to_apply->tag, pal_to_apply->fill};
-    gpu_pal_obj_alloc_tag_and_apply(&temp_resource);
+    struct obj_resource temp_resource = {temp_color, pal_to_apply->tag, pal_to_apply->fill};
+    obj_gpu_pal_alloc_tag_and_apply(&temp_resource);
     free(temp_color);
     if (current_idx != 0xFF) {
         current_idx = gpu_pal_tags_index_of(pal_to_apply->tag);

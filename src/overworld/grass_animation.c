@@ -1,4 +1,4 @@
-#include <bpre.h>
+/*#include <bpre.h>
 
 #include "oe_animation.h"
 
@@ -9,4 +9,4 @@ void grass_step_general(struct npc_state* npc)
     
 }
 
-void grass_step_normal()
+void grass_step_normal()*/

@@ -3,7 +3,8 @@
 
 #include <objects.h>
 typedef void (*callback)();
-typedef struct super {
+
+struct int_superstate {
 	callback callback1;
 	callback callback2;
 	callback callback2backup;
@@ -21,16 +22,15 @@ typedef struct super {
 	u16 buttons_new_and_key_repeat;
 	u32 keypad_countdown;
 	u32 unused_padding;
-	sprite sprites[128];
+	struct obj_entity sprites[128];
 	u8 multi_purpose_state_tracker;
 	u8 gpu_sprites_upload_skip;
- } super;
-extern super superstate;
-void set_callback2(callback address);
-void vblank_handler_set(callback address);
+ };
+ 
+extern struct int_superstate superstate;
+extern void set_callback2(callback address);
+extern void vblank_handler_set(callback address);
 
-
-
-void callback_overworld();
+extern void callback_overworld();
 
 #endif

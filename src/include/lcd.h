@@ -53,13 +53,7 @@ void gpu_bg_hide(u8 id);
 void gpu_sync_bg_visibility_and_mode();
 void lcd_io_set_func(u8 id, u16 value);
 void gpu_pal_upload();
-void gpu_sprites_upload();
-
-u8 gpu_pal_obj_alloc_tag_and_apply(resource *pal);
 void gpu_pal_free_by_tag(u16 tag);
-void gpu_tile_obj_free_by_tag(u16 tag);
-void obj_delete_and_free_tiles(object *obj);
-void obj_delete_all();
 
 u16 lcd_io_get(u8 id);
 

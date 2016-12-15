@@ -4363,7 +4363,7 @@
           </df>
         </df>
         <df name="string">
-          <df name="DE">
+          <df name="de">
           </df>
         </df>
       </df>
@@ -5587,6 +5587,7 @@
               <in>SEQ_BGM_E_CHAMPION.s</in>
               <in>SEQ_BGM_E_INISHIE.s</in>
               <in>SEQ_BGM_E_MENU.s</in>
+              <in>SEQ_BGM_GYM.s</in>
               <in>SEQ_BGM_LABO.s</in>
               <in>SEQ_BGM_MART.s</in>
               <in>SEQ_BGM_OVERTURE.s</in>
@@ -5700,6 +5701,8 @@
               <in>snd_127_sticks.s</in>
               <in>snd_127_tambourine.s</in>
               <in>snd_127_tom.s</in>
+              <in>snd_127_tom_45.s</in>
+              <in>snd_127_tom_48.s</in>
               <in>snd_127_triangle.s</in>
               <in>snd_14_tubular_bell.s</in>
               <in>snd_17_organ.s</in>
@@ -6275,11 +6278,12 @@
             <option name="gdb_init_file"
                     value="C:\cygwin64\home\auerp\sots\emu\gdbinit.gdb"/>
             <option name="gdb_source_dirs" value="src"/>
-            <option name="debug_command" value="&quot;../emu/mgba.exe&quot; -g &quot;build/pkmn_sots.gba&quot;"/>
+            <option name="debug_command"
+                    value="arm-none-eabi-gdb --args file &quot;build\debug.o&quot; target remote localhost:2345"/>
             <option name="debug_dir"
                     value="C:\cygwin64\home\auerp\sots\source_of_the_sovereign\."/>
             <option name="symbol_file"
-                    value="C:\cygwin64\home\auerp\sots\source_of_the_sovereign\object\linked.o"/>
+                    value="C:\cygwin64\home\auerp\sots\source_of_the_sovereign\object\debug.o"/>
           </DebugOptions>
         </gdb_options>
         <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
