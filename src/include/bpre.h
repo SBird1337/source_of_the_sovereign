@@ -21,25 +21,20 @@ void* memcpy (void * destination, const void* source, size_t num);
 void* memset (void* dst, int value, size_t size);
 
 //debug
-void agbprintf(const char* pBuf, ...);
+/*void agbprintf(const char* pBuf, ...);
 void agbprint_flush();
-void agb_assert(const char *file, int line, const char *expression, u32 stop);
+void agb_assert(const char *file, int line, const char *expression, u32 stop);*/
 
 // sound related stuff
-extern MPlayTable mplay_table[];
-extern SongTable _songtable[];
-void m4aSongNumStart(u16 songid);
-void MPlayStart_rev01(MusicPlayerArea *ma, SongHeader *so);
-void MPlayContinue(MusicPlayerArea *ma);
+
 
 //graphical stuff
 
 //object related stuff
-void objc_exec();
-void obj_sync();
+
 
 //task related stuff
-void task_exec();
+
 
 //attribute setter and getter
 u8 get_attributes(struct pokemon* poke_address, u8 request, void* destination);

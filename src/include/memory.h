@@ -20,12 +20,55 @@
  *   If not, see <http://www.gnu.org/licenses/>.                            *
  ****************************************************************************/
 
-#ifndef CUTSCENE_METEOR_H_
-#define CUTSCENE_METEOR_H_
+/**
+ * @file memory.h
+ * @author Sturmvogel
+ * @date 15 dec 2016
+ * @brief Manage memory
+ * 
+ * This header file provides methods to allocate and free memory areas.
+ * It also provides basic memory copy/set methods.
+ */
+
+#ifndef MEMORY_H
+#define MEMORY_H
+
+/* === INCLUDE === */
+
+#include <types.h>
+
+/* === EXTERN METHODS === */
 
 /**
- * @brief initiates the animation
+ * @brief allocates memory
+ * @param size amount of bytes to allocate
+ * @return address to allocated memory area
  */
-void met_play();
+extern void* malloc(size_t size);
 
-#endif
+/**
+ * @brief frees previously allocated memory
+ * @param address address to free
+ */
+extern void free(void* address);
+
+/**
+ * @brief copy bytes in memory
+ * @param destination address to copy to
+ * @param source address to copy from
+ * @param num amount of bytes to copy
+ * @return destination pointer
+ */
+extern void* memcpy (void * destination, const void* source, size_t num);
+
+/**
+ * @brief set bytes in memory
+ * @param dst destination to set words
+ * @param value to be set
+ * @param size number of bytes to set
+ * @return 
+ */
+extern void* memset (void* dst, int value, size_t size);
+
+#endif /* MEMORY_H */
+

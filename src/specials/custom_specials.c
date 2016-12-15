@@ -19,7 +19,7 @@ void init_script()
 }
 
 static callback special_routines[5] = {
-	play_meteor,
+	met_play,
 	sp_move_camera,
 	init_script,
         some_test,

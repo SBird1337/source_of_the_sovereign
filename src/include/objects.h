@@ -16,7 +16,8 @@
  *   GNU Lesser General Public License for more details.                    *
  *                                                                          *
  *   You should have received a copy of the GNU Lesser General Public       *
- *   License along with Box.  If not, see <http://www.gnu.org/licenses/>.   *
+ *   License along with Sovereign of the Skies.                             *
+ *   If not, see <http://www.gnu.org/licenses/>.                            *
  ****************************************************************************/
 
 /**
@@ -148,6 +149,16 @@ extern void obj_delete_and_free_tiles(struct obj_entity *obj);
  * @brief delete all object entities in game
  */
 extern void obj_delete_all();
+
+/**
+ * @brief execute object callbacks
+ */
+extern void objc_exec();
+
+/**
+ * @brief synchronize object data with object hardware memory
+ */
+void obj_sync();
 
 
 #endif

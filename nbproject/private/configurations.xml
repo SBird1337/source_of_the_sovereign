@@ -6066,6 +6066,7 @@
           <in>item_effects.h</in>
           <in>items.h</in>
           <in>lcd.h</in>
+          <in>memory.h</in>
           <in>moves.h</in>
           <in>objects.h</in>
           <in>oe_animation.h</in>

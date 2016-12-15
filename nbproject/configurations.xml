@@ -4634,6 +4634,7 @@
           <in>dns_core.h</in>
           <in>item_effects.h</in>
           <in>items.h</in>
+          <in>memory.h</in>
           <in>oe_animation.h</in>
           <in>pkmn_attributes.h</in>
           <in>pokemon.h</in>
@@ -27382,6 +27383,8 @@
       <item path="src/include/item_effects.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/include/items.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/memory.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/include/oe_animation.h" ex="false" tool="3" flavor2="0">
       </item>
