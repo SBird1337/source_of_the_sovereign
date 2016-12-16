@@ -4632,8 +4632,10 @@
           <in>battle_test.h</in>
           <in>debug.h</in>
           <in>dns_core.h</in>
+          <in>game_engine.h</in>
           <in>item_effects.h</in>
           <in>items.h</in>
+          <in>math.h</in>
           <in>memory.h</in>
           <in>oe_animation.h</in>
           <in>pkmn_attributes.h</in>
@@ -27380,9 +27382,13 @@
       </item>
       <item path="src/include/dns_core.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/include/game_engine.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/include/item_effects.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/include/items.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/include/math.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/include/memory.h" ex="false" tool="3" flavor2="0">
       </item>

@@ -23,6 +23,6 @@ typedef     unsigned char           bool;
 
 #define NULL 0
 
-#define		rgb5(r,g,b)				(u16)( r | ( g << 5) | ( b << 10) )
+#define rgb5(r,g,b)                 (u16)( r | ( g << 5) | ( b << 10) )
 
 #endif

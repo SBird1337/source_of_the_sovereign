@@ -10,13 +10,13 @@ memset = 0x081E5ED8|1;
 memcpy = 0x081E5E78|1;
 obj_template_instanciate_forward_search = 0x08006F8D;
 gpu_copy_to_vram_by_bgid = 0x08001298|1;
-bg_set_tilemap = 0x08001FA0|1;
-bg_nullify_tilemap = 0x08001FD4|1;
-bg_get_tilemap = 0x08002008|1;
-bg_send_tilemap = 0x080020BC|1;
+virtual_bg_set_tilemap = 0x08001FA0|1;
+virtual_bg_nullify_tilemap = 0x08001FD4|1;
+virtual_bg_get_tilemap = 0x08002008|1;
+virtual_bg_send_tilemap = 0x080020BC|1;
 gpu_init_bgs = 0x08001028|1;
 gpu_tile_bg_drop_all_sets = 0x08001618|1;
-bg_vram_setup = 0x08001658|1;
+gpu_bg_vram_setup = 0x08001658|1;
 gpu_bg_show = 0x08001320|1;
 gpu_bg_hide = 0x0800139C|1;
 gpu_sync_bg_visibility_and_mode = 0x080013D0|1;
@@ -85,7 +85,7 @@ task_exec = 0x08077579;
 objc_exec = 0x08006B5D;
 obj_sync = 0x08006BA9;
 
-clear_flag = 0x0806E6A9;
+flag_clear = 0x0806E6A9;
 
 divide = 0x081E4018;
 
@@ -141,8 +141,8 @@ item_get_x12 = 0x0809A924|1;
 party_player = 0x02024284;
 party_opponent = 0x0202402C;
 
-get_attributes = 0x0803FBE8|1;
-set_attributes = 0x0804037C|1;
+pokemon_get_attribute = 0x0803FBE8|1;
+pokemon_set_attribute = 0x0804037C|1;
 
 
 battle_status3_bits_pbs = 0x02023DFC;

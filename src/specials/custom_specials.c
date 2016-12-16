@@ -14,7 +14,7 @@ void init_script()
 {
   for(u16 i = 0x1000; i < 0x1800; ++i)
   {
-    clear_flag(i);
+    flag_clear(i);
   }
 }
 

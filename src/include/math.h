@@ -21,17 +21,17 @@
  ****************************************************************************/
 
 /**
- * @file memory.h
+ * @file math.h
  * @author Sturmvogel
  * @date 15 dec 2016
- * @brief Manage memory
+ * @brief Math Environment
  * 
- * This header file provides methods to allocate and free memory areas.
- * It also provides basic memory copy/set methods.
+ * This header file contains methods to interact with the math engine,
+ * i.e. the division / mod methods and the PRNG
  */
 
-#ifndef MEMORY_H
-#define MEMORY_H
+#ifndef MATH_H
+#define MATH_H
 
 /* === INCLUDE === */
 
@@ -40,49 +40,14 @@
 /* === EXTERN METHODS === */
 
 /**
- * @brief allocates memory
- * @param size amount of bytes to allocate
- * @return address to allocated memory area
+ * @brief gets the a mod b
+ * @param a dividend
+ * @param b divisor
+ * @return a % b
  */
-extern void* malloc(size_t size);
+u32 __aeabi_uidivmod(u32 a, u32 b);
 
-/**
- * @brief frees previously allocated memory
- * @param address address to free
- */
-extern void free(void* address);
+u16 random();
 
-/**
- * @brief copy bytes in memory
- * @param destination address to copy to
- * @param source address to copy from
- * @param num amount of bytes to copy
- * @return destination pointer
- */
-extern void* memcpy (void * destination, const void* source, size_t num);
-
-/**
- * @brief set bytes in memory
- * @param dst destination to set words
- * @param value to be set
- * @param size number of bytes to set
- * @return 
- */
-extern void* memset (void* dst, int value, size_t size);
-
-/**
- * @brief decompress data into wram using interrupt
- * @param src data source
- * @param dst data destination (must be in wram)
- */
-extern void wram_decompress(void* src, void* dst);
-
-/**
- * @brief decompress data into vram using interrupt
- * @param src data source
- * @param dst data destination (must be in vram)
- */
-extern void vram_decompress(void* src, void* dst);
-
-#endif /* MEMORY_H */
+#endif /* MATH_H */
 

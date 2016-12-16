@@ -19,7 +19,7 @@ void debug_scene() {
         gpu_tile_bg_drop_all_sets(2);
         gpu_tile_bg_drop_all_sets(3);
 
-        bg_vram_setup(0, standard_bg, 4);
+        gpu_bg_vram_setup(0, standard_bg, 4);
 
         gpu_bg_show(0);
         gpu_bg_show(1);

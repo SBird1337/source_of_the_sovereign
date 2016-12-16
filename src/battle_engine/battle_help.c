@@ -131,7 +131,7 @@ u8 count_party_pokemon(u8 bank)
     u8 usable_pokes = 0;
     for (u8 i = 0; i < 6; i ++)
     {
-        if (get_attributes(&poke[i], ATTR_CURRENT_HP, 0) != 0 && get_attributes(&poke[i], ATTR_IS_EGG, 0) != 1 && get_attributes(&poke[i], ATTR_SPECIES, 0) != 0)
+        if (pokemon_get_attribute(&poke[i], ATTR_CURRENT_HP, 0) != 0 && pokemon_get_attribute(&poke[i], ATTR_IS_EGG, 0) != 1 && pokemon_get_attribute(&poke[i], ATTR_SPECIES, 0) != 0)
             usable_pokes++;
     }
     return usable_pokes;

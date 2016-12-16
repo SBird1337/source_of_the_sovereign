@@ -21,68 +21,60 @@
  ****************************************************************************/
 
 /**
- * @file memory.h
+ * @file game_engine.h
  * @author Sturmvogel
  * @date 15 dec 2016
- * @brief Manage memory
+ * @brief Game Environment
  * 
- * This header file provides methods to allocate and free memory areas.
- * It also provides basic memory copy/set methods.
+ * This header file contains methods to interact with the game environment,
+ * misc. functions i.e. access to flags / variables and (encrypted) pokémon
+ * data.
  */
 
-#ifndef MEMORY_H
-#define MEMORY_H
+#ifndef GAME_ENGINE_H
+#define GAME_ENGINE_H
 
 /* === INCLUDE === */
-
 #include <types.h>
 
 /* === EXTERN METHODS === */
 
 /**
- * @brief allocates memory
- * @param size amount of bytes to allocate
- * @return address to allocated memory area
+ * @brief get pointer of var
+ * @param index variable to access
+ * @return pointer to given variable storage
  */
-extern void* malloc(size_t size);
+extern u16 *var_access(u32 index);
 
 /**
- * @brief frees previously allocated memory
- * @param address address to free
+ * @brief checks if flag is set
+ * @param flag index of flag to check
+ * @return flag status (bool)
  */
-extern void free(void* address);
+extern u8 flag_check(u32 flag);
 
 /**
- * @brief copy bytes in memory
- * @param destination address to copy to
- * @param source address to copy from
- * @param num amount of bytes to copy
- * @return destination pointer
+ * @brief clears a flag
+ * @param flag flag index to clear
  */
-extern void* memcpy (void * destination, const void* source, size_t num);
+extern void flag_clear(u16 flag);
 
 /**
- * @brief set bytes in memory
- * @param dst destination to set words
- * @param value to be set
- * @param size number of bytes to set
- * @return 
+ * @brief gets attribute of pokémon
+ * @param poke_address address to pokémon structure
+ * @param request request from the attribute request table
+ * @param destination destination to write to (if not returned directly)
+ * @return requested value (if not too big)
  */
-extern void* memset (void* dst, int value, size_t size);
+extern u32 pokemon_get_attribute(struct pokemon* poke_address, u8 request, void* destination);
 
 /**
- * @brief decompress data into wram using interrupt
- * @param src data source
- * @param dst data destination (must be in wram)
+ * @brief sets attribute of pokémon
+ * @param poke_address address to pokémon structure
+ * @param request request from the attribute request table
+ * @param new_value pointer to new value
  */
-extern void wram_decompress(void* src, void* dst);
+void pokemon_set_attribute(struct pokemon* poke_address, u8 request, void* new_value);
 
-/**
- * @brief decompress data into vram using interrupt
- * @param src data source
- * @param dst data destination (must be in vram)
- */
-extern void vram_decompress(void* src, void* dst);
-
-#endif /* MEMORY_H */
+#endif /* GAME_ENGINE_H */
 
