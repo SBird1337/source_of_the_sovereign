@@ -22,7 +22,7 @@ static callback special_routines[5] = {
 	met_play,
 	sp_move_camera,
 	init_script,
-        some_test,
+        debug_some_test,
         dns_switch,
 };
 

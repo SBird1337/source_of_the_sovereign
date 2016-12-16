@@ -1,14 +1,158 @@
-#include <bpre.h>
+/****************************************************************************
+ * Copyright (C) 2015-2016 by the SotS Team                                 *
+ *                                                                          *
+ * This file is part of Sovereign of the Skies.                             *
+ *                                                                          *
+ *   Sovereign of the Skies is free software: you can redistribute it       *
+ *   and/or modify it                                                       *
+ *   under the terms of the GNU Lesser General Public License as published  *
+ *   by the Free Software Foundation, either version 3 of the License, or   *
+ *   (at your option) any later version provided you include a copy of the  *
+ *   licence and this header.                                               *
+ *                                                                          *
+ *   Sovereign of the Skies is distributed in the hope that it will be      *
+ *   useful, but WITHOUT ANY WARRANTY; without even the implied warranty of *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the          *
+ *   GNU Lesser General Public License for more details.                    *
+ *                                                                          *
+ *   You should have received a copy of the GNU Lesser General Public       *
+ *   License along with Sovereign of the Skies.                             *
+ *   If not, see <http://www.gnu.org/licenses/>.                            *
+ ****************************************************************************/
+
+/**
+ * @file debug.c
+ * @author Sturmvogel
+ * @date 15 dec 2016
+ * @brief Operate with the sots debug engine, very temporary
+ */
+
+/* === INCLUDE === */
+
+#include <types.h>
+#include <callback.h>
+#include <lcd.h>
 #include <debug.h>
+#include <memory.h>
 #include <assets/ascii.h>
 #include <battle_test.h>
+#include <math.h>
+#include <fade.h>
 
-void set_debug_background(u16 color) {
+/* === STATICS === */
+
+static struct print_engine* print_memory = (struct print_engine*)(0x0203FFF0);
+
+/* === PROTOTYPES === */
+
+/**
+ * @brief set bg color
+ * @param color color to set bg to
+ */
+void debug_set_bg(u16 color);
+
+/**
+ * @brief clean debug screen from any text and reset cursor
+ */
+void debug_clean();
+
+/**
+ * @brief wait for button press
+ * @param field bitfield to specify buttom combination
+ */
+void debug_wait_for_btn(u16 field);
+
+/**
+ * @brief convert int to char
+ * @param i integer
+ * @param ref buffer to output to
+ */
+void debug_int_to_char(u32 i, char* ref);
+
+/**
+ * @get length of integer
+ * @param i integer
+ * @return length
+ */
+u32 debug_dec_len(u32 i);
+
+/**
+ * @brief update debug environment
+ */
+void debug_update();
+
+/**
+ * @brief reset scrolling (from overworld e.g.)
+ */
+void debug_reset_scrolling();
+
+/**
+ * @brief start a unit test function
+ */
+void debug_init_unit_test();
+
+/**
+ * @brief handle for the debug scene
+ */
+void debug_scene();
+
+/**
+ * @brief convert character to byte
+ * @param character character
+ * @return byte from character
+ */
+u8 char_to_byte(char character);
+
+/**
+ * @brief print a character on the debug environment
+ * @param line line to print to
+ * @param row row to print to
+ * @param character character to print
+ * @param color color to print in
+ */
+void debug_print_char(u16 line, u16 row, char character, u8 color);
+
+/**
+ * @brief print a string to the debug environment
+ * @param line line to print to
+ * @param row row to start
+ * @param color color to print in
+ * @param pBuf string buffer to print (null terminated)
+ */
+void debug_print_string(u16 line, u16 row, u8 color, char* pBuf);
+
+/**
+ * @brief print string onto debug environment at current position with parsing
+ * @param str string to print
+ */
+void debug_print(char* str);
+
+/**
+ * @brief build power
+ * @param n integer to power
+ * @param power exponent
+ * @return n^power
+ */
+u32 debug_power(u32 n, u32 power);
+
+/**
+ * @brief print in format to debug environment
+ * @param str string with format
+ * @param arg argument to print (only one, not an array)
+ */
+void debug_printf(char* str, int arg);
+
+/**
+ * @brief set bg color of debug environment
+ * @param color color to set to
+ */
+void debug_set_bg(u16 color) {
     u16* bgc = (u16*) 0x020375f8;
     *bgc = color;
     return;
 }
 
+/* === IMPLEMENTATIONS === */
 void debug_scene() {
     if (superstate.multi_purpose_state_tracker == 0) {
         print_memory->row = 0;
@@ -27,7 +171,7 @@ void debug_scene() {
         gpu_bg_show(3);
 
         gpu_sync_bg_visibility_and_mode();
-        reset_scrolling_debug();
+        debug_reset_scrolling();
         obj_delete_all();
         memset((void*) 0x06000000, 0, 0x17fe0);
         memset((void*) 0x020375F8, 0, 0x400);
@@ -35,16 +179,16 @@ void debug_scene() {
     } else if (superstate.multi_purpose_state_tracker == 1) {
         vram_decompress((void*) asciiTiles, (void*) 0x06000000);
         memcpy((void*) 0x020375F8, (void*) asciiPal, 0x60);
-        set_debug_background(0x0000);
+        debug_set_bg(0x0000);
         superstate.multi_purpose_state_tracker++;
     } else if (superstate.multi_purpose_state_tracker == 2) {
-        init_unit_test();
+        debug_init_unit_test();
         superstate.multi_purpose_state_tracker++;
     }
     return;
 }
 
-u8 some_test() {
+u8 debug_some_test() {
     set_callback2(debug_scene);
     vblank_handler_set(debug_update);
     superstate.multi_purpose_state_tracker = 0;
@@ -52,7 +196,7 @@ u8 some_test() {
     return 0;
 }
 
-void reset_scrolling_debug() {
+void debug_reset_scrolling() {
     lcd_io_set_func(0x12, 0x0);
     lcd_io_set_func(0x14, 0x0);
     lcd_io_set_func(0x16, 0x0);
@@ -64,18 +208,18 @@ void reset_scrolling_debug() {
     return;
 }
 
-void init_unit_test() {
+void debug_init_unit_test() {
     test_speed();
 }
 
-void print_string(u16 line, u16 row, u8 color, char* pBuf) {
+void debug_print_string(u16 line, u16 row, u8 color, char* pBuf) {
     while (*pBuf) {
-        print_character(line, row++, *pBuf++, color);
+        debug_print_char(line, row++, *pBuf++, color);
     }
     return;
 }
 
-void print(char* str) {
+void debug_print(char* str) {
     while (*str) {
         if (*str == '\n') {
             print_memory->line++;
@@ -87,7 +231,7 @@ void print(char* str) {
                 c = 0;
             print_memory->color = c;
         } else {
-            print_character(print_memory->line, print_memory->row, *str, print_memory->color);
+            debug_print_char(print_memory->line, print_memory->row, *str, print_memory->color);
             print_memory->row++;
         }
         str++;
@@ -95,7 +239,7 @@ void print(char* str) {
     return;
 }
 
-void printf(char* str, int arg) {
+void debug_printf(char* str, int arg) {
     while (*str) {
         if (*str == '\n') {
             print_memory->line++;
@@ -109,21 +253,21 @@ void printf(char* str, int arg) {
         } else if (*str == '%') {
             str++;
             if (*str == '%') {
-                print_character(print_memory->line, print_memory->row, *str, print_memory->color);
+                debug_print_char(print_memory->line, print_memory->row, *str, print_memory->color);
                 print_memory->row++;
             } else if (*str == 'd') {
-                u32 len = dec_len(arg);
-                char temp[dec_len(len + 1)];
+                u32 len = debug_dec_len(arg);
+                char temp[debug_dec_len(len + 1)];
                 temp[len] = 0;
-                int_to_char(arg, temp);
-                print(temp);
+                debug_int_to_char(arg, temp);
+                debug_print(temp);
             } else if (*str == 'c') {
                 char print_char = (char) (arg);
-                print_character(print_memory->line, print_memory->row, print_char, print_memory->color);
+                debug_print_char(print_memory->line, print_memory->row, print_char, print_memory->color);
                 print_memory->row++;
             }
         } else {
-            print_character(print_memory->line, print_memory->row, *str, print_memory->color);
+            debug_print_char(print_memory->line, print_memory->row, *str, print_memory->color);
             print_memory->row++;
         }
         str++;
@@ -138,14 +282,14 @@ void debug_clean() {
     return;
 }
 
-void wait_for_btn(u16 field) {
+void debug_wait_for_btn(u16 field) {
     volatile u16* control_io = (volatile u16*) (0x04000130);
     while (*control_io & field) {
     }
     return;
 }
 
-void print_character(u16 line, u16 row, char character, u8 color) {
+void debug_print_char(u16 line, u16 row, char character, u8 color) {
     if (color > 2)
         color = 0;
     u16 position = (32 * line) + row;
@@ -173,12 +317,12 @@ void debug_update() {
     obj_gpu_sprites_upload();
 }
 
-void int_to_char(u32 i, char* ref) {
+void debug_int_to_char(u32 i, char* ref) {
     if (i == 0) {
         ref[0] = '0';
         return;
     }
-    u32 len = dec_len(i);
+    u32 len = debug_dec_len(i);
     while (i > 0) {
 
         ref[len - 1] = '0' + (__aeabi_uidivmod(i, 10));
@@ -189,7 +333,7 @@ void int_to_char(u32 i, char* ref) {
     return;
 }
 
-u32 power(u32 n, u32 power) {
+u32 debug_power(u32 n, u32 power) {
     u32 out = 1;
     for (int i = 0; i < power; ++i) {
         out = out * n;
@@ -197,7 +341,7 @@ u32 power(u32 n, u32 power) {
     return out;
 }
 
-u32 dec_len(u32 i) {
+u32 debug_dec_len(u32 i) {
     u32 len = 1;
     while ((i /= 10) > 0) {
         len++;

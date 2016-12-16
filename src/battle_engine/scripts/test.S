@@ -5,7 +5,7 @@
 .text
 .global bs_test
 bs_test:
-    callasm some_test+1
+    callasm debug_some_test+1
     end
 
 
