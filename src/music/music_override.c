@@ -1,4 +1,5 @@
-#include <bpre.h>
+#include <sound.h>
+#include <game_engine.h>
 #include <config.h>
 
 void music_override(u16 songid) {

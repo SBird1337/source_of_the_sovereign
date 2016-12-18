@@ -1,5 +1,8 @@
-#include <bpre.h>
+#include <game_engine.h>
 #include "camera_move.h"
+#include <callback.h>
+#include <fade.h>
+#include <config.h>
 
 struct point** sav_data_map = (struct point**)(0x03005008);
 

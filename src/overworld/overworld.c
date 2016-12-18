@@ -1,4 +1,4 @@
-#include <bpre.h>
+#include <game_engine.h>
 
 #define OW_REPLACE_VAR  0x500A
 #define OW_REPLACE_TO_VAR   0x500B

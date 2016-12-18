@@ -1,6 +1,6 @@
 #include <bpre.h>
 #include <dns_core.h>
-
+#include <memory.h>
 
 
 static struct pal_replace lightmap[] = {
