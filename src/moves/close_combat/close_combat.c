@@ -1,4 +1,6 @@
-#include <battle.h>
+#include <battle_locations.h>
+#include <battle_structs.h>
+#include <types.h>
 
 extern void* bs_cc_lower_def;
 extern void* bs_cc_lower_sdef;

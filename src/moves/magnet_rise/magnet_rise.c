@@ -1,4 +1,7 @@
-#include <battle.h>
+#include <battle_common.h>
+#include <battle_locations.h>
+#include <battle_custom_structs.h>
+#include <battle_structs.h>
 
 u8 set_magnet_rise() {
     struct bank_affecting* user = &custom_battle_elements.ptr->bank_affecting[battle_attacker_bank];

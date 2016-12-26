@@ -1,8 +1,11 @@
-#include <battle.h>
+#include <battle_common.h>
 #include <battle_help.h>
+#include <battle_locations.h>
+#include <battle_custom_structs.h>
+#include <battle_structs.h>
 
 u8 set_healing_wish() {
-    if (count_party_pokemon(battle_attacker_bank) <= 1) {
+    if (battle_count_party_pokemon(battle_attacker_bank) <= 1) {
         //it will fail
         battlescript_cursor = (void*) (0x081D7DF0);
         return true;

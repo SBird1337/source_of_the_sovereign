@@ -36,6 +36,7 @@
 
 /* === INCLUDE === */
 #include <types.h>
+#include <battle_structs.h>
 
 /* === EXTERN METHODS === */
 
@@ -75,6 +76,13 @@ extern u32 pokemon_get_attribute(struct pokemon* poke_address, u8 request, void*
  * @param new_value pointer to new value
  */
 void pokemon_set_attribute(struct pokemon* poke_address, u8 request, void* new_value);
+
+/**
+ * @brief gets x12 value of item
+ * @param item_id item to get value of
+ * @return corresponding x12 value 
+ */
+extern u8 item_get_x12(u16 item_id);
 
 #endif /* GAME_ENGINE_H */
 

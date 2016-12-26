@@ -1,4 +1,4 @@
-#include <battle.h>
+#include <battle_locations.h>
 
 u8 pay_back_damage_modifier()
 {

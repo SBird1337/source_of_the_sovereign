@@ -1,7 +1,48 @@
+/****************************************************************************
+ * Copyright (C) 2015-2016 by the SotS Team                                 *
+ *                                                                          *
+ * This file is part of Sovereign of the Skies.                             *
+ *                                                                          *
+ *   Sovereign of the Skies is free software: you can redistribute it       *
+ *   and/or modify it                                                       *
+ *   under the terms of the GNU Lesser General Public License as published  *
+ *   by the Free Software Foundation, either version 3 of the License, or   *
+ *   (at your option) any later version provided you include a copy of the  *
+ *   licence and this header.                                               *
+ *                                                                          *
+ *   Sovereign of the Skies is distributed in the hope that it will be      *
+ *   useful, but WITHOUT ANY WARRANTY; without even the implied warranty of *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the          *
+ *   GNU Lesser General Public License for more details.                    *
+ *                                                                          *
+ *   You should have received a copy of the GNU Lesser General Public       *
+ *   License along with Sovereign of the Skies.                             *
+ *   If not, see <http://www.gnu.org/licenses/>.                            *
+ ****************************************************************************/
+
+/**
+ * @file battle_help.c
+ * @author Sturmvogel
+ * @date 15 dec 2016
+ * @brief Some general helper methods for battle
+ */
+
+/* === INCLUDE === */
+
 #include <battle_help.h>
+#include <battle_locations.h>
+#include <battle_custom_structs.h>
+#include <game_engine.h>
+#include <pkmn_types.h>
+#include <pkmn_abilities.h>
+#include <pkmn_item_effects.h>
+#include <pkmn_items.h>
+#include <pkmn_attributes.h>
+#include <battle_common.h>
 
-//from kds emerald battle engine upgrade
+/* === STATICS === */
 
+/* from kds emerald battle engine upgrade */
 u8 type_effectiveness_table[TYPE_FAIRY - 0x4][TYPE_FAIRY - 0x4] = {
     {10, 10, 10, 10, 10, 05, 10, 00, 05, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10}, //normal
     {20, 10, 05, 05, 10, 20, 05, 00, 20, 10, 10, 10, 10, 10, 05, 20, 10, 20, 05}, //fight
@@ -24,7 +65,8 @@ u8 type_effectiveness_table[TYPE_FAIRY - 0x4][TYPE_FAIRY - 0x4] = {
     {10, 20, 10, 05, 10, 10, 10, 10, 05, 10, 05, 10, 10, 10, 10, 10, 20, 20, 10} //fairy
 };
 
-u16 damage_type_effectiveness_update(u8 attacking_type, u8 defending_type, u8 atk_bank, u8 def_bank, u16 chained_effect, u8 airstatus) {
+/* === IMPLEMENTATIONS === */
+u16 battle_damage_type_effectiveness_update(u8 attacking_type, u8 defending_type, u8 atk_bank, u8 def_bank, u16 chained_effect, u8 airstatus) {
     u8 effect, atype = attacking_type, dtype = defending_type;
     if (!chained_effect || atype == TYPE_EGG || dtype == TYPE_EGG)
         return chained_effect;
@@ -64,32 +106,32 @@ u16 damage_type_effectiveness_update(u8 attacking_type, u8 defending_type, u8 at
 
 }
 
-u16 apply_type_effectiveness(u16 chained_effect, u8 move_type, u8 target_bank, u8 atk_bank, u8 airstatus) {
+u16 battle_apply_type_effectiveness(u16 chained_effect, u8 move_type, u8 target_bank, u8 atk_bank, u8 airstatus) {
     u8 defender_type1 = battle_participants[target_bank].type1;
     u8 defender_type2 = battle_participants[target_bank].type2;
     //set different types
     if (defender_type2 == defender_type1)
         defender_type2 = TYPE_EGG;
-    chained_effect = damage_type_effectiveness_update(move_type, defender_type1, atk_bank, target_bank, chained_effect, airstatus);
-    chained_effect = damage_type_effectiveness_update(move_type, defender_type2, atk_bank, target_bank, chained_effect, airstatus);
+    chained_effect = battle_damage_type_effectiveness_update(move_type, defender_type1, atk_bank, target_bank, chained_effect, airstatus);
+    chained_effect = battle_damage_type_effectiveness_update(move_type, defender_type2, atk_bank, target_bank, chained_effect, airstatus);
     return chained_effect;
 }
 
-u16 type_effectiveness_calc(u16 move, u8 move_type, u8 atk_bank, u8 def_bank, u8 effects_handling_and_recording) {
+u16 battle_type_effectiveness_calc(u16 move, u8 move_type, u8 atk_bank, u8 def_bank, u8 effects_handling_and_recording) {
     u16 chained_effect = 64;
     //TODO: double_type moves
     //TODO: get air status
-    chained_effect = apply_type_effectiveness(chained_effect, move_type, def_bank, atk_bank, 2);
+    chained_effect = battle_apply_type_effectiveness(chained_effect, move_type, def_bank, atk_bank, 2);
     //TODO: save into structs
-    //TODO: effect_handling_and_recoring
+    //TODO: effect_handling_and_recording
     return chained_effect;
 }
 
-u8 has_type(u8 bank, u8 type) {
+u8 battle_bank_has_type(u8 bank, u8 type) {
     return battle_participants[bank].type1 == type || battle_participants[bank].type2 == type;
 }
 
-u8 get_item_effect(u8 bank, u8 check_negating_effects) {
+u8 battle_item_get_effect(u8 bank, u8 check_negating_effects) {
     if (check_negating_effects) {
         if (battle_participants[bank].ability_id == ABILITY_KLUTZ || custom_battle_elements.ptr->bank_affecting[bank].embargo)
             return ITEM_EFFECT_NOEFFECT;
@@ -101,7 +143,7 @@ u8 get_item_effect(u8 bank, u8 check_negating_effects) {
     }
 }
 
-u8 cant_poison(u8 bank, u8 self_inflicted) { //0 == can poison
+u8 battle_bank_is_poison_resistant(u8 bank, u8 self_inflicted) { //0 == can poison
     //1 == is already poisoned
     //2 == has other major condition
     //3 == type doesn't allow it
@@ -112,7 +154,7 @@ u8 cant_poison(u8 bank, u8 self_inflicted) { //0 == can poison
         return 1;
     if (battle_participants[bank].status.int_status)
         return 2;
-    if (has_type(bank, TYPE_POISON) || has_type(bank, TYPE_STEEL))
+    if (battle_bank_has_type(bank, TYPE_POISON) || battle_bank_has_type(bank, TYPE_STEEL))
         return 3;
     if (((battle_participants[bank].ability_id == ABILITY_IMMUNITY || (battle_participants[bank].ability_id == ABILITY_LEAF_GUARD && (battle_weather.flags.sun || battle_weather.flags.permament_sun || battle_weather.flags.harsh_sun)))))
         return 4;
@@ -121,7 +163,7 @@ u8 cant_poison(u8 bank, u8 self_inflicted) { //0 == can poison
     return 0;
 }
 
-u8 count_party_pokemon(u8 bank)
+u8 battle_count_party_pokemon(u8 bank)
 {
     struct pokemon* poke;
     if (get_side_from_bank(bank))

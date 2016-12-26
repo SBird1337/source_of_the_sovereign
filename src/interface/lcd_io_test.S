@@ -37,7 +37,7 @@ get_flag_val:
 .global trans_activate
 trans_activate:
     push {r0-r7}
-    bl create_mugshot_on_variable
+    bl mug_create_on_variable
     bl get_flag_val
     cmp r0, #0
     bne no_activate
@@ -65,7 +65,7 @@ no_activate:
 .global trans_deactivate
 trans_deactivate:
     push {r0-r3}
-    bl delete_mugshot
+    bl mug_delete
     mov r0, #LCD_WIN_IN
     ldrh r1, =0x1F1F
     bl do_lcd_io_set

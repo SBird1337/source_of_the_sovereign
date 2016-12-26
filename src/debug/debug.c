@@ -39,28 +39,20 @@
 #include <math.h>
 #include <fade.h>
 
-/* === STATICS === */
+/* === STRUCTURES === */
 
+struct assert_memory
+{
+    char* file;
+    int line;
+    char* expression;
+};
+
+/* === STATICS === */
+struct assert_memory* assert_global = (struct assert_memory*)0x0203FEC4;
 static struct print_engine* print_memory = (struct print_engine*)(0x0203FFF0);
 
 /* === PROTOTYPES === */
-
-/**
- * @brief set bg color
- * @param color color to set bg to
- */
-void debug_set_bg(u16 color);
-
-/**
- * @brief clean debug screen from any text and reset cursor
- */
-void debug_clean();
-
-/**
- * @brief wait for button press
- * @param field bitfield to specify buttom combination
- */
-void debug_wait_for_btn(u16 field);
 
 /**
  * @brief convert int to char
@@ -122,12 +114,6 @@ void debug_print_char(u16 line, u16 row, char character, u8 color);
 void debug_print_string(u16 line, u16 row, u8 color, char* pBuf);
 
 /**
- * @brief print string onto debug environment at current position with parsing
- * @param str string to print
- */
-void debug_print(char* str);
-
-/**
  * @brief build power
  * @param n integer to power
  * @param power exponent
@@ -135,12 +121,8 @@ void debug_print(char* str);
  */
 u32 debug_power(u32 n, u32 power);
 
-/**
- * @brief print in format to debug environment
- * @param str string with format
- * @param arg argument to print (only one, not an array)
- */
-void debug_printf(char* str, int arg);
+void debug_init_stage_one();
+void debug_init_stage_two();
 
 /**
  * @brief set bg color of debug environment
@@ -152,34 +134,34 @@ void debug_set_bg(u16 color) {
     return;
 }
 
+/* === STATIC STRUCTURES === */
+
+static struct bg_config debug_bg_config[4] = {
+    {0, 0, 0x19, 0, 0, 0},
+    {1, 1, 0x1A, 0, 0, 1},
+    {2, 2, 0x1B, 0, 0, 2},
+    {3, 3, 0x1C, 0, 0, 3}
+};
+
 /* === IMPLEMENTATIONS === */
+
+void as_assert(char* expression, char* file, int line)
+{
+    assert_global->file = file;
+    assert_global->line = line;
+    assert_global->expression = expression;
+    
+    set_callback2(debug_assert_scene);
+    vblank_handler_set(debug_update);
+    superstate.multi_purpose_state_tracker = 0;
+}
+
 void debug_scene() {
     if (superstate.multi_purpose_state_tracker == 0) {
-        print_memory->row = 0;
-        print_memory->line = 0;
-        print_memory->color = 0;
-        gpu_tile_bg_drop_all_sets(0);
-        gpu_tile_bg_drop_all_sets(1);
-        gpu_tile_bg_drop_all_sets(2);
-        gpu_tile_bg_drop_all_sets(3);
-
-        gpu_bg_vram_setup(0, standard_bg, 4);
-
-        gpu_bg_show(0);
-        gpu_bg_show(1);
-        gpu_bg_show(2);
-        gpu_bg_show(3);
-
-        gpu_sync_bg_visibility_and_mode();
-        debug_reset_scrolling();
-        obj_delete_all();
-        memset((void*) 0x06000000, 0, 0x17fe0);
-        memset((void*) 0x020375F8, 0, 0x400);
+        debug_init_stage_one();
         superstate.multi_purpose_state_tracker++;
     } else if (superstate.multi_purpose_state_tracker == 1) {
-        vram_decompress((void*) asciiTiles, (void*) 0x06000000);
-        memcpy((void*) 0x020375F8, (void*) asciiPal, 0x60);
-        debug_set_bg(0x0000);
+        debug_init_stage_two();
         superstate.multi_purpose_state_tracker++;
     } else if (superstate.multi_purpose_state_tracker == 2) {
         debug_init_unit_test();
@@ -188,12 +170,12 @@ void debug_scene() {
     return;
 }
 
-u8 debug_some_test() {
+void debug_some_test() {
     set_callback2(debug_scene);
     vblank_handler_set(debug_update);
     superstate.multi_purpose_state_tracker = 0;
-
-    return 0;
+    
+    return;
 }
 
 void debug_reset_scrolling() {
@@ -221,10 +203,15 @@ void debug_print_string(u16 line, u16 row, u8 color, char* pBuf) {
 
 void debug_print(char* str) {
     while (*str) {
+        if(print_memory->row > 29)
+        {
+            print_memory->line++;
+            print_memory->row = 0;
+        }
         if (*str == '\n') {
             print_memory->line++;
             print_memory->row = 0;
-        } else if (*str == '\xFE') {
+        } if (*str == '\xFE') {
             str++;
             u8 c = *str;
             if (c > 2)
@@ -241,10 +228,15 @@ void debug_print(char* str) {
 
 void debug_printf(char* str, int arg) {
     while (*str) {
+        if(print_memory->row > 29)
+        {
+            print_memory->line++;
+            print_memory->row = 0;
+        }
         if (*str == '\n') {
             print_memory->line++;
             print_memory->row = 0;
-        } else if (*str == '\xFE') {
+        } if (*str == '\xFE') {
             str++;
             u8 c = *str;
             if (c > 2)
@@ -286,6 +278,56 @@ void debug_wait_for_btn(u16 field) {
     volatile u16* control_io = (volatile u16*) (0x04000130);
     while (*control_io & field) {
     }
+    return;
+}
+
+void debug_init_stage_one()
+{
+    print_memory->row = 0;
+    print_memory->line = 0;
+    print_memory->color = 0;
+    gpu_tile_bg_drop_all_sets(0);
+    gpu_tile_bg_drop_all_sets(1);
+    gpu_tile_bg_drop_all_sets(2);
+    gpu_tile_bg_drop_all_sets(3);
+
+    gpu_bg_vram_setup(0, debug_bg_config, 4);
+
+    gpu_bg_show(0);
+    gpu_bg_show(1);
+    gpu_bg_show(2);
+    gpu_bg_show(3);
+
+    gpu_sync_bg_visibility_and_mode();
+    debug_reset_scrolling();
+    obj_delete_all();
+    memset((void*) 0x06000000, 0, 0x17fe0);
+    memset((void*) 0x020375F8, 0, 0x400);
+}
+
+void debug_init_stage_two()
+{
+    vram_decompress((void*) asciiTiles, (void*) 0x06000000);
+    memcpy((void*) 0x020375F8, (void*) asciiPal, 0x60);
+    debug_set_bg(0x0000);
+}
+
+void debug_assert_scene() {
+    if (superstate.multi_purpose_state_tracker == 0) {
+        debug_init_stage_one();
+        superstate.multi_purpose_state_tracker++;
+    } else if (superstate.multi_purpose_state_tracker == 1) {
+        debug_init_stage_two();
+        superstate.multi_purpose_state_tracker++;
+    } else if (superstate.multi_purpose_state_tracker == 2) {
+        debug_print("Assertion Failed: ");
+        debug_print(assert_global->expression);
+        debug_print("\n\nFile: ");
+        debug_print(assert_global->file);
+        debug_printf("\n\nLine: %d", assert_global->line);
+        superstate.multi_purpose_state_tracker++;
+    }
+    /* Loop Endlessly in this stage */
     return;
 }
 

@@ -1,7 +1,12 @@
 #ifndef DNS_CORE_H
 #define DNS_CORE_H
 
-enum time_type {
+#include <types.h>
+#include <lcd.h>
+#include <objects.h>
+#include <fade.h>
+
+enum dns_rtc_time_type {
     DAY,
     NIGHT,
     EVENING,
@@ -89,31 +94,22 @@ struct dynamic_pal {
 
 #define dynamic_palettes ((struct dynamic_pal*) 0x0203FF00)
 
-void blockset_load_virtual_palette_and_shade(struct blockset* blockset, u16 start, u16 len, struct color* destination);
 extern struct npc_palette* npc_palettes;
 extern volatile u8 tint_filter;
-void apply_shaders(u8 pal, u8 fade_copy, struct color* to_apply);
-struct color alpha_blend(struct color a, struct color b, u8 alpha);
 extern void blockset_load_palette_to_gpu(void* blockset, u16 start, u16 len);
-extern void gpu_pal_apply(struct color* src, u16 dst, u16 len);
 extern void load_palette_3(u16 start, u16 len);
 extern void tint_palette(u8 pal_slot);
 extern u8 gpu_pal_tags_index_of(u16 pal_tag);
 extern void lz77u_wram(void* src, void* dst);
 extern void* oe_read_word(void* oe_script_pointer);
 extern void some_weather_func(u8 pal_index);
-void copy_unfaded(u8 slot);
-void pal_patch_for_npc(u16 tag, u8 pal);
-u8 is_current_map_dn_valid(enum map_type current_type);
 //care, this has to be manually patched to be u16
 extern u16 npc_pal_idx_for_given_tag(u16 tag);
-struct color_shade get_color_from_time(enum time_type current_time);
-enum time_type get_time_of_day();
-void update_dns_palettes();
-void apply_lighting(void* blockset, u8 copy, struct color* to_apply);
+struct color_shade dns_get_shade_from_time(enum dns_rtc_time_type current_time);
+enum dns_rtc_time_type dns_get_time_of_day();
+void dns_update_palettes();
 
 extern void mapdata_load_palettes_to_gpu(struct mapdata_header* data_header);
-extern u16 npc_paltag_by_palslot(u8 slot);
 
 extern void script_something();
 extern void camera_update();

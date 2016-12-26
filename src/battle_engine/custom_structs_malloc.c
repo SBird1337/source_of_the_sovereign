@@ -1,19 +1,70 @@
-#include <bpre.h>
-#include <battle.h>
-#include "custom_structs.h"
-#include "custom_structs_malloc.h"
-#include <debug.h>
-#include <items.h>
+/****************************************************************************
+ * Copyright (C) 2015-2016 by the SotS Team                                 *
+ *                                                                          *
+ * This file is part of Sovereign of the Skies.                             *
+ *                                                                          *
+ *   Sovereign of the Skies is free software: you can redistribute it       *
+ *   and/or modify it                                                       *
+ *   under the terms of the GNU Lesser General Public License as published  *
+ *   by the Free Software Foundation, either version 3 of the License, or   *
+ *   (at your option) any later version provided you include a copy of the  *
+ *   licence and this header.                                               *
+ *                                                                          *
+ *   Sovereign of the Skies is distributed in the hope that it will be      *
+ *   useful, but WITHOUT ANY WARRANTY; without even the implied warranty of *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the          *
+ *   GNU Lesser General Public License for more details.                    *
+ *                                                                          *
+ *   You should have received a copy of the GNU Lesser General Public       *
+ *   License along with Sovereign of the Skies.                             *
+ *   If not, see <http://www.gnu.org/licenses/>.                            *
+ ****************************************************************************/
+
+/**
+ * @file custom_structs_malloc.c
+ * @author Sturmvogel
+ * @date 15 dec 2016
+ * @brief Patch hacks for handling custom battle structures
+ */
+
+
+/* === INCLUDE === */
+
+#include <battle_custom_structs.h>
+#include <game_engine.h>
+#include <memory.h>
+#include <moves.h>
+#include <battle_common.h>
+#include <battle_locations.h>
+
+/* === PROTOTYPES === */
+
+/**
+ * @brief allocate the new battle struct memory
+ */
+void malloc_battle_structs();
+
+/**
+ * @brief free the new battle struct memory
+ */
+void free_battle_structs();
+
+/**
+ * @brief handle switch in uptates on structures
+ */
+void battle_switch_in();
+
+/* === IMPLEMENTATIONS === */
 
 void malloc_battle_structs()
 {
-	custom_battle_elements.ptr=(struct custom_battle_struct*)malloc(sizeof(struct custom_battle_struct));
+    custom_battle_elements.ptr=(struct custom_battle_struct*)malloc(sizeof(struct custom_battle_struct));
 }
 
 void free_battle_structs()
 {
-	free(custom_battle_elements.ptr);
-	custom_battle_elements.ptr=0;
+    free(custom_battle_elements.ptr);
+    custom_battle_elements.ptr=0;
 }
 
 //hijack switch in command, clean up battle structs and carry over baton pass

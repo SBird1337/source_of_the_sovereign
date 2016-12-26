@@ -1,4 +1,7 @@
-#include <battle.h>
+#include <battle_common.h>
+#include <moves.h>
+#include <battle_structs.h>
+#include <battle_locations.h>
 
 extern void* str_power_swap_ref;
 extern void* str_guard_swap_ref;

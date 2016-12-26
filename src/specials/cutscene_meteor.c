@@ -74,6 +74,15 @@ struct meteor_memory{
 	u16 delay_end;
 };
 
+/* === STATIC STRUCTURES === */
+
+static struct bg_config met_bg_config[4] = {
+    {0, 0, 0x19, 0, 0, 0},
+    {1, 1, 0x1A, 0, 0, 1},
+    {2, 2, 0x1B, 0, 0, 2},
+    {3, 3, 0x1C, 0, 0, 3}
+};
+
 /* === PROTOTYPES === */
 
 /**
@@ -274,7 +283,7 @@ void met_setup_vram()
 	gpu_tile_bg_drop_all_sets(2);
 	gpu_tile_bg_drop_all_sets(3);
 
-	gpu_bg_vram_setup(0, standard_bg, 4);
+	gpu_bg_vram_setup(0, met_bg_config, 4);
 
 	gpu_bg_show(0);
 	gpu_bg_show(1);

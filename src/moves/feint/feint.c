@@ -1,9 +1,11 @@
-#include <battle.h>
+#include <battle_structs.h>
+#include <battle_locations.h>
+#include <battle_custom_structs.h>
+#include <battle_common.h>
 
 extern void* bs_feint_no_break_ptr;
 
 u8 break_shields() {
-    u8 side = get_side_from_bank(battle_defender_bank);
     u8 effect = false;
     struct bank_affecting* defender_bank = &custom_battle_elements.ptr->bank_affecting[battle_defender_bank];
     struct side_affecting* defender_side = &custom_battle_elements.ptr->side_affecting[get_side_from_bank(battle_defender_bank)];
@@ -38,4 +40,5 @@ u8 break_shields() {
     if(effect)
         return false;
     battlescript_cursor = bs_feint_no_break_ptr;
+    return true;
 }

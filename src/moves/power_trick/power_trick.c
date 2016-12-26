@@ -1,5 +1,6 @@
-#include <battle.h>
-#include <bpre.h>
+#include <battle_structs.h>
+#include <battle_locations.h>
+#include <battle_custom_structs.h>
 
 u8 power_trick_swap() 
 {

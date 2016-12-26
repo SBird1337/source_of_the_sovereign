@@ -1,4 +1,7 @@
-#include <battle.h>
+#include <battle_locations.h>
+#include <battle_structs.h>
+#include <battle_custom_structs.h>
+#include <battle_common.h>
 
 extern void* bs_tailwind_failed_ptr;
 

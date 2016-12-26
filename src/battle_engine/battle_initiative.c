@@ -1,12 +1,56 @@
+/****************************************************************************
+ * Copyright (C) 2015-2016 by the SotS Team                                 *
+ *                                                                          *
+ * This file is part of Sovereign of the Skies.                             *
+ *                                                                          *
+ *   Sovereign of the Skies is free software: you can redistribute it       *
+ *   and/or modify it                                                       *
+ *   under the terms of the GNU Lesser General Public License as published  *
+ *   by the Free Software Foundation, either version 3 of the License, or   *
+ *   (at your option) any later version provided you include a copy of the  *
+ *   licence and this header.                                               *
+ *                                                                          *
+ *   Sovereign of the Skies is distributed in the hope that it will be      *
+ *   useful, but WITHOUT ANY WARRANTY; without even the implied warranty of *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the          *
+ *   GNU Lesser General Public License for more details.                    *
+ *                                                                          *
+ *   You should have received a copy of the GNU Lesser General Public       *
+ *   License along with Sovereign of the Skies.                             *
+ *   If not, see <http://www.gnu.org/licenses/>.                            *
+ ****************************************************************************/
+
+/**
+ * @file battle_initiative.c
+ * @author Sturmvogel
+ * @date 15 dec 2016
+ * @brief Methods calculating speed based stats in-battle
+ */
+
+/* === INCLUDE === */
+
 #include <battle_initiative.h>
-#include <battle.h>
+#include <pkmn_item_effects.h>
+#include <pokemon.h>
 #include <battle_help.h>
-#include <bpre.h>
+#include <pkmn_abilities.h>
+#include <math.h>
+#include <battle_common.h>
+#include <battle_abilities.h>
+#include <battle_structs.h>
+#include <battle_locations.h>
+#include <battle_custom_structs.h>
+#include <battle_fractions.h>
+
+/* === EXTERN STRUCTS === */
+
 struct move_info move_table[1024];
+
+/* === IMPLEMENTATIONS === */
 
 u16 get_speed(u8 bank) {
     u32 speed = battle_participants[bank].spd << 16;
-    switch (get_item_effect(bank, 1)) {
+    switch (battle_item_get_effect(bank, 1)) {
         case ITEM_EFFECT_IRONBALL:
             speed >>= 1;
             break;
@@ -18,8 +62,8 @@ u16 get_speed(u8 bank) {
                 speed <<= 1;
             break;
     }
-    if (has_ability_effect(bank, 0, 1)) {
-        u8 weather_effects = weather_abilities_effect();
+    if (ability_has_effect(bank, 0, 1)) {
+        u8 weather_effects = ability_weather_effects();
         switch (battle_participants[bank].ability_id) {
             case ABILITY_CHLOROPHYLL:
                 if (weather_effects && (battle_weather.flags.harsh_sun || battle_weather.flags.permament_sun || battle_weather.flags.sun))
@@ -96,15 +140,15 @@ enum init_enum get_first_to_strike(u8 bank_one, u8 bank_two, u8 ignore_prio) {
             result = TWO;
     }
     if (result == TIE) {
-        s8 brack_one = speed_alt_from_item(bank_one, get_item_effect(bank_one, true));
-        s8 brack_two = speed_alt_from_item(bank_two, get_item_effect(bank_two, true));
+        s8 brack_one = speed_alt_from_item(bank_one, battle_item_get_effect(bank_one, true));
+        s8 brack_two = speed_alt_from_item(bank_two, battle_item_get_effect(bank_two, true));
         if (brack_one > brack_two)
             result = ONE;
         else if (brack_two > brack_one)
             result = TWO;
         else {
-            u8 stall_one = has_ability(bank_one, ABILITY_STALL);
-            u8 stall_two = has_ability(bank_two, ABILITY_STALL);
+            u8 stall_one = ability_has_ability(bank_one, ABILITY_STALL);
+            u8 stall_two = ability_has_ability(bank_two, ABILITY_STALL);
             if (stall_one && !stall_two)
                 result = TWO;
             else if (stall_two && !stall_one)

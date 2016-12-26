@@ -1,4 +1,5 @@
-#include <battle.h>
+#include <battle_structs.h>
+#include <battle_locations.h>
 
 u8 punishment_damage_mod() {
     struct battle_participant* defender = &battle_participants[battle_defender_bank];

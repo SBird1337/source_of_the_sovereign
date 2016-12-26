@@ -1,5 +1,42 @@
+/****************************************************************************
+ * Copyright (C) 2015-2016 by the SotS Team                                 *
+ *                                                                          *
+ * This file is part of Sovereign of the Skies.                             *
+ *                                                                          *
+ *   Sovereign of the Skies is free software: you can redistribute it       *
+ *   and/or modify it                                                       *
+ *   under the terms of the GNU Lesser General Public License as published  *
+ *   by the Free Software Foundation, either version 3 of the License, or   *
+ *   (at your option) any later version provided you include a copy of the  *
+ *   licence and this header.                                               *
+ *                                                                          *
+ *   Sovereign of the Skies is distributed in the hope that it will be      *
+ *   useful, but WITHOUT ANY WARRANTY; without even the implied warranty of *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the          *
+ *   GNU Lesser General Public License for more details.                    *
+ *                                                                          *
+ *   You should have received a copy of the GNU Lesser General Public       *
+ *   License along with Sovereign of the Skies.                             *
+ *   If not, see <http://www.gnu.org/licenses/>.                            *
+ ****************************************************************************/
+
+/**
+ * @file entry_hazards.c
+ * @author Sturmvogel
+ * @date 15 dec 2016
+ * @brief Handle entry hazards
+ */
+
+/* === INCLUDE === */
 #include <battle_help.h>
-#include <bpre.h>
+#include <battle_locations.h>
+#include <moves.h>
+#include <battle_structs.h>
+#include <battle_custom_structs.h>
+#include <pkmn_types.h>
+#include <battle_common.h>
+
+/* === EXTERN STATICS === */
 
 extern void* bs_stealth_rock;
 extern void* bs_toxic_spikes;
@@ -16,6 +53,20 @@ extern void* bs_lunar_dance_exec;
 
 extern void* str_lunardance_executed_ref;
 
+/* === PROTOTYPES === */
+/**
+ * @brief execute entry hazards scripts if they are lain
+ * @return true if there was an effect, false otherwise
+ */
+u8 execute_entry_hazards();
+
+/**
+ * @brief execute a lay script for entry hazards
+ * @return true
+ */
+u8 lay_entry_hazards();
+
+/* === IMPLEMENTATIONS === */
 u8 execute_entry_hazards() {
     u8 active_side = get_side_from_bank(battle_active_bank);
     u8 has_effect = 0;
@@ -47,7 +98,7 @@ u8 execute_entry_hazards() {
         active_side_affecting->stealth_rock_done = 1;
         //check for magic guard here
         u32 damage = battle_participants[battle_active_bank].max_hp;
-        switch (type_effectiveness_calc(MOVE_STEALTH_ROCK, TYPE_ROCK, battle_active_bank^1, battle_active_bank, 0) >> 4) {
+        switch (battle_type_effectiveness_calc(MOVE_STEALTH_ROCK, TYPE_ROCK, battle_active_bank^1, battle_active_bank, 0) >> 4) {
             case 1:
                 damage = damage >> 5;
                 break;
@@ -73,13 +124,13 @@ u8 execute_entry_hazards() {
         has_effect = 1;
     } else if (active_side_affecting->toxic_spikes_psn && !(active_side_affecting->toxic_spikes_done)) {
         active_side_affecting->toxic_spikes_done = 1;
-        if (has_type(battle_active_bank, TYPE_POISON)) {
+        if (battle_bank_has_type(battle_active_bank, TYPE_POISON)) {
             has_effect = 1;
             active_side_affecting->toxic_spikes_psn = 0;
             active_side_affecting->toxic_spikes_badpsn = 0;
             battle_script_push();
             battlescript_cursor = bs_toxic_resolve;
-        } else if (!cant_poison(battle_active_bank, 0)) {
+        } else if (!battle_bank_is_poison_resistant(battle_active_bank, 0)) {
             if (active_side_affecting->toxic_spikes_badpsn) {
                 battle_participants[battle_active_bank].status.flags.toxic_poison = 1;
                 battle_script_push();

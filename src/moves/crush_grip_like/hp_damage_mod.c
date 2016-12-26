@@ -1,4 +1,5 @@
-#include <battle.h>
+#include <battle_structs.h>
+#include <battle_locations.h>
 
 u8 hp_damage_mod()
 {

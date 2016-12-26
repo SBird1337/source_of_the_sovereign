@@ -1,4 +1,8 @@
-#include <battle.h>
+#include <battle_locations.h>
+#include <types.h>
+#include <battle_structs.h>
+#include <pkmn_abilities.h>
+#include <moves.h>
 
 extern void* str_worry_seed_ref;
 extern void* str_entrainment_ref;
@@ -102,5 +106,7 @@ u8 ability_change() {
             return role_play();
         case MOVE_SKILL_SWAP:
             return skill_swap();
+        default:
+            return false;
     }
 }

@@ -64,15 +64,6 @@ struct color {
     u16 b : 5;
 };
 
-/* === STATIC STRUCTURES === */
-
-static struct bg_config standard_bg[4] = {
-    {0, 0, 0x19, 0, 0, 0},
-    {1, 1, 0x1A, 0, 0, 1},
-    {2, 2, 0x1B, 0, 0, 2},
-    {3, 3, 0x1C, 0, 0, 3}
-};
-
 /* === EXTERN METHODS === */
 
 /**
@@ -130,6 +121,11 @@ extern void* virtual_bg_get_tilemap(u8 bg_id);
  * @param bg_id bg id to send tilemap for
  */
 extern void virtual_bg_send_tilemap(u8 bg_id);
+
+/**
+ * @brief TODO DOCUMENT
+ */
+extern void gpu_pal_apply();
 
 
 /**

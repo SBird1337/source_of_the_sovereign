@@ -1,4 +1,5 @@
-#include <battle.h>
+#include <battle_locations.h>
+#include <types.h>
 
 u8 metal_burst_dmg_reduction()
 {

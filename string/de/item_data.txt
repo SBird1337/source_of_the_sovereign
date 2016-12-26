@@ -1,4 +1,4 @@
-﻿@include <item_effects.h>
+﻿@include <pkmn_item_effects.h>
 
 @string_len=14
 

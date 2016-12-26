@@ -1,4 +1,5 @@
-#include <battle.h>
+#include <battle_locations.h>
+#include <battle_structs.h>
 
 u8 venoshock_has_multiplier()
 {

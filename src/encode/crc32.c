@@ -1,5 +1,50 @@
+/****************************************************************************
+ * Copyright (C) 2015-2016 by the SotS Team                                 *
+ *                                                                          *
+ * This file is part of Sovereign of the Skies.                             *
+ *                                                                          *
+ *   Sovereign of the Skies is free software: you can redistribute it       *
+ *   and/or modify it                                                       *
+ *   under the terms of the GNU Lesser General Public License as published  *
+ *   by the Free Software Foundation, either version 3 of the License, or   *
+ *   (at your option) any later version provided you include a copy of the  *
+ *   licence and this header.                                               *
+ *                                                                          *
+ *   Sovereign of the Skies is distributed in the hope that it will be      *
+ *   useful, but WITHOUT ANY WARRANTY; without even the implied warranty of *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the          *
+ *   GNU Lesser General Public License for more details.                    *
+ *                                                                          *
+ *   You should have received a copy of the GNU Lesser General Public       *
+ *   License along with Sovereign of the Skies.                             *
+ *   If not, see <http://www.gnu.org/licenses/>.                            *
+ ****************************************************************************/
+
+/**
+ * @file crc32.c
+ * @author Sturmvogel
+ * @date 15 dec 2016
+ * @brief cyclic redundancy check algorithm
+ *
+ */
+
+
+/* === INCLUDE === */
 #include <config.h>
 #include <types.h>
+
+/* === PROTOTYPES === */
+
+/**
+ * @brief performs crc32 on data in buf
+ * @param crc starting value
+ * @param buf data buffer 
+ * @param size data size
+ * @return crc32
+ */
+u32 crc32(u32 crc, const void *buf, u32 size);
+
+/* === STATICS === */
 
 static u32 crc32_tab[] = {
 	0x00000000, 0x77073096, 0xee0e612c, 0x990951ba, 0x076dc419, 0x706af48f,

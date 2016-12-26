@@ -4256,16 +4256,6 @@
         </df>
       </df>
       <df name="object">
-        <df name="data">
-          <df name="item">
-          </df>
-          <df name="moves">
-          </df>
-          <df name="overworld">
-          </df>
-          <df name="pkmn_tables">
-          </df>
-        </df>
         <df name="src">
           <df name="assets">
             <df name="meteor">
@@ -4363,7 +4353,7 @@
           </df>
         </df>
         <df name="string">
-          <df name="de">
+          <df name="DE">
           </df>
         </df>
       </df>
@@ -5700,7 +5690,6 @@
               <in>snd_127_soft_snare.s</in>
               <in>snd_127_sticks.s</in>
               <in>snd_127_tambourine.s</in>
-              <in>snd_127_tom.s</in>
               <in>snd_127_tom_45.s</in>
               <in>snd_127_tom_48.s</in>
               <in>snd_127_triangle.s</in>
@@ -6025,7 +6014,6 @@
           <in>battle_switch_in_hook.S</in>
           <in>battle_test.c</in>
           <in>custom_structs_malloc.c</in>
-          <in>custom_structs_malloc.h</in>
           <in>custom_structs_malloc_hook.S</in>
           <in>entry_hazards.c</in>
           <in>entry_hazards_hook.S</in>
@@ -6044,10 +6032,11 @@
             <in>ascii.c</in>
             <in>ascii.h</in>
           </df>
-          <in>abilities.h</in>
           <in>attack_names.h</in>
-          <in>battle.h</in>
           <in>battle_abilities.h</in>
+          <in>battle_common.h</in>
+          <in>battle_custom_structs.h</in>
+          <in>battle_fractions.h</in>
           <in>battle_help.h</in>
           <in>battle_initiative.h</in>
           <in>battle_locations.h</in>
@@ -6057,20 +6046,20 @@
           <in>bpre.h</in>
           <in>callback.h</in>
           <in>config.h</in>
-          <in>custom_structs.h</in>
           <in>debug.h</in>
           <in>dns_core.h</in>
           <in>fade.h</in>
           <in>game_engine.h</in>
-          <in>item_effects.h</in>
-          <in>items.h</in>
           <in>lcd.h</in>
           <in>math.h</in>
           <in>memory.h</in>
           <in>moves.h</in>
           <in>objects.h</in>
           <in>oe_animation.h</in>
+          <in>pkmn_abilities.h</in>
           <in>pkmn_attributes.h</in>
+          <in>pkmn_item_effects.h</in>
+          <in>pkmn_items.h</in>
           <in>pkmn_types.h</in>
           <in>pokemon.h</in>
           <in>sound.h</in>
@@ -6234,11 +6223,8 @@
       </df>
       <df name="string">
         <df name="de">
-          <in>move_descriptions.txt</in>
-          <in>move_names.txt</in>
         </df>
         <df name="en">
-          <in>move_strings.txt</in>
         </df>
       </df>
       <df name="todo">

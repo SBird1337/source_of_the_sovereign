@@ -1,4 +1,8 @@
-#include <battle.h>
+#include <battle_common.h>
+#include <moves.h>
+#include <battle_custom_structs.h>
+#include <battle_structs.h>
+#include <battle_locations.h>
 
 extern void* str_trick_room_off_ref;
 extern void* str_trick_room_on_ref;

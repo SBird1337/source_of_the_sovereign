@@ -33,5 +33,5 @@ sub_08069B34:
 .align 2
 trans_deactivate_2:
 	push {lr}
-	bl delete_mugshot
+	bl mug_delete
 	pop {pc}

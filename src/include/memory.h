@@ -59,7 +59,7 @@ extern void free(void* address);
  * @param num amount of bytes to copy
  * @return destination pointer
  */
-extern void* memcpy (void * destination, const void* source, size_t num);
+extern void* memcpy(void * destination, const void* source, size_t num);
 
 /**
  * @brief set bytes in memory
@@ -68,7 +68,7 @@ extern void* memcpy (void * destination, const void* source, size_t num);
  * @param size number of bytes to set
  * @return 
  */
-extern void* memset (void* dst, int value, size_t size);
+extern void* memset(void* dst, int value, size_t size);
 
 /**
  * @brief decompress data into wram using interrupt
