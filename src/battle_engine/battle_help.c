@@ -85,11 +85,11 @@ u16 battle_damage_type_effectiveness_update(u8 attacking_type, u8 defending_type
             effect = 20;
         }
     }
-    //handle normal / fighting on ghost
+    /* handle normal / fighting on ghost */
     if ((((attacking_type == TYPE_NORMAL || attacking_type == TYPE_FIGHTING) && defending_type == TYPE_GHOST && ((battle_participants[def_bank].status2.foresight))) || battle_participants[atk_bank].ability_id == ABILITY_SCRAPPY) && effect == 0) {
         effect = 10;
     }
-    //handle other effectiveness changers here
+    /* handle other effectiveness changers here */
 
     switch (effect) {
         case 0:
@@ -109,7 +109,7 @@ u16 battle_damage_type_effectiveness_update(u8 attacking_type, u8 defending_type
 u16 battle_apply_type_effectiveness(u16 chained_effect, u8 move_type, u8 target_bank, u8 atk_bank, u8 airstatus) {
     u8 defender_type1 = battle_participants[target_bank].type1;
     u8 defender_type2 = battle_participants[target_bank].type2;
-    //set different types
+    /* set different types */
     if (defender_type2 == defender_type1)
         defender_type2 = TYPE_EGG;
     chained_effect = battle_damage_type_effectiveness_update(move_type, defender_type1, atk_bank, target_bank, chained_effect, airstatus);

@@ -6,14 +6,14 @@ CC      := @arm-none-eabi-gcc
 ARS     := armips
 MAKE    := make
 NM      := @arm-none-eabi-nm
-LAN		:= de
+LAN	:= de
 STRAGB	:= string2agb
 
 export PATH := $(realpath ../tools):$(PATH)
 
 DEFINES   := -DBPRE -DSOFTWARE_VERSION=0
 ASFLAGS   := -mthumb
-CFLAGS    := -mthumb -mno-thumb-interwork -g -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -O3 -std=c99 -Wall -Isrc/include $(DEFINES)
+CFLAGS    := -mthumb -mno-thumb-interwork -g -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -O0 -std=c99 -Wall -Isrc/include $(DEFINES)
 GRITFLAGS := -ftc -fa
 LDFLAGS   := -z muldefs
 BLDPATH   := object
@@ -52,7 +52,7 @@ DATA_OBJ    := $(DATA_SRC:%.s=$(BLDPATH)/%.o)
 ALL_OBJ     := $(C_OBJ) $(ASM_OBJ_PP) $(ASM_OBJ) $(DATA_OBJ_PP) $(DATA_OBJ)
 
 
-
+.PRECIOUS: $(STRING_SRC)
 $(STRINGDIR)/%.S: $(STRINGDIR)/%.txt
 	$(STRAGB) -o $@ -i $< -t string/table.tbl -e 0xFF
 

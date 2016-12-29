@@ -81,7 +81,7 @@ u16 get_speed(u8 bank) {
                 if (battle_participants[bank].status.flags.burn || battle_participants[bank].status.flags.poison || battle_participants[bank].status.flags.toxic_poison)
                     speed = speed + ((speed * 50) / 100);
                 else if (battle_participants[bank].status.flags.paralysis) {
-                    //cancel para
+                    /* cancel para */
                     speed *= 4;
                     speed = speed + ((speed * 50) / 100);
                 }
@@ -92,7 +92,9 @@ u16 get_speed(u8 bank) {
         speed >>= 2;
     if (custom_battle_elements.ptr->side_affecting[get_side_from_bank(bank)].tailwind)
         speed *= 2;
-    //TODO: unburden
+    if (battle_status_3[bank].unburden)
+        speed *= 2;
+    //TODO: /* SWAMP EFFECT */
     speed = (speed * stat_buffs[battle_participants[bank].spd_buff].dividend) / (stat_buffs[battle_participants[bank].spd_buff].divisor);
     return (u16) (speed >> 16);
 }
@@ -129,7 +131,8 @@ enum init_enum get_first_to_strike(u8 bank_one, u8 bank_two, u8 ignore_prio) {
 
         s8 prio_one = 0;
         s8 prio_two = 0;
-        //note priority changing effects and abilities not added as of yet
+        /* note priority changing effects and abilities not added as of yet */
+        /* NOTE: !HANDLE PRIORITY LIKE A PROPERTY! */
         if (battle_menu_chosen_item[bank_one] == 0)
             prio_one = move_table[move_one].priority;
         if (battle_menu_chosen_item[bank_two] == 0)

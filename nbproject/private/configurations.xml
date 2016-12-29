@@ -55,8 +55,11 @@
           <in>pokemon_tm_vm.s</in>
         </df>
       </df>
+      <df name="doc">
+      </df>
       <df name="gfx_build">
         <df name="icons">
+          <in>305.s</in>
         </df>
         <df name="overworlds">
           <in>ow_0000.s</in>
@@ -4256,6 +4259,16 @@
         </df>
       </df>
       <df name="object">
+        <df name="data">
+          <df name="item">
+          </df>
+          <df name="moves">
+          </df>
+          <df name="overworld">
+          </df>
+          <df name="pkmn_tables">
+          </df>
+        </df>
         <df name="src">
           <df name="assets">
             <df name="meteor">
@@ -6223,6 +6236,12 @@
       </df>
       <df name="string">
         <df name="de">
+          <in>hazards.S</in>
+          <in>item_data.S</in>
+          <in>item_descriptions.S</in>
+          <in>move_descriptions.S</in>
+          <in>move_names.S</in>
+          <in>move_strings.S</in>
         </df>
         <df name="en">
         </df>
