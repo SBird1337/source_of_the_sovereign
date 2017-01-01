@@ -1,0 +1,14 @@
+str_tundra_hq_name=Tundra HQ
+str_tundra_hq_0=Wähle deinen Schwierigkeitsgrad\naus, um das Spiel zu beginnen!
+str_tundra_hq_1=Bist du sicher, dass du in diesem\nModus spielen möchtest?
+str_tundra_hq_2=Dann wähle einen anderen Modus!
+str_tundra_hq_3=Bist du ein Anfänger, was Pokémon\nangeht?\pDann ist dieser Modus genau\nrichtig!\pIn diesem Modus sind deine Gegner\nleicht zu bezwingen, da sie kaum\lbis selten Items in ihren Kämpfen\leinsetzen.\pAuch sind die Rätsel in diesem\nSpiel vereinfachter erklärt.
+str_tundra_hq_4=Du bist weder ein Anfänger noch\nein Experte?\pDann ist dieser Modus genau\nrichtig!\pIn diesem Modus stellen nur einige\nGegner eine Herausforderung dar.\pDie Nutzung von Items in den\nKämpfen kommt hier häufiger vor\lund auch die Rätsel sind\lkomplizierter aufgebaut.
+str_tundra_hq_5=Du bist ein absoluter Experte, was\nPokémon angeht?\pDann ist dieser Modus genau\nrichtig!\pIn diesem Modus stellen die\nwichtigen Kämpfe eine enorme\lHerausforderung dar.\pDie Gegner sind vergleichsweise\nstark wie im Competitive und\ldessen Pokémon tragen enorm\lstrategisch starke Items.\pAuch die Rätsel in diesem Modus\nsind komplizierter und knifflig.
+str_tundra_hq_6=Dein Spiel beginnt, viel Spaß!
+str_tundra_hq_7=Hochgeschätzte Mitglieder von Team\nTundra!\pLang haben wir gelitten unter den\nFolgen einer Katastrophe, für die\lweder wir, noch unsere Vorfahren\lzur Verantwortung gezogen werden\lkönnen!\pDas ewige Eis hat unsere geliebte\nHeimat verschlungen.\pNun ist es an der Zeit aufzustehen\nund in Ordnung zu bringen, was in\lder Vergangenheit schief gelaufen\list.\pWir werden nicht länger auf unseren\nUntergang warten - wir werden ihn\lverhindern!
+str_tundra_hq_8=Doch was können wir tun, um unserem\nSchicksal zu entgehen?\pDie, die als die Herrscher der\nLüfte bekannt sind, haben vor\lvielen Dekaden die Welt vor ihrem\lsicheren Untergang bewahrt.\pWir, die Nachkommen der damals\nVerdammten, mögen allein vielleicht\lzu schwach sein.\pAber mithilfe der Retter, die schon\nvor vielen Jahren auftauchten, als\ldie Welt kaum einen Schritt von dem\lAbgrund entfernt war, können auch\lwir gerettet werden.
+str_tundra_hq_9=Der Einsatz beginnt in Urbania City\nbei Anbruch der Dunkelheit.\pIch bitte um äußerste Vorsicht, es\nsoll niemand unnötig zu Schaden\lkommen!\pDie heiligen Steine aus der Ruine\nvon Glaziera werden unserem Leid\lein Ende bereiten. Zügelt also\leuren Zorn und versucht, nicht zu\lviel Aufmerksamkeit zu erregen.
+str_tundra_hq_10=JAWOHL!!!
+str_tundra_hq_11=Nun ist es endlich soweit! Unser\nZiel ist zum Greifen nah!
+str_tundra_hq_12=Ich hoffe du hast recht\.\pNach allem, was passiert ist, haben\nauch wir es verdient, endlich\lwieder einen Hauch von Wärme zu\lspüren.

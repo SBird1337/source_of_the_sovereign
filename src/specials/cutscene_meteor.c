@@ -338,8 +338,8 @@ void met_setup_vram()
 	obj_gpu_tile_decompress_alloc_tag_and_upload(&gfx_meteor);
 
 	u8 meteor_id = obj_template_instanciate_forward_search(&template_meteor, 0, 100, 1);
-	superstate.sprites[meteor_id].x = 200;
-	superstate.sprites[meteor_id].y = 0;
+	objects[meteor_id].x = 200;
+	objects[meteor_id].y = 0;
 
 	memory->animate_clouds = 1;
 }

@@ -55,14 +55,17 @@ void sp_init_script();
  */
 void sp_special_casm();
 
+void get_text_pointer_from_lookup();
+
 /* === STATICS === */
 
-static callback special_routines[5] = {
+static callback special_routines[6] = {
     met_play,
     cam_sp_move_camera,
     sp_init_script,
     debug_some_test,
     sp_dns_switch,
+    get_text_pointer_from_lookup+1,
 };
 
 /* === IMPLEMENTATIONS === */

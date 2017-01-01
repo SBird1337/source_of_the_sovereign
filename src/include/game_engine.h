@@ -48,6 +48,21 @@
 extern u16 *var_access(u32 index);
 
 /**
+ * @brief gets value of variable at index
+ * @param index index to get varaible value from
+ * @return value of VAR[index]
+ */
+extern u16 var_get(u16 index);
+
+/**
+ * @brief sets variable at index to value
+ * @param index unsigned index of the variable
+ * @param value value to set the variable to
+ * @return true on success, false otherwise
+ */
+extern u8 var_set(u16 index, u16 value);
+
+/**
  * @brief checks if flag is set
  * @param flag index of flag to check
  * @return flag status (bool)

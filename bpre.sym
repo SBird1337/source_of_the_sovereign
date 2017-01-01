@@ -66,6 +66,8 @@ lcd_io_set_func = 0x08000A39;
 lcd_io_get = 0x08000AC4|1;
 flag_decrypt_func = 0x0806E6D1;
 var_access = 0x0806E455;
+var_get = 0x0806E569;
+var_set = 0x0806E585;
 flag_check = 0x0806E6D1;
 get_bs_elem_env_index = 0x0800FC2D;
 load_battle_screen_elements_1 = 0x0800F261;
@@ -99,6 +101,8 @@ superstate = 0x030030F0;
 fade_controller = 0x02037AB8;
 
 npc_states = 0x02036E38;
+
+sav_one = 0x03005008;
 
 weather_turns = 0x02023F48;
 battle_type_flags = 0x02022B4C;
@@ -147,10 +151,10 @@ pokemon_set_attribute = 0x0804037C|1;
 
 battle_status3_bits_pbs = 0x02023DFC;
 
-mugshots = 0x097007E0;
 battle_bg_table = 0x0824ee34;
 custom_battle_elements = 0x0203FE00;
 
+script_mode_set_stopped = 0x080697FD;
 
 mplay_table = 0x084A329C;
 

@@ -67,7 +67,7 @@ typedef struct mug_mugshot {
 
 /* === STATIC GLOBALS === */
 
-mug_mugshot *mugshots = (mug_mugshot(*)) 0x097007E0;
+extern mug_mugshot *mugshots;
 
 u8 *temp_obj_id1 = (u8*) OBJ_1_TEMP;
 u8 *temp_obj_id2 = (u8*) OBJ_2_TEMP;
@@ -82,9 +82,6 @@ struct obj_template mugshot_2_template = {MUGSHOT_2_TAG, MUGSHOT_2_TAG, &mug_spr
 /* === IMPLEMENTATIONS === */
 
 void mug_create_on_variable() {
-    /* this is just some debug code! */
-    assert(NULL);
-
     u16 *mug1_var = var_access(MUGHSOT_1_TABLE);
     u16 c_mug1_var = *mug1_var;
     u16 mug_id_1 = c_mug1_var & 0x3FFF;
@@ -105,12 +102,12 @@ void mug_create_on_variable() {
         *temp_obj_id1 = (u16) obj_template_instanciate_forward_search(&mugshot_1_template, 0, 100, 1);
 
         if (h_flip)
-            superstate.sprites[*temp_obj_id1].final_oam.attr1 |= 0x1000;
+            objects[*temp_obj_id1].final_oam.attr1 |= 0x1000;
         if (v_flip)
-            superstate.sprites[*temp_obj_id1].final_oam.attr1 |= 0x2000;
+            objects[*temp_obj_id1].final_oam.attr1 |= 0x2000;
 
-        superstate.sprites[*temp_obj_id1].x = *mug1_x;
-        superstate.sprites[*temp_obj_id1].y = *mug1_y;
+        objects[*temp_obj_id1].x = *mug1_x;
+        objects[*temp_obj_id1].y = *mug1_y;
     }
     u16 *mug2_var = var_access(MUGHSOT_2_TABLE);
     u16 c_mug2_var = *mug2_var;
@@ -133,12 +130,12 @@ void mug_create_on_variable() {
         *temp_obj_id2 = (u16) obj_template_instanciate_forward_search(&mugshot_2_template, 0, 100, 1);
 
         if (h_flip)
-            superstate.sprites[*temp_obj_id2].final_oam.attr1 |= 0x1000;
+            objects[*temp_obj_id2].final_oam.attr1 |= 0x1000;
         if (v_flip)
-            superstate.sprites[*temp_obj_id2].final_oam.attr1 |= 0x2000;
+            objects[*temp_obj_id2].final_oam.attr1 |= 0x2000;
 
-        superstate.sprites[*temp_obj_id2].x = *mug2_x;
-        superstate.sprites[*temp_obj_id2].y = *mug2_y;
+        objects[*temp_obj_id2].x = *mug2_x;
+        objects[*temp_obj_id2].y = *mug2_y;
     }
 }
 
@@ -155,7 +152,7 @@ void mug_delete() {
 
         //*mug1_var = objects[object_id_1].private[0];
 
-        obj_delete_and_free_tiles(&(superstate.sprites[*temp_obj_id1]));
+        obj_delete_and_free_tiles(&(objects[*temp_obj_id1]));
         *temp_obj_id1 = 0;
     }
 
@@ -169,7 +166,7 @@ void mug_delete() {
 
         //*mug2_var = objects[object_id_2].private[0];
 
-        obj_delete_and_free_tiles(&(superstate.sprites[*temp_obj_id2]));
+        obj_delete_and_free_tiles(&(objects[*temp_obj_id2]));
         *temp_obj_id2 = 0;
     }
 

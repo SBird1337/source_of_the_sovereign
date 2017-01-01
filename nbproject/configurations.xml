@@ -2,6 +2,17 @@
 <configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
+      <df name="data">
+        <df name="text_lookup">
+          <in>text_lookup_array.s</in>
+          <in>text_multichoice.s</in>
+        </df>
+        <in>raw_defines.s</in>
+      </df>
+      <df name="patches">
+        <in>interface.asm</in>
+        <in>text_system.asm</in>
+      </df>
       <df name="sots-private">
         <df name="sound">
           <df name="Assembler">
@@ -52,6 +63,7 @@
           </df>
         </df>
         <df name="interface">
+          <in>mugshot_table.s</in>
           <in>textbox_mugshots.c</in>
         </df>
         <df name="moves">
@@ -130,6 +142,19 @@
           <in>camera_move.c</in>
           <in>custom_specials.c</in>
           <in>cutscene_meteor.c</in>
+          <in>load_text_special.c</in>
+          <in>script_overrides.c</in>
+        </df>
+      </df>
+      <df name="string">
+        <df name="de">
+          <df name="story_text">
+            <df name="tundra_hq">
+              <in>globals.txt</in>
+            </df>
+          </df>
+          <in>text.txt</in>
+          <in>text_multichoices.txt</in>
         </df>
       </df>
     </df>
@@ -171,6 +196,18 @@
           <preBuildCommand></preBuildCommand>
         </preBuild>
       </makefileType>
+      <item path="data/raw_defines.s" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="data/text_lookup/text_lookup_array.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="data/text_lookup/text_multichoice.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
       <folder path="0/sots-private">
         <cTool>
           <incDir>
@@ -426,6 +463,10 @@
           </incDir>
         </cTool>
       </folder>
+      <item path="patches/interface.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="patches/text_system.asm" ex="false" tool="4" flavor2="0">
+      </item>
       <item path="sots-private/sound/Assembler/musicInjector.c"
             ex="false"
             tool="0"
@@ -510,6 +551,8 @@
       <item path="src/include/assets/ascii.c" ex="false" tool="0" flavor2="3">
         <cTool flags="0">
         </cTool>
+      </item>
+      <item path="src/interface/mugshot_table.s" ex="false" tool="4" flavor2="0">
       </item>
       <item path="src/interface/textbox_mugshots.c" ex="false" tool="0" flavor2="3">
       </item>
@@ -599,6 +642,19 @@
       <item path="src/specials/custom_specials.c" ex="false" tool="0" flavor2="3">
       </item>
       <item path="src/specials/cutscene_meteor.c" ex="false" tool="0" flavor2="3">
+      </item>
+      <item path="src/specials/load_text_special.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/specials/script_overrides.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="string/de/story_text/tundra_hq/globals.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="string/de/text.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="string/de/text_multichoices.txt" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

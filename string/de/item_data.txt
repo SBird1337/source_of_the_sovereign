@@ -3396,7 +3396,7 @@ str_item_name339=VM 01
 @hword 339, 0
 @byte ITEM_EFFECT_NOEFFECT, 0
 @word str_item_description_vm_01
-@byte 1, 0, 4, 1
+@byte 0, 0, 4, 1
 @word 0x0
 @byte 0, 0, 0, 0
 @word 0x0
@@ -3406,7 +3406,7 @@ str_item_name340=VM 02
 @hword 340, 0
 @byte ITEM_EFFECT_NOEFFECT, 0
 @word str_item_description_vm_02
-@byte 1, 0, 4, 1
+@byte 0, 0, 4, 1
 @word 0x0
 @byte 0, 0, 0, 0
 @word 0x0
@@ -3416,7 +3416,7 @@ str_item_name341=VM 03
 @hword 341, 0
 @byte ITEM_EFFECT_NOEFFECT, 0
 @word str_item_description_vm_03
-@byte 1, 0, 4, 1
+@byte 0, 0, 4, 1
 @word 0x0
 @byte 0, 0, 0, 0
 @word 0x0
@@ -3426,7 +3426,7 @@ str_item_name342=VM 04
 @hword 342, 0
 @byte ITEM_EFFECT_NOEFFECT, 0
 @word str_item_description_vm_04
-@byte 1, 0, 4, 1
+@byte 0, 0, 4, 1
 @word 0x0
 @byte 0, 0, 0, 0
 @word 0x0
@@ -3436,7 +3436,7 @@ str_item_name343=VM 05
 @hword 343, 0
 @byte ITEM_EFFECT_NOEFFECT, 0
 @word str_item_description_vm_05
-@byte 1, 0, 4, 1
+@byte 0, 0, 4, 1
 @word 0x0
 @byte 0, 0, 0, 0
 @word 0x0
@@ -3446,7 +3446,7 @@ str_item_name344=VM 06
 @hword 344, 0
 @byte ITEM_EFFECT_NOEFFECT, 0
 @word str_item_description_vm_06
-@byte 1, 0, 4, 1
+@byte 0, 0, 4, 1
 @word 0x0
 @byte 0, 0, 0, 0
 @word 0x0
@@ -3456,7 +3456,7 @@ str_item_name345=VM 07
 @hword 345, 0
 @byte ITEM_EFFECT_NOEFFECT, 0
 @word str_item_description_vm_07
-@byte 1, 0, 4, 1
+@byte 0, 0, 4, 1
 @word 0x0
 @byte 0, 0, 0, 0
 @word 0x0
@@ -3466,7 +3466,7 @@ str_item_name346=VM 08
 @hword 346, 0
 @byte ITEM_EFFECT_NOEFFECT, 0
 @word str_item_description_vm_08
-@byte 1, 0, 4, 1
+@byte 0, 0, 4, 1
 @word 0x0
 @byte 0, 0, 0, 0
 @word 0x0

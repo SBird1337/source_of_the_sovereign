@@ -1,0 +1,2 @@
+str_person_test=Dies ist ein Test\num die Funktionalität\lzu testen!
+str_person_zero=Falscher Text!

@@ -1,0 +1,5 @@
+str_yes=Ja
+str_no=Nein
+str_beginner=Anfänger
+str_intermediate=Fortgeschritten
+str_expert=Experte

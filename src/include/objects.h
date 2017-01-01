@@ -84,6 +84,8 @@ struct obj_entity {
   u8 field43;
 };
 
+extern struct obj_entity* objects;
+
 typedef void (*object_callback)(struct obj_entity*);
 
 struct obj_template {
@@ -110,7 +112,7 @@ struct obj_resource {
  * @param x x position
  * @param y y position
  * @param b index to start searching at ( ? )
- * @return id of the newly generated obj_entity structure [in superstate.sprites array]
+ * @return id of the newly generated obj_entity structure [in objects array]
  */
 extern u8 obj_template_instanciate_forward_search(struct obj_template *t, u16 x, u16 y, u8 b);
 

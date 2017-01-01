@@ -3,7 +3,11 @@
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
       <df name="assets">
+        <df name="interface">
+        </df>
         <df name="meteor">
+        </df>
+        <df name="mug">
         </df>
         <df name="render">
         </df>
@@ -54,12 +58,16 @@
           <in>pokemon_stats.S</in>
           <in>pokemon_tm_vm.s</in>
         </df>
+        <df name="text_lookup">
+          <in>text_lookup_array.s</in>
+          <in>text_multichoice.s</in>
+        </df>
+        <in>raw_defines.s</in>
       </df>
       <df name="doc">
       </df>
       <df name="gfx_build">
         <df name="icons">
-          <in>305.s</in>
         </df>
         <df name="overworlds">
           <in>ow_0000.s</in>
@@ -4268,6 +4276,8 @@
           </df>
           <df name="pkmn_tables">
           </df>
+          <df name="text_lookup">
+          </df>
         </df>
         <df name="src">
           <df name="assets">
@@ -4288,6 +4298,8 @@
           </df>
           <df name="include">
             <df name="assets">
+              <df name="mug">
+              </df>
             </df>
           </df>
           <df name="interface">
@@ -4366,7 +4378,11 @@
           </df>
         </df>
         <df name="string">
-          <df name="DE">
+          <df name="de">
+            <df name="story_text">
+              <df name="tundra_hq">
+              </df>
+            </df>
           </df>
         </df>
       </df>
@@ -4415,11 +4431,13 @@
         <in>disable_cry_table_blocks.s</in>
         <in>dynamic_overworld_hooks.asm</in>
         <in>hooks.asm</in>
+        <in>interface.asm</in>
         <in>move_table.asm</in>
         <in>moves.asm</in>
         <in>music.asm</in>
         <in>special.asm</in>
         <in>split_physical_special.asm</in>
+        <in>text_system.asm</in>
       </df>
       <df name="sots-private">
         <df name="assets">
@@ -5569,6 +5587,7 @@
               <in>seq_346.s</in>
             </df>
             <df name="S_FINAL">
+              <in>SEQ_BA_TRAIN.s</in>
               <in>SEQ_BGM_BICYCLE.s</in>
               <in>SEQ_BGM_CITY_01.s</in>
               <in>SEQ_BGM_CITY_02.s</in>
@@ -5686,9 +5705,13 @@
               <in>snd_116_taiko_drum.s</in>
               <in>snd_11_vibes.s</in>
               <in>snd_127_bassdrum.s</in>
+              <in>snd_127_bongo_hi.s</in>
+              <in>snd_127_bongo_lo.s</in>
               <in>snd_127_clap.s</in>
               <in>snd_127_claves.s</in>
               <in>snd_127_closed_hat.s</in>
+              <in>snd_127_conga_hi.s</in>
+              <in>snd_127_conga_hi_sl.s</in>
               <in>snd_127_hard_cymbal.s</in>
               <in>snd_127_hard_snare.s</in>
               <in>snd_127_high_hat.s</in>
@@ -5764,7 +5787,6 @@
               <in>snd_73_flute_E5.s</in>
               <in>snd_73_flute_Fs3.s</in>
               <in>snd_73_flute_G5.s</in>
-              <in>snd_73_flute_mid.s</in>
               <in>snd_73_split.s</in>
               <in>snd_75_panflute.s</in>
               <in>snd_77_shakuhachi_high.s</in>
@@ -6042,6 +6064,34 @@
         </df>
         <df name="include">
           <df name="assets">
+            <df name="interface">
+              <in>arrows.img.h</in>
+              <in>emoticons.img.h</in>
+              <in>menu_box.img.h</in>
+              <in>text_box.img.h</in>
+            </df>
+            <df name="mug">
+              <in>mug_00.c</in>
+              <in>mug_00.h</in>
+              <in>mug_01.c</in>
+              <in>mug_01.h</in>
+              <in>mug_02.c</in>
+              <in>mug_02.h</in>
+              <in>mug_05.c</in>
+              <in>mug_05.h</in>
+              <in>mug_06.c</in>
+              <in>mug_06.h</in>
+              <in>mug_07.c</in>
+              <in>mug_07.h</in>
+              <in>mug_08.c</in>
+              <in>mug_08.h</in>
+              <in>mug_09.c</in>
+              <in>mug_09.h</in>
+              <in>mug_10.c</in>
+              <in>mug_10.h</in>
+              <in>mug_11.c</in>
+              <in>mug_11.h</in>
+            </df>
             <in>ascii.c</in>
             <in>ascii.h</in>
           </df>
@@ -6080,6 +6130,7 @@
         </df>
         <df name="interface">
           <in>lcd_io_test.S</in>
+          <in>mugshot_table.s</in>
           <in>textbox_mugshots.c</in>
           <in>textbox_setup.S</in>
           <in>trans_mug_close_fix.S</in>
@@ -6232,16 +6283,28 @@
           <in>custom_specials.c</in>
           <in>cutscene_meteor.c</in>
           <in>cutscene_meteor.h</in>
+          <in>load_text_special.c</in>
+          <in>script_overrides.c</in>
         </df>
       </df>
       <df name="string">
         <df name="de">
+          <df name="story_text">
+            <df name="tundra_hq">
+              <in>globals.S</in>
+              <in>globals.txt</in>
+            </df>
+          </df>
           <in>hazards.S</in>
           <in>item_data.S</in>
           <in>item_descriptions.S</in>
           <in>move_descriptions.S</in>
           <in>move_names.S</in>
           <in>move_strings.S</in>
+          <in>text.S</in>
+          <in>text.txt</in>
+          <in>text_multichoices.S</in>
+          <in>text_multichoices.txt</in>
         </df>
         <df name="en">
         </df>

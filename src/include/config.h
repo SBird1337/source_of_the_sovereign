@@ -33,6 +33,9 @@
 /*Variables for walking script control*/
 #define WALK_SCRIPT_VAR 0x5009
 
+/*Variable for custom text*/
+#define TEXT_VAR 0x500C
+
 /*Variables to control the music overrides*/
 #define VAR_FROM_1 0x51FA
 #define VAR_FROM_2 0x51FB

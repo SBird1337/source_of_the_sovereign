@@ -36,8 +36,12 @@
 
 .include "patches/overworlds/overworld.asm"
 
+.include "patches/interface.asm"
+
 .include "patches/battle_engine/malloc.asm"
 .include "patches/battle_engine/battle_engine.asm"
+
+.include "patches/text_system.asm"
 
 .org 0x09000000
 .importobj "object/linked.o"
