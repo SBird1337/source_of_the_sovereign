@@ -148,6 +148,7 @@ flag_decrypt:
 
 .align 2
 
+.global palette_override
 palette_override:
 .hword 0
 .hword 0
@@ -164,4 +165,4 @@ palette_override:
 .hword 0
 .hword 0
 .hword 0
-.hword 0
+.hword 0x0
