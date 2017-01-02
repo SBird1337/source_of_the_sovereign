@@ -78,7 +78,7 @@ $(C_MET_BG): $(PNG_MET_BG)
 $(C_MET_SKY): $(PNG_MET_SKY)
 	$(GRIT) $< -gu32 -gzl -gB 4 -gt -m -mu16 -mzl -mp1 -mRtpf -p -pu16 -pzl -ftc -o $@
 
-$(C_MET_RG): $(PNG_MET_RG)
+$(C_MET_FG): $(PNG_MET_FG)
 	$(GRIT) $< -gu32 -gzl -gB 4 -gt -m -mu16 -mzl -mp3 -mRtpf -p -pu16 -pzl -ftc -o $@
 
 $(C_MET_CLOUDS): $(PNG_MET_CLOUDS)

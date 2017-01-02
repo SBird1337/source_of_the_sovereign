@@ -143,7 +143,6 @@
           <in>custom_specials.c</in>
           <in>cutscene_meteor.c</in>
           <in>load_text_special.c</in>
-          <in>script_overrides.c</in>
         </df>
       </df>
       <df name="string">
@@ -644,8 +643,6 @@
       <item path="src/specials/cutscene_meteor.c" ex="false" tool="0" flavor2="3">
       </item>
       <item path="src/specials/load_text_special.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="src/specials/script_overrides.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="string/de/story_text/tundra_hq/globals.txt"
             ex="false"

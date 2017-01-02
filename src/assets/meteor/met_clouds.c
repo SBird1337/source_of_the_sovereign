@@ -9,13 +9,13 @@
 //	+ regular map (flat), lz77 compressed, 32x20 
 //	Total size: 28 + 448 + 256 = 732
 //
-//	Time-stamp: 2016-05-29, 04:14:05
-//	Exported by Cearn's GBA Image Transmogrifier, v0.8.13
+//	Time-stamp: 2017-01-01, 21:29:18
+//	Exported by Cearn's GBA Image Transmogrifier, v0.8.6
 //	( http://www.coranac.com/projects/#grit )
 //
 //======================================================================
 
-const unsigned int met_cloudsTiles[112] __attribute__((aligned(4))) __attribute__((visibility("hidden")))=
+const unsigned int met_cloudsTiles[112] __attribute__((aligned(4)))=
 {
 	0x0005C010,0xF0000033,0x6003B001,0x7013F066,0x66661707,0x601F1066,0x1F7019F0,0x60722320,
 	0x1FF02720,0x06661E40,0xD1064320,0x41301FF0,0x063F0060,0x43E00606,0x105F50F8,0x805DF042,
@@ -34,7 +34,7 @@ const unsigned int met_cloudsTiles[112] __attribute__((aligned(4))) __attribute_
 	0x3FF10722,0x99F0FFB0,0x7420C821,0xC4FF1AF0,0xC49BF0BF,0xF01044BF,0x442E741F,0x003F9231,
 };
 
-const unsigned short met_cloudsMap[128] __attribute__((aligned(4))) __attribute__((visibility("hidden")))=
+const unsigned short met_cloudsMap[128] __attribute__((aligned(4)))=
 {
 	0x0010,0x0005,0x003F,0xF020,0xF001,0xF001,0xF001,0xF001,
 	0xF001,0xF801,0x01F0,0x01F0,0x01F0,0x01F0,0x0590,0x2001,
@@ -55,10 +55,10 @@ const unsigned short met_cloudsMap[128] __attribute__((aligned(4))) __attribute_
 	0x01F0,0x01F0,0xF0F8,0xF001,0xF001,0xF001,0x8001,0x0005,
 };
 
-const unsigned short met_cloudsPal[14] __attribute__((aligned(4))) __attribute__((visibility("hidden")))=
+const unsigned short met_cloudsPal[14] __attribute__((aligned(4)))=
 {
 	0x2010,0x0000,0x0000,0x9602,0x747F,0x517F,0x007F,0x7FFE,
-	0x7F9C,0x7F7A,0x0000,0xD080,0x0001,0x0000,
+	0x7F9C,0x7F7A,0x0000,0xD080,0x0101,0x01F0,
 };
 
 //}}BLOCK(met_clouds)

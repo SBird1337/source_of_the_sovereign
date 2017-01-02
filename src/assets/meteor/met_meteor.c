@@ -8,13 +8,13 @@
 //	+ 48 tiles lz77 compressed
 //	Total size: 32 + 1168 = 1200
 //
-//	Time-stamp: 2016-05-29, 04:14:05
-//	Exported by Cearn's GBA Image Transmogrifier, v0.8.13
+//	Time-stamp: 2017-01-01, 21:29:18
+//	Exported by Cearn's GBA Image Transmogrifier, v0.8.6
 //	( http://www.coranac.com/projects/#grit )
 //
 //======================================================================
 
-const unsigned int met_meteorTiles[292] __attribute__((aligned(4))) __attribute__((visibility("hidden")))=
+const unsigned int met_meteorTiles[292] __attribute__((aligned(4)))=
 {
 	0x00060010,0xF000003A,0x2001F001,0x1300100D,0x00001013,0x221A0020,0x02100032,0x11000031,
 	0x27801103,0x10334002,0x00401134,0x00300001,0x11300000,0x10442230,0x3740246C,0x20023E30,
@@ -59,7 +59,7 @@ const unsigned int met_meteorTiles[292] __attribute__((aligned(4))) __attribute_
 	0x57451634,0x10B0F754,0x13F40667,0x00FF0160,
 };
 
-const unsigned short met_meteorPal[16] __attribute__((aligned(4))) __attribute__((visibility("hidden")))=
+const unsigned short met_meteorPal[16] __attribute__((aligned(4)))=
 {
 	0x2108,0x211B,0x223E,0x2117,0x22BE,0x4BDE,0x375E,0x5FDE,
 	0x7BDE,0x21BE,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,

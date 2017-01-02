@@ -5,6 +5,10 @@
 .global get_text_pointer_from_lookup
 get_text_pointer_from_lookup:
 push {r4-r5, lr}
+ldr r0, =str_invalid_text
+b valid_text_two
+@delete those two lines to activate the system
+
 ldr r0, =sav_one
 ldr r0, [r0]
 ldrb r4, [r0, #4] @r4 = bank
@@ -30,12 +34,15 @@ bl bxr2
 lsl r0, #2
 add r1, r0, r4
 ldr r0, [r1, #0] @load specific ID
+lsr r1, r0, #0x18
+cmp r1, #8
+beq valid_text_two
+cmp r1, #9
+beq valid_text_two
+ldr r0, =str_invalid_text
+valid_text_two:
 ldr r1, lp_offset
 str r0, [r1]
-mov r0, #0
-ldr r1, =0x500C
-ldr r2, =var_set
-bl bxr2
 pop {r4-r5}
 pop {r1}
 bx r1
@@ -43,6 +50,10 @@ bx r1
 .global get_map_pointer_from_lookup
 get_map_pointer_from_lookup:
 push {r4-r5, lr}
+ldr r0, =str_invalid_text
+b valid_text_one
+@delete those two lines to activate the system
+
 ldr r0, =sav_one
 ldr r0, [r0]
 ldrb r4, [r0, #4] @r4 = bank
@@ -61,12 +72,15 @@ bl bxr2
 lsl r0, #2
 add r1, r0, r4
 ldr r0, [r1, #0] @load specific ID
+lsr r1, r0, #0x18
+cmp r1, #8
+beq valid_text_one
+cmp r1, #9
+beq valid_text_one
+ldr r0, =str_invalid_text
+valid_text_one:
 ldr r1, lp_offset
 str r0, [r1]
-mov r0, #0
-ldr r1, =0x500C
-ldr r2, =var_set
-bl bxr2
 pop {r4-r5}
 pop {r1}
 bx r1

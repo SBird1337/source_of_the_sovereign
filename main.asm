@@ -32,7 +32,7 @@
 .include "patches/pokemon_data/pokemon_icons.asm"
 .include "patches/pokemon_data/pokemon_habitats.asm"
 
-.include "patches/dns/core.asm"
+//.include "patches/dns/core.asm"
 
 .include "patches/overworlds/overworld.asm"
 

@@ -270,10 +270,10 @@ void met_setup_scrolling()
 
 void met_setup_palettes()
 {
-	wram_decompress((void*)met_skyPal, palette_unfaded_buffer + PALETTE_SKY*32);
-	wram_decompress((void*)met_cloudsPal, palette_unfaded_buffer + PALETTE_CLOUD*32);
-	wram_decompress((void*)met_foregroundPal, palette_unfaded_buffer + PALETTE_FG*32);
-	wram_decompress((void*)met_backgroundPal, palette_unfaded_buffer + PALETTE_BG*32);
+	wram_decompress((void*)met_skyPal, palette_unfaded_buffer + PALETTE_SKY*16);
+	wram_decompress((void*)met_cloudsPal, palette_unfaded_buffer + PALETTE_CLOUD*16);
+	wram_decompress((void*)met_foregroundPal, palette_unfaded_buffer + PALETTE_FG*16);
+	wram_decompress((void*)met_backgroundPal, palette_unfaded_buffer + PALETTE_BG*16);
 }
 
 void met_setup_vram()

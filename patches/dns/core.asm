@@ -19,6 +19,6 @@
     .pool
 
 .org 0x08056578
-    ldr r0, =dns_cb_overworld_hacked+1
-    bx r0
-    .pool
+    //ldr r0, =dns_cb_overworld_hacked+1
+    //bx r0
+    //.pool

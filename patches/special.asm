@@ -7,5 +7,5 @@
 .org 0x0815FD60 + (4*0x6A)
 .word get_map_pointer_from_lookup|1
 
-.org 0x0815F9B0 + (4*0x2)   //end cmd
-.word s02_end|1
+.org 0x0815FD60 + (4*0x6B)
+.word sp_clear_variables|1

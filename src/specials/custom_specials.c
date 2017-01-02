@@ -55,6 +55,12 @@ void sp_init_script();
  */
 void sp_special_casm();
 
+/**
+ * @brief clears some variables at the end of a script
+ */
+void sp_clear_variables();
+
+
 void get_text_pointer_from_lookup();
 
 /* === STATICS === */
@@ -89,4 +95,16 @@ void sp_special_casm() //special 0x68
 {
     u16* var_special = var_access(CALLASM_VAR);
     special_routines[*var_special]();
+}
+
+void sp_clear_variables()
+{
+    (void) var_set(MUGHSOT_1_TABLE, 0);
+    (void) var_set(MUGHSOT_2_TABLE, 0);
+    (void) var_set(MUGSHOT_1_X, 0);
+    (void) var_set(MUGSHOT_2_X, 0);
+    (void) var_set(MUGSHOT_1_Y, 0);
+    (void) var_set(MUGSHOT_2_Y, 0);
+    (void) var_set(TEXT_VAR, 0);
+    return;
 }

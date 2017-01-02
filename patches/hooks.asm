@@ -28,7 +28,7 @@
   .org 0x081DD0F4
     LDR R1, =music_override|1
     BX R1
-  .pool
+   .pool
 
 
 
@@ -151,7 +151,7 @@
 .org 0x080D9EDC
     ldr r0, =load_hijack|1
     bx r0
-	.pool
+    .pool
 
 .org 0x080d991E
     bx r7

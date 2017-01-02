@@ -9,13 +9,13 @@
 //	+ regular map (flat), lz77 compressed, 32x20 
 //	Total size: 28 + 204 + 240 = 472
 //
-//	Time-stamp: 2016-05-29, 04:14:05
-//	Exported by Cearn's GBA Image Transmogrifier, v0.8.13
+//	Time-stamp: 2017-01-01, 21:27:37
+//	Exported by Cearn's GBA Image Transmogrifier, v0.8.6
 //	( http://www.coranac.com/projects/#grit )
 //
 //======================================================================
 
-const unsigned int met_skyTiles[51] __attribute__((aligned(4))) __attribute__((visibility("hidden")))=
+const unsigned int met_skyTiles[51] __attribute__((aligned(4)))=
 {
 	0x00032010,0xF0000033,0x33059001,0x2001F033,0x3332010D,0x23232333,0xBD19F023,0xF0321E60,
 	0xF040B01F,0x325E801F,0xF0E03FF0,0x601EF07F,0x23332308,0x30E13232,0x90471001,0x22232207,
@@ -26,7 +26,7 @@ const unsigned int met_skyTiles[51] __attribute__((aligned(4))) __attribute__((v
 	0x11789C10,0x01F04300,0x01F001F0,
 };
 
-const unsigned short met_skyMap[120] __attribute__((aligned(4))) __attribute__((visibility("hidden")))=
+const unsigned short met_skyMap[120] __attribute__((aligned(4)))=
 {
 	0x0010,0x0005,0x003F,0xF010,0xF001,0xF001,0xF001,0xF001,
 	0xF001,0xF801,0x01F0,0x01F0,0x01F0,0x01F0,0x0770,0x1001,
@@ -43,13 +43,13 @@ const unsigned short met_skyMap[120] __attribute__((aligned(4))) __attribute__((
 	0x3FF0,0x01F0,0x01F0,0x3FF0,0x01F0,0x01F0,0xF0FF,0xF001,
 	0xF03F,0xF001,0xF001,0xF03F,0xF015,0xF001,0xFF01,0x3FF0,
 	0x01F0,0x01F0,0x3FF0,0x01F0,0x01F0,0x01F0,0x01F0,0xF0FE,
-	0xF001,0xF001,0xF001,0xF001,0xF001,0xB001,0x0003,0x0000,
+	0xF001,0xF001,0xF001,0xF001,0xF001,0xB001,0x1003,0x0000,
 };
 
-const unsigned short met_skyPal[14] __attribute__((aligned(4))) __attribute__((visibility("hidden")))=
+const unsigned short met_skyPal[14] __attribute__((aligned(4)))=
 {
 	0x2010,0x0000,0x0000,0x9602,0x747F,0x517F,0x007F,0x7FFE,
-	0x7F9C,0x7F7A,0x0000,0xD080,0x0001,0x0000,
+	0x7F9C,0x7F7A,0x0000,0xD080,0x1101,0x1111,
 };
 
 //}}BLOCK(met_sky)

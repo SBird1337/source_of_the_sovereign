@@ -9,13 +9,13 @@
 //	+ regular map (flat), lz77 compressed, 32x20 
 //	Total size: 36 + 2356 + 464 = 2856
 //
-//	Time-stamp: 2016-05-29, 04:14:05
-//	Exported by Cearn's GBA Image Transmogrifier, v0.8.13
+//	Time-stamp: 2017-01-01, 21:29:18
+//	Exported by Cearn's GBA Image Transmogrifier, v0.8.6
 //	( http://www.coranac.com/projects/#grit )
 //
 //======================================================================
 
-const unsigned int met_foregroundTiles[589] __attribute__((aligned(4))) __attribute__((visibility("hidden")))=
+const unsigned int met_foregroundTiles[589] __attribute__((aligned(4)))=
 {
 	0x00118010,0xF000003D,0xF001F001,0x990F0001,0xBB600200,0x1C4017F0,0xBB999999,0xF0BB63BB,
 	0xAA1F901F,0x19F0AAAA,0x095C0B30,0x109A1200,0x1001F004,0x0300440E,0x00114000,0x03001400,
@@ -102,7 +102,7 @@ const unsigned int met_foregroundTiles[589] __attribute__((aligned(4))) __attrib
 	0x2142212F,0x400C787F,0xC0517F21,0xB0C0BFF1,0x001F9003,
 };
 
-const unsigned short met_foregroundMap[232] __attribute__((aligned(4))) __attribute__((visibility("hidden")))=
+const unsigned short met_foregroundMap[232] __attribute__((aligned(4)))=
 {
 	0x0010,0x0005,0x003F,0xF030,0xF001,0xF001,0xF001,0xF001,
 	0xF001,0xFF01,0x01F0,0x01F0,0x01F0,0x01F0,0x01F0,0x01F0,
@@ -135,10 +135,10 @@ const unsigned short met_foregroundMap[232] __attribute__((aligned(4))) __attrib
 	0x7E30,0x7F30,0x8030,0x0030,0x3081,0x3082,0x3083,0x3084,
 	0x8500,0x8630,0x8730,0x8630,0x0034,0x3088,0x3089,0x308A,
 	0x308B,0x8A7F,0x4F01,0x01F0,0x01F0,0x01F0,0x01F0,0x01F0,
-	0x01F0,0xF0F8,0xF001,0xF001,0xF001,0xB001,0x0003,0x008F,
+	0x01F0,0xF0F8,0xF001,0xF001,0xF001,0xB001,0x3003,0x0000,
 };
 
-const unsigned short met_foregroundPal[18] __attribute__((aligned(4))) __attribute__((visibility("hidden")))=
+const unsigned short met_foregroundPal[18] __attribute__((aligned(4)))=
 {
 	0x2010,0x0000,0x0000,0x0E7E,0xCB3B,0x8932,0x002A,0x21E0,
 	0x5F19,0x4E97,0x4634,0xF200,0x493D,0xF825,0xB619,0x2015,
