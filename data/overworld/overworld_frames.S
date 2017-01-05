@@ -1,5 +1,5 @@
 .thumb
-.section .rodata
+.text
 
 .global ow_frames_0
 .global ow_frames_1

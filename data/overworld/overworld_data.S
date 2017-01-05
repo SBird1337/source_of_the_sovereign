@@ -1,5 +1,5 @@
 .thumb
-.section .rodata
+.text
 
 .global ow_data_0
 .global ow_data_1

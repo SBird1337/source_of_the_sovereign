@@ -36,12 +36,17 @@
 
 .include "patches/overworlds/overworld.asm"
 
+.include "patches/trainer_sprites/images.asm"
+
 .include "patches/interface.asm"
 
 .include "patches/battle_engine/malloc.asm"
 .include "patches/battle_engine/battle_engine.asm"
 
 .include "patches/text_system.asm"
+
+.org 0x0815F9B8
+    .word 0x08069ED5 // fix nop1 for now...
 
 .org 0x09000000
 .importobj "object/linked.o"

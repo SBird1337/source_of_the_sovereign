@@ -1,6 +1,6 @@
 .align 2
 .thumb
-.section .rodata
+.text
 
 .global objects
 objects:

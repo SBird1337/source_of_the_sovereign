@@ -60,7 +60,13 @@
         </df>
         <df name="text_lookup">
           <in>text_lookup_array.s</in>
+          <in>text_lookup_trainer.s</in>
           <in>text_multichoice.s</in>
+        </df>
+        <df name="trainer_sprites">
+          <in>ts_alt.s</in>
+          <in>ts_pal.s</in>
+          <in>ts_tiles.s</in>
         </df>
         <in>raw_defines.s</in>
       </df>
@@ -538,6 +544,8 @@
           <in>ow_0529.s</in>
           <in>ow_0530.s</in>
           <in>ow_0531.s</in>
+          <in>ow_077.s</in>
+          <in>ow_175.s</in>
         </df>
         <df name="sprites">
           <df name="back_sprites">
@@ -2449,118 +2457,441 @@
             <in>normal_1199.s</in>
           </df>
           <df name="normal_pal">
+            <in>normal_0000.s</in>
+            <in>normal_0001.s</in>
+            <in>normal_0002.s</in>
+            <in>normal_0003.s</in>
+            <in>normal_0004.s</in>
             <in>normal_0005.s</in>
+            <in>normal_0006.s</in>
+            <in>normal_0007.s</in>
+            <in>normal_0008.s</in>
+            <in>normal_0009.s</in>
+            <in>normal_0010.s</in>
+            <in>normal_0011.s</in>
             <in>normal_0012.s</in>
+            <in>normal_0013.s</in>
+            <in>normal_0014.s</in>
+            <in>normal_0015.s</in>
+            <in>normal_0016.s</in>
+            <in>normal_0017.s</in>
+            <in>normal_0018.s</in>
+            <in>normal_0019.s</in>
+            <in>normal_0020.s</in>
+            <in>normal_0021.s</in>
+            <in>normal_0022.s</in>
+            <in>normal_0023.s</in>
+            <in>normal_0024.s</in>
+            <in>normal_0025.s</in>
+            <in>normal_0026.s</in>
+            <in>normal_0027.s</in>
+            <in>normal_0028.s</in>
+            <in>normal_0029.s</in>
+            <in>normal_0030.s</in>
+            <in>normal_0031.s</in>
+            <in>normal_0032.s</in>
+            <in>normal_0033.s</in>
+            <in>normal_0034.s</in>
+            <in>normal_0035.s</in>
+            <in>normal_0036.s</in>
+            <in>normal_0037.s</in>
+            <in>normal_0038.s</in>
+            <in>normal_0039.s</in>
             <in>normal_0040.s</in>
+            <in>normal_0041.s</in>
+            <in>normal_0042.s</in>
+            <in>normal_0043.s</in>
+            <in>normal_0044.s</in>
+            <in>normal_0045.s</in>
+            <in>normal_0046.s</in>
+            <in>normal_0047.s</in>
+            <in>normal_0048.s</in>
+            <in>normal_0049.s</in>
             <in>normal_0050.s</in>
+            <in>normal_0051.s</in>
+            <in>normal_0052.s</in>
+            <in>normal_0053.s</in>
+            <in>normal_0054.s</in>
+            <in>normal_0055.s</in>
+            <in>normal_0056.s</in>
+            <in>normal_0057.s</in>
+            <in>normal_0058.s</in>
+            <in>normal_0059.s</in>
+            <in>normal_0060.s</in>
             <in>normal_0061.s</in>
+            <in>normal_0062.s</in>
+            <in>normal_0063.s</in>
+            <in>normal_0064.s</in>
+            <in>normal_0065.s</in>
+            <in>normal_0066.s</in>
+            <in>normal_0067.s</in>
+            <in>normal_0068.s</in>
+            <in>normal_0069.s</in>
+            <in>normal_0070.s</in>
+            <in>normal_0071.s</in>
             <in>normal_0072.s</in>
+            <in>normal_0073.s</in>
+            <in>normal_0074.s</in>
             <in>normal_0075.s</in>
             <in>normal_0076.s</in>
+            <in>normal_0077.s</in>
+            <in>normal_0078.s</in>
+            <in>normal_0079.s</in>
             <in>normal_0080.s</in>
+            <in>normal_0081.s</in>
+            <in>normal_0082.s</in>
             <in>normal_0083.s</in>
+            <in>normal_0084.s</in>
+            <in>normal_0085.s</in>
+            <in>normal_0086.s</in>
+            <in>normal_0087.s</in>
+            <in>normal_0088.s</in>
+            <in>normal_0089.s</in>
+            <in>normal_0090.s</in>
+            <in>normal_0091.s</in>
             <in>normal_0092.s</in>
+            <in>normal_0093.s</in>
+            <in>normal_0094.s</in>
+            <in>normal_0095.s</in>
+            <in>normal_0096.s</in>
+            <in>normal_0097.s</in>
+            <in>normal_0098.s</in>
+            <in>normal_0099.s</in>
+            <in>normal_0100.s</in>
+            <in>normal_0101.s</in>
+            <in>normal_0102.s</in>
+            <in>normal_0103.s</in>
+            <in>normal_0104.s</in>
+            <in>normal_0105.s</in>
+            <in>normal_0106.s</in>
+            <in>normal_0107.s</in>
             <in>normal_0108.s</in>
+            <in>normal_0109.s</in>
+            <in>normal_0110.s</in>
+            <in>normal_0111.s</in>
+            <in>normal_0112.s</in>
+            <in>normal_0113.s</in>
+            <in>normal_0114.s</in>
+            <in>normal_0115.s</in>
+            <in>normal_0116.s</in>
+            <in>normal_0117.s</in>
             <in>normal_0118.s</in>
+            <in>normal_0119.s</in>
+            <in>normal_0120.s</in>
+            <in>normal_0121.s</in>
+            <in>normal_0122.s</in>
             <in>normal_0123.s</in>
+            <in>normal_0124.s</in>
+            <in>normal_0125.s</in>
+            <in>normal_0126.s</in>
+            <in>normal_0127.s</in>
+            <in>normal_0128.s</in>
+            <in>normal_0129.s</in>
             <in>normal_0130.s</in>
+            <in>normal_0131.s</in>
+            <in>normal_0132.s</in>
+            <in>normal_0133.s</in>
+            <in>normal_0134.s</in>
+            <in>normal_0135.s</in>
             <in>normal_0136.s</in>
+            <in>normal_0137.s</in>
+            <in>normal_0138.s</in>
             <in>normal_0139.s</in>
+            <in>normal_0140.s</in>
+            <in>normal_0141.s</in>
+            <in>normal_0142.s</in>
+            <in>normal_0143.s</in>
+            <in>normal_0144.s</in>
+            <in>normal_0145.s</in>
+            <in>normal_0146.s</in>
+            <in>normal_0147.s</in>
+            <in>normal_0148.s</in>
             <in>normal_0149.s</in>
+            <in>normal_0150.s</in>
+            <in>normal_0151.s</in>
+            <in>normal_0152.s</in>
             <in>normal_0153.s</in>
+            <in>normal_0154.s</in>
+            <in>normal_0155.s</in>
+            <in>normal_0156.s</in>
+            <in>normal_0157.s</in>
+            <in>normal_0158.s</in>
+            <in>normal_0159.s</in>
             <in>normal_0160.s</in>
+            <in>normal_0161.s</in>
+            <in>normal_0162.s</in>
+            <in>normal_0163.s</in>
+            <in>normal_0164.s</in>
             <in>normal_0165.s</in>
+            <in>normal_0166.s</in>
+            <in>normal_0167.s</in>
+            <in>normal_0168.s</in>
+            <in>normal_0169.s</in>
+            <in>normal_0170.s</in>
+            <in>normal_0171.s</in>
             <in>normal_0172.s</in>
+            <in>normal_0173.s</in>
+            <in>normal_0174.s</in>
+            <in>normal_0175.s</in>
+            <in>normal_0176.s</in>
+            <in>normal_0177.s</in>
+            <in>normal_0178.s</in>
+            <in>normal_0179.s</in>
+            <in>normal_0180.s</in>
+            <in>normal_0181.s</in>
+            <in>normal_0182.s</in>
+            <in>normal_0183.s</in>
             <in>normal_0184.s</in>
             <in>normal_0185.s</in>
+            <in>normal_0186.s</in>
+            <in>normal_0187.s</in>
             <in>normal_0188.s</in>
+            <in>normal_0189.s</in>
+            <in>normal_0190.s</in>
             <in>normal_0191.s</in>
             <in>normal_0192.s</in>
+            <in>normal_0193.s</in>
+            <in>normal_0194.s</in>
+            <in>normal_0195.s</in>
             <in>normal_0196.s</in>
+            <in>normal_0197.s</in>
+            <in>normal_0198.s</in>
+            <in>normal_0199.s</in>
+            <in>normal_0200.s</in>
             <in>normal_0201.s</in>
+            <in>normal_0202.s</in>
+            <in>normal_0203.s</in>
+            <in>normal_0204.s</in>
+            <in>normal_0205.s</in>
+            <in>normal_0206.s</in>
+            <in>normal_0207.s</in>
+            <in>normal_0208.s</in>
+            <in>normal_0209.s</in>
+            <in>normal_0210.s</in>
+            <in>normal_0211.s</in>
             <in>normal_0212.s</in>
+            <in>normal_0213.s</in>
+            <in>normal_0214.s</in>
+            <in>normal_0215.s</in>
+            <in>normal_0216.s</in>
+            <in>normal_0217.s</in>
+            <in>normal_0218.s</in>
+            <in>normal_0219.s</in>
             <in>normal_0220.s</in>
+            <in>normal_0221.s</in>
             <in>normal_0222.s</in>
+            <in>normal_0223.s</in>
+            <in>normal_0224.s</in>
+            <in>normal_0225.s</in>
             <in>normal_0226.s</in>
+            <in>normal_0227.s</in>
             <in>normal_0228.s</in>
+            <in>normal_0229.s</in>
+            <in>normal_0230.s</in>
             <in>normal_0231.s</in>
+            <in>normal_0232.s</in>
+            <in>normal_0233.s</in>
+            <in>normal_0234.s</in>
+            <in>normal_0235.s</in>
+            <in>normal_0236.s</in>
+            <in>normal_0237.s</in>
             <in>normal_0238.s</in>
+            <in>normal_0239.s</in>
             <in>normal_0240.s</in>
+            <in>normal_0241.s</in>
             <in>normal_0242.s</in>
+            <in>normal_0243.s</in>
+            <in>normal_0244.s</in>
             <in>normal_0245.s</in>
+            <in>normal_0246.s</in>
+            <in>normal_0247.s</in>
+            <in>normal_0248.s</in>
             <in>normal_0249.s</in>
+            <in>normal_0250.s</in>
+            <in>normal_0251.s</in>
+            <in>normal_0277.s</in>
+            <in>normal_0278.s</in>
             <in>normal_0279.s</in>
+            <in>normal_0280.s</in>
+            <in>normal_0281.s</in>
+            <in>normal_0282.s</in>
             <in>normal_0283.s</in>
+            <in>normal_0284.s</in>
             <in>normal_0285.s</in>
             <in>normal_0286.s</in>
+            <in>normal_0287.s</in>
             <in>normal_0288.s</in>
+            <in>normal_0289.s</in>
             <in>normal_0290.s</in>
             <in>normal_0291.s</in>
             <in>normal_0292.s</in>
+            <in>normal_0293.s</in>
             <in>normal_0294.s</in>
+            <in>normal_0295.s</in>
             <in>normal_0296.s</in>
+            <in>normal_0297.s</in>
             <in>normal_0298.s</in>
             <in>normal_0299.s</in>
+            <in>normal_0300.s</in>
+            <in>normal_0301.s</in>
             <in>normal_0302.s</in>
+            <in>normal_0303.s</in>
+            <in>normal_0304.s</in>
+            <in>normal_0305.s</in>
+            <in>normal_0306.s</in>
+            <in>normal_0307.s</in>
+            <in>normal_0308.s</in>
+            <in>normal_0309.s</in>
             <in>normal_0310.s</in>
             <in>normal_0311.s</in>
+            <in>normal_0312.s</in>
             <in>normal_0313.s</in>
+            <in>normal_0314.s</in>
             <in>normal_0315.s</in>
+            <in>normal_0316.s</in>
             <in>normal_0317.s</in>
             <in>normal_0318.s</in>
             <in>normal_0319.s</in>
+            <in>normal_0320.s</in>
+            <in>normal_0321.s</in>
             <in>normal_0322.s</in>
+            <in>normal_0323.s</in>
             <in>normal_0324.s</in>
             <in>normal_0325.s</in>
+            <in>normal_0326.s</in>
             <in>normal_0327.s</in>
+            <in>normal_0328.s</in>
+            <in>normal_0329.s</in>
             <in>normal_0330.s</in>
             <in>normal_0331.s</in>
             <in>normal_0332.s</in>
+            <in>normal_0333.s</in>
             <in>normal_0334.s</in>
+            <in>normal_0335.s</in>
+            <in>normal_0336.s</in>
+            <in>normal_0337.s</in>
+            <in>normal_0338.s</in>
             <in>normal_0339.s</in>
             <in>normal_0340.s</in>
             <in>normal_0341.s</in>
+            <in>normal_0342.s</in>
+            <in>normal_0343.s</in>
             <in>normal_0344.s</in>
             <in>normal_0345.s</in>
             <in>normal_0346.s</in>
             <in>normal_0347.s</in>
+            <in>normal_0348.s</in>
+            <in>normal_0349.s</in>
+            <in>normal_0350.s</in>
             <in>normal_0351.s</in>
+            <in>normal_0352.s</in>
             <in>normal_0353.s</in>
             <in>normal_0354.s</in>
+            <in>normal_0355.s</in>
             <in>normal_0356.s</in>
+            <in>normal_0357.s</in>
+            <in>normal_0358.s</in>
+            <in>normal_0359.s</in>
             <in>normal_0360.s</in>
+            <in>normal_0361.s</in>
+            <in>normal_0362.s</in>
             <in>normal_0363.s</in>
+            <in>normal_0364.s</in>
+            <in>normal_0365.s</in>
+            <in>normal_0366.s</in>
+            <in>normal_0367.s</in>
+            <in>normal_0368.s</in>
+            <in>normal_0369.s</in>
+            <in>normal_0370.s</in>
             <in>normal_0371.s</in>
+            <in>normal_0372.s</in>
             <in>normal_0373.s</in>
+            <in>normal_0374.s</in>
             <in>normal_0375.s</in>
+            <in>normal_0376.s</in>
+            <in>normal_0377.s</in>
             <in>normal_0378.s</in>
+            <in>normal_0379.s</in>
+            <in>normal_0380.s</in>
+            <in>normal_0381.s</in>
+            <in>normal_0382.s</in>
+            <in>normal_0383.s</in>
+            <in>normal_0384.s</in>
             <in>normal_0386.s</in>
+            <in>normal_0387.s</in>
+            <in>normal_0388.s</in>
             <in>normal_0389.s</in>
             <in>normal_0390.s</in>
+            <in>normal_0391.s</in>
             <in>normal_0392.s</in>
+            <in>normal_0393.s</in>
+            <in>normal_0394.s</in>
             <in>normal_0395.s</in>
+            <in>normal_0396.s</in>
             <in>normal_0397.s</in>
+            <in>normal_0398.s</in>
+            <in>normal_0399.s</in>
             <in>normal_0400.s</in>
+            <in>normal_0401.s</in>
+            <in>normal_0402.s</in>
+            <in>normal_0403.s</in>
+            <in>normal_0404.s</in>
+            <in>normal_0405.s</in>
             <in>normal_0406.s</in>
             <in>normal_0407.s</in>
+            <in>normal_0408.s</in>
+            <in>normal_0409.s</in>
             <in>normal_0410.s</in>
             <in>normal_0411.s</in>
+            <in>normal_0412.s</in>
             <in>normal_0440.s</in>
+            <in>normal_0441.s</in>
+            <in>normal_0442.s</in>
             <in>normal_0443.s</in>
             <in>normal_0444.s</in>
+            <in>normal_0445.s</in>
             <in>normal_0446.s</in>
+            <in>normal_0447.s</in>
+            <in>normal_0448.s</in>
             <in>normal_0449.s</in>
             <in>normal_0450.s</in>
             <in>normal_0451.s</in>
+            <in>normal_0452.s</in>
             <in>normal_0453.s</in>
+            <in>normal_0454.s</in>
+            <in>normal_0455.s</in>
+            <in>normal_0456.s</in>
             <in>normal_0457.s</in>
+            <in>normal_0458.s</in>
+            <in>normal_0459.s</in>
+            <in>normal_0460.s</in>
+            <in>normal_0461.s</in>
+            <in>normal_0462.s</in>
+            <in>normal_0463.s</in>
+            <in>normal_0464.s</in>
+            <in>normal_0465.s</in>
             <in>normal_0466.s</in>
+            <in>normal_0467.s</in>
             <in>normal_0468.s</in>
+            <in>normal_0469.s</in>
+            <in>normal_0470.s</in>
+            <in>normal_0471.s</in>
+            <in>normal_0472.s</in>
+            <in>normal_0473.s</in>
+            <in>normal_0474.s</in>
             <in>normal_0475.s</in>
             <in>normal_0476.s</in>
             <in>normal_0477.s</in>
+            <in>normal_0478.s</in>
+            <in>normal_0479.s</in>
+            <in>normal_0480.s</in>
+            <in>normal_0481.s</in>
+            <in>normal_0482.s</in>
             <in>normal_0483.s</in>
+            <in>normal_0484.s</in>
             <in>normal_0485.s</in>
+            <in>normal_0486.s</in>
+            <in>normal_0487.s</in>
             <in>normal_0488.s</in>
             <in>normal_0489.s</in>
             <in>normal_0490.s</in>
@@ -2568,555 +2899,1206 @@
             <in>normal_0492.s</in>
             <in>normal_0493.s</in>
             <in>normal_0494.s</in>
+            <in>normal_0495.s</in>
             <in>normal_0496.s</in>
             <in>normal_0497.s</in>
             <in>normal_0498.s</in>
             <in>normal_0499.s</in>
             <in>normal_0500.s</in>
             <in>normal_0501.s</in>
+            <in>normal_0502.s</in>
+            <in>normal_0503.s</in>
+            <in>normal_0504.s</in>
             <in>normal_0505.s</in>
             <in>normal_0506.s</in>
             <in>normal_0507.s</in>
+            <in>normal_0508.s</in>
+            <in>normal_0509.s</in>
+            <in>normal_0510.s</in>
             <in>normal_0511.s</in>
+            <in>normal_0512.s</in>
+            <in>normal_0513.s</in>
             <in>normal_0514.s</in>
             <in>normal_0515.s</in>
             <in>normal_0516.s</in>
             <in>normal_0517.s</in>
             <in>normal_0518.s</in>
+            <in>normal_0519.s</in>
+            <in>normal_0520.s</in>
             <in>normal_0521.s</in>
+            <in>normal_0522.s</in>
             <in>normal_0523.s</in>
             <in>normal_0524.s</in>
+            <in>normal_0525.s</in>
+            <in>normal_0526.s</in>
             <in>normal_0527.s</in>
+            <in>normal_0528.s</in>
             <in>normal_0529.s</in>
             <in>normal_0530.s</in>
+            <in>normal_0531.s</in>
+            <in>normal_0532.s</in>
+            <in>normal_0533.s</in>
+            <in>normal_0534.s</in>
             <in>normal_0535.s</in>
             <in>normal_0536.s</in>
             <in>normal_0537.s</in>
+            <in>normal_0538.s</in>
+            <in>normal_0539.s</in>
+            <in>normal_0540.s</in>
             <in>normal_0541.s</in>
+            <in>normal_0542.s</in>
+            <in>normal_0543.s</in>
+            <in>normal_0544.s</in>
             <in>normal_0545.s</in>
+            <in>normal_0546.s</in>
             <in>normal_0547.s</in>
             <in>normal_0548.s</in>
             <in>normal_0549.s</in>
+            <in>normal_0550.s</in>
+            <in>normal_0551.s</in>
+            <in>normal_0552.s</in>
             <in>normal_0553.s</in>
+            <in>normal_0554.s</in>
             <in>normal_0555.s</in>
+            <in>normal_0556.s</in>
+            <in>normal_0557.s</in>
+            <in>normal_0558.s</in>
+            <in>normal_0559.s</in>
             <in>normal_0560.s</in>
+            <in>normal_0561.s</in>
+            <in>normal_0562.s</in>
+            <in>normal_0563.s</in>
+            <in>normal_0564.s</in>
+            <in>normal_0565.s</in>
+            <in>normal_0566.s</in>
             <in>normal_0567.s</in>
             <in>normal_0568.s</in>
+            <in>normal_0569.s</in>
             <in>normal_0570.s</in>
+            <in>normal_0571.s</in>
+            <in>normal_0572.s</in>
             <in>normal_0573.s</in>
             <in>normal_0574.s</in>
             <in>normal_0575.s</in>
+            <in>normal_0576.s</in>
+            <in>normal_0577.s</in>
+            <in>normal_0578.s</in>
+            <in>normal_0579.s</in>
+            <in>normal_0580.s</in>
             <in>normal_0581.s</in>
+            <in>normal_0582.s</in>
+            <in>normal_0583.s</in>
+            <in>normal_0584.s</in>
             <in>normal_0585.s</in>
+            <in>normal_0586.s</in>
+            <in>normal_0587.s</in>
+            <in>normal_0588.s</in>
+            <in>normal_0589.s</in>
+            <in>normal_0590.s</in>
             <in>normal_0591.s</in>
             <in>normal_0592.s</in>
             <in>normal_0593.s</in>
+            <in>normal_0594.s</in>
+            <in>normal_0595.s</in>
+            <in>normal_0596.s</in>
             <in>normal_0597.s</in>
+            <in>normal_0598.s</in>
             <in>normal_0599.s</in>
+            <in>normal_0600.s</in>
+            <in>normal_0601.s</in>
+            <in>normal_0602.s</in>
             <in>normal_0603.s</in>
+            <in>normal_0604.s</in>
             <in>normal_0605.s</in>
             <in>normal_0606.s</in>
+            <in>normal_0607.s</in>
+            <in>normal_0608.s</in>
             <in>normal_0609.s</in>
+            <in>normal_0610.s</in>
             <in>normal_0611.s</in>
+            <in>normal_0612.s</in>
+            <in>normal_0613.s</in>
+            <in>normal_0614.s</in>
             <in>normal_0615.s</in>
             <in>normal_0616.s</in>
+            <in>normal_0617.s</in>
             <in>normal_0618.s</in>
+            <in>normal_0619.s</in>
+            <in>normal_0620.s</in>
+            <in>normal_0621.s</in>
             <in>normal_0622.s</in>
             <in>normal_0623.s</in>
             <in>normal_0624.s</in>
             <in>normal_0625.s</in>
             <in>normal_0626.s</in>
             <in>normal_0627.s</in>
+            <in>normal_0628.s</in>
+            <in>normal_0629.s</in>
+            <in>normal_0630.s</in>
             <in>normal_0631.s</in>
+            <in>normal_0632.s</in>
             <in>normal_0633.s</in>
+            <in>normal_0634.s</in>
             <in>normal_0635.s</in>
+            <in>normal_0636.s</in>
             <in>normal_0637.s</in>
             <in>normal_0638.s</in>
             <in>normal_0639.s</in>
             <in>normal_0640.s</in>
             <in>normal_0641.s</in>
             <in>normal_0642.s</in>
+            <in>normal_0643.s</in>
+            <in>normal_0644.s</in>
             <in>normal_0645.s</in>
             <in>normal_0646.s</in>
             <in>normal_0647.s</in>
             <in>normal_0648.s</in>
+            <in>normal_0649.s</in>
+            <in>normal_0650.s</in>
+            <in>normal_0651.s</in>
+            <in>normal_0652.s</in>
+            <in>normal_0653.s</in>
+            <in>normal_0654.s</in>
             <in>normal_0655.s</in>
             <in>normal_0656.s</in>
+            <in>normal_0657.s</in>
             <in>normal_0658.s</in>
             <in>normal_0659.s</in>
+            <in>normal_0660.s</in>
+            <in>normal_0661.s</in>
             <in>normal_0662.s</in>
             <in>normal_0663.s</in>
+            <in>normal_0664.s</in>
+            <in>normal_0665.s</in>
+            <in>normal_0666.s</in>
+            <in>normal_0667.s</in>
             <in>normal_0668.s</in>
             <in>normal_0669.s</in>
+            <in>normal_0670.s</in>
             <in>normal_0671.s</in>
+            <in>normal_0672.s</in>
             <in>normal_0673.s</in>
+            <in>normal_0674.s</in>
+            <in>normal_0675.s</in>
             <in>normal_0676.s</in>
             <in>normal_0677.s</in>
+            <in>normal_0678.s</in>
+            <in>normal_0679.s</in>
+            <in>normal_0680.s</in>
+            <in>normal_0681.s</in>
+            <in>normal_0682.s</in>
+            <in>normal_0683.s</in>
+            <in>normal_0684.s</in>
             <in>normal_0685.s</in>
             <in>normal_0686.s</in>
             <in>normal_0687.s</in>
+            <in>normal_0688.s</in>
             <in>normal_0689.s</in>
             <in>normal_0690.s</in>
             <in>normal_0691.s</in>
             <in>normal_0692.s</in>
+            <in>normal_0693.s</in>
+            <in>normal_0694.s</in>
+            <in>normal_0695.s</in>
+            <in>normal_0696.s</in>
+            <in>normal_0697.s</in>
             <in>normal_0698.s</in>
             <in>normal_0699.s</in>
             <in>normal_0700.s</in>
             <in>normal_0701.s</in>
+            <in>normal_0702.s</in>
             <in>normal_0703.s</in>
             <in>normal_0704.s</in>
+            <in>normal_0705.s</in>
+            <in>normal_0706.s</in>
+            <in>normal_0707.s</in>
             <in>normal_0708.s</in>
             <in>normal_0709.s</in>
+            <in>normal_0710.s</in>
+            <in>normal_0711.s</in>
+            <in>normal_0712.s</in>
             <in>normal_0713.s</in>
             <in>normal_0714.s</in>
+            <in>normal_0715.s</in>
+            <in>normal_0716.s</in>
             <in>normal_0717.s</in>
+            <in>normal_0718.s</in>
             <in>normal_0719.s</in>
             <in>normal_0720.s</in>
+            <in>normal_0721.s</in>
             <in>normal_0722.s</in>
+            <in>normal_0723.s</in>
+            <in>normal_0724.s</in>
+            <in>normal_0725.s</in>
             <in>normal_0726.s</in>
             <in>normal_0727.s</in>
             <in>normal_0728.s</in>
+            <in>normal_0729.s</in>
+            <in>normal_0730.s</in>
             <in>normal_0731.s</in>
+            <in>normal_0732.s</in>
+            <in>normal_0733.s</in>
+            <in>normal_0734.s</in>
+            <in>normal_0735.s</in>
+            <in>normal_0736.s</in>
             <in>normal_0737.s</in>
             <in>normal_0738.s</in>
             <in>normal_0739.s</in>
+            <in>normal_0740.s</in>
+            <in>normal_0741.s</in>
             <in>normal_0742.s</in>
+            <in>normal_0743.s</in>
+            <in>normal_0744.s</in>
             <in>normal_0745.s</in>
             <in>normal_0746.s</in>
+            <in>normal_0747.s</in>
             <in>normal_0748.s</in>
             <in>normal_0749.s</in>
+            <in>normal_0750.s</in>
             <in>normal_0751.s</in>
             <in>normal_0752.s</in>
+            <in>normal_0753.s</in>
             <in>normal_0754.s</in>
             <in>normal_0755.s</in>
+            <in>normal_0756.s</in>
+            <in>normal_0757.s</in>
             <in>normal_0758.s</in>
+            <in>normal_0759.s</in>
             <in>normal_0760.s</in>
             <in>normal_0761.s</in>
+            <in>normal_0762.s</in>
             <in>normal_0763.s</in>
             <in>normal_0764.s</in>
+            <in>normal_0765.s</in>
+            <in>normal_0766.s</in>
+            <in>normal_0767.s</in>
+            <in>normal_0768.s</in>
+            <in>normal_0769.s</in>
+            <in>normal_0770.s</in>
             <in>normal_0771.s</in>
+            <in>normal_0772.s</in>
             <in>normal_0773.s</in>
+            <in>normal_0774.s</in>
+            <in>normal_0950.s</in>
             <in>normal_0951.s</in>
             <in>normal_0952.s</in>
+            <in>normal_0953.s</in>
             <in>normal_0954.s</in>
+            <in>normal_0955.s</in>
             <in>normal_0956.s</in>
             <in>normal_0957.s</in>
             <in>normal_0958.s</in>
+            <in>normal_0959.s</in>
             <in>normal_0960.s</in>
+            <in>normal_0961.s</in>
             <in>normal_0962.s</in>
+            <in>normal_0963.s</in>
+            <in>normal_0964.s</in>
             <in>normal_0965.s</in>
+            <in>normal_0966.s</in>
             <in>normal_0967.s</in>
+            <in>normal_0968.s</in>
+            <in>normal_0969.s</in>
             <in>normal_0970.s</in>
             <in>normal_0971.s</in>
             <in>normal_0972.s</in>
+            <in>normal_0973.s</in>
+            <in>normal_0974.s</in>
+            <in>normal_0975.s</in>
             <in>normal_0976.s</in>
+            <in>normal_0977.s</in>
             <in>normal_0978.s</in>
             <in>normal_0979.s</in>
+            <in>normal_0980.s</in>
+            <in>normal_0981.s</in>
             <in>normal_0982.s</in>
+            <in>normal_0983.s</in>
+            <in>normal_0984.s</in>
+            <in>normal_0985.s</in>
             <in>normal_0986.s</in>
+            <in>normal_0987.s</in>
             <in>normal_0988.s</in>
             <in>normal_0989.s</in>
             <in>normal_0990.s</in>
+            <in>normal_0991.s</in>
             <in>normal_0992.s</in>
+            <in>normal_0993.s</in>
+            <in>normal_0994.s</in>
+            <in>normal_0995.s</in>
+            <in>normal_0996.s</in>
+            <in>normal_0997.s</in>
+            <in>normal_0998.s</in>
+            <in>normal_0999.s</in>
             <in>normal_1000.s</in>
             <in>normal_1001.s</in>
+            <in>normal_1002.s</in>
             <in>normal_1003.s</in>
+            <in>normal_1004.s</in>
             <in>normal_1005.s</in>
             <in>normal_1006.s</in>
             <in>normal_1007.s</in>
+            <in>normal_1008.s</in>
             <in>normal_1009.s</in>
+            <in>normal_1010.s</in>
             <in>normal_1011.s</in>
             <in>normal_1012.s</in>
+            <in>normal_1013.s</in>
+            <in>normal_1014.s</in>
+            <in>normal_1015.s</in>
+            <in>normal_1016.s</in>
+            <in>normal_1017.s</in>
             <in>normal_1018.s</in>
+            <in>normal_1019.s</in>
             <in>normal_1020.s</in>
             <in>normal_1021.s</in>
+            <in>normal_1022.s</in>
+            <in>normal_1023.s</in>
+            <in>normal_1024.s</in>
+            <in>normal_1025.s</in>
             <in>normal_1026.s</in>
+            <in>normal_1027.s</in>
             <in>normal_1028.s</in>
             <in>normal_1029.s</in>
             <in>normal_1030.s</in>
             <in>normal_1031.s</in>
+            <in>normal_1032.s</in>
+            <in>normal_1033.s</in>
+            <in>normal_1034.s</in>
+            <in>normal_1035.s</in>
+            <in>normal_1036.s</in>
+            <in>normal_1037.s</in>
             <in>normal_1038.s</in>
             <in>normal_1039.s</in>
+            <in>normal_1040.s</in>
             <in>normal_1041.s</in>
             <in>normal_1042.s</in>
             <in>normal_1043.s</in>
             <in>normal_1044.s</in>
+            <in>normal_1045.s</in>
+            <in>normal_1046.s</in>
+            <in>normal_1047.s</in>
+            <in>normal_1048.s</in>
+            <in>normal_1049.s</in>
             <in>normal_1050.s</in>
+            <in>normal_1051.s</in>
+            <in>normal_1052.s</in>
             <in>normal_1053.s</in>
             <in>normal_1054.s</in>
+            <in>normal_1055.s</in>
             <in>normal_1056.s</in>
+            <in>normal_1057.s</in>
             <in>normal_1058.s</in>
+            <in>normal_1059.s</in>
+            <in>normal_1060.s</in>
             <in>normal_1061.s</in>
+            <in>normal_1062.s</in>
+            <in>normal_1063.s</in>
+            <in>normal_1064.s</in>
             <in>normal_1065.s</in>
             <in>normal_1066.s</in>
+            <in>normal_1067.s</in>
             <in>normal_1068.s</in>
             <in>normal_1069.s</in>
             <in>normal_1070.s</in>
             <in>normal_1071.s</in>
+            <in>normal_1072.s</in>
             <in>normal_1073.s</in>
             <in>normal_1074.s</in>
+            <in>normal_1075.s</in>
+            <in>normal_1076.s</in>
+            <in>normal_1077.s</in>
+            <in>normal_1078.s</in>
+            <in>normal_1079.s</in>
+            <in>normal_1080.s</in>
+            <in>normal_1081.s</in>
+            <in>normal_1082.s</in>
+            <in>normal_1083.s</in>
+            <in>normal_1084.s</in>
             <in>normal_1085.s</in>
             <in>normal_1086.s</in>
             <in>normal_1087.s</in>
+            <in>normal_1088.s</in>
+            <in>normal_1089.s</in>
+            <in>normal_1090.s</in>
+            <in>normal_1091.s</in>
             <in>normal_1092.s</in>
+            <in>normal_1093.s</in>
             <in>normal_1094.s</in>
+            <in>normal_1095.s</in>
+            <in>normal_1096.s</in>
             <in>normal_1097.s</in>
             <in>normal_1098.s</in>
             <in>normal_1099.s</in>
+            <in>normal_1100.s</in>
             <in>normal_1101.s</in>
+            <in>normal_1102.s</in>
             <in>normal_1103.s</in>
             <in>normal_1104.s</in>
+            <in>normal_1105.s</in>
             <in>normal_1106.s</in>
+            <in>normal_1107.s</in>
+            <in>normal_1108.s</in>
+            <in>normal_1109.s</in>
             <in>normal_1110.s</in>
             <in>normal_1111.s</in>
+            <in>normal_1112.s</in>
+            <in>normal_1113.s</in>
             <in>normal_1114.s</in>
             <in>normal_1115.s</in>
             <in>normal_1116.s</in>
+            <in>normal_1117.s</in>
             <in>normal_1118.s</in>
             <in>normal_1119.s</in>
             <in>normal_1120.s</in>
+            <in>normal_1121.s</in>
+            <in>normal_1122.s</in>
             <in>normal_1123.s</in>
+            <in>normal_1124.s</in>
+            <in>normal_1125.s</in>
             <in>normal_1126.s</in>
             <in>normal_1128.s</in>
             <in>normal_1129.s</in>
+            <in>normal_1130.s</in>
+            <in>normal_1131.s</in>
+            <in>normal_1133.s</in>
+            <in>normal_1137.s</in>
             <in>normal_1138.s</in>
+            <in>normal_1139.s</in>
             <in>normal_1140.s</in>
             <in>normal_1145.s</in>
+            <in>normal_1146.s</in>
             <in>normal_1147.s</in>
+            <in>normal_1150.s</in>
+            <in>normal_1151.s</in>
+            <in>normal_1152.s</in>
             <in>normal_1154.s</in>
+            <in>normal_1155.s</in>
             <in>normal_1156.s</in>
+            <in>normal_1157.s</in>
             <in>normal_1164.s</in>
             <in>normal_1165.s</in>
+            <in>normal_1166.s</in>
             <in>normal_1167.s</in>
             <in>normal_1173.s</in>
+            <in>normal_1174.s</in>
+            <in>normal_1175.s</in>
             <in>normal_1176.s</in>
+            <in>normal_1177.s</in>
+            <in>normal_1178.s</in>
             <in>normal_1179.s</in>
             <in>normal_1180.s</in>
+            <in>normal_1181.s</in>
+            <in>normal_1182.s</in>
             <in>normal_1183.s</in>
+            <in>normal_1184.s</in>
             <in>normal_1185.s</in>
             <in>normal_1186.s</in>
+            <in>normal_1187.s</in>
+            <in>normal_1188.s</in>
             <in>normal_1189.s</in>
             <in>normal_1190.s</in>
+            <in>normal_1191.s</in>
             <in>normal_1192.s</in>
+            <in>normal_1193.s</in>
+            <in>normal_1194.s</in>
             <in>normal_1195.s</in>
             <in>normal_1196.s</in>
+            <in>normal_1197.s</in>
             <in>normal_1198.s</in>
+            <in>normal_1199.s</in>
           </df>
           <df name="shiny_pal">
+            <in>shiny_0000.s</in>
             <in>shiny_0001.s</in>
+            <in>shiny_0002.s</in>
+            <in>shiny_0003.s</in>
+            <in>shiny_0004.s</in>
+            <in>shiny_0005.s</in>
+            <in>shiny_0006.s</in>
             <in>shiny_0007.s</in>
+            <in>shiny_0008.s</in>
             <in>shiny_0009.s</in>
             <in>shiny_0010.s</in>
+            <in>shiny_0011.s</in>
+            <in>shiny_0012.s</in>
+            <in>shiny_0013.s</in>
             <in>shiny_0014.s</in>
             <in>shiny_0015.s</in>
+            <in>shiny_0016.s</in>
+            <in>shiny_0017.s</in>
+            <in>shiny_0018.s</in>
+            <in>shiny_0019.s</in>
             <in>shiny_0020.s</in>
             <in>shiny_0021.s</in>
+            <in>shiny_0022.s</in>
+            <in>shiny_0023.s</in>
             <in>shiny_0024.s</in>
             <in>shiny_0025.s</in>
+            <in>shiny_0026.s</in>
             <in>shiny_0027.s</in>
             <in>shiny_0028.s</in>
+            <in>shiny_0029.s</in>
             <in>shiny_0030.s</in>
             <in>shiny_0031.s</in>
+            <in>shiny_0032.s</in>
             <in>shiny_0033.s</in>
+            <in>shiny_0034.s</in>
+            <in>shiny_0035.s</in>
             <in>shiny_0036.s</in>
+            <in>shiny_0037.s</in>
+            <in>shiny_0038.s</in>
+            <in>shiny_0039.s</in>
+            <in>shiny_0040.s</in>
+            <in>shiny_0041.s</in>
             <in>shiny_0042.s</in>
             <in>shiny_0043.s</in>
             <in>shiny_0044.s</in>
+            <in>shiny_0045.s</in>
+            <in>shiny_0046.s</in>
             <in>shiny_0047.s</in>
             <in>shiny_0048.s</in>
             <in>shiny_0049.s</in>
+            <in>shiny_0050.s</in>
+            <in>shiny_0051.s</in>
             <in>shiny_0052.s</in>
             <in>shiny_0053.s</in>
             <in>shiny_0054.s</in>
+            <in>shiny_0055.s</in>
+            <in>shiny_0056.s</in>
             <in>shiny_0057.s</in>
             <in>shiny_0058.s</in>
+            <in>shiny_0059.s</in>
             <in>shiny_0060.s</in>
+            <in>shiny_0061.s</in>
+            <in>shiny_0062.s</in>
+            <in>shiny_0063.s</in>
+            <in>shiny_0064.s</in>
             <in>shiny_0065.s</in>
+            <in>shiny_0066.s</in>
+            <in>shiny_0067.s</in>
             <in>shiny_0068.s</in>
+            <in>shiny_0069.s</in>
             <in>shiny_0070.s</in>
             <in>shiny_0071.s</in>
+            <in>shiny_0072.s</in>
             <in>shiny_0073.s</in>
+            <in>shiny_0074.s</in>
             <in>shiny_0075.s</in>
             <in>shiny_0076.s</in>
             <in>shiny_0077.s</in>
+            <in>shiny_0078.s</in>
             <in>shiny_0079.s</in>
+            <in>shiny_0080.s</in>
+            <in>shiny_0081.s</in>
+            <in>shiny_0082.s</in>
+            <in>shiny_0083.s</in>
             <in>shiny_0084.s</in>
+            <in>shiny_0085.s</in>
+            <in>shiny_0086.s</in>
+            <in>shiny_0087.s</in>
+            <in>shiny_0088.s</in>
             <in>shiny_0089.s</in>
+            <in>shiny_0090.s</in>
+            <in>shiny_0091.s</in>
             <in>shiny_0092.s</in>
             <in>shiny_0093.s</in>
+            <in>shiny_0094.s</in>
+            <in>shiny_0095.s</in>
+            <in>shiny_0096.s</in>
+            <in>shiny_0097.s</in>
+            <in>shiny_0098.s</in>
+            <in>shiny_0099.s</in>
+            <in>shiny_0100.s</in>
+            <in>shiny_0101.s</in>
             <in>shiny_0102.s</in>
             <in>shiny_0103.s</in>
             <in>shiny_0104.s</in>
+            <in>shiny_0105.s</in>
+            <in>shiny_0106.s</in>
+            <in>shiny_0107.s</in>
             <in>shiny_0108.s</in>
             <in>shiny_0109.s</in>
             <in>shiny_0110.s</in>
+            <in>shiny_0111.s</in>
             <in>shiny_0112.s</in>
+            <in>shiny_0113.s</in>
+            <in>shiny_0114.s</in>
+            <in>shiny_0115.s</in>
             <in>shiny_0116.s</in>
+            <in>shiny_0117.s</in>
+            <in>shiny_0118.s</in>
+            <in>shiny_0119.s</in>
             <in>shiny_0120.s</in>
+            <in>shiny_0121.s</in>
             <in>shiny_0122.s</in>
             <in>shiny_0123.s</in>
+            <in>shiny_0124.s</in>
+            <in>shiny_0125.s</in>
             <in>shiny_0126.s</in>
             <in>shiny_0127.s</in>
+            <in>shiny_0128.s</in>
+            <in>shiny_0129.s</in>
+            <in>shiny_0130.s</in>
+            <in>shiny_0131.s</in>
+            <in>shiny_0132.s</in>
             <in>shiny_0133.s</in>
             <in>shiny_0134.s</in>
             <in>shiny_0135.s</in>
+            <in>shiny_0136.s</in>
             <in>shiny_0137.s</in>
             <in>shiny_0138.s</in>
+            <in>shiny_0139.s</in>
+            <in>shiny_0140.s</in>
+            <in>shiny_0141.s</in>
             <in>shiny_0142.s</in>
+            <in>shiny_0143.s</in>
             <in>shiny_0144.s</in>
             <in>shiny_0145.s</in>
+            <in>shiny_0146.s</in>
             <in>shiny_0147.s</in>
+            <in>shiny_0148.s</in>
             <in>shiny_0149.s</in>
+            <in>shiny_0150.s</in>
             <in>shiny_0151.s</in>
+            <in>shiny_0152.s</in>
+            <in>shiny_0153.s</in>
+            <in>shiny_0154.s</in>
+            <in>shiny_0155.s</in>
+            <in>shiny_0156.s</in>
             <in>shiny_0157.s</in>
+            <in>shiny_0158.s</in>
+            <in>shiny_0159.s</in>
+            <in>shiny_0160.s</in>
+            <in>shiny_0161.s</in>
+            <in>shiny_0162.s</in>
+            <in>shiny_0163.s</in>
+            <in>shiny_0164.s</in>
+            <in>shiny_0165.s</in>
             <in>shiny_0166.s</in>
+            <in>shiny_0167.s</in>
+            <in>shiny_0168.s</in>
             <in>shiny_0169.s</in>
             <in>shiny_0170.s</in>
             <in>shiny_0171.s</in>
+            <in>shiny_0172.s</in>
             <in>shiny_0173.s</in>
+            <in>shiny_0174.s</in>
+            <in>shiny_0175.s</in>
+            <in>shiny_0176.s</in>
+            <in>shiny_0177.s</in>
             <in>shiny_0178.s</in>
             <in>shiny_0179.s</in>
+            <in>shiny_0180.s</in>
             <in>shiny_0181.s</in>
             <in>shiny_0182.s</in>
             <in>shiny_0183.s</in>
+            <in>shiny_0184.s</in>
             <in>shiny_0185.s</in>
             <in>shiny_0186.s</in>
+            <in>shiny_0187.s</in>
             <in>shiny_0188.s</in>
+            <in>shiny_0189.s</in>
+            <in>shiny_0190.s</in>
+            <in>shiny_0191.s</in>
             <in>shiny_0192.s</in>
+            <in>shiny_0193.s</in>
+            <in>shiny_0194.s</in>
             <in>shiny_0195.s</in>
+            <in>shiny_0196.s</in>
             <in>shiny_0197.s</in>
             <in>shiny_0198.s</in>
             <in>shiny_0199.s</in>
+            <in>shiny_0200.s</in>
+            <in>shiny_0201.s</in>
             <in>shiny_0202.s</in>
+            <in>shiny_0203.s</in>
+            <in>shiny_0204.s</in>
             <in>shiny_0205.s</in>
             <in>shiny_0206.s</in>
             <in>shiny_0207.s</in>
             <in>shiny_0208.s</in>
             <in>shiny_0209.s</in>
+            <in>shiny_0210.s</in>
+            <in>shiny_0211.s</in>
             <in>shiny_0212.s</in>
             <in>shiny_0213.s</in>
+            <in>shiny_0214.s</in>
+            <in>shiny_0215.s</in>
+            <in>shiny_0216.s</in>
+            <in>shiny_0217.s</in>
+            <in>shiny_0218.s</in>
             <in>shiny_0219.s</in>
+            <in>shiny_0220.s</in>
             <in>shiny_0221.s</in>
             <in>shiny_0222.s</in>
+            <in>shiny_0223.s</in>
+            <in>shiny_0224.s</in>
+            <in>shiny_0225.s</in>
             <in>shiny_0226.s</in>
+            <in>shiny_0227.s</in>
+            <in>shiny_0228.s</in>
+            <in>shiny_0229.s</in>
+            <in>shiny_0230.s</in>
+            <in>shiny_0231.s</in>
+            <in>shiny_0232.s</in>
+            <in>shiny_0233.s</in>
             <in>shiny_0234.s</in>
             <in>shiny_0235.s</in>
+            <in>shiny_0236.s</in>
             <in>shiny_0237.s</in>
             <in>shiny_0238.s</in>
+            <in>shiny_0239.s</in>
+            <in>shiny_0240.s</in>
             <in>shiny_0241.s</in>
+            <in>shiny_0242.s</in>
             <in>shiny_0243.s</in>
+            <in>shiny_0244.s</in>
+            <in>shiny_0245.s</in>
+            <in>shiny_0246.s</in>
             <in>shiny_0247.s</in>
             <in>shiny_0248.s</in>
+            <in>shiny_0249.s</in>
+            <in>shiny_0250.s</in>
+            <in>shiny_0251.s</in>
+            <in>shiny_0277.s</in>
             <in>shiny_0278.s</in>
+            <in>shiny_0279.s</in>
+            <in>shiny_0280.s</in>
+            <in>shiny_0281.s</in>
             <in>shiny_0282.s</in>
+            <in>shiny_0283.s</in>
+            <in>shiny_0284.s</in>
             <in>shiny_0285.s</in>
+            <in>shiny_0286.s</in>
+            <in>shiny_0287.s</in>
             <in>shiny_0288.s</in>
+            <in>shiny_0289.s</in>
             <in>shiny_0290.s</in>
             <in>shiny_0291.s</in>
+            <in>shiny_0292.s</in>
             <in>shiny_0293.s</in>
+            <in>shiny_0294.s</in>
             <in>shiny_0295.s</in>
             <in>shiny_0296.s</in>
+            <in>shiny_0297.s</in>
             <in>shiny_0298.s</in>
+            <in>shiny_0299.s</in>
+            <in>shiny_0300.s</in>
             <in>shiny_0301.s</in>
             <in>shiny_0302.s</in>
             <in>shiny_0303.s</in>
+            <in>shiny_0304.s</in>
+            <in>shiny_0305.s</in>
+            <in>shiny_0306.s</in>
+            <in>shiny_0307.s</in>
             <in>shiny_0308.s</in>
+            <in>shiny_0309.s</in>
+            <in>shiny_0310.s</in>
             <in>shiny_0311.s</in>
+            <in>shiny_0312.s</in>
             <in>shiny_0313.s</in>
             <in>shiny_0314.s</in>
+            <in>shiny_0315.s</in>
+            <in>shiny_0316.s</in>
             <in>shiny_0317.s</in>
             <in>shiny_0318.s</in>
             <in>shiny_0319.s</in>
+            <in>shiny_0320.s</in>
             <in>shiny_0321.s</in>
+            <in>shiny_0322.s</in>
+            <in>shiny_0323.s</in>
+            <in>shiny_0324.s</in>
             <in>shiny_0325.s</in>
+            <in>shiny_0326.s</in>
+            <in>shiny_0327.s</in>
+            <in>shiny_0328.s</in>
+            <in>shiny_0329.s</in>
+            <in>shiny_0330.s</in>
+            <in>shiny_0331.s</in>
+            <in>shiny_0332.s</in>
+            <in>shiny_0333.s</in>
             <in>shiny_0334.s</in>
+            <in>shiny_0335.s</in>
             <in>shiny_0336.s</in>
             <in>shiny_0337.s</in>
             <in>shiny_0338.s</in>
             <in>shiny_0339.s</in>
             <in>shiny_0340.s</in>
+            <in>shiny_0341.s</in>
+            <in>shiny_0342.s</in>
+            <in>shiny_0343.s</in>
             <in>shiny_0344.s</in>
             <in>shiny_0345.s</in>
+            <in>shiny_0346.s</in>
             <in>shiny_0347.s</in>
             <in>shiny_0348.s</in>
+            <in>shiny_0349.s</in>
             <in>shiny_0350.s</in>
             <in>shiny_0351.s</in>
+            <in>shiny_0352.s</in>
+            <in>shiny_0353.s</in>
+            <in>shiny_0354.s</in>
+            <in>shiny_0355.s</in>
             <in>shiny_0356.s</in>
+            <in>shiny_0357.s</in>
+            <in>shiny_0358.s</in>
             <in>shiny_0359.s</in>
+            <in>shiny_0360.s</in>
             <in>shiny_0361.s</in>
+            <in>shiny_0362.s</in>
+            <in>shiny_0363.s</in>
+            <in>shiny_0364.s</in>
             <in>shiny_0365.s</in>
+            <in>shiny_0366.s</in>
             <in>shiny_0367.s</in>
             <in>shiny_0368.s</in>
+            <in>shiny_0369.s</in>
+            <in>shiny_0370.s</in>
+            <in>shiny_0371.s</in>
+            <in>shiny_0372.s</in>
             <in>shiny_0373.s</in>
+            <in>shiny_0374.s</in>
             <in>shiny_0375.s</in>
+            <in>shiny_0376.s</in>
             <in>shiny_0377.s</in>
+            <in>shiny_0378.s</in>
+            <in>shiny_0379.s</in>
+            <in>shiny_0380.s</in>
             <in>shiny_0381.s</in>
+            <in>shiny_0382.s</in>
             <in>shiny_0383.s</in>
             <in>shiny_0384.s</in>
             <in>shiny_0386.s</in>
+            <in>shiny_0387.s</in>
             <in>shiny_0388.s</in>
             <in>shiny_0389.s</in>
             <in>shiny_0390.s</in>
             <in>shiny_0391.s</in>
+            <in>shiny_0392.s</in>
             <in>shiny_0393.s</in>
+            <in>shiny_0394.s</in>
+            <in>shiny_0395.s</in>
+            <in>shiny_0396.s</in>
             <in>shiny_0397.s</in>
+            <in>shiny_0398.s</in>
+            <in>shiny_0399.s</in>
             <in>shiny_0400.s</in>
+            <in>shiny_0401.s</in>
+            <in>shiny_0402.s</in>
             <in>shiny_0403.s</in>
             <in>shiny_0404.s</in>
+            <in>shiny_0405.s</in>
             <in>shiny_0406.s</in>
+            <in>shiny_0407.s</in>
+            <in>shiny_0408.s</in>
+            <in>shiny_0409.s</in>
             <in>shiny_0410.s</in>
+            <in>shiny_0411.s</in>
             <in>shiny_0412.s</in>
+            <in>shiny_0440.s</in>
             <in>shiny_0441.s</in>
+            <in>shiny_0442.s</in>
             <in>shiny_0443.s</in>
+            <in>shiny_0444.s</in>
             <in>shiny_0445.s</in>
+            <in>shiny_0446.s</in>
             <in>shiny_0447.s</in>
+            <in>shiny_0448.s</in>
+            <in>shiny_0449.s</in>
+            <in>shiny_0450.s</in>
             <in>shiny_0451.s</in>
+            <in>shiny_0452.s</in>
+            <in>shiny_0453.s</in>
+            <in>shiny_0454.s</in>
+            <in>shiny_0455.s</in>
+            <in>shiny_0456.s</in>
+            <in>shiny_0457.s</in>
+            <in>shiny_0458.s</in>
+            <in>shiny_0459.s</in>
+            <in>shiny_0460.s</in>
             <in>shiny_0461.s</in>
             <in>shiny_0462.s</in>
+            <in>shiny_0463.s</in>
+            <in>shiny_0464.s</in>
             <in>shiny_0465.s</in>
+            <in>shiny_0466.s</in>
             <in>shiny_0467.s</in>
+            <in>shiny_0468.s</in>
             <in>shiny_0469.s</in>
             <in>shiny_0470.s</in>
+            <in>shiny_0471.s</in>
+            <in>shiny_0472.s</in>
+            <in>shiny_0473.s</in>
             <in>shiny_0474.s</in>
             <in>shiny_0475.s</in>
+            <in>shiny_0476.s</in>
+            <in>shiny_0477.s</in>
             <in>shiny_0478.s</in>
+            <in>shiny_0479.s</in>
             <in>shiny_0480.s</in>
             <in>shiny_0481.s</in>
             <in>shiny_0482.s</in>
+            <in>shiny_0483.s</in>
             <in>shiny_0484.s</in>
             <in>shiny_0485.s</in>
             <in>shiny_0486.s</in>
+            <in>shiny_0487.s</in>
+            <in>shiny_0488.s</in>
             <in>shiny_0489.s</in>
             <in>shiny_0490.s</in>
+            <in>shiny_0491.s</in>
             <in>shiny_0492.s</in>
+            <in>shiny_0493.s</in>
+            <in>shiny_0494.s</in>
+            <in>shiny_0495.s</in>
             <in>shiny_0496.s</in>
             <in>shiny_0497.s</in>
+            <in>shiny_0498.s</in>
+            <in>shiny_0499.s</in>
             <in>shiny_0500.s</in>
             <in>shiny_0501.s</in>
             <in>shiny_0502.s</in>
             <in>shiny_0503.s</in>
             <in>shiny_0504.s</in>
             <in>shiny_0505.s</in>
+            <in>shiny_0506.s</in>
+            <in>shiny_0507.s</in>
             <in>shiny_0508.s</in>
+            <in>shiny_0509.s</in>
+            <in>shiny_0510.s</in>
+            <in>shiny_0511.s</in>
+            <in>shiny_0512.s</in>
+            <in>shiny_0513.s</in>
             <in>shiny_0514.s</in>
+            <in>shiny_0515.s</in>
+            <in>shiny_0516.s</in>
+            <in>shiny_0517.s</in>
             <in>shiny_0518.s</in>
+            <in>shiny_0519.s</in>
+            <in>shiny_0520.s</in>
+            <in>shiny_0521.s</in>
+            <in>shiny_0522.s</in>
             <in>shiny_0523.s</in>
+            <in>shiny_0524.s</in>
+            <in>shiny_0525.s</in>
             <in>shiny_0526.s</in>
             <in>shiny_0527.s</in>
             <in>shiny_0528.s</in>
             <in>shiny_0529.s</in>
             <in>shiny_0530.s</in>
             <in>shiny_0531.s</in>
+            <in>shiny_0532.s</in>
             <in>shiny_0533.s</in>
             <in>shiny_0534.s</in>
+            <in>shiny_0535.s</in>
             <in>shiny_0536.s</in>
+            <in>shiny_0537.s</in>
+            <in>shiny_0538.s</in>
             <in>shiny_0539.s</in>
+            <in>shiny_0540.s</in>
             <in>shiny_0541.s</in>
             <in>shiny_0542.s</in>
             <in>shiny_0543.s</in>
+            <in>shiny_0544.s</in>
+            <in>shiny_0545.s</in>
             <in>shiny_0546.s</in>
             <in>shiny_0547.s</in>
+            <in>shiny_0548.s</in>
             <in>shiny_0549.s</in>
             <in>shiny_0550.s</in>
             <in>shiny_0551.s</in>
             <in>shiny_0552.s</in>
+            <in>shiny_0553.s</in>
             <in>shiny_0554.s</in>
+            <in>shiny_0555.s</in>
             <in>shiny_0556.s</in>
             <in>shiny_0557.s</in>
             <in>shiny_0558.s</in>
+            <in>shiny_0559.s</in>
             <in>shiny_0560.s</in>
+            <in>shiny_0561.s</in>
             <in>shiny_0562.s</in>
             <in>shiny_0563.s</in>
+            <in>shiny_0564.s</in>
             <in>shiny_0565.s</in>
             <in>shiny_0566.s</in>
+            <in>shiny_0567.s</in>
+            <in>shiny_0568.s</in>
+            <in>shiny_0569.s</in>
             <in>shiny_0570.s</in>
             <in>shiny_0571.s</in>
             <in>shiny_0572.s</in>
             <in>shiny_0573.s</in>
             <in>shiny_0574.s</in>
             <in>shiny_0575.s</in>
+            <in>shiny_0576.s</in>
+            <in>shiny_0577.s</in>
+            <in>shiny_0578.s</in>
             <in>shiny_0579.s</in>
             <in>shiny_0580.s</in>
+            <in>shiny_0581.s</in>
+            <in>shiny_0582.s</in>
+            <in>shiny_0583.s</in>
             <in>shiny_0584.s</in>
             <in>shiny_0585.s</in>
             <in>shiny_0586.s</in>
+            <in>shiny_0587.s</in>
             <in>shiny_0588.s</in>
+            <in>shiny_0589.s</in>
             <in>shiny_0590.s</in>
+            <in>shiny_0591.s</in>
             <in>shiny_0592.s</in>
             <in>shiny_0593.s</in>
+            <in>shiny_0594.s</in>
+            <in>shiny_0595.s</in>
             <in>shiny_0596.s</in>
             <in>shiny_0597.s</in>
+            <in>shiny_0598.s</in>
+            <in>shiny_0599.s</in>
+            <in>shiny_0600.s</in>
+            <in>shiny_0601.s</in>
+            <in>shiny_0602.s</in>
             <in>shiny_0603.s</in>
             <in>shiny_0604.s</in>
+            <in>shiny_0605.s</in>
             <in>shiny_0606.s</in>
+            <in>shiny_0607.s</in>
+            <in>shiny_0608.s</in>
             <in>shiny_0609.s</in>
             <in>shiny_0610.s</in>
             <in>shiny_0611.s</in>
             <in>shiny_0612.s</in>
+            <in>shiny_0613.s</in>
+            <in>shiny_0614.s</in>
+            <in>shiny_0615.s</in>
             <in>shiny_0616.s</in>
+            <in>shiny_0617.s</in>
+            <in>shiny_0618.s</in>
             <in>shiny_0619.s</in>
             <in>shiny_0620.s</in>
             <in>shiny_0621.s</in>
+            <in>shiny_0622.s</in>
+            <in>shiny_0623.s</in>
+            <in>shiny_0624.s</in>
+            <in>shiny_0625.s</in>
             <in>shiny_0626.s</in>
+            <in>shiny_0627.s</in>
+            <in>shiny_0628.s</in>
             <in>shiny_0629.s</in>
             <in>shiny_0630.s</in>
+            <in>shiny_0631.s</in>
+            <in>shiny_0632.s</in>
             <in>shiny_0633.s</in>
             <in>shiny_0634.s</in>
+            <in>shiny_0635.s</in>
+            <in>shiny_0636.s</in>
             <in>shiny_0637.s</in>
+            <in>shiny_0638.s</in>
             <in>shiny_0639.s</in>
             <in>shiny_0640.s</in>
+            <in>shiny_0641.s</in>
             <in>shiny_0642.s</in>
+            <in>shiny_0643.s</in>
             <in>shiny_0644.s</in>
             <in>shiny_0645.s</in>
             <in>shiny_0646.s</in>
             <in>shiny_0647.s</in>
+            <in>shiny_0648.s</in>
+            <in>shiny_0649.s</in>
+            <in>shiny_0650.s</in>
+            <in>shiny_0651.s</in>
+            <in>shiny_0652.s</in>
             <in>shiny_0653.s</in>
             <in>shiny_0654.s</in>
+            <in>shiny_0655.s</in>
+            <in>shiny_0656.s</in>
             <in>shiny_0657.s</in>
             <in>shiny_0658.s</in>
             <in>shiny_0659.s</in>
             <in>shiny_0660.s</in>
+            <in>shiny_0661.s</in>
             <in>shiny_0662.s</in>
             <in>shiny_0663.s</in>
             <in>shiny_0664.s</in>
             <in>shiny_0665.s</in>
             <in>shiny_0666.s</in>
+            <in>shiny_0667.s</in>
             <in>shiny_0668.s</in>
+            <in>shiny_0669.s</in>
             <in>shiny_0670.s</in>
+            <in>shiny_0671.s</in>
             <in>shiny_0672.s</in>
             <in>shiny_0673.s</in>
+            <in>shiny_0674.s</in>
             <in>shiny_0675.s</in>
+            <in>shiny_0676.s</in>
             <in>shiny_0677.s</in>
+            <in>shiny_0678.s</in>
+            <in>shiny_0679.s</in>
+            <in>shiny_0680.s</in>
+            <in>shiny_0681.s</in>
             <in>shiny_0682.s</in>
+            <in>shiny_0683.s</in>
+            <in>shiny_0684.s</in>
             <in>shiny_0685.s</in>
+            <in>shiny_0686.s</in>
+            <in>shiny_0687.s</in>
             <in>shiny_0688.s</in>
             <in>shiny_0689.s</in>
+            <in>shiny_0690.s</in>
             <in>shiny_0691.s</in>
+            <in>shiny_0692.s</in>
             <in>shiny_0693.s</in>
+            <in>shiny_0694.s</in>
+            <in>shiny_0695.s</in>
+            <in>shiny_0696.s</in>
             <in>shiny_0697.s</in>
             <in>shiny_0698.s</in>
+            <in>shiny_0699.s</in>
             <in>shiny_0700.s</in>
+            <in>shiny_0701.s</in>
+            <in>shiny_0702.s</in>
+            <in>shiny_0703.s</in>
+            <in>shiny_0704.s</in>
             <in>shiny_0705.s</in>
             <in>shiny_0706.s</in>
+            <in>shiny_0707.s</in>
             <in>shiny_0708.s</in>
             <in>shiny_0709.s</in>
+            <in>shiny_0710.s</in>
             <in>shiny_0711.s</in>
             <in>shiny_0712.s</in>
             <in>shiny_0713.s</in>
+            <in>shiny_0714.s</in>
+            <in>shiny_0715.s</in>
             <in>shiny_0716.s</in>
+            <in>shiny_0717.s</in>
             <in>shiny_0718.s</in>
+            <in>shiny_0719.s</in>
             <in>shiny_0720.s</in>
             <in>shiny_0721.s</in>
+            <in>shiny_0722.s</in>
             <in>shiny_0723.s</in>
+            <in>shiny_0724.s</in>
             <in>shiny_0725.s</in>
+            <in>shiny_0726.s</in>
+            <in>shiny_0727.s</in>
+            <in>shiny_0728.s</in>
+            <in>shiny_0729.s</in>
+            <in>shiny_0730.s</in>
+            <in>shiny_0731.s</in>
             <in>shiny_0732.s</in>
             <in>shiny_0733.s</in>
+            <in>shiny_0734.s</in>
             <in>shiny_0735.s</in>
             <in>shiny_0736.s</in>
             <in>shiny_0737.s</in>
+            <in>shiny_0738.s</in>
             <in>shiny_0739.s</in>
             <in>shiny_0740.s</in>
             <in>shiny_0741.s</in>
+            <in>shiny_0742.s</in>
+            <in>shiny_0743.s</in>
             <in>shiny_0744.s</in>
             <in>shiny_0745.s</in>
             <in>shiny_0746.s</in>
@@ -3124,16 +4106,34 @@
             <in>shiny_0748.s</in>
             <in>shiny_0749.s</in>
             <in>shiny_0750.s</in>
+            <in>shiny_0751.s</in>
+            <in>shiny_0752.s</in>
             <in>shiny_0753.s</in>
             <in>shiny_0754.s</in>
+            <in>shiny_0755.s</in>
             <in>shiny_0756.s</in>
+            <in>shiny_0757.s</in>
+            <in>shiny_0758.s</in>
             <in>shiny_0759.s</in>
             <in>shiny_0760.s</in>
+            <in>shiny_0761.s</in>
+            <in>shiny_0762.s</in>
+            <in>shiny_0763.s</in>
+            <in>shiny_0764.s</in>
+            <in>shiny_0765.s</in>
+            <in>shiny_0766.s</in>
+            <in>shiny_0767.s</in>
+            <in>shiny_0768.s</in>
             <in>shiny_0769.s</in>
             <in>shiny_0770.s</in>
             <in>shiny_0771.s</in>
+            <in>shiny_0772.s</in>
+            <in>shiny_0773.s</in>
             <in>shiny_0774.s</in>
+            <in>shiny_0970.s</in>
+            <in>shiny_1001.s</in>
             <in>shiny_1021.s</in>
+            <in>shiny_1029.s</in>
             <in>shiny_1030.s</in>
             <in>shiny_1041.s</in>
             <in>shiny_1042.s</in>
@@ -3143,45 +4143,62 @@
             <in>shiny_1046.s</in>
             <in>shiny_1047.s</in>
             <in>shiny_1048.s</in>
+            <in>shiny_1049.s</in>
             <in>shiny_1050.s</in>
             <in>shiny_1051.s</in>
             <in>shiny_1052.s</in>
             <in>shiny_1053.s</in>
             <in>shiny_1054.s</in>
             <in>shiny_1055.s</in>
+            <in>shiny_1056.s</in>
+            <in>shiny_1057.s</in>
             <in>shiny_1058.s</in>
             <in>shiny_1059.s</in>
             <in>shiny_1060.s</in>
             <in>shiny_1061.s</in>
+            <in>shiny_1062.s</in>
             <in>shiny_1063.s</in>
             <in>shiny_1064.s</in>
             <in>shiny_1065.s</in>
+            <in>shiny_1066.s</in>
             <in>shiny_1067.s</in>
+            <in>shiny_1068.s</in>
             <in>shiny_1069.s</in>
             <in>shiny_1070.s</in>
+            <in>shiny_1071.s</in>
             <in>shiny_1072.s</in>
             <in>shiny_1073.s</in>
             <in>shiny_1074.s</in>
+            <in>shiny_1075.s</in>
             <in>shiny_1076.s</in>
             <in>shiny_1077.s</in>
             <in>shiny_1078.s</in>
             <in>shiny_1079.s</in>
+            <in>shiny_1080.s</in>
             <in>shiny_1081.s</in>
             <in>shiny_1082.s</in>
             <in>shiny_1083.s</in>
+            <in>shiny_1084.s</in>
             <in>shiny_1085.s</in>
             <in>shiny_1086.s</in>
             <in>shiny_1087.s</in>
             <in>shiny_1088.s</in>
+            <in>shiny_1089.s</in>
             <in>shiny_1090.s</in>
             <in>shiny_1091.s</in>
+            <in>shiny_1092.s</in>
             <in>shiny_1093.s</in>
             <in>shiny_1094.s</in>
             <in>shiny_1095.s</in>
             <in>shiny_1096.s</in>
             <in>shiny_1097.s</in>
+            <in>shiny_1098.s</in>
+            <in>shiny_1099.s</in>
             <in>shiny_1100.s</in>
+            <in>shiny_1101.s</in>
             <in>shiny_1102.s</in>
+            <in>shiny_1103.s</in>
+            <in>shiny_1104.s</in>
             <in>shiny_1105.s</in>
             <in>shiny_1106.s</in>
             <in>shiny_1107.s</in>
@@ -3210,13 +4227,16 @@
             <in>shiny_1131.s</in>
             <in>shiny_1133.s</in>
             <in>shiny_1137.s</in>
+            <in>shiny_1138.s</in>
             <in>shiny_1139.s</in>
             <in>shiny_1140.s</in>
             <in>shiny_1145.s</in>
             <in>shiny_1146.s</in>
             <in>shiny_1147.s</in>
             <in>shiny_1150.s</in>
+            <in>shiny_1151.s</in>
             <in>shiny_1152.s</in>
+            <in>shiny_1154.s</in>
             <in>shiny_1155.s</in>
             <in>shiny_1156.s</in>
             <in>shiny_1157.s</in>
@@ -3224,6 +4244,7 @@
             <in>shiny_1165.s</in>
             <in>shiny_1166.s</in>
             <in>shiny_1167.s</in>
+            <in>shiny_1173.s</in>
             <in>shiny_1174.s</in>
             <in>shiny_1175.s</in>
             <in>shiny_1176.s</in>
@@ -3240,13 +4261,172 @@
             <in>shiny_1187.s</in>
             <in>shiny_1188.s</in>
             <in>shiny_1189.s</in>
+            <in>shiny_1190.s</in>
             <in>shiny_1191.s</in>
+            <in>shiny_1192.s</in>
+            <in>shiny_1193.s</in>
             <in>shiny_1194.s</in>
             <in>shiny_1195.s</in>
             <in>shiny_1196.s</in>
+            <in>shiny_1197.s</in>
             <in>shiny_1198.s</in>
             <in>shiny_1199.s</in>
           </df>
+        </df>
+        <df name="trainer_sprites">
+          <in>ts_0000.s</in>
+          <in>ts_0001.s</in>
+          <in>ts_0002.s</in>
+          <in>ts_0003.s</in>
+          <in>ts_0004.s</in>
+          <in>ts_0005.s</in>
+          <in>ts_0006.s</in>
+          <in>ts_0007.s</in>
+          <in>ts_0008.s</in>
+          <in>ts_0009.s</in>
+          <in>ts_0010.s</in>
+          <in>ts_0011.s</in>
+          <in>ts_0012.s</in>
+          <in>ts_0013.s</in>
+          <in>ts_0014.s</in>
+          <in>ts_0015.s</in>
+          <in>ts_0016.s</in>
+          <in>ts_0017.s</in>
+          <in>ts_0018.s</in>
+          <in>ts_0019.s</in>
+          <in>ts_0020.s</in>
+          <in>ts_0021.s</in>
+          <in>ts_0022.s</in>
+          <in>ts_0023.s</in>
+          <in>ts_0024.s</in>
+          <in>ts_0025.s</in>
+          <in>ts_0026.s</in>
+          <in>ts_0027.s</in>
+          <in>ts_0028.s</in>
+          <in>ts_0029.s</in>
+          <in>ts_0030.s</in>
+          <in>ts_0031.s</in>
+          <in>ts_0032.s</in>
+          <in>ts_0033.s</in>
+          <in>ts_0034.s</in>
+          <in>ts_0035.s</in>
+          <in>ts_0036.s</in>
+          <in>ts_0037.s</in>
+          <in>ts_0038.s</in>
+          <in>ts_0039.s</in>
+          <in>ts_0040.s</in>
+          <in>ts_0041.s</in>
+          <in>ts_0042.s</in>
+          <in>ts_0043.s</in>
+          <in>ts_0044.s</in>
+          <in>ts_0045.s</in>
+          <in>ts_0046.s</in>
+          <in>ts_0047.s</in>
+          <in>ts_0048.s</in>
+          <in>ts_0049.s</in>
+          <in>ts_0050.s</in>
+          <in>ts_0051.s</in>
+          <in>ts_0052.s</in>
+          <in>ts_0053.s</in>
+          <in>ts_0054.s</in>
+          <in>ts_0055.s</in>
+          <in>ts_0056.s</in>
+          <in>ts_0057.s</in>
+          <in>ts_0058.s</in>
+          <in>ts_0059.s</in>
+          <in>ts_0060.s</in>
+          <in>ts_0061.s</in>
+          <in>ts_0062.s</in>
+          <in>ts_0063.s</in>
+          <in>ts_0064.s</in>
+          <in>ts_0065.s</in>
+          <in>ts_0066.s</in>
+          <in>ts_0067.s</in>
+          <in>ts_0068.s</in>
+          <in>ts_0069.s</in>
+          <in>ts_0070.s</in>
+          <in>ts_0071.s</in>
+          <in>ts_0072.s</in>
+          <in>ts_0073.s</in>
+          <in>ts_0074.s</in>
+          <in>ts_0075.s</in>
+          <in>ts_0076.s</in>
+          <in>ts_0077.s</in>
+          <in>ts_0078.s</in>
+          <in>ts_0079.s</in>
+          <in>ts_0080.s</in>
+          <in>ts_0081.s</in>
+          <in>ts_0082.s</in>
+          <in>ts_0083.s</in>
+          <in>ts_0084.s</in>
+          <in>ts_0085.s</in>
+          <in>ts_0086.s</in>
+          <in>ts_0087.s</in>
+          <in>ts_0088.s</in>
+          <in>ts_0089.s</in>
+          <in>ts_0090.s</in>
+          <in>ts_0091.s</in>
+          <in>ts_0092.s</in>
+          <in>ts_0093.s</in>
+          <in>ts_0094.s</in>
+          <in>ts_0095.s</in>
+          <in>ts_0096.s</in>
+          <in>ts_0097.s</in>
+          <in>ts_0098.s</in>
+          <in>ts_0099.s</in>
+          <in>ts_0100.s</in>
+          <in>ts_0101.s</in>
+          <in>ts_0102.s</in>
+          <in>ts_0103.s</in>
+          <in>ts_0104.s</in>
+          <in>ts_0105.s</in>
+          <in>ts_0106.s</in>
+          <in>ts_0107.s</in>
+          <in>ts_0108.s</in>
+          <in>ts_0109.s</in>
+          <in>ts_0110.s</in>
+          <in>ts_0111.s</in>
+          <in>ts_0112.s</in>
+          <in>ts_0113.s</in>
+          <in>ts_0114.s</in>
+          <in>ts_0115.s</in>
+          <in>ts_0116.s</in>
+          <in>ts_0117.s</in>
+          <in>ts_0118.s</in>
+          <in>ts_0119.s</in>
+          <in>ts_0120.s</in>
+          <in>ts_0121.s</in>
+          <in>ts_0122.s</in>
+          <in>ts_0123.s</in>
+          <in>ts_0124.s</in>
+          <in>ts_0125.s</in>
+          <in>ts_0126.s</in>
+          <in>ts_0127.s</in>
+          <in>ts_0128.s</in>
+          <in>ts_0129.s</in>
+          <in>ts_0130.s</in>
+          <in>ts_0131.s</in>
+          <in>ts_0132.s</in>
+          <in>ts_0133.s</in>
+          <in>ts_0134.s</in>
+          <in>ts_0135.s</in>
+          <in>ts_0136.s</in>
+          <in>ts_0137.s</in>
+          <in>ts_0138.s</in>
+          <in>ts_0139.s</in>
+          <in>ts_0140.s</in>
+          <in>ts_0141.s</in>
+          <in>ts_0142.s</in>
+          <in>ts_0143.s</in>
+          <in>ts_0144.s</in>
+          <in>ts_0145.s</in>
+          <in>ts_0146.s</in>
+          <in>ts_0147.s</in>
+          <in>ts_0148.s</in>
+          <in>ts_0149.s</in>
+          <in>ts_0150.s</in>
+          <in>ts_0151.s</in>
+          <in>ts_0152.s</in>
         </df>
       </df>
       <df name="object">
@@ -3261,20 +4441,116 @@
           </df>
           <df name="text_lookup">
           </df>
+          <df name="trainer_sprites">
+          </df>
         </df>
         <df name="src">
+          <df name="assets">
+            <df name="meteor">
+            </df>
+          </df>
+          <df name="battle_bg">
+          </df>
           <df name="battle_engine">
             <df name="scripts">
             </df>
           </df>
+          <df name="debug">
+          </df>
+          <df name="dns">
+          </df>
+          <df name="encode">
+          </df>
+          <df name="include">
+            <df name="assets">
+              <df name="mug">
+              </df>
+            </df>
+          </df>
           <df name="interface">
           </df>
+          <df name="item">
+            <df name="tmhm">
+            </df>
+          </df>
           <df name="moves">
+            <df name="ability_changers">
+            </df>
+            <df name="assurance">
+            </df>
             <df name="battle_engine">
+            </df>
+            <df name="bride">
+            </df>
+            <df name="close_combat">
             </df>
             <df name="crush_grip_like">
             </df>
+            <df name="defog">
+            </df>
+            <df name="fang_moves">
+            </df>
+            <df name="feint">
+            </df>
+            <df name="flare_blitz">
+            </df>
+            <df name="gastro_acid">
+            </df>
+            <df name="hazards">
+            </df>
+            <df name="healing_wish">
+            </df>
+            <df name="hone_claws">
+            </df>
+            <df name="lucky_chant">
+            </df>
+            <df name="magnet_rise">
+            </df>
+            <df name="metal_burst">
+            </df>
+            <df name="pay_back">
+            </df>
+            <df name="power_trick">
+            </df>
+            <df name="punishment">
+            </df>
+            <df name="rooms">
+            </df>
+            <df name="roost">
+            </df>
+            <df name="seed_flare">
+            </df>
             <df name="split_moves">
+            </df>
+            <df name="swap_moves">
+            </df>
+            <df name="tailwind">
+            </df>
+            <df name="uturn">
+            </df>
+            <df name="veno_shock">
+            </df>
+          </df>
+          <df name="music">
+          </df>
+          <df name="overworld">
+          </df>
+          <df name="player_interaction">
+          </df>
+          <df name="savefile">
+          </df>
+          <df name="specials">
+          </df>
+        </df>
+        <df name="string">
+          <df name="DE">
+            <df name="story_text">
+              <df name="hesperia">
+              </df>
+              <df name="tundra_hq">
+              </df>
+            </df>
+            <df name="trainers">
             </df>
           </df>
         </df>
@@ -3321,6 +4597,10 @@
         <df name="save_table">
           <in>save_table.S</in>
         </df>
+        <df name="trainer_sprites">
+          <in>altitude.asm</in>
+          <in>images.asm</in>
+        </df>
         <in>disable_cry_table_blocks.s</in>
         <in>dynamic_overworld_hooks.asm</in>
         <in>hooks.asm</in>
@@ -3341,6 +4621,8 @@
           <df name="pkmn_sprites">
             <df name="castform">
             </df>
+          </df>
+          <df name="trainer_sprites">
           </df>
         </df>
         <df name="sound">
@@ -4582,12 +5864,113 @@
             </df>
             <df name="S">
               <in>fx_36_rain.s</in>
+              <in>snd_0_piano_high.s</in>
+              <in>snd_0_piano_low.s</in>
+              <in>snd_0_piano_low_mid.s</in>
+              <in>snd_0_piano_mid.s</in>
+              <in>snd_0_piano_ultra_high.s</in>
+              <in>snd_0_piano_ultra_low.s</in>
+              <in>snd_0_piano_very_high.s</in>
+              <in>snd_0_piano_very_low.s</in>
+              <in>snd_0_split.s</in>
+              <in>snd_103_scratch.s</in>
+              <in>snd_106_shamisen.s</in>
+              <in>snd_107_koto.s</in>
+              <in>snd_10_musicbox.s</in>
+              <in>snd_116_taiko_drum.s</in>
+              <in>snd_11_vibes.s</in>
+              <in>snd_127_bassdrum.s</in>
+              <in>snd_127_bongo_hi.s</in>
+              <in>snd_127_bongo_lo.s</in>
+              <in>snd_127_clap.s</in>
+              <in>snd_127_claves.s</in>
+              <in>snd_127_closed_hat.s</in>
+              <in>snd_127_conga_hi.s</in>
+              <in>snd_127_conga_hi_sl.s</in>
+              <in>snd_127_hard_cymbal.s</in>
               <in>snd_127_hard_snare.s</in>
+              <in>snd_127_high_hat.s</in>
+              <in>snd_127_low_cymbal.s</in>
+              <in>snd_127_open_cymbal.s</in>
+              <in>snd_127_open_hat.s</in>
+              <in>snd_127_ride_bell.s</in>
+              <in>snd_127_ride_cymbal.s</in>
+              <in>snd_127_shake.s</in>
               <in>snd_127_smash.s</in>
+              <in>snd_127_soft_cymbal.s</in>
+              <in>snd_127_soft_snare.s</in>
+              <in>snd_127_sticks.s</in>
+              <in>snd_127_tambourine.s</in>
+              <in>snd_127_tom_45.s</in>
+              <in>snd_127_tom_48.s</in>
+              <in>snd_127_triangle.s</in>
+              <in>snd_14_tubular_bell.s</in>
+              <in>snd_17_organ.s</in>
+              <in>snd_18_rock_organ.s</in>
+              <in>snd_22_harmonica.s</in>
+              <in>snd_24_guitar_high.s</in>
+              <in>snd_24_guitar_low.s</in>
+              <in>snd_24_guitar_mid.s</in>
+              <in>snd_24_guitar_veryhigh.s</in>
+              <in>snd_24_guitar_verylow.s</in>
               <in>snd_24_split.s</in>
+              <in>snd_27_synguitar.s</in>
+              <in>snd_29_guitar_high.s</in>
+              <in>snd_29_guitar_low.s</in>
+              <in>snd_29_guitar_mid.s</in>
               <in>snd_29_split.s</in>
+              <in>snd_33_bass_high.s</in>
+              <in>snd_33_bass_low.s</in>
+              <in>snd_33_bass_mid.s</in>
+              <in>snd_33_bass_verylow.s</in>
+              <in>snd_33_split.s</in>
+              <in>snd_35_fles_bass_A1.s</in>
+              <in>snd_35_fles_bass_C3.s</in>
+              <in>snd_35_fles_bass_D2.s</in>
+              <in>snd_35_fles_bass_G2.s</in>
+              <in>snd_35_split.s</in>
+              <in>snd_38_synthbass.s</in>
+              <in>snd_45_pizzicato_str.s</in>
+              <in>snd_46_harp_high.s</in>
+              <in>snd_46_harp_low.s</in>
+              <in>snd_46_harp_mid.s</in>
+              <in>snd_46_split.s</in>
+              <in>snd_47_timpani.s</in>
+              <in>snd_48_split.s</in>
+              <in>snd_48_strings_high.s</in>
+              <in>snd_48_strings_low.s</in>
+              <in>snd_48_strings_mid.s</in>
+              <in>snd_50_synth_strings.s</in>
+              <in>snd_56_split.s</in>
+              <in>snd_56_trumpet_high.s</in>
+              <in>snd_56_trumpet_mid.s</in>
+              <in>snd_57_trombone.s</in>
+              <in>snd_5_epiano.s</in>
+              <in>snd_60_horns.s</in>
+              <in>snd_61_horns_high.s</in>
+              <in>snd_61_horns_mid.s</in>
+              <in>snd_61_split.s</in>
+              <in>snd_68_oboe_high.s</in>
+              <in>snd_68_oboe_low.s</in>
+              <in>snd_68_oboe_mid.s</in>
+              <in>snd_68_split.s</in>
+              <in>snd_70_bassoon.s</in>
+              <in>snd_71_clarinet.s</in>
+              <in>snd_73_flute_A3.s</in>
+              <in>snd_73_flute_A4.s</in>
+              <in>snd_73_flute_D4.s</in>
+              <in>snd_73_flute_E5.s</in>
+              <in>snd_73_flute_Fs3.s</in>
+              <in>snd_73_flute_G5.s</in>
               <in>snd_73_split.s</in>
+              <in>snd_75_panflute.s</in>
               <in>snd_77_shakuhachi_high.s</in>
+              <in>snd_77_shakuhachi_low.s</in>
+              <in>snd_77_shakuhachi_mid.s</in>
+              <in>snd_77_split.s</in>
+              <in>snd_79_ocarina.s</in>
+              <in>snd_90_synth.s</in>
+              <in>snd_org_cymbal.s</in>
               <in>snd_org_orch_snare.s</in>
             </df>
             <df name="S_DUMP">
@@ -5076,24 +6459,35 @@
           <in>cutscene_meteor.c</in>
           <in>cutscene_meteor.h</in>
           <in>load_text_special.c</in>
+          <in>trainer_battle.c</in>
         </df>
       </df>
       <df name="string">
         <df name="de">
           <df name="story_text">
+            <df name="hesperia">
+              <in>globals.S</in>
+              <in>globals.txt</in>
+              <in>player_house.S</in>
+              <in>player_house.txt</in>
+            </df>
             <df name="tundra_hq">
               <in>globals.S</in>
               <in>globals.txt</in>
             </df>
           </df>
+          <df name="trainers">
+            <in>test_trainers.S</in>
+            <in>test_trainers.txt</in>
+          </df>
           <in>hazards.S</in>
+          <in>invalid.S</in>
+          <in>invalid.txt</in>
           <in>item_data.S</in>
           <in>item_descriptions.S</in>
           <in>move_descriptions.S</in>
           <in>move_names.S</in>
           <in>move_strings.S</in>
-          <in>text.S</in>
-          <in>text.txt</in>
           <in>text_multichoices.S</in>
           <in>text_multichoices.txt</in>
         </df>

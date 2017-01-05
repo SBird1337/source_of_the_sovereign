@@ -1,5 +1,5 @@
 .align 2
-
+.text 
 .global item_flagtable
 item_flagtable:
 

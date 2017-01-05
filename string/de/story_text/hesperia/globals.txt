@@ -1,0 +1,25 @@
+str_hesp_out_g_0=\v\h01! Was bitte war das!? Diese\nErschütterung\.\p\c\h08\h05.\c\h08\h05.\c\h08\h05.\c\h08\h05.\c\h08\h05.\pIch bin so froh, dass dir nichts\npassiert ist\.\pEs hörte sich an wie ein\nErdbeben\c\h08\h05.\c\h08\h05.\c\h08\h05.\pVielleicht weiß dein Vater ja, was\nvorgefallen ist.\pMach dich bitte auf den Weg mein\nSchatz.\pIch werde wieder reingehen, pass\nbitte auf dich auf!
+str_hesp_out_g_1=\v\h01! Warte!
+str_hesp_out_g_2=Tut mir Leid, ich bin spät dran\.\pHast du auch diese Vibration\ngespürt, als hätte es ein Erdbeben\lgegeben oder so was\.\pIch mache mir Sorgen, hoffentlich\nist niemandem etwas passiert\.\pMeinst du nicht wir sollten Vater\naufsuchen?\pKommt lass uns gehen!
+str_hesp_out_g_3=Ah sieh mal! Da ist er ja!
+str_hesp_out_g_4=Achim! Bilde ich mir das jetzt\nein oder gab es gerade ein hefiges\lErdbeben östlich von Hesperia?
+str_hesp_out_g_5=Das ist keine Einbildung, ich habe\nes ebenfalls gespürt.\pUnd habe ehrlich gesagt ein\nkomisches Gefühl\.\pDenn was auch immer es war, ein\ngewöhnliches Beben war es zumindest\lnicht.
+str_hesp_out_g_6=Du hast Recht!\pDer Himmel färbte sich rot und es\nwurde plötzlich so düster und\lstill.\pUnd dann diese Explosion\.\pIch fürchte es war kein Erdbeben\.\pEs muss einen anderen Ursprung\nhaben!
+str_hesp_out_g_7=Das erfahren wir erst, wenn wir\nNachforschungen betreiben.\pWenn du mich kurz entschuldigst.\pIch werde etwas telefonieren,\num herauszufinden, was passiert\list.\pWarte du hier auf deine Kinder.
+str_hesp_out_g_8=Ah, da seit ihr ja!\pLeider ist uns etwas dazwischen\ngekommen. Wir müssen mit dem\lwarten, was wir vorhatten.
+str_hesp_out_g_9=Meinst du vielleicht mit "etwas\ndazwischen" gekommen, das Erdbeben?
+str_hesp_out_g_10=Wie? Dann habt ihr es also auch\ngespürt, verstehe\.
+str_hesp_out_g_11=Ja, aber ich bin nicht der Einzige.\pAuch Mama und \v\h01 haben es gespürt.
+str_hesp_out_g_12=Verstehe\. Es würde mich nicht\nwundern, wenn es nicht alle in\lHesperia gespürt hätten[.]\pWir können aber noch nicht zu\neinhundert Prozent sagen, was es\lwar.\pAchim hört sich um und\ntelefoniert mit ein paar Kollegen.\pVielleicht kann er uns Genaueres\nmitteilen.\pLasst uns auf ihn warten!
+str_hesp_out_g_13=Ah, da kommt er ja!
+str_hesp_out_g_14=Und? Achim was ist passiert?
+str_hesp_out_g_15=Ich weiß gar nicht, wie ich euch\ndas erklären soll\.\pAber\. Ich kanns einfach nicht\nfassen\.\pEin Meteorit hat nördlich von\nCarun City eingeschlagen und alles\lverwüstet.
+str_hesp_out_g_16=WAS!? Geht es deiner Familie gut?
+str_hesp_out_g_17=Ja, meiner Familie, sowie den\nBewohnern von Carun City ist nicht\lpassiert.\pEs war zwar kein großer Meteorit\nwie der von damals, aber\ldennoch scheint er eine Menge\l verwüstet zu haben.\pDer gesamte nördliche Teil von\nCarun City, Veternia, ist komplett zerstört\lund unbewohnbar.\pEs ist auch derzeit noch nicht\nbekannt, ob es Verletzte oder Tote\lgibt.\pAuszuschließen ist das nicht. Ich\nrechne mit dem Schlimmsten.\pIch muss mich sofort auf den Weg\nmachen!\pUnsere Arbeit können wir ein andermal\nfortsetzen!
+str_hesp_out_g_18=Außer Frage, ich komme so schnell\nes möglich ist nach.
+str_hesp_out_g_19=Vielen Dank, mein Freund!\pIch verlasse mich auf dich!
+str_hesp_out_g_20=Das Ganze ist jetzt sicherlich ein\nbisschen geschmackslos und kommt\lvielleicht plötzlich, aber ich\lwollte euch eigentlich heute euer\lerstes Pokémon schenken!\pEs sollte zunächst eine\nÜberraschung sein, aber ich denke\ldas habe ich euch leider verdorben.\lEs tut mir Leid!\pAber wir sind, wie es jetzt selber\nmitbekommen habt, in einer ernsten\lSituation, also machen wir es\lschnell.\pFolgt mir ins Labor!
+str_hesp_out_g_21=Habe ich richtig gehört?\pWir bekommen unser eigenes Pokémon?
+str_hesp_out_g_22=\v\h06! \v\h01!\pWorauf wartet ihr!? Wir haben es\neilig!
+
+str_hesp_20_g_0=Na \v\h01, bist du aufgewacht?\nDein Vater erwartet \v\h06\lund dich bereits im Labor. Wenn du\ldich bereit fühlst, dann lass ihn\lnicht warten.\pMich findest du in der Küche mein\nSchatz.

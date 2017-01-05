@@ -1,5 +1,5 @@
 #define ITEM_GFX_0	.word 0x08E87028, 0x08E8730C
-.section .rodata
+.text
 .align 2
 .thumb
 

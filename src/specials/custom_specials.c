@@ -71,7 +71,6 @@ static callback special_routines[6] = {
     sp_init_script,
     debug_some_test,
     sp_dns_switch,
-    get_text_pointer_from_lookup+1,
 };
 
 /* === IMPLEMENTATIONS === */

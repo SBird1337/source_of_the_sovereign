@@ -22,6 +22,9 @@ SPRITE_BACK_OBJ = $(addprefix $(GFX_BUILD_DIR)/sprites/back_sprites/,$(notdir $(
 OW_PNG = $(sort $(wildcard $(ASSET_ROOT)/overworld/*.png))
 OW_OBJ = $(addprefix $(GFX_BUILD_DIR)/overworlds/,$(notdir $(OW_PNG:.png=.o)))
 
+TS_PNG = $(sort $(wildcard $(ASSET_ROOT)/trainer_sprites/*.png))
+TS_OBJ = $(addprefix $(GFX_BUILD_DIR)/trainer_sprites/,$(notdir $(TS_PNG:.png=.o)))
+
 CASTFORM_PNG = $(ASSET_ROOT)/pkmn_sprites/castform/castform.png
 NORMAL_CASTFORM_PAL_OBJ = $(GFX_BUILD_DIR)/sprites/castform/castform_normal_pal.o
 SHINY_CASTFORM_PAL_OBJ = $(GFX_BUILD_DIR)/sprites/castform/castform_shiny_pal.o
@@ -40,7 +43,7 @@ clean:
 	rm -f $(GFX_BUILD_DIR)/sprites/back_sprites/*
 	rm -f $(GFX_BUILD_DIR)/overworlds/*
 
-$(SPRITES_BINARY): $(NORMAL_PAL_OBJ) $(SHINY_PAL_OBJ) $(SPRITE_FRONT_OBJ) $(SPRITE_BACK_OBJ) $(NORMAL_CASTFORM_PAL_OBJ) $(SHINY_CASTFORM_PAL_OBJ) $(CASTFORM_FRONT_OBJ) $(CASTFORM_BACK_OBJ) $(OW_OBJ)
+$(SPRITES_BINARY): $(NORMAL_PAL_OBJ) $(SHINY_PAL_OBJ) $(SPRITE_FRONT_OBJ) $(SPRITE_BACK_OBJ) $(NORMAL_CASTFORM_PAL_OBJ) $(SHINY_CASTFORM_PAL_OBJ) $(CASTFORM_FRONT_OBJ) $(CASTFORM_BACK_OBJ) $(OW_OBJ) $(TS_OBJ)
 	rm -f $(TMP_FILE2)
 	rm -f $(TMP_FILE)
 	for file in $^;\
@@ -61,6 +64,14 @@ $(GFX_BUILD_DIR)/overworlds/%.o: $(GFX_BUILD_DIR)/overworlds/%.s
 .PRECIOUS: $(GFX_BUILD_DIR)/overworlds/%.s
 $(GFX_BUILD_DIR)/overworlds/%.s: $(ASSET_ROOT)/overworld/%.png
 	grit $< -fts -fh! -gt -gB4 -gz! -p -pz! -m! -pu16 -o $@
+
+# Trainer Sprite Targets
+$(GFX_BUILD_DIR)/trainer_sprites/%.o: $(GFX_BUILD_DIR)/trainer_sprites/%.s
+	$(AS) -o $@ $<
+
+.PRECIOUS: $(GFX_BUILD_DIR)/trainer_sprites/%.s
+$(GFX_BUILD_DIR)/trainer_sprites/%.s: $(ASSET_ROOT)/trainer_sprites/%.png
+	grit $< -fts -fh! -gt -gB4 -gzl -p -pzl -m! -o $@
 
 # Normal Palette Targets
 $(GFX_BUILD_DIR)/sprites/normal_pal/%.o: $(GFX_BUILD_DIR)/sprites/normal_pal/%.s

@@ -5,11 +5,21 @@
       <df name="data">
         <df name="text_lookup">
           <in>text_lookup_array.s</in>
+          <in>text_lookup_trainer.s</in>
           <in>text_multichoice.s</in>
+        </df>
+        <df name="trainer_sprites">
+          <in>ts_alt.s</in>
+          <in>ts_pal.s</in>
+          <in>ts_tiles.s</in>
         </df>
         <in>raw_defines.s</in>
       </df>
       <df name="patches">
+        <df name="trainer_sprites">
+          <in>altitude.asm</in>
+          <in>images.asm</in>
+        </df>
         <in>interface.asm</in>
         <in>text_system.asm</in>
       </df>
@@ -143,16 +153,24 @@
           <in>custom_specials.c</in>
           <in>cutscene_meteor.c</in>
           <in>load_text_special.c</in>
+          <in>trainer_battle.c</in>
         </df>
       </df>
       <df name="string">
         <df name="de">
           <df name="story_text">
+            <df name="hesperia">
+              <in>globals.txt</in>
+              <in>player_house.txt</in>
+            </df>
             <df name="tundra_hq">
               <in>globals.txt</in>
             </df>
           </df>
-          <in>text.txt</in>
+          <df name="trainers">
+            <in>test_trainers.txt</in>
+          </df>
+          <in>invalid.txt</in>
           <in>text_multichoices.txt</in>
         </df>
       </df>
@@ -202,10 +220,21 @@
             tool="4"
             flavor2="0">
       </item>
+      <item path="data/text_lookup/text_lookup_trainer.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
       <item path="data/text_lookup/text_multichoice.s"
             ex="false"
             tool="4"
             flavor2="0">
+      </item>
+      <item path="data/trainer_sprites/ts_alt.s" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="data/trainer_sprites/ts_pal.s" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="data/trainer_sprites/ts_tiles.s" ex="false" tool="4" flavor2="0">
       </item>
       <folder path="0/sots-private">
         <cTool>
@@ -466,6 +495,13 @@
       </item>
       <item path="patches/text_system.asm" ex="false" tool="4" flavor2="0">
       </item>
+      <item path="patches/trainer_sprites/altitude.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="patches/trainer_sprites/images.asm" ex="false" tool="4" flavor2="0">
+      </item>
       <item path="sots-private/sound/Assembler/musicInjector.c"
             ex="false"
             tool="0"
@@ -644,14 +680,31 @@
       </item>
       <item path="src/specials/load_text_special.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="src/specials/trainer_battle.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="string/de/invalid.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="string/de/story_text/hesperia/globals.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="string/de/story_text/hesperia/player_house.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="string/de/story_text/tundra_hq/globals.txt"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="string/de/text.txt" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="string/de/text_multichoices.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="string/de/trainers/test_trainers.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
       </item>
     </conf>
   </confs>

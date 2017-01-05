@@ -1,0 +1,1 @@
+str_invalid_text=Dies ist ein Dummy Text!

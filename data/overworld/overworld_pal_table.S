@@ -1,5 +1,5 @@
 .thumb
-.section .rodata
+.text
 .align 2
 
 .global ow_pal_table

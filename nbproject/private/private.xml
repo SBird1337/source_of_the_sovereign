@@ -19,43 +19,12 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/battle_engine/battle_help.c</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/moves.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/battle_engine/custom_structs_malloc.c</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/specials/cutscene_meteor.c</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/battle.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/makefile</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/battle_script.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/memory.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/overworld/overworld.c</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/battle_locations.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/attack_names.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/battle_abilities.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/pkmn_abilities.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/game_engine.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/battle_engine/battle_initiative.c</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/interface/textbox_mugshots.c</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/patches/hooks.asm</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/battle_engine/battle_abilities.c</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/types.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/battle_test.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/battle_initiative.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/pkmn_item_effects.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/moves/ability_changers/ability_change.c</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/specials/custom_specials.c</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/pkmn_attributes.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/lcd.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/math.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/moves/feint/feint.c</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/battle_help.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/battle_engine/battle_test.c</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/specials/camera_move.c</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/debug.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/string/de/item_data.txt</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/battle_structs.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/debug/debug.c</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/battle_engine/entry_hazards.c</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/moves/assurance/assurance.c</file>
+            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/assets.makefile</file>
+            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/string/de/story_text/hesperia/player_house.txt</file>
+            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/data/text_lookup/text_lookup_array.s</file>
+            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/string/table.tbl</file>
+            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/string/de/story_text/hesperia/globals.txt</file>
+            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/string/de/story_text/tundra_hq/globals.txt</file>
         </group>
     </open-files>
 </project-private>
