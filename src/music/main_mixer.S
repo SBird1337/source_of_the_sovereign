@@ -63,7 +63,7 @@
     .equ    CHN_FINAL_VOL_2, 0xB                @ [byte] not used anymore!
     .equ    CHN_ECHO_VOL, 0xC                   @ [byte] pseudo echo volume
     .equ    CHN_ECHO_REMAIN, 0xD                @ [byte] pseudo echo length
-    .equ    CHN_POSITION_REL, 0x18              @ [word] sample countdown in mixing loop
+    .equ    CHN_SAMPLE_COUNTDOWN, 0x18              @ [word] sample countdown in mixing loop
     .equ    CHN_FINE_POSITION, 0x1C             @ [word] inter sample position (23 bits)
     .equ    CHN_FREQUENCY, 0x20                 @ [word] sample rate (in Hz)
     .equ    CHN_WAVE_OFFSET, 0x24               @ [word] wave header pointer
@@ -121,7 +121,7 @@
 
     .equ    hq_buffer_ptr, BUFFER_IRAM_BPE
     .equ    decoder_buffer_target, DECODER_BUFFER_BPE
-    .equ    ALLOW_PAUSE, 1
+    .equ    POKE_INIT, 1
     .equ    DMA_FIX, 1
     .equ    ENABLE_DECOMPRESSION, 1
     .equ    PREVENT_CLIP, 1
@@ -132,7 +132,7 @@
 
     .equ    hq_buffer_ptr, 0x03002830
     .equ    decoder_buffer_target, DECODER_BUFFER_BPR
-    .equ    ALLOW_PAUSE, 1
+    .equ    POKE_INIT, 1
     .equ    DMA_FIX, 1
     .equ    ENABLE_DECOMPRESSION, 1
     .equ    PREVENT_CLIP, 1
@@ -143,7 +143,7 @@
 
     .equ    hq_buffer_ptr, BUFFER_IRAM_BPE
     .equ    decoder_buffer_target, DECODER_BUFFER_BPE
-    .equ    ALLOW_PAUSE, 1
+    .equ    POKE_INIT, 1
     .equ    DMA_FIX, 1
     .equ    ENABLE_DECOMPRESSION, 1
     .equ    PREVENT_CLIP, 1
@@ -154,7 +154,7 @@
 
     .equ    hq_buffer_ptr, BUFFER_IRAM_BPR
     .equ    decoder_buffer_target, DECODER_BUFFER_BPR
-    .equ    ALLOW_PAUSE, 1
+    .equ    POKE_INIT, 1
     .equ    DMA_FIX, 1
     .equ    ENABLE_DECOMPRESSION, 1
     .equ    PREVENT_CLIP, 1
@@ -165,7 +165,7 @@
 
     .equ    hq_buffer_ptr, BUFFER_IRAM_KWJ
     .equ    decoder_buffer_target, DECODER_BUFFER_KWJ
-    .equ    ALLOW_PAUSE, 0
+    .equ    POKE_INIT, 0
     .equ    DMA_FIX, 0
     .equ    ENABLE_DECOMPRESSION, 0
     .equ    PREVENT_CLIP, 1
@@ -175,7 +175,7 @@
 .if USED_GAME==GAME_AE7E
 
     .equ    hq_buffer_ptr, BUFFER_IRAM_AE7
-    .equ    ALLOW_PAUSE, 0
+    .equ    POKE_INIT, 0
     .equ    DMA_FIX, 0
     .equ    ENABLE_DECOMPRESSION, 0
     .equ    PREVENT_CLIP, 0
@@ -197,7 +197,6 @@ main_mixer:
     .arm
 
 C_setup_reverb_loop:
-
     /* 
      * reverb is calculated by the following: new_sample = old_sample * reverb_level / 127
      * note that reverb is mono (both sides get mixed together)
@@ -205,7 +204,6 @@ C_setup_reverb_loop:
      * reverb get's applied to the frame we are currently looking at and the one after that
      * the magic below simply calculateds the pointer for the one after the current one
      */
-
     CMP     R4, #2
     ADDEQ   R7, R0, #0x350
     ADDNE   R7, R5, R8
@@ -239,7 +237,7 @@ C_reverb_loop:
         BGT     C_reverb_loop
         /* end of loop */
     LDMFD   SP!, {R8, LR}
-    ADR     R0, (C_setup_chn_loop+1)
+    ADR     R0, (C_setup_channel_state_loop+1)
     BX      R0
 
     .thumb
@@ -263,7 +261,6 @@ C_clear_hq_buffer:
     STMIA   R3!, {R4, R5, R6, R7}
 
 C_clr_hq_buffer_align_8:
-
     LSR     R1, #1
     BCC     C_clr_hq_buffer_align_16
 
@@ -277,9 +274,9 @@ C_clr_hq_buffer_align_16:
     STMIA   R3!, {R4, R5, R6, R7}
     STMIA   R3!, {R4, R5, R6, R7}
     SUB     R1, #1
-    BGT     C_clr_buffer_align_16
+    BGT     C_clr_hq_buffer_align_16
     /* loop end */
-C_setup_chn_loop:
+C_setup_channel_state_loop:
     /*
      * okay, before the actual mixing starts
      * the volume and envelope calculation takes place
@@ -287,7 +284,6 @@ C_setup_chn_loop:
     MOV     R4, R8  @ R4 = buffer length
     /* 
      * this stroes the buffer length to a backup location
-     * TODO: Move this variable to stack
      */
     ADR     R0, hq_buffer_length
     STR     R4, [R0]
@@ -298,178 +294,176 @@ C_setup_chn_loop:
     LDRB    R0, [R4, #VAR_MAX_CHN]
     ADD     R4, #VAR_FIRST_CHN                  @ R4 = Base channel Offset (Channel #0)
 
-mixer_entry:
+C_channel_state_loop:
         /* this is the main channel processing loop */
         STR     R0, [SP, #ARG_REMAIN_CHN]        
         LDR     R3, [R4, #CHN_WAVE_OFFSET]
-        LDRB    R6, [R4, #CHN_STATUS]
+        LDRB    R6, [R4, #CHN_STATUS]           @ R6 will hold the channel status
         MOVS    R0, #0xC7                       @ check if any of the channel status flags is set
         TST     R0, R6                          @ check if none of the flags is set
-        BEQ     C_skip_channel             @ skip channel
+        BEQ     C_skip_channel
         /* check channel flags */
-        LSL     R0, R6, #25                 @ shift over the FLAG_CHN_INIT to CARRY
-        BCC     adsr_echo_check                @ continue with normal channel procedure
+        LSL     R0, R6, #25                     @ shift over the FLAG_CHN_INIT to CARRY
+        BCC     C_adsr_echo_check               @ continue with normal channel procedure
         /* check leftmost bit */
-        BMI     stop_channel_handler        @ if the channel is initiated but on release it gets turned off immediatley
+        BMI     C_stop_channel                  @ FLAG_CHN_INIT | FLAG_CHN_RELEASE -> stop directly
         /* channel init procedure */
-        MOVS    R6, #FLAG_CHN_ATTACK        @ set the channel status to ATTACK
-        MOVS    R0, R3                        @ R0 = CHN_WAVE_OFFSET
-        ADD     R0, #WAVE_DATA                @ R0 = wave data offset
+        MOVS    R6, #FLAG_CHN_ATTACK
+        MOVS    R0, R3                          @ R0 = CHN_WAVE_OFFSET
+        ADD     R0, #WAVE_DATA                  @ R0 = wave data offset
 
         /* Pokemon games seem to init channels differently than other m4a games */
-    .if ALLOW_PAUSE==0
+    .if POKE_INIT==0
         STR     R0, [R4, #CHN_POSITION_ABS]
         LDR     R0, [R3, #WAVE_LENGTH]
-        STR     R0, [R4, #CHN_POSITION_REL] 
+        STR     R0, [R4, #CHN_SAMPLE_COUNTDOWN] 
     .else
-        LDR     R1, [R4, #CHN_POSITION_REL]
+        LDR     R1, [R4, #CHN_SAMPLE_COUNTDOWN]
         ADD     R0, R0, R1
         STR     R0, [R4, #CHN_POSITION_ABS]
         LDR     R0, [R3, #WAVE_LENGTH]
         SUB     R0, R0, R1
-        STR     R0, [R4, #CHN_POSITION_REL]
+        STR     R0, [R4, #CHN_SAMPLE_COUNTDOWN]
     .endif
 
-        MOVS    R5, #0                        @ initial envelope = #0
+        MOVS    R5, #0                          @ initial envelope = #0
         STRB    R5, [R4, #CHN_ADSR_LEVEL]
         STR     R5, [R4, #CHN_FINE_POSITION]
         LDRB    R2, [R3, #WAVE_LOOP_FLAG]
         LSR     R0, R2, #6
-        BEQ     adsr_attack_handler         @ if loop disabled --> branch
+        BEQ     C_adsr_attack
         /* loop enabled here */
         MOVS    R0, #FLAG_CHN_LOOP    
-        ORR     R6, R0                      @ update channel status
-        B       adsr_attack_handler
+        ORR     R6, R0
+        B       C_adsr_attack
 
-adsr_echo_check:
+C_adsr_echo_check:
         /* this is the normal ADSR procedure without init */
         LDRB    R5, [R4, #CHN_ADSR_LEVEL]
-        LSL     R0, R6, #29                    @ echo flag --> bit 31
-        BPL     adsr_release_check            @ PL == false
+        LSL     R0, R6, #29                     @ FLAG_CHN_ECHO --> bit 31 (sign bit)
+        BPL     C_adsr_release_check
         /* pseudo echo handler */
         LDRB    R0, [R4, #CHN_ECHO_REMAIN]
         SUB     R0, #1
         STRB    R0, [R4, #CHN_ECHO_REMAIN]
-        BHI     channel_vol_calc            @ if echo still on --> branch
+        BHI     C_channel_vol_calc              @ continue normal if channel is still on
 
-stop_channel_handler:
-
-        MOVS R0, #0
-        STRB R0, [R4, #CHN_STATUS]
+C_stop_channel:
+        MOVS    R0, #0
+        STRB    R0, [R4, #CHN_STATUS]
 
 C_skip_channel:
         /* go to end of the channel loop */
-        B check_remain_channels
+        B       C_end_channel_state_loop
 
-adsr_release_check:
-        LSL    R0, R6, #25                    @ bit 31 = release bit
-        BPL    adsr_decay_check            @ if release == 0 --> branch
+C_adsr_release_check:
+        LSL    R0, R6, #25                      @ FLAG_CHN_RELEASE --> bit 31 (sign bit)
+        BPL    C_adsr_decay_check
         /* release handler */
-        LDRB R0, [R4, #CHN_RELEASE]
-        @SUB R0, #0xFF                  @ linear decay; TODO make option for triggering it
-        @SUB R0, #1
-        @ADD R5, R5, R0
-        MUL    R5, R5, R0                    @ default release algorithm
-        LSR    R5, R5, #8
-        @BMI adsr_released_handler      @ part of linear decay
-        BEQ    adsr_released_handler        @ release gone down to #0 --> branch
+        LDRB    R0, [R4, #CHN_RELEASE]
+        @SUB     R0, #0xFF                      @ linear decay; TODO make option for triggering it
+        @SUB     R0, #1
+        @ADD     R5, R5, R0
+        MUL     R5, R5, R0
+        LSR     R5, #8
+        BLE     C_adsr_released
         /* pseudo echo init handler */
-        LDRB R0, [R4, #CHN_ECHO_VOL]
-        CMP    R5, R0
-        BHI    channel_vol_calc            @ if release still above echo level --> branch
+        LDRB    R0, [R4, #CHN_ECHO_VOL]
+        CMP     R5, R0
+        BHI     C_channel_vol_calc
 
-adsr_released_handler:
+C_adsr_released:
         /* if volume released to #0 */
-        LDRB R5, [R4, #CHN_ECHO_VOL]    @ TODO: replace with MOV R5, R0
-        CMP    R5, #0
-        BEQ    stop_channel_handler        @ if pseudo echo vol = 0 --> branch
+        LDRB    R5, [R4, #CHN_ECHO_VOL]
+        CMP     R5, #0
+        BEQ     C_stop_channel
         /* pseudo echo volume handler */
-        MOVS R0, #FLAG_CHN_ECHO
-        ORR    R6, R0                        @ set the echo flag
-        B adsr_update_status
+        MOVS    R0, #FLAG_CHN_ECHO
+        ORR     R6, R0                          @ set the echo flag
+        B       C_adsr_save_and_finalize
 
-adsr_decay_check:
+C_adsr_decay_check:
         /* check if decay is active */
-        MOVS R2, #3
-        AND    R2, R6                      @ seperate phase status bits
-        CMP    R2, #FLAG_CHN_DECAY
-        BNE    adsr_attack_check            @ decay not active --> branch
+        MOVS    R2, #(FLAG_CHN_DECAY+FLAG_CHN_SUSTAIN)
+        AND     R2, R6
+        CMP     R2, #FLAG_CHN_DECAY
+        BNE     C_adsr_attack_check             @ decay not active yet
         /* decay handler */
-        LDRB R0, [R4, #CHN_DECAY]
-        MUL    R5, R0
-        LSR    R5, R5, #8
-        LDRB R0, [R4, #CHN_SUSTAIN]
-        CMP    R5, R0
-        BHI    channel_vol_calc            @ sample didn't decay yet --> branch
+        LDRB    R0, [R4, #CHN_DECAY]
+        MUL     R5, R5, R0
+        LSR     R5, R5, #8
+        LDRB    R0, [R4, #CHN_SUSTAIN]
+        CMP     R5, R0
+        BHI     C_channel_vol_calc              @ sample didn't decay yet
         /* sustain handler */
-        MOVS R5, R0                        @ current level = sustain level
-        BEQ    adsr_released_handler       @ sustain level #0 --> branch
+        MOVS    R5, R0                          @ current level = sustain level
+        BEQ     C_adsr_released                 @ sustain level #0 --> branch
         /* step to next phase otherweise */
-        B adsr_switchto_next
+        B       C_adsr_next_state
 
-adsr_attack_check:
+C_adsr_attack_check:
         /* attack handler */
-        CMP    R2, #FLAG_CHN_ATTACK
-        BNE    channel_vol_calc            @ if it isn't in attack attack phase, it has to be in sustain (no adsr change needed) --> branch
+        CMP     R2, #FLAG_CHN_ATTACK
+        BNE     C_channel_vol_calc              @ if it isn't in attack attack phase, it has to be in sustain (keep vol) --> branch
 
-adsr_attack_handler:
+C_adsr_attack:
         /* apply attack summand */
-        LDRB R0, [R4, #CHN_ATTACK]
-        ADD    R5, R5, R0
-        CMP    R5, #0xFF
-        BCC    adsr_update_status
+        LDRB    R0, [R4, #CHN_ATTACK]
+        ADD     R5, R0
+        CMP     R5, #0xFF
+        BLO     C_adsr_save_and_finalize
         /* cap attack at 0xFF */
-        MOVS R5, #0xFF
+        MOVS    R5, #0xFF
  
-adsr_switchto_next:
+C_adsr_next_state:
         /* switch to next adsr phase */
-        SUB    R6, #1
+        SUB     R6, #1
 
-adsr_update_status:
+C_adsr_save_and_finalize:
         /* store channel status */
-        STRB R6, [R4, #CHN_STATUS]
+        STRB    R6, [R4, #CHN_STATUS]
 
-channel_vol_calc:
+C_channel_vol_calc:
         /* store the calculated ADSR level */
-        STRB R5, [R4, #CHN_ADSR_LEVEL]
+        STRB    R5, [R4, #CHN_ADSR_LEVEL]
         /* apply master volume */
-        LDR    R0, [SP, #ARG_PCM_STRUCT]
-        LDRB R0, [R0, #VAR_MASTER_VOL]
-        ADD    R0, #1
-        MUL    R5, R0, R5
+        LDR     R0, [SP, #ARG_PCM_STRUCT]
+        LDRB    R0, [R0, #VAR_MASTER_VOL]
+        ADD     R0, #1
+        MUL     R5, R0
         /* left side volume */
-        LDRB R0, [R4, #CHN_VOL_2]
-        MUL    R0, R5
-        LSR    R0, R0, #13
-        MOV    R10, R0                     @ R10 = left volume
+        LDRB    R0, [R4, #CHN_VOL_2]
+        MUL     R0, R5
+        LSR     R0, #13
+        MOV     R10, R0                         @ R10 = left volume
         /* right side volume */
-        LDRB R0, [R4, #CHN_VOL_1]
-        MUL    R0, R5
-        LSR    R0, R0, #13
-        MOV    R11, R0                        @ R11 = right volume
+        LDRB    R0, [R4, #CHN_VOL_1]
+        MUL     R0, R5
+        LSR     R0, #13
+        MOV     R11, R0                         @ R11 = right volume
         /*
          * Now we get closer to actual mixing:
          * For looped samples some additional operations are required
          */
-        MOVS R0, #FLAG_CHN_LOOP
-        AND    R0, R6
-        BEQ    mixing_loop_setup                @ TODO: This label should rather be called "skip_loop_setup"
+        MOVS    R0, #FLAG_CHN_LOOP
+        AND     R0, R6
+        BEQ     C_skip_sample_loop_setup
         /* loop setup handler */
-        ADD    R3, #WAVE_LOOP_START
-        LDMIA R3!, {R0, R1}                    @ R0 = loop start, R1 = loop end
-        ADD    R3, R0, R3                        @ R3 = loop start position (absolute)
-        STR    R3, [SP, #ARG_LOOP_START_POS]    @ backup loop start
-        SUB    R0, R1, R0
+        ADD     R3, #WAVE_LOOP_START
+        LDMIA   R3!, {R0, R1}                   @ R0 = loop start, R1 = loop end
+        ADD     R3, R0                          @ R3 = loop start position (absolute)
+        STR     R3, [SP, #ARG_LOOP_START_POS]
+        SUB     R0, R1, R0
 
-mixing_loop_setup:
+C_skip_sample_loop_setup:
         /* do the rest of the setup */
-        STR    R0, [SP, #ARG_LOOP_LENGTH]        @ if loop is off --> R0 = 0x0
-        LDR    R5, hq_buffer
-        LDR    R2, [R4, #CHN_POSITION_REL]        @ remaining samples for channel
-        LDR    R3, [R4, #CHN_POSITION_ABS]        @ current stream position (abs)
-        LDRB R0, [R4, #CHN_MODE]
-        ADR    R1, mixing_arm_setup
-        BX R1
+        STR     R0, [SP, #ARG_LOOP_LENGTH]      @ if loop is off --> R0 = 0x0
+        LDR     R5, hq_buffer
+        LDR     R2, [R4, #CHN_SAMPLE_COUNTDOWN]
+        LDR     R3, [R4, #CHN_POSITION_ABS]
+        LDRB    R0, [R4, #CHN_MODE]
+        ADR     R1, C_mixing_setup
+        BX      R1
 
     .align    2
 hq_buffer:
@@ -478,44 +472,44 @@ hq_buffer_length:     @ TODO: Replace with variable on stack
     .word    0xFFFFFFFF
 
     .arm
-mixing_arm_setup:
+C_mixing_setup:
         /* frequency and mixing loading routine */
-        LDR    R8, hq_buffer_length
-        ORRS R11, R10, R11, LSL#16            @ R11 = 00RR00LL
-        BEQ    switchto_thumb                    @ volume #0 --> branch and skip channel processing
+        LDR     R8, hq_buffer_length
+        ORRS    R11, R10, R11, LSL#16           @ R11 = 00RR00LL
+        BEQ     C_mixing_epilogue               @ volume #0 --> branch and skip channel processing
         /* normal processing otherwise */
-        TST R0, #MODE_FIXED_FREQ
-        BNE    fixed_mixing_setup
-        TST R0, #MODE_COMP
-        BNE special_mixing                    @ compressed? --> branch
-        /* same here */
-        STMFD SP!, {R4, R9, R12}
+        TST     R0, #MODE_FIXED_FREQ
+        BNE     C_setup_fixed_freq_mixing
+        TST     R0, #MODE_COMP
+        BNE     C_setup_special_mixing          @ compressed? --> branch
+
+        STMFD   SP!, {R4, R9, R12}
         /*
          * This mixer supports 4 different kind of synthesized sounds
-         * They are triggered when the loop end = 0
+         * They are triggered if there is no samples to play
          * This get's checked below
          */
-        MOVS R2, R2
-        ORREQ R0, R0, #MODE_SYNTH
-        STREQB R0, [R4, #CHN_MODE]
-        ADD    R4, R4, #CHN_FINE_POSITION
-        LDMIA R4, {R7, LR}                    @ R7 = Fine Position, LR = Frequency
-        MUL    R4, R12, LR                        @ R4 = inter sample steps = output rate factor * samplerate
+        MOVS    R2, R2
+        ORREQ   R0, R0, #MODE_SYNTH
+        STREQB  R0, [R4, #CHN_MODE]
+        ADD     R4, R4, #CHN_FINE_POSITION
+        LDMIA   R4, {R7, LR}                    @ R7 = Fine Position, LR = Frequency
+        MUL     R4, LR, R12                     @ R4 = inter sample steps = output rate factor * samplerate
         /* now the first samples get loaded */
-        LDRSB R6, [R3], #1
-        LDRSB R12, [R3]
-        TST    R0, #MODE_SYNTH
-        BNE    init_synth
+        LDRSB   R6, [R3], #1
+        LDRSB   R12, [R3]
+        TST     R0, #MODE_SYNTH
+        BNE     C_setup_synth
         /* incase no synth mode should be used, code contiues here */
-        SUB    R12, R12, R6                    @ R12 = DELTA
+        SUB     R12, R12, R6                    @ R12 = DELTA
         /*
          * Mixing goes with volume ranges 0-127
          * They come in 0-255 --> divide by 2
          */
-        MOVS R11, R11, LSR#1
-        ADC    R11, R11, #0x8000
-        BIC    R11, R11, #0xFF00
-        MOV    R1, R7                            @ R1 = inter sample position
+        MOVS    R11, R11, LSR#1
+        ADC     R11, R11, #0x8000
+        BIC     R11, R11, #0xFF00
+        MOV     R1, R7                          @ R1 = inter sample position
         /*
          * There is 2 different mixing codepaths for uncompressed data
          *  path 1: fast mixing, but doesn't supports loop or stop
@@ -523,195 +517,194 @@ mixing_arm_setup:
          * This checks if there is enough samples aviable for path 1.
          * important: R0 is expected to be #0
          */
-        UMLAL R1, R0, R4, R8
-        MOV    R1, R1, LSR#23
-        ORR    R0, R1, R0, LSL#9
-        CMP    R2, R0                            @ actual comparison
-        BLE    split_sample_loading            @ if not enough samples are available for path 1 --> branch
+        UMLAL   R1, R0, R4, R8
+        MOV     R1, R1, LSR#23
+        ORR     R0, R1, R0, LSL#9
+        CMP     R2, R0                          @ actual comparison
+        BLE     C_setup_unbuffered_mixing       @ if not enough samples are available for path 1 --> branch
         /* 
          * This is the mixer path 1.
          * The interesting thing here is that the code will
          * buffer enough samples on stack if enough space
          * on stack is available (or goes over the limit of 0x400 bytes)
          */
-        SUB    R2, R2, R0
-        LDR    R10, stack_limit
-        ADD    R10, R10, R0
-        CMP    R10, SP
-        ADD    R10, R3, R0
-        ADR    R9, stack_backup
+        SUB     R2, R2, R0
+        LDR     R10, upper_stack_bounds
+        ADD     R10, R10, R0
+        CMP     R10, SP
+        ADD     R10, R3, R0
+        ADR     R9, stack_backup
         /*
-         * R2 = remaining samples
+         * R2 = remaining samples after processing
          * R10 = final sample position
          * SP = original stack location
          * These values will get reloaded after channel processing
          * due to the lack of registers.
          */
-        STMIA    R9, {R2, R10, SP}
-        CMPCC    R0, #0x400                  @ > 0x400 bytes --> read directly from ROM rather than buffered
-        BCS    select_mixing_mode              @ TODO rename
+        STMIA   R9, {R2, R10, SP}
+        CMPCC   R0, #0x400                      @ > 0x400 bytes --> read directly from ROM rather than buffered
+        BCS     C_select_highspeed_codepath
         /*
          * The code below inits the DMA to read word aligned
          * samples from ROM to stack
          */
-        BIC    R1, R3, #3
-        MOV    R9, #0x04000000
-        ADD    R9, R9, #0xD4
-        ADD    R0, R0, #7
-        MOV    R0, R0, LSR#2
-        SUB SP, SP, R0, LSL#2
-        AND    R3, R3, #3
-        ADD    R3, R3, SP
-        ORR    LR, R0, #0x84000000
-        STMIA R9, {R1, SP, LR}              @ actually starts the DMA
+        BIC     R1, R3, #3
+        MOV     R9, #0x04000000
+        ADD     R9, R9, #0xD4
+        ADD     R0, R0, #7
+        MOV     R0, R0, LSR#2
+        SUB     SP, SP, R0, LSL#2
+        AND     R3, R3, #3
+        ADD     R3, R3, SP
+        ORR     LR, R0, #0x84000000
+        STMIA   R9, {R1, SP, LR}                @ actually starts the DMA
 
         /* Somehow is neccesary for some games not to break */
     .if DMA_FIX==1
         MOV    R0, #0
-        MOV    R1, R0
-        MOV    R2, R1
+        MOV    R1, #0
+        MOV    R2, #0
         STMIA R9, {R0, R1, R2}
     .endif
 
-select_mixing_mode:
+C_select_highspeed_codepath:
         /*
          * This code decides which piece of code to load
          * depending on playback-rate / default-rate ratio.
          * Modes > 1.0 run with different volume levels.
+         * R4 = inter sample step
          */
-        SUBS R4, R4, #0x800000
-        MOVPL R11, R11, LSL#1
-        ADR    R0, high_speed_code_resource    @ loads the base pointer of the code
-        ADDPL R0, R0, #(ARM_OP_LEN*6)       @ 6 instructions further
-        SUBPLS R4, R4, #0x800000
-        ADDPL R0, R0, #(ARM_OP_LEN*6)
-        ADDPL R4, R4, #0x800000                @ TODO how does restoring for > 2.0 ratios work?
-        LDR    R2, previous_fast_code
-        CMP    R0, R2                            @ code doesn't need to be reloaded if it's already in place
-        BEQ    mixing_init
+        ADR     R0, high_speed_code_resource    @ loads the base pointer of the code
+        SUBS    R4, R4, #0x800000
+        MOVPL   R11, R11, LSL#1                 @  if >= 1.0*   0-127 --> 0-254 volume level
+        ADDPL   R0, R0, #(ARM_OP_LEN*6)         @               6 instructions further
+        SUBPLS  R4, R4, #0x800000               @  if >= 2.0*
+        ADDPL   R0, R0, #(ARM_OP_LEN*6)
+        ADDPL   R4, R4, #0x800000
+        LDR     R2, previous_fast_code
+        CMP     R0, R2                          @ code doesn't need to be reloaded if it's already in place
+        BEQ     C_skip_fast_mixing_creation
         /* This loads the needed code to RAM */
-        STR    R0, previous_fast_code
-        LDMIA R0, {R0-R2, R8-R10}            @ load 6 opcodes
-        ADR    LR, runtime_created_routine
+        STR     R0, previous_fast_code
+        LDMIA   R0, {R0-R2, R8-R10}             @ load 6 opcodes
+        ADR     LR, fast_mixing_instructions
 
-create_routine_loop:
+C_fast_mixing_creation_loop:
             /* paste code to destination, see below for patterns */
-            STMIA    LR, {R0, R1}
-            ADD    LR, LR, #0x98
-            STMIA    LR, {R0, R1}
-            SUB    LR, LR, #0x8C
-            STMIA    LR, {R2, R8-R10}
-            ADD    LR, LR, #0x98
-            STMIA    LR, {R2, R8-R10}
-            SUB    LR, LR, #0x80
-            ADDS    R5, R5, #0x40000000        @ do that for 4 blocks
-            BCC    create_routine_loop
+            STMIA   LR, {R0, R1}
+            ADD     LR, LR, #(ARM_OP_LEN*38)
+            STMIA   LR, {R0, R1}
+            SUB     LR, LR, #(ARM_OP_LEN*35)
+            STMIA   LR, {R2, R8-R10}
+            ADD     LR, LR, #(ARM_OP_LEN*38)
+            STMIA   LR, {R2, R8-R10}
+            SUB     LR, LR, #(ARM_OP_LEN*32)
+            ADDS    R5, R5, #0x40000000         @ do that for 4 blocks
+            BCC     C_fast_mixing_creation_loop
 
-        LDR    R8, hq_buffer_length
+        LDR     R8, hq_buffer_length
 
-mixing_init:
-        MOV    R2, #0xFF000000                    @ load the fine position overflow bitmask
-mixing_loop:
+C_skip_fast_mixing_creation:
+        MOV     R2, #0xFF000000                 @ load the fine position overflow bitmask
+C_fast_mixing_loop:
         /* This is the actual processing and interpolation code loop; NOPs will be replaced by the code above */
-            LDMIA R5, {R0, R1, R10, LR}    @ load 4 stereo samples to Registers
-            MUL    R9, R7, R12
-runtime_created_routine:
-            NOP                            @ Block #1
+            LDMIA   R5, {R0, R1, R10, LR}         @ load 4 stereo samples to Registers
+            MUL     R9, R7, R12
+fast_mixing_instructions:
+            NOP                                 @ Block #1
             NOP
-            MLANE R0, R11, R9, R0
-            NOP
-            NOP
-            NOP
-            NOP
-            BIC    R7, R7, R2, ASR#1
-            MULNE    R9, R7, R12
-            NOP                            @ Block #2
-            NOP
-            MLANE R1, R11, R9, R1
+            MLANE   R0, R11, R9, R0
             NOP
             NOP
             NOP
             NOP
-            BIC    R7, R7, R2, ASR#1
-            MULNE R9, R7, R12
-            NOP                            @ Block #3
+            BIC     R7, R7, R2, ASR#1
+            MULNE   R9, R7, R12
+            NOP                                 @ Block #2
             NOP
-            MLANE R10, R11, R9, R10
-            NOP
-            NOP
-            NOP
-            NOP
-            BIC    R7, R7, R2, ASR#1
-            MULNE R9, R7, R12
-            NOP                            @ Block #4
-            NOP
-            MLANE LR, R11, R9, LR
+            MLANE   R1, R11, R9, R1
             NOP
             NOP
             NOP
             NOP
-            BIC    R7, R7, R2, ASR#1
-            STMIA R5!, {R0, R1, R10, LR}    @ write 4 stereo samples
+            BIC     R7, R7, R2, ASR#1
+            MULNE   R9, R7, R12
+            NOP                                 @ Block #3
+            NOP
+            MLANE   R10, R11, R9, R10
+            NOP
+            NOP
+            NOP
+            NOP
+            BIC     R7, R7, R2, ASR#1
+            MULNE   R9, R7, R12
+            NOP                                 @ Block #4
+            NOP
+            MLANE   LR, R11, R9, LR
+            NOP
+            NOP
+            NOP
+            NOP
+            BIC     R7, R7, R2, ASR#1
+            STMIA   R5!, {R0, R1, R10, LR}        @ write 4 stereo samples
             
-            LDMIA R5, {R0, R1, R10, LR}        @ load the next 4 stereo samples
-            MULNE R9, R7, R12    
-            NOP                            @ Block #1
+            LDMIA   R5, {R0, R1, R10, LR}         @ load the next 4 stereo samples
+            MULNE   R9, R7, R12    
+            NOP                                 @ Block #1
             NOP
-            MLANE R0, R11, R9, R0
-            NOP
-            NOP
-            NOP
-            NOP
-            BIC    R7, R7, R2, ASR#1
-            MULNE R9, R7, R12
-            NOP                            @ Block #2
-            NOP
-            MLANE R1, R11, R9, R1
+            MLANE   R0, R11, R9, R0
             NOP
             NOP
             NOP
             NOP
-            BIC    R7, R7, R2, ASR#1
-            MULNE R9, R7, R12
-            NOP                            @ Block #3
+            BIC     R7, R7, R2, ASR#1
+            MULNE   R9, R7, R12
+            NOP                                 @ Block #2
             NOP
-            MLANE R10, R11, R9, R10
-            NOP
-            NOP
-            NOP
-            NOP
-            BIC    R7, R7, R2, ASR#1
-            MULNE R9, R7, R12
-            NOP                            @ Block #4
-            NOP
-            MLANE LR, R11, R9, LR
+            MLANE   R1, R11, R9, R1
             NOP
             NOP
             NOP
             NOP
-            BIC    R7, R7, R2, ASR#1
-            STMIA R5!, {R0, R1, R10, LR}    @ write 4 stereo samples
-            SUBS R8, R8, #8                    @ subtract 8 from the sample count
-            BGT    mixing_loop
+            BIC     R7, R7, R2, ASR#1
+            MULNE   R9, R7, R12
+            NOP                                 @ Block #3
+            NOP
+            MLANE   R10, R11, R9, R10
+            NOP
+            NOP
+            NOP
+            NOP
+            BIC     R7, R7, R2, ASR#1
+            MULNE   R9, R7, R12
+            NOP                                 @ Block #4
+            NOP
+            MLANE   LR, R11, R9, LR
+            NOP
+            NOP
+            NOP
+            NOP
+            BIC     R7, R7, R2, ASR#1
+            STMIA   R5!, {R0, R1, R10, LR}      @ write 4 stereo samples
+            SUBS    R8, R8, #8
+            BGT     C_fast_mixing_loop
         /* restore previously saved values */
-        ADR    R12, stack_backup
-        LDMIA R12, {R2, R3, SP}
-        B mixing_end_func
+        ADR     R12, stack_backup
+        LDMIA   R12, {R2, R3, SP}
+        B       C_end_mixing
 
 /* Various variables for the cached mixer */
 
     .align    2
 stack_backup:
     .word    0x0, 0x0, 0x0
-stack_limit:
+upper_stack_bounds:
     .word    0x03007910
 previous_fast_code:
     .word    0x0 /* mark as invalid initially */
 
 /* Those instructions below are used by the high speed loop self modifying code */
-
 high_speed_code_resource:
-
     /* Block for Mix Freq < 1.0 * Output Frequency */
     MOV     R9, R9, ASR#22
     ADDS    R9, R9, R6, LSL#1
@@ -737,186 +730,176 @@ high_speed_code_resource:
     SUBS    R12, R12, R6
 
 /* incase a loop or end occurs during mixing, this code is used */
-split_sample_loading:
+C_setup_unbuffered_mixing:
+        ADD     R5, R5, R8, LSL#2               @ R5 = End of HQ buffer
 
-        ADD R5, R5, R8, LSL#2                @ R5 = End of HQ buffer
+/* This below is the unbuffered mixing loop. R6 = base sample, R12 diff to next */
+C_unbuffered_mixing_loop:
 
-uncached_mixing_loop:
+        MUL     R9, R7, R12
+        MOV     R9, R9, ASR#22
+        ADDS    R9, R9, R6, LSL#1
+        LDRNE   R0, [R5, -R8, LSL#2]
+        MLANE   R0, R11, R9, R0
+        STRNE   R0, [R5, -R8, LSL#2]
+        ADD     R7, R7, R4
+        MOVS    R9, R7, LSR#23
+        BEQ     C_unbuffered_mixing_skip_load   @ skip the mixing load if it isn't required
+        
+        SUBS    R2, R2, R7, LSR#23
+        BLLE    C_mixing_loop_or_end
+        SUBS    R9, R9, #1
+        ADDEQ   R6, R12, R6
+        @RETURN LOCATION FROM LOOP HANDLER
+        LDRNESB R6, [R3, R9]!
+        LDRSB   R12, [R3, #1]!
+        SUB     R12, R12, R6
+        BIC     R7, R7, #0x3F800000
 
-MUL        R9, R7, R12                    @ calc interpolated DELTA
-MOV        R9, R9, ASR#22                    @ scale down the DELTA
-ADDS    R9, R9, R6, LSL#1                @ Add to Base Sample (upscaled to 8 bits again)
-LDRNE   R0, [R5, -R8, LSL#2]                @ load sample from buffer
-MLANE    R0, R11, R9, R0                    @ add it to the buffer sample
-STRNE    R0, [R5, -R8, LSL#2]                @ write the sample
-ADD    R7, R7, R4                    @ add the step size to the fine position
-MOVS    R9, R7, LSR#23                    @ write the overflow amount to R9
-BEQ    uncached_mixing_load_skip            @ skip the mixing load if it isn't required
+C_unbuffered_mixing_skip_load:
+        SUBS    R8, R8, #1                      @ reduce the sample count for the buffer by #1
+        BGT     C_unbuffered_mixing_loop
 
-SUBS    R2, R2, R7, LSR#23                @ remove the overflow count from the remaning samples
-BLLE    loop_end_sub                    @ if the loop end is reached call the loop handler
-SUBS    R9, R9, #1                    @ remove #1 from the overflow count
-ADDEQ    R6, R12, R6                    @ new base sample is previous sample + DELTA
-@RETURN LOCATION FROM LOOP HANDLER
-LDRNESB    R6, [R3, R9]!                    @ load new sample
-LDRSB    R12, [R3, #1]!                    @ load the delta sample (always required)
-SUB    R12, R12, R6                    @ calc new DELTA
-BIC    R7, R7, #0x3F800000                @ clear the overflow from the fine position by using the bitmask
+C_end_mixing:
+        SUB     R3, R3, #1                      @ because the mixer always needs 1 byte lookahead, this reverts it
+        LDMFD   SP!, {R4, R9, R12}
+        STR     R7, [R4, #CHN_FINE_POSITION]
+        B       C_mixing_end_store
 
-uncached_mixing_load_skip:
+C_mixing_loop_or_end:
+        /* This loads the loop information end loops incase it should */
+        ADD     R3, SP, #ARG_LOOP_START_POS+0xC
+        LDMIA   R3, {R3, R6}                    @ R3 = Loop Start; R6 = Loop Length
+        CMP     R6, #0                          @ check if loop is enabled; if Loop is enabled R6 is != 0
+        RSBNE   R9, R2, #0                      @ loop wraparound logic
+        ADDNE   R2, R6, R2
+        ADDNE   PC, LR, #(ARM_OP_LEN*2)
+        LDMFD   SP!, {R4, R9, R12}
+        B       C_mixing_end_and_stop_channel   @ R6 == 0 (always)
 
-SUBS    R8, R8, #1                    @ reduce the sample count for the buffer by #1
-BGT    uncached_mixing_loop
+C_fixed_mixing_loop_or_end:
+        LDR     R2, [SP, #ARG_LOOP_LENGTH+0x8]
+        MOVS    R6, R2                          @ copy it to R6 and check whether loop is disabled
+        LDRNE   R3, [SP, #ARG_LOOP_START_POS+0x8]
+        BXNE    LR                              @ if it loops return to mixing function, if it doesn't go on end mixing
 
-mixing_end_func:
+        LDMFD   SP!, {R4, R9}
 
-SUB    R3, R3, #1                    @ reduce sample pointer by #1 (???)
-LDMFD    SP!, {R4, R9, R12}                @ pop values from stack
-STR    R7, [R4, #CHN_FINE_POSITION]            @ store the fine position
-B    store_coarse_sample_pos                @ jump over to code to store coarse channel position
+C_mixing_end_and_stop_channel:
+        STRB    R6, [R4]                        @ update channel flag with chn halt
+        B       C_mixing_epilogue
 
-loop_end_sub:
+/* These are used for the fixed freq mixer */
+fixed_mixing_code_resource:
+    MOVS    R6, R10, LSL#24
+    MOVS    R6, R6, ASR#24
+    MOVS    R6, R10, LSL#16
+    MOVS    R6, R6, ASR#24
+    MOVS    R6, R10, LSL#8
+    MOVS    R6, R6, ASR#24
+    MOVS    R6, R10, ASR#24
+    LDMIA   R3!, {R10}                          @ load chunk of samples
+    MOVS    R6, R10, LSL#24
+    MOVS    R6, R6, ASR#24
+    MOVS    R6, R10, LSL#16
+    MOVS    R6, R6, ASR#24
+    MOVS    R6, R10, LSL#8
+    MOVS    R6, R6, ASR#24
+    LDMFD   SP!, {R4, R9, R12}
 
-ADD    R3, SP, #ARG_LOOP_START_POS+0xC            @ prepare sample loop start loading and lopo length loading (0xC due to the pushed stack pointer)
-LDMIA    R3, {R3, R6}                    @ R3 = Loop Start; R6 = Loop Length
-CMP    R6, #0                        @ check if loop is enabled; if Loop is enabled R6 is != 0
-RSBNE    R9, R2, #0                    @ the sample overflow from the resampling needs to get subtracted so the remaining samples is slightly less
-ADDNE    R2, R6, R2                    @ R2 = add the loop length
-ADDNE    PC, LR, #8                    @ return from the subroutine to 2 instructions after the actual return location
-LDMFD    SP!, {R4, R9, R12}                @ restore registers from stack
-B    update_channel_status
+C_setup_fixed_freq_mixing:
+        STMFD   SP!, {R4, R9}
 
-fixed_freq_loop_end_handler:
+C_fixed_mixing_length_check:
+        MOV     LR, R2                          @ sample countdown
+        CMP     R2, R8
+        MOVGT   LR, R8                          @ min(buffer_size, sample_countdown)
+        SUB     LR, LR, #1
+        MOVS    LR, LR, LSR#2
+        BEQ     C_fixed_mixing_process_rest  @ <= 3 samples to process
+        
+        SUB     R8, R8, LR, LSL#2               @ subtract the amount of samples we need to process from the buffer length
+        SUB     R2, R2, LR, LSL#2               @ subtract the amount of samples we need to process from the remaining samples
+        ADR     R1, fixed_mixing_instructions
+        ADR     R0, fixed_mixing_code_resource
+        MOV     R9, R3, LSL#30
+        ADD     R0, R0, R9, LSR#27              @ alignment * 8 + resource offset = new resource offset
+        LDMIA   R0!, {R6, R7, R9, R10}          @ load and write instructions
+        STMIA   R1, {R6, R7}
+        ADD     R1, R1, #0xC
+        STMIA   R1, {R9, R10}
+        ADD     R1, R1, #0xC
+        LDMIA   R0, {R6, R7, R9, R10}
+        STMIA   R1, {R6, R7}
+        ADD     R1, R1, #0xC
+        STMIA   R1, {R9, R10}
+        LDMIA   R3!, {R10}                      @ load 4 samples from ROM
 
-LDR    R2, [SP, #ARG_LOOP_LENGTH+0x8]            @ load the loop length value
-MOVS    R6, R2                        @ copy it to R6 and check if loop is disabled
-LDRNE    R3, [SP, #ARG_LOOP_START_POS+0x8]        @ reset the sample pointer to the loop start position
-BXNE    LR                        @ if it loops return to mixing function, if it doesn't go on and end mixing
+C_fixed_mixing_loop:
+            LDMIA    R5, {R0, R1, R7, R9}       @ load 4 samples from hq buffer
 
-LDMFD    SP!, {R4, R9}
+fixed_mixing_instructions:
+            NOP
+            NOP
+            MLANE   R0, R11, R6, R0             @ add new sample if neccessary
+            NOP
+            NOP
+            MLANE   R1, R11, R6, R1
+            NOP
+            NOP
+            MLANE   R7, R11, R6, R7
+            NOP
+            NOP
+            MLANE   R9, R11, R6, R9
+            STMIA   R5!, {R0, R1, R7, R9}       @ write samples to the mixing buffer
+            SUBS    LR, LR, #1
+            BNE     C_fixed_mixing_loop
 
-update_channel_status:
+        SUB     R3, R3, #4                      @ we'll need to load this block again, so rewind a bit
 
-STRB    R6, [R4]                    @ if loop ist disabled R6 = 0 and we can disable the channel by writing R6 to R4 (channel area)
-B    switchto_thumb                    @ switch to thumb
+C_fixed_mixing_process_rest:
+        MOV     R1, #4                          @ repeat the loop #4 times to completley get rid of alignment errors
 
-fixed_math_resource:    @ not exectued, used to create mixing function
+C_fixed_mixing_unaligned_loop:
+            LDR     R0, [R5]
+            LDRSB   R6, [R3], #1
+            MLA     R0, R11, R6, R0
+            STR     R0, [R5], #4
+            SUBS    R2, R2, #1
+            BLEQ    C_fixed_mixing_loop_or_end
+            SUBS    R1, R1, #1
+            BGT     C_fixed_mixing_unaligned_loop
 
-MOVS    R6, R10, LSL#24
-MOVS    R6, R6, ASR#24
-MOVS    R6, R10, LSL#16
-MOVS    R6, R6, ASR#24
-MOVS    R6, R10, LSL#8
-MOVS    R6, R6, ASR#24
-MOVS    R6, R10, ASR#24
-LDMIA    R3!, {R10}                    @ load chunk of samples
-MOVS    R6, R10, LSL#24
-MOVS    R6, R6, ASR#24
-MOVS    R6, R10, LSL#16
-MOVS    R6, R6, ASR#24
-MOVS    R6, R10, LSL#8
-MOVS    R6, R6, ASR#24
-LDMFD    SP!, {R4, R9, R12}
+        SUBS    R8, R8, #4
+        BGT     C_fixed_mixing_length_check     @ repeat the mixing procedure until the buffer is filled
 
-fixed_mixing_setup:
+        LDMFD   SP!, {R4, R9}
 
-STMFD    SP!, {R4, R9}                    @ backup the channel pointer and 
+C_mixing_end_store:
+        STR     R2, [R4, #CHN_SAMPLE_COUNTDOWN]
+        STR     R3, [R4, #CHN_POSITION_ABS]            
 
-fixed_mixing_check_length:
-
-MOV    LR, R2                        @ move absolute sample position to LR
-CMP    R2, R8                        @ 
-MOVGT    LR, R8                        @ if there is less samples than the buffer to process write the smaller sample amount to LR
-SUB    LR, LR, #1                    @ shorten samples to process by #1
-MOVS    LR, LR, LSR#2                    @ calculate the amount of words to process (-1/4)
-BEQ    fixed_mixing_process_unaligned            @ process the unaligned samples if there is <= 3 samples to process
-
-SUB    R8, R8, LR, LSL#2                @ subtract the amount of samples we need to process from the buffer length
-SUB    R2, R2, LR, LSL#2                @ subtract the amount of samples we need to process from the remaining samples
-ADR    R1, fixed_mixing_custom_routine
-ADR    R0, fixed_math_resource                @ load the 2 pointers to create function (@R0) by instructions from R1
-MOV    R9, R3, LSL#30                    @ move sample alignment bits to the leftmost position
-ADD    R0, R0, R9, LSR#27                @ alignment * 8 + resource offset = new resource offset
-LDMIA    R0!, {R6, R7, R9, R10}                @ load 4 instructions
-STMIA    R1, {R6, R7}                    @ write the 1st 2 instructions
-ADD    R1, R1, #0xC                    @ move label pointer over to the next slot
-STMIA    R1, {R9, R10}                    @ write 2nd block
-ADD    R1, R1, #0xC                    @ move label pointer to next block
-LDMIA    R0, {R6, R7, R9, R10}                @ load instructions for block #3 and #4
-STMIA    R1, {R6, R7}                    @ write block #3
-ADD    R1, R1, #0xC                    @ ...
-STMIA    R1, {R9, R10}                    @ write block #4
-LDMIA    R3!, {R10}                    @ write read 4 samples from ROM
-
-fixed_mixing_loop:
-
-LDMIA    R5, {R0, R1, R7, R9}                @ load 4 samples from hq buffer
-
-fixed_mixing_custom_routine:
-
-NOP
-NOP
-MLANE    R0, R11, R6, R0                    @ add new sample if neccessary
-NOP
-NOP
-MLANE    R1, R11, R6, R1
-NOP
-NOP
-MLANE    R7, R11, R6, R7
-NOP
-NOP
-MLANE    R9, R11, R6, R9
-STMIA    R5!, {R0, R1, R7, R9}                @ write the samples to the work area buffer
-SUBS    LR, LR, #1                    @ countdown the sample blocks to process
-BNE    fixed_mixing_loop                @ if the end wasn't reached yet, repeat the loop
-
-SUB    R3, R3, #4                    @ reduce sample position by #4, we'll need to load the samples again
-
-fixed_mixing_process_unaligned:
-
-MOV    R1, #4                        @ we need to repeat the loop #4 times to completley get rid of alignment errors
-
-fixed_mixing_unaligned_loop:
-
-LDR    R0, [R5]                    @ load sample from buffer
-LDRSB    R6, [R3], #1                    @ load sample from ROM ro R6
-MLA    R0, R11, R6, R0                    @ write the sample to the buffer
-STR    R0, [R5], #4
-SUBS    R2, R2, #1                    @ reduce alignment error by #1
-BLEQ    fixed_freq_loop_end_handler
-SUBS    R1, R1, #1
-BGT    fixed_mixing_unaligned_loop            @ repeat the loop #4 times
-
-SUBS    R8, R8, #4                    @ reduce the sample amount we wrote to the buffer by #1
-BGT    fixed_mixing_check_length            @ go up to repeat the mixing procedure until the buffer is filled
-
-LDMFD    SP!, {R4, R9}                    @ pop registers from stack
-
-store_coarse_sample_pos:
-
-STR    R2, [R4, #CHN_POSITION_REL]            @ store relative and absolute sample position
-STR    R3, [R4, #CHN_POSITION_ABS]            
-
-switchto_thumb:
-
-ADR    R0, (check_remain_channels+1)            @ load the label offset and switch to thumb
-BX    R0
+C_mixing_epilogue:
+        ADR     R0, (C_end_channel_state_loop+1)
+        BX      R0
 
     .thumb
 
-check_remain_channels:
+C_end_channel_state_loop:
+        LDR     R0, [SP, #ARG_REMAIN_CHN]
+        SUB     R0, #1
+        BLE     C_main_mixer_return
 
-LDR    R0, [SP, #ARG_REMAIN_CHN]            @ load the remaining channels
-SUB    R0, #1                        @ reduce the amount by #1
-BLE    mixer_return                    @ end the mixing when finished processing all channels
+        ADD     R4, #0x40
+        B       C_channel_state_loop
 
-ADD    R4, #0x40
-B    mixer_entry
+C_main_mixer_return:
+        ADR     R0, C_downsampler
+        BX      R0
 
-mixer_return:
+    .arm
 
-ADR    R0, downsampler
-BX    R0
+    .thumb
 
 downsampler_return:
 
@@ -939,8 +922,7 @@ mixer_finished_status:
 
     .arm
 
-downsampler:
-
+C_downsampler:
 LDR    R10, hq_buffer
 LDR    R9, [SP, #ARG_BUFFER_POS]
 LDR    R8, hq_buffer_length
@@ -1034,7 +1016,7 @@ BX    R0
 
     .align    2
 
-init_synth:
+C_setup_synth:
 
 CMP    R12, #0        @ $030057C4
 BNE    check_synth_type
@@ -1092,7 +1074,7 @@ SUBS    R8, R8, #8                    @ remove #8 from sample count
 BGT    synth_type_0_loop
 
 LDMFD    SP!, {R2, R3, R9, R12}
-B    mixing_end_func
+B    C_end_mixing
 
 check_synth_type:
 
@@ -1139,7 +1121,7 @@ STMIA    R5!, {R0, R1, R10, LR}
 SUBS    R8, R8, #4
 BGT    synth_type_1_loop
 
-B    mixing_end_func                    @ goto end
+B    C_end_mixing @ goto end
 
 synth_type_2:
 
@@ -1173,11 +1155,11 @@ STMIA    R5!, {R0, R1, R10, LR}                @ store the samples back to the b
 SUBS    R8, R8, #4                    @ subtract #4 from the remainging samples
 BGT    synth_type_2_loop
 
-B    mixing_end_func
+B    C_end_mixing
 
 @****************** SPECIAL MIXING ******************@
 .if ENABLE_DECOMPRESSION==1
-special_mixing:        @ $03006BF8
+C_setup_special_mixing:        @ $03006BF8
 
 LDR    R6, [R4, #CHN_WAVE_OFFSET]        @ load the wave header offset to R6
 LDRB    R0, [R4]
@@ -1274,7 +1256,7 @@ MOVS    R9, R7, LSR#23                @ check if there is new samples to load
 BEQ    compressed_mixing_load_skip        @ no new samples need to be loaded
 
 SUBS    R2, R2, R7, LSR#23            @ remove the sample overflow from the remaining samples
-BLLE    loop_end_sub                @ call the loop/ending handler if the countdown reached zero or something negative
+BLLE    C_mixing_loop_or_end @ call the loop/ending handler if the countdown reached zero or something negative
 SUBS    R9, R9, #1                @ check if only one sample has to get loaded
 ADDEQ    R6, R12, R6                @ if this is the case we can calculate the new base sample
 BEQ    compressed_mixing_base_load_skip
@@ -1296,7 +1278,7 @@ SUBS    R8, R8, #1                @ remove #1 from the remaining samples
 BGT    compressed_mixing_loop
 
 @SUB    R3, R3, #1                @ sample pointer -1 (???); ALREADY DONE BY mixing_end_func
-B    mixing_end_func
+B    C_end_mixing
 
 
 
@@ -1324,7 +1306,7 @@ MOVS    R9, R7, LSR#23                @ check if there is new samples to load
 BEQ    compressed_mixing_reverse_load_skip    @ skip sample loading if we don't need to load new samples from ROM
 
 SUBS    R2, R2, R7, LSR#23            @ remove the overflowed samples from the remaining samples
-BLLE    loop_end_sub                @ if the sample playback finished go to end handler
+BLLE    C_mixing_loop_or_end @ if the sample playback finished go to end handler
 
 SUBS    R9, R9, #1                @ remove sample overflow count by #1
 ADDEQ    R6, R12, R6                @ make the previous delta sample the new base sample if only #1 sample needs to get loaded
@@ -1349,14 +1331,14 @@ BGT    compressed_mixing_reverse_loop
 @ADD    R3, R3, #2                @ ???, copied from original code
 ADD    R3, R3, #3
 
-B    mixing_end_func
+B    C_end_mixing
 
 
 uncompressed_mixing_reverse_check:
 
 LDRB    R0, [R4, #1]                @ load the channel mode        =$03006D84
 TST    R0, #MODE_REVERSE            @ check if reverse mode is even enabled
-BEQ    mixing_end_func                @ skip the channel if the mode is "akward"
+BEQ    C_end_mixing@ skip the channel if the mode is "akward"
 
 LDRSB    R6, [R3, #-1]!                @ load first negative sample
 LDRSB    R12, [R3, #-1]                @ load the DELTA sample
@@ -1376,7 +1358,7 @@ MOVS    R9, R7, LSR#23                @ check if there is new samples to load
 BEQ    reverse_mixing_load_skip
 
 SUBS    R2, R2, R7, LSR#23            @ blablabla, all same as above
-BLLE    loop_end_sub
+BLLE    C_mixing_loop_or_end
 
 MOVS    R9, R9                    @ check if sample 
 ADDEQ    R6, R12, R6
@@ -1393,7 +1375,7 @@ BGT    reverse_mixing_loop            @ continue lopo if there is still samples 
 @ADD    R3, R3, #1                @ copied from original code (???)
 ADD    R3, R3, #2                @ =$03006DE8
 
-B    mixing_end_func
+B   C_end_mixing 
 
 @**************** SPECIAL MIXING END ****************@
 
