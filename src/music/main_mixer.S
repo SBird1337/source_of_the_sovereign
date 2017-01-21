@@ -46,7 +46,7 @@
     .equ    ARG_BUFFER_POS, 0x8                 @ stores the current output buffer pointer
     .equ    ARG_LOOP_START_POS, 0xC             @ stores wave loop start position in channel loop
     .equ    ARG_LOOP_LENGTH, 0x10               @   ''    ''   ''  end position
-@   .equ    ARG_UKNOWN, 0x14
+    .equ    ARG_BUFFER_POS_INDEX_HINT, 0x14
     .equ    ARG_PCM_STRUCT, 0x18                @ pointer to engine the main work area
 
     /* channel struct */
@@ -110,8 +110,7 @@
     .equ    REG_DMA3_SRC, 0x040000D4
     .equ    ARM_OP_LEN, 0x4
 
-@#######################################
-@*********** GAME CONFIGS **************
+@########### GAME CONFIGS ##############
 @ add the game's name above to the ASM .equ-s before creating new configs
 @#######################################
 
@@ -178,99 +177,70 @@
 @***********
 
     .thumb
+    .align  2
+
+    /*
+     * main_mixer initial registers:
+     * R0 = PCM Area
+     * R1 = unknown, independant
+     * R2 = unknown, independant
+     * R3 = unknown, independant
+     * R4 = if == 2 then this is last frame in out buffer
+     * R5 = current output buffer position
+     * R6 = buffer spaceing = 0x630
+     * R7 = unknown, independent
+     * R8 = samples per buffer
+     * R9 = unknown, independent
+     * R10 = unknown, independent
+     * R11 = unknown, independent
+     * R12 = unknown, independent
+     */
 
 main_mixer:
     /* load Reverb level and check if we need to apply it */
-    LDRB    R3, [R0, #VAR_REVERB]
-    LSR     R3, R3, #2
-    BEQ     C_clear_hq_buffer
-
-    ADR     R1, C_setup_reverb_loop
-    BX      R1
-
-    .arm
-    .align  2
-
-C_setup_reverb_loop:
-    /*
-     * reverb is calculated by the following: new_sample = old_sample * reverb_level / 127
-     * note that reverb is mono (both sides get mixed together)
-     *
-     * reverb get's applied to the frame we are currently looking at and the one after that
-     * the magic below simply calculateds the pointer for the one after the current one
-     */
-    CMP     R4, #2
-    ADDEQ   R7, R0, #0x350
-    ADDNE   R7, R5, R8
-    MOV     R4, R8
-    ORR     R3, R3, R3, LSL#16
-    STMFD   SP!, {R8, LR}
-    LDR     LR, hq_buffer
-
-C_reverb_loop:
-        /* This loop does the reverb processing */
-        LDRSB   R0, [R5, R6]
-        LDRSB   R1, [R5], #1
-        LDRSB   R2, [R7, R6]
-        LDRSB   R8, [R7], #1
-        LDRSB   R9, [R5, R6]
-        LDRSB   R10, [R5], #1
-        LDRSB   R11, [R7, R6]
-        LDRSB   R12, [R7], #1
-        ADD     R0, R0, R1
-        ADD     R0, R0, R2
-        ADDS    R0, R0, R8
-        ADDMI   R0, R0, #0x4
-        ADD     R1, R9, R10
-        ADD     R1, R1, R11
-        ADDS    R1, R1, R12
-        ADDMI   R1, R1, #0x4
-        MUL     R0, R3, R0
-        MUL     R1, R3, R1
-        STMIA   LR!, {R0, R1}
-        SUBS    R4, R4, #2
-        BGT     C_reverb_loop
-        /* end of loop */
-    LDMFD   SP!, {R8, LR}
-    ADR     R0, (C_setup_channel_state_loop+1)
-    BX      R0
-
-    .thumb
-
-C_clear_hq_buffer:
-    /* Incase reverb is disabled the buffer get's set to zero */
+    STR     R4, [SP, #ARG_BUFFER_POS_INDEX_HINT]
+    ADR     R2, is_buffer_init
+    LDRB    R0, [R2]
+    CMP     R0, #0
+    BNE     C_setup_channel_state_loop
+    /* if buffer not initialized, clear first */
     LDR     R3, hq_buffer
     MOV     R1, R8
     MOV     R4, #0
     MOV     R5, #0
     MOV     R6, #0
     MOV     R7, #0
-    /*
-     * Setting the buffer to zero happens in a very efficient loop
-     * Depending on the alignment of the buffer length, twice or quadruple the amount of bytes
-     * get cleared at once
-     */
+
     LSR     R1, #3
-    BCC     C_clr_hq_buffer_align_8
+    BCC     C_clear_buffer_align_8
 
     STMIA   R3!, {R4, R5, R6, R7}
 
-C_clr_hq_buffer_align_8:
+C_clear_buffer_align_8:
     LSR     R1, #1
-    BCC     C_clr_hq_buffer_align_16
+    BCC     C_clear_buffer_align_16
 
     STMIA   R3!, {R4, R5, R6, R7}
     STMIA   R3!, {R4, R5, R6, R7}
 
-C_clr_hq_buffer_align_16:
-    /* This repeats until the buffer has been cleared */
+C_clear_buffer_align_16:
     STMIA   R3!, {R4, R5, R6, R7}
     STMIA   R3!, {R4, R5, R6, R7}
     STMIA   R3!, {R4, R5, R6, R7}
     STMIA   R3!, {R4, R5, R6, R7}
+
     SUB     R1, #1
-    BGT     C_clr_hq_buffer_align_16
-    /* loop end */
+    BGT     C_clear_buffer_align_16
+    MOV     R1, #1
+    STRB    R1, [R2]
+    B       C_setup_channel_state_loop
+
+    .align  2
+is_buffer_init:
+    .byte   0x0
+
+    .align  1
+
 C_setup_channel_state_loop:
     /*
      * okay, before the actual mixing starts
@@ -898,19 +868,22 @@ C_main_mixer_return:
     .align  2
 
 C_downsampler:
-    LDR     R10, hq_buffer
-    LDR     R9, [SP, #ARG_BUFFER_POS]
+    MOV     R4, #0
+    MOV     R5, #0
     LDR     R8, hq_buffer_length
+    LDR     R9, [SP, #ARG_BUFFER_POS]
+    LDR     R10, hq_buffer
     MOV     R11, #0xFF
     MOV     R12, #0xFFFFFFFF
     MOV     R12, R12, LSL#14
     MOV     R7, #0x630
 
 C_downsampler_loop:
-        LDRSH   R2, [R10], #2
-        LDRSH   R0, [R10], #2
-        LDRSH   R3, [R10], #2
-        LDRSH   R1, [R10], #2
+        LDRSH   R2, [R10]
+        LDRSH   R0, [R10, #2]
+        LDRSH   R3, [R10, #4]
+        LDRSH   R1, [R10, #6]
+        STMIA   R10!, {R4, R5}
 
         CMP     R0, #0x4000
         MOVGE   R0, #0x3F80
