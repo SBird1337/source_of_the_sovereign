@@ -124,7 +124,7 @@
     .equ    POKE_INIT, 1
     .equ    DMA_FIX, 1
     .equ    ENABLE_DECOMPRESSION, 1
-    .equ    PREVENT_CLIP, 1
+    .equ    ENABLE_CLIPPING, 1
 
 .endif
 @*********** IF ENGLISH POKEMON FIRE RED
@@ -135,7 +135,7 @@
     .equ    POKE_INIT, 1
     .equ    DMA_FIX, 1
     .equ    ENABLE_DECOMPRESSION, 1
-    .equ    PREVENT_CLIP, 1
+    .equ    ENABLE_CLIPPING, 1
 
 .endif
 @*********** IF ENGLISH POKEMON EMERALD
@@ -146,7 +146,7 @@
     .equ    POKE_INIT, 1
     .equ    DMA_FIX, 1
     .equ    ENABLE_DECOMPRESSION, 1
-    .equ    PREVENT_CLIP, 1
+    .equ    ENABLE_CLIPPING, 1
 
 .endif
 @*********** IF ENGLISH POKEMON FIRE RED
@@ -157,7 +157,7 @@
     .equ    POKE_INIT, 1
     .equ    DMA_FIX, 1
     .equ    ENABLE_DECOMPRESSION, 1
-    .equ    PREVENT_CLIP, 1
+    .equ    ENABLE_CLIPPING, 1
 
 .endif
 @*********** IF KAWAs JUKEBOX 2006
@@ -168,7 +168,7 @@
     .equ    POKE_INIT, 0
     .equ    DMA_FIX, 0
     .equ    ENABLE_DECOMPRESSION, 0
-    .equ    PREVENT_CLIP, 1
+    .equ    ENABLE_CLIPPING, 1
 
 .endif
 @*********** IF US FIRE EMBLEM
@@ -178,7 +178,7 @@
     .equ    POKE_INIT, 0
     .equ    DMA_FIX, 0
     .equ    ENABLE_DECOMPRESSION, 0
-    .equ    PREVENT_CLIP, 0
+    .equ    ENABLE_CLIPPING, 0
 .endif
 @***********
 
@@ -193,8 +193,8 @@ main_mixer:
     ADR     R1, C_setup_reverb_loop
     BX      R1
 
-    .align  2
     .arm
+    .align  2
 
 C_setup_reverb_loop:
     /* 
@@ -465,13 +465,15 @@ C_skip_sample_loop_setup:
         ADR     R1, C_mixing_setup
         BX      R1
 
-    .align    2
+    .align  2
 hq_buffer:
-    .word    hq_buffer_ptr
+    .word   hq_buffer_ptr
 hq_buffer_length:     @ TODO: Replace with variable on stack
-    .word    0xFFFFFFFF
+    .word   0xFFFFFFFF
 
     .arm
+    .align  2
+
 C_mixing_setup:
         /* frequency and mixing loading routine */
         LDR     R8, hq_buffer_length
@@ -898,552 +900,514 @@ C_main_mixer_return:
         BX      R0
 
     .arm
+    .align  2
+
+C_downsampler:
+    LDR     R10, hq_buffer
+    LDR     R9, [SP, #ARG_BUFFER_POS]
+    LDR     R8, hq_buffer_length
+    MOV     R11, #0xFF
+
+.if ENABLE_CLIPPING==1
+
+    MOV     R12, #0xFFFFFFFF
+    MOV     R12, R12, LSL#14
+    MOV     R7, #0x630
+
+C_downsampler_loop:
+        LDRSH   R2, [R10], #2
+        LDRSH   R0, [R10], #2
+        LDRSH   R3, [R10], #2
+        LDRSH   R1, [R10], #2
+        
+        CMP     R0, #0x4000
+        MOVGE   R0, #0x3F80
+        CMP     R0, #-0x4000
+        MOVLT   R0, R12
+        
+        CMP     R1, #0x4000
+        MOVGE   R1, #0x3F80
+        CMP     R1, #-0x4000
+        MOVLT   R1, R12
+        
+        CMP     R2, #0x4000
+        MOVGE   R2, #0x3F80
+        CMP     R2, #-0x4000
+        MOVLT   R2, R12
+        
+        CMP     R3, #0x4000
+        MOVGE   R3, #0x3F80
+        CMP     R3, #-0x4000
+        MOVLT   R3, R12
+        
+        AND     R0, R11, R0, ASR#7
+        AND     R1, R11, R1, ASR#7
+        AND     R2, R11, R2, ASR#7
+        AND     R3, R11, R3, ASR#7
+        
+        ORR     R2, R2, R3, LSL#8
+        ORR     R0, R0, R1, LSL#8
+        
+        STRH    R2, [R9, R7]
+        STRH    R0, [R9], #2
+        
+        SUBS    R8, #2
+        BGT     C_downsampler_loop
+        
+.else
+C_downsampler_loop:
+        LDRH    R4, [R10], #2
+        LDRH    R0, [R10], #2
+        LDRH    R5, [R10], #2
+        LDRH    R1, [R10], #2
+        LDRH    R6, [R10], #2
+        LDRH    R2, [R10], #2
+        LDRH    R7, [R10], #2
+        LDRH    R3, [R10], #2
+        
+        AND     R0, R11, R0, LSR#7
+        AND     R1, R11, R1, LSR#7
+        AND     R2, R11, R2, LSR#7
+        AND     R3, R11, R3, LSR#7
+        AND     R4, R11, R4, LSR#7
+        AND     R5, R11, R5, LSR#7
+        AND     R6, R11, R6, LSR#7
+        AND     R7, R11, R7, LSR#7
+        
+        ORR     R4, R4, R5, LSL#8
+        ORR     R4, R4, R6, LSL#16
+        ORR     R4, R4, R7, LSL#24
+        
+        ORR     R0, R0, R1, LSL#8
+        ORR     R0, R0, R2, LSL#16
+        ORR     R0, R0, R3, LSL#24
+        
+        STR     R4, [R9, #0x630]
+        STR     R0, [R9], #4
+        
+        SUBS    R8, #4
+        BGT     C_downsampler_loop
+.endif
+
+    ADR     R0, (C_downsampler_return+1)
+    BX      R0
 
     .thumb
 
-downsampler_return:
+C_downsampler_return:
+    LDR     R0, [SP, #ARG_PCM_STRUCT]
+    LDR     R3, mixer_finished_status           @ this is used to indicate the interrupt handler the rendering was finished properly
+    STR     R3, [R0]
+    ADD     SP, SP, #0x1C
+    POP     {R0-R7}
+    MOV     R8, R0
+    MOV     R9, R1
+    MOV     R10, R2
+    MOV     R11, R3
+    POP     {R3}
+    BX      R3
 
-LDR    R0, [SP, #ARG_PCM_STRUCT]            @ load the main var area to R0
-LDR    R3, mixer_finished_status        @ load some status indication value to R3
-STR    R3, [R0]                @ store this value to the main var area
-ADD    SP, SP, #0x1C
-POP    {R0-R7}
-MOV    R8, R0
-MOV    R9, R1
-MOV    R10, R2
-MOV    R11, R3
-POP    {R3}
-BX    R3
-
-    .align    2
+    .align  2
 
 mixer_finished_status:
     .word    0x68736D53
 
     .arm
-
-C_downsampler:
-LDR    R10, hq_buffer
-LDR    R9, [SP, #ARG_BUFFER_POS]
-LDR    R8, hq_buffer_length
-MOV    R11, #0xFF
-.if PREVENT_CLIP==1
-
-MOV    R12, #0xFFFFFFFF
-MOV    R12, R12, LSL#14
-MOV    R7, #0x630
-
-downsampler_loop:
-
-LDRSH    R2, [R10], #2
-LDRSH    R0, [R10], #2
-LDRSH    R3, [R10], #2
-LDRSH    R1, [R10], #2
-
-CMP    R0, #0x4000
-MOVGE    R0, #0x3F80
-CMP    R0, #-0x4000
-MOVLT    R0, R12
-
-CMP    R1, #0x4000
-MOVGE    R1, #0x3F80
-CMP    R1, #-0x4000
-MOVLT    R1, R12
-
-CMP    R2, #0x4000
-MOVGE    R2, #0x3F80
-CMP    R2, #-0x4000
-MOVLT    R2, R12
-
-CMP    R3, #0x4000
-MOVGE    R3, #0x3F80
-CMP    R3, #-0x4000
-MOVLT    R3, R12
-
-AND    R0, R11, R0, ASR#7
-AND    R1, R11, R1, ASR#7
-AND    R2, R11, R2, ASR#7
-AND    R3, R11, R3, ASR#7
-
-ORR    R2, R2, R3, LSL#8
-ORR    R0, R0, R1, LSL#8
-
-STRH    R2, [R9, R7]
-STRH    R0, [R9], #2
-
-SUBS    R8, #2
-BGT    downsampler_loop
-
-.else
-downsampler_loop:
-
-LDRH    R4, [R10], #2
-LDRH    R0, [R10], #2
-LDRH    R5, [R10], #2
-LDRH    R1, [R10], #2
-LDRH    R6, [R10], #2
-LDRH    R2, [R10], #2
-LDRH    R7, [R10], #2
-LDRH    R3, [R10], #2
-
-AND    R0, R11, R0, LSR#7
-AND    R1, R11, R1, LSR#7
-AND    R2, R11, R2, LSR#7
-AND    R3, R11, R3, LSR#7
-AND    R4, R11, R4, LSR#7
-AND    R5, R11, R5, LSR#7
-AND    R6, R11, R6, LSR#7
-AND    R7, R11, R7, LSR#7
-
-ORR    R4, R4, R5, LSL#8
-ORR    R4, R4, R6, LSL#16
-ORR    R4, R4, R7, LSL#24
-
-ORR    R0, R0, R1, LSL#8
-ORR    R0, R0, R2, LSL#16
-ORR    R0, R0, R3, LSL#24
-
-STR    R4, [R9, #0x630]
-STR    R0, [R9], #4
-
-SUBS    R8, #4
-BGT    downsampler_loop
-
-.endif
-
-ADR    R0, (downsampler_return+1)
-BX    R0
-
-    .align    2
+    .align  2
 
 C_setup_synth:
-
-CMP    R12, #0        @ $030057C4
-BNE    check_synth_type
-
-LDRB    R6, [R3, #SYNTH_WIDTH_CHANGE_1]            @ for saw wave -> 0xF0 (base duty cycle change)
-ADD    R2, R2, R6, LSL#24                @ add it to the current synt
-LDRB    R6, [R3, #SYNTH_WIDTH_CHANGE_2]            @ for saw wave -> 0x80 (base duty cycle change #2)
-ADDS    R6, R2, R6, LSL#24                @ add this to the synth state aswell but keep the old value in R2 and put the new one in R6
-MVNMI    R6, R6                         @ negate if duty cycle is > 50%
-MOV    R10, R6, LSR#8                    @ dividide the final duty cycle by 8 to R10
-LDRB    R1, [R3, #SYNTH_MOD_AMOUNT]            @ for saw wave -> 0xE0
-LDRB    R0, [R3, #SYNTH_BASE_WAVE_DUTY]            @ for saw wave -> 0x10 (base duty cycle offset)
-MOV    R0, R0, LSL#24                    @ convert it to a usable duty cycle
-MLA    R6, R10, R1, R0                    @ calculate the final duty cycle with the offset, and intensity * rotating duty cycle amount
-STMFD    SP!, {R2, R3, R9, R12}
-
-synth_type_0_loop:
-
-LDMIA    R5, {R0-R3, R9, R10, R12, LR}            @ load 8 samples
-CMP    R7, R6                        @ Block #1
-ADDCC    R0, R0, R11, LSL#6
-SUBCS    R0, R0, R11, LSL#6
-ADDS    R7, R7, R4, LSL#3
-CMP    R7, R6                        @ Block #2
-ADDCC    R1, R1, R11, LSL#6
-SUBCS    R1, R1, R11, LSL#6
-ADDS    R7, R7, R4, LSL#3
-CMP    R7, R6                        @ Block #3
-ADDCC    R2, R2, R11, LSL#6
-SUBCS    R2, R2, R11, LSL#6
-ADDS    R7, R7, R4, LSL#3
-CMP    R7, R6                        @ Block #4
-ADDCC    R3, R3, R11, LSL#6
-SUBCS    R3, R3, R11, LSL#6
-ADDS    R7, R7, R4, LSL#3
-CMP    R7, R6                        @ Block #5
-ADDCC    R9, R9, R11, LSL#6
-SUBCS    R9, R9, R11, LSL#6
-ADDS    R7, R7, R4, LSL#3
-CMP    R7, R6                        @ Block #6
-ADDCC    R10, R10, R11, LSL#6
-SUBCS    R10, R10, R11, LSL#6
-ADDS    R7, R7, R4, LSL#3
-CMP    R7, R6                        @ Block #7
-ADDCC    R12, R12, R11, LSL#6
-SUBCS    R12, R12, R11, LSL#6
-ADDS    R7, R7, R4, LSL#3
-CMP    R7, R6                        @ Block #8
-ADDCC    LR, LR, R11, LSL#6
-SUBCS    LR, LR, R11, LSL#6
-ADDS    R7, R7, R4, LSL#3
-
-STMIA    R5!, {R0-R3, R9, R10, R12, LR}            @ write 8 samples
-SUBS    R8, R8, #8                    @ remove #8 from sample count
-BGT    synth_type_0_loop
-
-LDMFD    SP!, {R2, R3, R9, R12}
-B    C_end_mixing
-
-check_synth_type:
-
-SUBS    R12, R12, #1                    @ remove #1 from the synth type byte and check if it's #0
-BNE    synth_type_2                    @ if it still isn't it's synth type 2 (smooth pan flute)
-
-MOV    R6, #0x300                    @ R6 = 0x300
-MOV    R11, R11, LSR#1                    @ halve the volume
-BIC    R11, R11, #0xFF00                @ clear bad bits from division
-MOV    R12, #0x70                    @ R12 = 0x70
-
-synth_type_1_loop:
-
-LDMIA    R5, {R0, R1, R10, LR}                @ load 4 samples from memory
-ADDS    R7, R7, R4, LSL#3                @ Block #1 (some oscillator type code)
-RSB    R9, R12, R7, LSR#24
-MOV    R6, R7, LSL#1
-SUB    R9, R9, R6, LSR#27
-ADDS    R2, R9, R2, ASR#1
-MLANE    R0, R11, R2, R0
-
-ADDS    R7, R7, R4, LSL#3                @ Block #2
-RSB    R9, R12, R7, LSR#24
-MOV    R6, R7, LSL#1
-SUB    R9, R9, R6, LSR#27
-ADDS    R2, R9, R2, ASR#1
-MLANE    R1, R11, R2, R1
-
-ADDS    R7, R7, R4, LSL#3                @ Block #3
-RSB    R9, R12, R7, LSR#24
-MOV    R6, R7, LSL#1
-SUB    R9, R9, R6, LSR#27
-ADDS    R2, R9, R2, ASR#1
-MLANE    R10, R11, R2, R10
-
-ADDS    R7, R7, R4, LSL#3                @ Block #4
-RSB    R9, R12, R7, LSR#24
-MOV    R6, R7, LSL#1
-SUB    R9, R9, R6, LSR#27
-ADDS    R2, R9, R2, ASR#1
-MLANE    LR, R11, R2, LR
-
-STMIA    R5!, {R0, R1, R10, LR}
-SUBS    R8, R8, #4
-BGT    synth_type_1_loop
-
-B    C_end_mixing @ goto end
-
-synth_type_2:
-
-MOV    R6, #0x80                    @ write base values to the registers
-MOV    R12, #0x180
-
-synth_type_2_loop:
-
-LDMIA    R5, {R0, R1, R10, LR}                @ load samples from work buffer
-ADDS    R7, R7, R4, LSL#3                @ Block #1
-RSBPL    R9, R6, R7, ASR#23
-SUBMI    R9, R12, R7, LSR#23
-MLA    R0, R11, R9, R0
-
-ADDS    R7, R7, R4, LSL#3                @ Block #2
-RSBPL    R9, R6, R7, ASR#23
-SUBMI    R9, R12, R7, LSR#23
-MLA    R1, R11, R9, R1
-
-ADDS    R7, R7, R4, LSL#3                @ Block #3
-RSBPL    R9, R6, R7, ASR#23
-SUBMI    R9, R12, R7, LSR#23
-MLA    R10, R11, R9, R10
-
-ADDS    R7, R7, R4, LSL#3                @ Block #4
-RSBPL    R9, R6, R7, ASR#23
-SUBMI    R9, R12, R7, LSR#23
-MLA    LR, R11, R9, LR
-
-STMIA    R5!, {R0, R1, R10, LR}                @ store the samples back to the buffer
-SUBS    R8, R8, #4                    @ subtract #4 from the remainging samples
-BGT    synth_type_2_loop
-
-B    C_end_mixing
-
-@****************** SPECIAL MIXING ******************@
-.if ENABLE_DECOMPRESSION==1
-C_setup_special_mixing:        @ $03006BF8
-
-LDR    R6, [R4, #CHN_WAVE_OFFSET]        @ load the wave header offset to R6
-LDRB    R0, [R4]
-TST    R0, #FLAG_CHN_COMP            @ check if the channel is initialized
-BNE    setup_compressed_mixing_frequency    @ skip the setup procedure if it's running in compressed mode already
-
-ORR    R0, R0, #FLAG_CHN_COMP            @ enable the flag in the channel status
-STRB    R0, [R4]                @ store the channel status
-LDRB    R0, [R4, #CHN_MODE]            @ load the channel mode byte
-TST    R0, #MODE_REVERSE            @ check if reverse mode is not enabled
-
-BEQ    determine_compression            @ if Reverse Mode isn't enabled we can directly check if the sample has to get decoded
-
-LDR    R1, [R6, #WAVE_LENGTH]            @ load the amount of samples
-ADD    R1, R1, R6, LSL#1            @ do some start position calculation (???)
-ADD    R1, R1, #0x20
-SUB    R3, R1, R3
-STR    R3, [R4, #CHN_POSITION_ABS]        @ store the final seek position
-
-determine_compression:
-
-LDRH    R0, [R6]                @ load the compression flag from the sample header
-CMP    R0, #0                    @ check if the compression is not enabled
-BEQ    setup_compressed_mixing_frequency    @ skip the compression handler
-
-SUB    R3, R3, R6                @ calc initial position
-SUB    R3, R3, #0x10
-STR    R3, [R4, #CHN_POSITION_ABS]        @ store the inital position (relative, not absolute)
-
-setup_compressed_mixing_frequency:
-
-LDR R0, [R6, #WAVE_LOOP_START]
-STR R0, [SP, #ARG_LOOP_START_POS]
-
-STMFD    SP!, {R4, R9, R12}
-
-MOVS    R11, R11, LSR#1                @ divide master volume by 2
-ADC    R11, R11, #0x8000
-BIC    R11, R11, #0xFF00
-
-LDR    R7, [R4, #CHN_FINE_POSITION]        @ load the fine position
-LDR    R1, [R4, #CHN_FREQUENCY]        @ load the channel frequency
-LDRB    R0, [R4, #CHN_MODE]            @ load the channel mode again
-TST    R0, #MODE_FIXED_FREQ            @ check if fixed frequency mode is enabled
-MOVNE    R1, #0x800000                @ ### SAMPLE STEP FREQUENCY CHANGED TO R7
-MULEQ    R1, R12, R1                @ default rate factor * frequency = sample steps
-
-ADD    R5, R5, R8, LSL#2            @ set the buffer pointer to the end of the channel
-
-LDRH    R0, [R6]                @ load the codec type
-CMP    R0, #0                    @ check if compression is disabled
-BEQ    uncompressed_mixing_reverse_check
-
-MOV    R0, #0xFF000000                @ set the current decoding block to "something very high" so that the first block always gets decoded
-STR    R0, [R4, #CHN_BLOCK_COUNT]        @ write the last decoded block into the channel vars
-LDRB    R0, [R4, #CHN_MODE]            @ check again if reverse mode is enabled
-TST    R0, #MODE_REVERSE            @ test if reverse mode is enabled
-BNE    compressed_mixing_reverse_init        @ check again of reverse mixing is enabled
-
-BL    bdpcm_decoder                @ load a sample from the stream to R12
-MOV    R6, R12                    @ move the base sample to R6
-ADD    R3, R3, #1                @ increase stream position by #1
-BL    bdpcm_decoder                @ load the delta sample and calculate delta value
-SUB    R12, R12, R6
-
-@***** MIXING LOOP REGISTER USAGE ***********@
-@ R0:    Sample to modify from buffer
-@ R1:    sample steps        (MOVED FROM R4)
-@ R2:    remaining samples before loop/end
-@ R3:    sample position
-@ R4:    channel pointer
-@ R5:    pointer to the end of buffer
-@ R6:    Base sample
-@ R7:    fine position
-@ R8:    remaining samples for current buffer
-@ R9:    interpolated sample
-@ R10:    not used
-@ R11:    volume
-@ R12:    Delta Sample
-@ LR:    not used
-@********************************************@
-
-compressed_mixing_loop:
-
-MUL    R9, R7, R12                @ delta sample * fine position = interpolated DELTA
-MOV    R9, R9, ASR#22                @ scale down the sample
-ADDS    R9, R9, R6, LSL#1            @ double the base sample and add it to the interpolated downscaled DELTA
-LDRNE    R0, [R5, -R8, LSL#2]            @ if the sample is NOT 0 load the sample from buffer and store the calulated value
-MLANE    R0, R11, R9, R0                @ add the sample to the buffer sample and apply volume
-STRNE    R0, [R5, -R8, LSL#2]            @ store the sample if it's not Zero
-ADD    R7, R7, R1                @ ### changed from R4 to R1
-MOVS    R9, R7, LSR#23                @ check if there is new samples to load
-
-BEQ    compressed_mixing_load_skip        @ no new samples need to be loaded
-
-SUBS    R2, R2, R7, LSR#23            @ remove the sample overflow from the remaining samples
-BLLE    C_mixing_loop_or_end @ call the loop/ending handler if the countdown reached zero or something negative
-SUBS    R9, R9, #1                @ check if only one sample has to get loaded
-ADDEQ    R6, R12, R6                @ if this is the case we can calculate the new base sample
-BEQ    compressed_mixing_base_load_skip
-
-ADD    R3, R3, R9                @ these opcodes are equivalent to LDRNESB R6, [R3, R9]!
-BL    bdpcm_decoder
-MOV    R6, R12
-
-compressed_mixing_base_load_skip:
-
-ADD    R3, R3, #1                    @ equivalent to LDRSB    R12, [R3, #1]!
-BL    bdpcm_decoder
-SUB    R12, R12, R6
-BIC    R7, R7, #0x3F800000            @ clear the overflow bits by using the according bitmask
-
-compressed_mixing_load_skip:
-
-SUBS    R8, R8, #1                @ remove #1 from the remaining samples
-BGT    compressed_mixing_loop
-
-@SUB    R3, R3, #1                @ sample pointer -1 (???); ALREADY DONE BY mixing_end_func
-B    C_end_mixing
-
-
-
-
-compressed_mixing_reverse_init:
-
-SUB    R3, R3, #1                @ subtract one from the reverse playback location initially
-BL    bdpcm_decoder                @ fetch a sample from stream
-MOV    R6, R12                    @ bdpcm_decoder returns base sample in R12 --> R6
-SUB    R3, R3, #1                @ seek one sample further backwards
-BL    bdpcm_decoder                @ detch the DELTA sample
-SUB    R12, R12, R6                @ calc the Delta value
-
-compressed_mixing_reverse_loop:
-
-MUL    R9, R7, R12                @ delta sample * fine position = interpolated DELTA
-MOV    R9, R9, ASR#22                @ scale down the sample
-ADDS    R9, R9, R6, LSL#1            @ double the base sample and add it to the interpolated downscaled DELTA
-LDRNE    R0, [R5, -R8, LSL#2]            @ if the sample is NOT 0 load the sample from buffer and store the calulated value
-MLANE    R0, R11, R9, R0                @ add the sample to the buffer sample and apply volume
-STRNE    R0, [R5, -R8, LSL#2]            @ store the sample if it's not Zero
-ADD    R7, R7, R1                @ ### changed from R4 to R1
-MOVS    R9, R7, LSR#23                @ check if there is new samples to load
-
-BEQ    compressed_mixing_reverse_load_skip    @ skip sample loading if we don't need to load new samples from ROM
-
-SUBS    R2, R2, R7, LSR#23            @ remove the overflowed samples from the remaining samples
-BLLE    C_mixing_loop_or_end @ if the sample playback finished go to end handler
-
-SUBS    R9, R9, #1                @ remove sample overflow count by #1
-ADDEQ    R6, R12, R6                @ make the previous delta sample the new base sample if only #1 sample needs to get loaded
-BEQ    compressed_mixing_reverse_base_load_skip @skip base sample loading
-
-SUB    R3, R3, R9                @
-BL    bdpcm_decoder                @
-MOV    R6, R12                    @
-
-compressed_mixing_reverse_base_load_skip:
-
-SUB    R3, R3, #1
-BL    bdpcm_decoder
-SUB    R12, R12, R6                @ load next samples???
-BIC    R7, R7, #0x3F800000            @ clear overflow bits
-
-compressed_mixing_reverse_load_skip:
-
-SUBS    R8, R8, #1
-BGT    compressed_mixing_reverse_loop
-
-@ADD    R3, R3, #2                @ ???, copied from original code
-ADD    R3, R3, #3
-
-B    C_end_mixing
-
-
-uncompressed_mixing_reverse_check:
-
-LDRB    R0, [R4, #1]                @ load the channel mode        =$03006D84
-TST    R0, #MODE_REVERSE            @ check if reverse mode is even enabled
-BEQ    C_end_mixing@ skip the channel if the mode is "akward"
-
-LDRSB    R6, [R3, #-1]!                @ load first negative sample
-LDRSB    R12, [R3, #-1]                @ load the DELTA sample
-SUB    R12, R12, R6                @ calculate DELTA
-
-reverse_mixing_loop:
-
-MUL    R9, R7, R12                @ delta sample * fine position = interpolated DELTA
-MOV    R9, R9, ASR#22                @ scale down the sample
-ADDS    R9, R9, R6, LSL#1            @ double the base sample and add it to the interpolated downscaled DELTA
-LDRNE    R0, [R5, -R8, LSL#2]            @ if the sample is NOT 0 load the sample from buffer and store the calulated value
-MLANE    R0, R11, R9, R0                @ add the sample to the buffer sample and apply volume
-STRNE    R0, [R5, -R8, LSL#2]            @ store the sample if it's not Zero
-ADD    R7, R7, R1                @ ### changed from R4 to R1
-MOVS    R9, R7, LSR#23                @ check if there is new samples to load
-
-BEQ    reverse_mixing_load_skip
-
-SUBS    R2, R2, R7, LSR#23            @ blablabla, all same as above
-BLLE    C_mixing_loop_or_end
-
-MOVS    R9, R9                    @ check if sample 
-ADDEQ    R6, R12, R6
-LDRNESB    R6, [R3, -R9]!
-LDRSB    R12, [R3, #-1]                @ load samples dependent on conditions
-SUB    R12, R12, R6
-BIC    R7, R7, #0x3F800000            @ cut off overflow count to get new fine position
-
-reverse_mixing_load_skip:
-
-SUBS    R8, R8, #1                @ remaining samples -1
-BGT    reverse_mixing_loop            @ continue lopo if there is still samples to process
-
-@ADD    R3, R3, #1                @ copied from original code (???)
-ADD    R3, R3, #2                @ =$03006DE8
-
-B   C_end_mixing 
-
-@**************** SPECIAL MIXING END ****************@
-
-@************** SPECIAL MIXING LOOPING **************@
-
-compressed_loop_end_sub:
-
-
-
-
-@************ SPECIAL MIXING LOOPING END ************@
-
-@****************** BDPCM DEOCODER ******************@
-
-bdpcm_decoder:                @ RETURNS SAMPLE FROM POSITION XXX in R12
-
-STMFD    SP!, {R0, R2, R5-R7, LR}        @ push registers to make them free to use: R0, R2, R5, R6, R7, LR
-MOV    R0, R3, LSR#6                @ shift the relative position over to clip of every but the block offset
-LDR    R12, [R4, #CHN_BLOCK_COUNT]        @ check if the current sample position is at the beginning of the current block
-CMP    R0, R12
-BEQ    bdpcm_decoder_return
-
-STR    R0, [R4, #CHN_BLOCK_COUNT]        @ store the block position to Channel Vars
-MOV    R12, #0x21                @ load decoding byte count to R1 (1 Block = 0x21 Bytes)
-MUL    R2, R12, R0                @ multiply the block count with the block length to calc actual byte position of current block
-LDR    R12, [R4, #CHN_WAVE_OFFSET]        @ load the wave data offset to R1
-ADD    R2, R2, R12                @ add the wave data offset and 0x10 to get the actual position in ROM
-ADD    R2, R2, #0x10                @ 
-LDR    R5, decoder_buffer            @ load the decoder buffer pointer to R5
-ADR    R6, delta_lookup_table            @ load the lookup table pointer to R6
-MOV    R7, #0x40                @ load the block sample count (0x40) to R7
-LDRB    LR, [R2], #1                @ load the first byte & sample from the wave data to LR (each block starts with a signed 8 bit pcm sample) LDRSB not necessary due to the 24 high bits being cut off anyway
-STRB    LR, [R5], #1                @ write the sample to the decoder buffer
-LDRB    R12, [R2], #1                @ load the next 2 samples to R1 (to get decoded) --- LSBits is decoded first and MSBits last
-B    bdpcm_decoder_lsb
-
-bdpcm_decoder_msb:
-
-LDRB    R12, [R2], #1                @ load the next 2 samples to get decoded
-MOV    R0, R12, LSR#4                @ seperate the current samples' bits
-LDRSB    R0, [R6, R0]                @ load the differential value from the lookup table
-ADD    LR, LR, R0                @ add the decoded value to the previous sample value to calc the current samples' level
-STRB    LR, [R5], #1                @ write the output sample to the decoder buffer and increment buffer pointer
-
-bdpcm_decoder_lsb:
-
-AND    R0, R12, #0xF                @ seperate the 4 LSBits
-LDRSB    R0, [R6, R0]                @ but the 4 bit value into the lookup table and save the result to R0
-ADD    LR, LR, R0                @ add the value from the lookup table to the previous value to calc the new one
-STRB    LR, [R5], #1                @ store the decoded sample to the decoding buffer
-SUBS    R7, R7, #2                @ decrease the block sample counter by 2 (2 samples each byte) and check if it is still above 0
-BGT    bdpcm_decoder_msb            @ if there is still samples to decode jump to the MSBits
-
-bdpcm_decoder_return:
-
-LDR    R5, decoder_buffer            @ reload the decompressor buffer offset to R5
-AND    R0, R3, #0x3F                @ cut off the main position bits to read data from short buffer
-LDRSB    R12, [R5, R0]                @ read the decoded sample from buffer
-LDMFD    SP!, {R0, R2, R5-R7, PC}        @ pop registers and return to the compressed sample mixer
-
-@**************** END BDPCM DECODER *****************@
+        CMP     R12, #0
+        BNE     C_check_synth_saw
+
+        /* modulating pulse wave */
+        LDRB    R6, [R3, #SYNTH_WIDTH_CHANGE_1]
+        ADD     R2, R2, R6, LSL#24
+        LDRB    R6, [R3, #SYNTH_WIDTH_CHANGE_2]
+        ADDS    R6, R2, R6, LSL#24
+        MVNMI   R6, R6
+        MOV     R10, R6, LSR#8
+        LDRB    R1, [R3, #SYNTH_MOD_AMOUNT]
+        LDRB    R0, [R3, #SYNTH_BASE_WAVE_DUTY]
+        MOV     R0, R0, LSL#24
+        MLA     R6, R10, R1, R0                 @ calculate the final duty cycle with the offset, and intensity * rotating duty cycle amount
+        STMFD   SP!, {R2, R3, R9, R12}
+
+C_synth_pulse_loop:
+            LDMIA   R5, {R0-R3, R9, R10, R12, LR} @ load 8 samples
+            CMP     R7, R6                      @ Block #1
+            ADDLO   R0, R0, R11, LSL#6
+            SUBHS   R0, R0, R11, LSL#6
+            ADDS    R7, R7, R4, LSL#3
+            CMP     R7, R6                      @ Block #2
+            ADDLO   R1, R1, R11, LSL#6
+            SUBHS   R1, R1, R11, LSL#6
+            ADDS    R7, R7, R4, LSL#3
+            CMP     R7, R6                      @ Block #3
+            ADDLO   R2, R2, R11, LSL#6
+            SUBHS   R2, R2, R11, LSL#6
+            ADDS    R7, R7, R4, LSL#3
+            CMP     R7, R6                      @ Block #4
+            ADDLO   R3, R3, R11, LSL#6
+            SUBHS   R3, R3, R11, LSL#6
+            ADDS    R7, R7, R4, LSL#3
+            CMP     R7, R6                      @ Block #5
+            ADDLO   R9, R9, R11, LSL#6
+            SUBHS   R9, R9, R11, LSL#6
+            ADDS    R7, R7, R4, LSL#3
+            CMP     R7, R6                      @ Block #6
+            ADDLO   R10, R10, R11, LSL#6
+            SUBHS   R10, R10, R11, LSL#6
+            ADDS    R7, R7, R4, LSL#3
+            CMP     R7, R6                      @ Block #7
+            ADDLO   R12, R12, R11, LSL#6
+            SUBHS   R12, R12, R11, LSL#6
+            ADDS    R7, R7, R4, LSL#3
+            CMP     R7, R6                      @ Block #8
+            ADDLO   LR, LR, R11, LSL#6
+            SUBHS   LR, LR, R11, LSL#6
+            ADDS    R7, R7, R4, LSL#3
+            
+            STMIA   R5!, {R0-R3, R9, R10, R12, LR} @ write 8 samples
+            SUBS    R8, R8, #8
+            BGT     C_synth_pulse_loop
+
+        LDMFD   SP!, {R2, R3, R9, R12}
+        B       C_end_mixing
+
+C_check_synth_saw:
+        /*
+         * This is actually not a true saw wave
+         * but looks pretty similar
+         * (has a jump in the middle of the wave)
+         */
+        SUBS    R12, R12, #1
+        BNE     C_synth_triangle
+
+        MOV     R6, #0x300
+        MOV     R11, R11, LSR#1
+        BIC     R11, R11, #0xFF00
+        MOV     R12, #0x70
+
+C_synth_saw_loop:
+
+            LDMIA   R5, {R0, R1, R10, LR}       @ load 4 samples from memory
+            ADDS    R7, R7, R4, LSL#3           @ Block #1 (some oscillator type code)
+            RSB     R9, R12, R7, LSR#24
+            MOV     R6, R7, LSL#1
+            SUB     R9, R9, R6, LSR#27
+            ADDS    R2, R9, R2, ASR#1
+            MLANE   R0, R11, R2, R0
+            
+            ADDS    R7, R7, R4, LSL#3           @ Block #2
+            RSB     R9, R12, R7, LSR#24
+            MOV     R6, R7, LSL#1
+            SUB     R9, R9, R6, LSR#27
+            ADDS    R2, R9, R2, ASR#1
+            MLANE   R1, R11, R2, R1
+            
+            ADDS    R7, R7, R4, LSL#3           @ Block #3
+            RSB     R9, R12, R7, LSR#24
+            MOV     R6, R7, LSL#1
+            SUB     R9, R9, R6, LSR#27
+            ADDS    R2, R9, R2, ASR#1
+            MLANE   R10, R11, R2, R10
+            
+            ADDS    R7, R7, R4, LSL#3           @ Block #4
+            RSB     R9, R12, R7, LSR#24
+            MOV     R6, R7, LSL#1
+            SUB     R9, R9, R6, LSR#27
+            ADDS    R2, R9, R2, ASR#1
+            MLANE   LR, R11, R2, LR
+            
+            STMIA   R5!, {R0, R1, R10, LR}
+            SUBS    R8, R8, #4
+            BGT     C_synth_saw_loop
+
+        B       C_end_mixing
+
+C_synth_triangle:
+        MOV     R6, #0x80
+        MOV     R12, #0x180
+
+C_synth_triangle_loop:
+            LDMIA   R5, {R0, R1, R10, LR}       @ load samples from work buffer
+            ADDS    R7, R7, R4, LSL#3           @ Block #1
+            RSBPL   R9, R6, R7, ASR#23
+            SUBMI   R9, R12, R7, LSR#23
+            MLA     R0, R11, R9, R0
+            
+            ADDS    R7, R7, R4, LSL#3           @ Block #2
+            RSBPL   R9, R6, R7, ASR#23
+            SUBMI   R9, R12, R7, LSR#23
+            MLA     R1, R11, R9, R1
+            
+            ADDS    R7, R7, R4, LSL#3           @ Block #3
+            RSBPL   R9, R6, R7, ASR#23
+            SUBMI   R9, R12, R7, LSR#23
+            MLA     R10, R11, R9, R10
+            
+            ADDS    R7, R7, R4, LSL#3           @ Block #4
+            RSBPL   R9, R6, R7, ASR#23
+            SUBMI   R9, R12, R7, LSR#23
+            MLA     LR, R11, R9, LR
+            
+            STMIA   R5!, {R0, R1, R10, LR}
+            SUBS    R8, R8, #4                  @ subtract #4 from the remainging samples
+            BGT     C_synth_triangle_loop
+
+        B       C_end_mixing
+
+    .if ENABLE_DECOMPRESSION==1
+C_setup_special_mixing:
+        LDR     R6, [R4, #CHN_WAVE_OFFSET]
+        LDRB    R0, [R4]
+        TST     R0, #FLAG_CHN_COMP
+        BNE     C_setup_special_mixing_freq     @ skip the setup procedure if it's running in compressed mode already
+
+        ORR     R0, #FLAG_CHN_COMP
+        STRB    R0, [R4]
+        LDRB    R0, [R4, #CHN_MODE]
+        TST     R0, #MODE_REVERSE
+        BEQ     C_check_compression             @ reversed mode not enabled?
+
+        LDR     R1, [R6, #WAVE_LENGTH]          @ calculate seek position for reverse playback
+        ADD     R1, R1, R6, LSL#1               @ sorry, I don't actually understand that piece of code myself
+        ADD     R1, R1, #0x20
+        SUB     R3, R1, R3
+        STR     R3, [R4, #CHN_POSITION_ABS]
+
+C_check_compression:
+        LDRH    R0, [R6]
+        CMP     R0, #0
+        BEQ     C_setup_special_mixing_freq
+        
+        SUB     R3, R3, R6
+        SUB     R3, R3, #0x10
+        STR     R3, [R4, #CHN_POSITION_ABS]
+
+C_setup_special_mixing_freq:
+        LDR     R0, [R6, #WAVE_LOOP_START]
+        STR     R0, [SP, #ARG_LOOP_START_POS]
+
+        STMFD   SP!, {R4, R9, R12}
+
+        MOVS    R11, R11, LSR#1
+        ADC     R11, R11, #0x8000
+        BIC     R11, R11, #0xFF00
+        
+        LDR     R7, [R4, #CHN_FINE_POSITION]
+        LDR     R1, [R4, #CHN_FREQUENCY]
+        LDRB    R0, [R4, #CHN_MODE]
+        TST     R0, #MODE_FIXED_FREQ
+        MOVNE   R1, #0x800000
+        MULEQ   R1, R12, R1                     @ default rate factor * frequency = sample steps
+        
+        ADD     R5, R5, R8, LSL#2               @ set the buffer pointer to the end of the channel, same as slow mixing mode
+        
+        LDRH    R0, [R6]
+        CMP     R0, #0
+        BEQ     C_uncompressed_reverse_mixing_check
+        
+        MOV     R0, #0xFF000000                 @ --> invalid channel mod
+        STR     R0, [R4, #CHN_BLOCK_COUNT]
+        LDRB    R0, [R4, #CHN_MODE]
+        TST     R0, #MODE_REVERSE
+        BNE     C_setup_compressed_reverse_mixing  @ check again of reverse mixing is enabled
+
+        /* forward compressed mixing */
+        BL      F_bdpcm_decoder
+        MOV     R6, R12
+        ADD     R3, R3, #1
+        BL      F_bdpcm_decoder
+        SUB     R12, R12, R6
+
+        @***** MIXING LOOP REGISTER USAGE ***********@
+        @ R0:    Sample to modify from buffer
+        @ R1:    sample steps        (MOVED FROM R4)
+        @ R2:    remaining samples before loop/end
+        @ R3:    sample position
+        @ R4:    channel pointer
+        @ R5:    pointer to the end of buffer
+        @ R6:    Base sample
+        @ R7:    fine position
+        @ R8:    remaining samples for current buffer
+        @ R9:    interpolated sample
+        @ R10:   not used
+        @ R11:   volume
+        @ R12:   Delta Sample
+        @ LR:    not used
+        @********************************************@
+
+C_compressed_mixing_loop:
+            MUL     R9, R7, R12                 @ check slow mixing for details, same procedure here
+            MOV     R9, R9, ASR#22
+            ADDS    R9, R9, R6, LSL#1
+            LDRNE   R0, [R5, -R8, LSL#2]
+            MLANE   R0, R11, R9, R0
+            STRNE   R0, [R5, -R8, LSL#2]
+            ADD     R7, R7, R1                  @ ### changed from R4 to R1
+            MOVS    R9, R7, LSR#23
+            BEQ     C_compressed_mixing_skip_load
+
+            SUBS    R2, R2, R7, LSR#23
+            BLLE    C_mixing_loop_or_end
+            SUBS    R9, R9, #1
+            ADDEQ   R6, R12, R6
+            BEQ     C_compressed_mixing_skip_base_load
+
+            ADD     R3, R3, R9                  @ equivalent to LDRNESB R6, [R3, R9]!
+            BL      F_bdpcm_decoder
+            MOV     R6, R12
+
+C_compressed_mixing_skip_base_load:
+            ADD     R3, R3, #1                  @ equivalent to LDRSB R12, [R3, #1]!
+            BL      F_bdpcm_decoder
+            SUB     R12, R12, R6
+            BIC     R7, R7, #0x3F800000
+
+C_compressed_mixing_skip_load:
+            SUBS    R8, R8, #1
+            BGT     C_compressed_mixing_loop
+
+        B       C_end_mixing
+
+C_setup_compressed_reverse_mixing:
+        SUB     R3, R3, #1
+        BL      F_bdpcm_decoder
+        MOV     R6, R12
+        SUB     R3, R3, #1
+        BL      F_bdpcm_decoder
+        SUB     R12, R12, R6
+
+C_compressed_reverse_mixing_loop:
+            MUL     R9, R7, R12
+            MOV     R9, R9, ASR#22
+            ADDS    R9, R9, R6, LSL#1
+            LDRNE   R0, [R5, -R8, LSL#2]
+            MLANE   R0, R11, R9, R0
+            STRNE   R0, [R5, -R8, LSL#2]
+            ADD     R7, R7, R1                  @ ### changed from R4 to R1
+            MOVS    R9, R7, LSR#23
+            BEQ     C_compressed_reverse_mixing_skip_load
+
+            SUBS    R2, R2, R7, LSR#23
+            BLLE    C_mixing_loop_or_end
+            SUBS    R9, R9, #1
+            ADDEQ   R6, R12, R6
+            BEQ     C_compressed_reverse_mixing_skip_base_load
+
+            SUB     R3, R3, R9
+            BL      F_bdpcm_decoder
+            MOV     R6, R12
+
+C_compressed_reverse_mixing_skip_base_load:
+            SUB     R3, R3, #1
+            BL      F_bdpcm_decoder
+            SUB     R12, R12, R6
+            BIC     R7, R7, #0x3F800000
+
+C_compressed_reverse_mixing_skip_load:
+            SUBS    R8, R8, #1
+            BGT     C_compressed_reverse_mixing_loop
+
+        ADD     R3, R3, #3
+        B       C_end_mixing
+
+C_uncompressed_reverse_mixing_check:
+        LDRB    R0, [R4, #1]
+        TST     R0, #MODE_REVERSE               @ check if reverse mode is even enabled (consistency)
+        BEQ     C_end_mixing
+        
+        LDRSB   R6, [R3, #-1]!
+        LDRSB   R12, [R3, #-1]
+        SUB     R12, R12, R6
+
+C_uncompressed_reverse_mixing_loop:
+            MUL     R9, R7, R12
+            MOV     R9, R9, ASR#22
+            ADDS    R9, R9, R6, LSL#1
+            LDRNE   R0, [R5, -R8, LSL#2]
+            MLANE   R0, R11, R9, R0
+            STRNE   R0, [R5, -R8, LSL#2]
+            ADD     R7, R7, R1                  @ ### changed from R4 to R1
+            MOVS    R9, R7, LSR#23
+            BEQ     C_uncompressed_reverse_mixing_load_skip
+            
+            SUBS    R2, R2, R7, LSR#23
+            BLLE    C_mixing_loop_or_end
+            
+            MOVS    R9, R9
+            ADDEQ   R6, R12, R6
+            LDRNESB R6, [R3, -R9]!
+            LDRSB   R12, [R3, #-1]
+            SUB     R12, R12, R6
+            BIC     R7, R7, #0x3F800000
+
+C_uncompressed_reverse_mixing_load_skip:
+            SUBS    R8, R8, #1
+            BGT     C_uncompressed_reverse_mixing_loop
+
+        ADD     R3, R3, #2
+        B       C_end_mixing 
+
+/*
+ * This is the main BDPCM Decoder
+ * It decodes and caches a block of PCM data
+ * and returns them in R12
+ */
+F_bdpcm_decoder:
+
+    STMFD   SP!, {R0, R2, R5-R7, LR}
+    MOV     R0, R3, LSR#6                       @ clip off everything but the block offset, each block is 0x40 samples long
+    LDR     R12, [R4, #CHN_BLOCK_COUNT]
+    CMP     R0, R12
+    BEQ     C_bdpcm_decoder_return              @ block already decoded -> skip
+    
+    STR     R0, [R4, #CHN_BLOCK_COUNT]
+    MOV     R12, #0x21                          @ 1 Block = 0x21 Bytes, 0x40 decoded samples
+    MUL     R2, R12, R0
+    LDR     R12, [R4, #CHN_WAVE_OFFSET]
+    ADD     R2, R2, R12                         @ calc block ROM position
+    ADD     R2, R2, #0x10
+    LDR     R5, decoder_buffer
+    ADR     R6, delta_lookup_table
+    MOV     R7, #0x40                           @ 1 block  = 0x40 samples
+    LDRB    LR, [R2], #1
+    STRB    LR, [R5], #1
+    LDRB    R12, [R2], #1
+    B       C_bdpcm_decoder_lsb
+
+C_bdpcm_decoder_msb:
+        LDRB    R12, [R2], #1
+        MOV     R0, R12, LSR#4
+        LDRSB   R0, [R6, R0]
+        ADD     LR, LR, R0
+        STRB    LR, [R5], #1
+
+C_bdpcm_decoder_lsb:
+        AND     R0, R12, #0xF
+        LDRSB   R0, [R6, R0]
+        ADD     LR, LR, R0
+        STRB    LR, [R5], #1
+        SUBS    R7, R7, #2 
+        BGT     C_bdpcm_decoder_msb
+
+C_bdpcm_decoder_return:
+    LDR     R5, decoder_buffer
+    AND     R0, R3, #0x3F
+    LDRSB   R12, [R5, R0]
+    LDMFD   SP!, {R0, R2, R5-R7, PC}
+
+    .align  2
 
 decoder_buffer:
     .word    decoder_buffer_target
+
 delta_lookup_table:
     .byte    0x0, 0x1, 0x4, 0x9, 0x10, 0x19, 0x24, 0x31, 0xC0, 0xCF, 0xDC, 0xE7, 0xF0, 0xF7, 0xFC, 0xFF
-.endif
+
+.endif  /* ENABLE_DECOMPRESSION*/
 
 main_mixer_end:
-
     .end
+
