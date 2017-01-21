@@ -114,7 +114,6 @@ u16 tb_modify_flag_id(u16 flag)
         case 2:
             return flag + 2;
     }
-    assert(0);
     return 0;
 }
 
@@ -229,9 +228,8 @@ void* tb_configure_by_script(void* ptr_script)
             trainerbattle_next_scr_cmd = ptr_script;
             battle_80801F0_something();
             return (void*) (0x081A4EE9); /* some script to execute */
-        case 5:
-            assert(0);
-            return NULL;
+            
+            //this will merge case 5 with default which might not be as intended
         case 6:
         case 8:
             trainerbattle_battle_type = load_byte(ptr_script);
@@ -258,11 +256,14 @@ void* tb_configure_by_script(void* ptr_script)
             trainerbattle_next_scr_cmd = ptr_script;
             battle_80801F0_something();
             return (void*) (0x081A4EE9); /* some script to execute */
-        case 7:
-            assert(0);
-            return NULL;
+            
+            //this will merge case 7 with default
         case 9:
             /* WIN / LOSE resume script */
+            
+            trainerbattle_battle_type = load_byte(ptr_script);
+            ptr_script++;
+            
             trainerbattle_flag_id = tb_modify_flag_id(load_hword(ptr_script));
             ptr_script += 2;
             
@@ -282,7 +283,12 @@ void* tb_configure_by_script(void* ptr_script)
             trainerbattle_message_4 = NULL;
             
             trainerbattle_next_scr_cmd = ptr_script;
-            return (void*) 0x081A4F21; /* some script to execute */
+            
+            battle_80801F0_something();
+            
+            /* one method call is missing here */
+            
+            return (void*) (0x081A4EC1); /* some script to execute */
         default:
             trainerbattle_battle_type = load_byte(ptr_script);
             ptr_script++;
