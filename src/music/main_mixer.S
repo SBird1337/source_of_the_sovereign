@@ -442,7 +442,7 @@ hq_buffer_length:     @ TODO: Replace with variable on stack
 C_mixing_setup:
         /* frequency and mixing loading routine */
         LDR     R8, hq_buffer_length
-        ORRS    R11, R10, R11, LSL#16           @ R11 = 00RR00LL
+        ORRS    R11, R11, R10, LSL#16           @ R11 = 00LL00RR
         BEQ     C_mixing_epilogue               @ volume #0 --> branch and skip channel processing
         /* normal processing otherwise */
         TST     R0, #MODE_FIXED_FREQ
@@ -868,60 +868,132 @@ C_main_mixer_return:
     .align  2
 
 C_downsampler:
-    MOV     R4, #0
-    MOV     R5, #0
+    LDR     R4, =0xFFF80035
+    LDR     R5, =0x0034FFF8
     LDR     R8, hq_buffer_length
     LDR     R9, [SP, #ARG_BUFFER_POS]
     LDR     R10, hq_buffer
-    MOV     R11, #0xFF
-    MOV     R12, #0xFFFFFFFF
-    MOV     R12, R12, LSL#14
-    MOV     R7, #0x630
+    MOV     R11, #0xFF000000
 
 C_downsampler_loop:
-        LDRSH   R2, [R10]
-        LDRSH   R0, [R10, #2]
-        LDRSH   R3, [R10, #4]
-        LDRSH   R1, [R10, #6]
-        STMIA   R10!, {R4, R5}
+        LDMIA   R10, {R0, R1, R2, R3}
 
-        CMP     R0, #0x4000
-        MOVGE   R0, #0x3F80
-        CMP     R0, #-0x4000
-        MOVLT   R0, R12
+        MOV     R12, R0             @ left sample #1
+        CMP     R12, #0x40000000
+        MOVGE   R12, #0x3F800000
+        CMP     R12, #-0x40000000
+        MOVLT   R12, #-0x40000000
+        AND     R6, R11, R12, LSL#1
 
-        CMP     R1, #0x4000
-        MOVGE   R1, #0x3F80
-        CMP     R1, #-0x4000
-        MOVLT   R1, R12
+        MOV     R0, R0, LSL#16      @ right
+        CMP     R0, #0x40000000
+        MOVGE   R0, #0x3F800000
+        CMP     R0, #-0x40000000
+        MOVLT   R0, #-0x40000000
+        AND     R7, R11, R0, LSL#1
 
-        CMP     R2, #0x4000
-        MOVGE   R2, #0x3F80
-        CMP     R2, #-0x4000
-        MOVLT   R2, R12
+        MOV     R12, R1             @ left sample #2
+        CMP     R12, #0x40000000
+        MOVGE   R12, #0x3F800000
+        CMP     R12, #-0x40000000
+        MOVLT   R12, #-0x40000000
+        AND     R12, R11, R12, LSL#1
+        ORR     R6, R12, R6, LSR#8
 
-        CMP     R3, #0x4000
-        MOVGE   R3, #0x3F80
-        CMP     R3, #-0x4000
-        MOVLT   R3, R12
+        MOV     R1, R1, LSL#16      @ right
+        CMP     R1, #0x40000000
+        MOVGE   R1, #0x3F800000
+        CMP     R1, #-0x40000000
+        MOVLT   R1, #-0x40000000
+        AND     R1, R11, R1, LSL#1
+        ORR     R7, R1, R7, LSR#8
 
-        AND     R0, R11, R0, ASR#7
-        AND     R1, R11, R1, ASR#7
-        AND     R2, R11, R2, ASR#7
-        AND     R3, R11, R3, ASR#7
+        MOV     R12, R2             @ left sample #3
+        CMP     R12, #0x40000000
+        MOVGE   R12, #0x3F800000
+        CMP     R12, #-0x40000000
+        MOVLT   R12, #-0x40000000
+        AND     R12, R11, R12, LSL#1
+        ORR     R6, R12, R6, LSR#8
 
-        ORR     R2, R2, R3, LSL#8
-        ORR     R0, R0, R1, LSL#8
+        MOV     R2, R2, LSL#16      @ right
+        CMP     R2, #0x40000000
+        MOVGE   R2, #0x3F800000
+        CMP     R2, #-0x40000000
+        MOVLT   R2, #-0x40000000
+        AND     R2, R11, R2, LSL#1
+        ORR     R7, R2, R7, LSR#8
 
-        STRH    R2, [R9, R7]
-        STRH    R0, [R9], #2
+        MOV     R12, R3             @ left sample #4
+        CMP     R12, #0x40000000
+        MOVGE   R12, #0x3F800000
+        CMP     R12, #-0x40000000
+        MOVLT   R12, #-0x40000000
+        AND     R12, R11, R12, LSL#1
+        ORR     R6, R12, R6, LSR#8
 
-        SUBS    R8, #2
+        MOV     R3, R3, LSL#16      @ right
+        CMP     R3, #0x40000000
+        MOVGE   R3, #0x3F800000
+        CMP     R3, #-0x40000000
+        MOVLT   R3, #-0x40000000
+        AND     R3, R11, R3, LSL#1
+        ORR     R7, R3, R7, LSR#8
+
+        @LDR     R12, [R9, #0x630]    @ left
+        STR     R6, [R9, #0x630]
+        @LDR     R6, [R9]            @ right
+        STR     R7, [R9], #4
+
+        @MOVS    R7, R12, ASR#24
+        @ADDMI   R7, R7, #1
+        @MUL     R3, R4, R7
+        @MOVS    R7, R6, ASR#24
+        @ADDMI   R7, R7, #1
+        @MLA     R3, R5, R7, R3
+        @MOV     R12, R12, LSL#8
+        @MOV     R6, R6, LSL#8
+
+        @MOVS    R7, R12, ASR#24
+        @ADDMI   R7, R7, #1
+        @MUL     R2, R4, R7
+        @MOVS    R7, R6, ASR#24
+        @ADDMI   R7, R7, #1
+        @MLA     R2, R5, R7, R2
+        @MOV     R12, R12, LSL#8
+        @MOV     R6, R6, LSL#8
+
+        @MOVS    R7, R12, ASR#24
+        @ADDMI   R7, R7, #1
+        @MUL     R1, R4, R7
+        @MOVS    R7, R6, ASR#24
+        @ADDMI   R7, R7, #1
+        @MLA     R1, R5, R7, R1
+        @MOV     R12, R12, LSL#8
+        @MOV     R6, R6, LSL#8
+
+        @MOVS    R7, R12, ASR#24
+        @ADDMI   R7, R7, #1
+        @MUL     R0, R4, R7
+        @MOVS    R7, R6, ASR#24
+        @ADDMI   R7, R7, #1
+        @MLA     R0, R5, R7, R0
+        MOV     R0, #0
+        MOV     R1, #0
+        MOV     R2, #0
+        MOV     R3, #0
+
+        STMIA   R10!, {R0, R1, R2, R3}
+
+        SUBS    R8, #4
         BGT     C_downsampler_loop
 
     ADR     R0, (C_downsampler_return+1)
     BX      R0
 
+    .pool
+
+    .align  1
     .thumb
 
 C_downsampler_return:
