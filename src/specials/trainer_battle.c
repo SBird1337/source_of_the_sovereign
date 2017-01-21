@@ -115,6 +115,7 @@ u16 tb_modify_flag_id(u16 flag)
             return flag + 2;
     }
     assert(0);
+    return 0;
 }
 
 /**
