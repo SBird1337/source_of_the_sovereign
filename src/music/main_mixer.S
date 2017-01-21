@@ -42,11 +42,11 @@
 
     /* stack variables */
     .equ    ARG_FRAME_LENGTH, 0x0               @ TODO actually use this variable
-    .equ    ARG_REMAIN_CHN, 0x4                 @ This is the channel count variable    
+    .equ    ARG_REMAIN_CHN, 0x4                 @ This is the channel count variable
     .equ    ARG_BUFFER_POS, 0x8                 @ stores the current output buffer pointer
     .equ    ARG_LOOP_START_POS, 0xC             @ stores wave loop start position in channel loop
     .equ    ARG_LOOP_LENGTH, 0x10               @   ''    ''   ''  end position
-@   .equ    ARG_UKNOWN, 0x14 
+@   .equ    ARG_UKNOWN, 0x14
     .equ    ARG_PCM_STRUCT, 0x18                @ pointer to engine the main work area
 
     /* channel struct */
@@ -124,7 +124,6 @@
     .equ    POKE_INIT, 1
     .equ    DMA_FIX, 1
     .equ    ENABLE_DECOMPRESSION, 1
-    .equ    ENABLE_CLIPPING, 1
 
 .endif
 @*********** IF ENGLISH POKEMON FIRE RED
@@ -135,7 +134,6 @@
     .equ    POKE_INIT, 1
     .equ    DMA_FIX, 1
     .equ    ENABLE_DECOMPRESSION, 1
-    .equ    ENABLE_CLIPPING, 1
 
 .endif
 @*********** IF ENGLISH POKEMON EMERALD
@@ -146,7 +144,6 @@
     .equ    POKE_INIT, 1
     .equ    DMA_FIX, 1
     .equ    ENABLE_DECOMPRESSION, 1
-    .equ    ENABLE_CLIPPING, 1
 
 .endif
 @*********** IF ENGLISH POKEMON FIRE RED
@@ -157,7 +154,6 @@
     .equ    POKE_INIT, 1
     .equ    DMA_FIX, 1
     .equ    ENABLE_DECOMPRESSION, 1
-    .equ    ENABLE_CLIPPING, 1
 
 .endif
 @*********** IF KAWAs JUKEBOX 2006
@@ -168,7 +164,6 @@
     .equ    POKE_INIT, 0
     .equ    DMA_FIX, 0
     .equ    ENABLE_DECOMPRESSION, 0
-    .equ    ENABLE_CLIPPING, 1
 
 .endif
 @*********** IF US FIRE EMBLEM
@@ -178,7 +173,7 @@
     .equ    POKE_INIT, 0
     .equ    DMA_FIX, 0
     .equ    ENABLE_DECOMPRESSION, 0
-    .equ    ENABLE_CLIPPING, 0
+
 .endif
 @***********
 
@@ -197,10 +192,10 @@ main_mixer:
     .align  2
 
 C_setup_reverb_loop:
-    /* 
+    /*
      * reverb is calculated by the following: new_sample = old_sample * reverb_level / 127
      * note that reverb is mono (both sides get mixed together)
-     * 
+     *
      * reverb get's applied to the frame we are currently looking at and the one after that
      * the magic below simply calculateds the pointer for the one after the current one
      */
@@ -208,7 +203,7 @@ C_setup_reverb_loop:
     ADDEQ   R7, R0, #0x350
     ADDNE   R7, R5, R8
     MOV     R4, R8
-    ORR     R3, R3, R3, LSL#16            
+    ORR     R3, R3, R3, LSL#16
     STMFD   SP!, {R8, LR}
     LDR     LR, hq_buffer
 
@@ -224,7 +219,7 @@ C_reverb_loop:
         LDRSB   R12, [R7], #1
         ADD     R0, R0, R1
         ADD     R0, R0, R2
-        ADD     R0, R0, R8
+        ADDS    R0, R0, R8
         ADDMI   R0, R0, #0x4
         ADD     R1, R9, R10
         ADD     R1, R1, R11
@@ -282,7 +277,7 @@ C_setup_channel_state_loop:
      * the volume and envelope calculation takes place
      */
     MOV     R4, R8  @ R4 = buffer length
-    /* 
+    /*
      * this stroes the buffer length to a backup location
      */
     ADR     R0, hq_buffer_length
@@ -296,7 +291,7 @@ C_setup_channel_state_loop:
 
 C_channel_state_loop:
         /* this is the main channel processing loop */
-        STR     R0, [SP, #ARG_REMAIN_CHN]        
+        STR     R0, [SP, #ARG_REMAIN_CHN]
         LDR     R3, [R4, #CHN_WAVE_OFFSET]
         LDRB    R6, [R4, #CHN_STATUS]           @ R6 will hold the channel status
         MOVS    R0, #0xC7                       @ check if any of the channel status flags is set
@@ -316,7 +311,7 @@ C_channel_state_loop:
     .if POKE_INIT==0
         STR     R0, [R4, #CHN_POSITION_ABS]
         LDR     R0, [R3, #WAVE_LENGTH]
-        STR     R0, [R4, #CHN_SAMPLE_COUNTDOWN] 
+        STR     R0, [R4, #CHN_SAMPLE_COUNTDOWN]
     .else
         LDR     R1, [R4, #CHN_SAMPLE_COUNTDOWN]
         ADD     R0, R0, R1
@@ -333,7 +328,7 @@ C_channel_state_loop:
         LSR     R0, R2, #6
         BEQ     C_adsr_attack
         /* loop enabled here */
-        MOVS    R0, #FLAG_CHN_LOOP    
+        MOVS    R0, #FLAG_CHN_LOOP
         ORR     R6, R0
         B       C_adsr_attack
 
@@ -414,7 +409,7 @@ C_adsr_attack:
         BLO     C_adsr_save_and_finalize
         /* cap attack at 0xFF */
         MOVS    R5, #0xFF
- 
+
 C_adsr_next_state:
         /* switch to next adsr phase */
         SUB     R6, #1
@@ -524,7 +519,7 @@ C_mixing_setup:
         ORR     R0, R1, R0, LSL#9
         CMP     R2, R0                          @ actual comparison
         BLE     C_setup_unbuffered_mixing       @ if not enough samples are available for path 1 --> branch
-        /* 
+        /*
          * This is the mixer path 1.
          * The interesting thing here is that the code will
          * buffer enough samples on stack if enough space
@@ -649,9 +644,9 @@ fast_mixing_instructions:
             NOP
             BIC     R7, R7, R2, ASR#1
             STMIA   R5!, {R0, R1, R10, LR}        @ write 4 stereo samples
-            
+
             LDMIA   R5, {R0, R1, R10, LR}         @ load the next 4 stereo samples
-            MULNE   R9, R7, R12    
+            MULNE   R9, R7, R12
             NOP                                 @ Block #1
             NOP
             MLANE   R0, R11, R9, R0
@@ -747,7 +742,7 @@ C_unbuffered_mixing_loop:
         ADD     R7, R7, R4
         MOVS    R9, R7, LSR#23
         BEQ     C_unbuffered_mixing_skip_load   @ skip the mixing load if it isn't required
-        
+
         SUBS    R2, R2, R7, LSR#23
         BLLE    C_mixing_loop_or_end
         SUBS    R9, R9, #1
@@ -819,7 +814,7 @@ C_fixed_mixing_length_check:
         SUB     LR, LR, #1
         MOVS    LR, LR, LSR#2
         BEQ     C_fixed_mixing_process_rest  @ <= 3 samples to process
-        
+
         SUB     R8, R8, LR, LSL#2               @ subtract the amount of samples we need to process from the buffer length
         SUB     R2, R2, LR, LSL#2               @ subtract the amount of samples we need to process from the remaining samples
         ADR     R1, fixed_mixing_instructions
@@ -879,7 +874,7 @@ C_fixed_mixing_unaligned_loop:
 
 C_mixing_end_store:
         STR     R2, [R4, #CHN_SAMPLE_COUNTDOWN]
-        STR     R3, [R4, #CHN_POSITION_ABS]            
+        STR     R3, [R4, #CHN_POSITION_ABS]
 
 C_mixing_epilogue:
         ADR     R0, (C_end_channel_state_loop+1)
@@ -907,9 +902,6 @@ C_downsampler:
     LDR     R9, [SP, #ARG_BUFFER_POS]
     LDR     R8, hq_buffer_length
     MOV     R11, #0xFF
-
-.if ENABLE_CLIPPING==1
-
     MOV     R12, #0xFFFFFFFF
     MOV     R12, R12, LSL#14
     MOV     R7, #0x630
@@ -919,75 +911,40 @@ C_downsampler_loop:
         LDRSH   R0, [R10], #2
         LDRSH   R3, [R10], #2
         LDRSH   R1, [R10], #2
-        
+
         CMP     R0, #0x4000
         MOVGE   R0, #0x3F80
         CMP     R0, #-0x4000
         MOVLT   R0, R12
-        
+
         CMP     R1, #0x4000
         MOVGE   R1, #0x3F80
         CMP     R1, #-0x4000
         MOVLT   R1, R12
-        
+
         CMP     R2, #0x4000
         MOVGE   R2, #0x3F80
         CMP     R2, #-0x4000
         MOVLT   R2, R12
-        
+
         CMP     R3, #0x4000
         MOVGE   R3, #0x3F80
         CMP     R3, #-0x4000
         MOVLT   R3, R12
-        
+
         AND     R0, R11, R0, ASR#7
         AND     R1, R11, R1, ASR#7
         AND     R2, R11, R2, ASR#7
         AND     R3, R11, R3, ASR#7
-        
+
         ORR     R2, R2, R3, LSL#8
         ORR     R0, R0, R1, LSL#8
-        
+
         STRH    R2, [R9, R7]
         STRH    R0, [R9], #2
-        
+
         SUBS    R8, #2
         BGT     C_downsampler_loop
-        
-.else
-C_downsampler_loop:
-        LDRH    R4, [R10], #2
-        LDRH    R0, [R10], #2
-        LDRH    R5, [R10], #2
-        LDRH    R1, [R10], #2
-        LDRH    R6, [R10], #2
-        LDRH    R2, [R10], #2
-        LDRH    R7, [R10], #2
-        LDRH    R3, [R10], #2
-        
-        AND     R0, R11, R0, LSR#7
-        AND     R1, R11, R1, LSR#7
-        AND     R2, R11, R2, LSR#7
-        AND     R3, R11, R3, LSR#7
-        AND     R4, R11, R4, LSR#7
-        AND     R5, R11, R5, LSR#7
-        AND     R6, R11, R6, LSR#7
-        AND     R7, R11, R7, LSR#7
-        
-        ORR     R4, R4, R5, LSL#8
-        ORR     R4, R4, R6, LSL#16
-        ORR     R4, R4, R7, LSL#24
-        
-        ORR     R0, R0, R1, LSL#8
-        ORR     R0, R0, R2, LSL#16
-        ORR     R0, R0, R3, LSL#24
-        
-        STR     R4, [R9, #0x630]
-        STR     R0, [R9], #4
-        
-        SUBS    R8, #4
-        BGT     C_downsampler_loop
-.endif
 
     ADR     R0, (C_downsampler_return+1)
     BX      R0
@@ -1066,7 +1023,7 @@ C_synth_pulse_loop:
             ADDLO   LR, LR, R11, LSL#6
             SUBHS   LR, LR, R11, LSL#6
             ADDS    R7, R7, R4, LSL#3
-            
+
             STMIA   R5!, {R0-R3, R9, R10, R12, LR} @ write 8 samples
             SUBS    R8, R8, #8
             BGT     C_synth_pulse_loop
@@ -1097,28 +1054,28 @@ C_synth_saw_loop:
             SUB     R9, R9, R6, LSR#27
             ADDS    R2, R9, R2, ASR#1
             MLANE   R0, R11, R2, R0
-            
+
             ADDS    R7, R7, R4, LSL#3           @ Block #2
             RSB     R9, R12, R7, LSR#24
             MOV     R6, R7, LSL#1
             SUB     R9, R9, R6, LSR#27
             ADDS    R2, R9, R2, ASR#1
             MLANE   R1, R11, R2, R1
-            
+
             ADDS    R7, R7, R4, LSL#3           @ Block #3
             RSB     R9, R12, R7, LSR#24
             MOV     R6, R7, LSL#1
             SUB     R9, R9, R6, LSR#27
             ADDS    R2, R9, R2, ASR#1
             MLANE   R10, R11, R2, R10
-            
+
             ADDS    R7, R7, R4, LSL#3           @ Block #4
             RSB     R9, R12, R7, LSR#24
             MOV     R6, R7, LSL#1
             SUB     R9, R9, R6, LSR#27
             ADDS    R2, R9, R2, ASR#1
             MLANE   LR, R11, R2, LR
-            
+
             STMIA   R5!, {R0, R1, R10, LR}
             SUBS    R8, R8, #4
             BGT     C_synth_saw_loop
@@ -1135,22 +1092,22 @@ C_synth_triangle_loop:
             RSBPL   R9, R6, R7, ASR#23
             SUBMI   R9, R12, R7, LSR#23
             MLA     R0, R11, R9, R0
-            
+
             ADDS    R7, R7, R4, LSL#3           @ Block #2
             RSBPL   R9, R6, R7, ASR#23
             SUBMI   R9, R12, R7, LSR#23
             MLA     R1, R11, R9, R1
-            
+
             ADDS    R7, R7, R4, LSL#3           @ Block #3
             RSBPL   R9, R6, R7, ASR#23
             SUBMI   R9, R12, R7, LSR#23
             MLA     R10, R11, R9, R10
-            
+
             ADDS    R7, R7, R4, LSL#3           @ Block #4
             RSBPL   R9, R6, R7, ASR#23
             SUBMI   R9, R12, R7, LSR#23
             MLA     LR, R11, R9, LR
-            
+
             STMIA   R5!, {R0, R1, R10, LR}
             SUBS    R8, R8, #4                  @ subtract #4 from the remainging samples
             BGT     C_synth_triangle_loop
@@ -1180,7 +1137,7 @@ C_check_compression:
         LDRH    R0, [R6]
         CMP     R0, #0
         BEQ     C_setup_special_mixing_freq
-        
+
         SUB     R3, R3, R6
         SUB     R3, R3, #0x10
         STR     R3, [R4, #CHN_POSITION_ABS]
@@ -1194,20 +1151,20 @@ C_setup_special_mixing_freq:
         MOVS    R11, R11, LSR#1
         ADC     R11, R11, #0x8000
         BIC     R11, R11, #0xFF00
-        
+
         LDR     R7, [R4, #CHN_FINE_POSITION]
         LDR     R1, [R4, #CHN_FREQUENCY]
         LDRB    R0, [R4, #CHN_MODE]
         TST     R0, #MODE_FIXED_FREQ
         MOVNE   R1, #0x800000
         MULEQ   R1, R12, R1                     @ default rate factor * frequency = sample steps
-        
+
         ADD     R5, R5, R8, LSL#2               @ set the buffer pointer to the end of the channel, same as slow mixing mode
-        
+
         LDRH    R0, [R6]
         CMP     R0, #0
         BEQ     C_uncompressed_reverse_mixing_check
-        
+
         MOV     R0, #0xFF000000                 @ --> invalid channel mod
         STR     R0, [R4, #CHN_BLOCK_COUNT]
         LDRB    R0, [R4, #CHN_MODE]
@@ -1317,7 +1274,7 @@ C_uncompressed_reverse_mixing_check:
         LDRB    R0, [R4, #1]
         TST     R0, #MODE_REVERSE               @ check if reverse mode is even enabled (consistency)
         BEQ     C_end_mixing
-        
+
         LDRSB   R6, [R3, #-1]!
         LDRSB   R12, [R3, #-1]
         SUB     R12, R12, R6
@@ -1332,10 +1289,10 @@ C_uncompressed_reverse_mixing_loop:
             ADD     R7, R7, R1                  @ ### changed from R4 to R1
             MOVS    R9, R7, LSR#23
             BEQ     C_uncompressed_reverse_mixing_load_skip
-            
+
             SUBS    R2, R2, R7, LSR#23
             BLLE    C_mixing_loop_or_end
-            
+
             MOVS    R9, R9
             ADDEQ   R6, R12, R6
             LDRNESB R6, [R3, -R9]!
@@ -1348,7 +1305,7 @@ C_uncompressed_reverse_mixing_load_skip:
             BGT     C_uncompressed_reverse_mixing_loop
 
         ADD     R3, R3, #2
-        B       C_end_mixing 
+        B       C_end_mixing
 
 /*
  * This is the main BDPCM Decoder
@@ -1362,7 +1319,7 @@ F_bdpcm_decoder:
     LDR     R12, [R4, #CHN_BLOCK_COUNT]
     CMP     R0, R12
     BEQ     C_bdpcm_decoder_return              @ block already decoded -> skip
-    
+
     STR     R0, [R4, #CHN_BLOCK_COUNT]
     MOV     R12, #0x21                          @ 1 Block = 0x21 Bytes, 0x40 decoded samples
     MUL     R2, R12, R0
@@ -1389,7 +1346,7 @@ C_bdpcm_decoder_lsb:
         LDRSB   R0, [R6, R0]
         ADD     LR, LR, R0
         STRB    LR, [R5], #1
-        SUBS    R7, R7, #2 
+        SUBS    R7, R7, #2
         BGT     C_bdpcm_decoder_msb
 
 C_bdpcm_decoder_return:
