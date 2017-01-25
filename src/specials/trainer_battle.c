@@ -286,8 +286,6 @@ void* tb_configure_by_script(void* ptr_script)
             
             battle_80801F0_something();
             
-            /* one method call is missing here */
-            
             return (void*) (0x081A4EC1); /* some script to execute */
         default:
             trainerbattle_battle_type = load_byte(ptr_script);

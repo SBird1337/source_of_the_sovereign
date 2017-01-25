@@ -4541,7 +4541,7 @@
           </df>
         </df>
         <df name="string">
-          <df name="de">
+          <df name="DE">
             <df name="story_text">
               <df name="hesperia">
               </df>
@@ -5157,7 +5157,13 @@
               <in>snd_106_shamisen.s</in>
               <in>snd_107_koto.s</in>
               <in>snd_10_musicbox.s</in>
+              <in>snd_116_taiko_drum.s</in>
               <in>snd_11_vibes.s</in>
+              <in>snd_127_bassdrum.s</in>
+              <in>snd_127_bongo_hi.s</in>
+              <in>snd_127_bongo_lo.s</in>
+              <in>snd_127_clap.s</in>
+              <in>snd_127_claves.s</in>
               <in>snd_127_closed_hat.s</in>
               <in>snd_127_conga_hi.s</in>
               <in>snd_127_conga_hi_sl.s</in>
@@ -5516,10 +5522,6 @@
         <df name="include">
           <df name="assets">
             <df name="interface">
-              <in>arrows.img.h</in>
-              <in>emoticons.img.h</in>
-              <in>menu_box.img.h</in>
-              <in>text_box.img.h</in>
             </df>
             <df name="mug">
               <in>mug_00.c</in>
@@ -5729,7 +5731,6 @@
           <in>var_hook.S</in>
         </df>
         <df name="specials">
-          <in>.#trainer_battle.c</in>
           <in>camera_move.c</in>
           <in>camera_move.h</in>
           <in>custom_specials.c</in>
