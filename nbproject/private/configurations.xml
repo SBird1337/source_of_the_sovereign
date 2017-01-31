@@ -5522,6 +5522,10 @@
         <df name="include">
           <df name="assets">
             <df name="interface">
+              <in>arrows.img.h</in>
+              <in>emoticons.img.h</in>
+              <in>menu_box.img.h</in>
+              <in>text_box.img.h</in>
             </df>
             <df name="mug">
               <in>mug_00.c</in>
@@ -5746,6 +5750,7 @@
             <df name="hesperia">
               <in>globals.S</in>
               <in>globals.txt</in>
+              <in>outdoor.txt</in>
               <in>player_house.S</in>
               <in>player_house.txt</in>
             </df>

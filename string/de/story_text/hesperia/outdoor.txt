@@ -1,0 +1,5 @@
+str_hesp_out_npc_0_0=Guten Tag! Ich bin Schwester Joy!\nLeider befindet sich das Pokémon-\lCenter noch im Umbau.\pWenn du möchtest, kann ich kurz\nreingehen und deine Pokémon heilen.
+str_hesp_out_npc_0_1=Hallo! Soll ich deine Pokémon\nheilen?
+str_hesp_out_npc_0_2=Dann warte hier einen Augenblick!
+str_hesp_out_npc_0_3=Deine Pokémon sind vollständig\ngeheilt.\pKomm jederzeit wieder vorbei!
+str_hesp_out_npc_0_4=Also gut! Solltest du deine Meinung\nändern, dann sprich mich an.

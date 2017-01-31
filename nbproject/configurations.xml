@@ -161,6 +161,7 @@
           <df name="story_text">
             <df name="hesperia">
               <in>globals.txt</in>
+              <in>outdoor.txt</in>
               <in>player_house.txt</in>
             </df>
             <df name="tundra_hq">
@@ -685,6 +686,11 @@
       <item path="string/de/invalid.txt" ex="false" tool="3" flavor2="0">
       </item>
       <item path="string/de/story_text/hesperia/globals.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="string/de/story_text/hesperia/outdoor.txt"
             ex="false"
             tool="3"
             flavor2="0">

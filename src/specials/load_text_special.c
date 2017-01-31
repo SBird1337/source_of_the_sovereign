@@ -129,7 +129,7 @@ void sp_load_text_person()
             return;
         }
     }
-    for(int i = 0; i<= bank; ++i)
+    for(int i = 0; i<= map; ++i)
     {
         if(text_lookup_table[bank][i] == (char***) (0xDEADBEEF))
         {

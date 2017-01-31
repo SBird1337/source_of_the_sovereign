@@ -29,6 +29,8 @@ text_bank_five:
 
 text_bank_zero_map_zero:
     .word text_bank_zero_map_zero_global
+    .word text_bank_zero_map_zero_npc_0
+    .word 0xDEADBEEF
 text_bank_zero_map_one:
     .word 0xDEADBEEF
 
@@ -64,6 +66,22 @@ text_bank_zero_map_zero_global:
     .word str_hesp_out_g_20
     .word str_hesp_out_g_21
     .word str_hesp_out_g_22
+    .word str_hesp_out_g_23
+    .word str_hesp_out_g_24
+    .word str_hesp_out_g_25
+    .word str_hesp_out_g_26
+    .word str_hesp_out_g_27
+    .word str_hesp_out_g_28
+    .word str_hesp_out_g_29
+    .word str_hesp_out_g_30
+    .word 0xDEADBEEF
+
+text_bank_zero_map_zero_npc_0:
+    .word str_hesp_out_npc_0_0
+    .word str_hesp_out_npc_0_1
+    .word str_hesp_out_npc_0_2
+    .word str_hesp_out_npc_0_3
+    .word str_hesp_out_npc_0_4
     .word 0xDEADBEEF
 
 text_bank_two_map_zero_global:

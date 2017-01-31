@@ -21,5 +21,14 @@ str_hesp_out_g_19=Vielen Dank, mein Freund!\pIch verlasse mich auf dich!
 str_hesp_out_g_20=Das Ganze ist jetzt sicherlich ein\nbisschen geschmackslos und kommt\lvielleicht plötzlich, aber ich\lwollte euch eigentlich heute euer\lerstes Pokémon schenken!\pEs sollte zunächst eine\nÜberraschung sein, aber ich denke\ldas habe ich euch leider verdorben.\lEs tut mir Leid!\pAber wir sind, wie es jetzt selber\nmitbekommen habt, in einer ernsten\lSituation, also machen wir es\lschnell.\pFolgt mir ins Labor!
 str_hesp_out_g_21=Habe ich richtig gehört?\pWir bekommen unser eigenes Pokémon?
 str_hesp_out_g_22=\v\h06! \v\h01!\pWorauf wartet ihr!? Wir haben es\neilig!
+str_hesp_out_g_23=\v\h01! Warte einen Augenblick!
+str_hesp_out_g_24=Wohin hast du vor zu gehen?\pDein vater und (buffer1) scheinen\nebenfalls verschwunden zu sein?\pKläre mich bitte auf!
+str_hesp_out_g_25=Und so erzählte der Spieler seiner\nMutter, was vorgefallen war.\pDer Einschlag in Norden von Carun\nCity und dessen Verwüstung, sowie\ldas Erhalten des ersten Pokémon.
+str_hesp_out_g_26=Ach du meine Güte\. Das ist ja\nschrecklich.\pIch hoffe, dass der Familie von\nAchim nichts passiert ist.\pAber ich freue mich auch, dass ihr\nnun beide euer erstes Pokémon\lbekommen habt. Schließlich habt ihr\llange genug darauf gewartet.\pAber nun zurück zum Ernst der Lage.\pBitte begleite deinen Vater nach\nCarun City und schau nach der\lFamilie von Achim.\pAber pass bitte gut auf dich auf\nmein Schatz!
+str_hesp_out_g_27=\v\h01! Ich habe schon auf\ndich gewartet!\pKomm, lass uns ins Labor, Vater\nwartet schon sicher auf uns!
+str_hesp_out_g_28=\v\h01! Warte!
+str_hesp_out_g_29=Gut, dass du noch nicht gegangen\nbist\.\p\v\h06 habe ich wohl leider verpasst\.\nWie dem auch sei.\pIch wollte dir noch etwas zeigen,\nes wird auf deiner Reise\lessentiell sein.\pFolge mir!
+str_hesp_out_g_30=Dieses Gebäude, mit dem roten Dach\nist ein Pokémon Center.\pHier kannst deine Pokémon\nvollständig und kostenlos genesen\llassen und zusätzlich kannst du im\lMarkt ein paar nützliche Items\lkaufen.\pKomm, lass uns reingehen!
+
 
 str_hesp_20_g_0=Na \v\h01, bist du aufgewacht?\nDein Vater erwartet \v\h06\lund dich bereits im Labor. Wenn du\ldich bereit fühlst, dann lass ihn\lnicht warten.\pMich findest du in der Küche mein\nSchatz.
