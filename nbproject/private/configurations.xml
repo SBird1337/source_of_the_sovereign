@@ -5747,9 +5747,13 @@
       <df name="string">
         <df name="de">
           <df name="story_text">
+            <df name="carun_city">
+              <in>globals.txt</in>
+            </df>
             <df name="hesperia">
               <in>globals.S</in>
               <in>globals.txt</in>
+              <in>outdoor.S</in>
               <in>outdoor.txt</in>
               <in>player_house.S</in>
               <in>player_house.txt</in>

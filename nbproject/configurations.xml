@@ -159,6 +159,9 @@
       <df name="string">
         <df name="de">
           <df name="story_text">
+            <df name="carun_city">
+              <in>globals.txt</in>
+            </df>
             <df name="hesperia">
               <in>globals.txt</in>
               <in>outdoor.txt</in>
@@ -684,6 +687,11 @@
       <item path="src/specials/trainer_battle.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="string/de/invalid.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="string/de/story_text/carun_city/globals.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
       </item>
       <item path="string/de/story_text/hesperia/globals.txt"
             ex="false"

@@ -25,7 +25,6 @@
  * @author Sturmvogel
  * @date 15 dec 2016
  * @brief Routines to work with the new overworld npc table
- * 
  */
 
 /* === INCLUDES === */
@@ -36,7 +35,7 @@
 #define OW_REPLACE_TO_VAR   0x500B
 
 /* === STRUCTURES === */
-struct ow_point{
+struct ow_point {
     u16 x;
     u16 y;
 };
@@ -71,19 +70,17 @@ struct npc_type** ow_second_table;
 struct npc_type** ow_third_table;
 
 /* === IMPLEMENTATIONS === */
-struct npc_type* npc_get_type(u16 npc_id)
-{
-    
+struct npc_type* npc_get_type(u16 npc_id) {
+
     /* Not possible in a global scope because of gcc cow magic */
     struct npc_type** npc_tables[3] = {ow_main_table, ow_second_table, ow_third_table};
     //struct npc_type** npc_tables[] = {ow_main_table, ow_second_table, ow_third_table};
     u8 table_id = npc_id >> 8;
-    if(table_id > 2)
+    if (table_id > 2)
         npc_id = (u8) npc_id;
-    
+
     u16 replace_ow = var_get(OW_REPLACE_VAR);
-    if(replace_ow > 0 && replace_ow - 1 == npc_id)
-    {
+    if (replace_ow > 0 && replace_ow - 1 == npc_id) {
         npc_id = var_get(OW_REPLACE_TO_VAR);
     }
     u8 table = (npc_id >> 8);

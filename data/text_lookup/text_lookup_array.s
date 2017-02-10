@@ -12,6 +12,7 @@ text_lookup_array:
 
 text_bank_zero:
     .word text_bank_zero_map_zero
+    .word text_bank_zero_map_one
     .word 0xDEADBEEF
 text_bank_one:
 text_bank_two:
@@ -29,9 +30,21 @@ text_bank_five:
 
 text_bank_zero_map_zero:
     .word text_bank_zero_map_zero_global
-    .word text_bank_zero_map_zero_npc_0
+    .word text_npc_not_implemented
+    .word text_npc_not_implemented
+    .word text_npc_not_implemented
+    .word text_npc_not_implemented
+    .word text_npc_not_implemented
+    .word text_npc_not_implemented
+    .word text_npc_not_implemented
+    .word text_npc_not_implemented
+    .word text_npc_not_implemented
+    .word text_npc_not_implemented
+    .word text_npc_not_implemented
+    .word text_bank_zero_map_zero_npc_12
     .word 0xDEADBEEF
 text_bank_zero_map_one:
+    .word text_bank_zero_map_one_global
     .word 0xDEADBEEF
 
 text_bank_two_map_zero:
@@ -76,7 +89,41 @@ text_bank_zero_map_zero_global:
     .word str_hesp_out_g_30
     .word 0xDEADBEEF
 
-text_bank_zero_map_zero_npc_0:
+text_bank_zero_map_one_global:
+    .word str_carun_c_g_0
+    .word str_carun_c_g_1
+    .word str_carun_c_g_2
+    .word str_carun_c_g_3
+    .word str_carun_c_g_4
+    .word str_carun_c_g_5
+    .word str_carun_c_g_6
+    .word str_carun_c_g_7
+    .word str_carun_c_g_8
+    .word str_carun_c_g_9
+    .word str_carun_c_g_10
+    .word str_carun_c_g_11
+    .word str_carun_c_g_12
+    .word str_carun_c_g_13
+    .word str_carun_c_g_14
+    .word str_carun_c_g_15
+    .word str_carun_c_g_16
+    .word str_carun_c_g_17
+    .word str_carun_c_g_18
+    .word str_carun_c_g_19
+    .word str_carun_c_g_20
+    .word str_carun_c_g_21
+    .word str_carun_c_g_22
+    .word str_carun_c_g_23
+    .word str_carun_c_g_24
+    .word str_carun_c_g_25
+    .word str_carun_c_g_26
+    .word str_carun_c_g_27
+    .word str_carun_c_g_28
+    .word str_carun_c_g_29
+    .word str_carun_c_g_30
+    .word 0xDEADBEEF
+
+text_bank_zero_map_zero_npc_12:
     .word str_hesp_out_npc_0_0
     .word str_hesp_out_npc_0_1
     .word str_hesp_out_npc_0_2
@@ -102,6 +149,9 @@ text_bank_five_map_zero_global:
     .word str_tundra_hq_10
     .word str_tundra_hq_11
     .word str_tundra_hq_12
+    .word 0xDEADBEEF
+
+text_npc_not_implemented:
     .word 0xDEADBEEF
 
 .global text_lookup_table
