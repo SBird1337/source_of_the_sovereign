@@ -35,23 +35,23 @@ PLAYER_S_M EQU 0
 // Intro and Naming Hacking //
 
 .org 0x080EC5D0
-.word 0x08078915
+//.word 0x08078915
 
 .org 0x0800C4C8
-.word 0x0800C608
+//.word 0x0800C608
 
 .org 0x08054A68
-.halfword 0x4C3C
-.halfword 0x6820
-.halfword 0x4900
-.halfword 0xE001
-.word str_player_dummy_name
+//.halfword 0x4C3C
+//.halfword 0x6820
+//.halfword 0x4900
+//.halfword 0xE001
+//.word str_player_dummy_name
 
 .org 0x08054A7E
-.halfword 0x4E34
+//.halfword 0x4E34
 
 .org 0x08054B3A
-.word 0x00000000
+//.word 0x00000000
 
 .org 0x080439FC
 .byte EV_CAP
