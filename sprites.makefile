@@ -3,8 +3,7 @@ AR = arm-none-eabi-ar
 LD = arm-none-eabi-ld
 
 GFX_BUILD_DIR = gfx_build
-TMP_FILE = $(GFX_BUILD_DIR)/tmp.o
-TMP_FILE2 = $(GFX_BUILD_DIR)/tmp2.o
+TMP_LD = $(GFX_BUILD_DIR)/tmp.ld
 
 ASSET_ROOT = sots-private/assets
 
@@ -44,18 +43,8 @@ clean:
 	rm -f $(GFX_BUILD_DIR)/overworlds/*
 
 $(SPRITES_BINARY): $(NORMAL_PAL_OBJ) $(SHINY_PAL_OBJ) $(SPRITE_FRONT_OBJ) $(SPRITE_BACK_OBJ) $(NORMAL_CASTFORM_PAL_OBJ) $(SHINY_CASTFORM_PAL_OBJ) $(CASTFORM_FRONT_OBJ) $(CASTFORM_BACK_OBJ) $(OW_OBJ) $(TS_OBJ)
-	rm -f $(TMP_FILE2)
-	rm -f $(TMP_FILE)
-	for file in $^;\
-	do \
-		if [ ! -f $(TMP_FILE) ]; then\
-			$(LD) -r -o $(TMP_FILE) $$file;\
-		else\
-			$(LD) -r -o $(TMP_FILE2) $$file $(TMP_FILE);\
-			mv -f $(TMP_FILE2) $(TMP_FILE);\
-		fi;\
-	done
-	mv $(TMP_FILE) $@
+	echo "INPUT($^)" > $(TMP_LD)
+	$(LD) -r -o $@ -T $(TMP_LD)
 
 # OW Targets
 $(GFX_BUILD_DIR)/overworlds/%.o: $(GFX_BUILD_DIR)/overworlds/%.s
