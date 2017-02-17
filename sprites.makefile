@@ -3,8 +3,7 @@ AR = arm-none-eabi-ar
 LD = arm-none-eabi-ld
 
 GFX_BUILD_DIR = gfx_build
-TMP_FILE = $(GFX_BUILD_DIR)/tmp.o
-TMP_FILE2 = $(GFX_BUILD_DIR)/tmp2.o
+TMP_LD = $(GFX_BUILD_DIR)/tmp.ld
 
 LDFLAGS   := -z muldefs
 
@@ -46,8 +45,8 @@ clean:
 	rm -f $(GFX_BUILD_DIR)/overworlds/*
 
 $(SPRITES_BINARY): $(NORMAL_PAL_OBJ) $(SHINY_PAL_OBJ) $(SPRITE_FRONT_OBJ) $(SPRITE_BACK_OBJ) $(NORMAL_CASTFORM_PAL_OBJ) $(SHINY_CASTFORM_PAL_OBJ) $(CASTFORM_FRONT_OBJ) $(CASTFORM_BACK_OBJ) $(OW_OBJ) $(TS_OBJ)
-	@echo "INPUT($^)" > $(GFX_BUILD_DIR)/sprites.ld
-	$(LD) -r -o $(SPRITES_BINARY) -T $(GFX_BUILD_DIR)/sprites.ld
+	echo "INPUT($^)" > $(TMP_LD)
+	$(LD) -r -o $@ -T $(TMP_LD)
 
 # OW Targets
 $(GFX_BUILD_DIR)/overworlds/%.o: $(GFX_BUILD_DIR)/overworlds/%.s
