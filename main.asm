@@ -45,6 +45,8 @@
 
 .include "patches/text_system.asm"
 
+.include "patches/game_engine/quick_hacks.asm"
+
 .org 0x0815F9B8
     .word 0x08069ED5 // fix nop1 for now...
 

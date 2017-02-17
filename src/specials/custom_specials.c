@@ -1,5 +1,5 @@
 /****************************************************************************
- * Copyright (C) 2015-2016 by the SotS Team                                 *
+ * Copyright (C) 2015-2017 by the SotS Team                                 *
  *                                                                          *
  * This file is part of Sovereign of the Skies.                             *
  *                                                                          *
@@ -36,6 +36,7 @@
 #include <debug.h>
 #include <game_engine.h>
 #include <config.h>
+#include <math.h>
 
 /* === PROTOTYPES === */
 
@@ -60,17 +61,23 @@ void sp_special_casm();
  */
 void sp_clear_variables();
 
+/**
+ * @brief generate a random number, store in last result
+ */
+void sp_random_number();
+
 
 void get_text_pointer_from_lookup();
 
 /* === STATICS === */
 
-static callback special_routines[6] = {
+static callback special_routines[7] = {
     met_play,
     cam_sp_move_camera,
     sp_init_script,
     debug_some_test,
     sp_dns_switch,
+    sp_random_number,
 };
 
 /* === IMPLEMENTATIONS === */
@@ -106,4 +113,9 @@ void sp_clear_variables()
     (void) var_set(MUGSHOT_2_Y, 0);
     (void) var_set(TEXT_VAR, 0);
     return;
+}
+
+void sp_random_number()
+{
+    var_set(0x800D, (__aeabi_uidivmod(random(), var_get(0x8000))));
 }
