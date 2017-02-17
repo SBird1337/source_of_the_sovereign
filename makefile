@@ -84,7 +84,7 @@ $(MAIN_OBJ): $(ALL_OBJ) $(ICONS_AR) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR
 
 .PHONY: clean
 clean:
-	rm -R -f build/*
+	rm -f  $(OUTPATH)/__symbols.sym $(OUTPATH)/pkmn_sots.gba
 	rm -R -f object/*
 	$(MAKE) -C $(dir $(MUSIC_AR)) clean
 	$(MAKE) -C $(dir $(SMPL_AR)) clean
