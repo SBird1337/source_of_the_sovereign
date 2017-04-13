@@ -4998,6 +4998,20 @@
         </df>
       </df>
       <df name="object">
+        <df name="data">
+          <df name="item">
+          </df>
+          <df name="moves">
+          </df>
+          <df name="overworld">
+          </df>
+          <df name="pkmn_tables">
+          </df>
+          <df name="text_lookup">
+          </df>
+          <df name="trainer_sprites">
+          </df>
+        </df>
         <df name="src">
           <df name="agb_debug">
           </df>
@@ -5614,60 +5628,8 @@
               <in>seq_346.s</in>
             </df>
             <df name="S_FINAL">
-              <in>SEQ_BGM_BICYCLE.s</in>
-              <in>SEQ_BGM_CITY_01.s</in>
-              <in>SEQ_BGM_CITY_02.s</in>
-              <in>SEQ_BGM_CITY_03.s</in>
-              <in>SEQ_BGM_CITY_04.s</in>
-              <in>SEQ_BGM_CITY_05.s</in>
-              <in>SEQ_BGM_CITY_06.s</in>
-              <in>SEQ_BGM_DEMO_AMER.s</in>
-              <in>SEQ_BGM_DEMO_R.s</in>
-              <in>SEQ_BGM_DEMO_RL.s</in>
-              <in>SEQ_BGM_DEMO_WTTS.s</in>
-              <in>SEQ_BGM_DESERT.s</in>
-              <in>SEQ_BGM_EYE_01.s</in>
-              <in>SEQ_BGM_EYE_02.s</in>
-              <in>SEQ_BGM_EYE_03.s</in>
-              <in>SEQ_BGM_EYE_RIV_F.s</in>
-              <in>SEQ_BGM_EYE_RIV_M.s</in>
-              <in>SEQ_BGM_EYE_TEAM.s</in>
-              <in>SEQ_BGM_E_CHAMPION.s</in>
-              <in>SEQ_BGM_E_INISHIE.s</in>
-              <in>SEQ_BGM_E_MENU.s</in>
-              <in>SEQ_BGM_LABO.s</in>
-              <in>SEQ_BGM_MART.s</in>
-              <in>SEQ_BGM_OVERTURE.s</in>
-              <in>SEQ_BGM_PC.s</in>
-              <in>SEQ_BGM_P_01.s</in>
-              <in>SEQ_BGM_P_02.s</in>
-              <in>SEQ_BGM_P_03.s</in>
-              <in>SEQ_BGM_P_04.s</in>
-              <in>SEQ_BGM_R_01.s</in>
-              <in>SEQ_BGM_R_02.s</in>
-              <in>SEQ_BGM_R_03.s</in>
-              <in>SEQ_BGM_R_04.s</in>
-              <in>SEQ_BGM_R_05.s</in>
-              <in>SEQ_BGM_R_06.s</in>
-              <in>SEQ_BGM_R_07.s</in>
-              <in>SEQ_BGM_R_08.s</in>
-              <in>SEQ_BGM_SURF.s</in>
-              <in>SEQ_BGM_TITLE.s</in>
-              <in>SEQ_BGM_TOWN_01.s</in>
-              <in>SEQ_BGM_TOWN_02.s</in>
-              <in>SEQ_BGM_TOWN_03.s</in>
-              <in>SEQ_BGM_TOWN_04.s</in>
-              <in>SEQ_BGM_TOWN_05.s</in>
-              <in>SEQ_BGM_TOWN_06.s</in>
-              <in>SEQ_BGM_TOWN_07.s</in>
-              <in>SEQ_BGM_VS_CHAMP.s</in>
-              <in>SEQ_BGM_VS_LEG_1.s</in>
-              <in>SEQ_BGM_VS_NORAPOKE.s</in>
-              <in>SEQ_BGM_VS_RIVAL.s</in>
-              <in>SEQ_BGM_VS_RS_LEADER.s</in>
             </df>
             <df name="S_SE">
-              <in>Click.s</in>
             </df>
             <df name="TODO_ETC">
             </df>
@@ -5818,12 +5780,6 @@
             <df name="SFX">
             </df>
             <df name="temp">
-              <df name="chords">
-              </df>
-              <df name="chords_looped">
-              </df>
-              <df name="chords_normalized">
-              </df>
             </df>
             <df name="WAV">
             </df>
