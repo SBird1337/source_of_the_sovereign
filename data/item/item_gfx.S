@@ -1,458 +1,694 @@
-#define ITEM_GFX_0	.word 0x08E87028, 0x08E8730C
-.text
+@Stehen in FR(U) bei 0x3D4294 (die Pointer jeweils umpointen)
 .align 2
 .thumb
+.text
 
-.global item_gfx_table	
+.global item_gfx_table
 item_gfx_table:
-	.byte  40,112,232,  8,160,112,232,  8, 84,113,232,  8, 36,114,232,  8
-	.byte  76,114,232,  8, 12,115,232,  8, 52,115,232,  8,  4,116,232,  8
-	.byte  44,116,232,  8,220,116,232,  8,  0,117,232,  8,208,117,232,  8
-	.byte 248,117,232,  8,204,118,232,  8,240,118,232,  8,184,119,232,  8
-	.byte 220,119,232,  8,160,120,232,  8,200,120,232,  8,140,121,232,  8
-	.byte 180,121,232,  8,140,121,232,  8,124,122,232,  8, 56,123,232,  8
-	.byte  96,123,232,  8, 56,123,232,  8,  4,124,232,  8,204,124,232,  8
-	.byte 240,124,232,  8,160,125,232,  8, 12,126,232,  8,196,125,232,  8
-	.byte  12,126,232,  8,232,125,232,  8, 12,126,232,  8,188,126,232,  8
-	.byte  12,126,232,  8,224,126,232,  8,  4,127,232,  8,232,127,232,  8
-	.byte   4,127,232,  8, 12,128,232,  8,  4,124,232,  8, 48,128,232,  8
-	.byte   4,124,232,  8, 84,128,232,  8,120,128,232,  8, 32,129,232,  8
-	.byte  72,129,232,  8,112,130,232,  8,164,129,232,  8,112,130,232,  8
-	.byte 140,130,232,  8, 60,131,232,  8, 96,131,232,  8,244,131,232,  8
-	.byte  28,132,232,  8,220,132,232,  8,  4,133,232,  8,180,133,232,  8
-	.byte 220,133,232,  8,104,134,232,  8,136,134,232,  8, 84,135,232,  8
-	.byte 220,133,232,  8,112,135,232,  8,144,135,232,  8, 96,136,232,  8
-	.byte 128,136,232,  8, 64,137,232,  8,128,136,232,  8,100,137,232,  8
-	.byte 128,136,232,  8,136,137,232,  8,128,136,232,  8,172,137,232,  8
-	.byte 208,137,232,  8,156,138,232,  8,192,138,232,  8,116,139,232,  8
-	.byte 192,138,232,  8,152,139,232,  8,192,138,232,  8,188,139,232,  8
-	.byte 192,138,232,  8,224,139,232,  8,192,138,232,  8,  4,140,232,  8
-	.byte  40,140,232,  8,  8,141,232,  8, 48,141,232,  8,240,141,232,  8
-	.byte 220,133,232,  8, 20,142,232,  8, 52,142,232,  8, 40,143,232,  8
-	.byte  80,143,232,  8,172,143,232,  8, 80,143,232,  8,196,143,232,  8
-	.byte  80,143,232,  8,220,143,232,  8, 80,143,232,  8,244,143,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 12,144,232,  8,196,144,232,  8
-	.byte 236,144,232,  8,156,145,232,  8,236,144,232,  8,196,145,232,  8
-	.byte 236,144,232,  8,236,145,232,  8,236,144,232,  8, 20,146,232,  8
-	.byte  60,146,232,  8,  0,147,232,  8, 28,147,232,  8,204,147,232,  8
-	.byte 236,144,232,  8,244,147,232,  8, 28,148,232,  8,196,148,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 88,149,232,  8,236,148,232,  8
-	.byte  88,149,232,  8, 16,149,232,  8, 88,149,232,  8, 52,149,232,  8
-	.byte  88,149,232,  8, 60,150,232,  8, 88,149,232,  8, 96,150,232,  8
-	.byte  88,149,232,  8,132,150,232,  8, 88,149,232,  8,168,150,232,  8
-	.byte 204,150,232,  8,188,151,232,  8,216,151,232,  8,200,152,232,  8
-	.byte  40,112,232,  8,160,112,232,  8,236,152,232,  8,140,153,232,  8
-	.byte 236,152,232,  8,180,153,232,  8,220,153,232,  8,144,154,232,  8
-	.byte 236,152,232,  8,180,154,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8,220,154,232,  8,212,155,232,  8
-	.byte 240,155,232,  8,196,156,232,  8,228,156,232,  8,216,157,232,  8
-	.byte   0,158,232,  8,232,158,232,  8,  8,159,232,  8,232,159,232,  8
-	.byte  12,160,232,  8,  0,161,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,161,232,  8, 96,162,232,  8
-	.byte 168,161,232,  8, 96,162,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte 132,162,232,  8,  0,163,232,  8, 40,163,232,  8,  0,163,232,  8
-	.byte 224,163,232,  8,160,164,232,  8,196,164,232,  8,160,164,232,  8
-	.byte  72,165,232,  8,212,165,232,  8,244,165,232,  8,148,166,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8,176,166,232,  8,132,167,232,  8
-	.byte 164,167,232,  8,108,168,232,  8,140,168,232,  8,104,169,232,  8
-	.byte 144,169,232,  8,108,170,232,  8,140,170,232,  8,108,171,232,  8
-	.byte 140,171,232,  8,100,172,232,  8,132,172,232,  8, 68,173,232,  8
-	.byte 100,173,232,  8, 56,174,232,  8, 92,174,232,  8, 64,175,232,  8
-	.byte 100,175,232,  8, 68,176,232,  8,100,176,232,  8, 44,177,232,  8
-	.byte  72,177,232,  8,224,177,232,  8,  0,178,232,  8,232,178,232,  8
-	.byte  16,179,232,  8,208,179,232,  8,244,179,232,  8,180,180,232,  8
-	.byte 216,180,232,  8,188,181,232,  8,224,181,232,  8,200,182,232,  8
-	.byte 236,182,232,  8,164,183,232,  8,200,183,232,  8,140,184,232,  8
-	.byte 176,184,232,  8,132,185,232,  8,168,185,232,  8, 96,186,232,  8
-	.byte 124,186,232,  8, 72,187,232,  8,108,187,232,  8, 52,188,232,  8
-	.byte  88,188,232,  8, 60,189,232,  8, 96,189,232,  8, 28,190,232,  8
-	.byte  64,190,232,  8, 44,191,232,  8, 76,191,232,  8, 52,192,232,  8
-	.byte  88,192,232,  8, 56,193,232,  8, 92,193,232,  8, 76,194,232,  8
-	.byte 112,194,232,  8, 84,195,232,  8,120,195,232,  8, 64,196,232,  8
-	.byte  92,196,232,  8, 80,197,232,  8,116,197,232,  8, 40,198,232,  8
-	.byte  76,198,232,  8, 28,199,232,  8, 60,199,232,  8,  8,200,232,  8
-	.byte  44,200,232,  8, 12,201,232,  8, 48,201,232,  8,228,201,232,  8
-	.byte   8,202,232,  8,228,202,232,  8,  8,203,232,  8,244,203,232,  8
-	.byte  28,204,232,  8,196,204,232,  8,232,204,232,  8,228,205,232,  8
-	.byte   8,206,232,  8,172,206,232,  8,200,206,232,  8,140,207,232,  8
-	.byte 172,207,232,  8,140,208,232,  8,180,208,232,  8,196,209,232,  8
-	.byte 232,209,232,  8,236,210,232,  8, 16,211,232,  8,244,211,232,  8
-	.byte  24,212,232,  8,248,212,232,  8, 24,213,232,  8,248,213,232,  8
-	.byte  24,214,232,  8,  0,215,232,  8, 32,215,232,  8, 24,216,232,  8
-	.byte  60,216,232,  8,244,216,232,  8, 28,217,232,  8,252,217,232,  8
-	.byte  32,218,232,  8,240,218,232,  8, 20,219,232,  8,224,219,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8,  0,220,232,  8,188,220,232,  8
-	.byte 220,220,232,  8,136,221,232,  8,168,221,232,  8,148,222,232,  8
-	.byte 188,222,232,  8,168,223,232,  8,208,223,232,  8,104,224,232,  8
-	.byte 136,224,232,  8, 76,225,232,  8,220,220,232,  8,112,225,232,  8
-	.byte 144,225,232,  8,124,226,232,  8,164,226,232,  8,148,227,232,  8
-	.byte 176,227,232,  8, 60,228,232,  8, 96,228,232,  8,248,228,232,  8
-	.byte  28,229,232,  8,192,229,232,  8,224,229,232,  8,116,230,232,  8
-	.byte 148,230,232,  8, 72,231,232,  8,108,231,232,  8, 20,232,232,  8
-	.byte  52,232,232,  8,236,232,232,  8, 16,233,232,  8,196,233,232,  8
-	.byte 224,233,232,  8,208,234,232,  8,248,234,232,  8,128,235,232,  8
-	.byte 152,235,232,  8,152,236,232,  8,192,236,232,  8,124,237,232,  8
-	.byte 156,237,232,  8, 64,238,232,  8,100,238,232,  8, 24,239,232,  8
-	.byte  56,239,232,  8,204,239,232,  8,240,239,232,  8,172,240,232,  8
-	.byte 204,240,232,  8,128,241,232,  8,164,241,232,  8, 84,242,232,  8
-	.byte 112,242,232,  8,248,242,232,  8, 16,243,232,  8,248,242,232,  8
-	.byte 216,243,232,  8,136,244,232,  8,176,244,232,  8, 72,245,232,  8
-	.byte 104,245,232,  8, 36,246,232,  8, 68,246,232,  8,204,246,232,  8
-	.byte 236,246,232,  8,184,247,232,  8,212,247,232,  8,116,248,232,  8
-	.byte 148,248,232,  8, 52,249,232,  8, 76,249,232,  8, 28,250,232,  8
-	.byte  56,250,232,  8,236,250,232,  8, 12,251,232,  8, 20,252,232,  8
-	.byte  52,252,232,  8,240,252,232,  8, 24,253,232,  8, 40,143,232,  8
-	.byte 248,253,232,  8,224,254,232,  8,  8,255,232,  8,240,255,232,  8
-	.byte  24,  0,233,  8,220,  0,233,  8,252,  0,233,  8,188,  1,233,  8
-	.byte 224,  1,233,  8,116,  2,233,  8,144,  2,233,  8, 48,  3,233,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 40,112,232,  8,160,112,232,  8
-	.byte  84,  3,233,  8, 32,  4,233,  8, 84,  3,233,  8, 60,  4,233,  8
-	.byte  84,  3,233,  8, 88,  4,233,  8, 84,  3,233,  8,116,  4,233,  8
-	.byte  84,  3,233,  8,144,  4,233,  8,172,  4,233,  8,180,  5,233,  8
-	.byte 216,  5,233,  8,152,  6,233,  8,184,  6,233,  8,116,  7,233,  8
-	.byte 156,  7,233,  8, 72,  8,233,  8,108,  8,233,  8,  8,  9,233,  8
-	.byte  48,  9,233,  8,224,  9,233,  8,  8, 10,233,  8,156, 10,233,  8
-	.byte 180, 10,233,  8, 96, 11,233,  8, 40,112,232,  8,160,112,232,  8
-	.byte 136, 11,233,  8, 84, 12,233,  8,120, 12,233,  8, 32, 13,233,  8
-	.byte  60, 13,233,  8, 20, 14,233,  8, 60, 14,233,  8,228, 14,233,  8
-	.byte  12, 15,233,  8,  8, 16,233,  8, 40, 16,233,  8, 16, 17,233,  8
-	.byte  56, 17,233,  8,156,138,232,  8,184, 17,233,  8, 84, 18,233,  8
-	.byte 120, 18,233,  8, 48, 19,233,  8,120, 18,233,  8, 76, 19,233,  8
-	.byte 104, 19,233,  8, 48, 20,233,  8, 84, 20,233,  8,  8, 21,233,  8
-	.byte  40, 21,233,  8,  8, 22,233,  8, 40, 22,233,  8, 84, 39,233,  8
-	.byte 224, 22,233,  8, 84, 39,233,  8,156, 23,233,  8, 84, 39,233,  8
-	.byte  92, 24,233,  8, 84, 39,233,  8, 24, 25,233,  8,228, 14,233,  8
-	.byte 192, 25,233,  8,204, 26,233,  8,244, 26,233,  8,204, 26,233,  8
-	.byte 228, 27,233,  8,160, 28,233,  8,200, 28,233,  8,196, 29,233,  8
-	.byte 200, 28,233,  8,236, 29,233,  8,200, 28,233,  8, 20, 30,233,  8
-	.byte 200, 28,233,  8, 60, 30,233,  8,200, 28,233,  8,100, 30,233,  8
-	.byte 200, 28,233,  8,140, 30,233,  8,200, 28,233,  8,180, 30,233,  8
-	.byte 200, 28,233,  8,196, 29,233,  8,200, 28,233,  8,220, 30,233,  8
-	.byte 200, 28,233,  8,100, 30,233,  8,200, 28,233,  8,  4, 31,233,  8
-	.byte 200, 28,233,  8, 44, 31,233,  8,200, 28,233,  8,180, 30,233,  8
-	.byte 200, 28,233,  8,180, 30,233,  8,200, 28,233,  8,100, 30,233,  8
-	.byte 200, 28,233,  8, 60, 30,233,  8,200, 28,233,  8,100, 30,233,  8
-	.byte 200, 28,233,  8, 20, 30,233,  8,200, 28,233,  8,220, 30,233,  8
-	.byte 200, 28,233,  8,100, 30,233,  8,200, 28,233,  8,100, 30,233,  8
-	.byte 200, 28,233,  8,220, 30,233,  8,200, 28,233,  8, 84, 31,233,  8
-	.byte 200, 28,233,  8,124, 31,233,  8,200, 28,233,  8,124, 31,233,  8
-	.byte 200, 28,233,  8,164, 31,233,  8,200, 28,233,  8,100, 30,233,  8
-	.byte 200, 28,233,  8,164, 31,233,  8,200, 28,233,  8, 60, 30,233,  8
-	.byte 200, 28,233,  8,204, 31,233,  8,200, 28,233,  8,196, 29,233,  8
-	.byte 200, 28,233,  8,100, 30,233,  8,200, 28,233,  8, 60, 30,233,  8
-	.byte 200, 28,233,  8,124, 31,233,  8,200, 28,233,  8,  4, 31,233,  8
-	.byte 200, 28,233,  8,140, 30,233,  8,200, 28,233,  8,244, 31,233,  8
-	.byte 200, 28,233,  8,  4, 31,233,  8,200, 28,233,  8,244, 31,233,  8
-	.byte 200, 28,233,  8, 28, 32,233,  8,200, 28,233,  8, 44, 31,233,  8
-	.byte 200, 28,233,  8,100, 30,233,  8,200, 28,233,  8,100, 30,233,  8
-	.byte 200, 28,233,  8, 60, 30,233,  8,200, 28,233,  8,100, 30,233,  8
-	.byte 200, 28,233,  8, 44, 31,233,  8,200, 28,233,  8, 84, 31,233,  8
-	.byte 200, 28,233,  8, 60, 30,233,  8,200, 28,233,  8, 44, 31,233,  8
-	.byte 200, 28,233,  8,  4, 31,233,  8,200, 28,233,  8,100, 30,233,  8
-	.byte 200, 28,233,  8, 28, 32,233,  8,200, 28,233,  8, 20, 30,233,  8
-	.byte 200, 28,233,  8,100, 30,233,  8,200, 28,233,  8,100, 30,233,  8
-	.byte 200, 28,233,  8,196, 29,233,  8,200, 28,233,  8, 20, 30,233,  8
-	.byte 200, 28,233,  8, 20, 30,233,  8, 40,112,232,  8,160,112,232,  8
-	.byte  40,112,232,  8,160,112,232,  8, 68, 32,233,  8,252, 32,233,  8
-	.byte  28, 33,233,  8,224, 33,233,  8,  8, 34,233,  8,212, 34,233,  8
-	.byte 252, 34,233,  8,156, 35,233,  8,188, 35,233,  8,168, 36,233,  8
-	.byte 204, 36,233,  8,172, 37,233,  8,208, 37,233,  8,120, 38,233,  8
-	.byte 152, 38,233,  8, 84, 39,233,  8,116, 39,233,  8,104, 40,233,  8
-	.byte 136, 40,233,  8,104, 40,233,  8,120, 41,233,  8, 76, 42,233,  8
-	.byte 112, 42,233,  8,116, 43,233,  8,148, 43,233,  8, 80, 44,233,  8
-	.byte 120, 44,233,  8, 64, 45,233,  8, 96, 45,233,  8, 24, 46,233,  8
-	.byte  60, 46,233,  8,  0, 47,233,  8, 40, 47,233,  8, 40, 48,233,  8
-	.byte  80, 48,233,  8, 72, 49,233,  8,112, 49,233,  8, 20, 50,233,  8
-	.byte  52, 50,233,  8,220, 50,233,  8,  4, 51,233,  8,204, 51,233,  8
-	.byte 240, 51,233,  8,136, 52,233,  8,168, 52,233,  8, 68, 53,233,  8
-	.byte 104, 53,233,  8,  8, 54,233,  8, 88, 54,233,  8, 48, 54,233,  8
-	.byte  88, 54,233,  8, 32, 55,233,  8,180,112,232,  8, 60,113,232,  8
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
-	ITEM_GFX_0
+
+.word item_000Tiles, item_000Pal
+.word item_001Tiles, item_001Pal
+.word item_002Tiles, item_002Pal
+.word item_003Tiles, item_003Pal
+.word item_004Tiles, item_004Pal
+.word item_005Tiles, item_005Pal
+.word item_006Tiles, item_006Pal
+.word item_007Tiles, item_007Pal
+.word item_008Tiles, item_008Pal
+.word item_009Tiles, item_009Pal
+.word item_010Tiles, item_010Pal
+.word item_011Tiles, item_011Pal
+.word item_012Tiles, item_012Pal
+.word item_013Tiles, item_013Pal
+.word item_014Tiles, item_014Pal
+.word item_015Tiles, item_015Pal
+.word item_016Tiles, item_016Pal
+.word item_017Tiles, item_017Pal
+.word item_018Tiles, item_018Pal
+.word item_019Tiles, item_019Pal
+.word item_020Tiles, item_020Pal
+.word item_021Tiles, item_021Pal
+.word item_022Tiles, item_022Pal
+.word item_023Tiles, item_023Pal
+.word item_024Tiles, item_024Pal
+.word item_025Tiles, item_025Pal
+.word item_026Tiles, item_026Pal
+.word item_027Tiles, item_027Pal
+.word item_028Tiles, item_028Pal
+.word item_029Tiles, item_029Pal
+.word item_030Tiles, item_030Pal
+.word item_031Tiles, item_031Pal
+.word item_032Tiles, item_032Pal
+.word item_033Tiles, item_033Pal
+.word item_034Tiles, item_034Pal
+.word item_035Tiles, item_035Pal
+.word item_036Tiles, item_036Pal
+.word item_037Tiles, item_037Pal
+.word item_038Tiles, item_038Pal
+.word item_039Tiles, item_039Pal
+.word item_040Tiles, item_040Pal
+.word item_041Tiles, item_041Pal
+.word item_042Tiles, item_042Pal
+.word item_043Tiles, item_043Pal
+.word item_044Tiles, item_044Pal
+.word item_045Tiles, item_045Pal
+.word item_046Tiles, item_046Pal
+.word item_047Tiles, item_047Pal
+.word item_048Tiles, item_048Pal
+.word item_049Tiles, item_049Pal
+.word item_050Tiles, item_050Pal
+.word item_051Tiles, item_051Pal
+.word item_052Tiles, item_052Pal
+.word item_053Tiles, item_053Pal
+.word item_054Tiles, item_054Pal
+.word item_055Tiles, item_055Pal
+.word item_056Tiles, item_056Pal
+.word item_057Tiles, item_057Pal
+.word item_058Tiles, item_058Pal
+.word item_059Tiles, item_059Pal
+.word item_060Tiles, item_060Pal
+.word item_061Tiles, item_061Pal
+.word item_062Tiles, item_062Pal
+.word item_063Tiles, item_063Pal
+.word item_064Tiles, item_064Pal
+.word item_065Tiles, item_065Pal
+.word item_066Tiles, item_066Pal
+.word item_067Tiles, item_067Pal
+.word item_068Tiles, item_068Pal
+.word item_069Tiles, item_069Pal
+.word item_070Tiles, item_070Pal
+.word item_071Tiles, item_071Pal
+.word item_072Tiles, item_072Pal
+.word item_073Tiles, item_073Pal
+.word item_074Tiles, item_074Pal
+.word item_075Tiles, item_075Pal
+.word item_076Tiles, item_076Pal
+.word item_077Tiles, item_077Pal
+.word item_078Tiles, item_078Pal
+.word item_079Tiles, item_079Pal
+.word item_080Tiles, item_080Pal
+.word item_081Tiles, item_081Pal
+.word item_082Tiles, item_082Pal
+.word item_083Tiles, item_083Pal
+.word item_084Tiles, item_084Pal
+.word item_085Tiles, item_085Pal
+.word item_086Tiles, item_086Pal
+.word item_087Tiles, item_087Pal
+.word item_088Tiles, item_088Pal
+.word item_089Tiles, item_089Pal
+.word item_090Tiles, item_090Pal
+.word item_091Tiles, item_091Pal
+.word item_092Tiles, item_092Pal
+.word item_093Tiles, item_093Pal
+.word item_094Tiles, item_094Pal
+.word item_095Tiles, item_095Pal
+.word item_096Tiles, item_096Pal
+.word item_097Tiles, item_097Pal
+.word item_098Tiles, item_098Pal
+.word item_099Tiles, item_099Pal
+.word item_100Tiles, item_100Pal
+.word item_101Tiles, item_101Pal
+.word item_102Tiles, item_102Pal
+.word item_103Tiles, item_103Pal
+.word item_104Tiles, item_104Pal
+.word item_105Tiles, item_105Pal
+.word item_106Tiles, item_106Pal
+.word item_107Tiles, item_107Pal
+.word item_108Tiles, item_108Pal
+.word item_109Tiles, item_109Pal
+.word item_110Tiles, item_110Pal
+.word item_111Tiles, item_111Pal
+.word item_112Tiles, item_112Pal
+.word item_113Tiles, item_113Pal
+.word item_114Tiles, item_114Pal
+.word item_115Tiles, item_115Pal
+.word item_116Tiles, item_116Pal
+.word item_117Tiles, item_117Pal
+.word item_118Tiles, item_118Pal
+.word item_119Tiles, item_119Pal
+.word item_120Tiles, item_120Pal
+.word item_121Tiles, item_121Pal
+.word item_122Tiles, item_122Pal
+.word item_123Tiles, item_123Pal
+.word item_124Tiles, item_124Pal
+.word item_125Tiles, item_125Pal
+.word item_126Tiles, item_126Pal
+.word item_127Tiles, item_127Pal
+.word item_128Tiles, item_128Pal
+.word item_129Tiles, item_129Pal
+.word item_130Tiles, item_130Pal
+.word item_131Tiles, item_131Pal
+.word item_132Tiles, item_132Pal
+.word item_133Tiles, item_133Pal
+.word item_134Tiles, item_134Pal
+.word item_135Tiles, item_135Pal
+.word item_136Tiles, item_136Pal
+.word item_137Tiles, item_137Pal
+.word item_138Tiles, item_138Pal
+.word item_139Tiles, item_139Pal
+.word item_140Tiles, item_140Pal
+.word item_141Tiles, item_141Pal
+.word item_142Tiles, item_142Pal
+.word item_143Tiles, item_143Pal
+.word item_144Tiles, item_144Pal
+.word item_145Tiles, item_145Pal
+.word item_146Tiles, item_146Pal
+.word item_147Tiles, item_147Pal
+.word item_148Tiles, item_148Pal
+.word item_149Tiles, item_149Pal
+.word item_150Tiles, item_150Pal
+.word item_151Tiles, item_151Pal
+.word item_152Tiles, item_152Pal
+.word item_153Tiles, item_153Pal
+.word item_154Tiles, item_154Pal
+.word item_155Tiles, item_155Pal
+.word item_156Tiles, item_156Pal
+.word item_157Tiles, item_157Pal
+.word item_158Tiles, item_158Pal
+.word item_159Tiles, item_159Pal
+.word item_160Tiles, item_160Pal
+.word item_161Tiles, item_161Pal
+.word item_162Tiles, item_162Pal
+.word item_163Tiles, item_163Pal
+.word item_164Tiles, item_164Pal
+.word item_165Tiles, item_165Pal
+.word item_166Tiles, item_166Pal
+.word item_167Tiles, item_167Pal
+.word item_168Tiles, item_168Pal
+.word item_169Tiles, item_169Pal
+.word item_170Tiles, item_170Pal
+.word item_171Tiles, item_171Pal
+.word item_172Tiles, item_172Pal
+.word item_173Tiles, item_173Pal
+.word item_174Tiles, item_174Pal
+.word item_175Tiles, item_175Pal
+.word item_176Tiles, item_176Pal
+.word item_177Tiles, item_177Pal
+.word item_178Tiles, item_178Pal
+.word item_179Tiles, item_179Pal
+.word item_180Tiles, item_180Pal
+.word item_181Tiles, item_181Pal
+.word item_182Tiles, item_182Pal
+.word item_183Tiles, item_183Pal
+.word item_184Tiles, item_184Pal
+.word item_185Tiles, item_185Pal
+.word item_186Tiles, item_186Pal
+.word item_187Tiles, item_187Pal
+.word item_188Tiles, item_188Pal
+.word item_189Tiles, item_189Pal
+.word item_190Tiles, item_190Pal
+.word item_191Tiles, item_191Pal
+.word item_192Tiles, item_192Pal
+.word item_193Tiles, item_193Pal
+.word item_194Tiles, item_194Pal
+.word item_195Tiles, item_195Pal
+.word item_196Tiles, item_196Pal
+.word item_197Tiles, item_197Pal
+.word item_198Tiles, item_198Pal
+.word item_199Tiles, item_199Pal
+.word item_200Tiles, item_200Pal
+.word item_201Tiles, item_201Pal
+.word item_202Tiles, item_202Pal
+.word item_203Tiles, item_203Pal
+.word item_204Tiles, item_204Pal
+.word item_205Tiles, item_205Pal
+.word item_206Tiles, item_206Pal
+.word item_207Tiles, item_207Pal
+.word item_208Tiles, item_208Pal
+.word item_209Tiles, item_209Pal
+.word item_210Tiles, item_210Pal
+.word item_211Tiles, item_211Pal
+.word item_212Tiles, item_212Pal
+.word item_213Tiles, item_213Pal
+.word item_214Tiles, item_214Pal
+.word item_215Tiles, item_215Pal
+.word item_216Tiles, item_216Pal
+.word item_217Tiles, item_217Pal
+.word item_218Tiles, item_218Pal
+.word item_219Tiles, item_219Pal
+.word item_220Tiles, item_220Pal
+.word item_221Tiles, item_221Pal
+.word item_222Tiles, item_222Pal
+.word item_223Tiles, item_223Pal
+.word item_224Tiles, item_224Pal
+.word item_225Tiles, item_225Pal
+.word item_226Tiles, item_226Pal
+.word item_227Tiles, item_227Pal
+.word item_228Tiles, item_228Pal
+.word item_229Tiles, item_229Pal
+.word item_230Tiles, item_230Pal
+.word item_231Tiles, item_231Pal
+.word item_232Tiles, item_232Pal
+.word item_233Tiles, item_233Pal
+.word item_234Tiles, item_234Pal
+.word item_235Tiles, item_235Pal
+.word item_236Tiles, item_236Pal
+.word item_237Tiles, item_237Pal
+.word item_238Tiles, item_238Pal
+.word item_239Tiles, item_239Pal
+.word item_240Tiles, item_240Pal
+.word item_241Tiles, item_241Pal
+.word item_242Tiles, item_242Pal
+.word item_243Tiles, item_243Pal
+.word item_244Tiles, item_244Pal
+.word item_245Tiles, item_245Pal
+.word item_246Tiles, item_246Pal
+.word item_247Tiles, item_247Pal
+.word item_248Tiles, item_248Pal
+.word item_249Tiles, item_249Pal
+.word item_250Tiles, item_250Pal
+.word item_251Tiles, item_251Pal
+.word item_252Tiles, item_252Pal
+.word item_253Tiles, item_253Pal
+.word item_254Tiles, item_254Pal
+.word item_255Tiles, item_255Pal
+.word item_256Tiles, item_256Pal
+.word item_257Tiles, item_257Pal
+.word item_258Tiles, item_258Pal
+.word item_259Tiles, item_259Pal
+.word item_260Tiles, item_260Pal
+.word item_261Tiles, item_261Pal
+.word item_262Tiles, item_262Pal
+.word item_263Tiles, item_263Pal
+.word item_264Tiles, item_264Pal
+.word item_265Tiles, item_265Pal
+.word item_266Tiles, item_266Pal
+.word item_267Tiles, item_267Pal
+.word item_268Tiles, item_268Pal
+.word item_269Tiles, item_269Pal
+.word item_270Tiles, item_270Pal
+.word item_271Tiles, item_271Pal
+.word item_272Tiles, item_272Pal
+.word item_273Tiles, item_273Pal
+.word item_274Tiles, item_274Pal
+.word item_275Tiles, item_275Pal
+.word item_276Tiles, item_276Pal
+.word item_277Tiles, item_277Pal
+.word item_278Tiles, item_278Pal
+.word item_279Tiles, item_279Pal
+.word item_280Tiles, item_280Pal
+.word item_281Tiles, item_281Pal
+.word item_282Tiles, item_282Pal
+.word item_283Tiles, item_283Pal
+.word item_284Tiles, item_284Pal
+.word item_285Tiles, item_285Pal
+.word item_286Tiles, item_286Pal
+.word item_287Tiles, item_287Pal
+.word item_288Tiles, item_288Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_347Tiles, item_347Pal
+.word item_348Tiles, item_348Pal
+.word item_349Tiles, item_349Pal
+.word item_350Tiles, item_350Pal
+.word item_351Tiles, item_351Pal
+.word item_352Tiles, item_352Pal
+.word item_353Tiles, item_353Pal
+.word item_354Tiles, item_354Pal
+.word item_355Tiles, item_355Pal
+.word item_356Tiles, item_356Pal
+.word item_357Tiles, item_357Pal
+.word item_358Tiles, item_358Pal
+.word item_359Tiles, item_359Pal
+.word item_360Tiles, item_360Pal
+.word item_361Tiles, item_361Pal
+.word item_362Tiles, item_362Pal
+.word item_363Tiles, item_363Pal
+.word item_364Tiles, item_364Pal
+.word item_365Tiles, item_365Pal
+.word item_366Tiles, item_366Pal
+.word item_367Tiles, item_367Pal
+.word item_368Tiles, item_368Pal
+.word item_369Tiles, item_369Pal
+.word item_370Tiles, item_370Pal
+.word item_371Tiles, item_371Pal
+.word item_372Tiles, item_372Pal
+.word item_373Tiles, item_373Pal
+.word item_374Tiles, item_374Pal
+.word item_375Tiles, item_375Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_289Tiles, item_289Pal
+.word item_445Tiles, item_445Pal
+.word item_446Tiles, item_446Pal
+.word item_447Tiles, item_447Pal
+.word item_448Tiles, item_448Pal
+.word item_449Tiles, item_449Pal
+.word item_450Tiles, item_450Pal
+.word item_451Tiles, item_451Pal
+.word item_452Tiles, item_452Pal
+.word item_453Tiles, item_453Pal
+.word item_454Tiles, item_454Pal
+.word item_455Tiles, item_455Pal
+.word item_456Tiles, item_456Pal
+.word item_457Tiles, item_457Pal
+.word item_458Tiles, item_458Pal
+.word item_459Tiles, item_459Pal
+.word item_460Tiles, item_460Pal
+.word item_461Tiles, item_461Pal
+.word item_462Tiles, item_462Pal
+.word item_463Tiles, item_463Pal
+.word item_464Tiles, item_464Pal
+.word item_465Tiles, item_465Pal
+.word item_466Tiles, item_466Pal
+.word item_467Tiles, item_467Pal
+.word item_468Tiles, item_468Pal
+.word item_469Tiles, item_469Pal
+.word item_470Tiles, item_470Pal
+.word item_471Tiles, item_471Pal
+.word item_472Tiles, item_472Pal
+.word item_473Tiles, item_473Pal
+.word item_474Tiles, item_474Pal
+.word item_475Tiles, item_475Pal
+.word item_476Tiles, item_476Pal
+.word item_477Tiles, item_477Pal
+.word item_478Tiles, item_478Pal
+.word item_479Tiles, item_479Pal
+.word item_480Tiles, item_480Pal
+.word item_481Tiles, item_481Pal
+.word item_482Tiles, item_482Pal
+.word item_483Tiles, item_483Pal
+.word item_484Tiles, item_484Pal
+.word item_485Tiles, item_485Pal
+.word item_486Tiles, item_486Pal
+.word item_487Tiles, item_487Pal
+.word item_488Tiles, item_488Pal
+.word item_489Tiles, item_489Pal
+.word item_490Tiles, item_490Pal
+.word item_491Tiles, item_491Pal
+.word item_492Tiles, item_492Pal
+.word item_493Tiles, item_493Pal
+.word item_494Tiles, item_494Pal
+.word item_495Tiles, item_495Pal
+.word item_496Tiles, item_496Pal
+.word item_497Tiles, item_497Pal
+.word item_498Tiles, item_498Pal
+.word item_499Tiles, item_499Pal
+.word item_500Tiles, item_500Pal
+.word item_501Tiles, item_501Pal
+.word item_502Tiles, item_502Pal
+.word item_503Tiles, item_503Pal
+.word item_504Tiles, item_504Pal
+.word item_505Tiles, item_505Pal
+.word item_506Tiles, item_506Pal
+.word item_507Tiles, item_507Pal
+.word item_508Tiles, item_508Pal
+.word item_509Tiles, item_509Pal
+.word item_510Tiles, item_510Pal
+.word item_511Tiles, item_511Pal
+.word item_512Tiles, item_512Pal
+.word item_513Tiles, item_513Pal
+.word item_514Tiles, item_514Pal
+.word item_515Tiles, item_515Pal
+.word item_516Tiles, item_516Pal
+.word item_517Tiles, item_517Pal
+.word item_518Tiles, item_518Pal
+.word item_519Tiles, item_519Pal
+.word item_520Tiles, item_520Pal
+.word item_521Tiles, item_521Pal
+.word item_522Tiles, item_522Pal
+.word item_523Tiles, item_523Pal
+.word item_524Tiles, item_524Pal
+.word item_525Tiles, item_525Pal
+.word item_526Tiles, item_526Pal
+.word item_527Tiles, item_527Pal
+.word item_528Tiles, item_528Pal
+.word item_529Tiles, item_529Pal
+.word item_530Tiles, item_530Pal
+.word item_531Tiles, item_531Pal
+.word item_532Tiles, item_532Pal
+.word item_533Tiles, item_533Pal
+.word item_534Tiles, item_534Pal
+.word item_535Tiles, item_535Pal
+.word item_536Tiles, item_536Pal
+.word item_537Tiles, item_537Pal
+.word item_538Tiles, item_538Pal
+.word item_539Tiles, item_539Pal
+.word item_540Tiles, item_540Pal
+.word item_541Tiles, item_541Pal
+.word item_542Tiles, item_542Pal
+.word item_543Tiles, item_543Pal
+.word item_544Tiles, item_544Pal
+.word item_545Tiles, item_545Pal
+.word item_546Tiles, item_546Pal
+.word item_547Tiles, item_547Pal
+.word item_548Tiles, item_548Pal
+.word item_549Tiles, item_549Pal
+.word item_550Tiles, item_550Pal
+.word item_551Tiles, item_551Pal
+.word item_552Tiles, item_552Pal
+.word item_553Tiles, item_553Pal
+.word item_554Tiles, item_554Pal
+.word item_555Tiles, item_555Pal
+.word item_556Tiles, item_556Pal
+.word item_557Tiles, item_557Pal
+.word item_558Tiles, item_558Pal
+.word item_559Tiles, item_559Pal
+.word item_560Tiles, item_560Pal
+.word item_561Tiles, item_561Pal
+.word item_562Tiles, item_562Pal
+.word item_563Tiles, item_563Pal
+.word item_564Tiles, item_564Pal
+.word item_565Tiles, item_565Pal
+.word item_566Tiles, item_566Pal
+.word item_567Tiles, item_567Pal
+.word item_568Tiles, item_568Pal
+.word item_569Tiles, item_569Pal
+.word item_570Tiles, item_570Pal
+.word item_571Tiles, item_571Pal
+.word item_572Tiles, item_572Pal
+.word item_573Tiles, item_573Pal
+.word item_574Tiles, item_574Pal
+.word item_575Tiles, item_575Pal
+.word item_576Tiles, item_576Pal
+.word item_577Tiles, item_577Pal
+.word item_578Tiles, item_578Pal
+.word item_579Tiles, item_579Pal
+.word item_580Tiles, item_580Pal
+.word item_581Tiles, item_581Pal
+.word item_582Tiles, item_582Pal
+.word item_583Tiles, item_583Pal
+.word item_584Tiles, item_584Pal
+.word item_585Tiles, item_585Pal
+.word item_586Tiles, item_586Pal
+.word item_587Tiles, item_587Pal
+.word item_588Tiles, item_588Pal
+.word item_589Tiles, item_589Pal
+.word item_590Tiles, item_590Pal
+.word item_591Tiles, item_591Pal
+.word item_592Tiles, item_592Pal
+.word item_593Tiles, item_593Pal
+.word item_594Tiles, item_594Pal
+.word item_595Tiles, item_595Pal
+.word item_596Tiles, item_596Pal
+.word item_597Tiles, item_597Pal
+.word item_598Tiles, item_598Pal
+.word item_599Tiles, item_599Pal
+.word item_600Tiles, item_600Pal
+.word item_601Tiles, item_601Pal
+.word item_602Tiles, item_602Pal
+.word item_603Tiles, item_603Pal
+.word item_604Tiles, item_604Pal
+.word item_605Tiles, item_605Pal
+.word item_606Tiles, item_606Pal
+.word item_607Tiles, item_607Pal
+.word item_608Tiles, item_608Pal
+.word item_609Tiles, item_609Pal
+.word item_610Tiles, item_610Pal
+.word item_611Tiles, item_611Pal
+.word item_612Tiles, item_612Pal
+.word item_613Tiles, item_613Pal
+.word item_614Tiles, item_614Pal
+.word item_615Tiles, item_615Pal
+.word item_616Tiles, item_616Pal
+.word item_617Tiles, item_617Pal
+.word item_618Tiles, item_618Pal
+.word item_619Tiles, item_619Pal
+.word item_620Tiles, item_620Pal
+.word item_621Tiles, item_621Pal
+.word item_622Tiles, item_622Pal
+.word item_623Tiles, item_623Pal
+.word item_624Tiles, item_624Pal
+.word item_625Tiles, item_625Pal
+.word item_626Tiles, item_626Pal
+.word item_627Tiles, item_627Pal
+.word item_628Tiles, item_628Pal
+.word item_629Tiles, item_629Pal
+.word item_630Tiles, item_630Pal
+.word item_631Tiles, item_631Pal
+.word item_632Tiles, item_632Pal
+.word item_633Tiles, item_633Pal
+.word item_634Tiles, item_634Pal
+.word item_635Tiles, item_635Pal
+.word item_636Tiles, item_636Pal
+.word item_637Tiles, item_637Pal
+.word item_638Tiles, item_638Pal
+.word item_639Tiles, item_639Pal
+.word item_640Tiles, item_640Pal
+.word item_641Tiles, item_641Pal
+.word item_642Tiles, item_642Pal
+.word item_643Tiles, item_643Pal
+.word item_644Tiles, item_644Pal
+.word item_645Tiles, item_645Pal
+.word item_646Tiles, item_646Pal
+.word item_647Tiles, item_647Pal
+.word item_648Tiles, item_648Pal
+.word item_649Tiles, item_649Pal
+.word item_650Tiles, item_650Pal
+.word item_651Tiles, item_651Pal
+.word item_652Tiles, item_652Pal
+.word item_653Tiles, item_653Pal
+.word item_654Tiles, item_654Pal
+.word item_655Tiles, item_655Pal
+.word item_656Tiles, item_656Pal
+.word item_657Tiles, item_657Pal
+.word item_658Tiles, item_658Pal
+.word item_659Tiles, item_659Pal
+.word item_660Tiles, item_660Pal
+.word item_661Tiles, item_661Pal
+.word item_662Tiles, item_662Pal
+.word item_663Tiles, item_663Pal
+.word item_664Tiles, item_664Pal
+.word item_665Tiles, item_665Pal
+.word item_666Tiles, item_666Pal
+.word item_667Tiles, item_667Pal
+.word item_668Tiles, item_668Pal
+.word item_669Tiles, item_669Pal
+.word item_670Tiles, item_670Pal
+.word item_671Tiles, item_671Pal
+.word item_672Tiles, item_672Pal
+.word item_673Tiles, item_673Pal
+.word item_674Tiles, item_674Pal
+.word item_675Tiles, item_675Pal
+.word item_676Tiles, item_676Pal
+.word item_677Tiles, item_677Pal
+.word item_678Tiles, item_678Pal
+.word item_679Tiles, item_679Pal
+.word item_680Tiles, item_680Pal
+.word item_681Tiles, item_681Pal
+.word item_682Tiles, item_682Pal
+.word item_683Tiles, item_683Pal
+.word item_684Tiles, item_684Pal
+.word item_685Tiles, item_685Pal

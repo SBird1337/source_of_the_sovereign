@@ -11,6 +11,29 @@ ASSET_ROOT = sots-private/assets
 
 SPRITES_BINARY = object/pkmn_sprites.o
 
+PNG_TITLE_BG := $(ASSET_ROOT)/misc/title/title_tileset_background.png
+PNG_TITLE_AEON := $(ASSET_ROOT)/misc/title/title_tileset_latias_latios_deoxys.png
+PNG_TITLE_LOGO := $(ASSET_ROOT)/misc/title/title_tileset_logo_name.png
+PNG_TITLE_START := $(ASSET_ROOT)/misc/title/title_tileset_press_start.png
+PNG_TITLE_CLOUD := $(ASSET_ROOT)/misc/title/title_sprite_sky.png
+
+S_TITLE_BG := $(GFX_BUILD_DIR)/title_screen/title_tileset_background.S
+S_TITLE_AEON := $(GFX_BUILD_DIR)/title_screen/title_tileset_latias_latios_deoxys.S
+S_TITLE_LOGO := $(GFX_BUILD_DIR)/title_screen/title_tileset_logo_name.S
+S_TITLE_START := $(GFX_BUILD_DIR)/title_screen/title_tileset_press_start.S
+S_TITLE_CLOUD := $(GFX_BUILD_DIR)/title_screen/title_sprite_sky.S
+
+O_TITLE_BG := $(GFX_BUILD_DIR)/title_screen/title_tileset_background.o
+O_TITLE_AEON := $(GFX_BUILD_DIR)/title_screen/title_tileset_latias_latios_deoxys.o
+O_TITLE_LOGO := $(GFX_BUILD_DIR)/title_screen/title_tileset_logo_name.o
+O_TITLE_START := $(GFX_BUILD_DIR)/title_screen/title_tileset_press_start.o
+O_TITLE_CLOUD := $(GFX_BUILD_DIR)/title_screen/title_sprite_sky.o
+
+TITLE_OBJ := $(O_TITLE_BG) $(O_TITLE_AEON) $(O_TITLE_LOGO) $(O_TITLE_START) $(O_TITLE_CLOUD)
+
+ITEM_PNG = $(sort $(wildcard $(ASSET_ROOT)/item_icons/*.png))
+ITEM_OBJ = $(addprefix $(GFX_BUILD_DIR)/item/,$(notdir $(ITEM_PNG:.png=.o)))
+
 NORMAL_PNG = $(sort $(wildcard $(ASSET_ROOT)/pkmn_sprites/normal_*.png))
 NORMAL_PAL_OBJ = $(addprefix $(GFX_BUILD_DIR)/sprites/normal_pal/,$(notdir $(NORMAL_PNG:.png=.o)))
 
@@ -44,9 +67,38 @@ clean:
 	rm -f $(GFX_BUILD_DIR)/sprites/back_sprites/*
 	rm -f $(GFX_BUILD_DIR)/overworlds/*
 
-$(SPRITES_BINARY): $(NORMAL_PAL_OBJ) $(SHINY_PAL_OBJ) $(SPRITE_FRONT_OBJ) $(SPRITE_BACK_OBJ) $(NORMAL_CASTFORM_PAL_OBJ) $(SHINY_CASTFORM_PAL_OBJ) $(CASTFORM_FRONT_OBJ) $(CASTFORM_BACK_OBJ) $(OW_OBJ) $(TS_OBJ)
+$(SPRITES_BINARY): $(NORMAL_PAL_OBJ) $(SHINY_PAL_OBJ) $(SPRITE_FRONT_OBJ) $(SPRITE_BACK_OBJ) $(NORMAL_CASTFORM_PAL_OBJ) $(SHINY_CASTFORM_PAL_OBJ) $(CASTFORM_FRONT_OBJ) $(CASTFORM_BACK_OBJ) $(OW_OBJ) $(TS_OBJ) $(ITEM_OBJ) $(TITLE_OBJ)
 	echo "INPUT($^)" > $(TMP_LD)
 	$(LD) -r -o $@ -T $(TMP_LD)
+
+# Special titlescreen targets
+$(GFX_BUILD_DIR)/title_screen/%.o: $(GFX_BUILD_DIR)/title_screen/%.S
+	$(AS) -o $@ $<
+
+$(S_TITLE_BG): $(PNG_TITLE_BG)
+	grit $< -fts -fh! -gt -gB4 -gzl -p! -pz! -m -mzl -mp 4 -mRtf -pu16 -o $@
+
+$(S_TITLE_AEON): $(PNG_TITLE_AEON)
+	grit $< -fts -fh! -gt -gB4 -gzl -p! -pz! -m -mzl -mp 2 -mRtf -pu16 -o $@
+
+$(S_TITLE_LOGO): $(PNG_TITLE_LOGO)
+	grit $< -fts -fh! -gt -gB8 -gzl -p! -pz! -m -mzl -mRtf -pu16 -o $@
+
+$(S_TITLE_START): $(PNG_TITLE_START)
+	grit $< -fts -fh! -gt -gB4 -gzl -p! -pz! -m -mzl -mp 3 -mRtf -pu16 -o $@
+
+$(S_TITLE_CLOUD): $(PNG_TITLE_CLOUD)
+	grit $< -fts -fh! -gt -gB4 -gzl -p -pz! -m! -pu16 -o $@
+
+
+
+# Item Targets
+$(GFX_BUILD_DIR)/item/%.o: $(GFX_BUILD_DIR)/item/%.s
+	$(AS) -o $@ $<
+
+.PRECIOUS: $(GFX_BUILD_DIR)/item/%.s
+$(GFX_BUILD_DIR)/item/%.s: $(ASSET_ROOT)/item_icons/%.png
+	grit $< -fts -fh! -gt -gB4 -gzl -p -pzl -m! -pu16 -o $@
 
 # OW Targets
 $(GFX_BUILD_DIR)/overworlds/%.o: $(GFX_BUILD_DIR)/overworlds/%.s

@@ -74,7 +74,569 @@
       </df>
       <df name="gfx_build">
         <df name="icons">
-          <in>702.s</in>
+        </df>
+        <df name="item">
+          <in>item_000.s</in>
+          <in>item_001.s</in>
+          <in>item_002.s</in>
+          <in>item_003.s</in>
+          <in>item_004.s</in>
+          <in>item_005.s</in>
+          <in>item_006.s</in>
+          <in>item_007.s</in>
+          <in>item_008.s</in>
+          <in>item_009.s</in>
+          <in>item_010.s</in>
+          <in>item_011.s</in>
+          <in>item_012.s</in>
+          <in>item_013.s</in>
+          <in>item_014.s</in>
+          <in>item_015.s</in>
+          <in>item_016.s</in>
+          <in>item_017.s</in>
+          <in>item_018.s</in>
+          <in>item_019.s</in>
+          <in>item_020.s</in>
+          <in>item_021.s</in>
+          <in>item_022.s</in>
+          <in>item_023.s</in>
+          <in>item_024.s</in>
+          <in>item_025.s</in>
+          <in>item_026.s</in>
+          <in>item_027.s</in>
+          <in>item_028.s</in>
+          <in>item_029.s</in>
+          <in>item_030.s</in>
+          <in>item_031.s</in>
+          <in>item_032.s</in>
+          <in>item_033.s</in>
+          <in>item_034.s</in>
+          <in>item_035.s</in>
+          <in>item_036.s</in>
+          <in>item_037.s</in>
+          <in>item_038.s</in>
+          <in>item_039.s</in>
+          <in>item_040.s</in>
+          <in>item_041.s</in>
+          <in>item_042.s</in>
+          <in>item_043.s</in>
+          <in>item_044.s</in>
+          <in>item_045.s</in>
+          <in>item_046.s</in>
+          <in>item_047.s</in>
+          <in>item_048.s</in>
+          <in>item_049.s</in>
+          <in>item_050.s</in>
+          <in>item_051.s</in>
+          <in>item_052.s</in>
+          <in>item_053.s</in>
+          <in>item_054.s</in>
+          <in>item_055.s</in>
+          <in>item_056.s</in>
+          <in>item_057.s</in>
+          <in>item_058.s</in>
+          <in>item_059.s</in>
+          <in>item_060.s</in>
+          <in>item_061.s</in>
+          <in>item_062.s</in>
+          <in>item_063.s</in>
+          <in>item_064.s</in>
+          <in>item_065.s</in>
+          <in>item_066.s</in>
+          <in>item_067.s</in>
+          <in>item_068.s</in>
+          <in>item_069.s</in>
+          <in>item_070.s</in>
+          <in>item_071.s</in>
+          <in>item_072.s</in>
+          <in>item_073.s</in>
+          <in>item_074.s</in>
+          <in>item_075.s</in>
+          <in>item_076.s</in>
+          <in>item_077.s</in>
+          <in>item_078.s</in>
+          <in>item_079.s</in>
+          <in>item_080.s</in>
+          <in>item_081.s</in>
+          <in>item_082.s</in>
+          <in>item_083.s</in>
+          <in>item_084.s</in>
+          <in>item_085.s</in>
+          <in>item_086.s</in>
+          <in>item_087.s</in>
+          <in>item_088.s</in>
+          <in>item_089.s</in>
+          <in>item_090.s</in>
+          <in>item_091.s</in>
+          <in>item_092.s</in>
+          <in>item_093.s</in>
+          <in>item_094.s</in>
+          <in>item_095.s</in>
+          <in>item_096.s</in>
+          <in>item_097.s</in>
+          <in>item_098.s</in>
+          <in>item_099.s</in>
+          <in>item_100.s</in>
+          <in>item_101.s</in>
+          <in>item_102.s</in>
+          <in>item_103.s</in>
+          <in>item_104.s</in>
+          <in>item_105.s</in>
+          <in>item_106.s</in>
+          <in>item_107.s</in>
+          <in>item_108.s</in>
+          <in>item_109.s</in>
+          <in>item_110.s</in>
+          <in>item_111.s</in>
+          <in>item_112.s</in>
+          <in>item_113.s</in>
+          <in>item_114.s</in>
+          <in>item_115.s</in>
+          <in>item_116.s</in>
+          <in>item_117.s</in>
+          <in>item_118.s</in>
+          <in>item_119.s</in>
+          <in>item_120.s</in>
+          <in>item_121.s</in>
+          <in>item_122.s</in>
+          <in>item_123.s</in>
+          <in>item_124.s</in>
+          <in>item_125.s</in>
+          <in>item_126.s</in>
+          <in>item_127.s</in>
+          <in>item_128.s</in>
+          <in>item_129.s</in>
+          <in>item_130.s</in>
+          <in>item_131.s</in>
+          <in>item_132.s</in>
+          <in>item_133.s</in>
+          <in>item_134.s</in>
+          <in>item_135.s</in>
+          <in>item_136.s</in>
+          <in>item_137.s</in>
+          <in>item_138.s</in>
+          <in>item_139.s</in>
+          <in>item_140.s</in>
+          <in>item_141.s</in>
+          <in>item_142.s</in>
+          <in>item_143.s</in>
+          <in>item_144.s</in>
+          <in>item_145.s</in>
+          <in>item_146.s</in>
+          <in>item_147.s</in>
+          <in>item_148.s</in>
+          <in>item_149.s</in>
+          <in>item_150.s</in>
+          <in>item_151.s</in>
+          <in>item_152.s</in>
+          <in>item_153.s</in>
+          <in>item_154.s</in>
+          <in>item_155.s</in>
+          <in>item_156.s</in>
+          <in>item_157.s</in>
+          <in>item_158.s</in>
+          <in>item_159.s</in>
+          <in>item_160.s</in>
+          <in>item_161.s</in>
+          <in>item_162.s</in>
+          <in>item_163.s</in>
+          <in>item_164.s</in>
+          <in>item_165.s</in>
+          <in>item_166.s</in>
+          <in>item_167.s</in>
+          <in>item_168.s</in>
+          <in>item_169.s</in>
+          <in>item_170.s</in>
+          <in>item_171.s</in>
+          <in>item_172.s</in>
+          <in>item_173.s</in>
+          <in>item_174.s</in>
+          <in>item_175.s</in>
+          <in>item_176.s</in>
+          <in>item_177.s</in>
+          <in>item_178.s</in>
+          <in>item_179.s</in>
+          <in>item_180.s</in>
+          <in>item_181.s</in>
+          <in>item_182.s</in>
+          <in>item_183.s</in>
+          <in>item_184.s</in>
+          <in>item_185.s</in>
+          <in>item_186.s</in>
+          <in>item_187.s</in>
+          <in>item_188.s</in>
+          <in>item_189.s</in>
+          <in>item_190.s</in>
+          <in>item_191.s</in>
+          <in>item_192.s</in>
+          <in>item_193.s</in>
+          <in>item_194.s</in>
+          <in>item_195.s</in>
+          <in>item_196.s</in>
+          <in>item_197.s</in>
+          <in>item_198.s</in>
+          <in>item_199.s</in>
+          <in>item_200.s</in>
+          <in>item_201.s</in>
+          <in>item_202.s</in>
+          <in>item_203.s</in>
+          <in>item_204.s</in>
+          <in>item_205.s</in>
+          <in>item_206.s</in>
+          <in>item_207.s</in>
+          <in>item_208.s</in>
+          <in>item_209.s</in>
+          <in>item_210.s</in>
+          <in>item_211.s</in>
+          <in>item_212.s</in>
+          <in>item_213.s</in>
+          <in>item_214.s</in>
+          <in>item_215.s</in>
+          <in>item_216.s</in>
+          <in>item_217.s</in>
+          <in>item_218.s</in>
+          <in>item_219.s</in>
+          <in>item_220.s</in>
+          <in>item_221.s</in>
+          <in>item_222.s</in>
+          <in>item_223.s</in>
+          <in>item_224.s</in>
+          <in>item_225.s</in>
+          <in>item_226.s</in>
+          <in>item_227.s</in>
+          <in>item_228.s</in>
+          <in>item_229.s</in>
+          <in>item_230.s</in>
+          <in>item_231.s</in>
+          <in>item_232.s</in>
+          <in>item_233.s</in>
+          <in>item_234.s</in>
+          <in>item_235.s</in>
+          <in>item_236.s</in>
+          <in>item_237.s</in>
+          <in>item_238.s</in>
+          <in>item_239.s</in>
+          <in>item_240.s</in>
+          <in>item_241.s</in>
+          <in>item_242.s</in>
+          <in>item_243.s</in>
+          <in>item_244.s</in>
+          <in>item_245.s</in>
+          <in>item_246.s</in>
+          <in>item_247.s</in>
+          <in>item_248.s</in>
+          <in>item_249.s</in>
+          <in>item_250.s</in>
+          <in>item_251.s</in>
+          <in>item_252.s</in>
+          <in>item_253.s</in>
+          <in>item_254.s</in>
+          <in>item_255.s</in>
+          <in>item_256.s</in>
+          <in>item_257.s</in>
+          <in>item_258.s</in>
+          <in>item_259.s</in>
+          <in>item_260.s</in>
+          <in>item_261.s</in>
+          <in>item_262.s</in>
+          <in>item_263.s</in>
+          <in>item_264.s</in>
+          <in>item_265.s</in>
+          <in>item_266.s</in>
+          <in>item_267.s</in>
+          <in>item_268.s</in>
+          <in>item_269.s</in>
+          <in>item_270.s</in>
+          <in>item_271.s</in>
+          <in>item_272.s</in>
+          <in>item_273.s</in>
+          <in>item_274.s</in>
+          <in>item_275.s</in>
+          <in>item_276.s</in>
+          <in>item_277.s</in>
+          <in>item_278.s</in>
+          <in>item_279.s</in>
+          <in>item_280.s</in>
+          <in>item_281.s</in>
+          <in>item_282.s</in>
+          <in>item_283.s</in>
+          <in>item_284.s</in>
+          <in>item_285.s</in>
+          <in>item_286.s</in>
+          <in>item_287.s</in>
+          <in>item_288.s</in>
+          <in>item_289.s</in>
+          <in>item_347.s</in>
+          <in>item_348.s</in>
+          <in>item_349.s</in>
+          <in>item_350.s</in>
+          <in>item_351.s</in>
+          <in>item_352.s</in>
+          <in>item_353.s</in>
+          <in>item_354.s</in>
+          <in>item_355.s</in>
+          <in>item_356.s</in>
+          <in>item_357.s</in>
+          <in>item_358.s</in>
+          <in>item_359.s</in>
+          <in>item_360.s</in>
+          <in>item_361.s</in>
+          <in>item_362.s</in>
+          <in>item_363.s</in>
+          <in>item_364.s</in>
+          <in>item_365.s</in>
+          <in>item_366.s</in>
+          <in>item_367.s</in>
+          <in>item_368.s</in>
+          <in>item_369.s</in>
+          <in>item_370.s</in>
+          <in>item_371.s</in>
+          <in>item_372.s</in>
+          <in>item_373.s</in>
+          <in>item_374.s</in>
+          <in>item_375.s</in>
+          <in>item_445.s</in>
+          <in>item_446.s</in>
+          <in>item_447.s</in>
+          <in>item_448.s</in>
+          <in>item_449.s</in>
+          <in>item_450.s</in>
+          <in>item_451.s</in>
+          <in>item_452.s</in>
+          <in>item_453.s</in>
+          <in>item_454.s</in>
+          <in>item_455.s</in>
+          <in>item_456.s</in>
+          <in>item_457.s</in>
+          <in>item_458.s</in>
+          <in>item_459.s</in>
+          <in>item_460.s</in>
+          <in>item_461.s</in>
+          <in>item_462.s</in>
+          <in>item_463.s</in>
+          <in>item_464.s</in>
+          <in>item_465.s</in>
+          <in>item_466.s</in>
+          <in>item_467.s</in>
+          <in>item_468.s</in>
+          <in>item_469.s</in>
+          <in>item_470.s</in>
+          <in>item_471.s</in>
+          <in>item_472.s</in>
+          <in>item_473.s</in>
+          <in>item_474.s</in>
+          <in>item_475.s</in>
+          <in>item_476.s</in>
+          <in>item_477.s</in>
+          <in>item_478.s</in>
+          <in>item_479.s</in>
+          <in>item_480.s</in>
+          <in>item_481.s</in>
+          <in>item_482.s</in>
+          <in>item_483.s</in>
+          <in>item_484.s</in>
+          <in>item_485.s</in>
+          <in>item_486.s</in>
+          <in>item_487.s</in>
+          <in>item_488.s</in>
+          <in>item_489.s</in>
+          <in>item_490.s</in>
+          <in>item_491.s</in>
+          <in>item_492.s</in>
+          <in>item_493.s</in>
+          <in>item_494.s</in>
+          <in>item_495.s</in>
+          <in>item_496.s</in>
+          <in>item_497.s</in>
+          <in>item_498.s</in>
+          <in>item_499.s</in>
+          <in>item_500.s</in>
+          <in>item_501.s</in>
+          <in>item_502.s</in>
+          <in>item_503.s</in>
+          <in>item_504.s</in>
+          <in>item_505.s</in>
+          <in>item_506.s</in>
+          <in>item_507.s</in>
+          <in>item_508.s</in>
+          <in>item_509.s</in>
+          <in>item_510.s</in>
+          <in>item_511.s</in>
+          <in>item_512.s</in>
+          <in>item_513.s</in>
+          <in>item_514.s</in>
+          <in>item_515.s</in>
+          <in>item_516.s</in>
+          <in>item_517.s</in>
+          <in>item_518.s</in>
+          <in>item_519.s</in>
+          <in>item_520.s</in>
+          <in>item_521.s</in>
+          <in>item_522.s</in>
+          <in>item_523.s</in>
+          <in>item_524.s</in>
+          <in>item_525.s</in>
+          <in>item_526.s</in>
+          <in>item_527.s</in>
+          <in>item_528.s</in>
+          <in>item_529.s</in>
+          <in>item_530.s</in>
+          <in>item_531.s</in>
+          <in>item_532.s</in>
+          <in>item_533.s</in>
+          <in>item_534.s</in>
+          <in>item_535.s</in>
+          <in>item_536.s</in>
+          <in>item_537.s</in>
+          <in>item_538.s</in>
+          <in>item_539.s</in>
+          <in>item_540.s</in>
+          <in>item_541.s</in>
+          <in>item_542.s</in>
+          <in>item_543.s</in>
+          <in>item_544.s</in>
+          <in>item_545.s</in>
+          <in>item_546.s</in>
+          <in>item_547.s</in>
+          <in>item_548.s</in>
+          <in>item_549.s</in>
+          <in>item_550.s</in>
+          <in>item_551.s</in>
+          <in>item_552.s</in>
+          <in>item_553.s</in>
+          <in>item_554.s</in>
+          <in>item_555.s</in>
+          <in>item_556.s</in>
+          <in>item_557.s</in>
+          <in>item_558.s</in>
+          <in>item_559.s</in>
+          <in>item_560.s</in>
+          <in>item_561.s</in>
+          <in>item_562.s</in>
+          <in>item_563.s</in>
+          <in>item_564.s</in>
+          <in>item_565.s</in>
+          <in>item_566.s</in>
+          <in>item_567.s</in>
+          <in>item_568.s</in>
+          <in>item_569.s</in>
+          <in>item_570.s</in>
+          <in>item_571.s</in>
+          <in>item_572.s</in>
+          <in>item_573.s</in>
+          <in>item_574.s</in>
+          <in>item_575.s</in>
+          <in>item_576.s</in>
+          <in>item_577.s</in>
+          <in>item_578.s</in>
+          <in>item_579.s</in>
+          <in>item_580.s</in>
+          <in>item_581.s</in>
+          <in>item_582.s</in>
+          <in>item_583.s</in>
+          <in>item_584.s</in>
+          <in>item_585.s</in>
+          <in>item_586.s</in>
+          <in>item_587.s</in>
+          <in>item_588.s</in>
+          <in>item_589.s</in>
+          <in>item_590.s</in>
+          <in>item_591.s</in>
+          <in>item_592.s</in>
+          <in>item_593.s</in>
+          <in>item_594.s</in>
+          <in>item_595.s</in>
+          <in>item_596.s</in>
+          <in>item_597.s</in>
+          <in>item_598.s</in>
+          <in>item_599.s</in>
+          <in>item_600.s</in>
+          <in>item_601.s</in>
+          <in>item_602.s</in>
+          <in>item_603.s</in>
+          <in>item_604.s</in>
+          <in>item_605.s</in>
+          <in>item_606.s</in>
+          <in>item_607.s</in>
+          <in>item_608.s</in>
+          <in>item_609.s</in>
+          <in>item_610.s</in>
+          <in>item_611.s</in>
+          <in>item_612.s</in>
+          <in>item_613.s</in>
+          <in>item_614.s</in>
+          <in>item_615.s</in>
+          <in>item_616.s</in>
+          <in>item_617.s</in>
+          <in>item_618.s</in>
+          <in>item_619.s</in>
+          <in>item_620.s</in>
+          <in>item_621.s</in>
+          <in>item_622.s</in>
+          <in>item_623.s</in>
+          <in>item_624.s</in>
+          <in>item_625.s</in>
+          <in>item_626.s</in>
+          <in>item_627.s</in>
+          <in>item_628.s</in>
+          <in>item_629.s</in>
+          <in>item_630.s</in>
+          <in>item_631.s</in>
+          <in>item_632.s</in>
+          <in>item_633.s</in>
+          <in>item_634.s</in>
+          <in>item_635.s</in>
+          <in>item_636.s</in>
+          <in>item_637.s</in>
+          <in>item_638.s</in>
+          <in>item_639.s</in>
+          <in>item_640.s</in>
+          <in>item_641.s</in>
+          <in>item_642.s</in>
+          <in>item_643.s</in>
+          <in>item_644.s</in>
+          <in>item_645.s</in>
+          <in>item_646.s</in>
+          <in>item_647.s</in>
+          <in>item_648.s</in>
+          <in>item_649.s</in>
+          <in>item_650.s</in>
+          <in>item_651.s</in>
+          <in>item_652.s</in>
+          <in>item_653.s</in>
+          <in>item_654.s</in>
+          <in>item_655.s</in>
+          <in>item_656.s</in>
+          <in>item_657.s</in>
+          <in>item_658.s</in>
+          <in>item_659.s</in>
+          <in>item_660.s</in>
+          <in>item_661.s</in>
+          <in>item_662.s</in>
+          <in>item_663.s</in>
+          <in>item_664.s</in>
+          <in>item_665.s</in>
+          <in>item_666.s</in>
+          <in>item_667.s</in>
+          <in>item_668.s</in>
+          <in>item_669.s</in>
+          <in>item_670.s</in>
+          <in>item_671.s</in>
+          <in>item_672.s</in>
+          <in>item_673.s</in>
+          <in>item_674.s</in>
+          <in>item_675.s</in>
+          <in>item_676.s</in>
+          <in>item_677.s</in>
+          <in>item_678.s</in>
+          <in>item_679.s</in>
+          <in>item_680.s</in>
+          <in>item_681.s</in>
+          <in>item_682.s</in>
+          <in>item_683.s</in>
+          <in>item_684.s</in>
+          <in>item_685.s</in>
+          <in>item_686.s</in>
         </df>
         <df name="overworlds">
           <in>ow_0000.s</in>
@@ -545,8 +1107,6 @@
           <in>ow_0529.s</in>
           <in>ow_0530.s</in>
           <in>ow_0531.s</in>
-          <in>ow_077.s</in>
-          <in>ow_175.s</in>
         </df>
         <df name="sprites">
           <df name="back_sprites">
@@ -4274,6 +4834,13 @@
             <in>shiny_1199.s</in>
           </df>
         </df>
+        <df name="title_screen">
+          <in>title_sprite_sky.s</in>
+          <in>title_tileset_background.s</in>
+          <in>title_tileset_latias_latios_deoxys.s</in>
+          <in>title_tileset_logo_name.s</in>
+          <in>title_tileset_press_start.s</in>
+        </df>
         <df name="trainer_sprites">
           <in>ts_0000.s</in>
           <in>ts_0001.s</in>
@@ -4431,21 +4998,9 @@
         </df>
       </df>
       <df name="object">
-        <df name="data">
-          <df name="item">
-          </df>
-          <df name="moves">
-          </df>
-          <df name="overworld">
-          </df>
-          <df name="pkmn_tables">
-          </df>
-          <df name="text_lookup">
-          </df>
-          <df name="trainer_sprites">
-          </df>
-        </df>
         <df name="src">
+          <df name="agb_debug">
+          </df>
           <df name="assets">
             <df name="meteor">
             </df>
@@ -4569,6 +5124,9 @@
         <df name="game_engine">
           <in>quick_hacks.asm</in>
         </df>
+        <df name="graphics">
+          <in>title.asm</in>
+        </df>
         <df name="items">
           <in>item_limits.asm</in>
           <in>item_routines.asm</in>
@@ -4620,6 +5178,12 @@
       </df>
       <df name="sots-private">
         <df name="assets">
+          <df name="item_icons">
+          </df>
+          <df name="misc">
+            <df name="title">
+            </df>
+          </df>
           <df name="overworld">
           </df>
           <df name="pkmn_icons">
@@ -5050,7 +5614,6 @@
               <in>seq_346.s</in>
             </df>
             <df name="S_FINAL">
-              <in>SEQ_BA_TRAIN.s</in>
               <in>SEQ_BGM_BICYCLE.s</in>
               <in>SEQ_BGM_CITY_01.s</in>
               <in>SEQ_BGM_CITY_02.s</in>
@@ -5072,7 +5635,6 @@
               <in>SEQ_BGM_E_CHAMPION.s</in>
               <in>SEQ_BGM_E_INISHIE.s</in>
               <in>SEQ_BGM_E_MENU.s</in>
-              <in>SEQ_BGM_GYM.s</in>
               <in>SEQ_BGM_LABO.s</in>
               <in>SEQ_BGM_MART.s</in>
               <in>SEQ_BGM_OVERTURE.s</in>
@@ -5151,115 +5713,6 @@
             <df name="OBJ_DUMP">
             </df>
             <df name="S">
-              <in>fx_36_rain.s</in>
-              <in>snd_0_piano_high.s</in>
-              <in>snd_0_piano_low.s</in>
-              <in>snd_0_piano_low_mid.s</in>
-              <in>snd_0_piano_mid.s</in>
-              <in>snd_0_piano_ultra_high.s</in>
-              <in>snd_0_piano_ultra_low.s</in>
-              <in>snd_0_piano_very_high.s</in>
-              <in>snd_0_piano_very_low.s</in>
-              <in>snd_0_split.s</in>
-              <in>snd_103_scratch.s</in>
-              <in>snd_106_shamisen.s</in>
-              <in>snd_107_koto.s</in>
-              <in>snd_10_musicbox.s</in>
-              <in>snd_116_taiko_drum.s</in>
-              <in>snd_11_vibes.s</in>
-              <in>snd_127_bassdrum.s</in>
-              <in>snd_127_bongo_hi.s</in>
-              <in>snd_127_bongo_lo.s</in>
-              <in>snd_127_clap.s</in>
-              <in>snd_127_claves.s</in>
-              <in>snd_127_closed_hat.s</in>
-              <in>snd_127_conga_hi.s</in>
-              <in>snd_127_conga_hi_sl.s</in>
-              <in>snd_127_hard_cymbal.s</in>
-              <in>snd_127_hard_snare.s</in>
-              <in>snd_127_high_hat.s</in>
-              <in>snd_127_low_cymbal.s</in>
-              <in>snd_127_open_cymbal.s</in>
-              <in>snd_127_open_hat.s</in>
-              <in>snd_127_ride_bell.s</in>
-              <in>snd_127_ride_cymbal.s</in>
-              <in>snd_127_shake.s</in>
-              <in>snd_127_smash.s</in>
-              <in>snd_127_soft_cymbal.s</in>
-              <in>snd_127_soft_snare.s</in>
-              <in>snd_127_sticks.s</in>
-              <in>snd_127_tambourine.s</in>
-              <in>snd_127_tom_45.s</in>
-              <in>snd_127_tom_48.s</in>
-              <in>snd_127_triangle.s</in>
-              <in>snd_14_tubular_bell.s</in>
-              <in>snd_17_organ.s</in>
-              <in>snd_18_rock_organ.s</in>
-              <in>snd_22_harmonica.s</in>
-              <in>snd_24_guitar_high.s</in>
-              <in>snd_24_guitar_low.s</in>
-              <in>snd_24_guitar_mid.s</in>
-              <in>snd_24_guitar_veryhigh.s</in>
-              <in>snd_24_guitar_verylow.s</in>
-              <in>snd_24_split.s</in>
-              <in>snd_27_synguitar.s</in>
-              <in>snd_29_guitar_high.s</in>
-              <in>snd_29_guitar_low.s</in>
-              <in>snd_29_guitar_mid.s</in>
-              <in>snd_29_split.s</in>
-              <in>snd_33_bass_high.s</in>
-              <in>snd_33_bass_low.s</in>
-              <in>snd_33_bass_mid.s</in>
-              <in>snd_33_bass_verylow.s</in>
-              <in>snd_33_split.s</in>
-              <in>snd_35_fles_bass_A1.s</in>
-              <in>snd_35_fles_bass_C3.s</in>
-              <in>snd_35_fles_bass_D2.s</in>
-              <in>snd_35_fles_bass_G2.s</in>
-              <in>snd_35_split.s</in>
-              <in>snd_38_synthbass.s</in>
-              <in>snd_45_pizzicato_str.s</in>
-              <in>snd_46_harp_high.s</in>
-              <in>snd_46_harp_low.s</in>
-              <in>snd_46_harp_mid.s</in>
-              <in>snd_46_split.s</in>
-              <in>snd_47_timpani.s</in>
-              <in>snd_48_split.s</in>
-              <in>snd_48_strings_high.s</in>
-              <in>snd_48_strings_low.s</in>
-              <in>snd_48_strings_mid.s</in>
-              <in>snd_50_synth_strings.s</in>
-              <in>snd_56_split.s</in>
-              <in>snd_56_trumpet_high.s</in>
-              <in>snd_56_trumpet_mid.s</in>
-              <in>snd_57_trombone.s</in>
-              <in>snd_5_epiano.s</in>
-              <in>snd_60_horns.s</in>
-              <in>snd_61_horns_high.s</in>
-              <in>snd_61_horns_mid.s</in>
-              <in>snd_61_split.s</in>
-              <in>snd_68_oboe_high.s</in>
-              <in>snd_68_oboe_low.s</in>
-              <in>snd_68_oboe_mid.s</in>
-              <in>snd_68_split.s</in>
-              <in>snd_70_bassoon.s</in>
-              <in>snd_71_clarinet.s</in>
-              <in>snd_73_flute_A3.s</in>
-              <in>snd_73_flute_A4.s</in>
-              <in>snd_73_flute_D4.s</in>
-              <in>snd_73_flute_E5.s</in>
-              <in>snd_73_flute_Fs3.s</in>
-              <in>snd_73_flute_G5.s</in>
-              <in>snd_73_split.s</in>
-              <in>snd_75_panflute.s</in>
-              <in>snd_77_shakuhachi_high.s</in>
-              <in>snd_77_shakuhachi_low.s</in>
-              <in>snd_77_shakuhachi_mid.s</in>
-              <in>snd_77_split.s</in>
-              <in>snd_79_ocarina.s</in>
-              <in>snd_90_synth.s</in>
-              <in>snd_org_cymbal.s</in>
-              <in>snd_org_orch_snare.s</in>
             </df>
             <df name="S_DUMP">
               <in>gbwave_000.s</in>
@@ -5384,6 +5837,8 @@
             <in>main_2_advanced.s</in>
           </df>
           <df name="Sounds">
+            <df name="OBJ_SE">
+            </df>
             <in>MPlayDef.s</in>
           </df>
           <df name="Voicegroup">
@@ -5482,6 +5937,9 @@
         </df>
       </df>
       <df name="src">
+        <df name="agb_debug">
+          <in>agb_debug.c</in>
+        </df>
         <df name="assets">
           <df name="meteor">
             <in>met_background.c</in>
@@ -5755,35 +6213,27 @@
           <df name="story_text">
             <df name="carun_city">
               <in>globals.S</in>
-              <in>globals.txt</in>
             </df>
             <df name="hesperia">
               <in>globals.S</in>
-              <in>globals.txt</in>
               <in>outdoor.S</in>
-              <in>outdoor.txt</in>
               <in>player_house.S</in>
-              <in>player_house.txt</in>
             </df>
             <df name="tundra_hq">
               <in>globals.S</in>
-              <in>globals.txt</in>
             </df>
           </df>
           <df name="trainers">
             <in>test_trainers.S</in>
-            <in>test_trainers.txt</in>
           </df>
           <in>hazards.S</in>
           <in>invalid.S</in>
-          <in>invalid.txt</in>
           <in>item_data.S</in>
-          <in>item_descriptions.S</in>
+          <in>item_description.S</in>
           <in>move_descriptions.S</in>
           <in>move_names.S</in>
           <in>move_strings.S</in>
           <in>text_multichoices.S</in>
-          <in>text_multichoices.txt</in>
         </df>
         <df name="en">
         </df>

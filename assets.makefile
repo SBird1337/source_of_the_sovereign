@@ -4,6 +4,9 @@ AR   := arm-none-eabi-ar
 
 CFLAGS := -mthumb -mno-thumb-interwork -mcpu=arm7tdmi -mlong-calls -march=armv4t -O3 -std=c99
 
+ASSET_ROOT := sots-private/assets
+GFX_BUILD := gfx_build
+
 PNG_MET_BG     := assets/meteor/bg0.png
 PNG_MET_SKY    := assets/meteor/bg1.png
 PNG_MET_FG     := assets/meteor/bg2.png

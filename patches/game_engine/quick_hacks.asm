@@ -72,13 +72,13 @@ PLAYER_S_M EQU 0
 .word 0x00000000
 
 .org 0x08054A08
-.byte PLAYER_S_X
+//.byte PLAYER_S_X
 
 .org 0x08054A00
-.byte PLAYER_S_Y
+//.byte PLAYER_S_Y
 
 .org 0x08054A04
-.byte PLAYER_S_B
+//.byte PLAYER_S_B
 
 .org 0x08054A06
-.byte PLAYER_S_M
+//.byte PLAYER_S_M

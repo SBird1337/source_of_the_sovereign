@@ -11,6 +11,8 @@
 .include "patches/music.asm"
 .include "patches/items/items.asm"
 
+.include "patches/graphics/title.asm"
+
 .include "patches/move_table.asm"
 
 .include "patches/pokemon_data/pokemon_footprints.asm"

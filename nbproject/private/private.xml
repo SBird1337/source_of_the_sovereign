@@ -19,16 +19,37 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/assets.makefile</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/string/de/invalid.txt</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/specials/custom_specials.c</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/math.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/string/table.tbl</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/include/game_engine.h</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/makefile</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/patches/game_engine/quick_hacks.asm</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/src/battle_engine/battle_initiative.c</file>
-            <file>file:/C:/cygwin64/home/Philipp/sots/engine/source_of_the_sovereign/sprites.makefile</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/string/de/item_description.S</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/string/de/move_names.txt</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/data/moves/move_data.S</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/data/moves/move_descriptions.S</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/patches/items/tm_fixes.asm</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/patches/interface.asm</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/data/moves/effect_table.S</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/src/interface/textbox_mugshots.c</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/patches/items/item_limits.asm</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/string/de/move_descriptions.S</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/makefile</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/src/agb_debug/agb_debug.c</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/data/pkmn_tables/pokemon_back_sprites.S</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/data/moves/animation_table.S</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/data/item/item_gfx.S</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/patches/items/item_routines.asm</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/string/de/move_strings.txt</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/string/de/item_data.txt</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/data/raw_defines.s</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/string/de/move_descriptions.txt</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/main.asm</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/patches/items/items.asm</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/src/interface/lcd_io_test.S</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/patches/hooks.asm</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/patches/game_engine/quick_hacks.asm</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/data/pkmn_tables/pokemon_footprints.s</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/data/item/item_scripts.S</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/data/pkmn_tables/pokemon_front_sprites.S</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/data/item/tm_hm_move_table.S</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/string/de/item_description.txt</file>
+            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/patches/items/item_tables.asm</file>
         </group>
     </open-files>
 </project-private>
