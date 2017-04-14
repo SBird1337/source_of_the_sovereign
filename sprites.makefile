@@ -17,6 +17,27 @@ PNG_TITLE_LOGO := $(ASSET_ROOT)/misc/title/title_tileset_logo_name.png
 PNG_TITLE_START := $(ASSET_ROOT)/misc/title/title_tileset_press_start.png
 PNG_TITLE_CLOUD := $(ASSET_ROOT)/misc/title/title_sprite_sky.png
 
+PNG_HERO := $(ASSET_ROOT)/misc/char/hero_backsprite.png
+PNG_HEROINE := $(ASSET_ROOT)/misc/char/heroine_backsprite.png
+PNG_HERO_B := $(ASSET_ROOT)/misc/char/hero_bag.png
+PNG_HEROINE_B := $(ASSET_ROOT)/misc/char/heroine_bag.png
+
+S_HERO := $(GFX_BUILD_DIR)/char/hero_backsprite.S
+S_HEROINE := $(GFX_BUILD_DIR)/char/heroine_backsprite.S
+S_HERO_B := $(GFX_BUILD_DIR)/char/hero_bag.S
+S_HEROINE_B := $(GFX_BUILD_DIR)/char/heroine_bag.S
+
+O_HERO := $(GFX_BUILD_DIR)/char/hero_backsprite.o
+O_HEROINE := $(GFX_BUILD_DIR)/char/heroine_backsprite.o
+O_HERO_B := $(GFX_BUILD_DIR)/char/hero_bag.o
+O_HEROINE_B := $(GFX_BUILD_DIR)/char/heroine_bag.o
+
+PNG_BOOT := $(ASSET_ROOT)/misc/boot/boot_tileset.png
+
+S_BOOT := $(GFX_BUILD_DIR)/boot/boot_tileset.S
+
+O_BOOT := $(GFX_BUILD_DIR)/boot/boot_tileset.o
+
 S_TITLE_BG := $(GFX_BUILD_DIR)/title_screen/title_tileset_background.S
 S_TITLE_AEON := $(GFX_BUILD_DIR)/title_screen/title_tileset_latias_latios_deoxys.S
 S_TITLE_LOGO := $(GFX_BUILD_DIR)/title_screen/title_tileset_logo_name.S
@@ -30,6 +51,7 @@ O_TITLE_START := $(GFX_BUILD_DIR)/title_screen/title_tileset_press_start.o
 O_TITLE_CLOUD := $(GFX_BUILD_DIR)/title_screen/title_sprite_sky.o
 
 TITLE_OBJ := $(O_TITLE_BG) $(O_TITLE_AEON) $(O_TITLE_LOGO) $(O_TITLE_START) $(O_TITLE_CLOUD)
+HERO_OBJ := $(O_HERO) $(O_HEROINE) $(O_HERO_B) $(O_HEROINE_B)
 
 ITEM_PNG = $(sort $(wildcard $(ASSET_ROOT)/item_icons/*.png))
 ITEM_OBJ = $(addprefix $(GFX_BUILD_DIR)/item/,$(notdir $(ITEM_PNG:.png=.o)))
@@ -67,9 +89,33 @@ clean:
 	rm -f $(GFX_BUILD_DIR)/sprites/back_sprites/*
 	rm -f $(GFX_BUILD_DIR)/overworlds/*
 
-$(SPRITES_BINARY): $(NORMAL_PAL_OBJ) $(SHINY_PAL_OBJ) $(SPRITE_FRONT_OBJ) $(SPRITE_BACK_OBJ) $(NORMAL_CASTFORM_PAL_OBJ) $(SHINY_CASTFORM_PAL_OBJ) $(CASTFORM_FRONT_OBJ) $(CASTFORM_BACK_OBJ) $(OW_OBJ) $(TS_OBJ) $(ITEM_OBJ) $(TITLE_OBJ)
+$(SPRITES_BINARY): $(NORMAL_PAL_OBJ) $(HERO_OBJ) $(SHINY_PAL_OBJ) $(SPRITE_FRONT_OBJ) $(SPRITE_BACK_OBJ) $(NORMAL_CASTFORM_PAL_OBJ) $(SHINY_CASTFORM_PAL_OBJ) $(CASTFORM_FRONT_OBJ) $(CASTFORM_BACK_OBJ) $(OW_OBJ) $(TS_OBJ) $(ITEM_OBJ) $(TITLE_OBJ) $(O_BOOT)
 	echo "INPUT($^)" > $(TMP_LD)
 	$(LD) -r -o $@ -T $(TMP_LD)
+
+# Characters
+$(GFX_BUILD_DIR)/char/%.o: $(GFX_BUILD_DIR)/char/%.S
+	$(AS) -o $@ $<
+
+$(S_HERO): $(PNG_HERO)
+	grit $< -fts -fh! -gt -gB4 -gz! -p -pzl -m! -pu16 -o $@
+
+$(S_HERO_B): $(PNG_HERO_B)
+	grit $< -fts -fh! -gt -gB4 -gzl -p -pzl -m! -pu16 -o $@
+
+$(S_HEROINE): $(PNG_HEROINE)
+	grit $< -fts -fh! -gt -gB4 -gz! -p -pzl -m! -pu16 -o $@
+
+$(S_HEROINE_B): $(PNG_HEROINE_B)
+	grit $< -fts -fh! -gt -gB4 -gzl -p -pzl -m! -pu16 -o $@
+
+
+# Boot Screen
+$(GFX_BUILD_DIR)/boot/%.o: $(GFX_BUILD_DIR)/boot/%.S
+	$(AS) -o $@ $<
+
+$(S_BOOT): $(PNG_BOOT)
+	grit $< -fts -fh! -gt -gB4 -gzl -p -pz! -m -mzl -mRtpf -pu16 -o $@
 
 # Special titlescreen targets
 $(GFX_BUILD_DIR)/title_screen/%.o: $(GFX_BUILD_DIR)/title_screen/%.S

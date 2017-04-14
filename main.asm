@@ -12,6 +12,8 @@
 .include "patches/items/items.asm"
 
 .include "patches/graphics/title.asm"
+.include "patches/graphics/boot.asm"
+.include "patches/graphics/char.asm"
 
 .include "patches/move_table.asm"
 

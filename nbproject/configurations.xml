@@ -4,6 +4,8 @@
     <df root="." name="0">
       <df name="patches">
         <df name="graphics">
+          <in>boot.asm</in>
+          <in>char.asm</in>
           <in>title.asm</in>
         </df>
       </df>
@@ -154,6 +156,14 @@
           <in>trainer_battle.c</in>
         </df>
       </df>
+      <df name="string">
+        <df name="de">
+          <df name="pkmn_data">
+            <in>pokedex_data.txt</in>
+            <in>pokedex_entries.txt</in>
+          </df>
+        </df>
+      </df>
     </df>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -224,6 +234,10 @@
           </preprocessorList>
         </cTool>
       </folder>
+      <item path="patches/graphics/boot.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="patches/graphics/char.asm" ex="false" tool="4" flavor2="0">
+      </item>
       <item path="patches/graphics/title.asm" ex="false" tool="4" flavor2="0">
       </item>
       <item path="sots-private/sound/Assembler/musicInjector.c"
@@ -535,6 +549,18 @@
       <item path="src/specials/trainer_battle.c" ex="false" tool="0" flavor2="3">
         <cTool flags="0">
         </cTool>
+      </item>
+      <item path="string/de/move_strings.txt" ex="true" tool="3" flavor2="0">
+      </item>
+      <item path="string/de/pkmn_data/pokedex_data.txt"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="string/de/pkmn_data/pokedex_entries.txt"
+            ex="false"
+            tool="4"
+            flavor2="0">
       </item>
     </conf>
   </confs>
