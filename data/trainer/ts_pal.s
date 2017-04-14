@@ -4,6 +4,11 @@
 
 .global ts_pal_maintable
 ts_pal_maintable:
+
+.word ts_0000Pal
+.hword 0
+.hword 0
+
 .word ts_0001Pal 
 .hword 1 
 .hword 0

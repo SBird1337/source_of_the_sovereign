@@ -5,6 +5,10 @@
 .global ts_image_maintable
 ts_image_maintable:
 
+.word ts_0000Tiles
+.hword 0x0800
+.hword 0
+
 .word ts_0001Tiles 
 .hword 0x0800 
 .hword 1

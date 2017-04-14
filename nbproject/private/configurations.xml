@@ -6839,6 +6839,7 @@
           </df>
           <df name="trainers">
             <in>test_trainers.S</in>
+            <in>trainer_data.S</in>
             <in>trainer_data.txt</in>
             <in>trainerclasses.S</in>
             <in>trainerclasses.txt</in>

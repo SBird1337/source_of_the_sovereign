@@ -7,19 +7,604 @@ str_trainer_name_0=
 @word 0
 
 @byte 3, 8, 228, 0
-str_trainer_name_1=Trainer 1 E
+str_trainer_name_1=Test123
 @hword 13, 13, 13, 13
 @byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
 @word pokemon_von_id_1
 
 @byte 3, 8, 228, 0
-str_trainer_name_2=Trainer 1 N
+str_trainer_name_2=Test123
 @hword 13, 13, 13, 13
 @byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
-@word pokemon_von_id_2
+@word pokemon_von_id_1
 
 @byte 3, 8, 228, 0
-str_trainer_name_3=Trainer 1 S
+str_trainer_name_3=Test123
 @hword 13, 13, 13, 13
 @byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
-@word pokemon_von_id_3
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_4=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_5=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_6=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_7=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_8=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_9=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_10=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+
+@byte 3, 8, 228, 0
+str_trainer_name_11=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_12=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_13=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_14=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_15=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_16=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_17=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_18=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_19=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_20=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+
+@byte 3, 8, 228, 0
+str_trainer_name_21=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_22=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_23=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_24=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_25=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_26=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_27=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_28=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_29=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_30=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+
+@byte 3, 8, 228, 0
+str_trainer_name_31=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_32=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_33=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_34=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_35=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_36=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_37=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_38=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_39=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_40=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_41=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_42=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_43=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_44=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_45=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_46=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_47=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_48=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_49=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_50=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_51=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_52=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_53=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_54=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_55=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_56=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_57=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_58=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_59=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_60=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_61=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_62=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_63=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_64=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_65=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_66=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_67=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_68=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_69=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_70=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_71=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_72=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_73=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_74=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_75=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_76=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_77=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_78=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_79=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_80=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_81=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_82=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_83=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_84=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_85=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_86=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_87=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_88=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_89=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_90=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_91=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_92=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_93=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_94=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_95=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_96=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_97=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_98=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_99=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_100=Test123
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
