@@ -1,0 +1,25 @@
+@string_len=12
+
+@byte 0, 0, 0, 0
+str_trainer_name_0=          
+@hword 0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+@word 0
+
+@byte 3, 8, 228, 0
+str_trainer_name_1=Trainer 1 E
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_1
+
+@byte 3, 8, 228, 0
+str_trainer_name_2=Trainer 1 N
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_2
+
+@byte 3, 8, 228, 0
+str_trainer_name_3=Trainer 1 S
+@hword 13, 13, 13, 13
+@byte 0, 1, 0, 0, 0, 11, 0, 0, 1, 0, 0, 0
+@word pokemon_von_id_3

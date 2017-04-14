@@ -2,11 +2,26 @@
 <configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
+      <df name="data">
+        <df name="overworld">
+          <in>wild_pokemon_data.S</in>
+        </df>
+        <df name="trainer">
+          <in>trainer_money_rate.s</in>
+          <in>trainer_pkmn_data.s</in>
+        </df>
+      </df>
       <df name="patches">
         <df name="graphics">
           <in>boot.asm</in>
           <in>char.asm</in>
           <in>title.asm</in>
+        </df>
+        <df name="overworlds">
+          <in>pkm_wild.asm</in>
+        </df>
+        <df name="trainer_sprites">
+          <in>trainer_data.asm</in>
         </df>
       </df>
       <df name="sots-private">
@@ -162,6 +177,10 @@
             <in>pokedex_data.txt</in>
             <in>pokedex_entries.txt</in>
           </df>
+          <df name="trainers">
+            <in>trainer_data.txt</in>
+            <in>trainerclasses.txt</in>
+          </df>
         </df>
       </df>
     </df>
@@ -209,6 +228,12 @@
           <preBuildCommand></preBuildCommand>
         </preBuild>
       </makefileType>
+      <item path="data/overworld/wild_pokemon_data.S" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="data/trainer/trainer_money_rate.s" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="data/trainer/trainer_pkmn_data.s" ex="false" tool="4" flavor2="0">
+      </item>
       <folder path="0/sots-private/sound/Assembler">
         <cTool>
           <incDir>
@@ -239,6 +264,13 @@
       <item path="patches/graphics/char.asm" ex="false" tool="4" flavor2="0">
       </item>
       <item path="patches/graphics/title.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="patches/overworlds/pkm_wild.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="patches/trainer_sprites/trainer_data.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
       </item>
       <item path="sots-private/sound/Assembler/musicInjector.c"
             ex="false"
@@ -558,6 +590,16 @@
             flavor2="0">
       </item>
       <item path="string/de/pkmn_data/pokedex_entries.txt"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="string/de/trainers/trainer_data.txt"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="string/de/trainers/trainerclasses.txt"
             ex="false"
             tool="4"
             flavor2="0">

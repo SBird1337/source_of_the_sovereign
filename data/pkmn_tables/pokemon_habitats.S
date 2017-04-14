@@ -4,1788 +4,1541 @@
 .global habitat_header
 habitat_header:
 .word habitat_gras 
-.hword 51, 0
+.hword 57, 0
 .word habitat_wald 
-.hword 52, 0
+.hword 55, 0
 .word habitat_ufer_und_see 
-.hword 25, 0
-.word habitat_wasser 
-.hword 31, 0
-.word habitat_hoehle 
-.hword 24, 0
-.word habitat_gebirge 
 .hword 29, 0
+.word habitat_wasser 
+.hword 34, 0
+.word habitat_höhle 
+.hword 26, 0
+.word habitat_gebirge 
+.hword 33, 0
 .word habitat_wildniss 
-.hword 42, 0
+.hword 48, 0
 .word habitat_stadt 
-.hword 43, 0
+.hword 48, 0
 .word habitat_selten 
-.hword 32, 0
+.hword 39, 0
 
 .align 2
 habitat_gras:
-.word seite_gras1 
+.word gras_seite_1 
 .hword 2, 0
-.word seite_gras2 
+.word gras_seite_2 
 .hword 2, 0
-.word seite_gras3 
+.word gras_seite_3 
 .hword 2, 0
-.word seite_gras4 
+.word gras_seite_4 
 .hword 2, 0
-.word seite_gras5 
+.word gras_seite_5 
 .hword 3, 0
-.word seite_gras6 
+.word gras_seite_6 
 .hword 3, 0
-.word seite_gras7 
+.word gras_seite_7 
 .hword 2, 0
-.word seite_gras8 
+.word gras_seite_8 
 .hword 2, 0
-.word seite_gras9 
+.word gras_seite_9 
 .hword 2, 0
-.word seite_gras10 
+.word gras_seite_10 
 .hword 2, 0
-.word seite_gras11 
+.word gras_seite_11 
 .hword 3, 0
-.word seite_gras12 
+.word gras_seite_12 
 .hword 3, 0
-.word seite_gras13 
+.word gras_seite_13 
 .hword 4, 0
-.word seite_gras14 
+.word gras_seite_14 
 .hword 2, 0
-.word seite_gras15 
+.word gras_seite_15 
 .hword 3, 0
-.word seite_gras16 
+.word gras_seite_16 
 .hword 3, 0
-.word seite_gras17 
+.word gras_seite_17 
 .hword 3, 0
-.word seite_gras18 
+.word gras_seite_18 
 .hword 2, 0
-.word seite_gras19 
+.word gras_seite_19 
 .hword 2, 0
-.word seite_gras20 
+.word gras_seite_20 
 .hword 2, 0
-.word seite_gras21 
+.word gras_seite_21 
 .hword 2, 0
-.word seite_gras22 
+.word gras_seite_22 
 .hword 2, 0
-.word seite_gras23 
+.word gras_seite_23 
 .hword 2, 0
-.word seite_gras24 
+.word gras_seite_24 
 .hword 3, 0
-.word seite_gras25 
+.word gras_seite_25 
 .hword 3, 0
-.word seite_gras26 
+.word gras_seite_26 
 .hword 2, 0
-.word seite_gras27 
+.word gras_seite_27 
 .hword 2, 0
-.word seite_gras28 
+.word gras_seite_28 
 .hword 2, 0
-.word seite_gras29 
+.word gras_seite_29 
 .hword 2, 0
-.word seite_gras30 
+.word gras_seite_30 
 .hword 1, 0
-.word seite_gras31 
+.word gras_seite_31 
 .hword 2, 0
-.word seite_gras32 
+.word gras_seite_32 
 .hword 3, 0
-.word seite_gras33 
+.word gras_seite_33 
 .hword 3, 0
-.word seite_gras34 
+.word gras_seite_34 
 .hword 3, 0
-.word seite_gras35 
+.word gras_seite_35 
 .hword 3, 0
-.word seite_gras36 
+.word gras_seite_36 
 .hword 3, 0
-.word seite_gras37 
+.word gras_seite_37 
 .hword 1, 0
-.word seite_gras38 
+.word gras_seite_38 
 .hword 2, 0
-.word seite_gras39 
+.word gras_seite_39 
 .hword 3, 0
-.word seite_gras40 
+.word gras_seite_40 
 .hword 2, 0
-.word seite_gras41 
+.word gras_seite_41 
 .hword 3, 0
-.word seite_gras42 
+.word gras_seite_42 
 .hword 1, 0
-.word seite_gras43 
+.word gras_seite_43 
 .hword 1, 0
-.word seite_gras44 
+.word gras_seite_44 
 .hword 2, 0
-.word seite_gras45 
+.word gras_seite_45 
 .hword 2, 0
-.word seite_gras46 
+.word gras_seite_46 
 .hword 3, 0
-.word seite_gras47 
+.word gras_seite_47 
 .hword 3, 0
-.word seite_gras48 
+.word gras_seite_48 
 .hword 2, 0
-.word seite_gras49 
+.word gras_seite_49 
 .hword 4, 0
-.word seite_gras50 
+.word gras_seite_50 
 .hword 2, 0
-.word seite_gras51 
+.word gras_seite_51 
 .hword 1, 0
+.word gras_seite_52 
+.hword 2, 0
+.word gras_seite_53 
+.hword 2, 0
+.word gras_seite_54 
+.hword 2, 0
+.word gras_seite_55 
+.hword 3, 0
+.word gras_seite_56 
+.hword 2, 0
+.word gras_seite_57 
+.hword 2, 0
 
 .align 2
-seite_gras1: 
-.hword 19 
-.hword 20
-seite_gras2: 
-.hword 161 
-.hword 162
-seite_gras3: 
-.hword 288 
-.hword 289
-seite_gras4: 
-.hword 286 
-.hword 287
-seite_gras5: 
-.hword 29 
-.hword 30 
-.hword 31
-seite_gras6: 
-.hword 32 
-.hword 33 
-.hword 34
-seite_gras7: 
-.hword 84 
-.hword 85
-seite_gras8: 
-.hword 304 
-.hword 305
-seite_gras9: 
-.hword 114 
-.hword 518
-seite_gras10: 
-.hword 191 
-.hword 192
-seite_gras11: 
-.hword 459 
-.hword 363 
-.hword 460
-seite_gras12: 
-.hword 187 
-.hword 188 
-.hword 189
-seite_gras13: 
-.hword 43 
-.hword 44 
-.hword 45 
-.hword 182
-seite_gras14: 
-.hword 23 
-.hword 24
-seite_gras15: 
-.hword 174 
-.hword 39 
-.hword 40
-seite_gras16: 
-.hword 179 
-.hword 180 
-.hword 181
-seite_gras17: 
-.hword 83 
-.hword 108 
-.hword 516
-seite_gras18: 
-.hword 123 
-.hword 212
-seite_gras19: 
-.hword 96 
-.hword 97
-seite_gras20: 
-.hword 367 
-.hword 368
-seite_gras21: 
-.hword 115 
-.hword 203
-seite_gras22: 
-.hword 77 
-.hword 78
-seite_gras23: 
-.hword 37 
-.hword 38
-seite_gras24: 
-.hword 128 
-.hword 241 
-.hword 679
-seite_gras25: 
-.hword 239 
-.hword 125 
-.hword 519
-seite_gras26: 
-.hword 337 
-.hword 338
-seite_gras27: 
-.hword 353 
-.hword 354
-seite_gras28: 
-.hword 380 
-.hword 379
-seite_gras29: 
-.hword 58 
-.hword 59
-seite_gras30: 
+gras_seite_1:
+.hword 19, 20
+gras_seite_2:
+.hword 161, 162
+gras_seite_3:
+.hword 288, 289
+gras_seite_4:
+.hword 286, 287
+gras_seite_5:
+.hword 29, 30, 31
+gras_seite_6:
+.hword 32, 33, 34
+gras_seite_7:
+.hword 84, 85
+gras_seite_8:
+.hword 304, 305
+gras_seite_9:
+.hword 114, 518
+gras_seite_10:
+.hword 191, 192
+gras_seite_11:
+.hword 459, 363, 460
+gras_seite_12:
+.hword 187, 188, 189
+gras_seite_13:
+.hword 43, 44, 45, 182
+gras_seite_14:
+.hword 23, 24
+gras_seite_15:
+.hword 174, 39, 40
+gras_seite_16:
+.hword 179, 180, 181
+gras_seite_17:
+.hword 83, 108, 516
+gras_seite_18:
+.hword 123, 212
+gras_seite_19:
+.hword 96, 97
+gras_seite_20:
+.hword 367, 368
+gras_seite_21:
+.hword 115, 203
+gras_seite_22:
+.hword 77, 78
+gras_seite_23:
+.hword 37, 38
+gras_seite_24:
+.hword 128, 241, 679
+gras_seite_25:
+.hword 239, 125, 519
+gras_seite_26:
+.hword 337, 338
+gras_seite_27:
+.hword 353, 354
+gras_seite_28:
+.hword 380, 379
+gras_seite_29:
+.hword 58, 59
+gras_seite_30:
 .hword 385
-seite_gras31: 
-.hword 486 
-.hword 411
-seite_gras32: 
-.hword 1 
-.hword 2 
-.hword 3
-seite_gras33: 
-.hword 152 
-.hword 153 
-.hword 154
-seite_gras34: 
-.hword 155 
-.hword 156 
-.hword 157
-seite_gras35: 
-.hword 280 
-.hword 281 
-.hword 282
-seite_gras36: 
-.hword 456 
-.hword 457 
-.hword 458
-seite_gras37: 
+gras_seite_31:
+.hword 486, 411
+gras_seite_32:
+.hword 1, 2, 3
+gras_seite_33:
+.hword 152, 153, 154
+gras_seite_34:
+.hword 155, 156, 157
+gras_seite_35:
+.hword 280, 281, 282
+gras_seite_36:
+.hword 456, 457, 458
+gras_seite_37:
 .hword 470
-seite_gras38: 
-.hword 512 
-.hword 513
-seite_gras39: 
-.hword 548 
-.hword 549 
-.hword 550
-seite_gras40: 
-.hword 557 
-.hword 558
-seite_gras41: 
-.hword 559 
-.hword 560 
-.hword 561
-seite_gras42: 
+gras_seite_38:
+.hword 512, 513
+gras_seite_39:
+.hword 548, 549, 550
+gras_seite_40:
+.hword 557, 558
+gras_seite_41:
+.hword 559, 560, 561
+gras_seite_42:
 .hword 614
-seite_gras43: 
+gras_seite_43:
 .hword 640
-seite_gras44: 
-.hword 643 
-.hword 644
-seite_gras45: 
-.hword 712 
-.hword 713
-seite_gras46: 
-.hword 714 
-.hword 715 
-.hword 716
-seite_gras47: 
-.hword 722 
-.hword 723 
-.hword 724
-seite_gras48: 
-.hword 725 
-.hword 726
-seite_gras49: 
-.hword 735 
-.hword 736 
-.hword 737 
-.hword 738
-seite_gras50: 
-.hword 747 
-.hword 748
-seite_gras51: 
+gras_seite_44:
+.hword 643, 644
+gras_seite_45:
+.hword 712, 713
+gras_seite_46:
+.hword 714, 715, 716
+gras_seite_47:
+.hword 722, 723, 724
+gras_seite_48:
+.hword 725, 726
+gras_seite_49:
+.hword 735, 736, 737, 738
+gras_seite_50:
+.hword 747, 748
+gras_seite_51:
 .hword 755
+gras_seite_52:
+.hword 787, 788
+gras_seite_53:
+.hword 806, 807
+gras_seite_54:
+.hword 808, 809
+gras_seite_55:
+.hword 814, 815, 816
+gras_seite_56:
+.hword 830, 831
+gras_seite_57:
+.hword 931, 932
 
 .align 2
 habitat_wald:
-.word seite_wald1 
+.word wald_seite_1 
 .hword 3, 0
-.word seite_wald2 
+.word wald_seite_2 
 .hword 3, 0
-.word seite_wald3 
+.word wald_seite_3 
 .hword 3, 0
-.word seite_wald4 
+.word wald_seite_4 
 .hword 2, 0
-.word seite_wald5 
+.word wald_seite_5 
 .hword 3, 0
-.word seite_wald6 
+.word wald_seite_6 
 .hword 2, 0
-.word seite_wald7 
+.word wald_seite_7 
 .hword 2, 0
-.word seite_wald8 
-.hword 3, 0
-.word seite_wald9 
-.hword 3, 0
-.word seite_wald10 
-.hword 2, 0
-.word seite_wald11 
-.hword 2, 0
-.word seite_wald12 
-.hword 3, 0
-.word seite_wald13 
-.hword 2, 0
-.word seite_wald14 
-.hword 2, 0
-.word seite_wald15 
-.hword 2, 0
-.word seite_wald16 
+.word wald_seite_8 
 .hword 4, 0
-.word seite_wald17 
+.word wald_seite_9 
 .hword 3, 0
-.word seite_wald18 
+.word wald_seite_10 
 .hword 2, 0
-.word seite_wald19 
+.word wald_seite_11 
 .hword 2, 0
-.word seite_wald20 
+.word wald_seite_12 
 .hword 3, 0
-.word seite_wald21 
+.word wald_seite_13 
 .hword 2, 0
-.word seite_wald22 
+.word wald_seite_14 
 .hword 2, 0
-.word seite_wald23 
+.word wald_seite_15 
 .hword 2, 0
-.word seite_wald24 
+.word wald_seite_16 
+.hword 4, 0
+.word wald_seite_17 
+.hword 3, 0
+.word wald_seite_18 
 .hword 2, 0
-.word seite_wald25 
+.word wald_seite_19 
 .hword 2, 0
-.word seite_wald26 
+.word wald_seite_20 
+.hword 3, 0
+.word wald_seite_21 
 .hword 2, 0
-.word seite_wald27 
+.word wald_seite_22 
+.hword 2, 0
+.word wald_seite_23 
+.hword 2, 0
+.word wald_seite_24 
+.hword 3, 0
+.word wald_seite_25 
+.hword 2, 0
+.word wald_seite_26 
+.hword 2, 0
+.word wald_seite_27 
 .hword 1, 0
-.word seite_wald28 
+.word wald_seite_28 
 .hword 1, 0
-.word seite_wald29 
+.word wald_seite_29 
 .hword 2, 0
-.word seite_wald30 
+.word wald_seite_30 
 .hword 2, 0
-.word seite_wald31 
+.word wald_seite_31 
 .hword 1, 0
-.word seite_wald32 
+.word wald_seite_32 
 .hword 3, 0
-.word seite_wald33 
+.word wald_seite_33 
 .hword 3, 0
-.word seite_wald34 
+.word wald_seite_34 
 .hword 3, 0
-.word seite_wald35 
+.word wald_seite_35 
 .hword 3, 0
-.word seite_wald36 
+.word wald_seite_36 
 .hword 2, 0
-.word seite_wald37 
+.word wald_seite_37 
 .hword 3, 0
-.word seite_wald38 
+.word wald_seite_38 
 .hword 2, 0
-.word seite_wald39 
+.word wald_seite_39 
 .hword 2, 0
-.word seite_wald40 
+.word wald_seite_40 
 .hword 2, 0
-.word seite_wald41 
+.word wald_seite_41 
 .hword 2, 0
-.word seite_wald42 
+.word wald_seite_42 
 .hword 2, 0
-.word seite_wald43 
+.word wald_seite_43 
 .hword 3, 0
-.word seite_wald44 
+.word wald_seite_44 
 .hword 3, 0
-.word seite_wald45 
+.word wald_seite_45 
 .hword 2, 0
-.word seite_wald46 
+.word wald_seite_46 
 .hword 2, 0
-.word seite_wald47 
+.word wald_seite_47 
 .hword 2, 0
-.word seite_wald48 
+.word wald_seite_48 
 .hword 2, 0
-.word seite_wald49 
+.word wald_seite_49 
 .hword 3, 0
-.word seite_wald50 
+.word wald_seite_50 
 .hword 3, 0
-.word seite_wald51 
+.word wald_seite_51 
 .hword 2, 0
-.word seite_wald52 
+.word wald_seite_52 
 .hword 2, 0
+.word wald_seite_53 
+.hword 3, 1
+.word wald_seite_54 
+.hword 3, 2
+.word wald_seite_55 
+.hword 2, 3
 
 .align 2
-seite_wald1: 
-.hword 10 
-.hword 11 
-.hword 12
-seite_wald2: 
-.hword 13 
-.hword 14 
-.hword 15
-seite_wald3: 
-.hword 290 
-.hword 291 
-.hword 292
-seite_wald4: 
-.hword 293 
-.hword 294
-seite_wald5: 
-.hword 16 
-.hword 17 
-.hword 18
-seite_wald6: 
-.hword 163 
-.hword 164
-seite_wald7: 
-.hword 177 
-.hword 178
-seite_wald8: 
-.hword 172 
-.hword 25 
-.hword 26
-seite_wald9: 
-.hword 69 
-.hword 70 
-.hword 71
-seite_wald10: 
-.hword 46 
-.hword 47
-seite_wald11: 
-.hword 306 
-.hword 307
-seite_wald12: 
-.hword 298 
-.hword 299 
-.hword 300
-seite_wald13: 
-.hword 48 
-.hword 49
-seite_wald14: 
-.hword 193 
-.hword 522
-seite_wald15: 
-.hword 165 
-.hword 166
-seite_wald16: 
-.hword 167 
-.hword 168 
-.hword 648 
-.hword 649
-seite_wald17: 
-.hword 301 
-.hword 302 
-.hword 303
-seite_wald18: 
-.hword 386 
-.hword 387
-seite_wald19: 
-.hword 204 
-.hword 205
-seite_wald20: 
-.hword 364 
-.hword 365 
-.hword 366
-seite_wald21: 
-.hword 315 
-.hword 316
-seite_wald22: 
-.hword 198 
-.hword 483
-seite_wald23: 
-.hword 215 
-.hword 514
-seite_wald24: 
-.hword 102 
-.hword 103
-seite_wald25: 
-.hword 491 
-.hword 185
-seite_wald26: 
-.hword 190 
-.hword 477
-seite_wald27: 
+wald_seite_1:
+.hword 10, 11, 12
+wald_seite_2:
+.hword 13, 14, 15
+wald_seite_3:
+.hword 290, 291, 292
+wald_seite_4:
+.hword 293, 294
+wald_seite_5:
+.hword 16, 17, 18
+wald_seite_6:
+.hword 163, 164
+wald_seite_7:
+.hword 177, 178
+wald_seite_8:
+.hword 172, 25, 26, 933
+wald_seite_9:
+.hword 69, 70, 71
+wald_seite_10:
+.hword 46, 47
+wald_seite_11:
+.hword 306, 307
+wald_seite_12:
+.hword 298, 299, 300
+wald_seite_13:
+.hword 48, 49
+wald_seite_14:
+.hword 193, 522
+wald_seite_15:
+.hword 165, 166
+wald_seite_16:
+.hword 167, 168, 648, 649
+wald_seite_17:
+.hword 301, 302, 303
+wald_seite_18:
+.hword 386, 387
+wald_seite_19:
+.hword 204, 205
+wald_seite_20:
+.hword 364, 365, 366
+wald_seite_21:
+.hword 315, 316
+wald_seite_22:
+.hword 198, 483
+wald_seite_23:
+.hword 215, 514
+wald_seite_24:
+.hword 102, 103, 947
+wald_seite_25:
+.hword 491, 185
+wald_seite_26:
+.hword 190, 477
+wald_seite_27:
 .hword 234
-seite_wald28: 
+wald_seite_28:
 .hword 317
-seite_wald29: 
-.hword 127 
-.hword 214
-seite_wald30: 
-.hword 358 
-.hword 359
-seite_wald31: 
+wald_seite_29:
+.hword 127, 214
+wald_seite_30:
+.hword 358, 359
+wald_seite_31:
 .hword 369
-seite_wald32: 
-.hword 361 
-.hword 362 
-.hword 530
-seite_wald33: 
-.hword 175 
-.hword 176 
-.hword 521
-seite_wald34: 
-.hword 277 
-.hword 278 
-.hword 279
-seite_wald35: 
-.hword 443 
-.hword 444 
-.hword 445
-seite_wald36: 
-.hword 454 
-.hword 455
-seite_wald37: 
-.hword 465 
-.hword 466 
-.hword 467
-seite_wald38: 
-.hword 468 
-.hword 469
-seite_wald39: 
-.hword 473 
-.hword 474
-seite_wald40: 
-.hword 564 
-.hword 565
-seite_wald41: 
-.hword 566 
-.hword 567
-seite_wald42: 
-.hword 568 
-.hword 569
-seite_wald43: 
-.hword 593 
-.hword 594 
-.hword 595
-seite_wald44: 
-.hword 596 
-.hword 597 
-.hword 598
-seite_wald45: 
-.hword 599 
-.hword 600
-seite_wald46: 
-.hword 601 
-.hword 602
-seite_wald47: 
-.hword 669 
-.hword 670
-seite_wald48: 
-.hword 689 
-.hword 690
-seite_wald49: 
-.hword 706 
-.hword 707 
-.hword 708
-seite_wald50: 
-.hword 717 
-.hword 718 
-.hword 719
-seite_wald51: 
-.hword 761 
-.hword 762
-seite_wald52: 
-.hword 763 
-.hword 764
+wald_seite_32:
+.hword 361, 362, 530
+wald_seite_33:
+.hword 175, 176, 521
+wald_seite_34:
+.hword 277, 278, 279
+wald_seite_35:
+.hword 443, 444, 445
+wald_seite_36:
+.hword 454, 455
+wald_seite_37:
+.hword 465, 466, 467
+wald_seite_38:
+.hword 468, 469
+wald_seite_39:
+.hword 473, 474
+wald_seite_40:
+.hword 564, 565
+wald_seite_41:
+.hword 566, 567
+wald_seite_42:
+.hword 568, 569
+wald_seite_43:
+.hword 593, 594, 595
+wald_seite_44:
+.hword 596, 597, 598
+wald_seite_45:
+.hword 599, 600
+wald_seite_46:
+.hword 601, 602
+wald_seite_47:
+.hword 669, 670
+wald_seite_48:
+.hword 689, 690
+wald_seite_49:
+.hword 706, 707, 708
+wald_seite_50:
+.hword 717, 718, 719
+wald_seite_51:
+.hword 761, 762
+wald_seite_52:
+.hword 763, 764
+wald_seite_53:
+.hword 775, 776, 777
+wald_seite_54:
+.hword 789, 790, 791
+wald_seite_55:
+.hword 795, 796
 
 .align 2
 habitat_ufer_und_see:
-.word seite_ufersee1 
+.word seite_ufer_1 
 .hword 2, 0
-.word seite_ufersee2 
+.word seite_ufer_2 
 .hword 2, 0
-.word seite_ufersee3 
+.word seite_ufer_3 
 .hword 4, 0
-.word seite_ufersee4 
+.word seite_ufer_4 
 .hword 2, 0
-.word seite_ufersee5 
+.word seite_ufer_5 
 .hword 3, 0
-.word seite_ufersee6 
+.word seite_ufer_6 
 .hword 2, 0
-.word seite_ufersee7 
+.word seite_ufer_7 
 .hword 2, 0
-.word seite_ufersee8 
+.word seite_ufer_8 
 .hword 2, 0
-.word seite_ufersee9 
+.word seite_ufer_9 
 .hword 4, 0
-.word seite_ufersee10 
+.word seite_ufer_10 
 .hword 3, 0
-.word seite_ufersee11 
+.word seite_ufer_11 
 .hword 3, 0
-.word seite_ufersee12 
+.word seite_ufer_12 
 .hword 2, 0
-.word seite_ufersee13 
+.word seite_ufer_13 
 .hword 2, 0
-.word seite_ufersee14 
+.word seite_ufer_14 
 .hword 3, 0
-.word seite_ufersee15 
+.word seite_ufer_15 
 .hword 3, 0
-.word seite_ufersee16 
+.word seite_ufer_16 
 .hword 3, 0
-.word seite_ufersee17 
+.word seite_ufer_17 
 .hword 3, 0
-.word seite_ufersee18 
+.word seite_ufer_18 
 .hword 3, 0
-.word seite_ufersee19 
+.word seite_ufer_19 
 .hword 2, 0
-.word seite_ufersee20 
+.word seite_ufer_20 
 .hword 2, 0
-.word seite_ufersee21 
+.word seite_ufer_21 
 .hword 2, 0
-.word seite_ufersee22 
+.word seite_ufer_22 
 .hword 2, 0
-.word seite_ufersee23 
+.word seite_ufer_23 
 .hword 2, 0
-.word seite_ufersee24 
+.word seite_ufer_24 
 .hword 3, 0
-.word seite_ufersee25 
+.word seite_ufer_25 
+.hword 3, 0
+.word seite_ufer_26 
+.hword 2, 0
+.word seite_ufer_27 
+.hword 2, 0
+.word seite_ufer_28 
+.hword 2, 0
+.word seite_ufer_29 
 .hword 3, 0
 
 .align 2
-
-seite_ufersee1: 
-.hword 118 
-.hword 119
-seite_ufersee2: 
-.hword 129 
-.hword 130
-seite_ufersee3: 
-.hword 98 
-.hword 99 
-.hword 326 
-.hword 327
-seite_ufersee4: 
-.hword 323 
-.hword 324
-seite_ufersee5: 
-.hword 295 
-.hword 296 
-.hword 297
-seite_ufersee6: 
-.hword 311 
-.hword 312
-seite_ufersee7: 
-.hword 54 
-.hword 55
-seite_ufersee8: 
-.hword 194 
-.hword 195
-seite_ufersee9: 
-.hword 60 
-.hword 61 
-.hword 62 
-.hword 186
-seite_ufersee10: 
-.hword 350 
-.hword 183 
-.hword 184
-seite_ufersee11: 
-.hword 79 
-.hword 80 
-.hword 199
-seite_ufersee12: 
-.hword 328 
-.hword 329
-seite_ufersee13: 
-.hword 390 
-.hword 391
-seite_ufersee14: 
-.hword 147 
-.hword 148 
-.hword 149
-seite_ufersee15: 
-.hword 7 
-.hword 8 
-.hword 9
-seite_ufersee16: 
-.hword 158 
-.hword 159 
-.hword 160
-seite_ufersee17: 
-.hword 283 
-.hword 284 
-.hword 285
-seite_ufersee18: 
-.hword 440 
-.hword 441 
-.hword 442
-seite_ufersee19: 
-.hword 452 
-.hword 453
-seite_ufersee20: 
-.hword 471 
-.hword 472
-seite_ufersee21: 
-.hword 475 
-.hword 476
-seite_ufersee22: 
-.hword 633 
-.hword 634
-seite_ufersee23: 
-.hword 666 
-.hword 667
-seite_ufersee24: 
-.hword 709 
-.hword 710 
-.hword 711
-seite_ufersee25: 
-.hword 757 
-.hword 758 
-.hword 759
+seite_ufer_1:
+.hword 118, 119
+seite_ufer_2:
+.hword 129, 130
+seite_ufer_3:
+.hword 98, 99, 326, 327
+seite_ufer_4:
+.hword 323, 324
+seite_ufer_5:
+.hword 295, 296, 297
+seite_ufer_6:
+.hword 311, 312
+seite_ufer_7:
+.hword 54, 55
+seite_ufer_8:
+.hword 194, 195
+seite_ufer_9:
+.hword 60, 61, 62, 186
+seite_ufer_10:
+.hword 350, 183, 184
+seite_ufer_11:
+.hword 79, 80, 199
+seite_ufer_12:
+.hword 328, 329
+seite_ufer_13:
+.hword 390, 391
+seite_ufer_14:
+.hword 147, 148, 149
+seite_ufer_15:
+.hword 7, 8, 9
+seite_ufer_16:
+.hword 158, 159, 160
+seite_ufer_17:
+.hword 283, 284, 285
+seite_ufer_18:
+.hword 440, 441, 442
+seite_ufer_19:
+.hword 452, 453
+seite_ufer_20:
+.hword 471, 472
+seite_ufer_21:
+.hword 475, 476
+seite_ufer_22:
+.hword 633, 634
+seite_ufer_23:
+.hword 666, 667
+seite_ufer_24:
+.hword 709, 710, 711
+seite_ufer_25:
+.hword 757, 758, 759
+seite_ufer_26:
+.hword 792, 793
+seite_ufer_27:
+.hword 800, 801
+seite_ufer_28:
+.hword 804, 805
+seite_ufer_29:
+.hword 820, 821, 824
 
 .align 2
-
 habitat_wasser:
-.word seite_wasser1 
+.word seite_wasser_1 
 .hword 2, 0
-.word seite_wasser2 
+.word seite_wasser_2 
 .hword 2, 0
-.word seite_wasser3 
+.word seite_wasser_3 
 .hword 2, 0
-.word seite_wasser4 
+.word seite_wasser_4 
 .hword 2, 0
-.word seite_wasser5 
+.word seite_wasser_5 
 .hword 2, 0
-.word seite_wasser6 
+.word seite_wasser_6 
 .hword 2, 0
-.word seite_wasser7 
+.word seite_wasser_7 
 .hword 3, 0
-.word seite_wasser8 
-.hword 1, 0
-.word seite_wasser9 
-.hword 1, 0
-.word seite_wasser10 
+.word seite_wasser_8 
 .hword 2, 0
-.word seite_wasser11 
+.word seite_wasser_9 
 .hword 1, 0
-.word seite_wasser12 
+.word seite_wasser_10 
 .hword 2, 0
-.word seite_wasser13 
-.hword 3, 0
-.word seite_wasser14 
-.hword 2, 0
-.word seite_wasser15 
-.hword 3, 0
-.word seite_wasser16 
-.hword 3, 0
-.word seite_wasser17 
+.word seite_wasser_11 
 .hword 1, 0
-.word seite_wasser18 
+.word seite_wasser_12 
+.hword 2, 0
+.word seite_wasser_13 
+.hword 3, 0
+.word seite_wasser_14 
+.hword 2, 0
+.word seite_wasser_15 
+.hword 3, 0
+.word seite_wasser_16 
+.hword 3, 0
+.word seite_wasser_17 
+.hword 1, 0
+.word seite_wasser_18 
 .hword 4, 0
-.word seite_wasser19 
+.word seite_wasser_19 
 .hword 2, 0
-.word seite_wasser20 
+.word seite_wasser_20 
 .hword 3, 0
-.word seite_wasser21 
+.word seite_wasser_21 
 .hword 2, 0
-.word seite_wasser22 
+.word seite_wasser_22 
 .hword 3, 0
-.word seite_wasser23 
+.word seite_wasser_23 
 .hword 3, 0
-.word seite_wasser24 
+.word seite_wasser_24 
 .hword 1, 0
-.word seite_wasser25 
+.word seite_wasser_25 
 .hword 2, 0
-.word seite_wasser26 
+.word seite_wasser_26 
 .hword 2, 0
-.word seite_wasser27 
+.word seite_wasser_27 
 .hword 1, 0
-.word seite_wasser28 
+.word seite_wasser_28 
 .hword 1, 0
-.word seite_wasser29 
+.word seite_wasser_29 
 .hword 2, 0
-.word seite_wasser30 
+.word seite_wasser_30 
 .hword 2, 0
-.word seite_wasser31 
+.word seite_wasser_31 
 .hword 2, 0
+.word seite_wasser_32 
+.hword 3, 0
+.word seite_wasser_33 
+.hword 1, 0
+.word seite_wasser_34 
+.hword 1, 0
 
 .align 2
-
-seite_wasser1: 
-.hword 72 
-.hword 73
-seite_wasser2: 
-.hword 309 
-.hword 310
-seite_wasser3: 
-.hword 120 
-.hword 121
-seite_wasser4: 
-.hword 170 
-.hword 171
-seite_wasser5: 
-.hword 223 
-.hword 224
-seite_wasser6: 
-.hword 90 
-.hword 91
-seite_wasser7: 
-.hword 373 
-.hword 374 
-.hword 375
-seite_wasser8: 
-.hword 211
-seite_wasser9: 
+seite_wasser_1:
+.hword 72, 73
+seite_wasser_2:
+.hword 309, 310
+seite_wasser_3:
+.hword 120, 121
+seite_wasser_4:
+.hword 170, 171
+seite_wasser_5:
+.hword 223, 224
+seite_wasser_6:
+.hword 90, 91
+seite_wasser_7:
+.hword 373, 374, 375
+seite_wasser_8:
+.hword 211, 832
+seite_wasser_9:
 .hword 222
-seite_wasser10: 
-.hword 511 
-.hword 226
-seite_wasser11: 
+seite_wasser_10:
+.hword 511, 226
+seite_wasser_11:
 .hword 325
-seite_wasser12: 
-.hword 86 
-.hword 87
-seite_wasser13: 
-.hword 341 
-.hword 342 
-.hword 343
-seite_wasser14: 
-.hword 330 
-.hword 331
-seite_wasser15: 
-.hword 313 
-.hword 314 
-.hword 381
-seite_wasser16: 
-.hword 116 
-.hword 117 
-.hword 230
-seite_wasser17: 
+seite_wasser_12:
+.hword 86, 87
+seite_wasser_13:
+.hword 341, 342, 343
+seite_wasser_14:
+.hword 330, 331
+seite_wasser_15:
+.hword 313, 314, 381
+seite_wasser_16:
+.hword 116, 117, 230
+seite_wasser_17:
 .hword 131
-seite_wasser18: 
-.hword 138 
-.hword 139 
-.hword 140 
-.hword 141
-seite_wasser19: 
-.hword 388 
-.hword 389
-seite_wasser20: 
-.hword 446 
-.hword 447 
-.hword 448
-seite_wasser21: 
-.hword 509 
-.hword 510
-seite_wasser22: 
-.hword 554 
-.hword 555 
-.hword 556
-seite_wasser23: 
-.hword 588 
-.hword 589 
-.hword 590
-seite_wasser24: 
+seite_wasser_18:
+.hword 138, 139, 140, 141
+seite_wasser_19:
+.hword 388, 389
+seite_wasser_20:
+.hword 446, 447, 448
+seite_wasser_21:
+.hword 509, 510
+seite_wasser_22:
+.hword 554, 555, 556
+seite_wasser_23:
+.hword 588, 589, 590
+seite_wasser_24:
 .hword 603
-seite_wasser25: 
-.hword 617 
-.hword 618
-seite_wasser26: 
-.hword 645 
-.hword 646
-seite_wasser27: 
+seite_wasser_25:
+.hword 617, 618
+seite_wasser_26:
+.hword 645, 646
+seite_wasser_27:
 .hword 647
-seite_wasser28: 
+seite_wasser_28:
 .hword 671
-seite_wasser29: 
-.hword 741 
-.hword 742
-seite_wasser30: 
-.hword 743 
-.hword 744
-seite_wasser31: 
-.hword 745 
-.hword 746
+seite_wasser_29:
+.hword 741, 742
+seite_wasser_30:
+.hword 743, 744
+seite_wasser_31:
+.hword 745, 746
+seite_wasser_32:
+.hword 781, 782, 783
+seite_wasser_33:
+.hword 799
+seite_wasser_34:
+.hword 834
 
 .align 2
+habitat_höhle:
+.word seite_hoehle_1 
+.hword 3, 0
+.word seite_hoehle_2 
+.hword 4, 0
+.word seite_hoehle_3 
+.hword 2, 0
+.word seite_hoehle_4 
+.hword 3, 0
+.word seite_hoehle_5 
+.hword 3, 0
+.word seite_hoehle_6 
+.hword 3, 0
+.word seite_hoehle_7 
+.hword 2, 0
+.word seite_hoehle_8 
+.hword 1, 0
+.word seite_hoehle_9 
+.hword 2, 0
+.word seite_hoehle_10 
+.hword 1, 0
+.word seite_hoehle_11 
+.hword 1, 0
+.word seite_hoehle_12 
+.hword 3, 0
+.word seite_hoehle_13 
+.hword 2, 0
+.word seite_hoehle_14 
+.hword 2, 0
+.word seite_hoehle_15 
+.hword 2, 0
+.word seite_hoehle_16 
+.hword 2, 0
+.word seite_hoehle_17 
+.hword 2, 0
+.word seite_hoehle_18 
+.hword 3, 0
+.word seite_hoehle_19 
+.hword 2, 0
+.word seite_hoehle_20 
+.hword 3, 0
+.word seite_hoehle_21 
+.hword 1, 0
+.word seite_hoehle_22 
+.hword 2, 0
+.word seite_hoehle_23 
+.hword 1, 0
+.word seite_hoehle_24 
+.hword 2, 0
+.word seite_hoehle_25 
+.hword 1, 0
+.word seite_hoehle_26 
+.hword 3, 0
 
-habitat_hoehle:
-.word seite_hoehle1 
-.hword 3, 0
-.word seite_hoehle2 
-.hword 2, 0
-.word seite_hoehle3 
-.hword 2, 0
-.word seite_hoehle4 
-.hword 3, 0
-.word seite_hoehle5 
-.hword 3, 0
-.word seite_hoehle6 
-.hword 3, 0
-.word seite_hoehle7 
-.hword 2, 0
-.word seite_hoehle8 
-.hword 1, 0
-.word seite_hoehle9 
-.hword 2, 0
-.word seite_hoehle10 
-.hword 1, 0
-.word seite_hoehle11 
-.hword 1, 0
-.word seite_hoehle12 
-.hword 3, 0
-.word seite_hoehle13 
-.hword 2, 0
-.word seite_hoehle14 
-.hword 2, 0
-.word seite_hoehle15 
-.hword 2, 0
-.word seite_hoehle16 
-.hword 2, 0
-.word seite_hoehle17 
-.hword 2, 0
-.word seite_hoehle18 
-.hword 3, 0
-.word seite_hoehle19 
-.hword 2, 0
-.word seite_hoehle20 
-.hword 3, 0
-.word seite_hoehle21 
-.hword 1, 0
-.word seite_hoehle22 
-.hword 2, 0
-.word seite_hoehle23 
-.hword 1, 0
-.word seite_hoehle24 
-.hword 2, 0
-
-seite_hoehle1: 
-.hword 41 
-.hword 42 
-.hword 169
-seite_hoehle2: 
-.hword 50 
-.hword 51
-seite_hoehle3: 
-.hword 95 
-.hword 208
-seite_hoehle4: 
-.hword 220 
-.hword 221 
-.hword 526
-seite_hoehle5: 
-.hword 346 
-.hword 347 
-.hword 531
-seite_hoehle6: 
-.hword 370 
-.hword 371 
-.hword 372
-seite_hoehle7: 
-.hword 200 
-.hword 482
-seite_hoehle8: 
+.align 2
+seite_hoehle_1:
+.hword 41, 42, 169
+seite_hoehle_2:
+.hword 50, 51, 938, 939
+seite_hoehle_3:
+.hword 95, 208
+seite_hoehle_4:
+.hword 220, 221, 526
+seite_hoehle_5:
+.hword 346, 347, 531
+seite_hoehle_6:
+.hword 370, 371, 372
+seite_hoehle_7:
+.hword 200, 482
+seite_hoehle_8:
 .hword 206
-seite_hoehle9: 
-.hword 320 
-.hword 529
-seite_hoehle10: 
+seite_hoehle_9:
+.hword 320, 529
+seite_hoehle_10:
 .hword 322
-seite_hoehle11: 
+seite_hoehle_11:
 .hword 355
-seite_hoehle12: 
-.hword 92 
-.hword 93 
-.hword 94
-seite_hoehle13: 
-.hword 360 
-.hword 202
-seite_hoehle14: 
-.hword 348 
-.hword 349
-seite_hoehle15: 
-.hword 489 
-.hword 490
-seite_hoehle16: 
-.hword 580 
-.hword 581
-seite_hoehle17: 
-.hword 582 
-.hword 583
-seite_hoehle18: 
-.hword 635 
-.hword 636 
-.hword 637
-seite_hoehle19: 
-.hword 658 
-.hword 659
-seite_hoehle20: 
-.hword 660 
-.hword 661 
-.hword 662
-seite_hoehle21: 
+seite_hoehle_12:
+.hword 92, 93, 94
+seite_hoehle_13:
+.hword 360, 202
+seite_hoehle_14:
+.hword 348, 349
+seite_hoehle_15:
+.hword 489, 490
+seite_hoehle_16:
+.hword 580, 581
+seite_hoehle_17:
+.hword 582, 583
+seite_hoehle_18:
+.hword 635, 636, 637
+seite_hoehle_19:
+.hword 658, 659
+seite_hoehle_20:
+.hword 660, 661, 662
+seite_hoehle_21:
 .hword 668
-seite_hoehle22: 
-.hword 675 
-.hword 676
-seite_hoehle23: 
+seite_hoehle_22:
+.hword 675, 676
+seite_hoehle_23:
 .hword 756
-seite_hoehle24: 
-.hword 765 
-.hword 766
+seite_hoehle_24:
+.hword 765, 766
+seite_hoehle_25:
+.hword 829
+seite_hoehle_26:
+.hword 944, 945, 946
 
 .align 2
-
 habitat_gebirge:
-.word seite_gebirge1 
+.word seite_gebirge_1 
 .hword 3, 0
-.word seite_gebirge2 
+.word seite_gebirge_2 
 .hword 2, 0
-.word seite_gebirge3 
+.word seite_gebirge_3 
 .hword 2, 0
-.word seite_gebirge4 
+.word seite_gebirge_4 
 .hword 3, 0
-.word seite_gebirge5 
+.word seite_gebirge_5 
 .hword 3, 0
-.word seite_gebirge6 
-.hword 2, 0
-.word seite_gebirge7 
-.hword 2, 0
-.word seite_gebirge8 
+.word seite_gebirge_6 
 .hword 3, 0
-.word seite_gebirge9 
+.word seite_gebirge_7 
 .hword 2, 0
-.word seite_gebirge10 
+.word seite_gebirge_8 
+.hword 3, 0
+.word seite_gebirge_9 
 .hword 2, 0
-.word seite_gebirge11 
+.word seite_gebirge_10 
+.hword 2, 0
+.word seite_gebirge_11 
 .hword 1, 0
-.word seite_gebirge12 
+.word seite_gebirge_12 
 .hword 2, 0
-.word seite_gebirge13 
+.word seite_gebirge_13 
 .hword 1, 0
-.word seite_gebirge14 
+.word seite_gebirge_14 
 .hword 2, 0
-.word seite_gebirge15 
+.word seite_gebirge_15 
 .hword 1, 0
-.word seite_gebirge16 
+.word seite_gebirge_16 
 .hword 3, 0
-.word seite_gebirge17 
+.word seite_gebirge_17 
 .hword 3, 0
-.word seite_gebirge18 
+.word seite_gebirge_18 
 .hword 3, 0
-.word seite_gebirge19 
+.word seite_gebirge_19 
 .hword 2, 0
-.word seite_gebirge20 
+.word seite_gebirge_20 
 .hword 1, 0
-.word seite_gebirge21 
+.word seite_gebirge_21 
 .hword 1, 0
-.word seite_gebirge22 
+.word seite_gebirge_22 
 .hword 3, 0
-.word seite_gebirge23 
+.word seite_gebirge_23 
 .hword 4, 0
-.word seite_gebirge24 
+.word seite_gebirge_24 
 .hword 3, 0
-.word seite_gebirge25 
+.word seite_gebirge_25 
 .hword 3, 0
-.word seite_gebirge26 
+.word seite_gebirge_26 
 .hword 2, 0
-.word seite_gebirge27 
+.word seite_gebirge_27 
 .hword 1, 0
-.word seite_gebirge28 
+.word seite_gebirge_28 
 .hword 3, 0
-.word seite_gebirge29 
+.word seite_gebirge_29 
+.hword 2, 0
+.word seite_gebirge_30 
+.hword 2, 0
+.word seite_gebirge_31 
+.hword 1, 0
+.word seite_gebirge_32 
+.hword 2, 0
+.word seite_gebirge_33 
 .hword 2, 0
 
-seite_gebirge1: 
-.hword 74 
-.hword 75 
-.hword 76
-seite_gebirge2: 
-.hword 56 
-.hword 57
-seite_gebirge3: 
-.hword 351 
-.hword 352
-seite_gebirge4: 
-.hword 66 
-.hword 67 
-.hword 68
-seite_gebirge5: 
-.hword 173 
-.hword 35 
-.hword 36
-seite_gebirge6: 
-.hword 104 
-.hword 105
-seite_gebirge7: 
-.hword 218 
-.hword 219
-seite_gebirge8: 
-.hword 339 
-.hword 340 
-.hword 321
-seite_gebirge9: 
-.hword 335 
-.hword 336
-seite_gebirge10: 
-.hword 356 
-.hword 357
-seite_gebirge11: 
+.align 2
+seite_gebirge_1:
+.hword 74, 75, 76
+seite_gebirge_2:
+.hword 56, 57
+seite_gebirge_3:
+.hword 351, 352
+seite_gebirge_4:
+.hword 66, 67, 68
+seite_gebirge_5:
+.hword 173, 35, 36
+seite_gebirge_6:
+.hword 104, 105, 947
+seite_gebirge_7:
+.hword 218, 219
+seite_gebirge_8:
+.hword 339, 340, 321
+seite_gebirge_9:
+.hword 335, 336
+seite_gebirge_10:
+.hword 356, 357
+seite_gebirge_11:
 .hword 213
-seite_gebirge12: 
-.hword 216 
-.hword 217
-seite_gebirge13: 
+seite_gebirge_12:
+.hword 216, 217
+seite_gebirge_13:
 .hword 225
-seite_gebirge14: 
-.hword 207 
-.hword 525
-seite_gebirge15: 
+seite_gebirge_14:
+.hword 207, 525
+seite_gebirge_15:
 .hword 308
-seite_gebirge16: 
-.hword 240 
-.hword 126 
-.hword 520
-seite_gebirge17: 
-.hword 382 
-.hword 383 
-.hword 384
-seite_gebirge18: 
-.hword 246 
-.hword 247 
-.hword 248
-seite_gebirge19: 
-.hword 499 
-.hword 143
-seite_gebirge20: 
+seite_gebirge_16:
+.hword 240, 126, 520
+seite_gebirge_17:
+.hword 382, 383, 384
+seite_gebirge_18:
+.hword 246, 247, 248
+seite_gebirge_19:
+.hword 499, 143
+seite_gebirge_20:
 .hword 376
-seite_gebirge21: 
+seite_gebirge_21:
 .hword 142
-seite_gebirge22: 
-.hword 4 
-.hword 5 
-.hword 6
-seite_gebirge23: 
-.hword 461 
-.hword 462 
-.hword 463 
-.hword 464
-seite_gebirge24: 
-.hword 496 
-.hword 497 
-.hword 498
-seite_gebirge25: 
-.hword 577 
-.hword 578 
-.hword 579
-seite_gebirge26: 
-.hword 619 
-.hword 620
-seite_gebirge27: 
+seite_gebirge_22:
+.hword 4, 5, 6
+seite_gebirge_23:
+.hword 461, 462, 463, 464
+seite_gebirge_24:
+.hword 496, 497, 498
+seite_gebirge_25:
+.hword 577, 578, 579
+seite_gebirge_26:
+.hword 619, 620
+seite_gebirge_27:
 .hword 674
-seite_gebirge28: 
-.hword 686 
-.hword 687 
-.hword 688
-seite_gebirge29: 
-.hword 751 
-.hword 752
+seite_gebirge_28:
+.hword 686, 687, 688
+seite_gebirge_29:
+.hword 751, 752
+seite_gebirge_30:
+.hword 802, 803
+seite_gebirge_31:
+.hword 833
+seite_gebirge_32:
+.hword 936, 937
+seite_gebirge_33:
+.hword 934, 935
 
 .align 2
-
 habitat_wildniss:
-.word seite_wildniss1 
+.word seite_wildniss_1 
 .hword 2, 0
-.word seite_wildniss2 
+.word seite_wildniss_2 
 .hword 2, 0
-.word seite_wildniss3 
+.word seite_wildniss_3 
 .hword 3, 0
-.word seite_wildniss4 
+.word seite_wildniss_4 
 .hword 3, 0
-.word seite_wildniss5 
+.word seite_wildniss_5 
 .hword 2, 0
-.word seite_wildniss6 
+.word seite_wildniss_6 
 .hword 2, 0
-.word seite_wildniss7 
+.word seite_wildniss_7 
 .hword 2, 0
-.word seite_wildniss8 
+.word seite_wildniss_8 
 .hword 3, 0
-.word seite_wildniss9 
+.word seite_wildniss_9 
 .hword 1, 0
-.word seite_wildniss10 
+.word seite_wildniss_10 
 .hword 2, 0
-.word seite_wildniss11 
+.word seite_wildniss_11 
 .hword 3, 0
-.word seite_wildniss12 
+.word seite_wildniss_12 
 .hword 3, 0
-.word seite_wildniss13 
+.word seite_wildniss_13 
 .hword 3, 0
-.word seite_wildniss14 
+.word seite_wildniss_14 
 .hword 2, 0
-.word seite_wildniss15 
+.word seite_wildniss_15 
 .hword 1, 0
-.word seite_wildniss16 
+.word seite_wildniss_16 
 .hword 2, 0
-.word seite_wildniss17 
+.word seite_wildniss_17 
 .hword 2, 0
-.word seite_wildniss18 
+.word seite_wildniss_18 
 .hword 2, 0
-.word seite_wildniss19 
+.word seite_wildniss_19 
 .hword 2, 0
-.word seite_wildniss20 
+.word seite_wildniss_20 
 .hword 1, 0
-.word seite_wildniss21 
+.word seite_wildniss_21 
 .hword 3, 0
-.word seite_wildniss22 
+.word seite_wildniss_22 
 .hword 2, 0
-.word seite_wildniss23 
+.word seite_wildniss_23 
 .hword 3, 0
-.word seite_wildniss24 
+.word seite_wildniss_24 
 .hword 2, 0
-.word seite_wildniss25 
+.word seite_wildniss_25 
 .hword 3, 0
-.word seite_wildniss26 
+.word seite_wildniss_26 
 .hword 2, 0
-.word seite_wildniss27 
+.word seite_wildniss_27 
 .hword 1, 0
-.word seite_wildniss28 
+.word seite_wildniss_28 
 .hword 2, 0
-.word seite_wildniss29 
+.word seite_wildniss_29 
 .hword 3, 0
-.word seite_wildniss30 
+.word seite_wildniss_30 
 .hword 2, 0
-.word seite_wildniss31 
+.word seite_wildniss_31 
 .hword 2, 0
-.word seite_wildniss32 
+.word seite_wildniss_32 
 .hword 2, 0
-.word seite_wildniss33 
+.word seite_wildniss_33 
 .hword 3, 0
-.word seite_wildniss34 
+.word seite_wildniss_34 
 .hword 4, 0
-.word seite_wildniss35 
+.word seite_wildniss_35 
 .hword 2, 0
-.word seite_wildniss36 
+.word seite_wildniss_36 
 .hword 3, 0
-.word seite_wildniss37 
+.word seite_wildniss_37 
 .hword 2, 0
-.word seite_wildniss38 
+.word seite_wildniss_38 
 .hword 2, 0
-.word seite_wildniss39 
+.word seite_wildniss_39 
 .hword 2, 0
-.word seite_wildniss40 
+.word seite_wildniss_40 
 .hword 2, 0
-.word seite_wildniss41 
+.word seite_wildniss_41 
 .hword 1, 0
-.word seite_wildniss42 
+.word seite_wildniss_42 
 .hword 2, 0
+.word seite_wildniss_43 
+.hword 3, 2
+.word seite_wildniss_44 
+.hword 3, 1
+.word seite_wildniss_45 
+.hword 2, 4
+.word seite_wildniss_46 
+.hword 2, 2
+.word seite_wildniss_47 
+.hword 3, 6
+.word seite_wildniss_48 
+.hword 3, 3
 
 .align 2
-
-seite_wildniss1: 
-.hword 21 
-.hword 22
-seite_wildniss2: 
-.hword 27 
-.hword 28
-seite_wildniss3: 
-.hword 111 
-.hword 112 
-.hword 517
-seite_wildniss4: 
-.hword 81 
-.hword 82 
-.hword 515
-seite_wildniss5: 
-.hword 228 
-.hword 229
-seite_wildniss6: 
-.hword 231 
-.hword 232
-seite_wildniss7: 
-.hword 344 
-.hword 345
-seite_wildniss8: 
-.hword 332 
-.hword 333 
-.hword 334
-seite_wildniss9: 
+seite_wildniss_1:
+.hword 21, 22
+seite_wildniss_2:
+.hword 27, 28
+seite_wildniss_3:
+.hword 111, 112, 517
+seite_wildniss_4:
+.hword 81, 82, 515
+seite_wildniss_5:
+.hword 228, 229
+seite_wildniss_6:
+.hword 231, 232
+seite_wildniss_7:
+.hword 344, 345
+seite_wildniss_8:
+.hword 332, 333, 334
+seite_wildniss_9:
 .hword 227
-seite_wildniss10: 
-.hword 318 
-.hword 319
-seite_wildniss11: 
-.hword 395 
-.hword 396 
-.hword 397
-seite_wildniss12: 
-.hword 398 
-.hword 399 
-.hword 400
-seite_wildniss13: 
-.hword 449 
-.hword 450 
-.hword 451
-seite_wildniss14: 
-.hword 487 
-.hword 488
-seite_wildniss15: 
+seite_wildniss_10:
+.hword 318, 319
+seite_wildniss_11:
+.hword 395, 396, 397
+seite_wildniss_12:
+.hword 398, 399, 400
+seite_wildniss_13:
+.hword 449, 450, 451
+seite_wildniss_14:
+.hword 487, 488
+seite_wildniss_15:
 .hword 495
-seite_wildniss16: 
-.hword 500 
-.hword 501
-seite_wildniss17: 
-.hword 502 
-.hword 503
-seite_wildniss18: 
-.hword 504 
-.hword 505
-seite_wildniss19: 
-.hword 506 
-.hword 507
-seite_wildniss20: 
+seite_wildniss_16:
+.hword 500, 501
+seite_wildniss_17:
+.hword 502, 503
+seite_wildniss_18:
+.hword 504, 505
+seite_wildniss_19:
+.hword 506, 507
+seite_wildniss_20:
 .hword 508
-seite_wildniss21: 
-.hword 551 
-.hword 552 
-.hword 553
-seite_wildniss22: 
-.hword 570 
-.hword 571
-seite_wildniss23: 
-.hword 572 
-.hword 573 
-.hword 574
-seite_wildniss24: 
-.hword 575 
-.hword 576
-seite_wildniss25: 
-.hword 604 
-.hword 605 
-.hword 606
-seite_wildniss26: 
-.hword 607 
-.hword 608
-seite_wildniss27: 
+seite_wildniss_21:
+.hword 551, 552, 553
+seite_wildniss_22:
+.hword 570, 571
+seite_wildniss_23:
+.hword 572, 573, 574
+seite_wildniss_24:
+.hword 575, 576
+seite_wildniss_25:
+.hword 604, 605, 606
+seite_wildniss_26:
+.hword 607, 608
+seite_wildniss_27:
 .hword 609
-seite_wildniss28: 
-.hword 610 
-.hword 611
-seite_wildniss29: 
-.hword 630 
-.hword 631 
-.hword 632
-seite_wildniss30: 
-.hword 638 
-.hword 639
-seite_wildniss31: 
-.hword 641 
-.hword 642
-seite_wildniss32: 
-.hword 650 
-.hword 651
-seite_wildniss33: 
-.hword 663 
-.hword 664 
-.hword 665
-seite_wildniss34: 
-.hword 680 
-.hword 681 
-.hword 682 
-.hword 683
-seite_wildniss35: 
-.hword 684 
-.hword 685
-seite_wildniss36: 
-.hword 703 
-.hword 704 
-.hword 705
-seite_wildniss37: 
-.hword 720 
-.hword 721
-seite_wildniss38: 
-.hword 727 
-.hword 728
-seite_wildniss39: 
-.hword 739 
-.hword 740
-seite_wildniss40: 
-.hword 749 
-.hword 750
-seite_wildniss41: 
+seite_wildniss_28:
+.hword 610, 611
+seite_wildniss_29:
+.hword 630, 631, 632
+seite_wildniss_30:
+.hword 638, 639
+seite_wildniss_31:
+.hword 641, 642
+seite_wildniss_32:
+.hword 650, 651
+seite_wildniss_33:
+.hword 663, 664, 665
+seite_wildniss_34:
+.hword 680, 681, 682, 683
+seite_wildniss_35:
+.hword 684, 685
+seite_wildniss_36:
+.hword 703, 704, 705
+seite_wildniss_37:
+.hword 720, 721
+seite_wildniss_38:
+.hword 727, 728
+seite_wildniss_39:
+.hword 739, 740
+seite_wildniss_40:
+.hword 749, 750
+seite_wildniss_41:
 .hword 754
-seite_wildniss42: 
-.hword 767 
-.hword 768
+seite_wildniss_42:
+.hword 767, 768
+seite_wildniss_43:
+.hword 778, 779, 780
+seite_wildniss_44:
+.hword 784, 785, 786
+seite_wildniss_45:
+.hword 797, 798
+seite_wildniss_46:
+.hword 810, 811
+seite_wildniss_47:
+.hword 818, 819, 828
+seite_wildniss_48:
+.hword 835, 836, 837
 
 .align 2
-
 habitat_stadt:
-.word seite_stadt1 
+.word seite_stadt_1 
 .hword 4, 0
-.word seite_stadt2 
+.word seite_stadt_2 
 .hword 2, 0
-.word seite_stadt3 
+.word seite_stadt_3 
 .hword 2, 0
-.word seite_stadt4 
-.hword 2, 0
-.word seite_stadt5 
-.hword 2, 0
-.word seite_stadt6 
-.hword 3, 0
-.word seite_stadt7 
+.word seite_stadt_4 
 .hword 4, 0
-.word seite_stadt8 
+.word seite_stadt_5 
 .hword 2, 0
-.word seite_stadt9 
+.word seite_stadt_6 
 .hword 2, 0
-.word seite_stadt10 
-.hword 1, 0
-.word seite_stadt11 
+.word seite_stadt_7 
+.hword 3, 0
+.word seite_stadt_8 
 .hword 4, 0
-.word seite_stadt12 
-.hword 3, 0
-.word seite_stadt13 
+.word seite_stadt_9 
 .hword 2, 0
-.word seite_stadt14 
-.hword 3, 0
-.word seite_stadt15 
+.word seite_stadt_10 
+.hword 2, 0
+.word seite_stadt_11 
 .hword 1, 0
-.word seite_stadt16 
+.word seite_stadt_12 
 .hword 4, 0
-.word seite_stadt17 
-.hword 2, 0
-.word seite_stadt18 
-.hword 2, 0
-.word seite_stadt19 
-.hword 1, 0
-.word seite_stadt20 
-.hword 2, 0
-.word seite_stadt21 
-.hword 2, 0
-.word seite_stadt22 
-.hword 1, 0
-.word seite_stadt23 
-.hword 1, 0
-.word seite_stadt24 
-.hword 2, 0
-.word seite_stadt25 
-.hword 1, 0
-.word seite_stadt26 
+.word seite_stadt_13 
 .hword 3, 0
-.word seite_stadt27 
+.word seite_stadt_14 
 .hword 2, 0
-.word seite_stadt28 
-.hword 2, 0
-.word seite_stadt29 
-.hword 2, 0
-.word seite_stadt30 
-.hword 2, 0
-.word seite_stadt31 
-.hword 2, 0
-.word seite_stadt32 
-.hword 2, 0
-.word seite_stadt33 
+.word seite_stadt_15 
 .hword 3, 0
-.word seite_stadt34 
-.hword 3, 0
-.word seite_stadt35 
-.hword 3, 0
-.word seite_stadt36 
-.hword 2, 0
-.word seite_stadt37 
-.hword 3, 0
-.word seite_stadt38 
-.hword 2, 0
-.word seite_stadt39 
-.hword 2, 0
-.word seite_stadt40 
+.word seite_stadt_16 
 .hword 1, 0
-.word seite_stadt41 
+.word seite_stadt_17 
+.hword 4, 0
+.word seite_stadt_18 
 .hword 2, 0
-.word seite_stadt42 
-.hword 3, 0
-.word seite_stadt43 
+.word seite_stadt_19 
+.hword 2, 0
+.word seite_stadt_20 
 .hword 1, 0
+.word seite_stadt_21 
+.hword 2, 0
+.word seite_stadt_22 
+.hword 2, 0
+.word seite_stadt_23 
+.hword 1, 0
+.word seite_stadt_24 
+.hword 1, 0
+.word seite_stadt_25 
+.hword 2, 0
+.word seite_stadt_26 
+.hword 1, 0
+.word seite_stadt_27 
+.hword 3, 0
+.word seite_stadt_28 
+.hword 2, 0
+.word seite_stadt_29 
+.hword 2, 0
+.word seite_stadt_30 
+.hword 2, 0
+.word seite_stadt_31 
+.hword 2, 0
+.word seite_stadt_32 
+.hword 2, 0
+.word seite_stadt_33 
+.hword 2, 0
+.word seite_stadt_34 
+.hword 3, 0
+.word seite_stadt_35 
+.hword 3, 0
+.word seite_stadt_36 
+.hword 3, 0
+.word seite_stadt_37 
+.hword 2, 0
+.word seite_stadt_38 
+.hword 3, 0
+.word seite_stadt_39 
+.hword 2, 0
+.word seite_stadt_40 
+.hword 2, 0
+.word seite_stadt_41 
+.hword 1, 0
+.word seite_stadt_42 
+.hword 2, 0
+.word seite_stadt_43 
+.hword 3, 0
+.word seite_stadt_44 
+.hword 1, 0
+.word seite_stadt_45 
+.hword 1, 0
+.word seite_stadt_46 
+.hword 2, 0
+.word seite_stadt_47 
+.hword 1, 0
+.word seite_stadt_48 
+.hword 2, 0
 
 .align 2
-
-seite_stadt1: 
-.hword 52 
-.hword 53 
-.hword 484 
-.hword 485
-seite_stadt2: 
-.hword 209 
-.hword 210
-seite_stadt3: 
-.hword 88 
-.hword 89
-seite_stadt4: 
-.hword 109 
-.hword 110
-seite_stadt5: 
-.hword 377 
-.hword 378
-seite_stadt6: 
-.hword 63 
-.hword 64 
-.hword 65
-seite_stadt7: 
-.hword 392 
-.hword 393 
-.hword 394 
-.hword 528
-seite_stadt8: 
-.hword 238 
-.hword 124
-seite_stadt9: 
-.hword 492 
-.hword 122
-seite_stadt10: 
+seite_stadt_1:
+.hword 52, 53, 940, 941
+seite_stadt_2:
+.hword 484, 485
+seite_stadt_3:
+.hword 209, 210
+seite_stadt_4:
+.hword 88, 89, 942, 943
+seite_stadt_5:
+.hword 109, 110
+seite_stadt_6:
+.hword 377, 378
+seite_stadt_7:
+.hword 63, 64, 65
+seite_stadt_8:
+.hword 392, 393, 394, 528
+seite_stadt_9:
+.hword 238, 124
+seite_stadt_10:
+.hword 492, 122
+seite_stadt_11:
 .hword 235
-seite_stadt11: 
-.hword 236 
-.hword 106 
-.hword 107 
-.hword 237
-seite_stadt12: 
-.hword 493 
-.hword 113 
-.hword 242
-seite_stadt13: 
-.hword 100 
-.hword 101
-seite_stadt14: 
-.hword 137 
-.hword 233 
-.hword 527
-seite_stadt15: 
+seite_stadt_12:
+.hword 236, 106, 107, 237
+seite_stadt_13:
+.hword 493, 113, 242
+seite_stadt_14:
+.hword 100, 101
+seite_stadt_15:
+.hword 137, 233, 527
+seite_stadt_16:
 .hword 132
-seite_stadt16: 
-.hword 133 
-.hword 134 
-.hword 135 
-.hword 136
-seite_stadt17: 
-.hword 196 
-.hword 197
-seite_stadt18: 
-.hword 523 
-.hword 524
-seite_stadt19: 
+seite_stadt_17:
+.hword 133, 134, 135, 136
+seite_stadt_18:
+.hword 196, 197
+seite_stadt_19:
+.hword 523, 524
+seite_stadt_20:
 .hword 753
-seite_stadt20: 
-.hword 478 
-.hword 479
-seite_stadt21: 
-.hword 480 
-.hword 481
-seite_stadt22: 
+seite_stadt_21:
+.hword 478, 479
+seite_stadt_22:
+.hword 480, 481
+seite_stadt_23:
 .hword 494
-seite_stadt23: 
+seite_stadt_24:
 .hword 532
-seite_stadt24: 
-.hword 562 
-.hword 563
-seite_stadt25: 
+seite_stadt_25:
+.hword 562, 563
+seite_stadt_26:
 .hword 584
-seite_stadt26: 
-.hword 585 
-.hword 586 
-.hword 587
-seite_stadt27: 
-.hword 591 
-.hword 592
-seite_stadt28: 
-.hword 612 
-.hword 613
-seite_stadt29: 
-.hword 615 
-.hword 616
-seite_stadt30: 
-.hword 621 
-.hword 622
-seite_stadt31: 
-.hword 623 
-.hword 624
-seite_stadt32: 
-.hword 625 
-.hword 626
-seite_stadt33: 
-.hword 627 
-.hword 628 
-.hword 629
-seite_stadt34: 
-.hword 652 
-.hword 653 
-.hword 654
-seite_stadt35: 
-.hword 655 
-.hword 656 
-.hword 657
-seite_stadt36: 
-.hword 658 
-.hword 659
-seite_stadt37: 
-.hword 660 
-.hword 661 
-.hword 662
-seite_stadt38: 
-.hword 672 
-.hword 673
-seite_stadt39: 
-.hword 677 
-.hword 678
-seite_stadt40: 
+seite_stadt_27:
+.hword 585, 586, 587
+seite_stadt_28:
+.hword 591, 592
+seite_stadt_29:
+.hword 612, 613
+seite_stadt_30:
+.hword 615, 616
+seite_stadt_31:
+.hword 621, 622
+seite_stadt_32:
+.hword 623, 624
+seite_stadt_33:
+.hword 625, 626
+seite_stadt_34:
+.hword 627, 628, 629
+seite_stadt_35:
+.hword 652, 653, 654
+seite_stadt_36:
+.hword 655, 656, 657
+seite_stadt_37:
+.hword 658, 659
+seite_stadt_38:
+.hword 660, 661, 662
+seite_stadt_39:
+.hword 672, 673
+seite_stadt_40:
+.hword 677, 678
+seite_stadt_41:
 .hword 729
-seite_stadt41: 
-.hword 730 
-.hword 731
-seite_stadt42: 
-.hword 732 
-.hword 733 
-.hword 734
-seite_stadt43: 
+seite_stadt_42:
+.hword 730, 731
+seite_stadt_43:
+.hword 732, 733, 734
+seite_stadt_44:
 .hword 760
+seite_stadt_45:
+.hword 794
+seite_stadt_46:
+.hword 812, 813
+seite_stadt_47:
+.hword 817
+seite_stadt_48:
+.hword 822, 823
 
 .align 2
-
 habitat_selten:
-.word seite_selten1 
+.word seite_selten_1 
 .hword 1, 0
-.word seite_selten2 
+.word seite_selten_2 
 .hword 3, 0
-.word seite_selten3 
+.word seite_selten_3 
 .hword 2, 0
-.word seite_selten4 
+.word seite_selten_4 
 .hword 3, 0
-.word seite_selten5 
+.word seite_selten_5 
 .hword 1, 0
-.word seite_selten6 
+.word seite_selten_6 
 .hword 1, 0
-.word seite_selten7 
+.word seite_selten_7 
 .hword 1, 0
-.word seite_selten8 
+.word seite_selten_8 
 .hword 4, 0
-.word seite_selten9 
+.word seite_selten_9 
+.hword 4, 0
+.word seite_selten_10 
+.hword 4, 0
+.word seite_selten_11 
+.hword 3, 0
+.word seite_selten_12 
+.hword 1, 0
+.word seite_selten_13 
+.hword 1, 0
+.word seite_selten_14 
+.hword 3, 0
+.word seite_selten_15 
 .hword 2, 0
-.word seite_selten10 
-.hword 3, 0
-.word seite_selten11 
+.word seite_selten_16 
 .hword 1, 0
-.word seite_selten12 
+.word seite_selten_17 
 .hword 1, 0
-.word seite_selten13 
-.hword 3, 0
-.word seite_selten14 
+.word seite_selten_18 
 .hword 2, 0
-.word seite_selten15 
-.hword 1, 0
-.word seite_selten16 
-.hword 1, 0
-.word seite_selten17 
+.word seite_selten_19 
 .hword 2, 0
-.word seite_selten18 
-.hword 2, 0
-.word seite_selten19 
+.word seite_selten_20 
 .hword 1, 0
-.word seite_selten20 
+.word seite_selten_21 
 .hword 1, 0
-.word seite_selten21 
+.word seite_selten_22 
 .hword 1, 0
-.word seite_selten22 
+.word seite_selten_23 
 .hword 1, 0
-.word seite_selten23 
+.word seite_selten_24 
 .hword 3, 0
-.word seite_selten24 
+.word seite_selten_25 
 .hword 3, 0
-.word seite_selten25 
+.word seite_selten_26 
 .hword 3, 0
-.word seite_selten26 
+.word seite_selten_27 
 .hword 1, 0
-.word seite_selten27 
+.word seite_selten_28 
 .hword 1, 0
-.word seite_selten28 
+.word seite_selten_29 
 .hword 1, 0
-.word seite_selten29 
+.word seite_selten_30 
 .hword 3, 0
-.word seite_selten30 
+.word seite_selten_31 
 .hword 1, 0
-.word seite_selten31 
+.word seite_selten_32 
 .hword 1, 0
-.word seite_selten32 
-.hword 1, 0
+.word seite_selten_33 
+.hword 1, 1
+.word seite_selten_34 
+.hword 3, 1
+.word seite_selten_35 
+.hword 4, 1
+.word seite_selten_36 
+.hword 4, 2
+.word seite_selten_37 
+.hword 4, 1, 4
+.word seite_selten_38 
+.hword 4, 3
+.word seite_selten_39 
+.hword 1, 1, 8
 
 .align 2
-
-seite_selten1: 
+seite_selten_1:
 .hword 201
-seite_selten2: 
-.hword 144 
-.hword 145 
-.hword 146
-seite_selten3: 
-.hword 151 
-.hword 150
-seite_selten4: 
-.hword 243 
-.hword 244 
-.hword 245
-seite_selten5: 
+seite_selten_2:
+.hword 144, 145, 146
+seite_selten_3:
+.hword 151, 150
+seite_selten_4:
+.hword 243, 244, 245
+seite_selten_5:
 .hword 249
-seite_selten6: 
+seite_selten_6:
 .hword 250
-seite_selten7: 
+seite_selten_7:
 .hword 251
-seite_selten8: 
-.hword 401 
-.hword 402 
-.hword 403 
-.hword 539
-seite_selten9: 
-.hword 407 
-.hword 408
-seite_selten10: 
-.hword 405 
-.hword 404 
-.hword 406
-seite_selten11: 
+seite_selten_8:
+.hword 401, 402, 403, 539
+seite_selten_9:
+.hword 892, 893, 894, 407
+seite_selten_10:
+.hword 895, 896, 897, 408
+seite_selten_11:
+.hword 405, 404, 406
+seite_selten_12:
 .hword 410
-seite_selten12: 
+seite_selten_13:
 .hword 409
-seite_selten13: 
-.hword 533 
-.hword 534 
-.hword 535
-seite_selten14: 
-.hword 536 
-.hword 537
-seite_selten15: 
+seite_selten_14:
+.hword 533, 534, 535
+seite_selten_15:
+.hword 536, 537
+seite_selten_16:
 .hword 540
-seite_selten16: 
+seite_selten_17:
 .hword 540
-seite_selten17: 
-.hword 541 
-.hword 544
-seite_selten18: 
-.hword 542 
-.hword 543
-seite_selten19: 
+seite_selten_18:
+.hword 541, 544
+seite_selten_19:
+.hword 542, 543
+seite_selten_20:
 .hword 538
-seite_selten20: 
+seite_selten_21:
 .hword 545
-seite_selten21: 
+seite_selten_22:
 .hword 546
-seite_selten22: 
+seite_selten_23:
 .hword 547
-seite_selten23: 
-.hword 691 
-.hword 692 
-.hword 693
-seite_selten24: 
-.hword 694 
-.hword 695 
-.hword 698
-seite_selten25: 
-.hword 696 
-.hword 697 
-.hword 699
-seite_selten26: 
+seite_selten_24:
+.hword 691, 692, 693
+seite_selten_25:
+.hword 694, 695, 698
+seite_selten_26:
+.hword 696, 697, 699
+seite_selten_27:
 .hword 700
-seite_selten27: 
+seite_selten_28:
 .hword 701
-seite_selten28: 
+seite_selten_29:
 .hword 702
-seite_selten29: 
-.hword 769 
-.hword 770 
-.hword 771
-seite_selten30: 
+seite_selten_30:
+.hword 769, 770, 771
+seite_selten_31:
 .hword 772
-seite_selten31: 
+seite_selten_32:
 .hword 773
-seite_selten32: 
+seite_selten_33:
 .hword 774
+seite_selten_34:
+.hword 825, 826, 827
+seite_selten_35:
+.hword 838, 839, 840, 841
+seite_selten_36:
+.hword 842, 843, 844, 845
+seite_selten_37:
+.hword 846, 847, 848, 849
+seite_selten_38:
+.hword 850, 851, 852, 853
+seite_selten_39:
+.hword 854

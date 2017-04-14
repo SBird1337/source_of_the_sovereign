@@ -159,7 +159,7 @@ move_table:
 /*Blitz*/		move_data_148:	.byte		23,		0,		0,		100,		20,		0,		0,		0,		26,		0,		2,		0
 /*Psywelle*/		move_data_149:	.byte		88,		1,		14,		100,		15,		0,		0,		0,		50,		0,		1,		0
 /*Platscher*/		move_data_150:	.byte		85,		0,		0,		0,		40,		0,		16,		0,		0,		0,		2,		0
-/*Saeurepanzer*/	move_data_151:	.byte		51,		0,		3,		0,		20,		,		0,		0,		4,		0,		2,		0
+/*Saeurepanzer*/	move_data_151:	.byte		51,		0,		3,		0,		20,		0,		0,		0,		4,		0,		2,		0
 /*Krabbhammer*/		move_data_152:	.byte		43,		100,		11,		90,		10,		0,		0,		0,		51,		0,		0,		0
 /*Explosion*/		move_data_153:	.byte		7,		250,		0,		100,		5,		0,		32,		0,		50,		0,		0,		0
 /*Kratzfurie*/		move_data_154:	.byte		29,		18,		0,		80,		15,		0,		0,		0,		51,		0,		0,		0
@@ -202,7 +202,7 @@ move_table:
 /*Stachler*/		move_data_191:	.byte		0,		0,		4,		0,		20,		0,		64,		0,		56,		0,		2,		0
 /*Blitzkanone*/		move_data_192:	.byte		6,		120,		13,		50,		5,		100,		0,		0,		18,		0,		1,		0
 /*Gesichte*/		move_data_193:	.byte		113,		0,		0,		0,		40,		0,		0,		0,		18,		0,		2,		0
-/*Abgangsbund*/		move_data_194:	.byte		98,		0,		7,		0,		5,		,		16,		0,		0,		0,		2,		0
+/*Abgangsbund*/		move_data_194:	.byte		98,		0,		7,		0,		5,		0,		16,		0,		0,		0,		2,		0
 /*Abgesang*/		move_data_195:	.byte		114,		0,		0,		0,		5,		0,		16,		0,		0,		0,		2,		0
 /*Eissturm*/		move_data_196:	.byte		70,		55,		15,		95,		15,		100,		8,		0,		18,		0,		1,		0
 /*Scanner*/		move_data_197:	.byte		111,		0,		1,		0,		5,		0,		16,		4,		0,		0,		2,		0
@@ -515,7 +515,7 @@ move_table:
 /*Seitentausch*/	move_data_502:	.byte		NONE,		0,		14,		0,		15,		0,		16,		1,		0,		0,		2,		0
 /*Siedewasser*/		move_data_503:	.byte		125,		80,		11,		100,		15,		30,		0,		0,		50,		0,		1,		0
 /*Hausbruch*/		move_data_504:	.byte		NONE,		0,		0,		0,		15,		0,		16,		0,		4,		0,		2,		0
-/*Heilwoge*/		move_data_505:	.byte		NONE,		0,		14,		0,		10,		,		16,		0,		2,		0,		2,		0
+/*Heilwoge*/		move_data_505:	.byte		NONE,		0,		14,		0,		10,		0,		16,		0,		2,		0,		2,		0
 /*Buerde*/		move_data_506:	.byte		NONE,		65,		7,		100,		10,		0,		0,		0,		50,		0,		1,		0
 /*Freier Fall*/		move_data_507:	.byte		NONE,		60,		2,		100,		10,		0,		0,		0,		51,		0,		0,		0
 /*Gangwechsel*/		move_data_508:	.byte		NONE,		0,		8,		0,		10,		0,		16,		0,		4,		0,		2,		0

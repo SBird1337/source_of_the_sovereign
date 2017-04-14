@@ -35,6 +35,7 @@
           <in>overworld_frames.S</in>
           <in>overworld_pal_table.S</in>
           <in>overworld_tables.S</in>
+          <in>wild_pokemon_data.S</in>
         </df>
         <df name="pkmn_tables">
           <in>icon_sprites.S</in>
@@ -61,6 +62,8 @@
           <in>text_multichoice.s</in>
         </df>
         <df name="trainer">
+          <in>trainer_money_rate.s</in>
+          <in>trainer_pkmn_data.s</in>
           <in>ts_alt.s</in>
           <in>ts_pal.s</in>
           <in>ts_tiles.s</in>
@@ -642,7 +645,6 @@
           <in>item_683.s</in>
           <in>item_684.s</in>
           <in>item_685.s</in>
-          <in>item_686.s</in>
         </df>
         <df name="overworlds">
           <in>ow_0000.s</in>
@@ -2228,14 +2230,6 @@
             <in>normal_1197.s</in>
             <in>normal_1198.s</in>
             <in>normal_1199.s</in>
-            <in>normal_798.s</in>
-            <in>normal_800.s</in>
-            <in>normal_801.s</in>
-            <in>normal_802.s</in>
-            <in>normal_803.s</in>
-            <in>normal_804.s</in>
-            <in>normal_805.s</in>
-            <in>normal_806.s</in>
           </df>
           <df name="castform">
             <in>castform_back.s</in>
@@ -3356,40 +3350,15 @@
             <in>normal_1197.s</in>
             <in>normal_1198.s</in>
             <in>normal_1199.s</in>
-            <in>normal_798.s</in>
-            <in>normal_800.s</in>
-            <in>normal_801.s</in>
-            <in>normal_802.s</in>
-            <in>normal_803.s</in>
-            <in>normal_804.s</in>
-            <in>normal_805.s</in>
-            <in>normal_806.s</in>
           </df>
           <df name="normal_pal">
             <in>normal_0000.s</in>
             <in>normal_0001.s</in>
-            <in>normal_0002.s</in>
-            <in>normal_0003.s</in>
-            <in>normal_0004.s</in>
-            <in>normal_0005.s</in>
-            <in>normal_0006.s</in>
             <in>normal_0007.s</in>
-            <in>normal_0008.s</in>
-            <in>normal_0009.s</in>
-            <in>normal_0010.s</in>
             <in>normal_0011.s</in>
-            <in>normal_0012.s</in>
-            <in>normal_0013.s</in>
             <in>normal_0014.s</in>
-            <in>normal_0015.s</in>
-            <in>normal_0016.s</in>
-            <in>normal_0017.s</in>
-            <in>normal_0018.s</in>
-            <in>normal_0019.s</in>
-            <in>normal_0020.s</in>
             <in>normal_0021.s</in>
             <in>normal_0022.s</in>
-            <in>normal_0023.s</in>
             <in>normal_0024.s</in>
             <in>normal_0025.s</in>
             <in>normal_0026.s</in>
@@ -3399,7 +3368,6 @@
             <in>normal_0030.s</in>
             <in>normal_0031.s</in>
             <in>normal_0032.s</in>
-            <in>normal_0033.s</in>
             <in>normal_0034.s</in>
             <in>normal_0035.s</in>
             <in>normal_0036.s</in>
@@ -3411,7 +3379,6 @@
             <in>normal_0042.s</in>
             <in>normal_0043.s</in>
             <in>normal_0044.s</in>
-            <in>normal_0045.s</in>
             <in>normal_0046.s</in>
             <in>normal_0047.s</in>
             <in>normal_0048.s</in>
@@ -4478,14 +4445,6 @@
             <in>normal_1197.s</in>
             <in>normal_1198.s</in>
             <in>normal_1199.s</in>
-            <in>normal_798.s</in>
-            <in>normal_800.s</in>
-            <in>normal_801.s</in>
-            <in>normal_802.s</in>
-            <in>normal_803.s</in>
-            <in>normal_804.s</in>
-            <in>normal_805.s</in>
-            <in>normal_806.s</in>
           </df>
           <df name="shiny_pal">
             <in>shiny_0000.s</in>
@@ -5514,14 +5473,6 @@
             <in>shiny_1197.s</in>
             <in>shiny_1198.s</in>
             <in>shiny_1199.s</in>
-            <in>shiny_798.s</in>
-            <in>shiny_800.s</in>
-            <in>shiny_801.s</in>
-            <in>shiny_802.s</in>
-            <in>shiny_803.s</in>
-            <in>shiny_804.s</in>
-            <in>shiny_805.s</in>
-            <in>shiny_806.s</in>
           </df>
         </df>
         <df name="title_screen">
@@ -5701,8 +5652,6 @@
           </df>
           <df name="trainer">
           </df>
-          <df name="trainer_sprites">
-          </df>
         </df>
         <df name="src">
           <df name="agb_debug">
@@ -5846,6 +5795,7 @@
         </df>
         <df name="overworlds">
           <in>overworld.asm</in>
+          <in>pkm_wild.asm</in>
           <in>trainer.asm</in>
         </df>
         <df name="pokemon_data">
@@ -5874,6 +5824,7 @@
         <df name="trainer_sprites">
           <in>altitude.asm</in>
           <in>images.asm</in>
+          <in>trainer_data.asm</in>
         </df>
         <in>disable_cry_table_blocks.s</in>
         <in>dynamic_overworld_hooks.asm</in>
@@ -6888,6 +6839,9 @@
           </df>
           <df name="trainers">
             <in>test_trainers.S</in>
+            <in>trainer_data.txt</in>
+            <in>trainerclasses.S</in>
+            <in>trainerclasses.txt</in>
           </df>
           <in>hazards.S</in>
           <in>invalid.S</in>

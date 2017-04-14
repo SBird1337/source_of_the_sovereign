@@ -88,6 +88,12 @@ clean:
 	rm -f $(GFX_BUILD_DIR)/sprites/front_sprites/*
 	rm -f $(GFX_BUILD_DIR)/sprites/back_sprites/*
 	rm -f $(GFX_BUILD_DIR)/overworlds/*
+	rm -f $(GFX_BUILD_DIR)/item/*
+	rm -f $(GFX_BUILD_DIR)/boot/*
+	rm -f $(GFX_BUILD_DIR)/char/*
+	rm -f $(GFX_BUILD_DIR)/title_screen/*
+	rm -f $(GFX_BUILD_DIR)/trainer_sprites/*
+
 
 $(SPRITES_BINARY): $(NORMAL_PAL_OBJ) $(HERO_OBJ) $(SHINY_PAL_OBJ) $(SPRITE_FRONT_OBJ) $(SPRITE_BACK_OBJ) $(NORMAL_CASTFORM_PAL_OBJ) $(SHINY_CASTFORM_PAL_OBJ) $(CASTFORM_FRONT_OBJ) $(CASTFORM_BACK_OBJ) $(OW_OBJ) $(TS_OBJ) $(ITEM_OBJ) $(TITLE_OBJ) $(O_BOOT)
 	echo "INPUT($^)" > $(TMP_LD)

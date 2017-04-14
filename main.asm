@@ -36,11 +36,13 @@
 .include "patches/pokemon_data/pokemon_icons.asm"
 .include "patches/pokemon_data/pokemon_habitats.asm"
 
+.include "patches/overworlds/pkm_wild.asm"
 //.include "patches/dns/core.asm"
 
 .include "patches/overworlds/overworld.asm"
 
 .include "patches/trainer_sprites/images.asm"
+.include "patches/trainer_sprites/trainer_data.asm"
 
 .include "patches/interface.asm"
 
