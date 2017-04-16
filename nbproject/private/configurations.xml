@@ -3354,11 +3354,28 @@
           <df name="normal_pal">
             <in>normal_0000.s</in>
             <in>normal_0001.s</in>
+            <in>normal_0002.s</in>
+            <in>normal_0003.s</in>
+            <in>normal_0004.s</in>
+            <in>normal_0005.s</in>
+            <in>normal_0006.s</in>
             <in>normal_0007.s</in>
+            <in>normal_0008.s</in>
+            <in>normal_0009.s</in>
+            <in>normal_0010.s</in>
             <in>normal_0011.s</in>
+            <in>normal_0012.s</in>
+            <in>normal_0013.s</in>
             <in>normal_0014.s</in>
+            <in>normal_0015.s</in>
+            <in>normal_0016.s</in>
+            <in>normal_0017.s</in>
+            <in>normal_0018.s</in>
+            <in>normal_0019.s</in>
+            <in>normal_0020.s</in>
             <in>normal_0021.s</in>
             <in>normal_0022.s</in>
+            <in>normal_0023.s</in>
             <in>normal_0024.s</in>
             <in>normal_0025.s</in>
             <in>normal_0026.s</in>
@@ -3368,6 +3385,7 @@
             <in>normal_0030.s</in>
             <in>normal_0031.s</in>
             <in>normal_0032.s</in>
+            <in>normal_0033.s</in>
             <in>normal_0034.s</in>
             <in>normal_0035.s</in>
             <in>normal_0036.s</in>
@@ -3379,6 +3397,7 @@
             <in>normal_0042.s</in>
             <in>normal_0043.s</in>
             <in>normal_0044.s</in>
+            <in>normal_0045.s</in>
             <in>normal_0046.s</in>
             <in>normal_0047.s</in>
             <in>normal_0048.s</in>

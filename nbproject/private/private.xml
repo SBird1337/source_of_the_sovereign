@@ -18,19 +18,6 @@
         </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/patches/graphics/title.asm</file>
-            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/data/raw_defines.s</file>
-            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/sprites.makefile</file>
-            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/data/pkmn_tables/pokedex_daten.S</file>
-            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/main.asm</file>
-            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/data/pkmn_tables/icon_sprites.S</file>
-            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/data/moves/animation_table.S</file>
-            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/icons.makefile</file>
-            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/data/moves/move_data.S</file>
-            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/patches/graphics/boot.asm</file>
-            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/data/pkmn_tables/icons_paletten.S</file>
-            <file>file:/D:/cygwin/home/Philipp/sots/source_of_the_sovereign/patches/graphics/char.asm</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
