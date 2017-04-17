@@ -13,6 +13,7 @@
         </df>
       </df>
       <df name="base">
+        <in>readme_base.txt</in>
       </df>
       <df name="build">
       </df>
@@ -5890,6 +5891,9 @@
             <in>overRideMusicInjector.s</in>
           </df>
           <df name="Build">
+            <in>Copy Targets.txt</in>
+            <in>cry.txt</in>
+            <in>music.txt</in>
           </df>
           <df name="Crys">
             <df name="OBJ">
@@ -5930,6 +5934,7 @@
             <in>effects.c</in>
             <in>jukebox_types.h</in>
             <in>main.c</in>
+            <in>main.txt</in>
             <in>oam_types.h</in>
             <in>sots.c</in>
             <in>sots.h</in>
@@ -6310,6 +6315,9 @@
             </df>
             <df name="Golden Sun">
               <df name="Drums">
+                <in>Drum49.txt</in>
+                <in>Drum51.txt</in>
+                <in>drumkit_offset.txt</in>
               </df>
             </df>
             <df name="Lufia">
@@ -6339,6 +6347,7 @@
               <in>Voice96.s</in>
               <in>Voice98.s</in>
               <in>Voice99.s</in>
+              <in>offsets.txt</in>
             </df>
             <df name="OBJ">
             </df>
@@ -6452,6 +6461,8 @@
             <df name="temp">
             </df>
             <df name="WAV">
+              <in>guitar_loops.txt</in>
+              <in>loops.txt</in>
             </df>
           </df>
           <df name="Songtable">
@@ -6460,7 +6471,10 @@
           <df name="Sonstiges">
           </df>
           <df name="Soundroutine">
+            <in>FROffsets.txt</in>
             <in>main_2_advanced.s</in>
+            <in>midievents.txt</in>
+            <in>patches.txt</in>
           </df>
           <df name="Sounds">
             <df name="OBJ_SE">
@@ -6842,37 +6856,53 @@
             <in>pokedex_entries.S</in>
             <in>pokedex_entries.txt</in>
             <in>pokemon_names.S</in>
+            <in>pokemon_names.txt</in>
           </df>
           <df name="story_text">
             <df name="carun_city">
               <in>globals.S</in>
+              <in>globals.txt</in>
             </df>
             <df name="hesperia">
               <in>globals.S</in>
+              <in>globals.txt</in>
               <in>outdoor.S</in>
+              <in>outdoor.txt</in>
               <in>player_house.S</in>
+              <in>player_house.txt</in>
             </df>
             <df name="tundra_hq">
               <in>globals.S</in>
+              <in>globals.txt</in>
             </df>
           </df>
           <df name="trainers">
             <in>test_trainers.S</in>
+            <in>test_trainers.txt</in>
             <in>trainer_data.S</in>
             <in>trainer_data.txt</in>
             <in>trainerclasses.S</in>
             <in>trainerclasses.txt</in>
           </df>
           <in>hazards.S</in>
+          <in>hazards.txt</in>
           <in>invalid.S</in>
+          <in>invalid.txt</in>
           <in>item_data.S</in>
+          <in>item_data.txt</in>
           <in>item_description.S</in>
+          <in>item_description.txt</in>
           <in>move_descriptions.S</in>
+          <in>move_descriptions.txt</in>
           <in>move_names.S</in>
+          <in>move_names.txt</in>
           <in>move_strings.S</in>
           <in>text_multichoices.S</in>
+          <in>text_multichoices.txt</in>
         </df>
         <df name="en">
+          <in>hazards.txt</in>
+          <in>move_strings.txt</in>
         </df>
       </df>
       <df name="todo">
