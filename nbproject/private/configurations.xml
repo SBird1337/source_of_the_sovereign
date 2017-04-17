@@ -6642,6 +6642,7 @@
             <in>ascii.c</in>
             <in>ascii.h</in>
           </df>
+          <in>applymovements.h</in>
           <in>attack_names.h</in>
           <in>battle_abilities.h</in>
           <in>battle_common.h</in>
@@ -6672,6 +6673,7 @@
           <in>pkmn_items.h</in>
           <in>pkmn_types.h</in>
           <in>pokemon.h</in>
+          <in>script_language.h</in>
           <in>sound.h</in>
           <in>types.h</in>
         </df>
