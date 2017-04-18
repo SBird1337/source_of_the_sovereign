@@ -162,6 +162,8 @@ party_opponent = 0x0202402C;
 pokemon_get_attribute = 0x0803FBE8|1;
 pokemon_set_attribute = 0x0804037C|1;
 
+pokemon_evolution_table = 08259754;
+
 
 battle_status3_bits_pbs = 0x02023DFC;
 
