@@ -35,6 +35,7 @@
 .include "patches/pokemon_data/pokemon_shiny_pal.asm"
 .include "patches/pokemon_data/pokemon_icons.asm"
 .include "patches/pokemon_data/pokemon_habitats.asm"
+.include "patches/pokemon_data/pokemon_evolution.asm"
 
 .include "patches/overworlds/pkm_wild.asm"
 //.include "patches/dns/core.asm"

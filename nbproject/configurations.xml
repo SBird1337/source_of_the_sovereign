@@ -20,6 +20,9 @@
         <df name="overworlds">
           <in>pkm_wild.asm</in>
         </df>
+        <df name="pokemon_data">
+          <in>pokemon_evolution.asm</in>
+        </df>
         <df name="trainer_sprites">
           <in>trainer_data.asm</in>
         </df>
@@ -71,6 +74,9 @@
         <df name="encode">
           <in>crc32.c</in>
         </df>
+        <df name="evolution">
+          <in>evolution_methods.c</in>
+        </df>
         <df name="include">
           <df name="assets">
             <df name="mug">
@@ -87,6 +93,7 @@
             </df>
             <in>ascii.c</in>
           </df>
+          <in>agb_debug.h</in>
         </df>
         <df name="interface">
           <in>textbox_mugshots.c</in>
@@ -267,6 +274,11 @@
       </item>
       <item path="patches/overworlds/pkm_wild.asm" ex="false" tool="4" flavor2="0">
       </item>
+      <item path="patches/pokemon_data/pokemon_evolution.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
       <item path="patches/trainer_sprites/trainer_data.asm"
             ex="false"
             tool="4"
@@ -384,6 +396,10 @@
       <item path="src/encode/crc32.c" ex="false" tool="0" flavor2="3">
         <cTool flags="0">
         </cTool>
+      </item>
+      <item path="src/evolution/evolution_methods.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/include/agb_debug.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/include/assets/ascii.c" ex="false" tool="0" flavor2="3">
         <cTool flags="0">

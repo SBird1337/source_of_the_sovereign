@@ -5692,6 +5692,8 @@
           </df>
           <df name="encode">
           </df>
+          <df name="evolution">
+          </df>
           <df name="include">
             <df name="assets">
               <df name="mug">
@@ -5829,6 +5831,7 @@
           <in>pokedex_order.asm</in>
           <in>pokemon_back_sprites.asm</in>
           <in>pokemon_egg_moves.asm</in>
+          <in>pokemon_evolution.asm</in>
           <in>pokemon_footprints.asm</in>
           <in>pokemon_front_sprites.asm</in>
           <in>pokemon_habitats.asm</in>
@@ -6623,6 +6626,9 @@
         <df name="encode">
           <in>crc32.c</in>
         </df>
+        <df name="evolution">
+          <in>evolution_methods.c</in>
+        </df>
         <df name="include">
           <df name="assets">
             <df name="interface">
@@ -6656,6 +6662,7 @@
             <in>ascii.c</in>
             <in>ascii.h</in>
           </df>
+          <in>agb_debug.h</in>
           <in>applymovements.h</in>
           <in>attack_names.h</in>
           <in>battle_abilities.h</in>
