@@ -81,12 +81,7 @@ struct obj_template mugshot_2_template = {MUGSHOT_2_TAG, MUGSHOT_2_TAG, &mug_spr
 
 /* === IMPLEMENTATIONS === */
 
-void dprint(const char *sz);
-void dprintf(const char *str, ...);
-
 void mug_create_on_variable() {
-    int i = 45;
-    dprintf("Hello Test %d", i);
     u16 *mug1_var = var_access(MUGHSOT_1_TABLE);
     u16 c_mug1_var = *mug1_var;
     u16 mug_id_1 = c_mug1_var & 0x3FFF;
