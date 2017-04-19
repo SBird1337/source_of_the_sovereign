@@ -93,6 +93,13 @@ extern u32 pokemon_get_attribute(struct pokemon* poke_address, u8 request, void*
 void pokemon_set_attribute(struct pokemon* poke_address, u8 request, void* new_value);
 
 /**
+ * @brief gets the gender of the selected pokemon
+ * @param poke_address address to pokémon structure
+ * @return true if the pokémon is female, false otherwise
+ */
+extern u8 pokemon_get_gender(struct pokemon* poke_address);
+
+/**
  * @brief gets x12 value of item
  * @param item_id item to get value of
  * @return corresponding x12 value 

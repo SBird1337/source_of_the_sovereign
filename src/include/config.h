@@ -36,6 +36,9 @@
 /*Variable for custom text*/
 #define TEXT_VAR 0x500C
 
+/*Variable for controlling evolutions*/
+#define EVO_VAR 0x500D
+
 /*Variables to control the music overrides*/
 #define VAR_FROM_1 0x51FA
 #define VAR_FROM_2 0x51FB

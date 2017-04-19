@@ -31,32 +31,9 @@
 #include <pkmn_attributes.h>
 #include <agb_debug.h>
 #include <math.h>
+#include <config.h>
 
-enum evo_source
-{
-    LEVEL_UP,
-    TRADE,
-    STONE_EVOLUTION,
-    STONE_REQUEST
-};
-
-struct evo_information
-{
-    u16 method;
-    u16 argument;
-    u16 evolve_to;
-    u8 arg1;
-    u8 arg2;
-};
-
-struct evo_result
-{
-    u8 can_evolve;
-    u8 consume_item;
-    u8 evolve_to;
-};
-
-#define EVO_NULL {0,0,0,0,0}
+#define EVO_NULL {0,0,0, {false, 0}}
 #define MAX_EVOLUTIONS 5
 #define EVO_NO_EVO (struct evo_result){false,false,0}
 
@@ -76,11 +53,45 @@ struct evo_result
 #define EVO_SPAWN 13
 #define EVO_SPAWNED 14
 #define EVO_BEAUTY 15
+#define EVO_WEAR_ITEM 16
+#define EVO_WEAR_ITEM_NIGHT 17
+#define EVO_WEAR_ITEM_DAY 18
+#define EVO_LEVEL_NIGHT 19
+#define EVO_LEVEL_DAY 20
+#define EVO_LEVEL_VAR 21
+#define EVO_LEVEL_MOVE 22
+
+enum evo_source
+{
+    LEVEL_UP,
+    TRADE,
+    STONE_EVOLUTION,
+    STONE_REQUEST
+};
+
+struct evo_information
+{
+    u16 method;
+    u16 argument;
+    u16 evolve_to;
+    struct
+    {
+        u16 gender: 2;
+        u16 versatile: 14;
+    } argument_2;
+};
+
+struct evo_result
+{
+    u8 can_evolve;
+    u8 consume_item;
+    u8 evolve_to;
+};
 
 struct evo_information evolutions[][MAX_EVOLUTIONS] = {
     {EVO_NULL,EVO_NULL,EVO_NULL,EVO_NULL,EVO_NULL},               //Nothing
-    {{EVO_BEAUTY,7,2,0,0},{EVO_SPAWNED,7,150,0,0},EVO_NULL,EVO_NULL,EVO_NULL},   //BISASAM
-    {{EVO_LEVEL_UP,32,3,0,0},EVO_NULL,EVO_NULL,EVO_NULL,EVO_NULL},//BISAKNOSP
+    {{EVO_LEVEL_MOVE,7,2,{0, 336}},EVO_NULL,EVO_NULL,EVO_NULL,EVO_NULL},   //BISASAM
+    {{EVO_LEVEL_UP,32,3,{0, 0}},EVO_NULL,EVO_NULL,EVO_NULL,EVO_NULL},//BISAKNOSP
 };
 
 struct evo_call_arguments
@@ -97,6 +108,20 @@ typedef struct evo_result (*evolution_callback)(struct evo_call_arguments);
 
 struct evo_result evolve_by_level(struct evo_call_arguments arguments)
 {
+    u8 gender = pokemon_get_gender(arguments.poke);
+    u8 gender_arg = arguments.evolution.argument_2.gender;
+    dprintf("A pokemon with gender value %d\n", gender);
+    if(gender_arg == 1)
+    {
+        if(gender)
+            return EVO_NO_EVO;
+    }
+    if(gender_arg == 2)
+    {
+        if(!gender)
+            return EVO_NO_EVO;
+    }
+    
     if(arguments.evolution.argument <= arguments.level && arguments.source == LEVEL_UP)
     {
         return (struct evo_result){true, false, arguments.evolution.evolve_to};
@@ -111,7 +136,7 @@ struct evo_result evolve_by_trade_group(struct evo_call_arguments arguments)
 {
     if(arguments.source != TRADE)
     {
-        return (struct evo_result){false, false, 0};
+        return EVO_NO_EVO;
     }
     if(arguments.evolution.method == EVO_TRADE_ITEM)
     {
@@ -132,7 +157,7 @@ struct evo_result evolve_by_trade_group(struct evo_call_arguments arguments)
 }
 
 struct evo_result evolve_random(struct evo_call_arguments arguments)
-{
+{  
     if(arguments.source != LEVEL_UP)
     {
         return EVO_NO_EVO;
@@ -159,6 +184,20 @@ struct evo_result evolve_random(struct evo_call_arguments arguments)
 
 struct evo_result evolve_by_stone(struct evo_call_arguments arguments)
 {
+    u8 gender = pokemon_get_gender(arguments.poke);
+    u8 gender_arg = arguments.evolution.argument_2.gender;
+    
+    if(gender_arg == 1)
+    {
+        if(gender)
+            return EVO_NO_EVO;
+    }
+    if(gender_arg == 2)
+    {
+        if(!gender)
+            return EVO_NO_EVO;
+    }
+
     if(arguments.source != STONE_EVOLUTION && arguments.source != STONE_REQUEST)
     {
         return (struct evo_result){false,false, 0};
@@ -221,6 +260,17 @@ struct evo_result evolve_by_happiness(struct evo_call_arguments arguments)
     }
 }
 
+struct evo_result evolve_by_special_place(struct evo_call_arguments arguments)
+{
+    u16 value = var_get(EVO_VAR);
+    dprintf("A pokemon tried to evolve using the var evo method: value: %d needed: %d\n", value, arguments.evolution.argument_2.versatile);
+    if(arguments.evolution.argument_2.versatile != value)
+    {
+        return EVO_NO_EVO;
+    }
+    return evolve_by_level(arguments);
+}
+
 struct evo_result evolve_by_beauty(struct evo_call_arguments arguments)
 {
     u32 beauty = pokemon_get_attribute(arguments.poke, ATTR_BEAUTY, NULL);
@@ -228,6 +278,46 @@ struct evo_result evolve_by_beauty(struct evo_call_arguments arguments)
     if(beauty > BEAUTY_BOUND && arguments.source == LEVEL_UP)
         return evolve_by_level(arguments);
     return EVO_NO_EVO;
+}
+
+struct evo_result evolve_by_worn_item(struct evo_call_arguments arguments)
+{
+    
+    struct evo_result level_result = evolve_by_level(arguments);
+    if(!level_result.can_evolve)
+        return EVO_NO_EVO;
+    u16 item_to_wear = arguments.evolution.argument_2.versatile;
+    dprintf("A pokemon tried to evolve by item. pkmn_item: %d; argument item: %d", arguments.item, item_to_wear);
+    if(arguments.item != item_to_wear)
+        return EVO_NO_EVO;
+    
+    return (struct evo_result){true, false, arguments.evolution.evolve_to};
+}
+
+struct evo_result evolve_by_worn_item_day(struct evo_call_arguments arguments)
+{
+    dprintf("A pokemon tried to use the (not implmented) evolve_by_worn_item_day evo method.\n");
+    return evolve_by_worn_item(arguments);
+}
+
+struct evo_result evolve_by_worn_item_night(struct evo_call_arguments arguments)
+{
+    dprintf("A pokemon tried to use the (not implmented) evolve_by_worn_item_night evo method.\n");
+    return evolve_by_worn_item(arguments);
+}
+
+struct evo_result evolve_by_move(struct evo_call_arguments arguments)
+{
+    u16 move_one = pokemon_get_attribute(arguments.poke, ATTR_ATTACK_1, NULL);
+    u16 move_two = pokemon_get_attribute(arguments.poke, ATTR_ATTACK_2, NULL);
+    u16 move_three = pokemon_get_attribute(arguments.poke, ATTR_ATTACK_3, NULL);
+    u16 move_four = pokemon_get_attribute(arguments.poke, ATTR_ATTACK_4, NULL);
+    u16 move_needed = arguments.evolution.argument_2.versatile;
+    dprintf("A pokemon tried to evolve using evolve_by_move: needed: %d, one: %d, two: %d, three: %d, four: %d\n", move_needed, move_one, move_two, move_three, move_four);
+    if((move_one == move_needed) || (move_two == move_needed) || (move_three == move_needed) || (move_four == move_needed))
+        return evolve_by_level(arguments);
+    else
+        return EVO_NO_EVO;
 }
 
 struct evo_result evolve_no_method(struct evo_call_arguments arguments)
@@ -244,22 +334,29 @@ struct evo_result evolve_invalid_method(struct evo_call_arguments arguments)
 
 static evolution_callback evolution_methods[] =
 {
-    evolve_invalid_method,
-    evolve_by_happiness,
-    evolve_invalid_method, //TODO: Happiness DAY
-    evolve_invalid_method, //TODO: Happiness NIGHT
-    evolve_by_level,
-    evolve_by_trade_group,
-    evolve_by_trade_group,
-    evolve_by_stone,
-    evolve_by_atk_def,
-    evolve_by_atk_def,
-    evolve_by_atk_def,
-    evolve_random,
-    evolve_random,
-    evolve_by_level,   //Shedninja SPAWN
-    evolve_no_method, //Shedninja SPAWNED
-    evolve_by_beauty
+    evolve_invalid_method,                            //Method 0 INVALID
+    evolve_by_happiness,                              //Method 1
+    evolve_invalid_method, //TODO: Happiness DAY        Method 2
+    evolve_invalid_method, //TODO: Happiness NIGHT      Method 3
+    evolve_by_level,                                  //Method 4
+    evolve_by_trade_group,                            //Method 5
+    evolve_by_trade_group,                            //Method 6
+    evolve_by_stone,                                  //Method 7
+    evolve_by_atk_def,                                //Method 8
+    evolve_by_atk_def,                                //Method 9
+    evolve_by_atk_def,                                //Method 10
+    evolve_random,                                    //Method 11
+    evolve_random,                                    //Method 12
+    evolve_by_level,   //Shedninja SPAWN                Method 13
+    evolve_no_method, //Shedninja SPAWNED             //Method 14
+    evolve_by_beauty,                                 //Method 15
+    evolve_by_worn_item,                              //Method 16
+    evolve_by_worn_item_day, //TODO implement day       Method 17
+    evolve_by_worn_item_night, //TODO implement night   Method 18
+    evolve_invalid_method, //TODO implement level night Method 19
+    evolve_invalid_method, //TODO implement level day   Method 20
+    evolve_by_special_place,                          //Method 21
+    evolve_by_move                                    //Method 22
 };
 
 u16 evolution_try_evolve(struct pokemon* pokemon, enum evo_source source, u16 stoneId)

@@ -63,8 +63,6 @@ typedef struct mug_mugshot {
     void *pal;
 } mug_mugshot;
 
-/* TODO: USE GRIT AND ASM SYMBOL */
-
 /* === STATIC GLOBALS === */
 
 extern mug_mugshot *mugshots;
