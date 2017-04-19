@@ -2,31 +2,6 @@
 <configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
-      <df name="data">
-        <df name="overworld">
-          <in>wild_pokemon_data.S</in>
-        </df>
-        <df name="trainer">
-          <in>trainer_money_rate.s</in>
-          <in>trainer_pkmn_data.s</in>
-        </df>
-      </df>
-      <df name="patches">
-        <df name="graphics">
-          <in>boot.asm</in>
-          <in>char.asm</in>
-          <in>title.asm</in>
-        </df>
-        <df name="overworlds">
-          <in>pkm_wild.asm</in>
-        </df>
-        <df name="pokemon_data">
-          <in>pokemon_evolution.asm</in>
-        </df>
-        <df name="trainer_sprites">
-          <in>trainer_data.asm</in>
-        </df>
-      </df>
       <df name="sots-private">
         <df name="sound">
           <df name="Assembler">
@@ -93,7 +68,6 @@
             </df>
             <in>ascii.c</in>
           </df>
-          <in>agb_debug.h</in>
         </df>
         <df name="interface">
           <in>textbox_mugshots.c</in>
@@ -178,18 +152,6 @@
           <in>trainer_battle.c</in>
         </df>
       </df>
-      <df name="string">
-        <df name="de">
-          <df name="pkmn_data">
-            <in>pokedex_data.txt</in>
-            <in>pokedex_entries.txt</in>
-          </df>
-          <df name="trainers">
-            <in>trainer_data.txt</in>
-            <in>trainerclasses.txt</in>
-          </df>
-        </df>
-      </df>
     </df>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -235,12 +197,6 @@
           <preBuildCommand></preBuildCommand>
         </preBuild>
       </makefileType>
-      <item path="data/overworld/wild_pokemon_data.S" ex="false" tool="4" flavor2="0">
-      </item>
-      <item path="data/trainer/trainer_money_rate.s" ex="false" tool="4" flavor2="0">
-      </item>
-      <item path="data/trainer/trainer_pkmn_data.s" ex="false" tool="4" flavor2="0">
-      </item>
       <folder path="0/sots-private/sound/Assembler">
         <cTool>
           <incDir>
@@ -266,24 +222,237 @@
           </preprocessorList>
         </cTool>
       </folder>
-      <item path="patches/graphics/boot.asm" ex="false" tool="4" flavor2="0">
-      </item>
-      <item path="patches/graphics/char.asm" ex="false" tool="4" flavor2="0">
-      </item>
-      <item path="patches/graphics/title.asm" ex="false" tool="4" flavor2="0">
-      </item>
-      <item path="patches/overworlds/pkm_wild.asm" ex="false" tool="4" flavor2="0">
-      </item>
-      <item path="patches/pokemon_data/pokemon_evolution.asm"
-            ex="false"
-            tool="4"
-            flavor2="0">
-      </item>
-      <item path="patches/trainer_sprites/trainer_data.asm"
-            ex="false"
-            tool="4"
-            flavor2="0">
-      </item>
+      <folder path="0/src/agb_debug">
+        <cTool>
+          <incDir>
+            <pElem>src/agb_debug</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/assets">
+        <cTool>
+          <incDir>
+            <pElem>src/assets/meteor</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/battle_engine">
+        <cTool>
+          <incDir>
+            <pElem>src/battle_engine</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/debug">
+        <cTool>
+          <incDir>
+            <pElem>src/debug</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/dns">
+        <cTool>
+          <incDir>
+            <pElem>src/dns</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/encode">
+        <cTool>
+          <incDir>
+            <pElem>src/encode</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/evolution">
+        <cTool>
+          <incDir>
+            <pElem>src/evolution</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/include/assets/mug">
+        <cTool>
+          <incDir>
+            <pElem>src/include/assets/mug</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/interface">
+        <cTool>
+          <incDir>
+            <pElem>src/interface</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/ability_changers">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/ability_changers</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/assurance">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/assurance</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/bride">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/bride</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/close_combat">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/close_combat</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/crush_grip_like">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/crush_grip_like</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/defog">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/defog</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/feint">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/feint</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/gastro_acid">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/gastro_acid</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/healing_wish">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/healing_wish</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/lucky_chant">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/lucky_chant</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/magnet_rise">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/magnet_rise</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/metal_burst">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/metal_burst</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/pay_back">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/pay_back</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/power_trick">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/power_trick</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/punishment">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/punishment</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/rooms">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/rooms</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/roost">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/roost</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/split_moves">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/split_moves</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/swap_moves">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/swap_moves</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/tailwind">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/tailwind</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/moves/veno_shock">
+        <cTool>
+          <incDir>
+            <pElem>src/moves/veno_shock</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/music">
+        <cTool>
+          <incDir>
+            <pElem>src/music</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/overworld">
+        <cTool>
+          <incDir>
+            <pElem>src/overworld</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/src/specials">
+        <cTool>
+          <incDir>
+            <pElem>src/specials</pElem>
+          </incDir>
+        </cTool>
+      </folder>
       <item path="sots-private/sound/Assembler/musicInjector.c"
             ex="false"
             tool="0"
@@ -323,7 +492,7 @@
           </incDir>
         </cTool>
       </item>
-      <item path="src/agb_debug/agb_debug.c" ex="false" tool="0" flavor2="0">
+      <item path="src/agb_debug/agb_debug.c" ex="false" tool="0" flavor2="3">
       </item>
       <item path="src/assets/meteor/met_background.c" ex="false" tool="0" flavor2="3">
         <cTool flags="0">
@@ -397,12 +566,13 @@
         <cTool flags="0">
         </cTool>
       </item>
-      <item path="src/evolution/evolution_methods.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="src/include/agb_debug.h" ex="false" tool="3" flavor2="0">
+      <item path="src/evolution/evolution_methods.c" ex="false" tool="0" flavor2="3">
       </item>
       <item path="src/include/assets/ascii.c" ex="false" tool="0" flavor2="3">
         <cTool flags="0">
+          <incDir>
+            <pElem>src/include/assets</pElem>
+          </incDir>
         </cTool>
       </item>
       <item path="src/include/assets/mug/mug_00.c" ex="false" tool="0" flavor2="3">
@@ -597,26 +767,6 @@
       <item path="src/specials/trainer_battle.c" ex="false" tool="0" flavor2="3">
         <cTool flags="0">
         </cTool>
-      </item>
-      <item path="string/de/pkmn_data/pokedex_data.txt"
-            ex="false"
-            tool="4"
-            flavor2="0">
-      </item>
-      <item path="string/de/pkmn_data/pokedex_entries.txt"
-            ex="false"
-            tool="4"
-            flavor2="0">
-      </item>
-      <item path="string/de/trainers/trainer_data.txt"
-            ex="false"
-            tool="4"
-            flavor2="0">
-      </item>
-      <item path="string/de/trainers/trainerclasses.txt"
-            ex="false"
-            tool="4"
-            flavor2="0">
       </item>
     </conf>
   </confs>

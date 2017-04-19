@@ -631,22 +631,4 @@
 #define MOVE_ZAP_CANNON 0xC0
 #define MOVE_ZEN_HEADBUTT 0x1AC
 
-struct move_data
-{
-    u8 effect;
-    u8 damage;
-    u8 type;
-    u8 accuracy;
-    u8 pp;
-    u8 effect_accuracy;
-    u8 target;
-    s8 priority;
-    u8 flags;
-    u8 arg1;
-    u8 split;
-    u8 arg3;
-};
-
-extern struct move_data move_table[676];
-
 #endif /* MOVE_IDS_H */

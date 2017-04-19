@@ -84,6 +84,23 @@ extern void flag_clear(u16 flag);
  */
 extern u32 pokemon_get_attribute(struct pokemon* poke_address, u8 request, void* destination);
 
+struct move_data {
+    u8 effect;
+    u8 damage;
+    u8 type;
+    u8 accuracy;
+    u8 pp;
+    u8 effect_accuracy;
+    u8 target;
+    s8 priority;
+    u8 flags;
+    u8 arg1;
+    u8 split;
+    u8 arg3;
+};
+
+extern struct move_data move_table[676];
+
 /**
  * @brief sets attribute of pokémon
  * @param poke_address address to pokémon structure
