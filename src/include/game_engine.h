@@ -106,5 +106,8 @@ extern u8 pokemon_get_gender(struct pokemon* poke_address);
  */
 extern u8 item_get_x12(u16 item_id);
 
+/* TODO: Implement without macros */
+#define pokemon_party_player ((struct pokemon*) 0x02024284)
+
 #endif /* GAME_ENGINE_H */
 

@@ -32,6 +32,9 @@
 #include <agb_debug.h>
 #include <math.h>
 #include <config.h>
+#include <moves.h>
+#include <pokemon.h>
+#include <pkmn_types.h>
 
 #define EVO_NULL {0,0,0, {false, 0}}
 #define MAX_EVOLUTIONS 5
@@ -39,6 +42,10 @@
 
 #define HAPPY_BOUND 219
 #define BEAUTY_BOUND 170
+
+#define GENDER_DC 0
+#define GENDER_MALE 1
+#define GENDER_FEMALE 2
 
 #define EVO_HAPPINESS 1
 #define EVO_LEVEL_UP 4
@@ -60,6 +67,12 @@
 #define EVO_LEVEL_DAY 20
 #define EVO_LEVEL_VAR 21
 #define EVO_LEVEL_MOVE 22
+#define EVO_LEVEL_POKEMON 23
+#define EVO_LEVEL_TYPE  24
+#define EVO_LEVEL_MOVE_TYPE 25
+#define EVO_MEGA_ONE 26
+#define EVO_MEGA_TWO 27
+#define EVO_PROTO 28
 
 enum evo_source
 {
@@ -90,8 +103,8 @@ struct evo_result
 
 struct evo_information evolutions[][MAX_EVOLUTIONS] = {
     {EVO_NULL,EVO_NULL,EVO_NULL,EVO_NULL,EVO_NULL},               //Nothing
-    {{EVO_LEVEL_MOVE,7,2,{0, 336}},EVO_NULL,EVO_NULL,EVO_NULL,EVO_NULL},   //BISASAM
-    {{EVO_LEVEL_UP,32,3,{0, 0}},EVO_NULL,EVO_NULL,EVO_NULL,EVO_NULL},//BISAKNOSP
+    {{EVO_LEVEL_MOVE_TYPE,7,20,{GENDER_DC, TYPE_GRASS}},EVO_NULL,EVO_NULL,EVO_NULL,EVO_NULL},   //BISASAM
+    {{EVO_LEVEL_UP,32,3,{GENDER_DC, 0}},EVO_NULL,EVO_NULL,EVO_NULL,EVO_NULL},//BISAKNOSP
 };
 
 struct evo_call_arguments
@@ -212,6 +225,26 @@ struct evo_result evolve_by_stone(struct evo_call_arguments arguments)
     }
 }
 
+struct evo_result evolve_by_pokemon(struct evo_call_arguments arguments)
+{
+    u8 has_required_pokemon = false;
+    u16 species_required = arguments.evolution.argument_2.versatile;
+    dprintf("Required: %d\n", species_required);
+    for(int i = 0; i < 6; ++i)
+    {
+        u16 current_species = pokemon_get_attribute(&(pokemon_party_player[i]), ATTR_SPECIES, NULL);
+        dprintf("Found pkmn: %d\n", current_species);
+        if(current_species == species_required)
+        {
+            has_required_pokemon = true;
+            break;
+        }
+    }
+    if(!has_required_pokemon)
+        return EVO_NO_EVO;
+    return evolve_by_level(arguments);
+}
+
 struct evo_result evolve_by_atk_def(struct evo_call_arguments arguments)
 {
     u32 atk = pokemon_get_attribute(arguments.poke, ATTR_ATTACK, NULL);
@@ -243,6 +276,30 @@ struct evo_result evolve_by_atk_def(struct evo_call_arguments arguments)
     }
     dprintf("invalid atk and def evo code reached.\n");
     return EVO_NO_EVO;
+}
+
+struct evo_result evolve_by_type(struct evo_call_arguments arguments)
+{
+    u8 has_required_pokemon = false;
+    u16 type_required = arguments.evolution.argument_2.versatile;
+    dprintf("Required: %d\n", type_required);
+    for(int i = 0; i < 6; ++i)
+    {
+        u16 current_species = pokemon_get_attribute(&(pokemon_party_player[i]), ATTR_SPECIES, NULL);
+        if(current_species == 0)
+            continue;
+        u8 type_one = pokemon_stats[current_species].type_one;
+        u8 type_two = pokemon_stats[current_species].type_two;
+        dprintf("Found type: %d/%d\n", type_one, type_two);
+        if(type_one == type_required || type_two == type_required)
+        {
+            has_required_pokemon = true;
+            break;
+        }
+    }
+    if(!has_required_pokemon)
+        return EVO_NO_EVO;
+    return evolve_by_level(arguments);
 }
 
 struct evo_result evolve_by_happiness(struct evo_call_arguments arguments)
@@ -320,6 +377,29 @@ struct evo_result evolve_by_move(struct evo_call_arguments arguments)
         return EVO_NO_EVO;
 }
 
+struct evo_result evolve_by_move_type(struct evo_call_arguments arguments)
+{
+    u16 needed_type = arguments.evolution.argument_2.versatile;
+    u8 knows_required_move = false;
+    for(int i = ATTR_ATTACK_1; i <= ATTR_ATTACK_4; ++i)
+    {
+        u16 current_move = pokemon_get_attribute(arguments.poke, i, NULL);
+        if(current_move == 0)
+            continue;
+        u8 current_type = move_table[current_move].type;
+        dprintf("found move type: %d on move %d\n", current_type, current_move);
+        if(current_type == needed_type)
+        {
+            knows_required_move = true;
+            break;
+        }
+    }
+    if(knows_required_move)
+        return evolve_by_level(arguments);
+    else
+        return EVO_NO_EVO;
+}
+
 struct evo_result evolve_no_method(struct evo_call_arguments arguments)
 {
     //For shedninja
@@ -356,7 +436,14 @@ static evolution_callback evolution_methods[] =
     evolve_invalid_method, //TODO implement level night Method 19
     evolve_invalid_method, //TODO implement level day   Method 20
     evolve_by_special_place,                          //Method 21
-    evolve_by_move                                    //Method 22
+    evolve_by_move,                                   //Method 22
+    evolve_by_pokemon,                                //Method 23
+    evolve_by_type,                                   //Method 24
+    evolve_by_move_type,                              //Method 25
+    evolve_no_method,                                 //Method 26
+    evolve_no_method,                                 //Method 26
+    evolve_no_method,                                 //Method 26
+    evolve_no_method,                                 //Method 26
 };
 
 u16 evolution_try_evolve(struct pokemon* pokemon, enum evo_source source, u16 stoneId)
