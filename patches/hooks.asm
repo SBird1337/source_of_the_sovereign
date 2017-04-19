@@ -1,36 +1,41 @@
 //Ipatix sound stuff
-  .org 0x080007B4
+.org 0x080007B4
     .word  0x0203E000   // new PCM work area
-  .org 0x081DD0B4
+.org 0x081DD0B4
     .word  main_mixer   // new mixer ROM location
     .word  0x03005F50   // new mixer RAM location (used for loading)
     .halfword mixer_size
     .halfword 0x400        // CpuSet, copy code by 32 bit units
     .word  0x0203E000   // new PCM work area
-  .org 0x081DD0C8
+.org 0x081DD0C8
      // set correct sound driver operation mode
      // 12 channels at 26758 Hz samplerate
     .byte  0x00, 0xCC, 0x98, 0x00
-  .org 0x081DC094
+.org 0x081DC094
     .word  0x03005F50+1 // new mixer RAM location (used for branch)
 
    // repoint correctly to the new cry tables
-  .org 0x080720C8
-  .include "patches/disable_cry_table_blocks.s"
+.org 0x080720C8
+    .include "patches/disable_cry_table_blocks.s"
 
    // cry-ID = poke-ID
-  .org 0x08043304
-  LSL	R0, R0, #0x10
-  LSR	R0, R0, #0x10
-  BX  LR
+.org 0x08043304
+    LSL R0, R0, #0x10
+    LSR R0, R0, #0x10
+    BX  LR
 
    // music overrides
-  .org 0x081DD0F4
+.org 0x081DD0F4
     LDR R1, =music_override|1
-    BX R1
-   .pool
+    BX  R1
+    .pool
 
-
+.org 0x0808064C
+    LDR R1, =trainer_intro_music_id_to_song|1
+    LDR R2, =0x080806BA|1 // return location
+    MOV LR, R2
+    BX  R1
+    .pool
 
 //End of sound stuff
 
