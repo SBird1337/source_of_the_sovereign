@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 agbprintf = 0x081E39D8|1;
 agbprint_flush = 0x081E3B04|1;
 agb_assert = 0x081E3B14|1;
