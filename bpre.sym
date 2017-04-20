@@ -105,8 +105,12 @@ npc_states = 0x02036E38;
 sav_one = 0x03005008;
 
 weather_turns = 0x02023F48;
+
+battle_call_bc_move_exec = 0x0801BBE4|1;
+battle_preparation_phase = 0x02023E82;
 battle_type_flags = 0x02022B4C;
 battle_active_bank = 0x02023BC4;
+battle_buffer_b = 0x020233C4;
 battle_num_active_sides = 0x02023BCC;
 battle_mode = 0x02023BE3;
 battle_participants	= 0x02023BE4;

@@ -36,6 +36,7 @@
           <in>battle_end_of_turn.c</in>
           <in>battle_help.c</in>
           <in>battle_initiative.c</in>
+          <in>battle_m_flee_hook.S</in>
           <in>battle_test.c</in>
           <in>custom_structs_malloc.c</in>
           <in>entry_hazards.c</in>
@@ -538,6 +539,11 @@
             flavor2="3">
         <cTool flags="0">
         </cTool>
+      </item>
+      <item path="src/battle_engine/battle_m_flee_hook.S"
+            ex="false"
+            tool="4"
+            flavor2="0">
       </item>
       <item path="src/battle_engine/battle_test.c" ex="false" tool="0" flavor2="3">
         <cTool flags="0">

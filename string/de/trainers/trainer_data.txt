@@ -259,19 +259,19 @@ str_trainer_name_42=Hanah
 @word pokemon_von_id_42
 
 @byte 0, 48, 1, 56
-str_trainer_name_43=Jörg
+str_trainer_name_43=JÃ¶rg
 @hword 0, 0, 0, 0
 @byte 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0
 @word pokemon_von_id_43
 
 @byte 0, 48, 1, 56
-str_trainer_name_44=Jörg
+str_trainer_name_44=JÃ¶rg
 @hword 0, 0, 0, 0
 @byte 0, 0, 0, 0, 0, 3, 0, 0, 1, 0, 0, 0
 @word pokemon_von_id_44
 
 @byte 0, 48, 1, 56
-str_trainer_name_45=Jörg
+str_trainer_name_45=JÃ¶rg
 @hword 0, 0, 0, 0
 @byte 0, 0, 0, 0, 0, 7, 0, 0, 1, 0, 0, 0
 @word pokemon_von_id_45

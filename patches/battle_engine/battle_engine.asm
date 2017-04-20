@@ -18,3 +18,8 @@ bx r3
 
 .org 0x08018254
 .word battle_end_of_turn_hook+1
+
+.org 0x080146AC
+ldr r0, =battle_m_flee_hook+1
+bx r0
+.pool
