@@ -53,8 +53,14 @@ typedef struct {
 
 extern m_play_table mplay_table[];
 extern song_table _songtable[];
-extern void m4aSongNumStart(u16 songid);
-extern void MPlayStart_rev01(music_player_area *ma, song_header *so);
-extern void MPlayContinue(music_player_area *ma);
+void m4aSongNumStart(u16 songid);
+void MPlayStart_rev01(music_player_area *ma, song_header *so);
+void MPlayContinue(music_player_area *ma);
+void MPlayAllStop(void);
+
+// battle and map related stuff
+void current_map_music_set(u16);
+void current_map_music_set_to_zero(void);
+void current_map_music_fadeout(u8);
 
 #endif

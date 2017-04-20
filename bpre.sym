@@ -87,7 +87,8 @@ task_exec = 0x08077579;
 objc_exec = 0x08006B5D;
 obj_sync = 0x08006BA9;
 
-flag_clear = 0x0806E6A9;
+flag_clear = 0x0806E6A8|1;
+flag_set = 0x0806E680|1;
 
 divide = 0x081E4018;
 
@@ -184,6 +185,12 @@ mplay_table = 0x084A329C;
 m4aSongNumStart = 0x081DD0F5;
 MPlayStart_rev01 = 0x081DD859;
 MPlayContinue = 0x081DCFF9;
+MPlayAllStop = 0x081DD228|1;
+
+current_map_music_set = 0x08071A74|1;
+current_map_music_set_to_zero = 0x08071A44|1;
+current_map_music_fadeout = 0x08071AB4|1;
+
 __aeabi_idiv = 0x081E4018|1;
 __aeabi_idivmod = 0x081E40F4|1;
 __aeabi_uidiv = 0x081E460C|1;

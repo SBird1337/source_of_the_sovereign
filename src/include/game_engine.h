@@ -76,6 +76,12 @@ extern u8 flag_check(u32 flag);
 extern void flag_clear(u16 flag);
 
 /**
+ * @brief sets a flag
+ * @param flag flag index to set
+ */
+extern void flag_set(u16 flag);
+
+/**
  * @brief gets attribute of pokémon
  * @param poke_address address to pokémon structure
  * @param request request from the attribute request table

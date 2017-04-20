@@ -2,6 +2,7 @@
 #define POKE_INDICES_H
 
 #define POKE_PIKACHU    25
+#define POKE_ODDISH     43
 #define POKE_FARFETCHD  83
 #define POKE_CUBONE     104
 #define POKE_MAROWAK    105

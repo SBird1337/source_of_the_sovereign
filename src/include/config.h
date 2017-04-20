@@ -48,11 +48,7 @@
 #define VAR_TO_3 0x51FF
 
 /*Flag to enable the music overrides*/
-#define FLAG_ENABLE_MUSIC_OVERRIDES 0x742
-
-/*Special music override values*/
-#define MUS_NO_OVERRIDE 0xFFFF
-#define MUS_SKIP_PLAY 0xFFFE
+#define FLAG_SKIP_BATTLE_MUSIC 0x742
 
 /*Flag to deactivate transparent textboxes*/
 #define FLAG_ACTIVATE		0x900

@@ -67,6 +67,7 @@ void free_battle_structs()
     free(custom_battle_elements.ptr);
     custom_battle_elements.ptr=0;
     flag_clear(FLAG_DEOXYS_AURA);
+    flag_clear(FLAG_SKIP_BATTLE_MUSIC);
 }
 
 //hijack switch in command, clean up battle structs and carry over baton pass

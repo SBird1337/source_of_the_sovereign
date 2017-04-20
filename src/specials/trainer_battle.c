@@ -41,7 +41,6 @@ extern void battle_init();
 extern void battle_80801F0_something();
 
 extern volatile u8 trainerbattle_battle_type;
-extern volatile u16 trainerbattle_flag_id;
 extern volatile u16 trainerbattle_arg2;
 extern volatile char* trainerbattle_message_intro;
 extern volatile char* trainerbattle_message_defeat;

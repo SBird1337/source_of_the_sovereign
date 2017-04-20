@@ -28,20 +28,16 @@ _call_via_r1 equ 0x081E3BAC
     BX  LR
 
    // music overrides
-.org 0x081DD0F4
-    LDR R1, =music_override|1  // TODO wait for replacement by functions below, but can stay for now
-    BX  R1
-    .pool
 
-.org 0x0808064C // intro music (!) song hook
+.org 0x0808064C // encounter music ([!] Box) song hook
     LDR R1, =mhk_intro_music_id_to_song|1
     BL  _call_via_r1
     B   0x080806BA
     .pool
 
-.org 0x08043FD4 // batle music song hook
-    LDR R0, =mhk_song_id_for_battle|1
-    BX  R0
+.org 0x08044090
+    LDR R1, =mhk_current_map_music_set_default_for_battle|1
+    BX  R1
     .pool
 
 .org 0x080156FE // trainer victory music hook
@@ -51,17 +47,22 @@ _call_via_r1 equ 0x081E3BAC
     .pool
 
 .org 0x08021D46  // wild poke defeated
-    BL  _call_via_r0 // call via r0
+    BL  _call_via_r0
 .org 0x08021D94
     .word   mhk_wild_poke_def_music|1
 
 .org 0x0807F9F8
     LDR R1, =0x0807FA3E
-    BL  _call_via_r1 // call via r1
+    BL  _call_via_r1
     MOV R1, R0
     B   0x0807FA3E
     .pool
 
+.org 0x080159D0
+    LDR R0, =mhk_fadeout|1
+    BL  _call_via_r0
+    B   0x080159DC
+    .pool
 
 
 //End of sound stuff
