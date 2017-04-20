@@ -12,6 +12,8 @@ void mark_buffer_bank_for_execution(u8 bank);
 void prepare_setattributes_in_battle(u8 buffer, u8 data_request, u8 unkown, u8 data_to_add, void* ptr_to_attribute);
 u8 item_get_quality(u8 item_id);
 u8 get_item_x12_battle_function(u16 item_id);
-void battle_script_push();
+void battle_script_push(void);
+
+void song_play_for_text(u16 songid);
 
 #endif

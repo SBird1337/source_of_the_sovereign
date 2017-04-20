@@ -14,14 +14,8 @@ typedef     signed long long int    s64;
 typedef     float                   f32;
 typedef     double                  f64;
 
-typedef     unsigned int            size_t;
-
-typedef     unsigned char           bool;
-
-#define true 1
-#define false 0
-
-#define NULL 0
+#include <stddef.h>
+#include <stdbool.h>
 
 #define rgb5(r,g,b)                 (u16)( r | ( g << 5) | ( b << 10) )
 

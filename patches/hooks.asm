@@ -1,3 +1,6 @@
+_call_via_r0 equ 0x081E3BA8
+_call_via_r1 equ 0x081E3BAC
+
 //Ipatix sound stuff
 .org 0x080007B4
     .word  0x0203E000   // new PCM work area
@@ -26,16 +29,40 @@
 
    // music overrides
 .org 0x081DD0F4
-    LDR R1, =music_override|1
+    LDR R1, =music_override|1  // TODO wait for replacement by functions below, but can stay for now
     BX  R1
     .pool
 
-.org 0x0808064C
-    LDR R1, =trainer_intro_music_id_to_song|1
-    LDR R2, =0x080806BA|1 // return location
-    MOV LR, R2
-    BX  R1
+.org 0x0808064C // intro music (!) song hook
+    LDR R1, =mhk_intro_music_id_to_song|1
+    BL  _call_via_r1
+    B   0x080806BA
     .pool
+
+.org 0x08043FD4 // batle music song hook
+    LDR R0, =mhk_song_id_for_battle|1
+    BX  R0
+    .pool
+
+.org 0x080156FE // trainer victory music hook
+    LDR R0, =mhk_trainer_battle_play_defeat|1
+    BL  _call_via_r0
+    B   0x0801576E
+    .pool
+
+.org 0x08021D46  // wild poke defeated
+    BL  _call_via_r0 // call via r0
+.org 0x08021D94
+    .word   mhk_wild_poke_def_music|1
+
+.org 0x0807F9F8
+    LDR R1, =0x0807FA3E
+    BL  _call_via_r1 // call via r1
+    MOV R1, R0
+    B   0x0807FA3E
+    .pool
+
+
 
 //End of sound stuff
 
