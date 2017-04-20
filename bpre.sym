@@ -157,6 +157,8 @@ trainerbattle_next_scr_cmd = 0x020386C4;
 trainerbattle_message_4 = 0x020386C8;
 trainerbattle_unknown = 0x020386CC;
 
+song_play_for_text = 0x080722A0|1;
+
 item_get_quality = 0x0809A948|1;
 item_get_x12 = 0x0809A924|1;
 
