@@ -46,10 +46,23 @@
 #define SEQ_BGM_VS_TT_BOSS_JANA     384
 #define SEQ_BGM_VS_TT_BOSS_NORMAN   388
 
+#define SEQ_BGM_VS_POKE             298
+#define SEQ_BGM_VS_RSE              266
+#define SEQ_BGM_VS_CHAMP            299
+#define SEQ_BGM_VS_LEADER           296
+#define SEQ_BGM_VS_TRAINER          297
+
+#define SEQ_BGM_VS_DEOXYS           399
+#define SEQ_BGM_VS_MEWTWO           340
+#define SEQ_BGM_VS_LEG1             341
+
 // Victories
 
 #define SEQ_BGM_VIC_TT              387
 #define SEQ_BGM_VIC_TRAINER         310
+
+#define SEQ_BGM_VIC_LEADER          312
+#define SEQ_BGM_VIC_POKE            311
 
 // Various Events
 

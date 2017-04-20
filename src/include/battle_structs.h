@@ -341,4 +341,47 @@ struct b_enigma_berry{
 
 extern struct b_enigma_berry battle_enigma_berry[4];
 
+// trainerbattle stuff
+
+extern u16 trainerbattle_flag_id;
+
+extern struct {
+    u8 battle_double : 1;       //   1
+    u8 battle_link : 1;         //   2
+    u8 battle_wild : 1;         //   4
+    u8 battle_trainer : 1;      //   8
+    u8 battle_oak_comments : 1; //0x10
+    u8 _battle_unk_1 : 1;       //0x20
+    u8 battle_double_2 : 1;     //0x40
+    u8 battle_safari : 1;       //0x80
+    u8 battle_trainer_tower : 1;//0x100
+    u8 _battle_unk_2 : 1;       //0x200
+    u8 battle_old_man : 1;      //0x400
+    u8 battle_trainer_tower_2 : 1;//0x800
+    u8 _battle_unk_3 : 1;       //0x1000
+    u8 _battle_unk_4 : 1;       //0x2000
+    u8 _battle_unk_5 : 1;       //0x4000
+    u8 battle_ghost : 1;        //0x8000
+    u8 battle_poke_dude : 1;    //0x10000
+    u8 _battle_unk_6 : 1;       //0x20000
+    u8 battle_secret_base : 1;  //0x40000
+} battle_type_flags;
+
+_Static_assert(sizeof(battle_type_flags) <= 4, "Invalid struct size for battle_type_flags");
+
+struct trainer_table_entry {
+    u8 _unk_1;
+    u8 trainer_class;
+    u8 encounter_music;
+    u8 _unk_2;
+    u8 _unk_3[16];
+    u8 _unk_4[16];
+    u32 _unk; // probably pokemon data
+};
+
+_Static_assert(sizeof(struct trainer_table_entry) == 0x28, "Invalid struct size for trainer_table_entry");
+
+extern struct trainer_table_entry trainer_data[];
+
+
 #endif
