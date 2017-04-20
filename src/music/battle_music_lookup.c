@@ -73,11 +73,11 @@ void mhk_trainer_battle_play_defeat(void) {
             break;
     }
 
-    song_play_for_text(song);
+    //song_play_for_text(song);
 }
 
 void mhk_wild_poke_def_music(void) {
-    song_play_for_text(SEQ_BGM_VIC_POKE);
+    //song_play_for_text(SEQ_BGM_VIC_POKE);
 }
 
 u16 mhk_species_to_song(u16 species) {

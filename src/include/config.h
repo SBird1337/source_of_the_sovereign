@@ -57,6 +57,7 @@
 /*Flag to deactivate transparent textboxes*/
 #define FLAG_ACTIVATE		0x900
 #define FLAG_WALK_SCRIPT	0x901
+#define FLAG_DEOXYS_AURA        0x902
 
 /*Effect IDs controlling various in-battle item effects etc.*/
 #define ITEM_EFFECT_SMOOTH_ROCK	0x48

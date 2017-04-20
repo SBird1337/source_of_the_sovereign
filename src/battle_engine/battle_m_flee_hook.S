@@ -1,3 +1,6 @@
+#include <battle_script.h>
+#include <config.h>
+
 .text
 .align 2
 .thumb
@@ -37,7 +40,13 @@ ldrb r0, [r1]
 cmp r0, #3
 bne no_flee
 
-ldr r0, =0x081D8924 @some move script change later
+ldr r0, =FLAG_DEOXYS_AURA
+bl call_flag_get
+cmp r0, #0
+bne intercept_aura
+b no_flee
+intercept_aura:
+ldr r0, =bsc_deoxys_aura @some move script change later
 bl call_battle_call_move_something
 ldr r1, =battle_preparation_phase
 ldrb r0, [r4]
@@ -52,3 +61,13 @@ bx r0
 call_battle_call_move_something:
 ldr r1, =battle_call_bc_move_exec
 bx r1
+
+call_flag_get:
+ldr r1, =flag_check
+bx r1
+
+bsc_deoxys_aura:
+
+setword STRING_LOADER str_deoxys_aura
+printstring 0x184
+end2

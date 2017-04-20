@@ -31,6 +31,7 @@
 /* === INCLUDE === */
 
 #include <battle_custom_structs.h>
+#include <config.h>
 #include <game_engine.h>
 #include <memory.h>
 #include <moves.h>
@@ -65,6 +66,7 @@ void free_battle_structs()
 {
     free(custom_battle_elements.ptr);
     custom_battle_elements.ptr=0;
+    flag_clear(FLAG_DEOXYS_AURA);
 }
 
 //hijack switch in command, clean up battle structs and carry over baton pass

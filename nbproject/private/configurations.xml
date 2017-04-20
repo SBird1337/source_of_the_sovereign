@@ -6830,7 +6830,7 @@
           </df>
         </df>
         <df name="music">
-          <in>encounter_lookup.c</in>
+          <in>battle_music_lookup.c</in>
           <in>main_mixer.S</in>
           <in>music_override.c</in>
         </df>
