@@ -16,23 +16,56 @@ u16 mhk_intro_music_id_to_song(u8 introid) {
     u16 res = 0;
 
     switch (introid) {
-        case 0:
-        case 4:
-        case 5:
-        case 8:
-        case 10:
-        case 11:
-        case 12:
-        case 13:
-            res = SEQ_FRLG_E_3;
+        case TRAINER_EYE_MUS_BOY:
+            res = 350;
             break;
-        case 1:
-        case 2:
-        case 9:
-            res = SEQ_FRLG_E_2;
+        case TRAINER_EYE_MUS_GIRL:
+            res = 351;
+            break;
+        case TRAINER_EYE_MUS_KID:
+            res = 352;
+            break;
+        case TRAINER_EYE_MUS_HIKER:
+            res = 353;
+            break;
+        case TRAINER_EYE_MUS_SAILOR:
+            res = 354;
+            break;
+        case TRAINER_EYE_MUS_ELECTRIC:
+            res = 355;
+            break;
+        case TRAINER_EYE_MUS_PSYCHIC:
+            res = 356;
+            break;
+        case TRAINER_EYE_MUS_SWIMMER:
+            res = 357;
+            break;
+        case TRAINER_EYE_MUS_ACE:
+            res = 358;
+            break;
+        case TRAINER_EYE_MUS_ELITE:
+            res = 359;
+            break;
+        case TRAINER_EYE_MUS_CHAMP:
+            res = 360;
+            break;
+        case TRAINER_EYE_MUS_TT_GRUNT_M:
+            res = 361;
+            break;
+        case TRAINER_EYE_MUS_TT_GRUNT_F:
+            res = 362;
+            break;
+        case TRAINER_EYE_MUS_TT_ADMIN:
+            res = 363;
+            break;
+        case TRAINER_EYE_MUS_TT_BOSS_1:
+            res = 364;
+            break;
+        case TRAINER_EYE_MUS_TT_BOSS_2:
+            res = 365;
             break;
         default:
-            res = SEQ_FRLG_E_3;
+            res = SEQ_FRLG_E_1;
             break;
     }
 

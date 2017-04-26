@@ -50,6 +50,24 @@
 /*Flag to enable the music overrides*/
 #define FLAG_SKIP_BATTLE_MUSIC 0x742
 
+/*Trainer encounter IDs*/
+#define TRAINER_EYE_MUS_BOY         0
+#define TRAINER_EYE_MUS_GIRL        1
+#define TRAINER_EYE_MUS_KID         2
+#define TRAINER_EYE_MUS_HIKER       3
+#define TRAINER_EYE_MUS_SAILOR      4
+#define TRAINER_EYE_MUS_ELECTRIC    5
+#define TRAINER_EYE_MUS_PSYCHIC     6
+#define TRAINER_EYE_MUS_SWIMMER     7
+#define TRAINER_EYE_MUS_ACE         8
+#define TRAINER_EYE_MUS_ELITE       9
+#define TRAINER_EYE_MUS_CHAMP       10
+#define TRAINER_EYE_MUS_TT_GRUNT_M  11
+#define TRAINER_EYE_MUS_TT_GRUNT_F  12
+#define TRAINER_EYE_MUS_TT_ADMIN    13
+#define TRAINER_EYE_MUS_TT_BOSS_1   14
+#define TRAINER_EYE_MUS_TT_BOSS_2   15
+
 /*Flag to deactivate transparent textboxes*/
 #define FLAG_ACTIVATE		0x900
 #define FLAG_WALK_SCRIPT	0x901
