@@ -104,6 +104,7 @@ fade_controller = 0x02037AB8;
 npc_states = 0x02036E38;
 
 sav_one = 0x03005008;
+oe_exec = 0x08083444|1;
 
 weather_turns = 0x02023F48;
 
@@ -190,6 +191,10 @@ MPlayAllStop = 0x081DD228|1;
 current_map_music_set = 0x08071A74|1;
 current_map_music_set_to_zero = 0x08071A44|1;
 current_map_music_fadeout = 0x08071AB4|1;
+
+current_map_block_role_get = 0x08058F78|1;
+
+current_oe_state = 0x020386E0;
 
 __aeabi_idiv = 0x081E4018|1;
 __aeabi_idivmod = 0x081E40F4|1;

@@ -34,29 +34,7 @@
 #include <types.h>
 #include <game_engine.h>
 #include <config.h>
-
-/* === STRUCTURES === */
-struct lt_point
-{
-    u16 x;
-    u16 y;
-};
-
-struct lt_warpdata
-{
-    u8 bank;
-    u8 map;
-    u8 warpid;
-    u8 unknown;
-    u16 enter_x;
-    u16 enter_y;
-};
-
-struct sav_struct
-{
-    struct lt_point position;
-    struct lt_warpdata location;
-};
+#include <save_one.h>
 
 /* === PROTOTYPES === */
 
@@ -71,7 +49,6 @@ void sp_load_text_map();
 void sp_load_text_person();
 
 /* === GLOBALS === */
-extern struct sav_struct* sav_one;
 
 char* str_invalid_text_ref;
 char***** text_lookup_table;   

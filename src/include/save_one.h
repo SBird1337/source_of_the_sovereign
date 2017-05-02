@@ -1,5 +1,5 @@
 /****************************************************************************
- * Copyright (C) 2015-2016 by the SotS Team                                 *
+ * Copyright (C) 2015-2017 by the SotS Team                                 *
  *                                                                          *
  * This file is part of Sovereign of the Skies.                             *
  *                                                                          *
@@ -20,50 +20,44 @@
  *   If not, see <http://www.gnu.org/licenses/>.                            *
  ****************************************************************************/
 
-/**
- * @file overworld.c
- * @author Sturmvogel
- * @date 15 dec 2016
- * @brief Routines to work with the new overworld npc table
- */
+/* 
+ * File:   save_one.h
+ * Author: Sturmvogel
+ *
+ * Created on May 2, 2017
+ * @brief Provides structures for save file access
+*/
 
-/* === INCLUDES === */
-#include <game_engine.h>
-#include <npc.h>
+#ifndef SAVE_ONE_H
+#define SAVE_ONE_H
 
-/* === DEFINES === */
-#define OW_REPLACE_VAR 0x500A
-#define OW_REPLACE_TO_VAR 0x500B
+#include <types.h>
 
-/* === PROTOTYPES === */
-/**
- * @brief get the npc type struct by given 16 bit npc id
- * @param npc_id short npc id
- * @return pointer to corresponding npc_type structure
- */
-struct npc_type *npc_get_type(u16 npc_id);
+/* === STRUCTURES === */
 
-/* === EXTERN STATICS ===*/
-struct npc_type **ow_main_table;
-struct npc_type **ow_second_table;
-struct npc_type **ow_third_table;
-
-/* === IMPLEMENTATIONS === */
-struct npc_type *npc_get_type(u16 npc_id)
+/* === STRUCTURES === */
+struct lt_point
 {
+    u16 x;
+    u16 y;
+};
 
-    /* Not possible in a global scope because of gcc cow magic */
-    struct npc_type **npc_tables[3] = {ow_main_table, ow_second_table, ow_third_table};
-    //struct npc_type** npc_tables[] = {ow_main_table, ow_second_table, ow_third_table};
-    u8 table_id = npc_id >> 8;
-    if (table_id > 2)
-        npc_id = (u8)npc_id;
+struct lt_warpdata
+{
+    u8 bank;
+    u8 map;
+    u8 warpid;
+    u8 unknown;
+    u16 enter_x;
+    u16 enter_y;
+};
 
-    u16 replace_ow = var_get(OW_REPLACE_VAR);
-    if (replace_ow > 0 && replace_ow - 1 == npc_id)
-    {
-        npc_id = var_get(OW_REPLACE_TO_VAR);
-    }
-    u8 table = (npc_id >> 8);
-    return (npc_tables[table][npc_id & 0xFF]);
-}
+struct sav_struct
+{
+    struct lt_point position;
+    struct lt_warpdata location;
+};
+
+extern struct sav_struct *sav_one;
+
+#endif /* SAVE_ONE_H */

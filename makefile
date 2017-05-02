@@ -6,6 +6,7 @@ CC      := arm-none-eabi-gcc
 ARS     := armips
 MAKE    := make
 NM      := @arm-none-eabi-nm
+VBA		:= vba
 LAN	:= de
 STRAGB	:= string2agb
 
@@ -125,3 +126,6 @@ $(LIST_AR):
 .PHONY: $(CRY_AR)
 $(CRY_AR):
 	$(MAKE) -C $(dir $@) all
+
+run: rom
+	$(VBA) "build/pkmn_sots.gba"

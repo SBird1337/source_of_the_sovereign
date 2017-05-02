@@ -90,3 +90,13 @@ strb r0, [r4, #0x1A]
 .org 0x0805F4BA
     lsl r0, #0x10
     lsr r1, r0, #0x10
+
+.org 0x0806837C
+    ldr r3, =grass_step_general+1
+    bx r3
+    .pool
+
+.org 0x080683C8
+    ldr r3, =grass_step_elastic+1
+    bx r3
+    .pool

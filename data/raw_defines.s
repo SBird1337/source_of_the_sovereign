@@ -10,6 +10,10 @@ objects:
 evolutions:
     .word 0x08259754
 
+.global save_one
+save_one:
+    .word 0x03005008
+
 .global ts_pals
 ts_pals:
     .incbin "sots-private/assets/misc/title/pal.bin"

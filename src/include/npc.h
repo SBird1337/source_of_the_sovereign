@@ -1,5 +1,5 @@
 /****************************************************************************
- * Copyright (C) 2015-2016 by the SotS Team                                 *
+ * Copyright (C) 2015-2017 by the SotS Team                                 *
  *                                                                          *
  * This file is part of Sovereign of the Skies.                             *
  *                                                                          *
@@ -20,50 +20,74 @@
  *   If not, see <http://www.gnu.org/licenses/>.                            *
  ****************************************************************************/
 
-/**
- * @file overworld.c
- * @author Sturmvogel
- * @date 15 dec 2016
- * @brief Routines to work with the new overworld npc table
- */
+/* 
+ * File:   npc.h
+ * Author: Sturmvogel
+ *
+ * Created on May 2, 2017
+ * @brief Provides structures for NPC access
+*/
 
-/* === INCLUDES === */
-#include <game_engine.h>
-#include <npc.h>
+#ifndef NPC_H
+#define NPC_H
 
-/* === DEFINES === */
-#define OW_REPLACE_VAR 0x500A
-#define OW_REPLACE_TO_VAR 0x500B
+#include <types.h>
+        
+/* === STRUCTURES === */
 
-/* === PROTOTYPES === */
-/**
- * @brief get the npc type struct by given 16 bit npc id
- * @param npc_id short npc id
- * @return pointer to corresponding npc_type structure
- */
-struct npc_type *npc_get_type(u16 npc_id);
 
-/* === EXTERN STATICS ===*/
-struct npc_type **ow_main_table;
-struct npc_type **ow_second_table;
-struct npc_type **ow_third_table;
+struct coords_16 {
+    u16 x;
+    u16 y;
+};
 
-/* === IMPLEMENTATIONS === */
-struct npc_type *npc_get_type(u16 npc_id)
+struct npc_state
 {
+    u8 bitfield;
+    u8 field_1;
+    u8 field_2;
+    u8 field_3;
+    u8 oam_id;
+    u8 type_id;
+    u8 running_behavior;
+    u8 is_trainer;
+    u8 local_id;
+    u8 local_mapnumber;
+    u8 local_mapbank;
+    u8 height;
+    struct coords_16 stay_around;
+    struct coords_16 to;
+    struct coords_16 from;
+    u8 direction;
+    u8 movement_area;
+    u8 field_1A;
+    u8 oamid2;
+    u8 an_index;
+    u8 sight_distance;
+    u8 tile_to;
+    u8 tile_from;
+    u8 unknown_1;
+    u8 unknown_2;
+    u8 field_22;
+    u8 field_23;
+};
 
-    /* Not possible in a global scope because of gcc cow magic */
-    struct npc_type **npc_tables[3] = {ow_main_table, ow_second_table, ow_third_table};
-    //struct npc_type** npc_tables[] = {ow_main_table, ow_second_table, ow_third_table};
-    u8 table_id = npc_id >> 8;
-    if (table_id > 2)
-        npc_id = (u8)npc_id;
 
-    u16 replace_ow = var_get(OW_REPLACE_VAR);
-    if (replace_ow > 0 && replace_ow - 1 == npc_id)
-    {
-        npc_id = var_get(OW_REPLACE_TO_VAR);
-    }
-    u8 table = (npc_id >> 8);
-    return (npc_tables[table][npc_id & 0xFF]);
-}
+struct npc_type {
+    u16 tiles_tag;
+    u16 pal_num;
+    u16 pal_tag_2;
+    u16 field_6;
+    struct coords_16 pos_neg_center;
+    u8 pal_slot_unk;
+    u8 field_D;
+    u16 pal_table;
+    u32 oam;
+    u32 field_14;
+    u32 image_anims;
+    u32 gfx_table;
+    u32 rot_scale_anims;
+};
+
+#endif /* NPC_H */
+
