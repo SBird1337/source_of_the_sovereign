@@ -12,11 +12,11 @@ mugshot_table_int:
 .word mug_02Tiles
 .word mug_02Pal
 
-.word 0
-.word 0
+.word mug_03Tiles
+.word mug_03Pal
 
-.word 0
-.word 0
+.word mug_04Tiles
+.word mug_04Pal
 
 .word mug_05Tiles
 .word mug_05Pal
@@ -30,17 +30,7 @@ mugshot_table_int:
 .word mug_08Tiles
 .word mug_08Pal
 
-.word mug_09Tiles
-.word mug_09Pal
-
-.word mug_10Tiles
-.word mug_10Pal
-
-.word mug_11Tiles
-.word mug_11Pal
 
 .global mugshots
 mugshots:
-    .word mugshot_table_int
-
-
+.word mugshot_table_int
