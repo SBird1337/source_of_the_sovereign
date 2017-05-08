@@ -40,13 +40,15 @@ typedef struct music_player_area music_player_area;
 typedef struct music_player_track music_player_track;
 typedef struct song_header song_header;
 
-typedef struct {
+typedef struct
+{
     music_player_area *ma;
     music_player_track *ta;
     u32 tn;
 } m_play_table;
 
-typedef struct {
+typedef struct
+{
     song_header *so;
     u16 ms, me;
 } song_table;

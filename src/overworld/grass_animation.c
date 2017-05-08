@@ -27,9 +27,9 @@ void grass_step_elastic(struct npc_state *npc)
     current_oe_state.local_id_and_mapnumber = (npc->local_id << 8) | (npc->local_mapnumber);
     current_oe_state.local_mapbank = npc->local_mapbank;
     current_oe_state.sav1_location = (((sav_one->location.map) << 8) | sav_one->location.bank);
-    current_oe_state.field_1C = 0;
+    current_oe_state.field_1C = 1;
 
     /* use variable to determine the oe animation to play */
 
-    (void)oe_exec(4);
+    (void)oe_exec(0x3A);
 }
