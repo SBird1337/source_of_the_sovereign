@@ -1,4 +1,4 @@
-EGG_HATCH_LEVEL EQU 1
+﻿EGG_HATCH_LEVEL EQU 1
 EV_CAP EQU 252
 
 PLAYER_S_X EQU 7
@@ -14,7 +14,7 @@ PLAYER_S_M EQU 0
 .org 0x08125AA8
 .byte 0x0
 
-// Change hatch level of new pokémon //
+// Change hatch level of new pokÃ©mon //
 .org 0x081375B0
 .byte EGG_HATCH_LEVEL
 
@@ -72,13 +72,13 @@ PLAYER_S_M EQU 0
 .word 0x00000000
 
 .org 0x08054A08
-//.byte PLAYER_S_X
+.byte 0x7
 
 .org 0x08054A00
-//.byte PLAYER_S_Y
+.byte 0x13
 
 .org 0x08054A04
-//.byte PLAYER_S_B
+.byte 0x5
 
 .org 0x08054A06
-//.byte PLAYER_S_M
+.byte 0x0
