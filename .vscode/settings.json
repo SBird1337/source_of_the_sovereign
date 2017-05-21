@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "filesystem": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "xlocmon": "cpp"
     }
 }

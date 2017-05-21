@@ -69,6 +69,8 @@ void sp_random_number();
 
 void get_text_pointer_from_lookup();
 
+void sp_check_tileset();
+
 /* === STATICS === */
 
 static callback special_routines[7] = {
@@ -78,6 +80,7 @@ static callback special_routines[7] = {
     debug_some_test,
     sp_dns_switch,
     sp_random_number,
+    sp_check_tileset
 };
 
 /* === IMPLEMENTATIONS === */

@@ -27,6 +27,9 @@ camera_move_and_redraw = 0x0805ACB4|1;
 calc_circle = 0x0807EE2C|1;
 random = 0x08044EC8|1;
 
+current_map_block_id_at = 0x08058E48|1;
+player_get_pos_to = 0x0805C538|1;
+
 palette_unfaded_buffer = 0x020371F8;
 palette_faded_buffer = 0x020375F8;
 current_mapheader = 0x02036DFC;

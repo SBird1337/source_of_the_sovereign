@@ -4,6 +4,7 @@
 #include <agb_debug.h>
 
 extern u16 current_map_block_role_get(u16 x, u16 y);
+void sp_check_tileset(void);
 
 void grass_step_general(struct npc_state *npc)
 {
@@ -30,6 +31,6 @@ void grass_step_elastic(struct npc_state *npc)
     current_oe_state.field_1C = 1;
 
     /* use variable to determine the oe animation to play */
-
+    sp_check_tileset();
     (void)oe_exec(4);
 }
