@@ -31,5 +31,5 @@ void grass_step_elastic(struct npc_state *npc)
 
     /* use variable to determine the oe animation to play */
 
-    (void)oe_exec(0x3A);
+    (void)oe_exec(4);
 }

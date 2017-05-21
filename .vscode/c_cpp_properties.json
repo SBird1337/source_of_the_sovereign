@@ -1,0 +1,70 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceRoot}",
+                "/usr/include",
+                "/usr/local/include",
+                "src/include"
+            ],
+            "defines": [],
+            "browse": {
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "src/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceRoot}",
+                "/usr/include",
+                "/usr/local/include",
+                "src/include"
+            ],
+            "defines": [],
+            "browse": {
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "src/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        },
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceRoot}",
+                "E:/Visual Studio 2015/VC/include/*",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10586.0/um",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10586.0/ucrt",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10586.0/shared",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10586.0/winrt",
+                "src/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE"
+            ],
+            "browse": {
+                "path": [
+                    "E:/Visual Studio 2015/VC/include/*",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10586.0/um",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10586.0/ucrt",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10586.0/shared",
+                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10586.0/winrt",
+                    "src/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ]
+}
