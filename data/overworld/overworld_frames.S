@@ -5339,6 +5339,9 @@ ow_frames_150:
 .word ow_0149Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
+.word ow_0149Tiles+(9*0x200)
+.hword 0x200
+.hword 0x0
 
 .align 2
 ow_frames_151:
