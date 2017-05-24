@@ -36,12 +36,11 @@ on_step:
 	bl check_block_role
 	lsl r0, #0x18
 	lsr r0, #0x18
-	ldr r1, behavior_walk_table
+	ldr r1, =behavior_walk_table
 	lsl r0, #2
 	add r0, r1
 	ldr r0, [r0]
 	mov r2, #0
-	sub r2, #1
 	cmp r0, r2
 	beq check_walking_script
 	
@@ -56,7 +55,7 @@ check_walking_script:
 	cmp r0, #0
 	beq return_false
 	sub r0, #1
-	ldr r1, script_walk_table
+	ldr r1, =script_walk_table
 	lsl r0, #2
 	add r0, r1
 	ldr r0, [r0]
@@ -102,10 +101,3 @@ read_flag:
 execute_script:
 	ldr r3, =0x08069AE4|1
 	bx r3
-
-.align 2
-behavior_walk_table:
-	.word 0x09700B20
-
-script_walk_table:
-	.word 0x09700F20

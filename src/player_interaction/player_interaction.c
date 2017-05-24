@@ -21,24 +21,89 @@
  ****************************************************************************/
 
  /**
- * @file check_tileset.c
+ * @file player_interaction.c
  * @author Sturmvogel
  * @date 21 may 2017
- * @brief Check tileset stuff and store on last result
- * 
+ * @brief define tables for walking and behavior scripts
  */
 
-#include <map.h>
-#include <game_engine.h>
-#include <agb_debug.h>
+#include <types.h>
 
-void sp_check_tileset(void)
+void* script_walk_table[] =
 {
-    u16 x;
-    u16 y;
-    player_get_pos_to(&x, &y);
-    dprintf("sp_check_tileset: reading from %d %d\n", x,y);
-    u16 block_id = current_map_block_id_at(x,y);
-    dprintf("sp_check_tileset: block id: %d\n", block_id);
-    var_set(0x800D, current_map_block_id_at(x,y));
+    (void*)NULL
+};
+
+void* behavior_walk_table[] =
+{
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)NULL,
+    (void*)0x0891B807,
+    (void*)0x0891B807
+};
+
+//TODO implement actual functtions
+
+void* pi_dummy(bool darg)
+{
+    return darg ? behavior_walk_table[0] : script_walk_table[0];
 }

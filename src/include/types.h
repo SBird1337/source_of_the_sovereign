@@ -14,6 +14,8 @@ typedef     signed long long int    s64;
 typedef     float                   f32;
 typedef     double                  f64;
 
+#define NULL 0x00000000
+
 #include <stddef.h>
 #include <stdbool.h>
 
