@@ -3,10 +3,6 @@
 .thumb
 
 .align 2
-.global trainer_pokemon_data
-trainer_pokemon_data:
-
-.align 2
 .global pokemon_von_id_1
 pokemon_von_id_1:
 .hword 0, 5, 895, 0
@@ -347,42 +343,61 @@ pokemon_von_id_57:
 .align 2
 .global pokemon_von_id_58
 pokemon_von_id_58:
+.hword 0, 9, 512, 0
+.hword 0, 10, 765, 0
+
+.align 2
+.global pokemon_von_id_59
+pokemon_von_id_59:
+.hword 30, 9, 512, 0
+.hword 30, 10, 765, 0
+
+.align 2
+.global pokemon_von_id_60
+pokemon_von_id_60:
+.hword 60, 9, 512, 0
+.hword 60, 10, 765, 0
+.hword 60, 10, 220, 0
+
+.align 2
+.global pokemon_von_id_61
+pokemon_von_id_61:
 .hword 0, 9, 346, 0
 .hword 0, 10, 220, 0
 .hword 0, 10, 934, 0
 
 .align 2
-.global pokemon_von_id_59
-pokemon_von_id_59:
+.global pokemon_von_id_62
+pokemon_von_id_62:
 .hword 30, 9, 346, 0
 .hword 30, 10, 220, 0
 .hword 30, 10, 934, 0
 
 .align 2
-.global pokemon_von_id_60
-pokemon_von_id_60:
+.global pokemon_von_id_63
+pokemon_von_id_63:
 .hword 60, 9, 346, 0
 .hword 60, 10, 220, 0
 .hword 60, 10, 934, 0
 .hword 60, 11, 512, 0
 
 .align 2
-.global pokemon_von_id_61
-pokemon_von_id_61:
+.global pokemon_von_id_64
+pokemon_von_id_64:
 .hword 0, 9, 341, 0
 .hword 0, 10, 635, 0
 .hword 0, 10, 936, 0
 
 .align 2
-.global pokemon_von_id_62
-pokemon_von_id_62:
+.global pokemon_von_id_65
+pokemon_von_id_65:
 .hword 30, 9, 341, 0
 .hword 30, 10, 635, 0
 .hword 30, 10, 936, 0
 
 .align 2
-.global pokemon_von_id_63
-pokemon_von_id_63:
+.global pokemon_von_id_66
+pokemon_von_id_66:
 .hword 60, 9, 341, 0
 .hword 60, 10, 635, 0
 .hword 60, 10, 936, 0

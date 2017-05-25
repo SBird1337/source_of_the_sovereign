@@ -1,4 +1,4 @@
-@string_len=12
+﻿@string_len=12
 
 @byte 0, 0, 0, 0
 str_trainer_name_0=          
@@ -347,3 +347,57 @@ str_trainer_name_57=Klaus
 @hword 0, 0, 0, 0
 @byte 0, 0, 0, 0, 0, 7, 0, 0, 2, 0, 0, 0
 @word pokemon_von_id_57
+
+@byte 0, 0, 0, 131
+str_trainer_name_58=Rüpel
+@hword 0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0
+@word pokemon_von_id_58
+
+@byte 0, 0, 0, 131
+str_trainer_name_59=Rüpel
+@hword 0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 15, 0, 0, 3, 0, 0, 0
+@word pokemon_von_id_59
+
+@byte 0, 0, 0, 131
+str_trainer_name_60=Rüpel
+@hword 0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 383, 0, 0, 4, 0, 0, 0
+@word pokemon_von_id_60
+
+@byte 0, 0, 0, 131
+str_trainer_name_61=Rüpel
+@hword 0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0
+@word pokemon_von_id_61
+
+@byte 0, 0, 0, 131
+str_trainer_name_62=Rüpel
+@hword 0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 15, 0, 0, 3, 0, 0, 0
+@word pokemon_von_id_62
+
+@byte 0, 0, 0, 131
+str_trainer_name_63=Rüpel
+@hword 0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 383, 0, 0, 4, 0, 0, 0
+@word pokemon_von_id_63
+
+@byte 0, 0, 128, 132
+str_trainer_name_64=Rüpel
+@hword 0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0
+@word pokemon_von_id_64
+
+@byte 0, 0, 128, 132
+str_trainer_name_65=Rüpel
+@hword 0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 15, 0, 0, 3, 0, 0, 0
+@word pokemon_von_id_65
+
+@byte 0, 0, 128, 132
+str_trainer_name_66=Rüpel
+@hword 0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 383, 0, 0, 4, 0, 0, 0
+@word pokemon_von_id_66
