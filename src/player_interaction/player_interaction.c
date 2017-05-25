@@ -100,10 +100,3 @@ void* behavior_walk_table[] =
     (void*)0x0891B807,
     (void*)0x0891B807
 };
-
-//TODO implement actual functtions
-
-void* pi_dummy(bool darg)
-{
-    return darg ? behavior_walk_table[0] : script_walk_table[0];
-}
