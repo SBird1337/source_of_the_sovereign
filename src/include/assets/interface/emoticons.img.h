@@ -7,7 +7,10 @@
 //	+ 60 tiles not compressed
 //	Total size: 1920 = 1920
 //
-//	Time-stamp: 2017-05-24, 23:53:39
+<<<<<<< HEAD
+=======
+//	Time-stamp: 2017-05-25, 13:57:33
+>>>>>>> 287c7ea0c11e046fe6fb8f2f68178aeca2fa326b
 //	Exported by Cearn's GBA Image Transmogrifier, v0.8.6
 //	( http://www.coranac.com/projects/#grit )
 //
