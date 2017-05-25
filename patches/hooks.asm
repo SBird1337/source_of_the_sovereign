@@ -111,25 +111,30 @@ _call_via_r1 equ 0x081E3BAC
 //end of var routine
 
 //trainer Flag stuff
-.org 0x08080382
-	mov r1, #0x80
-	lsl r1, #0x15
+.org 0x08080378
+	ldr r1, =trainerflag_read_fix+1
+	bx r1
+    .pool
 
-.org 0x080800BA
-	mov r2, #0x80
-	lsl r2, #0x5
+.org 0x080800B8
+    ldr r2, =trainerflag_opponent_fix+1
+    bx r2
+    .pool
 
-.org 0x08080428
-    mov r1, #0x80
-    lsl r1, #0x15
+.org 0x08080424
+    ldr r1, =trainerflag_check_fix+1
+    bx r1
+    .pool
 
-.org 0x08080440
-    mov r1, #0x80
-    lsl r1, #0x15
+.org 0x0808043c
+    ldr r1, =trainerflag_set_fix+1
+    bx r1
+    .pool
 
-.org 0x08080454
-    mov r1, #0x80
-    lsl r1, #0x15
+.org 0x08080450
+    ldr r1, =trainerflag_clear_fix+1
+    bx r1
+    .pool
 //end of trainer flag stuff
 
 //New behavior bytes for jumping

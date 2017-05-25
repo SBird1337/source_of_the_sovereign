@@ -22,8 +22,10 @@ flag_hook:
 exit:	pop {r4-r6}
 	pop {r1}
 	bx r1
-normal:	ldr r0, normalmemoryblock
+normal:	
+	ldr r0, normalmemoryblock
 	ldr r0, [r0, #0x0]
+	
 there:	lsr r1, r6, #0x3
 	mov r3, #0xEE
 	lsl r3, r3, #0x4

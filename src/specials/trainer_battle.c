@@ -35,6 +35,7 @@
 #include <debug.h>
 #include <config.h>
 #include <callback.h>
+#include <agb_debug.h>
 
 /* === ENGINE EXTERNS === */
 extern void battle_init();
@@ -104,16 +105,20 @@ u32 load_word(void* ptr)
 u16 tb_modify_flag_id(u16 flag)
 {
     u16 difficulty = var_get(0x5052);
+    u16 new_flag = flag;
     switch(difficulty)
     {
         case 0:
-            return flag;
+            break;
         case 1:
-            return flag + 1;
+            new_flag = flag + 1;
+            break;
         case 2:
-            return flag + 2;
+            new_flag = flag + 2;
+            break;
     }
-    return 0;
+    dprintf("tb_modify_flag_id;; trainer ID: %d, difficulty: %d, new trainer id: %d\n", flag, difficulty, new_flag);
+    return new_flag;
 }
 
 /**
