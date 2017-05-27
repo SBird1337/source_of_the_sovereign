@@ -14,7 +14,7 @@ export PATH := $(realpath ../tools):$(PATH)
 
 DEFINES   := -DBPRE -DSOFTWARE_VERSION=0
 ASFLAGS   := -mthumb
-CFLAGS    := -mthumb -mthumb-interwork -g -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -O3 -std=c99 -Wall -Wextra -Wunreachable-code -Isrc/include $(DEFINES)
+CFLAGS    := -mthumb -mthumb-interwork -g -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -O0 -std=c99 -Wall -Wextra -Wunreachable-code -Isrc/include $(DEFINES)
 GRITFLAGS := -ftc -fa
 LDFLAGS   := -z muldefs
 BLDPATH   := object
