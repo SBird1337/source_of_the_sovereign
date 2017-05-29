@@ -57,6 +57,12 @@
 .org 0x0815F9B8
     .word 0x08069ED5 // fix nop1 for now...
 
+.org 0x083522F0
+    .word mapheader_alabastia
+
+.org 0x0834ECC0
+    .word mapfooter_alabastia
+
 .org 0x09000000
 .importobj "object/linked.o"
 .close
