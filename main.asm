@@ -37,7 +37,7 @@
 .include "patches/pokemon_data/pokemon_habitats.asm"
 .include "patches/pokemon_data/pokemon_evolution.asm"
 
-.include "patches/overworlds/pkm_wild.asm"
+//.include "patches/overworlds/pkm_wild.asm"
 //.include "patches/dns/core.asm"
 
 .include "patches/overworlds/overworld.asm"
@@ -57,7 +57,7 @@
 .org 0x0815F9B8
     .word 0x08069ED5 // fix nop1 for now...
 
-.org 0x083522F0
+.org 0x083522F4
     .word mapheader_alabastia
 
 .org 0x0834ECC0

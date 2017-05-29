@@ -2,16 +2,16 @@
 #include <applymovements.h>
 
 @@ Compare operands
-.equ <, 0x0
-.equ ==, 0x1
-.equ >, 0x2
-.equ <=, 0x3
-.equ >=, 0x4
-.equ !=, 0x5
+.equ B_LT, 0x0
+.equ B_EQ, 0x1
+.equ B_GT, 0x2
+.equ B_LE, 0x3
+.equ B_GE, 0x4
+.equ B_NE, 0x5
 
 @@ Flag operands
-.equ !, 0x0
-.equ =, 0x1
+.equ B_T, 0x0
+.equ B_F, 0x1
 
 
 @@@@@@@@@@@@@@@@@ Macro
@@ -23,31 +23,31 @@ loadpointer 0x0 \msgbox_textpointer
 callstd \msgbox_callstd
 .endm
 
-.marco giveitem giveitem_item giveitem_quantity giveitem_messagetyp
+.macro giveitem giveitem_item giveitem_quantity giveitem_messagetyp
 setvarifnotzero 0x8000 \giveitem_item
 setvarifnotzero 0x8001 \giveitem_quantity
 callstd \giveitem_messagetyp
 .endm
 
-.marco giveitem2 giveitem2_item giveitem2_quantity giveitem2_song
+.macro giveitem2 giveitem2_item giveitem2_quantity giveitem2_song
 setvarifnotzero 0x8000 \giveitem2_item
 setvarifnotzero 0x8001 \giveitem2_quantity
 setvarifnotzero 0x8002 \giveitem2_song
 callstd 0x9
 .endm
 
-.marco wildbattle wildbattle_spezies wildbattle_level wildbattle_item
+.macro wildbattle wildbattle_spezies wildbattle_level wildbattle_item
 setwildbattle \wildbattle_spezies \wildbattle_level \wildbattle_item
 dowildbattle
 .endm
 
-.marco wildbattle2 wildbattle2_spezies wildbattle2_level wildbattle2_item wildbattle2_battlestyle
+.macro wildbattle2 wildbattle2_spezies wildbattle2_level wildbattle2_item wildbattle2_battlestyle
 setwildbattle \wildbattle2_spezies \wildbattle2_level \wildbattle2_item
 special 0x137
 waitstate
 .endm
 
-.marco msgmugr msgmugr_textpointer msgmugr_callstd msgmugr_sprite
+.macro msgmugr msgmugr_textpointer msgmugr_callstd msgmugr_sprite
 setvar MUGHSOT_1_TABLE \msgmugr_sprite
 setvar MUGSHOT_1_X 0xD0
 setvar MUGSHOT_1_Y 0x60
@@ -55,7 +55,7 @@ msgbox \msgmugr_textpointer \msgmugr_callstd
 setvar MUGHSOT_1_TABLE 0x0
 .endm
 
-.marco msgmugl msgmugl_textpointer msgmugl_callstd msgmugl_sprite
+.macro msgmugl msgmugl_textpointer msgmugl_callstd msgmugl_sprite
 setvar MUGHSOT_1_TABLE \msgmugl_sprite
 setvar MUGSHOT_1_X 0x16
 setvar MUGSHOT_1_Y 0x60
@@ -63,63 +63,63 @@ msgbox \msgmugl_textpointer \msgmugl_callstd
 setvar MUGHSOT_1_TABLE 0x0
 .endm
 
-.marco transparenzon
+.macro transparenzon
 clearflag FLAG_ACTIVATE
 .endm
 
-.marco transparenzoff
+.macro transparenzoff
 setflag FLAG_ACTIVATE
 .endm
 
-.marco battlescreen battlescreen_grass battlescreen_sea
+.macro battlescreen battlescreen_grass battlescreen_sea
 setvar NORMAL_VAR \battlescreen_grass
 setvar SEA_VAR \battlescreen_sea
 .endm
 
-.marco cameramove cameramove_xpos cameramove_ypos
+.macro cameramove cameramove_xpos cameramove_ypos
 setvar CAMERA_VAR_X \cameramove_xpos
 setvar CAMERA_VAR_Y \cameramove_ypos
 setvar CALLASM_VAR 0x1
 special 0x68
 .endm
 
-.marco walkingscript \walkingscript_value
+.macro walkingscript walkingscript_value
 setvar WALK_SCRIPT_VAR \walkingscript_value
 .endm
 
-.marco walkingscripton
+.macro walkingscripton
 setflag FLAG_WALK_SCRIPT
 .endm
 
-.marco walkingscriptoff
+.macro walkingscriptoff
 clearflag FLAG_WALK_SCRIPT
 .endm
 
-.marco writemusikto1 writemusikto1_from writemusikto1_to
+.macro writemusikto1 writemusikto1_from writemusikto1_to
 setflag FLAG_ENABLE_MUSIC_OVERRIDES
 setvar VAR_FROM_1 \writemusikto1_from
 setvar VAR_TO_1 \writemusikto1_to
 .endm
 
-.marco writemusikto2 writemusikto2_from writemusikto2_to
+.macro writemusikto2 writemusikto2_from writemusikto2_to
 setflag FLAG_ENABLE_MUSIC_OVERRIDES
 setvar VAR_FROM_2 \writemusikto2_from
 setvar VAR_TO_2 \writemusikto2_to
 .endm
 
-.marco writemusikto3 writemusikto3_from writemusikto3_to
+.macro writemusikto3 writemusikto3_from writemusikto3_to
 setflag FLAG_ENABLE_MUSIC_OVERRIDES
 setvar VAR_FROM_3 \writemusikto3_from
 setvar VAR_TO_3 \writemusikto3_to
 .endm
 
-.marco writemusikwithmapmusik \writemusikwithmapmusik_mapmusik
+.macro writemusikwithmapmusik writemusikwithmapmusik_mapmusik
 setflag FLAG_ENABLE_MUSIC_OVERRIDES
 setvar VAR_FROM_1 \writemusikwithmapmusik_mapmusik
 setvar VAR_TO_1 MUS_SKIP_PLAY
+.endm
 
-
-.marco writemusikoff
+.macro writemusikoff
 clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .endm
 
@@ -230,17 +230,17 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .hword \comparevars_variableB
 .endm
 
-.marco callasm callasm_address
+.macro callasm callasm_address
 .byte 0x23
 .word \callasm_address
 .endm
 
-.marco special special_number
+.macro special special_number
 .byte 0x25
 .hword \special_number
 .endm
 
-.marco special2 special2_variable special2_number
+.macro special2 special2_variable special2_number
 .byte 0x26
 .hword \special2_variable
 .hword \special2_number
@@ -315,14 +315,14 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .macro fadeout fadeout_volume
 .byte 0x37
 .byte \fadeout_volume
-
+.endm
 
 .macro fadein fadein_volume
 .byte 0x38
 .byte \fadein_volume
 .endm
 
-.marco warp warp_bank warp_map warp_exit warp_x warp_y
+.macro warp warp_bank warp_map warp_exit warp_x warp_y
 .byte 0x39
 .byte \warp_bank
 .byte \warp_map
@@ -331,7 +331,7 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .hword \warp_y
 .endm
 
-.marco warpmuted warpmuted_bank warpmuted_map warpmuted_exit warpmuted_x warpmuted_y
+.macro warpmuted warpmuted_bank warpmuted_map warpmuted_exit warpmuted_x warpmuted_y
 .byte 0x3A
 .byte \warpmuted_bank
 .byte \warpmuted_map
@@ -340,7 +340,7 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .hword \warpmuted_y
 .endm
 
-.marco warpwalk warpwalk_bank warpwalk_map warpwalk_exit warpwalk_x warpwalk_y
+.macro warpwalk warpwalk_bank warpwalk_map warpwalk_exit warpwalk_x warpwalk_y
 .byte 0x3B
 .byte \warpwalk_bank
 .byte \warpwalk_map
@@ -349,13 +349,13 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .hword \warpwalk_y
 .endm
 
-.marco warphole warphole_bank warphole_map
+.macro warphole warphole_bank warphole_map
 .byte 0x3C
 .byte \warphole_bank
 .byte \warphole_map
 .endm
 
-.marco warpteleport warpteleport_bank warpteleport_map warpteleport_exit warpteleport_x warpteleport_y
+.macro warpteleport warpteleport_bank warpteleport_map warpteleport_exit warpteleport_x warpteleport_y
 .byte 0x3D
 .byte \warpteleport_bank
 .byte \warpteleport_map
@@ -364,7 +364,7 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .hword \warpteleport_y
 .endm
 
-.marco setwarpplace setwarpplace_bank setwarpplace_map setwarpplace_exit setwarpplace_x setwarpplace_y
+.macro setwarpplace setwarpplace_bank setwarpplace_map setwarpplace_exit setwarpplace_x setwarpplace_y
 .byte 0x3F
 .byte \setwarpplace_bank
 .byte \setwarpplace_map
@@ -373,7 +373,7 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .hword \setwarpplace_y
 .endm
 
-.marco getplayerpos getplayerpos_variableX getplayerpos_variableY
+.macro getplayerpos getplayerpos_variableX getplayerpos_variableY
 .byte 0x42
 .hword \getplayerpos_variableX
 .hword \getplayerpos_variableY
@@ -383,54 +383,54 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .byte 0x43
 .endm
 
-.marco additem additem_item additem_quantity
+.macro additem additem_item additem_quantity
 .byte 0x44
 .hword \additem_item
 .hword \additem_quantity
 .endm
 
-.marco removeitem removeitem_item removeitem_quantity
+.macro removeitem removeitem_item removeitem_quantity
 .byte 0x45
 .hword \removeitem_item
 .hword \removeitem_quantity
 .endm
 
-.marco checkitemroom checkitemroom_item checkitemroom_quantity
+.macro checkitemroom checkitemroom_item checkitemroom_quantity
 .byte 0x46
 .hword \checkitemroom_item
 .hword \checkitemroom_quantity
 .endm
 
-.marco checkitem checkitem_item checkitem_quantity
+.macro checkitem checkitem_item checkitem_quantity
 .byte 0x47
 .hword \checkitem_item
 .hword \checkitem_quantity
 .endm
 
-.marco checkitemtype checkitemtype_item
+.macro checkitemtype checkitemtype_item
 .byte 0x48
 .hword \checkitemtype_item
 .endm
 
-.marco addpcitem addpcitem_item addpcitem_quantity
+.macro addpcitem addpcitem_item addpcitem_quantity
 .byte 0x49
 .hword \addpcitem_item
 .hword \addpcitem_quantity
 .endm
 
-.marco checkpcitem checkpcitem_item checkpcitem_quantity
+.macro checkpcitem checkpcitem_item checkpcitem_quantity
 .byte 0x4A
 .hword \checkpcitem_item
 .hword \checkpcitem_quantity
 .endm
 
-.marco applymovement applymovement_people applymovement_movedata
+.macro applymovement applymovement_people applymovement_movedata
 .byte 0x4F
 .hword \applymovement_people
 .word \applymovement_movedata
 .endm
 
-.marco applymovementpos applymovementpos_people applymovementpos_movedata applymovementpos_x applymovementpos_y
+.macro applymovementpos applymovementpos_people applymovementpos_movedata applymovementpos_x applymovementpos_y
 .byte 0x50
 .hword \applymovementpos_people
 .word \applymovementpos_movedata
@@ -438,57 +438,57 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .byte \applymovementpos_y
 .endm
 
-.marco waitmovement waitmovement_people
+.macro waitmovement waitmovement_people
 .byte 0x51
 .hword \waitmovement_people
 .endm
 
-.marco waitmovementpos waitmovementpos_people waitmovementpos_x waitmovementpos_y
+.macro waitmovementpos waitmovementpos_people waitmovementpos_x waitmovementpos_y
 .byte 0x52
 .hword \waitmovementpos_people
 .byte \waitmovementpos_x
 .byte \waitmovementpos_y
 .endm
 
-.marco hidesprite hidesprite_people
+.macro hidesprite hidesprite_people
 .byte 0x53
 .hword \hidesprite_people
 .endm
 
-.marco hidespritepos hidesprite_people hidespritepos_x hidespritepos_y
+.macro hidespritepos hidesprite_people hidespritepos_x hidespritepos_y
 .byte 0x54
 .hword \hidespritepos_people
 .byte \hidespritepos_x
 .byte \hidespritepos_y
 .endm
 
-.marco showsprite showsprite_people
+.macro showsprite showsprite_people
 .byte 0x55
 .hword \showsprite_people
 .endm
 
-.marco showspritepos showspritepos_people showspritepos_x showspritepos_y
+.macro showspritepos showspritepos_people showspritepos_x showspritepos_y
 .byte 0x56
 .hword \showspritepos_people
 .byte \showspritepos_x
 .byte \showspritepos_y
 .endm
 
-.marco movesprite movesprite_people movesprite_x movesprite_y
+.macro movesprite movesprite_people movesprite_x movesprite_y
 .byte 0x57
 .hword \movesprite_people
 .hword \movesprite_x
 .hword \movesprite_y
 .endm
 
-.marco spritevisible spritevisible_people spritevisible_bank movesprite_map
+.macro spritevisible spritevisible_people spritevisible_bank movesprite_map
 .byte 0x58
 .hword \spritevisible_people
 .byte \spritevisible_bank
 .byte \spritevisible_map
 .endm
 
-.marco spriteinvisible spriteinvisible_people spriteinvisible_bank spriteinvisible_map
+.macro spriteinvisible spriteinvisible_people spriteinvisible_bank spriteinvisible_map
 .byte 0x59
 .hword \spriteinvisible_people
 .byte \spriteinvisible_bank
@@ -499,13 +499,13 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .byte 0x5A
 .endm
 
-.marco spriteface spriteface_people spriteface_facing
+.macro spriteface spriteface_people spriteface_facing
 .byte 0x5B
 .hword \spriteface_people
 .byte \spriteface_facing
 .endm
 
-.marco trainerbattle trainerbattle_kind trainerbattle_id trainerbattle_value trainerbattle_before trainerbattle_after trainerbattle_later
+.macro trainerbattle trainerbattle_kind trainerbattle_id trainerbattle_value trainerbattle_before trainerbattle_after trainerbattle_later
 .byte 0x5C
 .byte \trainerbattle_kind
 .hword \trainerbattle_id
@@ -542,19 +542,19 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .hword \cleartrainerflag_flag
 .endm
 
-.marco movesprite2 movesprite2_people movesprite2_x movesprite2_y
+.macro movesprite2 movesprite2_people movesprite2_x movesprite2_y
 .byte 0x63
 .hword \movesprite2_people
 .hword \movesprite2_x
 .hword \movesprite2_y
 .endm
 
-.marco moveoffscreen moveoffscreen_people
+.macro moveoffscreen moveoffscreen_people
 .byte 0x64
 .hword \moveoffscreen_people
 .endm
 
-.marco spritebehave spritebehave_people spritebehave_facing
+.macro spritebehave spritebehave_people spritebehave_facing
 .byte 0x65
 .hword \spritebehave_people
 .byte \spritebehave_behaviour
@@ -625,7 +625,7 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .byte \multichoice3_determines
 .endm
 
-.marco showpokepic showpokepic_spezies showpokepic_x showpokepic_y
+.macro showpokepic showpokepic_spezies showpokepic_x showpokepic_y
 .byte 0x75
 .hword \showpokepic_spezies
 .byte \showpokepic_x
@@ -743,64 +743,64 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .byte \checkmoney_command
 .endm
 
-.marco showmoney showmoney_x showmoney_y showmoney_value
+.macro showmoney showmoney_x showmoney_y showmoney_value
 .byte 0x93
 .byte \showmoney_x
 .byte \showmoney_y
 .byte \showmoney_value
 .endm
 
-.marco hidemoney hidemoney_x hidemoney_y
+.macro hidemoney hidemoney_x hidemoney_y
 .byte 0x94
 .byte \hidemoney_x
 .byte \hidemoney_y
 .endm
 
-.marco updatemoney updatemoney_x updatemoney_y updatemoney_value
+.macro updatemoney updatemoney_x updatemoney_y updatemoney_value
 .byte 0x95
 .byte \updatemoney_x
 .byte \updatemoney_y
 .byte \updatemoney_value
 .endm
 
-.marco fadescreen fadescreen_effect
+.macro fadescreen fadescreen_effect
 .byte 0x97
 .byte \fadescreen_effect
 .endm
 
-.marco fadescreendelay fadescreendelay_effect fadescreendelay_delay
+.macro fadescreendelay fadescreendelay_effect fadescreendelay_delay
 .byte 0x98
 .byte \fadescreendelay_effect
 .byte \fadescreendelay_delay
 .endm
 
-.marco darken darken_flashsize
+.macro darken darken_flashsize
 .byte 0x99
 .hword \darken_flashsize
 .endm
 
-.marco lighten lighten_flashsize
+.macro lighten lighten_flashsize
 .byte 0x9A
 .hword \lighten_flashsize
 .endm
 
-.marco doanimation doanimation_animation
+.macro doanimation doanimation_animation
 .byte 0x9C
 .hword \doanimation_animation
 .endm
 
-.marco setanimation setanimation_animation setanimation_variable
+.macro setanimation setanimation_animation setanimation_variable
 .byte 0x9D
 .byte \setanimation_animation
 .hword \setanimation_variable
 .endm
 
-.marco checkanimation checkanimation_animation
+.macro checkanimation checkanimation_animation
 .byte 0x9E
 .hword \checkanimation_animation
 .endm
 
-.marco sethealingplace sethealingplace_flightspot
+.macro sethealingplace sethealingplace_flightspot
 .byte 0x9F
 .hword \sethealingplace_flightspot
 .endm
@@ -809,12 +809,13 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .byte 0xA0
 .endm
 
-.marco cry cry_spezies cry_effect
+.macro cry cry_spezies cry_effect
 .byte 0xA1
 .hword \cry_spezies
 .hword \cry_effect
+.endm
 
-.marco setmaptile setmaptile_x setmaptile_y setmaptile_tile setmaptile_attribut
+.macro setmaptile setmaptile_x setmaptile_y setmaptile_tile setmaptile_attribut
 .byte 0xA2
 .hword \setmaptile_x
 .hword \setmaptile_y
@@ -840,7 +841,7 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .hword \setmapfooter_footer
 .endm
 
-.marco spritelevelup spritelevelup_people spritelevelup_bank spritelevelup_map
+.macro spritelevelup spritelevelup_people spritelevelup_bank spritelevelup_map
 .byte 0xA8
 .hword \spritelevelup_people
 .byte \spritelevelup_bank
@@ -848,14 +849,14 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .byte 0x0
 .endm
 
-.marco restorespritelevel restorespritelevel_people restorespritelevel_bank restorespritelevel_map
+.macro restorespritelevel restorespritelevel_people restorespritelevel_bank restorespritelevel_map
 .byte 0xA9
 .hword \restorespritelevel_people
 .byte \restorespritelevel_bank
 .byte \restorespritelevel_map
 .endm
 
-.marco createsprite createsprite_sprite createsprite_id createsprite_x createsprite_y createsprite_behaviour createsprite_facing
+.macro createsprite createsprite_sprite createsprite_id createsprite_x createsprite_y createsprite_behaviour createsprite_facing
 .byte 0xAA
 .byte \createsprite_sprite
 .byte \createsprite_id
@@ -865,19 +866,19 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .byte \createsprite_facing
 .endm
 
-.marco spriteface2 spriteface2_people spriteface2_facing
+.macro spriteface2 spriteface2_people spriteface2_facing
 .byte 0xAB
 .hword \spriteface2_people
 .byte \spriteface2_facing
 .endm
 
-.marco setdooropened setdooropened_x setdooropened_y
+.macro setdooropened setdooropened_x setdooropened_y
 .byte 0xAC
 .hword \setdooropened_x
 .hword \setdooropened_y
 .endm
 
-.marco setdoorclosed setdoorclosed_x setdoorclosed_y
+.macro setdoorclosed setdoorclosed_x setdoorclosed_y
 .byte 0xAD
 .hword \setdoorclosed_x
 .hword \setdoorclosed_y
@@ -887,19 +888,19 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .byte 0xAE
 .endm
 
-.marco setdooropened2 setdooropened2_x setdooropened2_y
+.macro setdooropened2 setdooropened2_x setdooropened2_y
 .byte 0xAF
 .hword \setdooropened2_x
 .hword \setdooropened2_y
 .endm
 
-.marco setdoorclosed2 setdoorclosed2_x setdoorclosed2_y
+.macro setdoorclosed2 setdoorclosed2_x setdoorclosed2_y
 .byte 0xB0
 .hword \setdoorclosed2_x
 .hword \setdoorclosed2_y
 .endm
 
-.marco setwildbattle setwildbattle_spezies setwildbattle_level setwildbattle_item
+.macro setwildbattle setwildbattle_spezies setwildbattle_level setwildbattle_item
 .byte 0xB6
 .hword \setwildbattle_spezies
 .byte \setwildbattle_level
@@ -914,7 +915,7 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .byte 0xC5
 .endm
 
-.marco setworldmapflag setworldmapflag_flag
+.macro setworldmapflag setworldmapflag_flag
 .byte 0xD0
 .hword \setworldmapflag_flag
 .endm

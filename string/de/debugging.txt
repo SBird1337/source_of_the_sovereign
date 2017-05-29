@@ -1,0 +1,1 @@
+str_test_text=Tremble, before the majesty\nof the emperor!
