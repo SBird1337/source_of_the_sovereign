@@ -15143,31 +15143,31 @@ ow_frames_539:
 
 .align 2
 ow_frames_540:
-.word ow_0539Tiles+(0*0x800)
+.word ow_00000Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0539Tiles+(1*0x800)
+.word ow_00000Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0539Tiles+(2*0x800)
+.word ow_00000Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0539Tiles+(0*0x800)
+.word ow_00000Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0539Tiles+(0*0x800)
+.word ow_00000Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0539Tiles+(0*0x800)
+.word ow_00000Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0539Tiles+(0*0x800)
+.word ow_00000Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0539Tiles+(0*0x800)
+.word ow_00000Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0539Tiles+(0*0x800)
+.word ow_00000Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
 
