@@ -5,7 +5,12 @@
 //exclude for now
 //.include "patches/split_physical_special.asm"
 .include "patches/hooks.asm"
-.include "patches/dynamic_overworld_hooks.asm"
+
+
+//no dynamic overworlds, sorry :T
+//.include "patches/dynamic_overworld_hooks.asm"
+
+
 .include "patches/special.asm"
 .include "patches/moves.asm"
 .include "patches/music.asm"
@@ -54,14 +59,16 @@
 
 .include "patches/game_engine/quick_hacks.asm"
 
+.include "battle_engine/patches/menutest.s"
+
 .org 0x0815F9B8
     .word 0x08069ED5 // fix nop1 for now...
 
 .org 0x083522F4
-    .word mapheader_alabastia
+    //.word mapheader_alabastia
 
 .org 0x0834ECC0
-    .word mapfooter_alabastia
+    //.word mapfooter_alabastia
 
 .org 0x09000000
 .importobj "object/linked.o"

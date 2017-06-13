@@ -1,3 +1,6 @@
 [submodule "sots-private"]
 	path = sots-private
 	url = ssh://sotshost:/home/sots/sots-private.git
+[submodule "battle_engine"]
+	path = battle_engine
+	url = https://github.com/EternalCode/battle_engine

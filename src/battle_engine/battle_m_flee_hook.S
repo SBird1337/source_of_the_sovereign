@@ -15,7 +15,7 @@ and r0, r1
 cmp r0, #8
 bne no_trainer
 ldr r0, =battle_buffer_b
-ldr r4, =battle_active_side
+ldr r4, =battle_active_bank
 ldrb r1, [r4]
 lsl r1, #9
 add r0, #1
@@ -31,7 +31,7 @@ no_trainer:
 
 @only intercept the flee command though...
 ldr r0, =battle_buffer_b
-ldr r4, =battle_active_side
+ldr r4, =battle_active_bank
 ldrb r1, [r4]
 lsl r1, #9
 add r0, #1
