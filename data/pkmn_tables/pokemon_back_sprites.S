@@ -1,7 +1,7 @@
 .text
 .align 2
-.global pokemon_back_sprites
-pokemon_back_sprites:
+.global pokemon_graphics_back
+pokemon_graphics_back:
 
 .word back_0000Tiles, 0
 .word back_0001Tiles, 1

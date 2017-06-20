@@ -2,9 +2,9 @@
 .thumb
 .text
 
-.global objects
+/*.global objects
 objects:
-    .word 0x0202063C
+    .word 0x0202063C*/
 
 .global evolutions
 evolutions:
