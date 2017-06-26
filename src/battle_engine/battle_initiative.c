@@ -102,7 +102,7 @@ u16 get_speed(u8 bank) {
 u8 speed_alt_from_item(u8 bank, u8 item_effect) {
     switch (item_effect) {
         case ITEM_EFFECT_QUICKCLAW:
-            if (__aeabi_uidivmod(battle_turn_random, 100) > item_get_quality(battle_participants[bank].held_item)) {
+            if ((battle_turn_random % 100) > item_get_quality(battle_participants[bank].held_item)) {
                 return 1;
             }
             break;

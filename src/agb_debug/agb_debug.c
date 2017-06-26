@@ -70,7 +70,8 @@ u32 mini_itoa(int value, u32 radix, u32 uppercase, u32 unsig, char * buffer, u32
     }
     /* This builds the string back to front ... */
     do {
-        u32 digit = __aeabi_uidivmod(value, radix); * (pbuffer++) = (digit < 10 ? '0' + digit : (uppercase ? 'A' : 'a') + digit - 10);
+        u32 digit = value % radix;
+        * (pbuffer++) = (digit < 10 ? '0' + digit : (uppercase ? 'A' : 'a') + digit - 10);
         value /= radix;
     } while (value > 0);
     for (i = (pbuffer - buffer); i < zero_pad; i++)

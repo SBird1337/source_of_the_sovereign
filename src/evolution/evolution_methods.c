@@ -181,7 +181,7 @@ struct evo_result evolve_random(struct evo_call_arguments arguments)
     }
     u32 pid = pokemon_get_attribute(arguments.poke, ATTR_PID, NULL);
     pid = pid & 0xFFFF;
-    u8 mod = __aeabi_uidivmod(pid, 10);
+    u8 mod = (pid % 10);
     dprintf("A pokemon tries to evolve at random: pid: %d, low: %d, mod: %d\n", pid, pid, mod);
     if (mod >= 5)
     {
