@@ -39,14 +39,6 @@
 
 /* === EXTERN METHODS === */
 
-/**
- * @brief gets the a mod b
- * @param a dividend
- * @param b divisor
- * @return a % b
- */
-u32 __aeabi_uidivmod(u32 a, u32 b);
-
 u16 random();
 
 #endif /* MATH_H */

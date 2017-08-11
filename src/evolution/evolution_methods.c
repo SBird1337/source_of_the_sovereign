@@ -181,7 +181,7 @@ struct evo_result evolve_random(struct evo_call_arguments arguments)
     }
     u32 pid = pokemon_get_attribute(arguments.poke, ATTR_PID, NULL);
     pid = pid & 0xFFFF;
-    u8 mod = __aeabi_uidivmod(pid, 10);
+    u8 mod = (pid % 10);
     dprintf("A pokemon tries to evolve at random: pid: %d, low: %d, mod: %d\n", pid, pid, mod);
     if (mod >= 5)
     {
@@ -291,8 +291,8 @@ struct evo_result evolve_by_type(struct evo_call_arguments arguments)
         u16 current_species = pokemon_get_attribute(&(pokemon_party_player[i]), ATTR_SPECIES, NULL);
         if (current_species == 0)
             continue;
-        u8 type_one = pokemon_stats[current_species].type_one;
-        u8 type_two = pokemon_stats[current_species].type_two;
+        u8 type_one = pokemon_base_stats[current_species].type_one;
+        u8 type_two = pokemon_base_stats[current_species].type_two;
         dprintf("Found type: %d/%d\n", type_one, type_two);
         if (type_one == type_required || type_two == type_required)
         {

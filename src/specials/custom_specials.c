@@ -120,5 +120,5 @@ void sp_clear_variables()
 
 void sp_random_number()
 {
-    var_set(0x800D, (__aeabi_uidivmod(random(), var_get(0x8000))));
+    var_set(0x800D, (random() % var_get(0x8000)));
 }

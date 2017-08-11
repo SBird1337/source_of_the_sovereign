@@ -1,11 +1,11 @@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@                                                                                 @
-@           file: C:\Users\Philipp\Desktop\sots tilesets\alabastia.tmx            @
-@                            converted using tiled2agb                            @
-@                             converted on 29.05.2017                             @
-@                          program created by Sturmvogel                          @
-@                                                                                 @
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@                                                                    @
+@           file: E:\OneDrive\sots tilesets\alabastia.tmx            @
+@                     converted using tiled2agb                      @
+@                      converted on 31.05.2017                       @
+@                   program created by Sturmvogel                    @
+@                                                                    @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 @@@  SECTION: MAPHEADER  @@@
 
@@ -20,7 +20,7 @@ mapheader_alabastia:
 	.hword 0x004E @index
 	.byte 0x58 @name
 	.byte 0x00 @cave
-	.byte 0x07 @weather
+	.byte 0x02 @weather
 	.byte 0x01 @light
 	.byte 0x01 @unknown
 	.hword 0x0006 @showName
@@ -45,8 +45,8 @@ mapfooter_alabastia:
 
 .global mapblocks_alabastia
 mapblocks_alabastia:
-	.hword 0x041C,0x041D,0x041C,0x041D,0x041C,0x041D,0x041C,0x041D,0x041C,0x041D,0x041C,0x041F,0x32A6,0x32A7,0x041E,0x041D,0x041C,0x041D,0x041C,0x041D,0x041C,0x041D,0x041E,0x041F
-	.hword 0x0414,0x0415,0x0424,0x0425,0x0424,0x0425,0x0424,0x0425,0x0424,0x0425,0x0424,0x0427,0x32AE,0x32AF,0x0426,0x0425,0x0424,0x0425,0x0424,0x0425,0x0424,0x0425,0x0416,0x0417
+	.hword 0x041C,0x041D,0x041C,0x041D,0x041C,0x041D,0x041C,0x041D,0x041C,0x041D,0x041C,0x041D,0x32A6,0x32A7,0x041C,0x041D,0x041C,0x041D,0x041C,0x041D,0x041C,0x041D,0x041E,0x041F
+	.hword 0x0414,0x0415,0x0424,0x0425,0x0424,0x0425,0x0424,0x0425,0x0424,0x0425,0x0424,0x0425,0x32AE,0x32AF,0x0424,0x0425,0x0424,0x0425,0x0424,0x0425,0x0424,0x0425,0x0416,0x0417
 	.hword 0x041C,0x041D,0x32A6,0x328E,0x328E,0x328E,0x328E,0x328E,0x328E,0x328E,0x328E,0x328E,0x3285,0x3286,0x328E,0x328E,0x328E,0x328E,0x328E,0x328E,0x328E,0x328F,0x041E,0x041F
 	.hword 0x0414,0x0415,0x32AE,0x3296,0x3296,0x3281,0x3282,0x3282,0x3282,0x3283,0x3296,0x3296,0x3296,0x3296,0x3281,0x3282,0x3282,0x3282,0x3283,0x3296,0x3296,0x3297,0x0416,0x0417
 	.hword 0x041C,0x041D,0x32AE,0x32C7,0x329E,0x0689,0x068A,0x068A,0x068A,0x068B,0x329E,0x329E,0x329E,0x329E,0x0689,0x068A,0x068A,0x068A,0x068B,0x32C6,0x3296,0x3297,0x041E,0x041F
@@ -72,51 +72,100 @@ mapblocks_alabastia:
 mapborderblocks_alabastia:
 	.hword 0x001C,0x001D
 	.hword 0x0014,0x0015
-@@@  SECTION: MAPFOOTER  @@@
+@@@  SECTION: MAPEVENTS  @@@
 
 .align 2
 .global mapevents_alabastia
 mapevents_alabastia:
-.byte	0x02, 0x00, 0x00, 0x00
+.byte	0x02, 0x03, 0x02, 0x00
 .word 	mapevents_persons_alabastia
-.word 	00000000
-.word 	00000000
+.word 	mapevents_warps_alabastia
+.word 	mapevents_triggers_alabastia
 .word 	00000000
 
 @@@ SECTION: PERSON EVENTS @@@
 .align 2
 mapevents_persons_alabastia:
-@//new structure
-	.byte 0x01
-	.byte 0x1E
-	.byte 0x00
-	.byte 0x00
-	.hword 0x0014
-	.hword 0x0003
-	.byte 0x00
-	.byte 0x00
-	.byte 0x40
-	.byte 0x00
-	.byte 0x01
-	.byte 0x00
-	.hword 0x0004
-	.word scr_trainer_test
-	.hword 0x0500
-	.hword 0x0000
-@//new structure
-	.byte 0x00
-	.byte 0x20
+@PERSON ID: 0
+
+	.byte 0x09
+	.byte 0x14
 	.byte 0x00
 	.byte 0x00
 	.hword 0x000A
-	.hword 0x0005
+	.hword 0x0004
 	.byte 0x00
-	.byte 0x00
+	.byte 0x01
 	.byte 0x40
 	.byte 0x00
 	.byte 0x00
 	.byte 0x00
 	.hword 0x0000
 	.word scr_map_test
+	.hword 0x0500
+	.hword 0x0000
+@PERSON ID: 1
+
+	.byte 0x07
+	.byte 0x0A
+	.byte 0x00
+	.byte 0x00
+	.hword 0x000E
+	.hword 0x0002
+	.byte 0x00
+	.byte 0x03
+	.byte 0x40
+	.byte 0x00
+	.byte 0x01
+	.byte 0x00
+	.hword 0x0004
+	.word 0x00000000
 	.hword 0x0501
 	.hword 0x0000
+@@@ SECTION: WARP EVENTS @@@
+.align 2
+mapevents_warps_alabastia:
+@WARP ID: 0
+	.hword 6
+	.hword 7
+	.byte 0
+	.byte 1
+	.byte 0
+	.byte 4
+@WARP ID: 1
+	.hword 15
+	.hword 7
+	.byte 0
+	.byte 0
+	.byte 2
+	.byte 4
+@WARP ID: 2
+	.hword 16
+	.hword 13
+	.byte 0
+	.byte 0
+	.byte 3
+	.byte 4
+@@@ SECTION: TRIGGER EVENTS @@@
+.align 2
+mapevents_triggers_alabastia:
+@WARP ID: 0
+	.hword 12
+	.hword 1
+	.byte 0
+	.byte 0
+	.hword 20497
+	.hword 0
+	.byte 0
+	.byte 0
+	.word scr_trigger_test_two
+@WARP ID: 1
+	.hword 13
+	.hword 1
+	.byte 0
+	.byte 0
+	.hword 20498
+	.hword 0
+	.byte 0
+	.byte 0
+	.word scr_trigger_test

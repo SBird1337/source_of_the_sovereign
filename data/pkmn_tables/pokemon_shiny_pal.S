@@ -1,7 +1,7 @@
 .text
 .align 2
-.global pokemon_shiny_pal
-pokemon_shiny_pal:
+.global pokemon_palette_shiny
+pokemon_palette_shiny:
 
 .word s_p_0000Pal, 0x0
 .word s_p_0001Pal, 0x0

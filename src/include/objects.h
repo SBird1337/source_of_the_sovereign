@@ -84,7 +84,7 @@ struct obj_entity {
   u8 field43;
 };
 
-extern struct obj_entity* objects;
+extern struct obj_entity objects[64];
 
 typedef void (*object_callback)(struct obj_entity*);
 

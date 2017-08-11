@@ -1,7 +1,7 @@
 .text
 .align 2
-.global pokemon_front_sprites
-pokemon_front_sprites:
+.global pokemon_graphics_front
+pokemon_graphics_front:
 
 .word front_0000Tiles, 0
 .word front_0001Tiles, 1

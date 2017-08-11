@@ -1,7 +1,7 @@
 .text
 .align 2
-.global pokemon_normal_pal
-pokemon_normal_pal:
+.global pokemon_palette_normal
+pokemon_palette_normal:
 
 .word n_p_0000Pal, 0x0
 .word n_p_0001Pal, 0x0

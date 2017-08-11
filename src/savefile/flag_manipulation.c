@@ -34,6 +34,7 @@
 #include <stdbool.h>
 #include <game_engine.h>
 #include <battle_structs.h>
+#include <config.h>
 
 u16 trainerflag_fix_difficulty(u16 flag_id);
 
@@ -48,7 +49,7 @@ u16 load_hword(void* ptr)
 u16 trainerflag_fix_difficulty(u16 flag_id)
 {
     u16 new_flag = ((flag_id - TRAINER_FLAG_SPACE_START + 1) / 3) + TRAINER_FLAG_SPACE_START;
-    dprintf("trainerflag_fix_difficulty;; flag_id: 0x%x, reduced: 0x%x\n", flag_id, new_flag);
+    dprintf("trainerflag_fix_difficulty;; flag_id: 0x%x, reduced: 0x%x, status: %s\n", flag_id, new_flag, flag_check(new_flag) ? "true" : "false");
     return new_flag;
 }
 

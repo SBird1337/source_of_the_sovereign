@@ -367,7 +367,7 @@ void debug_int_to_char(u32 i, char* ref) {
     u32 len = debug_dec_len(i);
     while (i > 0) {
 
-        ref[len - 1] = '0' + (__aeabi_uidivmod(i, 10));
+        ref[len - 1] = '0' + (i % 10);
         i /= 10;
         len--;
     }
@@ -377,7 +377,7 @@ void debug_int_to_char(u32 i, char* ref) {
 
 u32 debug_power(u32 n, u32 power) {
     u32 out = 1;
-    for (int i = 0; i < power; ++i) {
+    for (u32 i = 0; i < power; ++i) {
         out = out * n;
     }
     return out;
