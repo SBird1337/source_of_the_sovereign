@@ -13,11 +13,13 @@
                 "path": [
                     "/usr/include",
                     "/usr/local/include",
-                    "src/include"
+                    "src/include",
+                    "${workspaceRoot}"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
-            }
+            },
+            "intelliSenseMode": "clang-x64"
         },
         {
             "name": "Linux",
@@ -32,11 +34,13 @@
                 "path": [
                     "/usr/include",
                     "/usr/local/include",
-                    "src/include"
+                    "src/include",
+                    "${workspaceRoot}"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
-            }
+            },
+            "intelliSenseMode": "clang-x64"
         },
         {
             "name": "Win32",
@@ -60,11 +64,14 @@
                     "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10586.0/ucrt",
                     "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10586.0/shared",
                     "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10586.0/winrt",
-                    "src/include"
+                    "src/include",
+                    "${workspaceRoot}"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
-            }
+            },
+            "intelliSenseMode": "msvc-x64"
         }
-    ]
+    ],
+    "version": 2
 }

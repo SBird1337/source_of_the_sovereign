@@ -2,11 +2,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug",
             "type": "gdb",
-            "request": "launch",
-            "target": "./bin/executable",
-            "cwd": "${workspaceRoot}"
+            "request": "attach",
+            "name": "Debug",
+            "preLaunchTask": "start",
+            "executable": "object/linked.o",
+            "gdbpath": "arm-none-eabi-gdb",
+            "target": "localhost:2345",
+            "remote": true,
+            "cwd": "${workspaceRoot}",
+            "autorun": [
+            ]
         }
     ]
 }

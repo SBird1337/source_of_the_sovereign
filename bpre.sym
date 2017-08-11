@@ -81,6 +81,7 @@ execute_battle_script = 0x0801BC24;
 dp_01_prepare_buffer = 0x0800D8B1;
 wram_decompress = 0x081E3B70|1;
 battle_script_push = 0x08017544|1;
+objects = 0x0202063C;
 
 fade_screen = 0x08070589;
 fade_update = 0x080704D1;

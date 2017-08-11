@@ -12,9 +12,13 @@ STRAGB	:= string2agb
 
 export PATH := $(realpath ../tools):$(PATH)
 
+PAGB_MAIN := battle_engine/deps/pokeagb
+PAGB_INCLUDE := $(PAGB_MAIN)/build/include/
+PAGB_LINK := $(PAGB_MAIN)/build/linker/BPRE.ld
+
 DEFINES   := -DBPRE -DSOFTWARE_VERSION=0
 ASFLAGS   := -mthumb
-CFLAGS    := -mthumb -mthumb-interwork -g -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -O0 -std=c99 -Wall -Wextra -Wunreachable-code -Isrc/include $(DEFINES)
+CFLAGS    := -mthumb -mthumb-interwork -g -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -Og -std=c11 -Wall -Wextra -Wunreachable-code -I$(PAGB_INCLUDE) -Isrc/include -fdiagnostics-color $(DEFINES)
 GRITFLAGS := -ftc -fa
 LDFLAGS   := -z muldefs
 BLDPATH   := object
@@ -79,14 +83,13 @@ rom: main.asm $(MAIN_OBJ)
 		sed -e '{s/^/0x/g};{/.*\sA\s.*/d};{s/\sT\s/ /g}' > $(OUTPATH)/__symbols.sym
 	@echo "*** SUCCESSFULLY BUILT PROJECT ***"
 	
-$(MAIN_OBJ): $(ALL_OBJ) $(ICONS_AR) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR) $(STRING_OBJ) $(B_ENGINE)#$(DYN_OVER) 
+$(MAIN_OBJ): $(ALL_OBJ) $(ICONS_AR) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR) $(STRING_OBJ)#$(B_ENGINE)
 	$(MAKE) -f assets.makefile
 	$(LD) $(LDFLAGS) -T linker.ld -T bpre.sym --whole-archive -r -o $@ --start-group $^ --end-group
-	$(LD) $(LDFLAGS) -T linker.ld -T bpre.sym -o object/debug.o object/linked.o
 
 .PHONY: $(B_ENGINE)
 $(B_ENGINE):
-	$(MAKE) -C $(dir $@)/.. build/linked.o
+	$(MAKE) -C battle_engine build/linked.o
 
 .PHONY: clean
 clean:

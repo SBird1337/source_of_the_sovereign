@@ -42,7 +42,7 @@
 .include "patches/pokemon_data/pokemon_habitats.asm"
 .include "patches/pokemon_data/pokemon_evolution.asm"
 
-//.include "patches/overworlds/pkm_wild.asm"
+.include "patches/overworlds/pkm_wild.asm"
 //.include "patches/dns/core.asm"
 
 .include "patches/overworlds/overworld.asm"
@@ -59,16 +59,10 @@
 
 .include "patches/game_engine/quick_hacks.asm"
 
-.include "battle_engine/patches/menutest.s"
+//.include "battle_engine/patches/battle_hooks.s"
 
 .org 0x0815F9B8
     .word 0x08069ED5 // fix nop1 for now...
-
-.org 0x083522F4
-    //.word mapheader_alabastia
-
-.org 0x0834ECC0
-    //.word mapfooter_alabastia
 
 .org 0x09000000
 .importobj "object/linked.o"

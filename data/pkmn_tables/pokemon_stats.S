@@ -1,7 +1,7 @@
 .text
 .align 2
-.global pokemon_stats
-pokemon_stats:
+.global pokemon_base_stats
+pokemon_base_stats:
 
 .byte 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 .hword 0, 0

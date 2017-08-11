@@ -1,20 +1,27 @@
 {
-    "version": "0.1.0",
-    "command": "make",
-    "isShellCommand": true,
-    "args": [],
-    "showOutput": "always",
-    "echoCommand": true,
+    "version": "2.0.0",
+    "command": "C:/cygwin64/bin/bash",
+    "args": ["-lc", "make"],
     "suppressTaskName": true,
     "tasks": [
         {
-            "isBuildCommand": true,
+            "type": "shell",
+            "group": "build",
             "taskName": "build",
-            "args": ["-j4", "all"]
+            "args": [],
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "echo": true
+            }
         },
         {
-            "taskName": "clean",
-            "args": ["clean"]
+            "type": "shell",
+            "group": "none",
+            "taskName": "start",
+            "command": "~/sots/source_of_the_sovereign/debug.sh",
+            "args":[],
+            "problemMatcher": []
         }
     ]
 }

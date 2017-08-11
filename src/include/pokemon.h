@@ -51,6 +51,6 @@ struct pokemon_data
     u16 padding;
 };
 
-extern struct pokemon_data pokemon_stats[1300];
+extern struct pokemon_data pokemon_base_stats[1300];
 
 #endif /* POKE_INDICES_H */
