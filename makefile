@@ -18,7 +18,7 @@ PAGB_LINK := $(PAGB_MAIN)/build/linker/BPRE.ld
 
 DEFINES   := -DBPRE -DSOFTWARE_VERSION=0
 ASFLAGS   := -mthumb
-CFLAGS    := -mthumb -mthumb-interwork -g -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -Og -std=c11 -Wall -Wextra -Wunreachable-code -I$(PAGB_INCLUDE) -Isrc/include -fdiagnostics-color $(DEFINES)
+CFLAGS    := -mthumb -mthumb-interwork -g -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -Og -std=c11 -Wall -Wextra -Wunreachable-code -Isrc/include -fdiagnostics-color $(DEFINES)
 GRITFLAGS := -ftc -fa
 LDFLAGS   := -z muldefs
 BLDPATH   := object
