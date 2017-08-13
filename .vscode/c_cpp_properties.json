@@ -35,7 +35,7 @@
                     "/usr/include",
                     "/usr/local/include",
                     "src/include",
-                    "${workspaceRoot}"
+                    "$(workspaceRoot}/g3headers/include"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""

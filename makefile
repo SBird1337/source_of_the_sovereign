@@ -12,7 +12,7 @@ STRAGB	:= string2agb
 
 export PATH := $(realpath ../tools):$(PATH)
 
-PAGB_MAIN := battle_engine/deps/pokeagb
+PAGB_MAIN := g3headers
 PAGB_INCLUDE := $(PAGB_MAIN)/build/include/
 PAGB_LINK := $(PAGB_MAIN)/build/linker/BPRE.ld
 
@@ -85,7 +85,7 @@ rom: main.asm $(MAIN_OBJ)
 	
 $(MAIN_OBJ): $(ALL_OBJ) $(ICONS_AR) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR) $(STRING_OBJ)#$(B_ENGINE)
 	$(MAKE) -f assets.makefile
-	$(LD) $(LDFLAGS) -T linker.ld -T bpre.sym --whole-archive -r -o $@ --start-group $^ --end-group
+	$(LD) $(LDFLAGS) -T $(PAGB_LINK) -T linker.ld -T bpre.sym --whole-archive -r -o $@ --start-group $^ --end-group
 
 .PHONY: $(B_ENGINE)
 $(B_ENGINE):

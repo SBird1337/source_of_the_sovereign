@@ -43,6 +43,7 @@
 .include "patches/pokemon_data/pokemon_evolution.asm"
 
 .include "patches/overworlds/pkm_wild.asm"
+.include "patches/overworlds/trainer.asm"
 //.include "patches/dns/core.asm"
 
 .include "patches/overworlds/overworld.asm"

@@ -26,16 +26,11 @@
  * @date 25 may 2017
  * @brief functions for preserving flags and reusing difficulty
  */
+#include <pokeagb/pokeagb.h>
 
 #define TRAINER_FLAG_SPACE_START 0x1000
 
-#include <types.h>
-#include <agb_debug.h>
-#include <stdbool.h>
-#include <game_engine.h>
-#include <battle_structs.h>
-#include <config.h>
-
+extern u16 tb_modify_flag_id(u16 flag_id);
 u16 trainerflag_fix_difficulty(u16 flag_id);
 
 u16 load_hword(void* ptr)
@@ -46,11 +41,41 @@ u16 load_hword(void* ptr)
     return result | result2;
 }
 
+u8 load_byte(void* ptr)
+{
+    return (u8) (*((u8*)ptr));
+}
+
 u16 trainerflag_fix_difficulty(u16 flag_id)
 {
     u16 new_flag = ((flag_id - TRAINER_FLAG_SPACE_START + 1) / 3) + TRAINER_FLAG_SPACE_START;
     dprintf("trainerflag_fix_difficulty;; flag_id: 0x%x, reduced: 0x%x, status: %s\n", flag_id, new_flag, flag_check(new_flag) ? "true" : "false");
     return new_flag;
+}
+
+bool trainer_check_flag_on_spot(u8 npc_id)
+{
+    void* script = npc_get_script_by_npc_id(npc_id);
+    /* probably inject some script execution here */
+
+    u16 flag = tb_modify_flag_id(load_hword(script+2));
+    /* check for line of sight */
+
+    u8 hit_result = npc_trainer_and_raycast_hit(&npc_states[npc_id]);
+
+    if(hit_result == 0)
+        return false;
+
+    if(flag_check(trainerflag_fix_difficulty(flag + TRAINER_FLAG_SPACE_START)))
+        return false;
+
+    if((load_byte(script + 1) == 4) && (player_cant_double_battle() > 0))
+        return false;
+    
+    spot_trainer_8080334(npc_id, script);
+    spot_trainer_8081E68(&npc_states[npc_id], hit_result -1);
+    return true;
+
 }
 
 u8 trainerflag_read_fix(void* script_location)
@@ -82,4 +107,11 @@ void trainerflag_set_fix(u16 flag)
 void trainerflag_clear_fix(u16 flag)
 {
     flag_clear(trainerflag_fix_difficulty(flag + TRAINER_FLAG_SPACE_START));
+}
+
+void flag_set(u16 flag)
+{
+    u8* addr = flag_byte_access(flag);
+    if(addr != NULL)
+        *addr |= 1 << (flag & 7);
 }
