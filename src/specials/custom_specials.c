@@ -66,6 +66,8 @@ void sp_clear_variables();
  */
 void sp_random_number();
 
+extern void sp_batchmaptile(void);
+
 
 void get_text_pointer_from_lookup();
 
@@ -73,14 +75,15 @@ void sp_check_tileset();
 
 /* === STATICS === */
 
-static callback special_routines[7] = {
+static callback special_routines[8] = {
     met_play,
     cam_sp_move_camera,
     sp_init_script,
     debug_some_test,
     sp_dns_switch,
     sp_random_number,
-    sp_check_tileset
+    sp_check_tileset,
+    sp_batchmaptile
 };
 
 /* === IMPLEMENTATIONS === */
