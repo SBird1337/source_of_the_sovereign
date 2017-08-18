@@ -41,7 +41,7 @@ u8 npc_dynamic_load_palette(u16 tag) {
     store_entry = npc_dynamic_allocate_palette(tag);
     if (store_entry == -1) {
         /* we do not have allocation space left */
-        dprintf("ATTENTION: TRIED TO ALLOCATE DYNOVER PALETTE WITHOUT SPACE LEFT, INCREASING ZERO REFERENCE\n");
+        dprintf("npc_dynamic: ATTENTION - TRIED TO ALLOCATE DYNOVER PALETTE WITHOUT SPACE LEFT, INCREASING ZERO REFERENCE\n");
         stored_palettes[0].reference_count++;
         return 0;
     }
