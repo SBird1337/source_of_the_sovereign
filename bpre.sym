@@ -84,6 +84,7 @@ battle_script_push = 0x08017544|1;
 objects = 0x0202063C;
 
 stored_palettes = 0x0203FF00;
+strange_npc_table = 0x02031DEC;
 
 fade_screen = 0x08070589;
 fade_update = 0x080704D1;

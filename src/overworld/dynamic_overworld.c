@@ -1,10 +1,18 @@
 #include <pokeagb/pokeagb.h>
 
 #define MAX_PAL_STORE 16
+#define STRANGE_NPC_MAX 4
 
 struct PalStoreEntry {
     u8 reference_count;
     u16 tag;
+};
+
+struct StrangeNpcStruct {
+    u8 field0;
+    u8 field1;
+    u8 field2;
+    u8 field3;
 };
 
 extern struct PalStoreEntry stored_palettes[16];
@@ -12,6 +20,8 @@ extern struct PalStoreEntry stored_palettes[16];
 extern struct NpcType *npc_get_type(u16 id);
 
 extern void dprintf(const char *str, ...);
+
+extern struct StrangeNpcStruct strange_npc_table[4];
 
 s8 npc_dynamic_find_palette(u16 tag) {
     for (s8 i = 0; i < MAX_PAL_STORE; ++i) {
@@ -41,7 +51,8 @@ u8 npc_dynamic_load_palette(u16 tag) {
     store_entry = npc_dynamic_allocate_palette(tag);
     if (store_entry == -1) {
         /* we do not have allocation space left */
-        dprintf("npc_dynamic: ATTENTION - TRIED TO ALLOCATE DYNOVER PALETTE WITHOUT SPACE LEFT, INCREASING ZERO REFERENCE\n");
+        dprintf("npc_dynamic: ATTENTION - TRIED TO ALLOCATE DYNOVER PALETTE WITHOUT SPACE LEFT, INCREASING ZERO "
+                "REFERENCE\n");
         stored_palettes[0].reference_count++;
         return 0;
     }
@@ -65,6 +76,56 @@ void npc_dynamic_remove_entry(u8 id) {
         if (stored_palettes[id].reference_count == 0)
             stored_palettes[id].tag = 0;
     }
+}
+
+void npc_restore_state(u8 id, u16 x, u16 y) {
+    for (u8 i = 0; i < STRANGE_NPC_MAX; ++i) {
+        if (strange_npc_table[i].field0 != 0) {
+            if (strange_npc_table[i].field2 == id)
+                return;
+        }
+    }
+
+    struct NpcState *npc_to_load = &npc_states[id];
+    struct NpcType *type_to_load = npc_get_type(((u16)npc_to_load->type_id) | (((u16)npc_to_load->field1A << 8)));
+
+    struct Template template_to_load;
+    u32 f14;
+    npc_to_objtemplate__with_indexed_objfunc(npc_to_load->type_id, npc_to_load->running_behavior, &template_to_load,
+                                             &f14);
+    template_to_load.pal_tag = 0xFFFF;
+    s8 pal_slot = npc_dynamic_load_palette(type_to_load->pal_num);
+    u8 obj_id = template_instanciate_forward_search(&template_to_load, 0, 0, 0);
+
+    if (obj_id == 64)
+        return;
+
+    struct Object *npc_obj = &objects[obj_id];
+    npc_fix_position(x + npc_to_load->to.x, y + npc_to_load->to.y, &npc_obj->pos1.x, &npc_obj->pos1.y);
+    npc_obj->shift.x = -(type_to_load->pos_neg_center.x / 2);
+    npc_obj->shift.y = -(type_to_load->pos_neg_center.y / 2);
+    npc_obj->pos1.x += 8;
+    npc_obj->pos1.y += (s8)npc_obj->shift.y + 16;
+    npc_obj->gfx_table = type_to_load->gfx_table;
+    if (npc_to_load->running_behavior == 11) {
+        walkrun_init_something(id, obj_id);
+        npc_to_load->oamid2 = arrow_init_something();
+    }
+
+    if (f14 != 0) {
+        (void) obj_set_f18_to_r0_f42_to_40(npc_obj, f14);
+    }
+
+    npc_obj->final_oam.palette_num = pal_slot;
+    npc_obj->bitfield2 |= 2;
+    npc_obj->priv[0] = id;
+    npc_to_load->oam_id = obj_id;
+    if (!(npc_to_load->field1 & 0x10) && (npc_to_load->running_behavior != 11)) {
+        obj_anim_image_start(npc_obj, npc_direction_to_obj_anim_image_number(npc_to_load->direction & 0xF));
+    }
+
+    npc_805EFF4(npc_to_load);
+    npc_y_height_related(npc_to_load->height >> 4, npc_obj, 1);
 }
 
 u8 npc_spawn_with_provided_template(struct RomNpc *npc, struct Template *template, u8 map, u8 bank, s16 x, s16 y) {

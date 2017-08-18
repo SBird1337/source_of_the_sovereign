@@ -266,3 +266,16 @@ ldr r1, =obj_delete_all_hook|1
 bx r1
 
 .pool
+
+.org 0x0805EE3C
+push {r4, lr}
+ldr r4, =npc_restore_state|1
+bl bxr4
+pop {r4}
+pop {r0}
+bx r0
+
+bxr4:
+bx r4
+
+.pool
