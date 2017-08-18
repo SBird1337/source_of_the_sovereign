@@ -1,4 +1,4 @@
-.org 0x5f574 + 0x08000000
+/*.org 0x5f574 + 0x08000000
 ldr r0, =ClearAllPalettes|1
 bx r0
 .pool
@@ -247,4 +247,22 @@ lsl r0, #0
 .byte 1
 .byte 0x22
 .byte 0x5
-.byte 0xE0
+.byte 0xE0*/
+
+.org 0x0805E590
+ldr r5, =npc_spawn_with_provided_template|1
+bx r5
+
+.pool
+
+.org 0x08007280
+ldr r1, =obj_delete_and_free_tiles_hook|1
+bx r1
+
+.pool
+
+.org 0x0800779A
+ldr r1, =obj_delete_all_hook|1
+bx r1
+
+.pool

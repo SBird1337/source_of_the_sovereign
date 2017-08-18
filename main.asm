@@ -7,8 +7,7 @@
 .include "patches/hooks.asm"
 
 
-//no dynamic overworlds, sorry :T
-//.include "patches/dynamic_overworld_hooks.asm"
+.include "patches/dynamic_overworld_hooks.asm"
 
 
 .include "patches/special.asm"
