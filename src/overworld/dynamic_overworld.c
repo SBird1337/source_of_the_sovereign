@@ -162,7 +162,7 @@ u8 npc_spawn_with_provided_template(struct RomNpc *npc, struct Template *templat
     u8 unknown = (created_state->field1 & 0xEF) | (16 * (type->pal_slot_unk << 25 >> 31));
     created_state->field1 = unknown;
     if (!(unknown & 0x10)) {
-        obj_anim_image_start(npc_object, npc_direction_to_obj_anim_image_number(created_state->direction));
+        obj_anim_image_start(npc_object, npc_direction_to_obj_anim_image_number(created_state->direction & 0xF));
     }
     npc_y_height_related(created_state->height >> 4, npc_object, 1);
     npc_obj_offscreen_culling_and_flag_update(created_state, npc_object);
