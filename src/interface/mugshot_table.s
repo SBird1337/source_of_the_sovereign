@@ -30,6 +30,8 @@ mugshot_table_int:
 .word mug_08Tiles
 .word mug_08Pal
 
+.word mug_09Tiles
+.word mug_09Pal
 
 .global mugshots
 mugshots:
