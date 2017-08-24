@@ -401,3 +401,129 @@ str_trainer_name_66=Rüpel
 @hword 0, 0, 0, 0
 @byte 0, 0, 0, 0, 0, 383, 0, 0, 4, 0, 0, 0
 @word pokemon_von_id_66
+
+@byte 0, 0, 0, 131
+str_trainer_name_67=Rüpel
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0
+@word pokemon_von_id_67
+
+@byte 0, 0, 0, 131
+str_trainer_name_68=Rüpel
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 15, 0, 0, 2, 0, 0, 0
+@word pokemon_von_id_68
+
+@byte 0, 0, 0, 131
+str_trainer_name_69=Rüpel
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 383, 0, 0, 3, 0, 0, 0
+@word pokemon_von_id_69
+
+@byte 0, 0, 128, 132
+str_trainer_name_70=Rüpel
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0
+@word pokemon_von_id_70
+
+@byte 0, 0, 128, 132
+str_trainer_name_71=Rüpel
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 15, 0, 0, 2, 0, 0, 0
+@word pokemon_von_id_71
+
+@byte 0, 0, 128, 132
+str_trainer_name_72=Rüpel
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 383, 0, 0, 3, 0, 0, 0
+@word pokemon_von_id_72
+
+@byte 0, 0, 0, 131
+str_trainer_name_73=Rüpel
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0
+@word pokemon_von_id_73
+
+@byte 0, 0, 0, 131
+str_trainer_name_74=Rüpel
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 15, 0, 0, 2, 0, 0, 0
+@word pokemon_von_id_74
+
+@byte 0, 0, 0, 131
+str_trainer_name_75=Rüpel
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 383, 0, 0, 3, 0, 0, 0
+@word pokemon_von_id_75
+
+@byte 0, 0, 128, 132
+str_trainer_name_76=Rüpel
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0
+@word pokemon_von_id_76
+
+@byte 0, 0, 128, 132
+str_trainer_name_77=Rüpel
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 15, 0, 0, 2, 0, 0, 0
+@word pokemon_von_id_77
+
+@byte 0, 0, 128, 132
+str_trainer_name_78=Rüpel
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 383, 0, 0, 3, 0, 0, 0
+@word pokemon_von_id_78
+
+@byte 0, 0, 0, 131
+str_trainer_name_79=Rüpel
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0
+@word pokemon_von_id_79
+
+@byte 0, 0, 0, 131
+str_trainer_name_80=Rüpel
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 15, 0, 0, 3, 0, 0, 0
+@word pokemon_von_id_80
+
+@byte 0, 0, 0, 131
+str_trainer_name_81=Rüpel
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 383, 0, 0, 4, 0, 0, 0
+@word pokemon_von_id_81
+
+@byte 0, 0, 128, 132
+str_trainer_name_82=Rüpel
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0
+@word pokemon_von_id_82
+
+@byte 0, 0, 128, 132
+str_trainer_name_83=Rüpel
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 15, 0, 0, 3, 0, 0, 0
+@word pokemon_von_id_83
+
+@byte 0, 0, 128, 132
+str_trainer_name_84=Rüpel
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 383, 0, 0, 4, 0, 0, 0
+@word pokemon_von_id_84
+
+@byte 0, 112, 0, 133
+str_trainer_name_85=Markus
+@hword0, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0
+@word pokemon_von_id_85
+
+@byte 0, 112, 0, 133
+str_trainer_name_86=Markus
+@hword13, 0, 0, 0
+@byte 0, 0, 0, 0, 0, 15, 0, 0, 5, 0, 0, 0
+@word pokemon_von_id_86
+
+@byte 1, 112, 0, 133
+str_trainer_name_87=Markus
+@hword13, 13, 0, 0
+@byte 0, 0, 0, 0, 0, 383, 0, 0, 6, 0, 0, 0
+@word pokemon_von_id_87
