@@ -16,7 +16,6 @@ void task_fade_flash(u8 id) {
         if(!pal_fade_control.active)
         {
             task_del(id);
-            scr
         }
         break;
     }
@@ -24,6 +23,6 @@ void task_fade_flash(u8 id) {
 
 void sp_crystal_fade(void) {
     u16 color = var_8000;
-    u8 t_id = task_add(task_fade_flash);
+    u8 t_id = task_add(task_fade_flash, 1);
     tasks[t_id].priv[0] = color;
 }
