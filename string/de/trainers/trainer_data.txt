@@ -6,524 +6,698 @@ str_trainer_name_0=
 @byte 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 @word 0
 
-@byte 0, 88, 0, 135 
+@byte 0, 88, 0, 135
 str_trainer_name_1=Noah
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_1
 
-@byte 0, 88, 0, 135 
+@byte 0, 88, 0, 135
 str_trainer_name_2=Noah
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 6, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 6, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_2
 
-@byte 2, 88, 0, 135 
+@byte 2, 88, 0, 135
 str_trainer_name_3=Noah
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 14, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 14, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_3
 
-@byte 0, 88, 0, 135 
+@byte 0, 88, 0, 135
 str_trainer_name_4=Noah
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_4
 
-@byte 0, 88, 0, 135 
+@byte 0, 88, 0, 135
 str_trainer_name_5=Noah
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 6, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 6, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_5
 
-@byte 2, 88, 0, 135 
+@byte 2, 88, 0, 135
 str_trainer_name_6=Noah
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 14, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 14, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_6
 
-@byte 0, 88, 128, 136 
+@byte 0, 88, 128, 136
 str_trainer_name_7=Emma
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_7
 
-@byte 0, 88, 128, 136 
+@byte 0, 88, 128, 136
 str_trainer_name_8=Emma
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 6, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 6, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_8
 
-@byte 2, 88, 128, 136 
+@byte 2, 88, 128, 136
 str_trainer_name_9=Emma
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 14, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 14, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_9
 
-@byte 0, 88, 128, 136 
+@byte 0, 88, 128, 136
 str_trainer_name_10=Emma
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_10
 
-@byte 0, 88, 128, 136 
+@byte 0, 88, 128, 136
 str_trainer_name_11=Emma
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 6, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 6, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_11
 
-@byte 2, 88, 128, 136 
+@byte 2, 88, 128, 136
 str_trainer_name_12=Emma
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 14, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 14, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_12
 
-@byte 0, 5, 1, 7 
+@byte 0, 5, 1, 7
 str_trainer_name_13=Lars
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_13
 
-@byte 0, 5, 1, 7 
+@byte 0, 5, 1, 7
 str_trainer_name_14=Lars
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 3, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 3, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_14
 
-@byte 0, 5, 1, 7 
+@byte 0, 5, 1, 7
 str_trainer_name_15=Lars
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 7, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 7, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_15
 
-@byte 0, 48, 1, 56 
+@byte 0, 48, 1, 56
 str_trainer_name_16=Alex
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_16
 
-@byte 0, 48, 1, 56 
+@byte 0, 48, 1, 56
 str_trainer_name_17=Alex
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 3, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 3, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_17
 
-@byte 0, 48, 1, 56 
+@byte 0, 48, 1, 56
 str_trainer_name_18=Alex
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 7, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 7, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_18
 
-@byte 0, 48, 1, 56 
+@byte 0, 48, 1, 56
 str_trainer_name_19=Steven
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_19
 
-@byte 0, 48, 1, 56 
+@byte 0, 48, 1, 56
 str_trainer_name_20=Steven
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 3, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 3, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_20
 
-@byte 0, 48, 1, 56 
+@byte 0, 48, 1, 56
 str_trainer_name_21=Steven
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 7, 0, 0, 4, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 7, 0
+@byte 4, 0, 0, 0
 @word pokemon_von_id_21
 
-@byte 0, 1, 1, 2 
+@byte 0, 1, 1, 2
 str_trainer_name_22=Elias
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_22
 
-@byte 0, 1, 1, 2 
+@byte 0, 1, 1, 2
 str_trainer_name_23=Elias
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 3, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 3, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_23
 
-@byte 0, 1, 1, 2 
+@byte 0, 1, 1, 2
 str_trainer_name_24=Elias
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 7, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 7, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_24
 
-@byte 0, 5, 1, 7 
+@byte 0, 5, 1, 7
 str_trainer_name_25=Marcel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_25
 
-@byte 0, 5, 1, 7 
+@byte 0, 5, 1, 7
 str_trainer_name_26=Marcel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 3, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 3, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_26
 
-@byte 0, 5, 1, 7 
+@byte 0, 5, 1, 7
 str_trainer_name_27=Marcel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 7, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 7, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_27
 
-@byte 0, 1, 1, 2 
+@byte 0, 1, 1, 2
 str_trainer_name_28=Nico
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_28
 
-@byte 1, 1, 1, 2 
+@byte 1, 1, 1, 2
 str_trainer_name_29=Nico
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 3, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 3, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_29
 
-@byte 1, 1, 1, 2 
+@byte 1, 1, 1, 2
 str_trainer_name_30=Nico
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 7, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 7, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_30
 
-@byte 0, 48, 1, 56 
+@byte 0, 48, 1, 56
 str_trainer_name_31=Marvin
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 4, 0, 0, 0
 @word pokemon_von_id_31
 
-@byte 1, 48, 1, 56 
+@byte 1, 48, 1, 56
 str_trainer_name_32=Marvin
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 3, 0, 0, 4, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 3, 0
+@byte 4, 0, 0, 0
 @word pokemon_von_id_32
 
-@byte 1, 48, 1, 56 
+@byte 1, 48, 1, 56
 str_trainer_name_33=Marvin
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 7, 0, 0, 5, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 7, 0
+@byte 5, 0, 0, 0
 @word pokemon_von_id_33
 
-@byte 0, 31, 1, 37 
+@byte 0, 31, 1, 37
 str_trainer_name_34=Kevin
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_34
 
-@byte 1, 31, 1, 37 
+@byte 1, 31, 1, 37
 str_trainer_name_35=Kevin
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 3, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 3, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_35
 
-@byte 1, 31, 1, 37 
+@byte 1, 31, 1, 37
 str_trainer_name_36=Kevin
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 23, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 23, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_36
 
-@byte 0, 6, 128, 8 
+@byte 0, 6, 128, 8
 str_trainer_name_37=Julia
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_37
 
-@byte 0, 6, 128, 8 
+@byte 0, 6, 128, 8
 str_trainer_name_38=Julia
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 3, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 3, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_38
 
-@byte 0, 6, 128, 8 
+@byte 0, 6, 128, 8
 str_trainer_name_39=Julia
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 7, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 7, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_39
 
-@byte 0, 0, 128, 1 
+@byte 0, 0, 128, 1
 str_trainer_name_40=Hanah
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_40
 
-@byte 0, 0, 128, 1 
+@byte 0, 0, 128, 1
 str_trainer_name_41=Hanah
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 3, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 3, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_41
 
-@byte 0, 0, 128, 1 
+@byte 0, 0, 128, 1
 str_trainer_name_42=Hanah
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 7, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 7, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_42
 
-@byte 0, 48, 1, 56 
+@byte 0, 48, 1, 56
 str_trainer_name_43=Jörg
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 4, 0, 0, 0
 @word pokemon_von_id_43
 
-@byte 0, 48, 1, 56 
+@byte 0, 48, 1, 56
 str_trainer_name_44=Jörg
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 3, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 3, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_44
 
-@byte 0, 48, 1, 56 
+@byte 0, 48, 1, 56
 str_trainer_name_45=Jörg
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 7, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 7, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_45
 
-@byte 0, 48, 1, 56 
+@byte 0, 48, 1, 56
 str_trainer_name_46=Piet
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 4, 0, 0, 0
 @word pokemon_von_id_46
 
-@byte 0, 48, 1, 56 
+@byte 0, 48, 1, 56
 str_trainer_name_47=Piet
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 3, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 3, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_47
 
-@byte 0, 48, 1, 56 
+@byte 0, 48, 1, 56
 str_trainer_name_48=Piet
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 7, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 7, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_48
 
-@byte 0, 48, 1, 56 
+@byte 0, 48, 1, 56
 str_trainer_name_49=Marco
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_49
 
-@byte 0, 48, 1, 56 
+@byte 0, 48, 1, 56
 str_trainer_name_50=Marco
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 3, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 3, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_50
 
-@byte 0, 48, 1, 56 
+@byte 0, 48, 1, 56
 str_trainer_name_51=Marco
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 7, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 7, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_51
 
-@byte 0, 6, 128, 8 
+@byte 0, 6, 128, 8
 str_trainer_name_52=Isabelle
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_52
 
-@byte 0, 6, 128, 8 
+@byte 0, 6, 128, 8
 str_trainer_name_53=Isabelle
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 3, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 3, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_53
 
-@byte 0, 6, 128, 8 
+@byte 0, 6, 128, 8
 str_trainer_name_54=Isabelle
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 7, 0, 0, 1, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 7, 0
+@byte 1, 0, 0, 0
 @word pokemon_von_id_54
 
-@byte 0, 21, 1, 24 
+@byte 0, 21, 1, 24
 str_trainer_name_55=Klaus
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_55
 
-@byte 0, 21, 1, 24 
+@byte 0, 21, 1, 24
 str_trainer_name_56=Klaus
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 3, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 3, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_56
 
-@byte 0, 21, 1, 24 
+@byte 0, 21, 1, 24
 str_trainer_name_57=Klaus
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 7, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 7, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_57
 
-@byte 0, 0, 0, 131 
+@byte 0, 0, 0, 131
 str_trainer_name_58=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_58
 
-@byte 0, 0, 0, 131 
+@byte 0, 0, 0, 131
 str_trainer_name_59=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 15, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 15, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_59
 
-@byte 0, 0, 0, 131 
+@byte 0, 0, 0, 131
 str_trainer_name_60=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 383, 0, 0, 4, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 383, 0
+@byte 4, 0, 0, 0
 @word pokemon_von_id_60
 
-@byte 0, 0, 0, 131 
+@byte 0, 0, 0, 131
 str_trainer_name_61=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_61
 
-@byte 0, 0, 0, 131 
+@byte 0, 0, 0, 131
 str_trainer_name_62=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 15, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 15, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_62
 
-@byte 0, 0, 0, 131 
+@byte 0, 0, 0, 131
 str_trainer_name_63=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 383, 0, 0, 4, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 383, 0
+@byte 4, 0, 0, 0
 @word pokemon_von_id_63
 
-@byte 0, 0, 128, 132 
+@byte 0, 0, 128, 132
 str_trainer_name_64=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_64
 
-@byte 0, 0, 128, 132 
+@byte 0, 0, 128, 132
 str_trainer_name_65=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 15, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 15, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_65
 
-@byte 0, 0, 128, 132 
+@byte 0, 0, 128, 132
 str_trainer_name_66=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 383, 0, 0, 4, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 383, 0
+@byte 4, 0, 0, 0
 @word pokemon_von_id_66
 
-@byte 0, 0, 0, 131 
+@byte 0, 0, 0, 131
 str_trainer_name_67=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_67
 
-@byte 0, 0, 0, 131 
+@byte 0, 0, 0, 131
 str_trainer_name_68=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 15, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 15, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_68
 
-@byte 0, 0, 0, 131 
+@byte 0, 0, 0, 131
 str_trainer_name_69=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 383, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 383, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_69
 
-@byte 0, 0, 128, 132 
+@byte 0, 0, 128, 132
 str_trainer_name_70=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_70
 
-@byte 0, 0, 128, 132 
+@byte 0, 0, 128, 132
 str_trainer_name_71=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 15, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 15, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_71
 
-@byte 0, 0, 128, 132 
+@byte 0, 0, 128, 132
 str_trainer_name_72=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 383, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 383, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_72
 
-@byte 0, 0, 0, 131 
+@byte 0, 0, 0, 131
 str_trainer_name_73=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_73
 
-@byte 0, 0, 0, 131 
+@byte 0, 0, 0, 131
 str_trainer_name_74=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 15, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 15, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_74
 
-@byte 0, 0, 0, 131 
+@byte 0, 0, 0, 131
 str_trainer_name_75=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 383, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 383, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_75
 
-@byte 0, 0, 128, 132 
+@byte 0, 0, 128, 132
 str_trainer_name_76=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_76
 
-@byte 0, 0, 128, 132 
+@byte 0, 0, 128, 132
 str_trainer_name_77=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 15, 0, 0, 2, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 15, 0
+@byte 2, 0, 0, 0
 @word pokemon_von_id_77
 
-@byte 0, 0, 128, 132 
+@byte 0, 0, 128, 132
 str_trainer_name_78=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 383, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 383, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_78
 
-@byte 0, 0, 0, 131 
+@byte 0, 0, 0, 131
 str_trainer_name_79=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_79
 
-@byte 0, 0, 0, 131 
+@byte 0, 0, 0, 131
 str_trainer_name_80=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 15, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 15, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_80
 
-@byte 0, 0, 0, 131 
+@byte 0, 0, 0, 131
 str_trainer_name_81=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 383, 0, 0, 4, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 383, 0
+@byte 4, 0, 0, 0
 @word pokemon_von_id_81
 
-@byte 0, 0, 128, 132 
+@byte 0, 0, 128, 132
 str_trainer_name_82=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_82
 
-@byte 0, 0, 128, 132 
+@byte 0, 0, 128, 132
 str_trainer_name_83=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 15, 0, 0, 3, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 15, 0
+@byte 3, 0, 0, 0
 @word pokemon_von_id_83
 
-@byte 0, 0, 128, 132 
+@byte 0, 0, 128, 132
 str_trainer_name_84=Rüpel
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 383, 0, 0, 4, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 383, 0
+@byte 4, 0, 0, 0
 @word pokemon_von_id_84
 
-@byte 0, 112, 0, 133 
+@byte 0, 112, 0, 133
 str_trainer_name_85=Markus
 @hword 0, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 0, 0
+@byte 5, 0, 0, 0
 @word pokemon_von_id_85
 
-@byte 0, 112, 0, 133 
+@byte 0, 112, 0, 133
 str_trainer_name_86=Markus
 @hword 13, 0, 0, 0
-@byte 0, 0, 0, 0, 0, 15, 0, 0, 5, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 15, 0
+@byte 5, 0, 0, 0
 @word pokemon_von_id_86
 
-@byte 1, 112, 0, 133 
+@byte 1, 112, 0, 133
 str_trainer_name_87=Markus
 @hword 13, 13, 0, 0
-@byte 0, 0, 0, 0, 0, 383, 0, 0, 6, 0, 0, 0
+@byte 0, 0, 0, 0
+@hword 383, 0
+@byte 6, 0, 0, 0
 @word pokemon_von_id_87
