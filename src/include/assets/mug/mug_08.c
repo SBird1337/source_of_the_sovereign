@@ -8,7 +8,7 @@
 //	+ 16 tiles lz77 compressed
 //	Total size: 32 + 504 = 536
 //
-//	Time-stamp: 2017-05-08, 11:18:02
+//	Time-stamp: 2017-08-24, 22:19:43
 //	Exported by Cearn's GBA Image Transmogrifier, v0.8.6
 //	( http://www.coranac.com/projects/#grit )
 //
@@ -32,7 +32,7 @@ const unsigned int mug_08Tiles[126] __attribute__((aligned(4)))=
 	0x02A17700,0x42310000,0x0B011000,0x03208024,0x5589A412,0x006A86E6,0x9679A899,0x78798777,
 	0x78577700,0x7A897777,0x98770079,0x95977884,0x89009841,0x866ACE86,0x00566A98,0x99967788,
 	0x77797795,0x77778904,0x22009777,0x00819877,0x77795808,0x01A66897,0x0A9705E0,0x00770000,
-	0x74007774,0x04489700,0x012A8900,0x24880000,0x21480042,0x00590042,
+	0x74007774,0x04489700,0x012A8900,0x24880000,0x21480042,0x00000042,
 };
 
 const unsigned short mug_08Pal[16] __attribute__((aligned(4)))=
