@@ -64,8 +64,9 @@
 .org 0x0815F9B8
     .word 0x08069ED5 // fix nop1 for now...
 
-.org 0x08727994
-    .word the_old_test_script
+// In order to test the scripts
+//.org 0x08727994
+    //.word the_old_test_script
 
 .org 0x09000000
 .importobj "object/linked.o"
