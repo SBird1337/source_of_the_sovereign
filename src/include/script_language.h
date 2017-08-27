@@ -16,7 +16,7 @@
 
 @@@@@@@@@@@@@@@@@ Macro
 
-@@ Costum commands
+@@ Custom commands
 
 .macro msgbox msgbox_textpointer msgbox_callstd
 loadpointer 0x0 \msgbox_textpointer

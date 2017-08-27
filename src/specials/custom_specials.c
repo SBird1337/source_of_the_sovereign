@@ -73,9 +73,11 @@ void get_text_pointer_from_lookup();
 
 void sp_check_tileset();
 
+extern void sp_crystal_fade(void);
+
 /* === STATICS === */
 
-static callback special_routines[8] = {
+static callback special_routines[9] = {
     met_play,
     cam_sp_move_camera,
     sp_init_script,
@@ -83,7 +85,8 @@ static callback special_routines[8] = {
     sp_dns_switch,
     sp_random_number,
     sp_check_tileset,
-    sp_batchmaptile
+    sp_batchmaptile,
+    sp_crystal_fade,
 };
 
 /* === IMPLEMENTATIONS === */
