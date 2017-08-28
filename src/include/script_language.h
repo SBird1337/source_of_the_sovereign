@@ -129,11 +129,11 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 
 @@ Index commands
 
-.macro nope
+.macro nop
 .byte 0x0
 .endm
 
-.macro nop
+.macro nop1
 .byte 0x1
 .endm
 
@@ -155,13 +155,13 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .word \goto_address
 .endm
 
-.macro if1 if1_value if1_pointer
+.macro callif if1_value if1_pointer
 .byte 0x6
 .byte \if1_value
 .word \if1_address
 .endm
 
-.macro if2 if2_value if2_pointer
+.macro gotoif if2_value if2_pointer
 .byte 0x7
 .byte \if2_value
 .word \if2_address
