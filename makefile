@@ -23,7 +23,7 @@ CHARMAP := charmap.txt
 
 DEFINES   := -DBPRE -DSOFTWARE_VERSION=0
 ASFLAGS   := -mthumb
-CFLAGS    := -mthumb -mthumb-interwork -g -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -Og -std=c11 -Wall -Wextra -Wunreachable-code -I$(PAGB_INCLUDE) -Isrc/include -Igenerated_image -fdiagnostics-color $(DEFINES)
+CFLAGS    := -mthumb -mthumb-interwork -g -mcpu=arm7tdmi -fno-inline -fdiagnostics-show-option -fdiagnostics-color=always -mlong-calls -march=armv4t -Og -std=c11 -Wall -Wextra -Wunreachable-code -I$(PAGB_INCLUDE) -Isrc/include -Igenerated_image -fdiagnostics-color $(DEFINES)
 GRITFLAGS := -ftc -fa
 LDFLAGS   := -z muldefs
 BLDPATH   := object
@@ -107,6 +107,7 @@ $(B_ENGINE):
 .PHONY: clean
 clean:
 	rm -f  $(OUTPATH)/__symbols.sym $(OUTPATH)/pkmn_sots.gba
+	rm -rf generated_image/*
 	rm -R -f object/*
 	$(MAKE) -C $(dir $(MUSIC_AR)) clean
 	$(MAKE) -C $(dir $(SMPL_AR)) clean

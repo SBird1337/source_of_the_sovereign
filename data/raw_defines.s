@@ -16,4 +16,4 @@ save_one:
 
 .global ts_pals
 ts_pals:
-    .incbin "sots-private/assets/misc/title/pal.bin"
+    .include "data/title_pal.s"

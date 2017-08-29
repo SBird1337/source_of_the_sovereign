@@ -1,14 +1,6 @@
 #include <config.h>
 #include <applymovements.h>
 
-@@ string macros
-
-.macro stringlocal language string
-    .ifdef \language
-        .string \string
-    .endif
-.endm
-
 @@ Compare operands
 .equ B_LT, 0x0
 .equ B_EQ, 0x1
