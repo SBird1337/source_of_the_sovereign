@@ -1,6 +1,14 @@
 #include <config.h>
 #include <applymovements.h>
 
+@@ string macros
+
+.macro stringlocal language string
+    .ifdef \language
+        .string \string
+    .endif
+.endm
+
 @@ Compare operands
 .equ B_LT, 0x0
 .equ B_EQ, 0x1
@@ -12,6 +20,15 @@
 @@ Flag operands
 .equ B_T, 0x0
 .equ B_F, 0x1
+
+@@ callstd alias
+.equ ITEM_OBTAIN, 0
+.equ ITEM_FIND, 1
+.equ MSG_FACE, 2
+.equ MSG_SIGN, 3
+.equ MSG_KEYOPEN, 4
+.equ MSG_YES_NO, 5
+.equ MSG_STD, 6
 
 
 @@@@@@@@@@@@@@@@@ Macro

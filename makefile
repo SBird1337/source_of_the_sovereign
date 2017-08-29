@@ -1,11 +1,12 @@
-AS      := arm-none-eabi-as
-LD      := arm-none-eabi-ld
-OBJCOPY := arm-none-eabi-objcopy
-GRIT    := grit
-CC      := arm-none-eabi-gcc
-ARS     := armips
+AS      := @arm-none-eabi-as
+LD      := @arm-none-eabi-ld
+OBJCOPY := @arm-none-eabi-objcopy
+GRIT    := @grit
+CC      := @arm-none-eabi-gcc
+ARS     := @armips
 MAKE    := make
 NM      := @arm-none-eabi-nm
+PREPROC := @preproc
 VBA		:= vba
 LAN	:= de
 STRAGB	:= string2agb
@@ -15,6 +16,8 @@ export PATH := $(realpath ../tools):$(PATH)
 PAGB_MAIN := g3headers
 PAGB_INCLUDE := $(PAGB_MAIN)/build/include/
 PAGB_LINK := $(PAGB_MAIN)/build/linker/BPRE.ld
+
+CHARMAP := charmap.txt
 
 DEFINES   := -DBPRE -DSOFTWARE_VERSION=0
 ASFLAGS   := -mthumb
@@ -47,8 +50,13 @@ C_SRC       := $(call rwildcard,src/,*.c)
 DATA_SRC_PP := $(call rwildcard,data/,*.S)
 DATA_SRC    := $(call rwildcard,data/,*.s)
 STRING		:= $(call rwildcard,string/$(LAN)/,*.txt)
+C_STRING	:= $(call rwildcard,string/$(LAN)/,*.c)
 STRING_SRC	:= $(STRING:%.txt=%.S)
 
+I_STRING	:= $(C_STRING:$.c=%.i)
+
+
+C_STR_OBJ	:= $(I_STRING:%.i=$(BLDPATH)/%.o)
 STRING_OBJ	:= $(STRING_SRC:%.S=$(BLDPATH)/%.o)
 ASM_OBJ_PP  := $(ASM_SRC_PP:%.S=$(BLDPATH)/%.o)
 ASM_OBJ     := $(ASM_SRC:%.s=$(BLDPATH)/%.o)
@@ -71,8 +79,11 @@ $(BLDPATH)/%.o: %.S
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(BLDPATH)/%.o: %.s
+
 	$(shell mkdir -p $(dir $@))
-	$(AS) $(ASFLAGS) $< -o $@
+	$(PREPROC) $< $(CHARMAP) > $*.i
+	$(CC) $(CFLAGS) -c -x assembler-with-cpp $*.i -o $@
+	$(OBJCOPY) -O binary $@ $@.bin
 
 all: rom
 
