@@ -23,7 +23,7 @@ CHARMAP := charmap.txt
 
 DEFINES   := -DBPRE -DSOFTWARE_VERSION=0
 ASFLAGS   := -mthumb
-CFLAGS    := -mthumb -mthumb-interwork -g -mcpu=arm7tdmi -fno-inline -fdiagnostics-show-option -fdiagnostics-color=always -mlong-calls -march=armv4t -Og -std=c11 -Wall -Wextra -Wunreachable-code -I$(PAGB_INCLUDE) -Isrc/include -Igenerated_image -fdiagnostics-color $(DEFINES)
+CFLAGS    := -mthumb -mthumb-interwork -g -mcpu=arm7tdmi -fno-inline -fdiagnostics-show-option -fdiagnostics-color -mlong-calls -march=armv4t -Og -std=c11 -Wall -Wextra -Wunreachable-code -I$(PAGB_INCLUDE) -Isrc/include -Igenerated_image -fdiagnostics-color $(DEFINES)
 GRITFLAGS := -ftc -fa
 LDFLAGS   := -z muldefs
 BLDPATH   := object
@@ -91,6 +91,7 @@ all: rom
 
 .PHONY: rom
 rom: main.asm $(MAIN_OBJ)
+	@echo -e "\e[1;32mCreating ROM\e[0m"
 	$(ARS) $<
 	$(NM) $(BLDPATH)/linked.o -n -g --defined-only | \
 		sed -e '{s/^/0x/g};{/.*\sA\s.*/d};{s/\sT\s/ /g}' > $(OUTPATH)/__symbols.sym
@@ -98,6 +99,7 @@ rom: main.asm $(MAIN_OBJ)
 	
 $(MAIN_OBJ): $(ALL_OBJ) $(ICONS_AR) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR) $()#$(B_ENGINE)
 	$(MAKE) -f assets.makefile
+	@echo -e "\e[1;32mLinking ELF binary $@\e[0m"
 	$(LD) $(LDFLAGS) -T $(PAGB_LINK) -T linker.ld -T bpre.sym --whole-archive -r -o $@ --start-group $^ --end-group
 
 .PHONY: $(B_ENGINE)
