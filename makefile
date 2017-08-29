@@ -62,9 +62,8 @@ C_OBJ       := $(C_SRC:%.c=$(BLDPATH)/%.o)
 DATA_OBJ    := $(DATA_SRC:%.s=$(BLDPATH)/%.o)
 ALL_OBJ     := $(C_OBJ) $(ASM_OBJ) $(DATA_OBJ) $(GEN_OBJ) $(STRING_OBJ)
 
-
-.PRECIOUS: $(STRING_SRC)
 $(STRINGDIR)/%.s: $(STRINGDIR)/%.txt
+	@echo -e "\e[93mGenerating strings $<\e[0m"
 	$(STRAGB) -o $@ -i $< -t string/table.tbl -e 0xFF
 
 $(BLDPATH)/%.o: %.c $(ASSETS)
