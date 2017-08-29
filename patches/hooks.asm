@@ -202,7 +202,7 @@ _call_via_r1 equ 0x081E3BAC
     .word store_hijack|1
 
 .org 0x083FEC94
-.include "patches/save_table/save_table.S"
+.include "patches/save_table/save_table.s"
 
 //end of saveblock routine
 //new battle script commands
