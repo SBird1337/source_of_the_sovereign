@@ -21,28 +21,6 @@ C_MET_CLOUDS := src/assets/meteor/met_clouds.c
 C_MET_METEOR := src/assets/meteor/met_meteor.c
 C_AS_T       := src/include/assets/ascii.c
 
-PNG_MUG_00    := assets/mug/mug_00.png
-PNG_MUG_01    := assets/mug/mug_01.png
-PNG_MUG_02    := assets/mug/mug_02.png
-PNG_MUG_03    := assets/mug/mug_03.png
-PNG_MUG_04    := assets/mug/mug_04.png
-PNG_MUG_05    := assets/mug/mug_05.png
-PNG_MUG_06    := assets/mug/mug_06.png
-PNG_MUG_07    := assets/mug/mug_07.png
-PNG_MUG_08    := assets/mug/mug_08.png
-PNG_MUG_09    := assets/mug/mug_09.png
-
-C_MUG_00      := src/include/assets/mug/mug_00.c
-C_MUG_01      := src/include/assets/mug/mug_01.c
-C_MUG_02      := src/include/assets/mug/mug_02.c
-C_MUG_03      := src/include/assets/mug/mug_03.c
-C_MUG_04      := src/include/assets/mug/mug_04.c
-C_MUG_05      := src/include/assets/mug/mug_05.c
-C_MUG_06      := src/include/assets/mug/mug_06.c
-C_MUG_07      := src/include/assets/mug/mug_07.c
-C_MUG_08      := src/include/assets/mug/mug_08.c
-C_MUG_09      := src/include/assets/mug/mug_09.c
-
 PNG_EMOT      := assets/interface/emoticons.png
 PNG_TB        := assets/interface/text_box.png
 PNG_MB        := assets/interface/menu_box.png
@@ -54,7 +32,7 @@ B_MB          := src/include/assets/interface/menu_box.img.bin
 B_ARR         := src/include/assets/interface/arrows.img.bin
 
 .PHONY: all
-all: $(C_MET_BG) $(C_MET_SKY) $(C_MET_FG) $(C_MET_CLOUDS) $(C_MET_METEOR) $(C_AS_T) $(C_MUG_00) $(C_MUG_01) $(C_MUG_02) $(C_MUG_03) $(C_MUG_04) $(C_MUG_05) $(C_MUG_06) $(C_MUG_07) $(C_MUG_08) $(C_MUG_09) $(B_EMOT) $(B_TB) $(B_MB) $(B_ARR)
+all: $(C_MET_BG) $(C_MET_SKY) $(C_MET_FG) $(C_MET_CLOUDS) $(C_MET_METEOR) $(C_AS_T) $(B_EMOT) $(B_TB) $(B_MB) $(B_ARR)
 
 
 # generate object files
@@ -90,36 +68,6 @@ $(C_MET_METEOR): $(PNG_MET_METEOR)
 	$(GRIT) $< -gu32 -gzl -gB 4 -gt -p -pu16 -pz! -ftc -o $@
 
 $(C_AS_T): $(PNG_AS_T)
-	$(GRIT) $< -gu32 -gzl -gB 4 -gt -p -pu16 -pz! -m! -ftc -o $@
-
-$(C_MUG_00): $(PNG_MUG_00)
-	$(GRIT) $< -gu32 -gzl -gB 4 -gt -p -pu16 -pz! -m! -ftc -o $@
-
-$(C_MUG_01): $(PNG_MUG_01)
-	$(GRIT) $< -gu32 -gzl -gB 4 -gt -p -pu16 -pz! -m! -ftc -o $@
-
-$(C_MUG_02): $(PNG_MUG_02)
-	$(GRIT) $< -gu32 -gzl -gB 4 -gt -p -pu16 -pz! -m! -ftc -o $@
-
-$(C_MUG_03): $(PNG_MUG_03)
-	$(GRIT) $< -gu32 -gzl -gB 4 -gt -p -pu16 -pz! -m! -ftc -o $@
-
-$(C_MUG_04): $(PNG_MUG_04)
-	$(GRIT) $< -gu32 -gzl -gB 4 -gt -p -pu16 -pz! -m! -ftc -o $@
-
-$(C_MUG_05): $(PNG_MUG_05)
-	$(GRIT) $< -gu32 -gzl -gB 4 -gt -p -pu16 -pz! -m! -ftc -o $@
-
-$(C_MUG_06): $(PNG_MUG_06)
-	$(GRIT) $< -gu32 -gzl -gB 4 -gt -p -pu16 -pz! -m! -ftc -o $@
-
-$(C_MUG_07): $(PNG_MUG_07)
-	$(GRIT) $< -gu32 -gzl -gB 4 -gt -p -pu16 -pz! -m! -ftc -o $@
-
-$(C_MUG_08): $(PNG_MUG_08)
-	$(GRIT) $< -gu32 -gzl -gB 4 -gt -p -pu16 -pz! -m! -ftc -o $@
-
-$(C_MUG_09): $(PNG_MUG_09)
 	$(GRIT) $< -gu32 -gzl -gB 4 -gt -p -pu16 -pz! -m! -ftc -o $@
 
 
