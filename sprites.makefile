@@ -48,7 +48,6 @@ clean:
 	rm -f $(GFX_BUILD_DIR)/sprites/back_sprites/*
 	rm -f $(GFX_BUILD_DIR)/overworlds/*
 	rm -f $(GFX_BUILD_DIR)/item/*
-	rm -f $(GFX_BUILD_DIR)/title_screen/*
 	rm -f $(GFX_BUILD_DIR)/trainer_sprites/*
 
 

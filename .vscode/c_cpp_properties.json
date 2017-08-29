@@ -34,8 +34,9 @@
                 "path": [
                     "/usr/include",
                     "/usr/local/include",
-                    "src/include",
-                    "$(workspaceRoot}/g3headers/include"
+                    "$(workspaceRoot)/src/include",
+                    "$(workspaceRoot}/g3headers/include",
+                    "$(workspaceRoot}/generated_image"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""

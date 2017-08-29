@@ -155,6 +155,11 @@
         "stat.h": "c",
         "pokedex.h": "c",
         "config.h": "c",
-        "agb_debug.h": "c"
+        "agb_debug.h": "c",
+        "met_background.h": "c",
+        "met_clouds.h": "c",
+        "met_sky.h": "c",
+        "met_meteor.h": "c",
+        "met_foreground.h": "c"
     }
 }

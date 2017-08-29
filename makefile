@@ -23,7 +23,7 @@ CHARMAP := charmap.txt
 
 DEFINES   := -DBPRE -DSOFTWARE_VERSION=0
 ASFLAGS   := -mthumb
-CFLAGS    := -mthumb -mthumb-interwork -g -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -Og -std=c11 -Wall -Wextra -Wunreachable-code -I$(PAGB_INCLUDE) -Isrc/include -fdiagnostics-color $(DEFINES)
+CFLAGS    := -mthumb -mthumb-interwork -g -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -Og -std=c11 -Wall -Wextra -Wunreachable-code -I$(PAGB_INCLUDE) -Isrc/include -Igenerated_image -fdiagnostics-color $(DEFINES)
 GRITFLAGS := -ftc -fa
 LDFLAGS   := -z muldefs
 BLDPATH   := object
@@ -60,7 +60,7 @@ STRING_OBJ	:= $(STRING_SRC:%.s=$(BLDPATH)/%.o)
 ASM_OBJ     := $(ASM_SRC:%.s=$(BLDPATH)/%.o)
 C_OBJ       := $(C_SRC:%.c=$(BLDPATH)/%.o)
 DATA_OBJ    := $(DATA_SRC:%.s=$(BLDPATH)/%.o)
-ALL_OBJ     := $(C_OBJ) $(ASM_OBJ) $(DATA_OBJ) $(GEN_OBJ) $(STRING_OBJ)
+ALL_OBJ     := $(GEN_OBJ) $(C_OBJ) $(ASM_OBJ) $(DATA_OBJ) $(STRING_OBJ)
 
 $(STRINGDIR)/%.s: $(STRINGDIR)/%.txt
 	@echo -e "\e[93mGenerating strings $<\e[0m"

@@ -31,11 +31,11 @@
 
 /* === INCLUDES === */
 
-#include "../assets/meteor/met_background.h"
-#include "../assets/meteor/met_foreground.h"
-#include "../assets/meteor/met_sky.h"
-#include "../assets/meteor/met_meteor.h"
-#include "../assets/meteor/met_clouds.h"
+#include <cutscene_meteor/met_background.h>
+#include <cutscene_meteor/met_clouds.h>
+#include <cutscene_meteor/met_foreground.h>
+#include <cutscene_meteor/met_sky.h>
+#include <cutscene_meteor/met_meteor.h>
 
 #include <callback.h>
 #include <lcd.h>
