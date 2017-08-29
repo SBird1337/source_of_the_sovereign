@@ -17,6 +17,8 @@ PAGB_MAIN := g3headers
 PAGB_INCLUDE := $(PAGB_MAIN)/build/include/
 PAGB_LINK := $(PAGB_MAIN)/build/linker/BPRE.ld
 
+AUTO_ASSET_ROOT := sots-private/assets/images
+
 CHARMAP := charmap.txt
 
 DEFINES   := -DBPRE -DSOFTWARE_VERSION=0
@@ -44,22 +46,21 @@ CRY_AR   := $(SND_ROOT)/Crys/cry.a
 
 rwildcard=$(wildcard $1$2) $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2))
 
+IMAGES=$(call rwildcard,$(AUTO_ASSET_ROOT),*.png)
+
+GEN_SRC		:= $(IMAGES:$(AUTO_ASSET_ROOT)/%.png=generated_image/%.c)
 ASM_SRC     := $(call rwildcard,src/,*.s)
 C_SRC       := $(call rwildcard,src/,*.c)
 DATA_SRC    := $(call rwildcard,data/,*.s)
 STRING		:= $(call rwildcard,string/$(LAN)/,*.txt)
-C_STRING	:= $(call rwildcard,string/$(LAN)/,*.c)
 STRING_SRC	:= $(STRING:%.txt=%.S)
 
-I_STRING	:= $(C_STRING:$.c=%.i)
-
-
-C_STR_OBJ	:= $(I_STRING:%.i=$(BLDPATH)/%.o)
+GEN_OBJ		:= $(GEN_SRC:%.c=$(BLDPATH)/%.o)
 STRING_OBJ	:= $(STRING_SRC:%.S=$(BLDPATH)/%.o)
 ASM_OBJ     := $(ASM_SRC:%.s=$(BLDPATH)/%.o)
 C_OBJ       := $(C_SRC:%.c=$(BLDPATH)/%.o)
 DATA_OBJ    := $(DATA_SRC:%.s=$(BLDPATH)/%.o)
-ALL_OBJ     := $(C_OBJ) $(ASM_OBJ) $(DATA_OBJ)
+ALL_OBJ     := $(C_OBJ) $(ASM_OBJ) $(DATA_OBJ) $(GEN_OBJ)
 
 
 .PRECIOUS: $(STRING_SRC)
@@ -78,6 +79,15 @@ $(BLDPATH)/%.o: %.s
 	$(CC) $(CFLAGS) -c -x assembler-with-cpp $*.i -o $@
 	@rm -f $*.i
 
+generated_image/%.c: $(AUTO_ASSET_ROOT)/%.png $(AUTO_ASSET_ROOT)/%.grit
+	@echo -e "\e[34mProcessing image $<\e[0m"
+	$(shell mkdir -p $(dir $@))
+	$(GRIT) $< -o $@ -ftc -ff $(<:%.png=%.grit)
+
+generated_image/%.c: $(AUTO_ASSET_ROOT)/%.png
+	@echo -e "\e[34mProcessing image $< (using directory grit file)\e[0m"
+	$(shell mkdir -p $(dir $@))
+	$(GRIT) $< -o $@ -ftc -ff $(<D)/$(notdir $(<D)).grit
 all: rom
 
 .PHONY: rom
