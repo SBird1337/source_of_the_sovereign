@@ -53,18 +53,18 @@ ASM_SRC     := $(call rwildcard,src/,*.s)
 C_SRC       := $(call rwildcard,src/,*.c)
 DATA_SRC    := $(call rwildcard,data/,*.s)
 STRING		:= $(call rwildcard,string/$(LAN)/,*.txt)
-STRING_SRC	:= $(STRING:%.txt=%.S)
+STRING_SRC	:= $(STRING:%.txt=%.s)
 
 GEN_OBJ		:= $(GEN_SRC:%.c=$(BLDPATH)/%.o)
-STRING_OBJ	:= $(STRING_SRC:%.S=$(BLDPATH)/%.o)
+STRING_OBJ	:= $(STRING_SRC:%.s=$(BLDPATH)/%.o)
 ASM_OBJ     := $(ASM_SRC:%.s=$(BLDPATH)/%.o)
 C_OBJ       := $(C_SRC:%.c=$(BLDPATH)/%.o)
 DATA_OBJ    := $(DATA_SRC:%.s=$(BLDPATH)/%.o)
-ALL_OBJ     := $(C_OBJ) $(ASM_OBJ) $(DATA_OBJ) $(GEN_OBJ)
+ALL_OBJ     := $(C_OBJ) $(ASM_OBJ) $(DATA_OBJ) $(GEN_OBJ) $(STRING_OBJ)
 
 
 .PRECIOUS: $(STRING_SRC)
-$(STRINGDIR)/%.S: $(STRINGDIR)/%.txt
+$(STRINGDIR)/%.s: $(STRINGDIR)/%.txt
 	$(STRAGB) -o $@ -i $< -t string/table.tbl -e 0xFF
 
 $(BLDPATH)/%.o: %.c $(ASSETS)
@@ -97,7 +97,7 @@ rom: main.asm $(MAIN_OBJ)
 		sed -e '{s/^/0x/g};{/.*\sA\s.*/d};{s/\sT\s/ /g}' > $(OUTPATH)/__symbols.sym
 	@echo "*** SUCCESSFULLY BUILT PROJECT ***"
 	
-$(MAIN_OBJ): $(ALL_OBJ) $(ICONS_AR) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR) $(STRING_OBJ)#$(B_ENGINE)
+$(MAIN_OBJ): $(ALL_OBJ) $(ICONS_AR) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR) $()#$(B_ENGINE)
 	$(MAKE) -f assets.makefile
 	$(LD) $(LDFLAGS) -T $(PAGB_LINK) -T linker.ld -T bpre.sym --whole-archive -r -o $@ --start-group $^ --end-group
 

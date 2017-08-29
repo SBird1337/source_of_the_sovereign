@@ -1,6 +1,7 @@
-AS = arm-none-eabi-as
-AR = arm-none-eabi-ar
-LD = arm-none-eabi-ld
+AS = @arm-none-eabi-as
+AR = @arm-none-eabi-ar
+LD = @arm-none-eabi-ld
+GRIT = @grit
 
 GFX_BUILD_DIR = gfx_build
 TMP_LD = $(GFX_BUILD_DIR)/tmp.ld
@@ -31,12 +32,6 @@ O_HERO := $(GFX_BUILD_DIR)/char/hero_backsprite.o
 O_HEROINE := $(GFX_BUILD_DIR)/char/heroine_backsprite.o
 O_HERO_B := $(GFX_BUILD_DIR)/char/hero_bag.o
 O_HEROINE_B := $(GFX_BUILD_DIR)/char/heroine_bag.o
-
-PNG_BOOT := $(ASSET_ROOT)/misc/boot/boot_tileset.png
-
-S_BOOT := $(GFX_BUILD_DIR)/boot/boot_tileset.S
-
-O_BOOT := $(GFX_BUILD_DIR)/boot/boot_tileset.o
 
 S_TITLE_BG := $(GFX_BUILD_DIR)/title_screen/title_tileset_background.S
 S_TITLE_AEON := $(GFX_BUILD_DIR)/title_screen/title_tileset_latias_latios_deoxys.S
@@ -89,14 +84,14 @@ clean:
 	rm -f $(GFX_BUILD_DIR)/sprites/back_sprites/*
 	rm -f $(GFX_BUILD_DIR)/overworlds/*
 	rm -f $(GFX_BUILD_DIR)/item/*
-	rm -f $(GFX_BUILD_DIR)/boot/*
 	rm -f $(GFX_BUILD_DIR)/char/*
 	rm -f $(GFX_BUILD_DIR)/title_screen/*
 	rm -f $(GFX_BUILD_DIR)/trainer_sprites/*
 
 
-$(SPRITES_BINARY): $(NORMAL_PAL_OBJ) $(HERO_OBJ) $(SHINY_PAL_OBJ) $(SPRITE_FRONT_OBJ) $(SPRITE_BACK_OBJ) $(NORMAL_CASTFORM_PAL_OBJ) $(SHINY_CASTFORM_PAL_OBJ) $(CASTFORM_FRONT_OBJ) $(CASTFORM_BACK_OBJ) $(OW_OBJ) $(TS_OBJ) $(ITEM_OBJ) $(TITLE_OBJ) $(O_BOOT)
-	echo "INPUT($^)" > $(TMP_LD)
+$(SPRITES_BINARY): $(NORMAL_PAL_OBJ) $(HERO_OBJ) $(SHINY_PAL_OBJ) $(SPRITE_FRONT_OBJ) $(SPRITE_BACK_OBJ) $(NORMAL_CASTFORM_PAL_OBJ) $(SHINY_CASTFORM_PAL_OBJ) $(CASTFORM_FRONT_OBJ) $(CASTFORM_BACK_OBJ) $(OW_OBJ) $(TS_OBJ) $(ITEM_OBJ) $(TITLE_OBJ)
+	@echo -e "\e[1;32mLinking $@\e[0m"
+	@echo "INPUT($^)" > $(TMP_LD)
 	$(LD) -r -o $@ -T $(TMP_LD)
 
 # Characters
@@ -104,143 +99,152 @@ $(GFX_BUILD_DIR)/char/%.o: $(GFX_BUILD_DIR)/char/%.S
 	$(AS) -o $@ $<
 
 $(S_HERO): $(PNG_HERO)
-	grit $< -fts -fh! -gt -gB4 -gz! -p -pzl -m! -pu16 -o $@
+	$(GRIT) $< -fts -fh! -gt -gB4 -gz! -p -pzl -m! -pu16 -o $@
 
 $(S_HERO_B): $(PNG_HERO_B)
-	grit $< -fts -fh! -gt -gB4 -gzl -p -pzl -m! -pu16 -o $@
+	$(GRIT) $< -fts -fh! -gt -gB4 -gzl -p -pzl -m! -pu16 -o $@
 
 $(S_HEROINE): $(PNG_HEROINE)
-	grit $< -fts -fh! -gt -gB4 -gz! -p -pzl -m! -pu16 -o $@
+	$(GRIT) $< -fts -fh! -gt -gB4 -gz! -p -pzl -m! -pu16 -o $@
 
 $(S_HEROINE_B): $(PNG_HEROINE_B)
-	grit $< -fts -fh! -gt -gB4 -gzl -p -pzl -m! -pu16 -o $@
-
-
-# Boot Screen
-$(GFX_BUILD_DIR)/boot/%.o: $(GFX_BUILD_DIR)/boot/%.S
-	$(AS) -o $@ $<
-
-$(S_BOOT): $(PNG_BOOT)
-	grit $< -fts -fh! -gt -gB4 -gzl -p -pz! -m -mzl -mRtpf -pu16 -o $@
+	$(GRIT) $< -fts -fh! -gt -gB4 -gzl -p -pzl -m! -pu16 -o $@
 
 # Special titlescreen targets
 $(GFX_BUILD_DIR)/title_screen/%.o: $(GFX_BUILD_DIR)/title_screen/%.S
 	$(AS) -o $@ $<
 
 $(S_TITLE_BG): $(PNG_TITLE_BG)
-	grit $< -fts -fh! -gt -gB4 -gzl -p! -pz! -m -mzl -mp 4 -mRtf -pu16 -o $@
+	$(GRIT) $< -fts -fh! -gt -gB4 -gzl -p! -pz! -m -mzl -mp 4 -mRtf -pu16 -o $@
 
 $(S_TITLE_AEON): $(PNG_TITLE_AEON)
-	grit $< -fts -fh! -gt -gB4 -gzl -p! -pz! -m -mzl -mp 2 -mRtf -pu16 -o $@
+	$(GRIT) $< -fts -fh! -gt -gB4 -gzl -p! -pz! -m -mzl -mp 2 -mRtf -pu16 -o $@
 
 $(S_TITLE_LOGO): $(PNG_TITLE_LOGO)
-	grit $< -fts -fh! -gt -gB8 -gzl -p! -pz! -m -mzl -mRtf -pu16 -o $@
+	$(GRIT) $< -fts -fh! -gt -gB8 -gzl -p! -pz! -m -mzl -mRtf -pu16 -o $@
 
 $(S_TITLE_START): $(PNG_TITLE_START)
-	grit $< -fts -fh! -gt -gB4 -gzl -p! -pz! -m -mzl -mp 3 -mRtf -pu16 -o $@
+	$(GRIT) $< -fts -fh! -gt -gB4 -gzl -p! -pz! -m -mzl -mp 3 -mRtf -pu16 -o $@
 
 $(S_TITLE_CLOUD): $(PNG_TITLE_CLOUD)
-	grit $< -fts -fh! -gt -gB4 -gzl -p -pz! -m! -pu16 -o $@
+	$(GRIT) $< -fts -fh! -gt -gB4 -gzl -p -pz! -m! -pu16 -o $@
 
 
 
 # Item Targets
 $(GFX_BUILD_DIR)/item/%.o: $(GFX_BUILD_DIR)/item/%.s
+	@echo -e "\e[32mAssembling $<\e[0m"
 	$(AS) -o $@ $<
 
 .PRECIOUS: $(GFX_BUILD_DIR)/item/%.s
 $(GFX_BUILD_DIR)/item/%.s: $(ASSET_ROOT)/item_icons/%.png
-	grit $< -fts -fh! -gt -gB4 -gzl -p -pzl -m! -pu16 -o $@
+	@echo -e "\e[34mProcessing image $<\e[0m"
+	$(GRIT) $< -fts -fh! -gt -gB4 -gzl -p -pzl -m! -pu16 -o $@
 
 # OW Targets
 $(GFX_BUILD_DIR)/overworlds/%.o: $(GFX_BUILD_DIR)/overworlds/%.s
+	@echo -e "\e[32mAssembling $<\e[0m"
 	$(AS) -o $@ $<
 
 .PRECIOUS: $(GFX_BUILD_DIR)/overworlds/%.s
 $(GFX_BUILD_DIR)/overworlds/%.s: $(ASSET_ROOT)/overworld/%.png
-	grit $< -fts -fh! -gt -gB4 -gz! -p -pz! -m! -pu16 -o $@
+	@echo -e "\e[34mProcessing image $<\e[0m"
+	$(GRIT) $< -fts -fh! -gt -gB4 -gz! -p -pz! -m! -pu16 -o $@
 
 # Trainer Sprite Targets
 $(GFX_BUILD_DIR)/trainer_sprites/%.o: $(GFX_BUILD_DIR)/trainer_sprites/%.s
+	@echo -e "\e[32mAssembling $<\e[0m"
 	$(AS) -o $@ $<
 
-.PRECIOUS: $(GFX_BUILD_DIR)/trainer_sprites/%.s
 $(GFX_BUILD_DIR)/trainer_sprites/%.s: $(ASSET_ROOT)/trainer_sprites/%.png
-	grit $< -fts -fh! -gt -gB4 -gzl -p -pzl -m! -o $@
+	@echo -e "\e[34mProcessing image $<\e[0m"
+	$(GRIT) $< -fts -fh! -gt -gB4 -gzl -p -pzl -m! -o $@
 
 # Normal Palette Targets
 $(GFX_BUILD_DIR)/sprites/normal_pal/%.o: $(GFX_BUILD_DIR)/sprites/normal_pal/%.s
+	@echo -e "\e[32mAssembling $<\e[0m"
 	$(AS) -o $@ $<
 
-.PRECIOUS: $(GFX_BUILD_DIR)/sprites/normal_pal/%.s
 $(GFX_BUILD_DIR)/sprites/normal_pal/%.s: $(ASSET_ROOT)/pkmn_sprites/%.png
-	grit $< -fts -fh! -g! -gB 4 -gt -m! -p -pzl -pu16 -pn 16 \
+	@echo -e "\e[34mProcessing palette $< (normal)\e[0m"
+	$(GRIT) $< -fts -fh! -g! -gB 4 -gt -m! -p -pzl -pu16 -pn 16 \
 		-s $(shell echo $(notdir $(basename $<)) | sed "s/normal_/n_p_/g") \
 		-o $@
 
 
 # Shiny Palette Targets
 $(GFX_BUILD_DIR)/sprites/shiny_pal/%.o: $(GFX_BUILD_DIR)/sprites/shiny_pal/%.s
+	@echo -e "\e[32mAssembling $<\e[0m"
 	$(AS) -o $@ $<
 
-.PRECIOUS: $(GFX_BUILD_DIR)/sprites/shiny_pal/%.s
 $(GFX_BUILD_DIR)/sprites/shiny_pal/%.s: $(ASSET_ROOT)/pkmn_sprites/%.png
-	grit $< -fts -fh! -g! -gB 4 -gt -m! -p -pzl -pu16 -pn 16 \
+	@echo -e "\e[34mProcessing palette $< (shiny)\e[0m"
+	$(GRIT) $< -fts -fh! -g! -gB 4 -gt -m! -p -pzl -pu16 -pn 16 \
 		-s $(shell echo $(notdir $(basename $<)) | sed "s/shiny_/s_p_/g") \
 		-o $@
 
 
 # Front Sprite Targets
 $(GFX_BUILD_DIR)/sprites/front_sprites/%.o: $(GFX_BUILD_DIR)/sprites/front_sprites/%.s
+	@echo -e "\e[32mAssembling $<\e[0m"
 	$(AS) -o $@ $<
 
-.PRECIOUS: $(GFX_BUILD_DIR)/sprites/front_sprites/%.s
 $(GFX_BUILD_DIR)/sprites/front_sprites/%.s: $(ASSET_ROOT)/pkmn_sprites/%.png
-	grit $< -fts -fh! -g -gB 4 -gt -gzl -al 0 -aw 64 -m! -p! \
+	@echo -e "\e[34mProcessing sprite $< (front)\e[0m"
+	$(GRIT) $< -fts -fh! -g -gB 4 -gt -gzl -al 0 -aw 64 -m! -p! \
 		-s $(shell echo $(notdir $(basename $<)) | sed "s/normal_/front_/g") \
 		-o $@
 
 
 # Back Sprite Targets
 $(GFX_BUILD_DIR)/sprites/back_sprites/%.o: $(GFX_BUILD_DIR)/sprites/bacj_sprites/%.s
+	@echo -e "\e[32mAssembling $<\e[0m"
 	$(AS) -o $@ $<
 
-.PRECIOUS: $(GFX_BUILD_DIR)/sprites/back_sprites/%.s
 $(GFX_BUILD_DIR)/sprites/back_sprites/%.s: $(ASSET_ROOT)/pkmn_sprites/%.png
-	grit $< -fts -fh! -g -gB 4 -gt -gzl -al 64 -aw 64 -m! -p! \
+	@echo -e "\e[34mProcessing sprite $< (back)\e[0m"
+	$(GRIT) $< -fts -fh! -g -gB 4 -gt -gzl -al 64 -aw 64 -m! -p! \
 		-s $(shell echo $(notdir $(basename $<)) | sed "s/normal_/back_/g") \
 		-o $@
 
 
 # Misc hardcoded targets
 $(NORMAL_CASTFORM_PAL_OBJ): $(NORMAL_CASTFORM_PAL_OBJ:.o=.s)
+	@echo -e "\e[32mAssembling $<\e[0m"
 	$(AS) -o $@ $<
 
 $(NORMAL_CASTFORM_PAL_OBJ:.o=.s): $(CASTFORM_PNG)
-	grit $< -fts -fh! -g! -gB 4 -gt -m! -p -pzl -pu16 -pn 64 \
+	@echo -e "\e[34mProcessing palette $< (normal)\e[0m"
+	$(GRIT) $< -fts -fh! -g! -gB 4 -gt -m! -p -pzl -pu16 -pn 64 \
 		-s n_p_0385 -o $@
 
 
 $(SHINY_CASTFORM_PAL_OBJ): $(SHINY_CASTFORM_PAL_OBJ:.o=.s)
+	@echo -e "\e[32mAssembling $<\e[0m"
 	$(AS) -o $@ $<
 
 $(SHINY_CASTFORM_PAL_OBJ:.o=.s): $(CASTFORM_PNG)
-	grit $< -fts -fh! -g! -gB 4 -gt -m! -p -pzl -pu16 -pn 64 \
+	@echo -e "\e[34mProcessing palette $< (shiny)\e[0m"
+	$(GRIT) $< -fts -fh! -g! -gB 4 -gt -m! -p -pzl -pu16 -pn 64 \
 		-s s_p_0385 -o $@
 
 
 $(CASTFORM_FRONT_OBJ): $(CASTFORM_FRONT_OBJ:.o=.s)
+	@echo -e "\e[32mAssembling $<\e[0m"
 	$(AS) -o $@ $<
 
 $(CASTFORM_FRONT_OBJ:.o=.s): $(CASTFORM_PNG)
-	grit $< -fts -fh! -g -gB 4 -gt -gzl -al 0 -aw 256 -ah 64 -m! -p! \
+	@echo -e "\e[34mProcessing sprite $< (front)\e[0m"
+	$(GRIT) $< -fts -fh! -g -gB 4 -gt -gzl -al 0 -aw 256 -ah 64 -m! -p! \
 		-s front_0385 -o $@
 
 
 $(CASTFORM_BACK_OBJ): $(CASTFORM_BACK_OBJ:.o=.s)
+	@echo -e "\e[32mAssembling $<\e[0m"
 	$(AS) -o $@ $<
 
 $(CASTFORM_BACK_OBJ:.o=.s): $(CASTFORM_PNG)
-	grit $< -fts -fh! -g -gB 4 -gt -gzl -al 0 -aw 256 -at 64 -ah 64 -m! -p! \
+	@echo -e "\e[34mProcessing sprite $< (back)\e[0m"
+	$(GRIT) $< -fts -fh! -g -gB 4 -gt -gzl -al 0 -aw 256 -at 64 -ah 64 -m! -p! \
 		-s back_0385 -o $@
 
