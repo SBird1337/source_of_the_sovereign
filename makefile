@@ -44,10 +44,8 @@ CRY_AR   := $(SND_ROOT)/Crys/cry.a
 
 rwildcard=$(wildcard $1$2) $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2))
 
-ASM_SRC_PP  := $(call rwildcard,src/,*.S)
 ASM_SRC     := $(call rwildcard,src/,*.s)
 C_SRC       := $(call rwildcard,src/,*.c)
-DATA_SRC_PP := $(call rwildcard,data/,*.S)
 DATA_SRC    := $(call rwildcard,data/,*.s)
 STRING		:= $(call rwildcard,string/$(LAN)/,*.txt)
 C_STRING	:= $(call rwildcard,string/$(LAN)/,*.c)
@@ -58,12 +56,10 @@ I_STRING	:= $(C_STRING:$.c=%.i)
 
 C_STR_OBJ	:= $(I_STRING:%.i=$(BLDPATH)/%.o)
 STRING_OBJ	:= $(STRING_SRC:%.S=$(BLDPATH)/%.o)
-ASM_OBJ_PP  := $(ASM_SRC_PP:%.S=$(BLDPATH)/%.o)
 ASM_OBJ     := $(ASM_SRC:%.s=$(BLDPATH)/%.o)
 C_OBJ       := $(C_SRC:%.c=$(BLDPATH)/%.o)
-DATA_OBJ_PP := $(DATA_SRC_PP:%.S=$(BLDPATH)/%.o)
 DATA_OBJ    := $(DATA_SRC:%.s=$(BLDPATH)/%.o)
-ALL_OBJ     := $(C_OBJ) $(ASM_OBJ_PP) $(ASM_OBJ) $(DATA_OBJ_PP) $(DATA_OBJ)
+ALL_OBJ     := $(C_OBJ) $(ASM_OBJ) $(DATA_OBJ)
 
 
 .PRECIOUS: $(STRING_SRC)
@@ -71,19 +67,16 @@ $(STRINGDIR)/%.S: $(STRINGDIR)/%.txt
 	$(STRAGB) -o $@ -i $< -t string/table.tbl -e 0xFF
 
 $(BLDPATH)/%.o: %.c $(ASSETS)
-	$(shell mkdir -p $(dir $@))
-	$(CC) $(CFLAGS) -c $< -o $@
-
-$(BLDPATH)/%.o: %.S
+	@echo -e "\e[32mCompiling $<\e[0m"
 	$(shell mkdir -p $(dir $@))
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(BLDPATH)/%.o: %.s
-
+	@echo -e "\e[32mAssembling $<\e[0m"
 	$(shell mkdir -p $(dir $@))
 	$(PREPROC) $< $(CHARMAP) > $*.i
 	$(CC) $(CFLAGS) -c -x assembler-with-cpp $*.i -o $@
-	$(OBJCOPY) -O binary $@ $@.bin
+	@rm -f $*.i
 
 all: rom
 
