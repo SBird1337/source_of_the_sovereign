@@ -3,7 +3,7 @@
 .align 2
 
 .global ow_pal_table
-ow_pal_table:         
+ow_pal_table:  
 .word ow_0000Pal
 .byte 0, 17, 0, 0
 .word ow_0001Pal
@@ -1028,7 +1028,7 @@ ow_pal_table:
 .byte 254, 18, 0, 0
 .word ow_00000Pal
 .byte 255, 18, 0, 0
-.word ow_00000Pal
+.word ow_0512Pal
 .byte 0, 19, 0, 0
 .word ow_0513Pal
 .byte 1, 19, 0, 0
@@ -1068,9 +1068,9 @@ ow_pal_table:
 .byte 18, 19, 0, 0
 .word ow_0531Pal
 .byte 19, 19, 0, 0
-.word ow_00000Pal
+.word ow_0532Pal
 .byte 20, 19, 0, 0
-.word ow_00000Pal
+.word ow_0533Pal
 .byte 21, 19, 0, 0
 .word ow_00000Pal
 .byte 22, 19, 0, 0
@@ -1543,4 +1543,4 @@ ow_pal_table:
 
 .global npc_palettes
 npc_palettes:
-    .word ow_pal_table
+.word ow_pal_table
