@@ -30,12 +30,17 @@ BLDPATH   := object
 OUTPATH	  := build
 SOURCEDIR := src
 STRINGDIR := string
+MAPROOT	  := sots-private/map
+MAPMAPS	  := $(MAPROOT)/maps
+MAPTS	  := $(MAPROOT)/tilesets
 
 MAIN_OBJ  := $(BLDPATH)/linked.o
 B_ENGINE  := battle_engine/build/linked.o
 SPRITES   := $(BLDPATH)/pkmn_sprites.o
 ICONS_AR  := $(BLDPATH)/pkmn_icons.a
 DYN_OVER  := built/dynamic_overworld.o
+
+TMP_LD	  := tmp.ld
 
 SND_ROOT := sots-private/sound
 MUSIC_AR := $(SND_ROOT)/Music/music.a
@@ -54,13 +59,16 @@ C_SRC       := $(call rwildcard,src/,*.c)
 DATA_SRC    := $(call rwildcard,data/,*.s)
 STRING		:= $(call rwildcard,string/$(LAN)/,*.txt)
 STRING_SRC	:= $(STRING:%.txt=%.s)
+SCRIPT_SRC	:= $(call rwildcard,$(MAPMAPS)/,*.s)
+
 
 GEN_OBJ		:= $(GEN_SRC:%.c=$(BLDPATH)/%.o)
 STRING_OBJ	:= $(STRING_SRC:%.s=$(BLDPATH)/%.o)
 ASM_OBJ     := $(ASM_SRC:%.s=$(BLDPATH)/%.o)
 C_OBJ       := $(C_SRC:%.c=$(BLDPATH)/%.o)
 DATA_OBJ    := $(DATA_SRC:%.s=$(BLDPATH)/%.o)
-ALL_OBJ     := $(GEN_OBJ) $(C_OBJ) $(ASM_OBJ) $(DATA_OBJ) $(STRING_OBJ)
+SCRIPT_OBJ	:= $(SCRIPT_SRC:%.s=$(BLDPATH)/%.o)
+ALL_OBJ     := $(GEN_OBJ) $(C_OBJ) $(ASM_OBJ) $(DATA_OBJ) $(STRING_OBJ) $(SCRIPT_OBJ)
 
 $(STRINGDIR)/%.s: $(STRINGDIR)/%.txt
 	@echo -e "\e[93mGenerating strings $<\e[0m"
@@ -100,7 +108,9 @@ rom: main.asm $(MAIN_OBJ)
 $(MAIN_OBJ): $(ALL_OBJ) $(ICONS_AR) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR) $()#$(B_ENGINE)
 	$(MAKE) -f assets.makefile
 	@echo -e "\e[1;32mLinking ELF binary $@\e[0m"
-	$(LD) $(LDFLAGS) -T $(PAGB_LINK) -T linker.ld -T bpre.sym --whole-archive -r -o $@ --start-group $^ --end-group
+	@echo "INPUT($^)" > $(TMP_LD)
+	$(LD) $(LDFLAGS) -T $(PAGB_LINK) -T linker.ld -T bpre.sym --whole-archive -r -o $@ --start-group -T $(TMP_LD) --end-group
+	@rm -f $(TMP_LD)
 
 .PHONY: $(B_ENGINE)
 $(B_ENGINE):

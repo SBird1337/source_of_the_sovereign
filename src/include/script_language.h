@@ -167,13 +167,13 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .macro callif if1_value:req if1_pointer:req
 .byte 0x6
 .byte \if1_value
-.word \if1_address
+.word \if1_pointer
 .endm
 
 .macro gotoif if2_value:req if2_pointer:req
 .byte 0x7
 .byte \if2_value
-.word \if2_address
+.word \if2_pointer
 .endm
 
 .macro callstd callstd_call:req
@@ -217,14 +217,14 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 
 .macro copyvar copyvar_variableADestin:req copyvar_variableBSource:req
 .byte 0x19
-.hword copyvar_variableADestin
-.hword copyvar_variableBSource
+.hword \copyvar_variableADestin
+.hword \copyvar_variableBSource
 .endm
 
-.macro setvarifnotzero setvarifnotzero_variableADestin:req setvarifnotzero_variableBSource:req
+.macro copyvarifnotzero copyvarifnotzero_variableADestin:req copyvarifnotzero_variableBSource:req
 .byte 0x1A
-.hword setvarifnotzero_variableADestin
-.hword setvarifnotzero_variableBSource
+.hword \copyvarifnotzero_variableADestin
+.hword \copyvarifnotzero_variableBSource
 .endm
 
 .macro compare compare_variable:req compare_value:req
@@ -312,7 +312,7 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .hword \playsong2_song
 .endm
 
-.macro fadedefault
+.macro songfadedefault
 .byte 0x35
 .endm
 
@@ -490,7 +490,7 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .hword \movesprite_y
 .endm
 
-.macro spritevisible spritevisible_people:req spritevisible_bank:req movesprite_map:req
+.macro spritevisible spritevisible_people:req spritevisible_bank:req spritevisible_map:req
 .byte 0x58
 .hword \spritevisible_people
 .byte \spritevisible_bank
@@ -514,7 +514,7 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .byte \spriteface_facing
 .endm
 
-.macro trainerbattle trainerbattle_kind:req trainerbattle_id:req trainerbattle_value:req trainerbattle_before:req trainerbattle_after:req trainerbattle_later:req
+.macro trainerbattle trainerbattle_kind:req trainerbattle_id:req trainerbattle_value:req trainerbattle_before:req trainerbattle_after:req trainerbattle_later
 .byte 0x5C
 .byte \trainerbattle_kind
 .hword \trainerbattle_id
@@ -566,7 +566,7 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .macro spritebehave spritebehave_people:req spritebehave_facing:req
 .byte 0x65
 .hword \spritebehave_people
-.byte \spritebehave_behaviour
+.byte \spritebehave_facing
 .endm
 
 .macro waitmsg
@@ -650,7 +650,7 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .word \braile_data
 .endm
 
-.macro givepokemon givepokemon_spezies:req givepokemon_level:req givepokemon_item:req
+.macro givepokemon givepokemon_spezies:req givepokemon_level:req givepokemon_item:req givepokemon_one givepokemon_two givepokemon_three
 .byte 0x79
 .hword \givepokemon_spezies
 .byte \givepokemon_level
@@ -721,12 +721,17 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .macro bufferstring bufferstring_buffernumber:req bufferstring_string:req
 .byte 0x85
 .byte \bufferstring_buffernumber
-.hword \bufferstring_string
+.word \bufferstring_string
 .endm
 
 .macro pokemart pokemart_list:req
 .byte 0x86
 .word \pokemart_list
+.endm
+
+.macro pokemart3 pokemart_list_three:req
+.byte 0x86
+.word \pokemart_list_three
 .endm
 
 .macro random random_possiblities:req
@@ -746,7 +751,7 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .byte \paymoney_command
 .endm
 
-.macro checkmoney checkmoney_quantity:req paymoney_command:req
+.macro checkmoney checkmoney_quantity:req checkmoney_command:req
 .byte 0x92
 .word \checkmoney_quantity
 .byte \checkmoney_command
@@ -918,6 +923,11 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 
 .macro dowildbattle
 .byte 0xB7
+.endm
+
+.macro savincrementkey attr:req
+.byte 0xC3
+.byte \attr
 .endm
 
 .macro waitcry
