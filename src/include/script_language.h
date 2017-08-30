@@ -164,13 +164,13 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .word \goto_address
 .endm
 
-.macro callif if1_value:req if1_pointer:req
+.macro gotoif if1_value:req if1_pointer:req
 .byte 0x6
 .byte \if1_value
 .word \if1_pointer
 .endm
 
-.macro gotoif if2_value:req if2_pointer:req
+.macro callif if2_value:req if2_pointer:req
 .byte 0x7
 .byte \if2_value
 .word \if2_pointer
