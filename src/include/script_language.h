@@ -826,9 +826,10 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .hword \checkanimation_animation
 .endm
 
-.macro sethealingplace sethealingplace_flightspot:req
-.byte 0x9F
-.hword \sethealingplace_flightspot
+.macro sethealingplace shp_bank:req shp_map:req shp_x:req shp_y:req
+    setvar HEALING_BANK_MAP_VAR \shp_map << 8 | \shp_bank
+    setvar HEALING_X_VAR \shp_x
+    setvar HEALING_Y_VAR \shp_y
 .endm
 
 .macro checkgender
