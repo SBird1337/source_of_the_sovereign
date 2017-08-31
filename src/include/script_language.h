@@ -32,6 +32,34 @@
 
 @@ Custom commands
 
+.macro lookbattle lookbattle_id:req lookbattle_before:req lookbattle_after:req
+trainerbattle 0x0 \lookbattle_id 0x0 \lookbattle_before \lookbattle_after
+.endm
+
+.macro gymbattle gymbattle_id:req gymbattle_before:req gymbattle_after:req
+trainerbattle 0x1 \gymbattle_id 0x0 \gymbattle_before \gymbattle_after \gymbattle_later
+.endm
+
+.macro betweenbattle betweenbattle_id:req betweenbattle_before:req betweenbattle_after:req betweenbattle_between:req
+trainerbattle 0x2 \betweenbattle_id 0x0 \betweenbattle_before \betweenbattle_after \betweenbattle_between
+.endm
+
+.macro scriptbattle scriptbattle_id:req scriptbattle_after:req
+trainerbattle 0x3 \scriptbattle_id 0x0 \scriptbattle_after
+.endm
+
+.macro doublebattle doublebattle_id:req doublebattle_before:req doublebattle_after:req doublebattle_onepoke:req
+trainerbattle 0x4 \doublebattle_id 0x0 \doublebattle_before \doublebattle_after \doublebattle_onepoke
+.endm
+
+.macro doublegymbattle doublegymbattle_id:req doublegymbattle_before:req doublegymbattle_after:req doublegymbattle_later:req doublegymbattle_onepoke:req
+trainerbattle 0x8 \doublegymbattle_id 0x0 \doublegymbattle_before \doublegymbattle_after \doublegymbattle_later \doublegymbattle_onepoke
+.endm
+
+.macro winlosebattle winlosebattle_id:req winlosebattle_win:req winlosebattle_lose:req
+trainerbattle 0x9 \winlosebattle_id 0x3 \winlosebattle_win \winlosebattle_lose
+.endm
+
 .macro msgbox msgbox_textpointer:req msgbox_callstd:req
 loadpointer 0x0 \msgbox_textpointer
 callstd \msgbox_callstd
@@ -62,7 +90,7 @@ waitstate
 .endm
 
 .macro mugmsgr mugmsgr_textpointer:req mugmsgr_callstd:req mugmsgr_sprite:req
-setvar MUGHSOT_1_TABLE \mugmsgr_sprite | 0x8000
+setvar MUGHSOT_1_TABLE \mugmsgr_sprite
 setvar MUGSHOT_1_X 0xD0
 setvar MUGSHOT_1_Y 0x60
 msgbox \mugmsgr_textpointer \mugmsgr_callstd
@@ -70,7 +98,7 @@ setvar MUGHSOT_1_TABLE 0x0
 .endm
 
 .macro mugmsgl mugmsgl_textpointer:req mugmsgl_callstd:req mugmsgl_sprite:req
-setvar MUGHSOT_1_TABLE \mugmsgl_sprite
+setvar MUGHSOT_1_TABLE \mugmsgl_sprite | 0x8000
 setvar MUGSHOT_1_X 0x16
 setvar MUGSHOT_1_Y 0x60
 msgbox \mugmsgl_textpointer \mugmsgl_callstd
@@ -497,7 +525,7 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .byte \spriteface_facing
 .endm
 
-.macro trainerbattle trainerbattle_kind:req trainerbattle_id:req trainerbattle_value:req trainerbattle_before:req trainerbattle_after:req trainerbattle_later
+.macro trainerbattle trainerbattle_kind:req trainerbattle_id:req trainerbattle_value:req trainerbattle_before:req trainerbattle_after trainerbattle_later trainerbattle_onepoke
 .byte 0x5C
 .byte \trainerbattle_kind
 .hword \trainerbattle_id
@@ -505,6 +533,7 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .word \trainerbattle_before
 .word \trainerbattle_after
 .word \trainerbattle_later
+.word \trainerbattle_onepoke
 .endm
 
 .macro repeattrainerbattle
