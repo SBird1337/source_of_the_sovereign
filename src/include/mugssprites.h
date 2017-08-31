@@ -1,5 +1,5 @@
-#ifndef MUG_IDS
-#define MUG_IDS
+#ifndef MUG_IDS_H_
+#define MUG_IDS_H_
 
 #define MUG_NOAH 0x1
 #define MUG_EMMA 0x2

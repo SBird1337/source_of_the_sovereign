@@ -1,3 +1,6 @@
+#ifndef SCRIPT_LANG_H_
+#define SCRIPT_LANG_H_
+
 #include <config.h>
 #include <applymovements.h>
 #include <hiddenflags.h>
@@ -59,7 +62,7 @@ waitstate
 .endm
 
 .macro mugmsgr mugmsgr_textpointer:req mugmsgr_callstd:req mugmsgr_sprite:req
-setvar MUGHSOT_1_TABLE \msgmugr_sprite | 0x8000
+setvar MUGHSOT_1_TABLE \mugmsgr_sprite | 0x8000
 setvar MUGSHOT_1_X 0xD0
 setvar MUGSHOT_1_Y 0x60
 msgbox \mugmsgr_textpointer \mugmsgr_callstd
@@ -67,7 +70,7 @@ setvar MUGHSOT_1_TABLE 0x0
 .endm
 
 .macro mugmsgl mugmsgl_textpointer:req mugmsgl_callstd:req mugmsgl_sprite:req
-setvar MUGHSOT_1_TABLE \msgmugl_sprite
+setvar MUGHSOT_1_TABLE \mugmsgl_sprite
 setvar MUGSHOT_1_X 0x16
 setvar MUGSHOT_1_Y 0x60
 msgbox \mugmsgl_textpointer \mugmsgl_callstd
@@ -925,3 +928,5 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .hword \bufferitems_item
 .hword \bufferitems_quantity
 .endm
+
+#endif

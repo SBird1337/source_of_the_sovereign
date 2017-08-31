@@ -2,4 +2,4 @@
 
 .macro sethiddenflags
 setflag 0x501
-endm
+.endm
