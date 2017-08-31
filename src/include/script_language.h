@@ -1,5 +1,7 @@
 #include <config.h>
 #include <applymovements.h>
+#include <hiddenflags.h>
+#include <mugssprites.h>
 
 @@ Compare operands
 .equ B_LT, 0x0
@@ -56,19 +58,19 @@ special 0x137
 waitstate
 .endm
 
-.macro msgmugr msgmugr_textpointer:req msgmugr_callstd:req msgmugr_sprite:req
-setvar MUGHSOT_1_TABLE \msgmugr_sprite
+.macro mugmsgr mugmsgr_textpointer:req mugmsgr_callstd:req mugmsgr_sprite:req
+setvar MUGHSOT_1_TABLE \msgmugr_sprite | 0x8000
 setvar MUGSHOT_1_X 0xD0
 setvar MUGSHOT_1_Y 0x60
-msgbox \msgmugr_textpointer \msgmugr_callstd
+msgbox \mugmsgr_textpointer \mugmsgr_callstd
 setvar MUGHSOT_1_TABLE 0x0
 .endm
 
-.macro msgmugl msgmugl_textpointer:req msgmugl_callstd:req msgmugl_sprite:req
+.macro mugmsgl mugmsgl_textpointer:req mugmsgl_callstd:req mugmsgl_sprite:req
 setvar MUGHSOT_1_TABLE \msgmugl_sprite
 setvar MUGSHOT_1_X 0x16
 setvar MUGSHOT_1_Y 0x60
-msgbox \msgmugl_textpointer \msgmugl_callstd
+msgbox \mugmsgl_textpointer \mugmsgl_callstd
 setvar MUGHSOT_1_TABLE 0x0
 .endm
 
@@ -104,24 +106,6 @@ setflag FLAG_WALK_SCRIPT
 clearflag FLAG_WALK_SCRIPT
 .endm
 
-.macro writemusikto1 writemusikto1_from:req writemusikto1_to:req
-setflag FLAG_ENABLE_MUSIC_OVERRIDES
-setvar VAR_FROM_1 \writemusikto1_from
-setvar VAR_TO_1 \writemusikto1_to
-.endm
-
-.macro writemusikto2 writemusikto2_from:req writemusikto2_to:req
-setflag FLAG_ENABLE_MUSIC_OVERRIDES
-setvar VAR_FROM_2 \writemusikto2_from
-setvar VAR_TO_2 \writemusikto2_to
-.endm
-
-.macro writemusikto3 writemusikto3_from:req writemusikto3_to:req
-setflag FLAG_ENABLE_MUSIC_OVERRIDES
-setvar VAR_FROM_3 \writemusikto3_from
-setvar VAR_TO_3 \writemusikto3_to
-.endm
-
 .macro writemusikwithmapmusik writemusikwithmapmusik_mapmusik:req
 setflag FLAG_ENABLE_MUSIC_OVERRIDES
 setvar VAR_FROM_1 \writemusikwithmapmusik_mapmusik
@@ -131,10 +115,6 @@ setvar VAR_TO_1 MUS_SKIP_PLAY
 .macro writemusikoff
 clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .endm
-
-
-
-
 
 @@ Index commands
 
