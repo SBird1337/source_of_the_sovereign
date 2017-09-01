@@ -134,6 +134,7 @@ rom: main.asm $(MAIN_OBJ)
 	$(NM) $(BLDPATH)/linked.o -n -g --defined-only | \
 		sed -e '{s/^/0x/g};{/.*\sA\s.*/d};{s/\sT\s/ /g}' > $(OUTPATH)/__symbols.sym
 	@echo "*** SUCCESSFULLY BUILT PROJECT ***"
+	@echo "*** REMOVING INTERMEDIATE FILES ***"
 	
 $(MAIN_OBJ): $(ALL_OBJ) $(ICONS_AR) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR) $()#$(B_ENGINE)
 	$(MAKE) -f assets.makefile
@@ -165,34 +166,42 @@ clean:
 
 .PHONY: $(ASSETS)
 $(ASSETS):
+	@echo -e "\e[95mMaking Assets\e[0m"
 	$(MAKE) -f assets.makefile
 
 .PHONY: $(SPRITES)
 $(SPRITES):
+	@echo -e "\e[95mMaking Sprites\e[0m"
 	$(MAKE) -f sprites.makefile
 
 .PHONY: $(ICONS_AR)
 $(ICONS_AR):
+	@echo -e "\e[95mMaking Icons\e[0m"
 	$(MAKE) -f icons.makefile
 
 .PHONY: $(MUSIC_AR)
 $(MUSIC_AR):
+	@echo -e "\e[95mMaking Music\e[0m"
 	$(MAKE) -C $(dir $@) all
 
 .PHONY: $(SMPL_AR)
 $(SMPL_AR):
+	@echo -e "\e[95mMaking Sampler\e[0m"
 	$(MAKE) -C $(dir $@) all
 
 .PHONY: $(VOICE_AR)
 $(VOICE_AR):
+	@echo -e "\e[95mMaking Voice\e[0m"
 	$(MAKE) -C $(dir $@) all
 
 .PHONY: $(LIST_AR)
 $(LIST_AR):
+	@echo -e "\e[95mMaking Songlist\e[0m"
 	$(MAKE) -C $(dir $@) all
 
 .PHONY: $(CRY_AR)
 $(CRY_AR):
+	@echo -e "\e[95mMaking Cries\e[0m"
 	$(MAKE) -C $(dir $@) all
 
 run: rom
