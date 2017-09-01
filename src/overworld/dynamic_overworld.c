@@ -81,14 +81,12 @@ void npc_dynamic_reset() {
     }
 }
 
-void npc_dynamic_remove_entry(u8 id, u16 tag) {
-    if (stored_palettes[id].tag == tag) {
-        if (stored_palettes[id].reference_count > 0) {
-            stored_palettes[id].reference_count--;
-            dprintf("npc_dynamic: removed entry #%d\n", id);
-            if (stored_palettes[id].reference_count == 0)
-                stored_palettes[id].tag = 0;
-        }
+void npc_dynamic_remove_entry(u8 id) {
+    if (stored_palettes[id].reference_count > 0) {
+        stored_palettes[id].reference_count--;
+        dprintf("npc_dynamic: removed entry #%d\n", id);
+        if (stored_palettes[id].reference_count == 0)
+            stored_palettes[id].tag = 0;
     }
 }
 
@@ -106,8 +104,7 @@ void npc_restore_state(u8 id, u16 x, u16 y) {
 
     struct Template template_to_load;
     u32 f14;
-    npc_to_objtemplate__with_indexed_objfunc(type_id, npc_to_load->running_behavior, &template_to_load,
-                                             &f14);
+    npc_to_objtemplate__with_indexed_objfunc(type_id, npc_to_load->running_behavior, &template_to_load, &f14);
     template_to_load.pal_tag = 0xFFFF;
     s8 pal_slot = npc_dynamic_load_palette(type_to_load->pal_num);
 
@@ -221,4 +218,16 @@ void oec02_load_pal_impl(u32 *oe_script) {
         dprintf("ERROR: RAN OUT OF PALETTES FOR DYNAMIC SYSTEM\n");
     }
     *oe_script += 4;
+}
+
+void npc_delete_obj_and_free_tiles_for_npc_hack(struct NpcState *state) {
+    struct SpriteTiles tiles;
+    u16 npc_id = ((u16)state->type_id) | (((u16)state->field1A << 8));
+    struct NpcType *type = npc_get_type(npc_id);
+    tiles.size = type->field_6;
+    objects[state->oam_id].gfx_table = &tiles;
+    u8 pal_num = objects[state->oam_id].final_oam.palette_num;
+    obj_delete_and_free(&objects[state->oam_id]);
+    npc_dynamic_remove_entry(pal_num);
+    dprintf("deleted npc state at x: %d y: %d\n", state->to.x, state->to.y);
 }

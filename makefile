@@ -37,6 +37,7 @@ MAPROOT	  := sots-private/map
 MAPMAPS	  := $(MAPROOT)/maps
 MAPTS	  := $(MAPROOT)/tileset
 MAP_PROJ	:= $(MAPROOT)/sots.json
+SCRIPTROOT := $(MAPROOT)/script
 
 MAIN_OBJ  := $(BLDPATH)/linked.o
 B_ENGINE  := battle_engine/build/linked.o
@@ -67,7 +68,7 @@ C_SRC       := $(call rwildcard,src/,*.c)
 DATA_SRC    := $(call rwildcard,data/,*.s)
 STRING		:= $(call rwildcard,string/$(LAN)/,*.txt)
 STRING_SRC	:= $(STRING:%.txt=%.s)
-SCRIPT_SRC	:= $(call rwildcard,$(MAPMAPS)/,*.s)
+SCRIPT_SRC	:= $(call rwildcard,$(SCRIPTROOT)/,*.s)
 
 MAP_PROJ_S	:= $(MAP_PROJ:%.json=%.s)
 MAP_PROJ_O	:= $(MAP_PROJ:%.json=$(BLDPATH)/%.o)
