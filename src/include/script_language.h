@@ -19,14 +19,17 @@
 .equ B_F, 0x1
 
 @@ callstd alias
-.equ ITEM_OBTAIN, 0
-.equ ITEM_FIND, 1
-.equ MSG_FACE, 2
-.equ MSG_SIGN, 3
-.equ MSG_KEYOPEN, 4
-.equ MSG_YES_NO, 5
-.equ MSG_STD, 6
+.equ ITEM_OBTAIN, 0x0
+.equ ITEM_FIND, 0x1
+.equ MSG_FACE, 0x2
+.equ MSG_SIGN, 0x3
+.equ MSG_KEYOPEN, 0x4
+.equ MSG_YES_NO, 0x5
+.equ MSG_STD, 0x6
 
+@@ Definition
+.equ MUG_LEFT, 0x0
+.equ MUG_RIGHT, 0x1
 
 @@@@@@@@@@@@@@@@@ Macro
 
@@ -102,6 +105,20 @@ setvar MUGHSOT_1_TABLE \mugmsgl_sprite | 0x8000
 setvar MUGSHOT_1_X 0x16
 setvar MUGSHOT_1_Y 0x60
 msgbox \mugmsgl_textpointer \mugmsgl_callstd
+setvar MUGHSOT_1_TABLE 0x0
+.endm
+
+.macro mugrival mugrivalr_textpointer:req mugrivalr_callstd:req mugrivalr_facing:req
+setvar 0x8000 \mugrivalr_facing
+call scr_mugrival
+msgbox \mugrivalr_textpointer \mugrivalr_callstd
+setvar MUGHSOT_1_TABLE 0x0
+.endm
+
+.macro mugrivall mugrivall_textpointer:req mugrivall_callstd:req mugrivall_facing:req
+setvar 0x8000 \mugrivall_facing
+call scr_mugrival
+msgbox \mugrivall_textpointer \mugrivall_callstd
 setvar MUGHSOT_1_TABLE 0x0
 .endm
 
