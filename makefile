@@ -205,5 +205,9 @@ $(CRY_AR):
 	@echo -e "\e[95mMaking Cries\e[0m"
 	$(MAKE) -C $(dir $@) all
 
+.PHONY: constants
+constants:
+	python ../tools/v_tools/constants.py src/include/
+
 run: rom
 	$(VBA) "build/pkmn_sots.gba"
