@@ -62,6 +62,18 @@ u8 npc_dynamic_load_palette(u16 tag) {
     return (u8)store_entry;
 }
 
+void ov_emot_load(struct Object *obj, u16 a2, u8 a3) {
+    (void)npc_dynamic_load_palette(0x1100);
+    obj->final_oam.priority = 2;
+    obj->bitfield2 |= 2;
+    obj->priv[0] = oe_state.effect_pos.x;
+    obj->priv[1] = oe_state.effect_pos.y;
+    obj->priv[2] = oe_state.priority;
+    obj->priv[3] = -5;
+    obj->priv[7] = a2;
+    obj_anim_image_start(obj, a3);
+}
+
 void npc_dynamic_reset() {
     for (u8 i = 0; i < MAX_PAL_STORE; ++i) {
         stored_palettes[i].reference_count = 0;
@@ -69,12 +81,14 @@ void npc_dynamic_reset() {
     }
 }
 
-void npc_dynamic_remove_entry(u8 id) {
-    if (stored_palettes[id].reference_count > 0) {
-        stored_palettes[id].reference_count--;
-        dprintf("npc_dynamic: removed entry #%d\n", id);
-        if (stored_palettes[id].reference_count == 0)
-            stored_palettes[id].tag = 0;
+void npc_dynamic_remove_entry(u8 id, u16 tag) {
+    if (stored_palettes[id].tag == tag) {
+        if (stored_palettes[id].reference_count > 0) {
+            stored_palettes[id].reference_count--;
+            dprintf("npc_dynamic: removed entry #%d\n", id);
+            if (stored_palettes[id].reference_count == 0)
+                stored_palettes[id].tag = 0;
+        }
     }
 }
 
@@ -87,14 +101,20 @@ void npc_restore_state(u8 id, u16 x, u16 y) {
     }
 
     struct NpcState *npc_to_load = &npc_states[id];
-    struct NpcType *type_to_load = npc_get_type(((u16)npc_to_load->type_id) | (((u16)npc_to_load->field1A << 8)));
+    u16 type_id = ((u16)npc_to_load->type_id) | (((u16)npc_to_load->field1A << 8));
+    struct NpcType *type_to_load = npc_get_type(type_id);
 
     struct Template template_to_load;
     u32 f14;
-    npc_to_objtemplate__with_indexed_objfunc(npc_to_load->type_id, npc_to_load->running_behavior, &template_to_load,
+    npc_to_objtemplate__with_indexed_objfunc(type_id, npc_to_load->running_behavior, &template_to_load,
                                              &f14);
     template_to_load.pal_tag = 0xFFFF;
     s8 pal_slot = npc_dynamic_load_palette(type_to_load->pal_num);
+
+    /*template_to_load.pal_tag = type_to_load->pal_num;
+    gpu_pal_obj_alloc_tag_and_apply(&npc_palettes[npc_pal_idx_for_given_tag(type_to_load->pal_num)]);
+    u8 pal_slot = gpu_pal_tags_index_of(type_to_load->pal_num);*/
+
     u8 obj_id = template_instanciate_forward_search(&template_to_load, 0, 0, 0);
 
     if (obj_id == 64)
@@ -113,7 +133,7 @@ void npc_restore_state(u8 id, u16 x, u16 y) {
     }
 
     if (f14 != 0) {
-        (void) obj_set_f18_to_r0_f42_to_40(npc_obj, f14);
+        (void)obj_set_f18_to_r0_f42_to_40(npc_obj, f14);
     }
 
     npc_obj->final_oam.palette_num = pal_slot;
@@ -135,11 +155,16 @@ u8 npc_spawn_with_provided_template(struct RomNpc *npc, struct Template *templat
 
     struct NpcState *created_state = &npc_states[state];
     struct NpcType *type = npc_get_type(created_state->type_id | (npc->field3 << 8));
+
     s8 pal_slot = npc_dynamic_load_palette(type->pal_num);
+
+    // gpu_pal_obj_alloc_tag_and_apply(&npc_palettes[npc_pal_idx_for_given_tag(type->pal_num)]);
+    // u8 pal_slot = gpu_pal_tags_index_of(type->pal_num);
 
     if (created_state->running_behavior == 76)
         created_state->field1 |= 0x20;
     template->pal_tag = 0xFFFF;
+    // template->pal_tag = type->pal_num;
     u8 obj_id = template_instanciate_forward_search(template, 0, 0, 0);
     if (obj_id == 64) {
         created_state->bitfield &= 0xFE;
@@ -167,4 +192,33 @@ u8 npc_spawn_with_provided_template(struct RomNpc *npc, struct Template *templat
     npc_y_height_related(created_state->height >> 4, npc_object, 1);
     npc_obj_offscreen_culling_and_flag_update(created_state, npc_object);
     return state;
+}
+
+void oec01_load_pal_impl(u32 *oe_script) {
+    struct SpritePalette *pal = (struct SpritePalette *)oe_read_word(oe_script);
+    s8 allocated = npc_dynamic_find_palette(pal->tag);
+    if (allocated == -1)
+        allocated = npc_dynamic_allocate_palette(pal->tag);
+    if (allocated > 0) {
+        gpu_pal_apply(pal->data, 256 + (16 * allocated), 32);
+        tint_palette_switch(allocated);
+        palette_obj_807AA8C(allocated);
+    } else {
+        dprintf("ERROR: RAN OUT OF PALETTES FOR DYNAMIC SYSTEM\n");
+    }
+    *oe_script += 4;
+}
+
+void oec02_load_pal_impl(u32 *oe_script) {
+    struct SpritePalette *pal = (struct SpritePalette *)oe_read_word(oe_script);
+    s8 allocated = npc_dynamic_find_palette(pal->tag);
+    if (allocated == -1)
+        allocated = npc_dynamic_allocate_palette(pal->tag);
+    if (allocated > 0) {
+        gpu_pal_apply(pal->data, 256 + (16 * allocated), 32);
+        tint_palette_switch(allocated);
+    } else {
+        dprintf("ERROR: RAN OUT OF PALETTES FOR DYNAMIC SYSTEM\n");
+    }
+    *oe_script += 4;
 }

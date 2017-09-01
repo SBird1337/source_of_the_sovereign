@@ -258,7 +258,6 @@ bx r5
 .org 0x08007280
 ldr r1, =obj_delete_and_free_tiles_hook|1
 bx r1
-
 .pool
 
 .org 0x0800779A
@@ -277,5 +276,19 @@ bx r0
 
 bxr4:
 bx r4
-
 .pool
+
+.org 0x0808265C
+ldr r3, =ov_emot_load|1
+bx r3
+.pool
+
+/*.org 0x08083614
+ldr r1, =oec01_load_pal_impl|1
+bx r1
+.pool
+
+.org 0x0808365C
+ldr r1, =oec02_load_pal_impl|1
+bx r1
+.pool*/
