@@ -63,6 +63,7 @@ TS_GEN_SRC	:= $(TSPNG:%.png=%.s)
 TS_GEN_O	:= $(TSPNG:%.png=$(BLDPATH)/%.o)
 
 GEN_SRC		:= $(IMAGES:$(AUTO_ASSET_ROOT)/%.png=generated_image/%.c)
+GEN_H		:= $(IMAGES:$(AUTO_ASSET_ROOT)/%.png=generated_image/%.h)
 ASM_SRC     := $(call rwildcard,src/,*.s)
 C_SRC       := $(call rwildcard,src/,*.c)
 DATA_SRC    := $(call rwildcard,data/,*.s)
@@ -117,16 +118,17 @@ $(MAPTS)/%.s: $(MAPTS)/%.png
 	@echo -e "\e[34mProcessing image (tileset) $<\e[0m"
 	$(GRIT) $< -o $@ -fts -gzl -pz! -pu16 -gB4 -m! -mR!
 
-generated_image/%.c: $(AUTO_ASSET_ROOT)/%.png $(AUTO_ASSET_ROOT)/%.grit
+generated_image/%.c generated_image/%.h: $(AUTO_ASSET_ROOT)/%.png $(AUTO_ASSET_ROOT)/%.grit
 	@echo -e "\e[34mProcessing image $<\e[0m"
 	$(shell mkdir -p $(dir $@))
 	$(GRIT) $< -o $@ -ftc -ff $(<:%.png=%.grit)
 
-generated_image/%.c: $(AUTO_ASSET_ROOT)/%.png
+generated_image/%.c generated_image/%.h: $(AUTO_ASSET_ROOT)/%.png
 	@echo -e "\e[34mProcessing image $< (using directory grit file)\e[0m"
 	$(shell mkdir -p $(dir $@))
 	$(GRIT) $< -o $@ -ftc -ff $(<D)/$(notdir $(<D)).grit
-all: rom
+
+all: $(GEN_H) rom 
 
 .PHONY: rom
 rom: main.asm $(MAIN_OBJ)
@@ -209,5 +211,5 @@ $(CRY_AR):
 constants:
 	python ../tools/v_tools/constants.py src/include/
 
-run: rom
+run: all
 	$(VBA) "build/pkmn_sots.gba"
