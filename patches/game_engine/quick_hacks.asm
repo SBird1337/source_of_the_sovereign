@@ -72,13 +72,24 @@ PLAYER_S_M EQU 0
 .word 0x00000000
 
 .org 0x08054A08
-//.byte 0x7
+.byte 0x7
 
 .org 0x08054A00
-//.byte 0x13
+.byte 0x13
 
 .org 0x08054A04
-//.byte 0x5
+.byte 0x5
 
 .org 0x08054A06
-//.byte 0x0
+.byte 0x0
+
+.org 0x0807F5EC
+.word scr_whiteout_mom
+
+.org 0x0807F5CC
+.word scr_whiteout_center
+
+.org 0x080BFD54
+ldr r0, =whiteout_hook|1
+bx r0
+.pool

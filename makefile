@@ -10,6 +10,9 @@ PREPROC := @preproc
 VBA		:= vba
 LAN	:= de
 STRAGB	:= string2agb
+PYPROJS := @python ../tools/v_tools/pyproj2s.py
+PYMAPS	:= @python ../tools/v_tools/pymap2s.py
+PYSETS	:= @python ../tools/v_tools/pyset2s.py
 
 export PATH := $(realpath ../tools):$(PATH)
 
@@ -21,7 +24,7 @@ AUTO_ASSET_ROOT := sots-private/assets/images
 
 CHARMAP := charmap.txt
 
-DEFINES   := -DBPRE -DSOFTWARE_VERSION=0
+DEFINES   := -DBPRE -DSOFTWARE_VERSION=0 -DLAN_DE
 ASFLAGS   := -mthumb
 CFLAGS    := -mthumb -mthumb-interwork -g -mcpu=arm7tdmi -fno-inline -fdiagnostics-show-option -fdiagnostics-color -mlong-calls -march=armv4t -Og -std=c11 -Wall -Wextra -Wunreachable-code -I$(PAGB_INCLUDE) -Isrc/include -Igenerated_image -fdiagnostics-color $(DEFINES)
 GRITFLAGS := -ftc -fa
@@ -32,7 +35,9 @@ SOURCEDIR := src
 STRINGDIR := string
 MAPROOT	  := sots-private/map
 MAPMAPS	  := $(MAPROOT)/maps
-MAPTS	  := $(MAPROOT)/tilesets
+MAPTS	  := $(MAPROOT)/tileset
+MAP_PROJ	:= $(MAPROOT)/sots.json
+SCRIPTROOT := $(MAPROOT)/script
 
 MAIN_OBJ  := $(BLDPATH)/linked.o
 B_ENGINE  := battle_engine/build/linked.o
@@ -53,14 +58,28 @@ rwildcard=$(wildcard $1$2) $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2))
 
 IMAGES=$(call rwildcard,$(AUTO_ASSET_ROOT),*.png)
 
+TSPNG=$(call rwildcard,$(MAPTS)/,*.png)
+TS_GEN_SRC	:= $(TSPNG:%.png=%.s)
+TS_GEN_O	:= $(TSPNG:%.png=$(BLDPATH)/%.o)
+
 GEN_SRC		:= $(IMAGES:$(AUTO_ASSET_ROOT)/%.png=generated_image/%.c)
 ASM_SRC     := $(call rwildcard,src/,*.s)
 C_SRC       := $(call rwildcard,src/,*.c)
 DATA_SRC    := $(call rwildcard,data/,*.s)
 STRING		:= $(call rwildcard,string/$(LAN)/,*.txt)
 STRING_SRC	:= $(STRING:%.txt=%.s)
-SCRIPT_SRC	:= $(call rwildcard,$(MAPMAPS)/,*.s)
+SCRIPT_SRC	:= $(call rwildcard,$(SCRIPTROOT)/,*.s)
 
+MAP_PROJ_S	:= $(MAP_PROJ:%.json=%.s)
+MAP_PROJ_O	:= $(MAP_PROJ:%.json=$(BLDPATH)/%.o)
+
+MAP_FILES	:= $(call rwildcard,$(MAPMAPS)/,*.pmh)
+MAP_FILES_S	:= $(MAP_FILES:%.pmh=%.s)
+MAP_FILES_O	:= $(MAP_FILES:%.pmh=$(BLDPATH)/%.o)
+
+TS_FILES	:= $(call rwildcard,$(MAPTS)/,*.pts)
+TS_FILES_S	:= $(TS_FILES:%.pts=%.s)
+TS_FILES_O	:= $(TS_FILES:%.pts=$(BLDPATH)/%.o)
 
 GEN_OBJ		:= $(GEN_SRC:%.c=$(BLDPATH)/%.o)
 STRING_OBJ	:= $(STRING_SRC:%.s=$(BLDPATH)/%.o)
@@ -68,7 +87,15 @@ ASM_OBJ     := $(ASM_SRC:%.s=$(BLDPATH)/%.o)
 C_OBJ       := $(C_SRC:%.c=$(BLDPATH)/%.o)
 DATA_OBJ    := $(DATA_SRC:%.s=$(BLDPATH)/%.o)
 SCRIPT_OBJ	:= $(SCRIPT_SRC:%.s=$(BLDPATH)/%.o)
-ALL_OBJ     := $(GEN_OBJ) $(C_OBJ) $(ASM_OBJ) $(DATA_OBJ) $(STRING_OBJ) $(SCRIPT_OBJ)
+ALL_OBJ     := $(GEN_OBJ) $(C_OBJ) $(ASM_OBJ) $(DATA_OBJ) $(STRING_OBJ) $(SCRIPT_OBJ) $(MAP_PROJ_O) $(MAP_FILES_O) $(TS_FILES_O) $(TS_GEN_O)
+
+$(MAPMAPS)/%.s: $(MAPMAPS)/%.pmh
+	@echo -e "\e[96mGenerating map $<\e[0m"
+	$(PYMAPS) -o $@ $<
+
+$(MAPTS)/%.s: $(MAPTS)/%.pts
+	@echo -e "\e[94mGenerating tileset $<\e[0m"
+	$(PYSETS) -o $@ $<
 
 $(STRINGDIR)/%.s: $(STRINGDIR)/%.txt
 	@echo -e "\e[93mGenerating strings $<\e[0m"
@@ -85,6 +112,10 @@ $(BLDPATH)/%.o: %.s
 	$(PREPROC) $< $(CHARMAP) > $*.i
 	$(CC) $(CFLAGS) -c -x assembler-with-cpp $*.i -o $@
 	@rm -f $*.i
+
+$(MAPTS)/%.s: $(MAPTS)/%.png
+	@echo -e "\e[34mProcessing image (tileset) $<\e[0m"
+	$(GRIT) $< -o $@ -fts -gzl -pz! -pu16 -gB4 -m! -mR!
 
 generated_image/%.c: $(AUTO_ASSET_ROOT)/%.png $(AUTO_ASSET_ROOT)/%.grit
 	@echo -e "\e[34mProcessing image $<\e[0m"
@@ -104,6 +135,7 @@ rom: main.asm $(MAIN_OBJ)
 	$(NM) $(BLDPATH)/linked.o -n -g --defined-only | \
 		sed -e '{s/^/0x/g};{/.*\sA\s.*/d};{s/\sT\s/ /g}' > $(OUTPATH)/__symbols.sym
 	@echo "*** SUCCESSFULLY BUILT PROJECT ***"
+	@echo "*** REMOVING INTERMEDIATE FILES ***"
 	
 $(MAIN_OBJ): $(ALL_OBJ) $(ICONS_AR) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR) $()#$(B_ENGINE)
 	$(MAKE) -f assets.makefile
@@ -111,6 +143,10 @@ $(MAIN_OBJ): $(ALL_OBJ) $(ICONS_AR) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR
 	@echo "INPUT($^)" > $(TMP_LD)
 	$(LD) $(LDFLAGS) -T $(PAGB_LINK) -T linker.ld -T bpre.sym --whole-archive -r -o $@ --start-group -T $(TMP_LD) --end-group
 	@rm -f $(TMP_LD)
+
+$(MAP_PROJ_S): $(MAP_PROJ)
+	@echo -e "\e[91mGenerating map project $<\e[0m"
+	$(PYPROJS) -b sovereign_banks -f sovereign_footer -o $@ $<
 
 .PHONY: $(B_ENGINE)
 $(B_ENGINE):
@@ -131,35 +167,47 @@ clean:
 
 .PHONY: $(ASSETS)
 $(ASSETS):
+	@echo -e "\e[95mMaking Assets\e[0m"
 	$(MAKE) -f assets.makefile
 
 .PHONY: $(SPRITES)
 $(SPRITES):
+	@echo -e "\e[95mMaking Sprites\e[0m"
 	$(MAKE) -f sprites.makefile
 
 .PHONY: $(ICONS_AR)
 $(ICONS_AR):
+	@echo -e "\e[95mMaking Icons\e[0m"
 	$(MAKE) -f icons.makefile
 
 .PHONY: $(MUSIC_AR)
 $(MUSIC_AR):
+	@echo -e "\e[95mMaking Music\e[0m"
 	$(MAKE) -C $(dir $@) all
 
 .PHONY: $(SMPL_AR)
 $(SMPL_AR):
+	@echo -e "\e[95mMaking Sampler\e[0m"
 	$(MAKE) -C $(dir $@) all
 
 .PHONY: $(VOICE_AR)
 $(VOICE_AR):
+	@echo -e "\e[95mMaking Voice\e[0m"
 	$(MAKE) -C $(dir $@) all
 
 .PHONY: $(LIST_AR)
 $(LIST_AR):
+	@echo -e "\e[95mMaking Songlist\e[0m"
 	$(MAKE) -C $(dir $@) all
 
 .PHONY: $(CRY_AR)
 $(CRY_AR):
+	@echo -e "\e[95mMaking Cries\e[0m"
 	$(MAKE) -C $(dir $@) all
+
+.PHONY: constants
+constants:
+	python ../tools/v_tools/constants.py src/include/
 
 run: rom
 	$(VBA) "build/pkmn_sots.gba"

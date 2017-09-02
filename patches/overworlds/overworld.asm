@@ -16,10 +16,10 @@ strb r0, [r4]
 ldrb r0, [r5, #3]
 strb r0, [r4, #0x1A]
 
-.org 0x0805E510
+/*.org 0x0805E510
     ldr r1, =overworld_h_two+1
     bx r1
-    .pool
+    .pool*/
 
 .org 0x0805E744
     lsl r4, r4, #0x10

@@ -1,5 +1,13 @@
+#ifndef SCRIPT_LANG_H_
+#define SCRIPT_LANG_H_
+
 #include <config.h>
 #include <applymovements.h>
+#include <hiddenflags.h>
+#include <mugssprites.h>
+
+@@ Costum Specials
+.equ SP_BATCHMAPTILE, 0x7
 
 @@ Compare operands
 .equ B_LT, 0x0
@@ -9,23 +17,113 @@
 .equ B_GE, 0x4
 .equ B_NE, 0x5
 
+@@ Important flags
+.equ FLAG_PKMN_MENU, 0x828
+.equ FLAG_POKDEX, 0x829
+.equ FLAG_RUNNING_SHOES, 0x82F
+.equ FLAG_ORDEN_1, 0x820
+.equ FLAG_ORDEN_2, 0x821
+.equ FLAG_ORDEN_3, 0x822
+.equ FLAG_ORDEN_4, 0x823
+.equ FLAG_ORDEN_5, 0x824
+.equ FLAG_ORDEN_6, 0x825
+.equ FLAG_ORDEN_7, 0x826
+.equ FLAG_ORDEN_8, 0x827
+
 @@ Flag operands
 .equ B_T, 0x0
 .equ B_F, 0x1
 
 @@ callstd alias
-.equ ITEM_OBTAIN, 0
-.equ ITEM_FIND, 1
-.equ MSG_FACE, 2
-.equ MSG_SIGN, 3
-.equ MSG_KEYOPEN, 4
-.equ MSG_YES_NO, 5
-.equ MSG_STD, 6
+.equ ITEM_OBTAIN, 0x0
+.equ ITEM_FIND, 0x1
+.equ MSG_FACE, 0x2
+.equ MSG_SIGN, 0x3
+.equ MSG_KEYOPEN, 0x4
+.equ MSG_YES_NO, 0x5
+.equ MSG_STD, 0x6
 
+@@ Definition
+.equ MUGFACE_LEFT, 0x0
+.equ MUGFACE_RIGHT, 0x1
+
+@@ Effect
+.equ EFFECT_NORMAL, 0x0
+.equ EFFECT_GREY, 0x1
+.equ EFFECT_SERPIA, 0x2
 
 @@@@@@@@@@@@@@@@@ Macro
 
 @@ Custom commands
+
+.macro batchmaptile batchmaptile_tiles_from:req batchmaptile_tiles_to:req batchmaptile_kollision_from:req batchmaptile_kollision_to:req
+setvar 0x8000 \batchmaptile_tiles_from
+setvar 0x8001 \batchmaptile_tiles_to
+setvar 0x8002 \batchmaptile_kollision_from
+setvar 0x8003 \batchmaptile_kollision_to
+setvar 0x5006 SP_BATCHMAPTILE
+special 0x68
+.endm
+
+.macro seteffect seteffect_effect_id:req
+writebytetooffset \seteffect_effect_id 0x02036E28
+.endm
+
+.macro setecutscene
+writebytetooffset 0x80 0x4000044
+writebytetooffset 0x20 0x4000045
+.endm
+
+.macro clearcutscene
+writebytetooffset 0xFF 0x4000044
+writebytetooffset 0x00 0x4000045
+.endm
+
+.macro pokemsg pokemsg_string:req pokemsg_callstd:req pokemsg_ID:req
+checksound
+cry \pokemsg_ID 0x0
+showpokepic \pokemsg_ID 0x0 0x5
+loadpointer 0x0 \pokemsg_string
+callstd \pokemsg_callstd
+hidepokepic
+waitcry
+.endm
+
+.macro earthquake earthquake_horri:req earthquake_tiles:req earthquake_sec:req earthquake_vert:req
+setvar 0x8004 \earthquake_horri
+setvar 0x8005 \earthquake_tiles
+setvar 0x8006 \earthquake_sec
+setvar 0x8007 \earthquake_vert
+special 0x136
+.endm
+
+.macro lookbattle lookbattle_id:req lookbattle_before:req lookbattle_after:req
+trainerbattle 0x0 \lookbattle_id 0x0 \lookbattle_before \lookbattle_after
+.endm
+
+.macro gymbattle gymbattle_id:req gymbattle_before:req gymbattle_after:req
+trainerbattle 0x1 \gymbattle_id 0x0 \gymbattle_before \gymbattle_after \gymbattle_later
+.endm
+
+.macro betweenbattle betweenbattle_id:req betweenbattle_before:req betweenbattle_after:req betweenbattle_between:req
+trainerbattle 0x2 \betweenbattle_id 0x0 \betweenbattle_before \betweenbattle_after \betweenbattle_between
+.endm
+
+.macro scriptbattle scriptbattle_id:req scriptbattle_after:req
+trainerbattle 0x3 \scriptbattle_id 0x0 \scriptbattle_after
+.endm
+
+.macro doublebattle doublebattle_id:req doublebattle_before:req doublebattle_after:req doublebattle_onepoke:req
+trainerbattle 0x4 \doublebattle_id 0x0 \doublebattle_before \doublebattle_after \doublebattle_onepoke
+.endm
+
+.macro doublegymbattle doublegymbattle_id:req doublegymbattle_before:req doublegymbattle_after:req doublegymbattle_later:req doublegymbattle_onepoke:req
+trainerbattle 0x8 \doublegymbattle_id 0x0 \doublegymbattle_before \doublegymbattle_after \doublegymbattle_later \doublegymbattle_onepoke
+.endm
+
+.macro winlosebattle winlosebattle_id:req winlosebattle_win:req winlosebattle_lose:req
+trainerbattle 0x9 \winlosebattle_id 0x3 \winlosebattle_win \winlosebattle_lose
+.endm
 
 .macro msgbox msgbox_textpointer:req msgbox_callstd:req
 loadpointer 0x0 \msgbox_textpointer
@@ -56,19 +154,37 @@ special 0x137
 waitstate
 .endm
 
-.macro msgmugr msgmugr_textpointer:req msgmugr_callstd:req msgmugr_sprite:req
-setvar MUGHSOT_1_TABLE \msgmugr_sprite
+.macro wildbattlemusic wildbattlemusic_spezies:req wildbattlemusic_level:req wildbattlemusic_item:req wildbattlemusic_music:req
+setwildbattle \wildbattlemusic_spezies \wildbattlemusic_level \wildbattlemusic_item
+special 0x138
+playsong \wildbattlemusic_music 0x0
+.endm
+
+.macro costumtrainerbattlemusic costumtrainerbattlemusic_id:req
+special 0x3B
+playsong \costumtrainerbattlemusic_id 0x0
+.endm
+
+.macro mugmsgr mugmsgr_textpointer:req mugmsgr_callstd:req mugmsgr_sprite:req
+setvar MUGHSOT_1_TABLE \mugmsgr_sprite
 setvar MUGSHOT_1_X 0xD0
 setvar MUGSHOT_1_Y 0x60
-msgbox \msgmugr_textpointer \msgmugr_callstd
+msgbox \mugmsgr_textpointer \mugmsgr_callstd
 setvar MUGHSOT_1_TABLE 0x0
 .endm
 
-.macro msgmugl msgmugl_textpointer:req msgmugl_callstd:req msgmugl_sprite:req
-setvar MUGHSOT_1_TABLE \msgmugl_sprite
+.macro mugmsgl mugmsgl_textpointer:req mugmsgl_callstd:req mugmsgl_sprite:req
+setvar MUGHSOT_1_TABLE \mugmsgl_sprite | 0x8000
 setvar MUGSHOT_1_X 0x16
 setvar MUGSHOT_1_Y 0x60
-msgbox \msgmugl_textpointer \msgmugl_callstd
+msgbox \mugmsgl_textpointer \mugmsgl_callstd
+setvar MUGHSOT_1_TABLE 0x0
+.endm
+
+.macro mugrival mugrival_textpointer:req mugrival_callstd:req mugrival_facing:req
+setvar 0x8000 \mugrival_facing
+call scr_mugrival
+msgbox \mugrival_textpointer \mugrival_callstd
 setvar MUGHSOT_1_TABLE 0x0
 .endm
 
@@ -104,24 +220,6 @@ setflag FLAG_WALK_SCRIPT
 clearflag FLAG_WALK_SCRIPT
 .endm
 
-.macro writemusikto1 writemusikto1_from:req writemusikto1_to:req
-setflag FLAG_ENABLE_MUSIC_OVERRIDES
-setvar VAR_FROM_1 \writemusikto1_from
-setvar VAR_TO_1 \writemusikto1_to
-.endm
-
-.macro writemusikto2 writemusikto2_from:req writemusikto2_to:req
-setflag FLAG_ENABLE_MUSIC_OVERRIDES
-setvar VAR_FROM_2 \writemusikto2_from
-setvar VAR_TO_2 \writemusikto2_to
-.endm
-
-.macro writemusikto3 writemusikto3_from:req writemusikto3_to:req
-setflag FLAG_ENABLE_MUSIC_OVERRIDES
-setvar VAR_FROM_3 \writemusikto3_from
-setvar VAR_TO_3 \writemusikto3_to
-.endm
-
 .macro writemusikwithmapmusik writemusikwithmapmusik_mapmusik:req
 setflag FLAG_ENABLE_MUSIC_OVERRIDES
 setvar VAR_FROM_1 \writemusikwithmapmusik_mapmusik
@@ -131,10 +229,6 @@ setvar VAR_TO_1 MUS_SKIP_PLAY
 .macro writemusikoff
 clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .endm
-
-
-
-
 
 @@ Index commands
 
@@ -164,13 +258,13 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .word \goto_address
 .endm
 
-.macro callif if1_value:req if1_pointer:req
+.macro gotoif if1_value:req if1_pointer:req
 .byte 0x6
 .byte \if1_value
 .word \if1_pointer
 .endm
 
-.macro gotoif if2_value:req if2_pointer:req
+.macro callif if2_value:req if2_pointer:req
 .byte 0x7
 .byte \if2_value
 .word \if2_pointer
@@ -514,7 +608,7 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .byte \spriteface_facing
 .endm
 
-.macro trainerbattle trainerbattle_kind:req trainerbattle_id:req trainerbattle_value:req trainerbattle_before:req trainerbattle_after:req trainerbattle_later
+.macro trainerbattle trainerbattle_kind:req trainerbattle_id:req trainerbattle_value:req trainerbattle_before:req trainerbattle_after trainerbattle_later trainerbattle_onepoke
 .byte 0x5C
 .byte \trainerbattle_kind
 .hword \trainerbattle_id
@@ -522,6 +616,7 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .word \trainerbattle_before
 .word \trainerbattle_after
 .word \trainerbattle_later
+.word \trainerbattle_onepoke
 .endm
 
 .macro repeattrainerbattle
@@ -814,9 +909,10 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .hword \checkanimation_animation
 .endm
 
-.macro sethealingplace sethealingplace_flightspot:req
-.byte 0x9F
-.hword \sethealingplace_flightspot
+.macro sethealingplace shp_bank:req shp_map:req shp_x:req shp_y:req
+    setvar HEALING_BANK_MAP_VAR \shp_map << 8 | \shp_bank
+    setvar HEALING_X_VAR \shp_x
+    setvar HEALING_Y_VAR \shp_y
 .endm
 
 .macro checkgender
@@ -945,3 +1041,5 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .hword \bufferitems_item
 .hword \bufferitems_quantity
 .endm
+
+#endif
