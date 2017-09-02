@@ -16,53 +16,365 @@ u16 mhk_intro_music_id_to_song(u8 introid) {
     u16 res = 0;
 
     switch (introid) {
-        case TRAINER_EYE_MUS_BOY:
-            res = 350;
+        case 0:
+            res = 480;
             break;
-        case TRAINER_EYE_MUS_GIRL:
-            res = 351;
+        case 1:
+            res = 480;
             break;
-        case TRAINER_EYE_MUS_KID:
-            res = 352;
+        case 2:
+            res = 480;
             break;
-        case TRAINER_EYE_MUS_HIKER:
-            res = 353;
+        case 3:
+            res = 471;
             break;
-        case TRAINER_EYE_MUS_SAILOR:
-            res = 354;
+        case 4:
+            res = 471;
             break;
-        case TRAINER_EYE_MUS_ELECTRIC:
-            res = 355;
+        case 5:
+            res = 480;
             break;
-        case TRAINER_EYE_MUS_PSYCHIC:
-            res = 356;
+        case 6:
+            res = 487;
             break;
-        case TRAINER_EYE_MUS_SWIMMER:
-            res = 357;
+        case 7:
+            res = 476;
             break;
-        case TRAINER_EYE_MUS_ACE:
-            res = 358;
+        case 8:
+            res = 471;
             break;
-        case TRAINER_EYE_MUS_ELITE:
-            res = 359;
+        case 9:
+            res = 471;
             break;
-        case TRAINER_EYE_MUS_CHAMP:
-            res = 360;
+        case 10:
+            res = 480;
             break;
-        case TRAINER_EYE_MUS_TT_GRUNT_M:
-            res = 361;
+        case 11:
+            res = 480;
             break;
-        case TRAINER_EYE_MUS_TT_GRUNT_F:
-            res = 362;
+        case 12:
+            res = 480;
             break;
-        case TRAINER_EYE_MUS_TT_ADMIN:
-            res = 363;
+        case 13:
+            res = 480;
             break;
-        case TRAINER_EYE_MUS_TT_BOSS_1:
-            res = 364;
+        case 14:
+            res = 488;
             break;
-        case TRAINER_EYE_MUS_TT_BOSS_2:
-            res = 365;
+        case 15:
+            res = 475;
+            break;
+        case 16:
+            res = 475;
+            break;
+        case 17:
+            res = 470;
+            break;
+        case 18:
+            res = 495;
+            break;
+        case 19:
+            res = 480;
+            break;
+        case 20:
+            res = 475;
+            break;
+        case 21:
+            res = 481;
+            break;
+        case 22:
+            res = 471;
+            break;
+        case 23:
+            res = 471;
+            break;
+        case 24:
+            res = 473;
+            break;
+        case 25:
+            res = 473;
+            break;
+        case 26:
+            res = 480;
+            break;
+        case 27:
+            res = 480;
+            break;
+        case 28:
+            res = 491;
+            break;
+        case 29:
+            res = 488;
+            break;
+        case 30:
+            res = 488;
+            break;
+        case 31:
+            res = 488;
+            break;
+        case 32:
+            res = 491;
+            break;
+        case 33:
+            res = 490;
+            break;
+        case 34:
+            res = 472;
+            break;
+        case 35:
+            res = 472;
+            break;
+        case 36:
+            res = 471;
+            break;
+        case 37:
+            res = 492;
+            break;
+        case 38:
+            res = 492;
+            break;
+        case 39:
+            res = 490;
+            break;
+        case 40:
+            res = 472;
+            break;
+        case 41:
+            res = 491;
+            break;
+        case 42:
+            res = 480;
+            break;
+        case 43:
+            res = 493;
+            break;
+        case 44:
+            res = 495;
+            break;
+        case 45:
+            res = 495;
+            break;
+        case 46:
+            res = 472;
+            break;
+        case 47:
+            res = 473;
+            break;
+        case 48:
+            res = 472;
+            break;
+        case 49:
+            res = 480;
+            break;
+        case 50:
+            res = 470;
+            break;
+        case 51:
+            res = 470;
+            break;
+        case 52:
+            res = 470;
+            break;
+        case 53:
+            res = 494;
+            break;
+        case 54:
+            res = 494;
+            break;
+        case 55:
+            res = 494;
+            break;
+        case 56:
+            res = 494;
+            break;
+        case 57:
+            res = 494;
+            break;
+        case 58:
+            res = 494;
+            break;
+        case 59:
+            res = 494;
+            break;
+        case 60:
+            res = 494;
+            break;
+        case 61:
+            res = 494;
+            break;
+        case 62:
+            res = 494;
+            break;
+        case 63:
+            res = 473;
+            break;
+        case 64:
+            res = 473;
+            break;
+        case 65:
+            res = 470;
+            break;
+        case 66:
+            res = 470;
+            break;
+        case 67:
+            res = 490;
+            break;
+        case 68:
+            res = 491;
+            break;
+        case 69:
+            res = 490;
+            break;
+        case 70:
+            res = 490;
+            break;
+        case 71:
+            res = 491;
+            break;
+        case 72:
+            res = 480;
+            break;
+        case 73:
+            res = 495;
+            break;
+        case 74:
+            res = 490;
+            break;
+        case 75:
+            res = 474;
+            break;
+        case 76:
+            res = 476;
+            break;
+        case 77:
+            res = 476;
+            break;
+        case 78:
+            res = 477;
+            break;
+        case 79:
+            res = 477;
+            break;
+        case 80:
+            res = 496;
+            break;
+        case 81:
+            res = 475;
+            break;
+        case 82:
+            res = 475;
+            break;
+        case 83:
+            res = 472;
+            break;
+        case 84:
+            res = 471;
+            break;
+        case 85:
+            res = 494;
+            break;
+        case 86:
+            res = 490;
+            break;
+        case 87:
+            res = 486;
+            break;
+        case 88:
+            res = 470;
+            break;
+        case 89:
+            res = 472;
+            break;
+        case 90:
+            res = 484;
+            break;
+        case 91:
+            res = 472;
+            break;
+        case 92:
+            res = 481;
+            break;
+        case 93:
+            res = 485;
+            break;
+        case 94:
+            res = 472;
+            break;
+        case 95:
+            res = 472;
+            break;
+        case 96:
+            res = 472;
+            break;
+        case 97:
+            res = 470;
+            break;
+        case 98:
+            res = 496;
+            break;
+        case 99:
+            res = 480;
+            break;
+        case 100:
+            res = 480;
+            break;
+        case 101:
+            res = 481;
+            break;
+        case 102:
+            res = 481;
+            break;
+        case 103:
+            res = 495;
+            break;
+        case 104:
+            res = 475;
+            break;
+        case 105:
+            res = 471;
+            break;
+        case 106:
+            res = 490;
+            break;
+        case 107:
+            res = 495;
+            break;
+        case 108:
+            res = 481;
+            break;
+        case 109:
+            res = 495;
+            break;
+        case 110:
+            res = 495;
+            break;
+        case 111:
+            res = 482;
+            break;
+        case 112:
+            res = 482;
+            break;
+        case 113:
+            res = 483;
+            break;
+        case 114:
+            res = 495;
+            break;
+        case 115:
+            res = 472;
+            break;
+        case 116:
+            res = 495;
+            break;
+        case 117:
+            res = 482;
+            break;
+        case 118:
+            res = 483;
+            break;
+        case 119:
+            res = 483;
             break;
         default:
             res = SEQ_FRLG_E_1;
@@ -81,19 +393,39 @@ u16 mhk_song_id_for_battle(void) {
         res = SEQ_BGM_VS_RSE;
     } else if (battle_type_flags.battle_trainer) {
         switch (trainer_data[trainerbattle_flag_id].trainer_class) {
-            case 90:
-                res = SEQ_BGM_VS_CHAMP;
+            case 36:
+                res = 527;
                 break;
-            case 84:
-            case 87:
-                res = SEQ_BGM_VS_LEADER;
+            case 90:
+                res = 528;
+                break;
+            case 93:
+                res = 524;
+                break;
+            case 111:
+                res = 532;
+                break;
+            case 112:
+                res = 529;
+                break;
+            case 113:
+                res = 530;
+                break;
+            case 117:
+                res = 532;
+                break;
+            case 118:
+                res = 530;
+                break;
+            case 119:
+                res = 531;
                 break;
             default:
-                res = SEQ_BGM_VS_TRAINER;
+                res = 522;
                 break;
         }
     } else {
-        res = SEQ_BGM_VS_POKE;
+        res = 523;
     }
 
     return res;
@@ -154,10 +486,10 @@ u16 mhk_species_to_song(u16 species) {
         case POKE_MOLTRES:
         case POKE_LUGIA:
         case POKE_HOOH:
-            res = SEQ_BGM_VS_LEG1;
+            res = 526;
             break;
         case POKE_DEOXYS:
-            res = SEQ_BGM_VS_DEOXYS;
+            res = 525;
             break;
         default:
             res = SEQ_BGM_VS_RSE;
