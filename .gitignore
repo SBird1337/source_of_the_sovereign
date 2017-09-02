@@ -6,6 +6,7 @@ temp
 *.wav
 *.mid
 *.a
+*.i
 base/*.*
 nbproject/private/tools/
 build/*
