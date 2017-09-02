@@ -10,9 +10,12 @@ PREPROC := @preproc
 VBA		:= vba
 LAN	:= de
 STRAGB	:= string2agb
-PYPROJS := @python ../tools/v_tools/pyproj2s.py
-PYMAPS	:= @python ../tools/v_tools/pymap2s.py
-PYSETS	:= @python ../tools/v_tools/pyset2s.py
+
+PYTHON_BIN := $(shell ./python_version.sh)
+
+PYPROJS := $(PYTHON_BIN) ../tools/v_tools/pyproj2s.py
+PYMAPS	:= $(PYTHON_BIN) ../tools/v_tools/pymap2s.py
+PYSETS	:= $(PYTHON_BIN) ../tools/v_tools/pyset2s.py
 
 export PATH := $(realpath ../tools):$(PATH)
 
@@ -209,7 +212,7 @@ $(CRY_AR):
 
 .PHONY: constants
 constants:
-	python ../tools/v_tools/constants.py src/include/
+	$(PYTHON_BIN) ../tools/v_tools/constants.py src/include/
 
-run: all
+run: rom
 	$(VBA) "build/pkmn_sots.gba"
