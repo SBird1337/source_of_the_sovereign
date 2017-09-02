@@ -131,15 +131,15 @@ callstd \msgbox_callstd
 .endm
 
 .macro giveitem giveitem_item:req giveitem_quantity:req giveitem_messagetyp:req
-setvarifnotzero 0x8000 \giveitem_item
-setvarifnotzero 0x8001 \giveitem_quantity
+copyvarifnotzero 0x8000 \giveitem_item
+copyvarifnotzero 0x8001 \giveitem_quantity
 callstd \giveitem_messagetyp
 .endm
 
 .macro giveitem2 giveitem2_item:req giveitem2_quantity:req giveitem2_song:req
-setvarifnotzero 0x8000 \giveitem2_item
-setvarifnotzero 0x8001 \giveitem2_quantity
-setvarifnotzero 0x8002 \giveitem2_song
+copyvarifnotzero 0x8000 \giveitem2_item
+copyvarifnotzero 0x8001 \giveitem2_quantity
+copyvarifnotzero 0x8002 \giveitem2_song
 callstd 0x9
 .endm
 
@@ -745,7 +745,7 @@ clearflag FLAG_ENABLE_MUSIC_OVERRIDES
 .word \braile_data
 .endm
 
-.macro givepokemon givepokemon_spezies:req givepokemon_level:req givepokemon_item:req givepokemon_one givepokemon_two givepokemon_three
+.macro givepokemon givepokemon_spezies:req givepokemon_level:req givepokemon_item:req
 .byte 0x79
 .hword \givepokemon_spezies
 .byte \givepokemon_level
