@@ -1,7 +1,7 @@
 AS      := @arm-none-eabi-as
 LD      := @arm-none-eabi-ld
 OBJCOPY := @arm-none-eabi-objcopy
-GRIT    := @grit
+GRIT    := grit
 CC      := @arm-none-eabi-gcc
 ARS     := @armips
 MAKE    := make

@@ -9,7 +9,7 @@ oe_effect_table:
 .word 0x081D97CA @0x01
 .word 0x081D97D0 @0x02
 .word 0x081D97D6 @0x03
-.word 0x081D97DC @0x04 grass animation
+.word oea_grass @0x04 grass animation
 .word 0x081D97E6 @0x05
 .word 0x081D97F0 @0x06
 .word 0x081D97F6 @0x07
@@ -75,3 +75,15 @@ oe_effect_table:
 .word 0x081D999E @0x43
 .word 0x081D99A4 @0x44
 .word 0x081D99AA @0x45
+
+oea_grass:
+.byte 7
+.word oe_pal_grass_normal
+.word oei_grass_normal+1
+.byte 4
+
+.align 2
+
+oe_pal_grass_normal:
+.word oea_grass_normalPal
+.hword 0x1005
