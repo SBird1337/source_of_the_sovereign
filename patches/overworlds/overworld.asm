@@ -100,3 +100,6 @@ strb r0, [r4, #0x1A]
     ldr r3, =grass_step_elastic+1
     bx r3
     .pool
+
+.org 0x08083484
+    .word oe_effect_table
