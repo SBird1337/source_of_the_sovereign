@@ -165,19 +165,18 @@ special 0x3B
 playsong \costumtrainerbattlemusic_id 0x0
 .endm
 
-.macro mugmsgr mugmsgr_textpointer:req mugmsgr_callstd:req mugmsgr_sprite:req
-setvar MUGHSOT_1_TABLE \mugmsgr_sprite
-setvar MUGSHOT_1_X 0xD0
-setvar MUGSHOT_1_Y 0x60
-msgbox \mugmsgr_textpointer \mugmsgr_callstd
-setvar MUGHSOT_1_TABLE 0x0
-.endm
-
-.macro mugmsgl mugmsgl_textpointer:req mugmsgl_callstd:req mugmsgl_sprite:req
-setvar MUGHSOT_1_TABLE \mugmsgl_sprite | 0x8000
-setvar MUGSHOT_1_X 0x16
-setvar MUGSHOT_1_Y 0x60
-msgbox \mugmsgl_textpointer \mugmsgl_callstd
+.macro mugmsg mugmsg_textpointer:req mugmsg_callstd:req mugmsg_sprite:req mugmsg_facing:req
+.if \mugmsg_facing==MUGFACE_LEFT
+    setvar MUGHSOT_1_TABLE \mugmsg_sprite | 0x8000
+    setvar MUGSHOT_1_X 0x16
+    setvar MUGSHOT_1_Y 0x60
+.endif
+.if \mugmsg_facing==MUGFACE_RIGHT
+    setvar MUGHSOT_1_TABLE \mugmsg_sprite
+    setvar MUGSHOT_1_X 0xD0
+    setvar MUGSHOT_1_Y 0x60
+.endif
+msgbox \mugmsg_textpointer \mugmsg_callstd
 setvar MUGHSOT_1_TABLE 0x0
 .endm
 
@@ -188,7 +187,6 @@ setvar MUGHSOT_1_TABLE 0x0
 .if \mugrival_facing==MUGFACE_RIGHT
     call scr_mugrival_right
 .endif
-
 msgbox \mugrival_textpointer \mugrival_callstd
 setvar MUGHSOT_1_TABLE 0x0
 .endm
