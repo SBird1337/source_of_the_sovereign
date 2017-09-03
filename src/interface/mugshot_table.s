@@ -2,6 +2,8 @@
 .thumb
 .section .rodata
 
+.align 2
+
 .global mugshots
 mugshots:
 .word mug_00Tiles

@@ -182,8 +182,13 @@ setvar MUGHSOT_1_TABLE 0x0
 .endm
 
 .macro mugrival mugrival_textpointer:req mugrival_callstd:req mugrival_facing:req
-setvar 0x8000 \mugrival_facing
-call scr_mugrival
+.if \mugrival_facing==MUGFACE_LEFT
+    call scr_mugrival_left
+.endif
+.if \mugrival_facing==MUGFACE_RIGHT
+    call scr_mugrival_right
+.endif
+
 msgbox \mugrival_textpointer \mugrival_callstd
 setvar MUGHSOT_1_TABLE 0x0
 .endm
