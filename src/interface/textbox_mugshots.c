@@ -65,7 +65,7 @@ typedef struct mug_mugshot {
 
 /* === STATIC GLOBALS === */
 
-extern mug_mugshot *mugshots;
+extern mug_mugshot mugshots[0xFF];
 
 u8 *temp_obj_id1 = (u8*) OBJ_1_TEMP;
 u8 *temp_obj_id2 = (u8*) OBJ_2_TEMP;

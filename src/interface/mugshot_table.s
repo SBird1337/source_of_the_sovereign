@@ -2,7 +2,8 @@
 .thumb
 .section .rodata
 
-mugshot_table_int:
+.global mugshots
+mugshots:
 .word mug_00Tiles
 .word mug_00Pal
 
@@ -32,7 +33,3 @@ mugshot_table_int:
 
 .word mug_09Tiles
 .word mug_09Pal
-
-.global mugshots
-mugshots:
-.word mugshot_table_int

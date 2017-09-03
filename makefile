@@ -20,7 +20,7 @@ PYSETS	:= $(PYTHON_BIN) ../tools/v_tools/pyset2s.py
 export PATH := $(realpath ../tools):$(PATH)
 
 PAGB_MAIN := g3headers
-PAGB_INCLUDE := $(PAGB_MAIN)/build/include/
+PAGB_INCLUDE := $(PAGB_MAIN)/build/include
 PAGB_LINK := $(PAGB_MAIN)/build/linker/BPRE.ld
 
 AUTO_ASSET_ROOT := sots-private/assets/images
@@ -105,12 +105,12 @@ $(STRINGDIR)/%.s: $(STRINGDIR)/%.txt
 	@echo -e "\e[93mGenerating strings $<\e[0m"
 	$(STRAGB) -o $@ -i $< -t string/table.tbl -e 0xFF
 
-$(BLDPATH)/%.o: %.c $(ASSETS)
+$(BLDPATH)/%.o: %.c $(ASSETS) $(PAGB_INCLUDE)/pokeagb/pokeagb.h src/include/script_language.h src/include/hiddenflags.h
 	@echo -e "\e[32mCompiling $<\e[0m"
 	$(shell mkdir -p $(dir $@))
 	$(CC) $(CFLAGS) -c $< -o $@
 
-$(BLDPATH)/%.o: %.s
+$(BLDPATH)/%.o: %.s $(PAGB_INCLUDE)/pokeagb/pokeagb.h src/include/script_language.h src/include/hiddenflags.h
 	@echo -e "\e[32mAssembling $<\e[0m"
 	$(shell mkdir -p $(dir $@))
 	$(PREPROC) $< $(CHARMAP) > $*.i
