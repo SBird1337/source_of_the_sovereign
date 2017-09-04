@@ -109,3 +109,11 @@ bool var_set_hack(u16 var, u16 val) {
     }
     return false;
 }
+
+bool var_set_script_hack(struct ScriptEnvironment *env)
+{
+    u16 var = script_read_halfword(env);
+    u16 val = script_read_halfword(env);
+    var_set_hack(var,val);
+    return 0;
+}

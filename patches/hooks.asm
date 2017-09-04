@@ -104,6 +104,7 @@ _call_via_r1 equ 0x081E3BAC
 .org 0x0806E584
     ldr r3, =var_set_hack|1
     bx r3
+    .pool
 
 .org 0x0806E680
     ldr r1, =flag_set_hack|1
@@ -116,6 +117,11 @@ _call_via_r1 equ 0x081E3BAC
     ldr r0,=var_hook+1
     bx r0
 	.pool
+
+.org 0x0806A390
+    ldr r3, =var_set_script_hack|1
+    bx r3
+    .pool
 
 //end of var routine
 
