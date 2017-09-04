@@ -25,17 +25,17 @@
  * @author Sturmvogel
  * @date 15 dec 2016
  * @brief Special 0x68 implementation to read from LASTRESULT and execute
- * 
+ *
  */
 
 /* === INCLUDES === */
 
-#include "cutscene_meteor.h"
 #include "camera_move.h"
+#include "cutscene_meteor.h"
 #include <callback.h>
+#include <config.h>
 #include <debug.h>
 #include <game_engine.h>
-#include <config.h>
 #include <math.h>
 
 /* === PROTOTYPES === */
@@ -49,7 +49,6 @@ void sp_dns_switch();
  * @brief clear some flags at the beginning of the game
  */
 void sp_init_script();
-
 
 /**
  * @brief callasm to call a var-based routine as defined
@@ -68,7 +67,6 @@ void sp_random_number();
 
 extern void sp_batchmaptile(void);
 
-
 void get_text_pointer_from_lookup();
 
 void sp_check_tileset();
@@ -78,53 +76,40 @@ extern void sp_crystal_fade(void);
 /* === STATICS === */
 
 static callback special_routines[9] = {
-    met_play,
-    cam_sp_move_camera,
-    sp_init_script,
-    debug_some_test,
-    sp_dns_switch,
-    sp_random_number,
-    sp_check_tileset,
-    sp_batchmaptile,
-    sp_crystal_fade,
+    met_play,         cam_sp_move_camera, sp_init_script,  debug_some_test, sp_dns_switch,
+    sp_random_number, sp_check_tileset,   sp_batchmaptile, sp_crystal_fade,
 };
 
 /* === IMPLEMENTATIONS === */
 
-void sp_dns_switch()
-{
-    volatile u8* test_pointer = (u8*) (0x0203FAB0);
-    *(test_pointer+1) = (*(test_pointer+1) == 3 ? 0 : (*(test_pointer+1)) + 1);
+void sp_dns_switch() {
+    volatile u8 *test_pointer = (u8 *)(0x0203FAB0);
+    *(test_pointer + 1) = (*(test_pointer + 1) == 3 ? 0 : (*(test_pointer + 1)) + 1);
     *test_pointer = 1;
 }
 
-void sp_init_script()
-{
-  for(u16 i = 0x1000; i < 0x1800; ++i)
-  {
-    flag_clear(i);
-  }
+void sp_init_script() {
+    for (u16 i = 0x1000; i < 0x1800; ++i)
+        flag_clear(i);
+    for (u16 i = 0x5000; i <= 0x5100; ++i)
+        var_set(i, 0);
 }
 
-void sp_special_casm() //special 0x68
+void sp_special_casm() // special 0x68
 {
-    u16* var_special = var_access(CALLASM_VAR);
+    u16 *var_special = var_access(CALLASM_VAR);
     special_routines[*var_special]();
 }
 
-void sp_clear_variables()
-{
-    (void) var_set(MUGHSOT_1_TABLE, 0);
-    (void) var_set(MUGHSOT_2_TABLE, 0);
-    (void) var_set(MUGSHOT_1_X, 0);
-    (void) var_set(MUGSHOT_2_X, 0);
-    (void) var_set(MUGSHOT_1_Y, 0);
-    (void) var_set(MUGSHOT_2_Y, 0);
-    (void) var_set(TEXT_VAR, 0);
+void sp_clear_variables() {
+    (void)var_set(MUGHSOT_1_TABLE, 0);
+    (void)var_set(MUGHSOT_2_TABLE, 0);
+    (void)var_set(MUGSHOT_1_X, 0);
+    (void)var_set(MUGSHOT_2_X, 0);
+    (void)var_set(MUGSHOT_1_Y, 0);
+    (void)var_set(MUGSHOT_2_Y, 0);
+    (void)var_set(TEXT_VAR, 0);
     return;
 }
 
-void sp_random_number()
-{
-    var_set(0x800D, (random() % var_get(0x8000)));
-}
+void sp_random_number() { var_set(0x800D, (random() % var_get(0x8000))); }

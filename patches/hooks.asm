@@ -130,6 +130,11 @@ _call_via_r1 equ 0x081E3BAC
 
 //end of var routine
 
+.org 0x0804C034
+    ldr r0, =clear_sav1|1
+    bx r0
+    .pool
+
 //trainer Flag stuff
 .org 0x08080378
 	ldr r1, =trainerflag_read_fix+1
