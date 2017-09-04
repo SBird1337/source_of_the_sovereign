@@ -101,8 +101,12 @@ _call_via_r1 equ 0x081E3BAC
 	lsl r0, #0
 	.pool
 
+.org 0x0806E584
+    ldr r3, =var_set_hack|1
+    bx r3
+
 .org 0x0806E680
-    ldr r1, =flag_set|1
+    ldr r1, =flag_set_hack|1
     bx r1
     .pool
 //end of flag routine
