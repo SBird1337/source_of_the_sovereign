@@ -106,6 +106,11 @@ _call_via_r1 equ 0x081E3BAC
     bx r3
     .pool
 
+.org 0x0806E568
+    ldr r3, =var_get_hack|1
+    bx r3
+    .pool
+
 .org 0x0806E680
     ldr r1, =flag_set_hack|1
     bx r1

@@ -100,6 +100,13 @@ void flag_set_hack(u16 flag) {
     }
 }
 
+u16 var_get_hack(u16 var) {
+    u16 *ptr = var_access(var);
+    if (ptr != NULL)
+        return *ptr;
+    return var;
+}
+
 bool var_set_hack(u16 var, u16 val) {
     u16 *ptr = var_access(var);
     if (ptr != NULL) {
@@ -110,10 +117,9 @@ bool var_set_hack(u16 var, u16 val) {
     return false;
 }
 
-bool var_set_script_hack(struct ScriptEnvironment *env)
-{
+bool var_set_script_hack(struct ScriptEnvironment *env) {
     u16 var = script_read_halfword(env);
     u16 val = script_read_halfword(env);
-    var_set_hack(var,val);
+    var_set_hack(var, val);
     return 0;
 }
