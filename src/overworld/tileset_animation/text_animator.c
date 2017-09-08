@@ -9,6 +9,8 @@
 #define CANVAS_FIRST (u8 *)(574 * 0x20 + 0x06000000)
 #define CANVAS_SECOND (u8 *)(592 * 0x20 + 0x06000000)
 
+static const char *map_texts[] = {"--------","< Carun City", "Route 2 >", NULL};
+
 s16 char_to_tile_index(char chr) {
     if (chr >= 'A' && chr <= 'P')
         return chr - 'A';
@@ -87,18 +89,6 @@ void anim_init_text(void) {
     blockset_one_current_tile = 0;
     blockset_one_max_tile = 0x280;
     blockset_one_animator = text_animator;
-
-    switch (saveblock1->location.bank) {
-    case 3: {
-        switch (saveblock1->location.map) {
-        case 0:
-            draw_text_on_canvas("    < Carun City");
-            break;
-        case 1:
-            draw_text_on_canvas("    < Route 3");
-        }
-    } break;
-    default:
-        break;
-    }
+    if(var_8000 != 0)
+        draw_text_on_canvas(map_texts[var_8000]);
 }
