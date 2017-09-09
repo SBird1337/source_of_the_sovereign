@@ -186,7 +186,7 @@ void *tb_configure_by_script(void *ptr_script) {
         trainerbattle_message_intro = NULL;
 
         trainerbattle_message_defeat = tb_modify_text((char *)load_word(ptr_script), 0);
-        ptr_script++;
+        ptr_script+= 4;
 
         trainerbattle_message_2 = NULL;
         trainerbattle_message_need_2_poke = NULL;
