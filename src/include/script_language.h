@@ -223,10 +223,8 @@ setflag FLAG_WALK_SCRIPT
 clearflag FLAG_WALK_SCRIPT
 .endm
 
-.macro writemusikwithmapmusik writemusikwithmapmusik_mapmusik:req
+.macro writemusikon
 setflag FLAG_ENABLE_MUSIC_OVERRIDES
-setvar VAR_FROM_1 \writemusikwithmapmusik_mapmusik
-setvar VAR_TO_1 MUS_SKIP_PLAY
 .endm
 
 .macro writemusikoff
