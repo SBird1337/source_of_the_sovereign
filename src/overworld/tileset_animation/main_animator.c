@@ -3,34 +3,32 @@
 
 struct TilesetAnimation {
     u16 tile_start;
-    u16 frame_lenght;
+    u16 frame_length;
     u16 tile_length;
     u16 frame_count;
     const void *image;
 };
 
 const struct TilesetAnimation hesperia_second_animations[] = {
-    {0x114, 7, 4, 5, smokeTiles}, {0, 0, 0, 0, (void *)0xFFFFFFFF},
+    {.tile_start = 0x114, .frame_length = 7, .tile_length = 4, .frame_count = 5, .image = smokeTiles},
+    {.tile_start = 0, .frame_length = 0, .tile_length = 0, .frame_count = 0, .image = (void *)0xFFFFFFFF},
 };
 
 void animate_from_structure(const struct TilesetAnimation *anim, u16 tile_skip, u16 current_frame) {
     void *vram_address = (void *)(0x06000000 + (tile_skip * 0x20));
     u8 current_animation = 0;
-    while (anim[current_animation].image != (void*)0xFFFFFFFF) {
+    while (anim[current_animation].image != (void *)0xFFFFFFFF) {
         void *current_vram = vram_address + (0x20 * anim[current_animation].tile_start);
-        u16 max_frame = anim[current_animation].frame_lenght * anim[current_animation].frame_count;
+        u16 max_frame = anim[current_animation].frame_length * anim[current_animation].frame_count;
         u16 used_frame = current_frame % max_frame;
-        used_frame /= anim[current_animation].frame_lenght;
-        memcpy(current_vram,
-               anim[current_animation].image + (0x20 * anim[current_animation].tile_length * used_frame),
+        used_frame /= anim[current_animation].frame_length;
+        memcpy(current_vram, anim[current_animation].image + (0x20 * anim[current_animation].tile_length * used_frame),
                anim[current_animation].tile_length * 0x20);
         current_animation++;
     }
 }
 
-void main_animator(u16 current_frame) {
-    (void)current_frame;
-}
+void main_animator(u16 current_frame) { (void)current_frame; }
 
 extern struct MapBlockset maptileset128;
 extern struct MapBlockset maptileset0;
