@@ -19,10 +19,10 @@ void animate_from_structure(const struct TilesetAnimation *anim, u16 tile_skip, 
     while (anim[current_animation].image != (void*)0xFFFFFFFF) {
         void *current_vram = vram_address + (0x20 * anim[current_animation].tile_start);
         u16 max_frame = anim[current_animation].frame_lenght * anim[current_animation].frame_count;
-        current_frame = current_frame % max_frame;
-        current_frame /= anim[current_animation].frame_lenght;
+        u16 used_frame = current_frame % max_frame;
+        used_frame /= anim[current_animation].frame_lenght;
         memcpy(current_vram,
-               anim[current_animation].image + (0x20 * anim[current_animation].tile_length * current_frame),
+               anim[current_animation].image + (0x20 * anim[current_animation].tile_length * used_frame),
                anim[current_animation].tile_length * 0x20);
         current_animation++;
     }
