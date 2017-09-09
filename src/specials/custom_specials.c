@@ -32,11 +32,11 @@
 
 #include "camera_move.h"
 #include "cutscene_meteor.h"
-#include <callback.h>
 #include <config.h>
-#include <debug.h>
-#include <game_engine.h>
-#include <math.h>
+#include <pokeagb/pokeagb.h>
+
+/* === TYPES === */
+typedef void (*special_func)();
 
 /* === PROTOTYPES === */
 
@@ -71,16 +71,29 @@ void get_text_pointer_from_lookup();
 
 void sp_check_tileset();
 
+void sp_set_rival(void);
+
 extern void sp_crystal_fade(void);
+
+extern pchar name_rival_male[5];
+extern pchar name_rival_female[5];
 
 /* === STATICS === */
 
-static callback special_routines[9] = {
-    met_play,         cam_sp_move_camera, sp_init_script,  debug_some_test, sp_dns_switch,
-    sp_random_number, sp_check_tileset,   sp_batchmaptile, sp_crystal_fade,
+static special_func special_routines[10] = {
+    met_play,         cam_sp_move_camera, sp_init_script,  NULL, sp_dns_switch,
+    sp_random_number, sp_check_tileset,   sp_batchmaptile, sp_crystal_fade, sp_set_rival,
 };
 
 /* === IMPLEMENTATIONS === */
+
+void sp_set_rival(void) {
+    if (saveblock2->gender == GENDER_MALE) {
+        pstrcpy(&(saveblock1->rival_name[0]), &name_rival_female[0]);
+    } else {
+        pstrcpy(&(saveblock1->rival_name[0]), &name_rival_male[0]);
+    }
+}
 
 void sp_dns_switch() {
     volatile u8 *test_pointer = (u8 *)(0x0203FAB0);
@@ -112,4 +125,4 @@ void sp_clear_variables() {
     return;
 }
 
-void sp_random_number() { var_set(0x800D, (random() % var_get(0x8000))); }
+void sp_random_number() { var_set(0x800D, (rand() % var_load(0x8000))); }

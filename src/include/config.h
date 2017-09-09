@@ -1,5 +1,3 @@
-#include "pkmn_types.h"
-
 #ifndef CONFIG_S_
 #define CONFIG_S_
 
