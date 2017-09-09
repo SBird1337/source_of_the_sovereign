@@ -89,7 +89,7 @@ hidepokepic
 waitcry
 .endm
 
-.macro earthquake earthquake_horri:req earthquake_tiles:req earthquake_sec:req earthquake_vert:req
+.macro beben earthquake_horri:req earthquake_tiles:req earthquake_sec:req earthquake_vert:req
 setvar 0x8004 \earthquake_horri
 setvar 0x8005 \earthquake_tiles
 setvar 0x8006 \earthquake_sec
