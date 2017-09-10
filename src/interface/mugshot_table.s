@@ -66,8 +66,8 @@ mugshots:
 .word mug_04_02Pal
 .word mug_04_03Tiles
 .word mug_04_03Pal
-.word mug_04_04Tiles
-.word mug_04_04Pal
+@@.word mug_04_04Tiles those do not exist
+@@.word mug_04_04Pal
 
 @@----------------------------------------------------------------------------------------------------------
 @@ Achim
