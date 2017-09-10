@@ -60,11 +60,13 @@ void set_pixel(u8 x, u8 y, u16 *start, u16 pixel) {
     if (x % 2 == 0)
         *addr = (*addr & 0xFF00) | (pixel);
     else
-        *addr = (*addr & 0x00FF) | (pixel << 8);
+        *addr = (*((u8*)addr)) | (pixel << 8);
 }
 
+#define ANIMATION_FRAME_SPEED 2
+
 void text_animator(u16 current_frame) {
-    if ((current_frame % 7) == 0) {
+    if ((current_frame % ANIMATION_FRAME_SPEED) == 0) {
         u8 outer_pixels[16] = {
             *(CANVAS_FIRST + 0),   *(CANVAS_FIRST + 4),   *(CANVAS_FIRST + 8),   *(CANVAS_FIRST + 12),
             *(CANVAS_FIRST + 16),  *(CANVAS_FIRST + 20),  *(CANVAS_FIRST + 24),  *(CANVAS_FIRST + 28),
@@ -89,6 +91,7 @@ void anim_init_text(void) {
     blockset_one_current_tile = 0;
     blockset_one_max_tile = 0x280;
     blockset_one_animator = text_animator;
+    dprintf("%d\n", var_8000);
     if(var_8000 != 0)
         draw_text_on_canvas(map_texts[var_8000]);
 }

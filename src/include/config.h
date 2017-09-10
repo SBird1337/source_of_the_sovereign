@@ -40,6 +40,7 @@
 #define HEALING_BANK_MAP_VAR    0x500E
 #define HEALING_X_VAR           0x500F
 #define HEALING_Y_VAR           0x5010
+#define TEXT_ANIMATION_VAR      0x8000
 
 /*Variables to control the music overrides*/
 #define VAR_FROM_1              0x51FA
