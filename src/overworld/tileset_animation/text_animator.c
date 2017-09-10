@@ -66,6 +66,8 @@ void set_pixel(u8 x, u8 y, u16 *start, u16 pixel) {
 
 #define ANIMATION_FRAME_SPEED 2
 
+/* TODO: Compile RELEASE Versions of the game with higher optimization flags */
+
 void text_animator(u16 current_frame) {
     if ((current_frame % ANIMATION_FRAME_SPEED) == 0) {
         u8 outer_pixels[16] = {

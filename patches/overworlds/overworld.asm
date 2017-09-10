@@ -103,3 +103,11 @@ strb r0, [r4, #0x1A]
 
 .org 0x08083484
     .word oe_effect_table
+
+.org 0x08064540
+    .word movement_animations
+
+.org 0x08064584
+    .word movement_animations
+.org 0x080645B4
+    .word movement_animations
