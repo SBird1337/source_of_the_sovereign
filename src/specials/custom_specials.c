@@ -81,7 +81,7 @@ extern pchar name_rival_female[5];
 /* === STATICS === */
 
 static special_func special_routines[10] = {
-    met_play,         cam_sp_move_camera, sp_init_script,  NULL, sp_dns_switch,
+    met_play,         cam_sp_move_camera, sp_init_script,  NULL, NULL,
     sp_random_number, sp_check_tileset,   sp_batchmaptile, sp_crystal_fade, sp_set_rival,
 };
 
@@ -93,12 +93,6 @@ void sp_set_rival(void) {
     } else {
         pstrcpy(&(saveblock1->rival_name[0]), &name_rival_male[0]);
     }
-}
-
-void sp_dns_switch() {
-    volatile u8 *test_pointer = (u8 *)(0x0203FAB0);
-    *(test_pointer + 1) = (*(test_pointer + 1) == 3 ? 0 : (*(test_pointer + 1)) + 1);
-    *test_pointer = 1;
 }
 
 void sp_init_script() {

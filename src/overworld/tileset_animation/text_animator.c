@@ -32,6 +32,7 @@ s16 char_to_tile_index(char chr) {
 }
 
 void draw_text_on_canvas(const char *txt) {
+    
     u16 current_tile = 0;
     while (*txt) {
         s16 tile = char_to_tile_index(*txt);
@@ -91,7 +92,6 @@ void anim_init_text(void) {
     blockset_one_current_tile = 0;
     blockset_one_max_tile = 0x280;
     blockset_one_animator = text_animator;
-    dprintf("%d\n", var_8000);
     if(var_8000 != 0)
         draw_text_on_canvas(map_texts[var_8000]);
 }
