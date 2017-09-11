@@ -180,7 +180,8 @@ msgbox \mugmsg_textpointer \mugmsg_callstd
 setvar MUGHSOT_1_TABLE 0x0
 .endm
 
-.macro mugrival mugrival_textpointer:req mugrival_callstd:req mugrival_facing:req
+.macro mugrival mugrival_textpointer:req mugrival_callstd:req mugrival_facing:req mugrival_emot=0
+setvar 0x8000 \mugrival_emot
 .if \mugrival_facing==MUGFACE_LEFT
     call scr_mugrival_left
 .endif
