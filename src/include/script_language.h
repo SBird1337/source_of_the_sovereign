@@ -225,11 +225,11 @@ clearflag FLAG_WALK_SCRIPT
 .endm
 
 .macro writemusikon
-setflag FLAG_ENABLE_MUSIC_OVERRIDES
+setflag FLAG_SKIP_BATTLE_MUSIC
 .endm
 
 .macro writemusikoff
-clearflag FLAG_ENABLE_MUSIC_OVERRIDES
+clearflag FLAG_SKIP_BATTLE_MUSIC
 .endm
 
 @@ Index commands
