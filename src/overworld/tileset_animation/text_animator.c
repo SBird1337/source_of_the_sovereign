@@ -9,7 +9,7 @@
 #define CANVAS_FIRST (u8 *)(574 * 0x20 + 0x06000000)
 #define CANVAS_SECOND (u8 *)(592 * 0x20 + 0x06000000)
 
-static const char *map_texts[] = {"--------","< Carun City", "Route 2 >", NULL};
+static const char *map_texts[] = {"--------", "< Carun City", "Route 2 >", NULL};
 
 s16 char_to_tile_index(char chr) {
     if (chr >= 'A' && chr <= 'P')
@@ -32,7 +32,7 @@ s16 char_to_tile_index(char chr) {
 }
 
 void draw_text_on_canvas(const char *txt) {
-    
+
     u16 current_tile = 0;
     while (*txt) {
         s16 tile = char_to_tile_index(*txt);
@@ -61,7 +61,7 @@ void set_pixel(u8 x, u8 y, u16 *start, u16 pixel) {
     if (x % 2 == 0)
         *addr = (*addr & 0xFF00) | (pixel);
     else
-        *addr = (*((u8*)addr)) | (pixel << 8);
+        *addr = (*((u8 *)addr)) | (pixel << 8);
 }
 
 #define ANIMATION_FRAME_SPEED 2
@@ -93,7 +93,9 @@ void text_animator(u16 current_frame) {
 void anim_init_text(void) {
     blockset_one_current_tile = 0;
     blockset_one_max_tile = 0x280;
-    blockset_one_animator = text_animator;
-    if(var_8000 != 0)
+    blockset_one_animator = NULL;
+    if (var_8000 != 0) {
         draw_text_on_canvas(map_texts[var_8000]);
+        blockset_one_animator = text_animator;
+    }
 }
