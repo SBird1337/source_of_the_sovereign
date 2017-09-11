@@ -1,0 +1,4 @@
+# ignore grit header files
+*.h
+*.c
+*.bin
