@@ -6,8 +6,8 @@
 #define CANVAS_X_SECOND (22)
 #define CANVAS_Y_SECOND (36)
 
-#define CANVAS_FIRST (u8 *)(574 * 0x20 + 0x06000000)
-#define CANVAS_SECOND (u8 *)(592 * 0x20 + 0x06000000)
+#define CANVAS_FIRST ((u8 *)(574 * 0x20 + 0x06000000))
+#define CANVAS_SECOND ((u8 *)(592 * 0x20 + 0x06000000))
 
 static const char *map_texts[] = {"--------", "< Carun City", "Route 2 >", NULL};
 
@@ -68,24 +68,33 @@ void set_pixel(u8 x, u8 y, u16 *start, u16 pixel) {
 
 /* TODO: Compile RELEASE Versions of the game with higher optimization flags */
 
+#define TEXT_ANIM_TILE_ROW(c, x, y) (((u32 *)c)[x * 8 + y])
+
 void text_animator(u16 current_frame) {
     if ((current_frame % ANIMATION_FRAME_SPEED) == 0) {
-        u8 outer_pixels[16] = {
-            *(CANVAS_FIRST + 0),   *(CANVAS_FIRST + 4),   *(CANVAS_FIRST + 8),   *(CANVAS_FIRST + 12),
-            *(CANVAS_FIRST + 16),  *(CANVAS_FIRST + 20),  *(CANVAS_FIRST + 24),  *(CANVAS_FIRST + 28),
-            *(CANVAS_SECOND + 0),  *(CANVAS_SECOND + 4),  *(CANVAS_SECOND + 8),  *(CANVAS_SECOND + 12),
-            *(CANVAS_SECOND + 16), *(CANVAS_SECOND + 20), *(CANVAS_SECOND + 24), *(CANVAS_SECOND + 28)};
+        for (int y = 0; y < 8; ++y) {
+            u32 outer_pixel_upper = CANVAS_FIRST[y * 4];
+            u32 outer_pixel_lower = CANVAS_SECOND[y * 4];
 
-        for (u8 i = 0; i < 71; ++i) {
-            for (u8 j = 0; j < 8; ++j) {
-                set_pixel(i, j, (u16 *)CANVAS_FIRST, get_pixel(i + 1, j, (u16 *)CANVAS_FIRST));
-                set_pixel(i, j, (u16 *)CANVAS_SECOND, get_pixel(i + 1, j, (u16 *)CANVAS_SECOND));
+            for (int x = 17; x >= 0; --x) {
+                // tile:     AB-CD-EF-GH-|-NX      BC-DE-FG-HN
+                // mem:      BA-DC-FE-HG-|-XN ---> CB-ED-GF-NH
+                // register: HG-FE-DC-BA           NH-GF-ED-CB
+
+                u32 upper_row = TEXT_ANIM_TILE_ROW(CANVAS_FIRST, x, y);
+                u32 new_outer_pixel_upper = upper_row;
+
+                upper_row  = (upper_row >> 4) | (outer_pixel_upper << 28);
+                TEXT_ANIM_TILE_ROW(CANVAS_FIRST, x, y) = upper_row;
+                outer_pixel_upper = new_outer_pixel_upper;
+
+                u32 lower_row = TEXT_ANIM_TILE_ROW(CANVAS_SECOND, x, y);
+                u32 new_outer_pixel_lower = lower_row;
+
+                lower_row = (lower_row >> 4) | (outer_pixel_lower << 28);
+                TEXT_ANIM_TILE_ROW(CANVAS_SECOND, x, y) = lower_row;
+                outer_pixel_lower = new_outer_pixel_lower;
             }
-        }
-
-        for (u8 y = 0; y < 8; ++y) {
-            set_pixel(71, y, (u16 *)CANVAS_FIRST, outer_pixels[y]);
-            set_pixel(71, y, (u16 *)CANVAS_SECOND, outer_pixels[y + 8]);
         }
     }
 }
