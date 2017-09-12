@@ -201,8 +201,8 @@ setflag FLAG_ACTIVATE
 .endm
 
 .macro battlescreen battlescreen_grass:req battlescreen_sea:req
-setvar NORMAL_VAR \battlescreen_grass
-setvar SEA_VAR \battlescreen_sea
+setvar BATTLE_NORMAL_VAR \battlescreen_grass
+setvar BATTLE_SEA_VAR \battlescreen_sea
 .endm
 
 .macro cameramove cameramove_xpos:req cameramove_ypos:req
