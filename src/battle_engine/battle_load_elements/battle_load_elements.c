@@ -81,7 +81,7 @@ void battle_load_decals(u16 idx) {
     (void)idx;
 
     struct BattleScreenElements element = BATTLE_ELEMENT(var_load(BATTLE_ELEMENT_VAR));
-    if (element.gfx_grass == NULL | element.map_grass == NULL)
+    if ((element.gfx_grass == NULL) | (element.map_grass == NULL))
         return;
     lz77UnCompVram(element.gfx_grass, (void *)0x06004000);
     lz77UnCompVram(element.map_grass, (void *)0x0600E000);

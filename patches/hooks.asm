@@ -71,13 +71,6 @@ _call_via_r1 equ 0x081E3BAC
 //.org 0x0800f268
 //    .halfword 0xE000
 
-.org 0x0800FD5C
-    .word battle_bg_table
-
-.org 0x0800FD88
-    .word battle_bg_table
-//end of battle bg table
-
 //flag routine
 .org 0x0806E5D6
 	ldr r0, =flag_hook|1
