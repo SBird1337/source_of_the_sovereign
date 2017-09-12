@@ -1,4 +1,4 @@
-#include <config.h>
+/*#include <config.h>
 .align 2
 .thumb
 .text
@@ -47,3 +47,4 @@ bxr1:
 	bx r1
 bxr0:
 	bx r0
+*/

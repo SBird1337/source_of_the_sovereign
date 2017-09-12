@@ -23,3 +23,13 @@ bx r3
 ldr r0, =battle_m_flee_hook+1
 bx r0
 .pool
+
+.org 0x0800F260
+ldr r1, =battle_load_background+1
+bx r1
+.pool
+
+.org 0x0800F2AC
+ldr r1, =battle_load_decals+1
+bx r1
+.pool

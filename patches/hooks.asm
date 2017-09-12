@@ -71,22 +71,6 @@ _call_via_r1 equ 0x081E3BAC
 //.org 0x0800f268
 //    .halfword 0xE000
 
-//Battle bg use new table
-.org 0x0800F2A0
-    .word battle_bg_table
-
-.org 0x0800F2E0
-    .word battle_bg_table
-
-.org 0x0800F320
-    .word battle_bg_table
-
-.org 0x0800F40E
-    ldr r0, =battle_bg_hook|1
-    bx r0
-    lsl r0, #0
-	.pool
-
 .org 0x0800FD5C
     .word battle_bg_table
 

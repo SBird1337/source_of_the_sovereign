@@ -5,11 +5,6 @@
 #define OBJ_1_TEMP              0x0203FFFE
 #define OBJ_2_TEMP              0x0203FFFF
 
-
-/*Variables regarding battle background loading*/
-#define NORMAL_VAR              0x4000
-#define SEA_VAR                 0x4001
-
 /*Variables and Tags regarding mugshots*/
 #define MUGHSOT_1_TABLE         0x5000
 #define MUGSHOT_1_X             0x5001
@@ -40,7 +35,12 @@
 #define HEALING_BANK_MAP_VAR    0x500E
 #define HEALING_X_VAR           0x500F
 #define HEALING_Y_VAR           0x5010
-#define TEXT_ANIMATION_VAR      0x8000
+
+/*Variables regarding battle background loading*/
+#define BATTLE_NORMAL_VAR       0x5011
+#define BATTLE_SEA_VAR          0x5012
+
+#define TEXT_ANIMATION_VAR      0x5013
 
 /*Variables to control the music overrides*/
 #define VAR_FROM_1              0x51FA

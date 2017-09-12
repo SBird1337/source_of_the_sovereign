@@ -2,8 +2,6 @@
 .text
 .thumb
 
-#define LAN_DE
-
 .align 2
 .global test_some_test
 test_some_test:
