@@ -31,13 +31,16 @@
 .include "patches/pokemon_data/pokedex_entries.asm"
 .include "patches/pokemon_data/pokemon_names.asm"
 .include "patches/pokemon_data/limits.asm"
+
 .include "patches/pokemon_data/pokemon_stats.asm"
 .include "patches/pokemon_data/moveset_table.asm"
 .include "patches/pokemon_data/pokemon_back_sprites.asm"
 .include "patches/pokemon_data/pokemon_front_sprites.asm"
 .include "patches/pokemon_data/pokemon_normal_pal.asm"
 .include "patches/pokemon_data/pokemon_shiny_pal.asm"
+
 .include "patches/pokemon_data/pokemon_icons.asm"
+
 .include "patches/pokemon_data/pokemon_habitats.asm"
 .include "patches/pokemon_data/pokemon_evolution.asm"
 

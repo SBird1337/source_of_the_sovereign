@@ -11,7 +11,9 @@
 .word icon_palette_table
 
 .org 0x08091390
-.word icon_palette_table
+//.word icon_palette_table
+/* NOTE: this is referencing the icon template, overriding this will break stuff, for now we do not need to modify the template */
+
 
 .org 0x08096EC0
 .word icon_palette_table

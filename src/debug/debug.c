@@ -29,28 +29,27 @@
 
 /* === INCLUDE === */
 
-#include <types.h>
-#include <callback.h>
-#include <lcd.h>
-#include <debug.h>
-#include <memory.h>
 #include <assets/ascii.h>
 #include <battle_test.h>
-#include <math.h>
+#include <callback.h>
+#include <debug.h>
 #include <fade.h>
+#include <lcd.h>
+#include <math.h>
+#include <memory.h>
+#include <types.h>
 
 /* === STRUCTURES === */
 
-struct assert_memory
-{
-    char* file;
+struct assert_memory {
+    char *file;
     int line;
-    char* expression;
+    char *expression;
 };
 
 /* === STATICS === */
-struct assert_memory* assert_global = (struct assert_memory*)0x0203FEC4;
-static struct print_engine* print_memory = (struct print_engine*)(0x0203FFF0);
+struct assert_memory *assert_global = (struct assert_memory *)0x0203FEC4;
+static struct print_engine *print_memory = (struct print_engine *)(0x0203FFF0);
 
 /* === PROTOTYPES === */
 
@@ -59,7 +58,7 @@ static struct print_engine* print_memory = (struct print_engine*)(0x0203FFF0);
  * @param i integer
  * @param ref buffer to output to
  */
-void debug_int_to_char(u32 i, char* ref);
+void debug_int_to_char(u32 i, char *ref);
 
 /**
  * @get length of integer
@@ -111,7 +110,7 @@ void debug_print_char(u16 line, u16 row, char character, u8 color);
  * @param color color to print in
  * @param pBuf string buffer to print (null terminated)
  */
-void debug_print_string(u16 line, u16 row, u8 color, char* pBuf);
+void debug_print_string(u16 line, u16 row, u8 color, char *pBuf);
 
 /**
  * @brief build power
@@ -129,7 +128,7 @@ void debug_init_stage_two();
  * @param color color to set to
  */
 void debug_set_bg(u16 color) {
-    u16* bgc = (u16*) 0x020375f8;
+    u16 *bgc = (u16 *)0x020375f8;
     *bgc = color;
     return;
 }
@@ -137,20 +136,15 @@ void debug_set_bg(u16 color) {
 /* === STATIC STRUCTURES === */
 
 static struct bg_config debug_bg_config[4] = {
-    {0, 0, 0x19, 0, 0, 0},
-    {1, 1, 0x1A, 0, 0, 1},
-    {2, 2, 0x1B, 0, 0, 2},
-    {3, 3, 0x1C, 0, 0, 3}
-};
+    {0, 0, 0x19, 0, 0, 0}, {1, 1, 0x1A, 0, 0, 1}, {2, 2, 0x1B, 0, 0, 2}, {3, 3, 0x1C, 0, 0, 3}};
 
 /* === IMPLEMENTATIONS === */
 
-void as_assert(char* expression, char* file, int line)
-{
+void as_assert(char *expression, char *file, int line) {
     assert_global->file = file;
     assert_global->line = line;
     assert_global->expression = expression;
-    
+
     set_callback2(debug_assert_scene);
     vblank_handler_set(debug_update);
     superstate.multi_purpose_state_tracker = 0;
@@ -174,7 +168,7 @@ void debug_some_test() {
     set_callback2(debug_scene);
     vblank_handler_set(debug_update);
     superstate.multi_purpose_state_tracker = 0;
-    
+
     return;
 }
 
@@ -190,28 +184,26 @@ void debug_reset_scrolling() {
     return;
 }
 
-void debug_init_unit_test() {
-    test_speed();
-}
+void debug_init_unit_test() { test_speed(); }
 
-void debug_print_string(u16 line, u16 row, u8 color, char* pBuf) {
+void debug_print_string(u16 line, u16 row, u8 color, char *pBuf) {
     while (*pBuf) {
         debug_print_char(line, row++, *pBuf++, color);
     }
     return;
 }
 
-void debug_print(char* str) {
+void debug_print(char *str) {
     while (*str) {
-        if(print_memory->row > 29)
-        {
+        if (print_memory->row > 29) {
             print_memory->line++;
             print_memory->row = 0;
         }
         if (*str == '\n') {
             print_memory->line++;
             print_memory->row = 0;
-        } if (*str == '\xFE') {
+        }
+        if (*str == '\xFE') {
             str++;
             u8 c = *str;
             if (c > 2)
@@ -226,17 +218,17 @@ void debug_print(char* str) {
     return;
 }
 
-void debug_printf(char* str, int arg) {
+void debug_printf(char *str, int arg) {
     while (*str) {
-        if(print_memory->row > 29)
-        {
+        if (print_memory->row > 29) {
             print_memory->line++;
             print_memory->row = 0;
         }
         if (*str == '\n') {
             print_memory->line++;
             print_memory->row = 0;
-        } if (*str == '\xFE') {
+        }
+        if (*str == '\xFE') {
             str++;
             u8 c = *str;
             if (c > 2)
@@ -254,7 +246,7 @@ void debug_printf(char* str, int arg) {
                 debug_int_to_char(arg, temp);
                 debug_print(temp);
             } else if (*str == 'c') {
-                char print_char = (char) (arg);
+                char print_char = (char)(arg);
                 debug_print_char(print_memory->line, print_memory->row, print_char, print_memory->color);
                 print_memory->row++;
             }
@@ -267,7 +259,7 @@ void debug_printf(char* str, int arg) {
 }
 
 void debug_clean() {
-    memset((void*) 0x0600C800, 0, 0x800);
+    memset((void *)0x0600C800, 0, 0x800);
     print_memory->row = 0;
     print_memory->line = 0;
     print_memory->color = 0;
@@ -275,14 +267,13 @@ void debug_clean() {
 }
 
 void debug_wait_for_btn(u16 field) {
-    volatile u16* control_io = (volatile u16*) (0x04000130);
+    volatile u16 *control_io = (volatile u16 *)(0x04000130);
     while (*control_io & field) {
     }
     return;
 }
 
-void debug_init_stage_one()
-{
+void debug_init_stage_one() {
     print_memory->row = 0;
     print_memory->line = 0;
     print_memory->color = 0;
@@ -301,14 +292,13 @@ void debug_init_stage_one()
     gpu_sync_bg_visibility_and_mode();
     debug_reset_scrolling();
     obj_delete_all();
-    memset((void*) 0x06000000, 0, 0x17fe0);
-    memset((void*) 0x020375F8, 0, 0x400);
+    memset((void *)0x06000000, 0, 0x17fe0);
+    memset((void *)0x020375F8, 0, 0x400);
 }
 
-void debug_init_stage_two()
-{
-    vram_decompress((void*) asciiTiles, (void*) 0x06000000);
-    memcpy((void*) 0x020375F8, (void*) asciiPal, 0x60);
+void debug_init_stage_two() {
+    vram_decompress((void *)asciiTiles, (void *)0x06000000);
+    memcpy((void *)0x020375F8, (void *)asciiPal, 0x60);
     debug_set_bg(0x0000);
 }
 
@@ -338,7 +328,7 @@ void debug_print_char(u16 line, u16 row, char character, u8 color) {
     union t_map_entry map_entry;
     map_entry.entry.tile = char_to_byte(character);
     map_entry.entry.pal = color;
-    u16* ptr = (u16*) (0x0600c800 + (position * 2));
+    u16 *ptr = (u16 *)(0x0600c800 + (position * 2));
     *ptr = map_entry.short_map;
     return;
 }
@@ -359,7 +349,7 @@ void debug_update() {
     obj_gpu_sprites_upload();
 }
 
-void debug_int_to_char(u32 i, char* ref) {
+void debug_int_to_char(u32 i, char *ref) {
     if (i == 0) {
         ref[0] = '0';
         return;
