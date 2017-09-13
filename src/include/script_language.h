@@ -3,7 +3,6 @@
 
 #include <config.h>
 #include <applymovements.h>
-#include <hiddenflags.h>
 #include <mugssprites.h>
 
 @@ Costum Specials
@@ -29,6 +28,14 @@
 .equ FLAG_ORDEN_6, 0x825
 .equ FLAG_ORDEN_7, 0x826
 .equ FLAG_ORDEN_8, 0x827
+
+@@ LED NAMES
+.equ LED_CARUN_CITY, 0x1
+.equ LED_ROUTE_2, 0x2
+.equ LED_ROUTE_3, 0x3
+.equ LED_URBANIA_CITY, 0x4
+.equ LED_ROUTE_5, 0x5
+.equ LED_ROUTE_6, 0x6
 
 @@ Flag operands
 .equ B_T, 0x0
@@ -63,6 +70,10 @@ setvar 0x8002 \batchmaptile_kollision_from
 setvar 0x8003 \batchmaptile_kollision_to
 setvar 0x5006 SP_BATCHMAPTILE
 special 0x68
+.endm
+
+.macro sethiddenflags
+call sethiddenflagsall
 .endm
 
 .macro seteffect seteffect_effect_id:req

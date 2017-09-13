@@ -105,18 +105,6 @@ $(STRINGDIR)/%.s: $(STRINGDIR)/%.txt
 	@echo -e "\e[93mGenerating strings $<\e[0m"
 	$(STRAGB) -o $@ -i $< -t string/table.tbl -e 0xFF
 
-$(BLDPATH)/%.o: %.c $(ASSETS) $(PAGB_INCLUDE)/pokeagb/pokeagb.h src/include/script_language.h src/include/hiddenflags.h
-	@echo -e "\e[32mCompiling $<\e[0m"
-	$(shell mkdir -p $(dir $@))
-	$(CC) $(CFLAGS) -c $< -o $@
-
-$(BLDPATH)/%.o: %.s $(PAGB_INCLUDE)/pokeagb/pokeagb.h src/include/script_language.h src/include/hiddenflags.h
-	@echo -e "\e[32mAssembling $<\e[0m"
-	$(shell mkdir -p $(dir $@))
-	$(PREPROC) $< $(CHARMAP) > $*.i
-	$(CC) $(CFLAGS) -c -x assembler-with-cpp $*.i -o $@
-	@rm -f $*.i
-
 $(MAPTS)/%.s: $(MAPTS)/%.png
 	@echo -e "\e[34mProcessing image (tileset) $<\e[0m"
 	$(GRIT) $< -o $@ -fts -gzl -pz! -pu16 -gB4 -m! -mR!
