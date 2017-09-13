@@ -4,6 +4,7 @@
 #include <config.h>
 #include <applymovements.h>
 #include <mugssprites.h>
+#include <battlescreen.h>
 
 @@ Costum Specials
 .equ SP_BATCHMAPTILE, 0x7
