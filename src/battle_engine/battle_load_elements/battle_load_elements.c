@@ -1,15 +1,5 @@
-#include <config.h>
-#include <pokeagb/pokeagb.h>
 #include <battlescreen/battlescreen_0.h>
 #include <battlescreen/battlescreen_1.h>
-#include <battlescreen/battlescreen_2.h>
-#include <battlescreen/battlescreen_3.h>
-#include <battlescreen/battlescreen_4.h>
-#include <battlescreen/battlescreen_5.h>
-#include <battlescreen/battlescreen_6.h>
-#include <battlescreen/battlescreen_7.h>
-#include <battlescreen/battlescreen_8.h>
-#include <battlescreen/battlescreen_9.h>
 #include <battlescreen/battlescreen_10.h>
 #include <battlescreen/battlescreen_11.h>
 #include <battlescreen/battlescreen_12.h>
@@ -20,12 +10,21 @@
 #include <battlescreen/battlescreen_17.h>
 #include <battlescreen/battlescreen_18.h>
 #include <battlescreen/battlescreen_19.h>
+#include <battlescreen/battlescreen_2.h>
 #include <battlescreen/battlescreen_20.h>
 #include <battlescreen/battlescreen_21.h>
 #include <battlescreen/battlescreen_22.h>
 #include <battlescreen/battlescreen_23.h>
 #include <battlescreen/battlescreen_24.h>
-
+#include <battlescreen/battlescreen_3.h>
+#include <battlescreen/battlescreen_4.h>
+#include <battlescreen/battlescreen_5.h>
+#include <battlescreen/battlescreen_6.h>
+#include <battlescreen/battlescreen_7.h>
+#include <battlescreen/battlescreen_8.h>
+#include <battlescreen/battlescreen_9.h>
+#include <config.h>
+#include <pokeagb/pokeagb.h>
 
 #define SIZEOF_ARR(a) (sizeof(a) / sizeof(a[0]))
 #define BATTLE_ELEMENT(n)                                                                                              \
