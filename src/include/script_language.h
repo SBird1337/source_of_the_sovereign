@@ -101,7 +101,7 @@ special 0x136
 trainerbattle 0x0 \lookbattle_id 0x0 \lookbattle_before \lookbattle_after
 .endm
 
-.macro gymbattle gymbattle_id:req gymbattle_before:req gymbattle_after:req
+.macro gymbattle gymbattle_id:req gymbattle_before:req gymbattle_after:req gymbattle_later:req
 trainerbattle 0x1 \gymbattle_id 0x0 \gymbattle_before \gymbattle_after \gymbattle_later
 .endm
 
