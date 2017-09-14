@@ -31208,9 +31208,9 @@ moveset_891:
 
 .align 2
 moveset_892:
-.hword 0x15A 
+.hword 0x2B
 .byte 0x1
-.hword 0x10E 
+.hword 0x23
 .byte 0x1
 .hword 0x95 
 .byte 0x5
@@ -31337,9 +31337,9 @@ moveset_894:
 
 .align 2
 moveset_895:
-.hword 0xB6 
+.hword 0x2D
 .byte 0x1
-.hword 0x10E 
+.hword 0x21
 .byte 0x1
 .hword 0x95 
 .byte 0x5

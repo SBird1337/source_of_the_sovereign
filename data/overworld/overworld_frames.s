@@ -1,16537 +1,16866 @@
 .thumb
 .text
 
-.global ow_frames_0
-.global ow_frames_1
-.global ow_frames_2
-.global ow_frames_3
-.global ow_frames_4
-.global ow_frames_5
-.global ow_frames_6
-.global ow_frames_7
-.global ow_frames_8
-.global ow_frames_9
-.global ow_frames_10
-.global ow_frames_11
-.global ow_frames_12
-.global ow_frames_13
-.global ow_frames_14
-.global ow_frames_15
-.global ow_frames_16
-.global ow_frames_17
-.global ow_frames_18
-.global ow_frames_19
-.global ow_frames_20
-.global ow_frames_21
-.global ow_frames_22
-.global ow_frames_23
-.global ow_frames_24
-.global ow_frames_25
-.global ow_frames_26
-.global ow_frames_27
-.global ow_frames_28
-.global ow_frames_29
-.global ow_frames_30
-.global ow_frames_31
-.global ow_frames_32
-.global ow_frames_33
-.global ow_frames_34
-.global ow_frames_35
-.global ow_frames_36
-.global ow_frames_37
-.global ow_frames_38
-.global ow_frames_39
-.global ow_frames_40
-.global ow_frames_41
-.global ow_frames_42
-.global ow_frames_43
-.global ow_frames_44
-.global ow_frames_45
-.global ow_frames_46
-.global ow_frames_47
-.global ow_frames_48
-.global ow_frames_49
-.global ow_frames_50
-.global ow_frames_51
-.global ow_frames_52
-.global ow_frames_53
-.global ow_frames_54
-.global ow_frames_55
-.global ow_frames_56
-.global ow_frames_57
-.global ow_frames_58
-.global ow_frames_59
-.global ow_frames_60
-.global ow_frames_61
-.global ow_frames_62
-.global ow_frames_63
-.global ow_frames_64
-.global ow_frames_65
-.global ow_frames_66
-.global ow_frames_67
-.global ow_frames_68
-.global ow_frames_69
-.global ow_frames_70
-.global ow_frames_71
-.global ow_frames_72
-.global ow_frames_73
-.global ow_frames_74
-.global ow_frames_75
-.global ow_frames_76
-.global ow_frames_77
-.global ow_frames_78
-.global ow_frames_79
-.global ow_frames_80
-.global ow_frames_81
-.global ow_frames_82
-.global ow_frames_83
-.global ow_frames_84
-.global ow_frames_85
-.global ow_frames_86
-.global ow_frames_87
-.global ow_frames_88
-.global ow_frames_89
-.global ow_frames_90
-.global ow_frames_91
-.global ow_frames_92
-.global ow_frames_93
-.global ow_frames_94
-.global ow_frames_95
-.global ow_frames_96
-.global ow_frames_97
-.global ow_frames_98
-.global ow_frames_99
-.global ow_frames_100
-.global ow_frames_101
-.global ow_frames_102
-.global ow_frames_103
-.global ow_frames_104
-.global ow_frames_105
-.global ow_frames_106
-.global ow_frames_107
-.global ow_frames_108
-.global ow_frames_109
-.global ow_frames_110
-.global ow_frames_111
-.global ow_frames_112
-.global ow_frames_113
-.global ow_frames_114
-.global ow_frames_115
-.global ow_frames_116
-.global ow_frames_117
-.global ow_frames_118
-.global ow_frames_119
-.global ow_frames_120
-.global ow_frames_121
-.global ow_frames_122
-.global ow_frames_123
-.global ow_frames_124
-.global ow_frames_125
-.global ow_frames_126
-.global ow_frames_127
-.global ow_frames_128
-.global ow_frames_129
-.global ow_frames_130
-.global ow_frames_131
-.global ow_frames_132
-.global ow_frames_133
-.global ow_frames_134
-.global ow_frames_135
-.global ow_frames_136
-.global ow_frames_137
-.global ow_frames_138
-.global ow_frames_139
-.global ow_frames_140
-.global ow_frames_141
-.global ow_frames_142
-.global ow_frames_143
-.global ow_frames_144
-.global ow_frames_145
-.global ow_frames_146
-.global ow_frames_147
-.global ow_frames_148
-.global ow_frames_149
-.global ow_frames_150
-.global ow_frames_151
-.global ow_frames_152
-.global ow_frames_153
-.global ow_frames_154
-.global ow_frames_155
-.global ow_frames_156
-.global ow_frames_157
-.global ow_frames_158
-.global ow_frames_159
-.global ow_frames_160
-.global ow_frames_161
-.global ow_frames_162
-.global ow_frames_163
-.global ow_frames_164
-.global ow_frames_165
-.global ow_frames_166
-.global ow_frames_167
-.global ow_frames_168
-.global ow_frames_169
-.global ow_frames_170
-.global ow_frames_171
-.global ow_frames_172
-.global ow_frames_173
-.global ow_frames_174
-.global ow_frames_175
-.global ow_frames_176
-.global ow_frames_177
-.global ow_frames_178
-.global ow_frames_179
-.global ow_frames_180
-.global ow_frames_181
-.global ow_frames_182
-.global ow_frames_183
-.global ow_frames_184
-.global ow_frames_185
-.global ow_frames_186
-.global ow_frames_187
-.global ow_frames_188
-.global ow_frames_189
-.global ow_frames_190
-.global ow_frames_191
-.global ow_frames_192
-.global ow_frames_193
-.global ow_frames_194
-.global ow_frames_195
-.global ow_frames_196
-.global ow_frames_197
-.global ow_frames_198
-.global ow_frames_199
-.global ow_frames_200
-.global ow_frames_201
-.global ow_frames_202
-.global ow_frames_203
-.global ow_frames_204
-.global ow_frames_205
-.global ow_frames_206
-.global ow_frames_207
-.global ow_frames_208
-.global ow_frames_209
-.global ow_frames_210
-.global ow_frames_211
-.global ow_frames_212
-.global ow_frames_213
-.global ow_frames_214
-.global ow_frames_215
-.global ow_frames_216
-.global ow_frames_217
-.global ow_frames_218
-.global ow_frames_219
-.global ow_frames_220
-.global ow_frames_221
-.global ow_frames_222
-.global ow_frames_223
-.global ow_frames_224
-.global ow_frames_225
-.global ow_frames_226
-.global ow_frames_227
-.global ow_frames_228
-.global ow_frames_229
-.global ow_frames_230
-.global ow_frames_231
-.global ow_frames_232
-.global ow_frames_233
-.global ow_frames_234
-.global ow_frames_235
-.global ow_frames_236
-.global ow_frames_237
-.global ow_frames_238
-.global ow_frames_239
-.global ow_frames_240
-.global ow_frames_241
-.global ow_frames_242
-.global ow_frames_243
-.global ow_frames_244
-.global ow_frames_245
-.global ow_frames_246
-.global ow_frames_247
-.global ow_frames_248
-.global ow_frames_249
-.global ow_frames_250
-.global ow_frames_251
-.global ow_frames_252
-.global ow_frames_253
-.global ow_frames_254
-.global ow_frames_255
-.global ow_frames_256
-.global ow_frames_257
-.global ow_frames_258
-.global ow_frames_259
-.global ow_frames_260
-.global ow_frames_261
-.global ow_frames_262
-.global ow_frames_263
-.global ow_frames_264
-.global ow_frames_265
-.global ow_frames_266
-.global ow_frames_267
-.global ow_frames_268
-.global ow_frames_269
-.global ow_frames_270
-.global ow_frames_271
-.global ow_frames_272
-.global ow_frames_273
-.global ow_frames_274
-.global ow_frames_275
-.global ow_frames_276
-.global ow_frames_277
-.global ow_frames_278
-.global ow_frames_279
-.global ow_frames_280
-.global ow_frames_281
-.global ow_frames_282
-.global ow_frames_283
-.global ow_frames_284
-.global ow_frames_285
-.global ow_frames_286
-.global ow_frames_287
-.global ow_frames_288
-.global ow_frames_289
-.global ow_frames_290
-.global ow_frames_291
-.global ow_frames_292
-.global ow_frames_293
-.global ow_frames_294
-.global ow_frames_295
-.global ow_frames_296
-.global ow_frames_297
-.global ow_frames_298
-.global ow_frames_299
-.global ow_frames_300
-.global ow_frames_301
-.global ow_frames_302
-.global ow_frames_303
-.global ow_frames_304
-.global ow_frames_305
-.global ow_frames_306
-.global ow_frames_307
-.global ow_frames_308
-.global ow_frames_309
-.global ow_frames_310
-.global ow_frames_311
-.global ow_frames_312
-.global ow_frames_313
-.global ow_frames_314
-.global ow_frames_315
-.global ow_frames_316
-.global ow_frames_317
-.global ow_frames_318
-.global ow_frames_319
-.global ow_frames_320
-.global ow_frames_321
-.global ow_frames_322
-.global ow_frames_323
-.global ow_frames_324
-.global ow_frames_325
-.global ow_frames_326
-.global ow_frames_327
-.global ow_frames_328
-.global ow_frames_329
-.global ow_frames_330
-.global ow_frames_331
-.global ow_frames_332
-.global ow_frames_333
-.global ow_frames_334
-.global ow_frames_335
-.global ow_frames_336
-.global ow_frames_337
-.global ow_frames_338
-.global ow_frames_339
-.global ow_frames_340
-.global ow_frames_341
-.global ow_frames_342
-.global ow_frames_343
-.global ow_frames_344
-.global ow_frames_345
-.global ow_frames_346
-.global ow_frames_347
-.global ow_frames_348
-.global ow_frames_349
-.global ow_frames_350
-.global ow_frames_351
-.global ow_frames_352
-.global ow_frames_353
-.global ow_frames_354
-.global ow_frames_355
-.global ow_frames_356
-.global ow_frames_357
-.global ow_frames_358
-.global ow_frames_359
-.global ow_frames_360
-.global ow_frames_361
-.global ow_frames_362
-.global ow_frames_363
-.global ow_frames_364
-.global ow_frames_365
-.global ow_frames_366
-.global ow_frames_367
-.global ow_frames_368
-.global ow_frames_369
-.global ow_frames_370
-.global ow_frames_371
-.global ow_frames_372
-.global ow_frames_373
-.global ow_frames_374
-.global ow_frames_375
-.global ow_frames_376
-.global ow_frames_377
-.global ow_frames_378
-.global ow_frames_379
-.global ow_frames_380
-.global ow_frames_381
-.global ow_frames_382
-.global ow_frames_383
-.global ow_frames_384
-.global ow_frames_385
-.global ow_frames_386
-.global ow_frames_387
-.global ow_frames_388
-.global ow_frames_389
-.global ow_frames_390
-.global ow_frames_391
-.global ow_frames_392
-.global ow_frames_393
-.global ow_frames_394
-.global ow_frames_395
-.global ow_frames_396
-.global ow_frames_397
-.global ow_frames_398
-.global ow_frames_399
-.global ow_frames_400
-.global ow_frames_401
-.global ow_frames_402
-.global ow_frames_403
-.global ow_frames_404
-.global ow_frames_405
-.global ow_frames_406
-.global ow_frames_407
-.global ow_frames_408
-.global ow_frames_409
-.global ow_frames_410
-.global ow_frames_411
-.global ow_frames_412
-.global ow_frames_413
-.global ow_frames_414
-.global ow_frames_415
-.global ow_frames_416
-.global ow_frames_417
-.global ow_frames_418
-.global ow_frames_419
-.global ow_frames_420
-.global ow_frames_421
-.global ow_frames_422
-.global ow_frames_423
-.global ow_frames_424
-.global ow_frames_425
-.global ow_frames_426
-.global ow_frames_427
-.global ow_frames_428
-.global ow_frames_429
-.global ow_frames_430
-.global ow_frames_431
-.global ow_frames_432
-.global ow_frames_433
-.global ow_frames_434
-.global ow_frames_435
-.global ow_frames_436
-.global ow_frames_437
-.global ow_frames_438
-.global ow_frames_439
-.global ow_frames_440
-.global ow_frames_441
-.global ow_frames_442
-.global ow_frames_443
-.global ow_frames_444
-.global ow_frames_445
-.global ow_frames_446
-.global ow_frames_447
-.global ow_frames_448
-.global ow_frames_449
-.global ow_frames_450
-.global ow_frames_451
-.global ow_frames_452
-.global ow_frames_453
-.global ow_frames_454
-.global ow_frames_455
-.global ow_frames_456
-.global ow_frames_457
-.global ow_frames_458
-.global ow_frames_459
-.global ow_frames_460
-.global ow_frames_461
-.global ow_frames_462
-.global ow_frames_463
-.global ow_frames_464
-.global ow_frames_465
-.global ow_frames_466
-.global ow_frames_467
-.global ow_frames_468
-.global ow_frames_469
-.global ow_frames_470
-.global ow_frames_471
-.global ow_frames_472
-.global ow_frames_473
-.global ow_frames_474
-.global ow_frames_475
-.global ow_frames_476
-.global ow_frames_477
-.global ow_frames_478
-.global ow_frames_479
-.global ow_frames_480
-.global ow_frames_481
-.global ow_frames_482
-.global ow_frames_483
-.global ow_frames_484
-.global ow_frames_485
-.global ow_frames_486
-.global ow_frames_487
-.global ow_frames_488
-.global ow_frames_489
-.global ow_frames_490
-.global ow_frames_491
-.global ow_frames_492
-.global ow_frames_493
-.global ow_frames_494
-.global ow_frames_495
-.global ow_frames_496
-.global ow_frames_497
-.global ow_frames_498
-.global ow_frames_499
-.global ow_frames_500
-.global ow_frames_501
-.global ow_frames_502
-.global ow_frames_503
-.global ow_frames_504
-.global ow_frames_505
-.global ow_frames_506
-.global ow_frames_507
-.global ow_frames_508
-.global ow_frames_509
-.global ow_frames_510
-.global ow_frames_511
-.global ow_frames_512
-.global ow_frames_513
-.global ow_frames_514
-.global ow_frames_515
-.global ow_frames_516
-.global ow_frames_517
-.global ow_frames_518
-.global ow_frames_519
-.global ow_frames_520
-.global ow_frames_521
-.global ow_frames_522
-.global ow_frames_523
-.global ow_frames_524
-.global ow_frames_525
-.global ow_frames_526
-.global ow_frames_527
-.global ow_frames_528
-.global ow_frames_529
-.global ow_frames_530
-.global ow_frames_531
-.global ow_frames_532
-.global ow_frames_533
-.global ow_frames_534
-.global ow_frames_535
-.global ow_frames_536
-.global ow_frames_537
-.global ow_frames_538
-.global ow_frames_539
-.global ow_frames_540
-.global ow_frames_541
-.global ow_frames_542
-.global ow_frames_543
-.global ow_frames_544
-.global ow_frames_545
-.global ow_frames_546
-.global ow_frames_547
-.global ow_frames_548
-.global ow_frames_549
-.global ow_frames_550
-.global ow_frames_551
-.global ow_frames_552
-.global ow_frames_553
-.global ow_frames_554
-.global ow_frames_555
-.global ow_frames_556
-.global ow_frames_557
-.global ow_frames_558
-.global ow_frames_559
-.global ow_frames_560
-.global ow_frames_561
-.global ow_frames_562
-.global ow_frames_563
-.global ow_frames_564
-.global ow_frames_565
-.global ow_frames_566
-.global ow_frames_567
-.global ow_frames_568
-.global ow_frames_569
-.global ow_frames_570
-.global ow_frames_571
-.global ow_frames_572
-.global ow_frames_573
-.global ow_frames_574
-.global ow_frames_575
-.global ow_frames_576
-.global ow_frames_577
-.global ow_frames_578
-.global ow_frames_579
-.global ow_frames_580
-.global ow_frames_581
-.global ow_frames_582
-.global ow_frames_583
-.global ow_frames_584
-.global ow_frames_585
-.global ow_frames_586
-.global ow_frames_587
-.global ow_frames_588
-.global ow_frames_589
-.global ow_frames_590
-.global ow_frames_591
-.global ow_frames_592
-.global ow_frames_593
-.global ow_frames_594
-.global ow_frames_595
-.global ow_frames_596
-.global ow_frames_597
-.global ow_frames_598
-.global ow_frames_599
-.global ow_frames_600
-.global ow_frames_601
-.global ow_frames_602
-.global ow_frames_603
-.global ow_frames_604
-.global ow_frames_605
-.global ow_frames_606
-.global ow_frames_607
-.global ow_frames_608
-.global ow_frames_609
-.global ow_frames_610
-.global ow_frames_611
-.global ow_frames_612
-.global ow_frames_613
-.global ow_frames_614
-.global ow_frames_615
-.global ow_frames_616
-.global ow_frames_617
-.global ow_frames_618
-.global ow_frames_619
-.global ow_frames_620
-.global ow_frames_621
-.global ow_frames_622
-.global ow_frames_623
-.global ow_frames_624
-.global ow_frames_625
-.global ow_frames_626
-.global ow_frames_627
-.global ow_frames_628
-.global ow_frames_629
-.global ow_frames_630
-.global ow_frames_631
-.global ow_frames_632
-.global ow_frames_633
-.global ow_frames_634
-.global ow_frames_635
-.global ow_frames_636
-.global ow_frames_637
-.global ow_frames_638
-.global ow_frames_639
-.global ow_frames_640
-.global ow_frames_641
-.global ow_frames_642
-.global ow_frames_643
-.global ow_frames_644
-.global ow_frames_645
-.global ow_frames_646
-.global ow_frames_647
-.global ow_frames_648
-.global ow_frames_649
-.global ow_frames_650
-.global ow_frames_651
-.global ow_frames_652
-.global ow_frames_653
-.global ow_frames_654
-.global ow_frames_655
-.global ow_frames_656
-.global ow_frames_657
-.global ow_frames_658
-.global ow_frames_659
-.global ow_frames_660
-.global ow_frames_661
-.global ow_frames_662
-.global ow_frames_663
-.global ow_frames_664
-.global ow_frames_665
-.global ow_frames_666
-.global ow_frames_667
-.global ow_frames_668
-.global ow_frames_669
-.global ow_frames_670
-.global ow_frames_671
-.global ow_frames_672
-.global ow_frames_673
-.global ow_frames_674
-.global ow_frames_675
-.global ow_frames_676
-.global ow_frames_677
-.global ow_frames_678
-.global ow_frames_679
-.global ow_frames_680
-.global ow_frames_681
-.global ow_frames_682
-.global ow_frames_683
-.global ow_frames_684
-.global ow_frames_685
-.global ow_frames_686
-.global ow_frames_687
-.global ow_frames_688
-.global ow_frames_689
-.global ow_frames_690
-.global ow_frames_691
-.global ow_frames_692
-.global ow_frames_693
-.global ow_frames_694
-.global ow_frames_695
-.global ow_frames_696
-.global ow_frames_697
-.global ow_frames_698
-.global ow_frames_699
-.global ow_frames_700
-.global ow_frames_701
-.global ow_frames_702
-.global ow_frames_703
-.global ow_frames_704
-.global ow_frames_705
-.global ow_frames_706
-.global ow_frames_707
-.global ow_frames_708
-.global ow_frames_709
-.global ow_frames_710
-.global ow_frames_711
-.global ow_frames_712
-.global ow_frames_713
-.global ow_frames_714
-.global ow_frames_715
-.global ow_frames_716
-.global ow_frames_717
-.global ow_frames_718
-.global ow_frames_719
-.global ow_frames_720
-.global ow_frames_721
-.global ow_frames_722
-.global ow_frames_723
-.global ow_frames_724
-.global ow_frames_725
-.global ow_frames_726
-.global ow_frames_727
-.global ow_frames_728
-.global ow_frames_729
-.global ow_frames_730
-.global ow_frames_731
-.global ow_frames_732
-.global ow_frames_733
-.global ow_frames_734
-.global ow_frames_735
-.global ow_frames_736
-.global ow_frames_737
-.global ow_frames_738
-.global ow_frames_739
-.global ow_frames_740
-.global ow_frames_741
-.global ow_frames_742
-.global ow_frames_743
-.global ow_frames_744
-.global ow_frames_745
-.global ow_frames_746
-.global ow_frames_747
-.global ow_frames_748
-.global ow_frames_749
-.global ow_frames_750
-.global ow_frames_751
-.global ow_frames_752
-.global ow_frames_753
-.global ow_frames_754
-.global ow_frames_755
-.global ow_frames_756
-.global ow_frames_757
-.global ow_frames_758
-.global ow_frames_759
-.global ow_frames_760
-.global ow_frames_761
-.global ow_frames_762
-.global ow_frames_763
-.global ow_frames_764
-.global ow_frames_765
-.global ow_frames_766
-.global ow_frames_767
-.global ow_frames_768
-
-.align 2
-ow_frames_0:
-.word ow_0000Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(9*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(10*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(11*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(12*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(13*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(14*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(15*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(16*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(17*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(18*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0000Tiles+(19*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_1:
-.word ow_0001Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0001Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0001Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0001Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0001Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0001Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0001Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0001Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0001Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_2:
-.word ow_0002Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0002Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0002Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0002Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0002Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0002Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0002Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0002Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0002Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0002Tiles+(9*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0002Tiles+(10*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0002Tiles+(11*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_3:
-.word ow_0003Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0003Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0003Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0003Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0003Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0003Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0003Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0003Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0003Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_4:
-.word ow_0004Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0004Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0004Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0004Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0004Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0004Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0004Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0004Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0004Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_5:
-.word ow_0003Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0003Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0003Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0003Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0003Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0003Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0003Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0003Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0003Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_6:
-.word ow_0006Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0006Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0006Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0006Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0006Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0006Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_7:
-.word ow_0007Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(9*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(10*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(11*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(12*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(13*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(14*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(15*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(16*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(17*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(18*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0007Tiles+(19*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_8:
-.word ow_0008Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0008Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0008Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0008Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0008Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0008Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0008Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0008Tiles+(7*0x200)
+.global ow_frames_npcs_0000
+.global ow_frames_npcs_0001
+.global ow_frames_npcs_0002
+.global ow_frames_npcs_0003
+.global ow_frames_npcs_0004
+.global ow_frames_npcs_0005
+.global ow_frames_npcs_0006
+.global ow_frames_npcs_0007
+.global ow_frames_npcs_0008
+.global ow_frames_npcs_0009
+.global ow_frames_npcs_0010
+.global ow_frames_npcs_0011
+.global ow_frames_npcs_0012
+.global ow_frames_npcs_0013
+.global ow_frames_npcs_0014
+.global ow_frames_npcs_0015
+.global ow_frames_npcs_0016
+.global ow_frames_npcs_0017
+.global ow_frames_npcs_0018
+.global ow_frames_npcs_0019
+.global ow_frames_npcs_0020
+.global ow_frames_npcs_0021
+.global ow_frames_npcs_0022
+.global ow_frames_npcs_0023
+.global ow_frames_npcs_0024
+.global ow_frames_npcs_0025
+.global ow_frames_npcs_0026
+.global ow_frames_npcs_0027
+.global ow_frames_npcs_0028
+.global ow_frames_npcs_0029
+.global ow_frames_npcs_0030
+.global ow_frames_npcs_0031
+.global ow_frames_npcs_0032
+.global ow_frames_npcs_0033
+.global ow_frames_npcs_0034
+.global ow_frames_npcs_0035
+.global ow_frames_npcs_0036
+.global ow_frames_npcs_0037
+.global ow_frames_npcs_0038
+.global ow_frames_npcs_0039
+.global ow_frames_npcs_0040
+.global ow_frames_npcs_0041
+.global ow_frames_npcs_0042
+.global ow_frames_npcs_0043
+.global ow_frames_npcs_0044
+.global ow_frames_npcs_0045
+.global ow_frames_npcs_0046
+.global ow_frames_npcs_0047
+.global ow_frames_npcs_0048
+.global ow_frames_npcs_0049
+.global ow_frames_npcs_0050
+.global ow_frames_npcs_0051
+.global ow_frames_npcs_0052
+.global ow_frames_npcs_0053
+.global ow_frames_npcs_0054
+.global ow_frames_npcs_0055
+.global ow_frames_npcs_0056
+.global ow_frames_npcs_0057
+.global ow_frames_npcs_0058
+.global ow_frames_npcs_0059
+.global ow_frames_npcs_0060
+.global ow_frames_npcs_0061
+.global ow_frames_npcs_0062
+.global ow_frames_npcs_0063
+.global ow_frames_npcs_0064
+.global ow_frames_npcs_0065
+.global ow_frames_npcs_0066
+.global ow_frames_npcs_0067
+.global ow_frames_npcs_0068
+.global ow_frames_npcs_0069
+.global ow_frames_npcs_0070
+.global ow_frames_npcs_0071
+.global ow_frames_npcs_0072
+.global ow_frames_npcs_0073
+.global ow_frames_npcs_0074
+.global ow_frames_npcs_0075
+.global ow_frames_npcs_0076
+.global ow_frames_npcs_0077
+.global ow_frames_npcs_0078
+.global ow_frames_npcs_0079
+.global ow_frames_npcs_0080
+.global ow_frames_npcs_0081
+.global ow_frames_npcs_0082
+.global ow_frames_npcs_0083
+.global ow_frames_npcs_0084
+.global ow_frames_npcs_0085
+.global ow_frames_npcs_0086
+.global ow_frames_npcs_0087
+.global ow_frames_npcs_0088
+.global ow_frames_npcs_0089
+.global ow_frames_npcs_0090
+.global ow_frames_npcs_0091
+.global ow_frames_npcs_0092
+.global ow_frames_npcs_0093
+.global ow_frames_npcs_0094
+.global ow_frames_npcs_0095
+.global ow_frames_npcs_0096
+.global ow_frames_npcs_0097
+.global ow_frames_npcs_0098
+.global ow_frames_npcs_0099
+.global ow_frames_npcs_0100
+.global ow_frames_npcs_0101
+.global ow_frames_npcs_0102
+.global ow_frames_npcs_0103
+.global ow_frames_npcs_0104
+.global ow_frames_npcs_0105
+.global ow_frames_npcs_0106
+.global ow_frames_npcs_0107
+.global ow_frames_npcs_0108
+.global ow_frames_npcs_0109
+.global ow_frames_npcs_0110
+.global ow_frames_npcs_0111
+.global ow_frames_npcs_0112
+.global ow_frames_npcs_0113
+.global ow_frames_npcs_0114
+.global ow_frames_npcs_0115
+.global ow_frames_npcs_0116
+.global ow_frames_npcs_0117
+.global ow_frames_npcs_0118
+.global ow_frames_npcs_0119
+.global ow_frames_npcs_0120
+.global ow_frames_npcs_0121
+.global ow_frames_npcs_0122
+.global ow_frames_npcs_0123
+.global ow_frames_npcs_0124
+.global ow_frames_npcs_0125
+.global ow_frames_npcs_0126
+.global ow_frames_npcs_0127
+.global ow_frames_npcs_0128
+.global ow_frames_npcs_0129
+.global ow_frames_npcs_0130
+.global ow_frames_npcs_0131
+.global ow_frames_npcs_0132
+.global ow_frames_npcs_0133
+.global ow_frames_npcs_0134
+.global ow_frames_npcs_0135
+.global ow_frames_npcs_0136
+.global ow_frames_npcs_0137
+.global ow_frames_npcs_0138
+.global ow_frames_npcs_0139
+.global ow_frames_npcs_0140
+.global ow_frames_npcs_0141
+.global ow_frames_npcs_0142
+.global ow_frames_npcs_0143
+.global ow_frames_npcs_0144
+.global ow_frames_npcs_0145
+.global ow_frames_npcs_0146
+.global ow_frames_npcs_0147
+.global ow_frames_npcs_0148
+.global ow_frames_npcs_0149
+.global ow_frames_npcs_0150
+.global ow_frames_npcs_0151
+.global ow_frames_npcs_0152
+.global ow_frames_npcs_0153
+.global ow_frames_npcs_0154
+.global ow_frames_npcs_0155
+.global ow_frames_npcs_0156
+.global ow_frames_npcs_0157
+.global ow_frames_npcs_0158
+.global ow_frames_npcs_0159
+.global ow_frames_npcs_0160
+.global ow_frames_npcs_0161
+.global ow_frames_npcs_0162
+.global ow_frames_npcs_0163
+.global ow_frames_npcs_0164
+.global ow_frames_npcs_0165
+.global ow_frames_npcs_0166
+.global ow_frames_npcs_0167
+.global ow_frames_npcs_0168
+.global ow_frames_npcs_0169
+.global ow_frames_npcs_0170
+.global ow_frames_npcs_0171
+.global ow_frames_npcs_0172
+.global ow_frames_npcs_0173
+.global ow_frames_npcs_0174
+.global ow_frames_npcs_0175
+.global ow_frames_npcs_0176
+.global ow_frames_npcs_0177
+.global ow_frames_npcs_0178
+.global ow_frames_npcs_0179
+.global ow_frames_npcs_0180
+.global ow_frames_npcs_0181
+.global ow_frames_npcs_0182
+.global ow_frames_npcs_0183
+.global ow_frames_npcs_0184
+.global ow_frames_npcs_0185
+.global ow_frames_npcs_0186
+.global ow_frames_npcs_0187
+.global ow_frames_npcs_0188
+.global ow_frames_npcs_0189
+.global ow_frames_npcs_0190
+.global ow_frames_npcs_0191
+.global ow_frames_npcs_0192
+.global ow_frames_npcs_0193
+.global ow_frames_npcs_0194
+.global ow_frames_npcs_0195
+.global ow_frames_npcs_0196
+.global ow_frames_npcs_0197
+.global ow_frames_npcs_0198
+.global ow_frames_npcs_0199
+.global ow_frames_npcs_0200
+.global ow_frames_npcs_0201
+.global ow_frames_npcs_0202
+.global ow_frames_npcs_0203
+.global ow_frames_npcs_0204
+.global ow_frames_npcs_0205
+.global ow_frames_npcs_0206
+.global ow_frames_npcs_0207
+.global ow_frames_npcs_0208
+.global ow_frames_npcs_0209
+.global ow_frames_npcs_0210
+.global ow_frames_npcs_0211
+.global ow_frames_npcs_0212
+.global ow_frames_npcs_0213
+.global ow_frames_npcs_0214
+.global ow_frames_npcs_0215
+.global ow_frames_npcs_0216
+.global ow_frames_npcs_0217
+.global ow_frames_npcs_0218
+.global ow_frames_npcs_0219
+.global ow_frames_npcs_0220
+.global ow_frames_npcs_0221
+.global ow_frames_npcs_0222
+.global ow_frames_npcs_0223
+.global ow_frames_npcs_0224
+.global ow_frames_npcs_0225
+.global ow_frames_npcs_0226
+.global ow_frames_npcs_0227
+.global ow_frames_npcs_0228
+.global ow_frames_npcs_0229
+.global ow_frames_npcs_0230
+.global ow_frames_npcs_0231
+.global ow_frames_npcs_0232
+.global ow_frames_npcs_0233
+.global ow_frames_npcs_0234
+.global ow_frames_npcs_0235
+.global ow_frames_npcs_0236
+.global ow_frames_npcs_0237
+.global ow_frames_npcs_0238
+.global ow_frames_npcs_0239
+.global ow_frames_npcs_0240
+.global ow_frames_npcs_0241
+.global ow_frames_npcs_0242
+.global ow_frames_npcs_0243
+.global ow_frames_npcs_0244
+.global ow_frames_npcs_0245
+.global ow_frames_npcs_0246
+.global ow_frames_npcs_0247
+.global ow_frames_npcs_0248
+.global ow_frames_npcs_0249
+.global ow_frames_npcs_0250
+.global ow_frames_npcs_0251
+.global ow_frames_npcs_0252
+.global ow_frames_npcs_0253
+.global ow_frames_npcs_0254
+.global ow_frames_npcs_0255
+.global ow_frames_poke_0000
+.global ow_frames_poke_0001
+.global ow_frames_poke_0002
+.global ow_frames_poke_0003
+.global ow_frames_poke_0004
+.global ow_frames_poke_0005
+.global ow_frames_poke_0006
+.global ow_frames_poke_0007
+.global ow_frames_poke_0008
+.global ow_frames_poke_0009
+.global ow_frames_poke_0010
+.global ow_frames_poke_0011
+.global ow_frames_poke_0012
+.global ow_frames_poke_0013
+.global ow_frames_poke_0014
+.global ow_frames_poke_0015
+.global ow_frames_poke_0016
+.global ow_frames_poke_0017
+.global ow_frames_poke_0018
+.global ow_frames_poke_0019
+.global ow_frames_poke_0020
+.global ow_frames_poke_0021
+.global ow_frames_poke_0022
+.global ow_frames_poke_0023
+.global ow_frames_poke_0024
+.global ow_frames_poke_0025
+.global ow_frames_poke_0026
+.global ow_frames_poke_0027
+.global ow_frames_poke_0028
+.global ow_frames_poke_0029
+.global ow_frames_poke_0030
+.global ow_frames_poke_0031
+.global ow_frames_poke_0032
+.global ow_frames_poke_0033
+.global ow_frames_poke_0034
+.global ow_frames_poke_0035
+.global ow_frames_poke_0036
+.global ow_frames_poke_0037
+.global ow_frames_poke_0038
+.global ow_frames_poke_0039
+.global ow_frames_poke_0040
+.global ow_frames_poke_0041
+.global ow_frames_poke_0042
+.global ow_frames_poke_0043
+.global ow_frames_poke_0044
+.global ow_frames_poke_0045
+.global ow_frames_poke_0046
+.global ow_frames_poke_0047
+.global ow_frames_poke_0048
+.global ow_frames_poke_0049
+.global ow_frames_poke_0050
+.global ow_frames_poke_0051
+.global ow_frames_poke_0052
+.global ow_frames_poke_0053
+.global ow_frames_poke_0054
+.global ow_frames_poke_0055
+.global ow_frames_poke_0056
+.global ow_frames_poke_0057
+.global ow_frames_poke_0058
+.global ow_frames_poke_0059
+.global ow_frames_poke_0060
+.global ow_frames_poke_0061
+.global ow_frames_poke_0062
+.global ow_frames_poke_0063
+.global ow_frames_poke_0064
+.global ow_frames_poke_0065
+.global ow_frames_poke_0066
+.global ow_frames_poke_0067
+.global ow_frames_poke_0068
+.global ow_frames_poke_0069
+.global ow_frames_poke_0070
+.global ow_frames_poke_0071
+.global ow_frames_poke_0072
+.global ow_frames_poke_0073
+.global ow_frames_poke_0074
+.global ow_frames_poke_0075
+.global ow_frames_poke_0076
+.global ow_frames_poke_0077
+.global ow_frames_poke_0078
+.global ow_frames_poke_0079
+.global ow_frames_poke_0080
+.global ow_frames_poke_0081
+.global ow_frames_poke_0082
+.global ow_frames_poke_0083
+.global ow_frames_poke_0084
+.global ow_frames_poke_0085
+.global ow_frames_poke_0086
+.global ow_frames_poke_0087
+.global ow_frames_poke_0088
+.global ow_frames_poke_0089
+.global ow_frames_poke_0090
+.global ow_frames_poke_0091
+.global ow_frames_poke_0092
+.global ow_frames_poke_0093
+.global ow_frames_poke_0094
+.global ow_frames_poke_0095
+.global ow_frames_poke_0096
+.global ow_frames_poke_0097
+.global ow_frames_poke_0098
+.global ow_frames_poke_0099
+.global ow_frames_poke_0100
+.global ow_frames_poke_0101
+.global ow_frames_poke_0102
+.global ow_frames_poke_0103
+.global ow_frames_poke_0104
+.global ow_frames_poke_0105
+.global ow_frames_poke_0106
+.global ow_frames_poke_0107
+.global ow_frames_poke_0108
+.global ow_frames_poke_0109
+.global ow_frames_poke_0110
+.global ow_frames_poke_0111
+.global ow_frames_poke_0112
+.global ow_frames_poke_0113
+.global ow_frames_poke_0114
+.global ow_frames_poke_0115
+.global ow_frames_poke_0116
+.global ow_frames_poke_0117
+.global ow_frames_poke_0118
+.global ow_frames_poke_0119
+.global ow_frames_poke_0120
+.global ow_frames_poke_0121
+.global ow_frames_poke_0122
+.global ow_frames_poke_0123
+.global ow_frames_poke_0124
+.global ow_frames_poke_0125
+.global ow_frames_poke_0126
+.global ow_frames_poke_0127
+.global ow_frames_poke_0128
+.global ow_frames_poke_0129
+.global ow_frames_poke_0130
+.global ow_frames_poke_0131
+.global ow_frames_poke_0132
+.global ow_frames_poke_0133
+.global ow_frames_poke_0134
+.global ow_frames_poke_0135
+.global ow_frames_poke_0136
+.global ow_frames_poke_0137
+.global ow_frames_poke_0138
+.global ow_frames_poke_0139
+.global ow_frames_poke_0140
+.global ow_frames_poke_0141
+.global ow_frames_poke_0142
+.global ow_frames_poke_0143
+.global ow_frames_poke_0144
+.global ow_frames_poke_0145
+.global ow_frames_poke_0146
+.global ow_frames_poke_0147
+.global ow_frames_poke_0148
+.global ow_frames_poke_0149
+.global ow_frames_poke_0150
+.global ow_frames_poke_0151
+.global ow_frames_poke_0152
+.global ow_frames_poke_0153
+.global ow_frames_poke_0154
+.global ow_frames_poke_0155
+.global ow_frames_poke_0156
+.global ow_frames_poke_0157
+.global ow_frames_poke_0158
+.global ow_frames_poke_0159
+.global ow_frames_poke_0160
+.global ow_frames_poke_0161
+.global ow_frames_poke_0162
+.global ow_frames_poke_0163
+.global ow_frames_poke_0164
+.global ow_frames_poke_0165
+.global ow_frames_poke_0166
+.global ow_frames_poke_0167
+.global ow_frames_poke_0168
+.global ow_frames_poke_0169
+.global ow_frames_poke_0170
+.global ow_frames_poke_0171
+.global ow_frames_poke_0172
+.global ow_frames_poke_0173
+.global ow_frames_poke_0174
+.global ow_frames_poke_0175
+.global ow_frames_poke_0176
+.global ow_frames_poke_0177
+.global ow_frames_poke_0178
+.global ow_frames_poke_0179
+.global ow_frames_poke_0180
+.global ow_frames_poke_0181
+.global ow_frames_poke_0182
+.global ow_frames_poke_0183
+.global ow_frames_poke_0184
+.global ow_frames_poke_0185
+.global ow_frames_poke_0186
+.global ow_frames_poke_0187
+.global ow_frames_poke_0188
+.global ow_frames_poke_0189
+.global ow_frames_poke_0190
+.global ow_frames_poke_0191
+.global ow_frames_poke_0192
+.global ow_frames_poke_0193
+.global ow_frames_poke_0194
+.global ow_frames_poke_0195
+.global ow_frames_poke_0196
+.global ow_frames_poke_0197
+.global ow_frames_poke_0198
+.global ow_frames_poke_0199
+.global ow_frames_poke_0200
+.global ow_frames_poke_0201
+.global ow_frames_poke_0202
+.global ow_frames_poke_0203
+.global ow_frames_poke_0204
+.global ow_frames_poke_0205
+.global ow_frames_poke_0206
+.global ow_frames_poke_0207
+.global ow_frames_poke_0208
+.global ow_frames_poke_0209
+.global ow_frames_poke_0210
+.global ow_frames_poke_0211
+.global ow_frames_poke_0212
+.global ow_frames_poke_0213
+.global ow_frames_poke_0214
+.global ow_frames_poke_0215
+.global ow_frames_poke_0216
+.global ow_frames_poke_0217
+.global ow_frames_poke_0218
+.global ow_frames_poke_0219
+.global ow_frames_poke_0220
+.global ow_frames_poke_0221
+.global ow_frames_poke_0222
+.global ow_frames_poke_0223
+.global ow_frames_poke_0224
+.global ow_frames_poke_0225
+.global ow_frames_poke_0226
+.global ow_frames_poke_0227
+.global ow_frames_poke_0228
+.global ow_frames_poke_0229
+.global ow_frames_poke_0230
+.global ow_frames_poke_0231
+.global ow_frames_poke_0232
+.global ow_frames_poke_0233
+.global ow_frames_poke_0234
+.global ow_frames_poke_0235
+.global ow_frames_poke_0236
+.global ow_frames_poke_0237
+.global ow_frames_poke_0238
+.global ow_frames_poke_0239
+.global ow_frames_poke_0240
+.global ow_frames_poke_0241
+.global ow_frames_poke_0242
+.global ow_frames_poke_0243
+.global ow_frames_poke_0244
+.global ow_frames_poke_0245
+.global ow_frames_poke_0246
+.global ow_frames_poke_0247
+.global ow_frames_poke_0248
+.global ow_frames_poke_0249
+.global ow_frames_poke_0250
+.global ow_frames_poke_0251
+.global ow_frames_poke_0252
+.global ow_frames_poke_0253
+.global ow_frames_poke_0254
+.global ow_frames_poke_0255
+.global ow_frames_poke_leg_0000
+.global ow_frames_poke_leg_0001
+.global ow_frames_poke_leg_0002
+.global ow_frames_poke_leg_0003
+.global ow_frames_poke_leg_0004
+.global ow_frames_poke_leg_0005
+.global ow_frames_poke_leg_0006
+.global ow_frames_poke_leg_0007
+.global ow_frames_poke_leg_0008
+.global ow_frames_poke_leg_0009
+.global ow_frames_poke_leg_0010
+.global ow_frames_poke_leg_0011
+.global ow_frames_poke_leg_0012
+.global ow_frames_poke_leg_0013
+.global ow_frames_poke_leg_0014
+.global ow_frames_poke_leg_0015
+.global ow_frames_poke_leg_0016
+.global ow_frames_poke_leg_0017
+.global ow_frames_poke_leg_0018
+.global ow_frames_poke_leg_0019
+.global ow_frames_poke_leg_0020
+.global ow_frames_poke_leg_0021
+.global ow_frames_poke_leg_0022
+.global ow_frames_poke_leg_0023
+.global ow_frames_poke_leg_0024
+.global ow_frames_poke_leg_0025
+.global ow_frames_poke_leg_0026
+.global ow_frames_poke_leg_0027
+.global ow_frames_poke_leg_0028
+.global ow_frames_poke_leg_0029
+.global ow_frames_poke_leg_0030
+.global ow_frames_poke_leg_0031
+.global ow_frames_poke_leg_0032
+.global ow_frames_poke_leg_0033
+.global ow_frames_poke_leg_0034
+.global ow_frames_poke_leg_0035
+.global ow_frames_poke_leg_0036
+.global ow_frames_poke_leg_0037
+.global ow_frames_poke_leg_0038
+.global ow_frames_poke_leg_0039
+.global ow_frames_poke_leg_0040
+.global ow_frames_poke_leg_0041
+.global ow_frames_poke_leg_0042
+.global ow_frames_poke_leg_0043
+.global ow_frames_poke_leg_0044
+.global ow_frames_poke_leg_0045
+.global ow_frames_poke_leg_0046
+.global ow_frames_poke_leg_0047
+.global ow_frames_poke_leg_0048
+.global ow_frames_poke_leg_0049
+.global ow_frames_poke_leg_0050
+.global ow_frames_poke_leg_0051
+.global ow_frames_poke_leg_0052
+.global ow_frames_poke_leg_0053
+.global ow_frames_poke_leg_0054
+.global ow_frames_poke_leg_0055
+.global ow_frames_poke_leg_0056
+.global ow_frames_poke_leg_0057
+.global ow_frames_poke_leg_0058
+.global ow_frames_poke_leg_0059
+.global ow_frames_poke_leg_0060
+.global ow_frames_poke_leg_0061
+.global ow_frames_poke_leg_0062
+.global ow_frames_poke_leg_0063
+.global ow_frames_poke_leg_0064
+.global ow_frames_poke_leg_0065
+.global ow_frames_poke_leg_0066
+.global ow_frames_poke_leg_0067
+.global ow_frames_poke_leg_0068
+.global ow_frames_poke_leg_0069
+.global ow_frames_poke_leg_0070
+.global ow_frames_poke_leg_0071
+.global ow_frames_poke_leg_0072
+.global ow_frames_poke_leg_0073
+.global ow_frames_poke_leg_0074
+.global ow_frames_poke_leg_0075
+.global ow_frames_poke_leg_0076
+.global ow_frames_poke_leg_0077
+.global ow_frames_poke_leg_0078
+.global ow_frames_poke_leg_0079
+.global ow_frames_poke_leg_0080
+.global ow_frames_poke_leg_0081
+.global ow_frames_poke_leg_0082
+.global ow_frames_poke_leg_0083
+.global ow_frames_poke_leg_0084
+.global ow_frames_poke_leg_0085
+.global ow_frames_poke_leg_0086
+.global ow_frames_poke_leg_0087
+.global ow_frames_poke_leg_0088
+.global ow_frames_poke_leg_0089
+.global ow_frames_poke_leg_0090
+.global ow_frames_poke_leg_0091
+.global ow_frames_poke_leg_0092
+.global ow_frames_poke_leg_0093
+.global ow_frames_poke_leg_0094
+.global ow_frames_poke_leg_0095
+.global ow_frames_poke_leg_0096
+.global ow_frames_poke_leg_0097
+.global ow_frames_poke_leg_0098
+.global ow_frames_poke_leg_0099
+.global ow_frames_poke_leg_0100
+.global ow_frames_poke_leg_0101
+.global ow_frames_poke_leg_0102
+.global ow_frames_poke_leg_0103
+.global ow_frames_poke_leg_0104
+.global ow_frames_poke_leg_0105
+.global ow_frames_poke_leg_0106
+.global ow_frames_poke_leg_0107
+.global ow_frames_poke_leg_0108
+.global ow_frames_poke_leg_0109
+.global ow_frames_poke_leg_0110
+.global ow_frames_poke_leg_0111
+.global ow_frames_poke_leg_0112
+.global ow_frames_poke_leg_0113
+.global ow_frames_poke_leg_0114
+.global ow_frames_poke_leg_0115
+.global ow_frames_poke_leg_0116
+.global ow_frames_poke_leg_0117
+.global ow_frames_poke_leg_0118
+.global ow_frames_poke_leg_0119
+.global ow_frames_poke_leg_0120
+.global ow_frames_poke_leg_0121
+.global ow_frames_poke_leg_0122
+.global ow_frames_poke_leg_0123
+.global ow_frames_poke_leg_0124
+.global ow_frames_poke_leg_0125
+.global ow_frames_poke_leg_0126
+.global ow_frames_poke_leg_0127
+.global ow_frames_poke_leg_0128
+.global ow_frames_poke_leg_0129
+.global ow_frames_poke_leg_0130
+.global ow_frames_poke_leg_0131
+.global ow_frames_poke_leg_0132
+.global ow_frames_poke_leg_0133
+.global ow_frames_poke_leg_0134
+.global ow_frames_poke_leg_0135
+.global ow_frames_poke_leg_0136
+.global ow_frames_poke_leg_0137
+.global ow_frames_poke_leg_0138
+.global ow_frames_poke_leg_0139
+.global ow_frames_poke_leg_0140
+.global ow_frames_poke_leg_0141
+.global ow_frames_poke_leg_0142
+.global ow_frames_poke_leg_0143
+.global ow_frames_poke_leg_0144
+.global ow_frames_poke_leg_0145
+.global ow_frames_poke_leg_0146
+.global ow_frames_poke_leg_0147
+.global ow_frames_poke_leg_0148
+.global ow_frames_poke_leg_0149
+.global ow_frames_poke_leg_0150
+.global ow_frames_poke_leg_0151
+.global ow_frames_poke_leg_0152
+.global ow_frames_poke_leg_0153
+.global ow_frames_poke_leg_0154
+.global ow_frames_poke_leg_0155
+.global ow_frames_poke_leg_0156
+.global ow_frames_poke_leg_0157
+.global ow_frames_poke_leg_0158
+.global ow_frames_poke_leg_0159
+.global ow_frames_poke_leg_0160
+.global ow_frames_poke_leg_0161
+.global ow_frames_poke_leg_0162
+.global ow_frames_poke_leg_0163
+.global ow_frames_poke_leg_0164
+.global ow_frames_poke_leg_0165
+.global ow_frames_poke_leg_0166
+.global ow_frames_poke_leg_0167
+.global ow_frames_poke_leg_0168
+.global ow_frames_poke_leg_0169
+.global ow_frames_poke_leg_0170
+.global ow_frames_poke_leg_0171
+.global ow_frames_poke_leg_0172
+.global ow_frames_poke_leg_0173
+.global ow_frames_poke_leg_0174
+.global ow_frames_poke_leg_0175
+.global ow_frames_poke_leg_0176
+.global ow_frames_poke_leg_0177
+.global ow_frames_poke_leg_0178
+.global ow_frames_poke_leg_0179
+.global ow_frames_poke_leg_0180
+.global ow_frames_poke_leg_0181
+.global ow_frames_poke_leg_0182
+.global ow_frames_poke_leg_0183
+.global ow_frames_poke_leg_0184
+.global ow_frames_poke_leg_0185
+.global ow_frames_poke_leg_0186
+.global ow_frames_poke_leg_0187
+.global ow_frames_poke_leg_0188
+.global ow_frames_poke_leg_0189
+.global ow_frames_poke_leg_0190
+.global ow_frames_poke_leg_0191
+.global ow_frames_poke_leg_0192
+.global ow_frames_poke_leg_0193
+.global ow_frames_poke_leg_0194
+.global ow_frames_poke_leg_0195
+.global ow_frames_poke_leg_0196
+.global ow_frames_poke_leg_0197
+.global ow_frames_poke_leg_0198
+.global ow_frames_poke_leg_0199
+.global ow_frames_poke_leg_0200
+.global ow_frames_poke_leg_0201
+.global ow_frames_poke_leg_0202
+.global ow_frames_poke_leg_0203
+.global ow_frames_poke_leg_0204
+.global ow_frames_poke_leg_0205
+.global ow_frames_poke_leg_0206
+.global ow_frames_poke_leg_0207
+.global ow_frames_poke_leg_0208
+.global ow_frames_poke_leg_0209
+.global ow_frames_poke_leg_0210
+.global ow_frames_poke_leg_0211
+.global ow_frames_poke_leg_0212
+.global ow_frames_poke_leg_0213
+.global ow_frames_poke_leg_0214
+.global ow_frames_poke_leg_0215
+.global ow_frames_poke_leg_0216
+.global ow_frames_poke_leg_0217
+.global ow_frames_poke_leg_0218
+.global ow_frames_poke_leg_0219
+.global ow_frames_poke_leg_0220
+.global ow_frames_poke_leg_0221
+.global ow_frames_poke_leg_0222
+.global ow_frames_poke_leg_0223
+.global ow_frames_poke_leg_0224
+.global ow_frames_poke_leg_0225
+.global ow_frames_poke_leg_0226
+.global ow_frames_poke_leg_0227
+.global ow_frames_poke_leg_0228
+.global ow_frames_poke_leg_0229
+.global ow_frames_poke_leg_0230
+.global ow_frames_poke_leg_0231
+.global ow_frames_poke_leg_0232
+.global ow_frames_poke_leg_0233
+.global ow_frames_poke_leg_0234
+.global ow_frames_poke_leg_0235
+.global ow_frames_poke_leg_0236
+.global ow_frames_poke_leg_0237
+.global ow_frames_poke_leg_0238
+.global ow_frames_poke_leg_0239
+.global ow_frames_poke_leg_0240
+.global ow_frames_poke_leg_0241
+.global ow_frames_poke_leg_0242
+.global ow_frames_poke_leg_0243
+.global ow_frames_poke_leg_0244
+.global ow_frames_poke_leg_0245
+.global ow_frames_poke_leg_0246
+.global ow_frames_poke_leg_0247
+.global ow_frames_poke_leg_0248
+.global ow_frames_poke_leg_0249
+.global ow_frames_poke_leg_0250
+.global ow_frames_poke_leg_0251
+.global ow_frames_poke_leg_0252
+.global ow_frames_poke_leg_0253
+.global ow_frames_poke_leg_0254
+.global ow_frames_poke_leg_0255
+.global ow_frames_objekt_0000
+.global ow_frames_objekt_0001
+.global ow_frames_objekt_0002
+.global ow_frames_objekt_0003
+.global ow_frames_objekt_0004
+.global ow_frames_objekt_0005
+.global ow_frames_objekt_0006
+.global ow_frames_objekt_0007
+.global ow_frames_objekt_0008
+.global ow_frames_objekt_0009
+.global ow_frames_objekt_0010
+.global ow_frames_objekt_0011
+.global ow_frames_objekt_0012
+.global ow_frames_objekt_0013
+.global ow_frames_objekt_0014
+.global ow_frames_objekt_0015
+.global ow_frames_objekt_0016
+.global ow_frames_objekt_0017
+.global ow_frames_objekt_0018
+.global ow_frames_objekt_0019
+.global ow_frames_objekt_0020
+.global ow_frames_objekt_0021
+.global ow_frames_objekt_0022
+.global ow_frames_objekt_0023
+.global ow_frames_objekt_0024
+.global ow_frames_objekt_0025
+.global ow_frames_objekt_0026
+.global ow_frames_objekt_0027
+.global ow_frames_objekt_0028
+.global ow_frames_objekt_0029
+.global ow_frames_objekt_0030
+.global ow_frames_objekt_0031
+.global ow_frames_objekt_0032
+.global ow_frames_objekt_0033
+.global ow_frames_objekt_0034
+.global ow_frames_objekt_0035
+.global ow_frames_objekt_0036
+.global ow_frames_objekt_0037
+.global ow_frames_objekt_0038
+.global ow_frames_objekt_0039
+.global ow_frames_objekt_0040
+.global ow_frames_objekt_0041
+.global ow_frames_objekt_0042
+.global ow_frames_objekt_0043
+.global ow_frames_objekt_0044
+.global ow_frames_objekt_0045
+.global ow_frames_objekt_0046
+.global ow_frames_objekt_0047
+.global ow_frames_objekt_0048
+.global ow_frames_objekt_0049
+.global ow_frames_objekt_0050
+.global ow_frames_objekt_0051
+.global ow_frames_objekt_0052
+.global ow_frames_objekt_0053
+.global ow_frames_objekt_0054
+.global ow_frames_objekt_0055
+.global ow_frames_objekt_0056
+.global ow_frames_objekt_0057
+.global ow_frames_objekt_0058
+.global ow_frames_objekt_0059
+.global ow_frames_objekt_0060
+.global ow_frames_objekt_0061
+.global ow_frames_objekt_0062
+.global ow_frames_objekt_0063
+.global ow_frames_objekt_0064
+.global ow_frames_objekt_0065
+.global ow_frames_objekt_0066
+.global ow_frames_objekt_0067
+.global ow_frames_objekt_0068
+.global ow_frames_objekt_0069
+.global ow_frames_objekt_0070
+.global ow_frames_objekt_0071
+.global ow_frames_objekt_0072
+.global ow_frames_objekt_0073
+.global ow_frames_objekt_0074
+.global ow_frames_objekt_0075
+.global ow_frames_objekt_0076
+.global ow_frames_objekt_0077
+.global ow_frames_objekt_0078
+.global ow_frames_objekt_0079
+.global ow_frames_objekt_0080
+.global ow_frames_objekt_0081
+.global ow_frames_objekt_0082
+.global ow_frames_objekt_0083
+.global ow_frames_objekt_0084
+.global ow_frames_objekt_0085
+.global ow_frames_objekt_0086
+.global ow_frames_objekt_0087
+.global ow_frames_objekt_0088
+.global ow_frames_objekt_0089
+.global ow_frames_objekt_0090
+.global ow_frames_objekt_0091
+.global ow_frames_objekt_0092
+.global ow_frames_objekt_0093
+.global ow_frames_objekt_0094
+.global ow_frames_objekt_0095
+.global ow_frames_objekt_0096
+.global ow_frames_objekt_0097
+.global ow_frames_objekt_0098
+.global ow_frames_objekt_0099
+.global ow_frames_objekt_0100
+.global ow_frames_objekt_0101
+.global ow_frames_objekt_0102
+.global ow_frames_objekt_0103
+.global ow_frames_objekt_0104
+.global ow_frames_objekt_0105
+.global ow_frames_objekt_0106
+.global ow_frames_objekt_0107
+.global ow_frames_objekt_0108
+.global ow_frames_objekt_0109
+.global ow_frames_objekt_0110
+.global ow_frames_objekt_0111
+.global ow_frames_objekt_0112
+.global ow_frames_objekt_0113
+.global ow_frames_objekt_0114
+.global ow_frames_objekt_0115
+.global ow_frames_objekt_0116
+.global ow_frames_objekt_0117
+.global ow_frames_objekt_0118
+.global ow_frames_objekt_0119
+.global ow_frames_objekt_0120
+.global ow_frames_objekt_0121
+.global ow_frames_objekt_0122
+.global ow_frames_objekt_0123
+.global ow_frames_objekt_0124
+.global ow_frames_objekt_0125
+.global ow_frames_objekt_0126
+.global ow_frames_objekt_0127
+.global ow_frames_objekt_0128
+.global ow_frames_objekt_0129
+.global ow_frames_objekt_0130
+.global ow_frames_objekt_0131
+.global ow_frames_objekt_0132
+.global ow_frames_objekt_0133
+.global ow_frames_objekt_0134
+.global ow_frames_objekt_0135
+.global ow_frames_objekt_0136
+.global ow_frames_objekt_0137
+.global ow_frames_objekt_0138
+.global ow_frames_objekt_0139
+.global ow_frames_objekt_0140
+.global ow_frames_objekt_0141
+.global ow_frames_objekt_0142
+.global ow_frames_objekt_0143
+.global ow_frames_objekt_0144
+.global ow_frames_objekt_0145
+.global ow_frames_objekt_0146
+.global ow_frames_objekt_0147
+.global ow_frames_objekt_0148
+.global ow_frames_objekt_0149
+.global ow_frames_objekt_0150
+.global ow_frames_objekt_0151
+.global ow_frames_objekt_0152
+.global ow_frames_objekt_0153
+.global ow_frames_objekt_0154
+.global ow_frames_objekt_0155
+.global ow_frames_objekt_0156
+.global ow_frames_objekt_0157
+.global ow_frames_objekt_0158
+.global ow_frames_objekt_0159
+.global ow_frames_objekt_0160
+.global ow_frames_objekt_0161
+.global ow_frames_objekt_0162
+.global ow_frames_objekt_0163
+.global ow_frames_objekt_0164
+.global ow_frames_objekt_0165
+.global ow_frames_objekt_0166
+.global ow_frames_objekt_0167
+.global ow_frames_objekt_0168
+.global ow_frames_objekt_0169
+.global ow_frames_objekt_0170
+.global ow_frames_objekt_0171
+.global ow_frames_objekt_0172
+.global ow_frames_objekt_0173
+.global ow_frames_objekt_0174
+.global ow_frames_objekt_0175
+.global ow_frames_objekt_0176
+.global ow_frames_objekt_0177
+.global ow_frames_objekt_0178
+.global ow_frames_objekt_0179
+.global ow_frames_objekt_0180
+.global ow_frames_objekt_0181
+.global ow_frames_objekt_0182
+.global ow_frames_objekt_0183
+.global ow_frames_objekt_0184
+.global ow_frames_objekt_0185
+.global ow_frames_objekt_0186
+.global ow_frames_objekt_0187
+.global ow_frames_objekt_0188
+.global ow_frames_objekt_0189
+.global ow_frames_objekt_0190
+.global ow_frames_objekt_0191
+.global ow_frames_objekt_0192
+.global ow_frames_objekt_0193
+.global ow_frames_objekt_0194
+.global ow_frames_objekt_0195
+.global ow_frames_objekt_0196
+.global ow_frames_objekt_0197
+.global ow_frames_objekt_0198
+.global ow_frames_objekt_0199
+.global ow_frames_objekt_0200
+.global ow_frames_objekt_0201
+.global ow_frames_objekt_0202
+.global ow_frames_objekt_0203
+.global ow_frames_objekt_0204
+.global ow_frames_objekt_0205
+.global ow_frames_objekt_0206
+.global ow_frames_objekt_0207
+.global ow_frames_objekt_0208
+.global ow_frames_objekt_0209
+.global ow_frames_objekt_0210
+.global ow_frames_objekt_0211
+.global ow_frames_objekt_0212
+.global ow_frames_objekt_0213
+.global ow_frames_objekt_0214
+.global ow_frames_objekt_0215
+.global ow_frames_objekt_0216
+.global ow_frames_objekt_0217
+.global ow_frames_objekt_0218
+.global ow_frames_objekt_0219
+.global ow_frames_objekt_0220
+.global ow_frames_objekt_0221
+.global ow_frames_objekt_0222
+.global ow_frames_objekt_0223
+.global ow_frames_objekt_0224
+.global ow_frames_objekt_0225
+.global ow_frames_objekt_0226
+.global ow_frames_objekt_0227
+.global ow_frames_objekt_0228
+.global ow_frames_objekt_0229
+.global ow_frames_objekt_0230
+.global ow_frames_objekt_0231
+.global ow_frames_objekt_0232
+.global ow_frames_objekt_0233
+.global ow_frames_objekt_0234
+.global ow_frames_objekt_0235
+.global ow_frames_objekt_0236
+.global ow_frames_objekt_0237
+.global ow_frames_objekt_0238
+.global ow_frames_objekt_0239
+.global ow_frames_objekt_0240
+.global ow_frames_objekt_0241
+.global ow_frames_objekt_0242
+.global ow_frames_objekt_0243
+.global ow_frames_objekt_0244
+.global ow_frames_objekt_0245
+.global ow_frames_objekt_0246
+.global ow_frames_objekt_0247
+.global ow_frames_objekt_0248
+.global ow_frames_objekt_0249
+.global ow_frames_objekt_0250
+.global ow_frames_objekt_0251
+.global ow_frames_objekt_0252
+.global ow_frames_objekt_0253
+.global ow_frames_objekt_0254
+.global ow_frames_objekt_0255
+
+.alignow_frames_npcs_0000:
+.word ow_npcs_0000Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(9*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(10*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(11*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(12*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(13*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(14*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(15*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(16*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(17*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(18*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0000Tiles+(19*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_npcs_0001:
+.word ow_npcs_0001Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0001Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0001Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0001Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0001Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0001Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0001Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0001Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0001Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_npcs_0002:
+.word ow_npcs_0002Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0002Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0002Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0002Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0002Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0002Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0002Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0002Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0002Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0002Tiles+(9*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0002Tiles+(10*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0002Tiles+(11*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_npcs_0003:
+.word ow_npcs_0003Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0003Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0003Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0003Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0003Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0003Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0003Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0003Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0003Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_npcs_0004:
+.word ow_npcs_0004Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0004Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0004Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0004Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0004Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0004Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0004Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0004Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0004Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_npcs_0005:
+.word ow_npcs_0003Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0003Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0005Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0003Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0003Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0003Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0003Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0003Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0003Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_npcs_0006:
+.word ow_npcs_0006Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0006Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0006Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0006Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0006Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0006Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_npcs_0007:
+.word ow_npcs_0007Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(9*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(10*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(11*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(12*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(13*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(14*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(15*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(16*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(17*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(18*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0007Tiles+(19*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_npcs_0008:
+.word ow_npcs_0008Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0008Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0008Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0008Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0008Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0008Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0008Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0008Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0008Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_npcs_0009:
+.word ow_npcs_0009Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0009Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0009Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0009Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0009Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0009Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0009Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0009Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0009Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0009Tiles+(9*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0009Tiles+(10*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0009Tiles+(11*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_npcs_0010:
+.word ow_npcs_0010Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0010Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0010Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0010Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0010Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0010Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0010Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0010Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0010Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_npcs_0011:
+.word ow_npcs_0011Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0011Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0011Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0011Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0011Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0011Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0011Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0011Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0011Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_npcs_0012:
+.word ow_npcs_0010Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0010Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0012Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0010Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0010Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0010Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0010Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0010Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0010Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_npcs_0013:
+.word ow_npcs_0013Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0013Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0013Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0013Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0013Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_npcs_0013Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0008Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_9:
-.word ow_0009Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0009Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0009Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0009Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0009Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0009Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0009Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0009Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0009Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0009Tiles+(9*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0009Tiles+(10*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0009Tiles+(11*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_10:
-.word ow_0010Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0010Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0010Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0010Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0010Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0010Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0010Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0010Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0010Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_11:
-.word ow_0011Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0011Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0011Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0011Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0011Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0011Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0011Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0011Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0011Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_12:
-.word ow_0010Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0010Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0010Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0010Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0010Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0010Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0010Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0010Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0010Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_13:
-.word ow_0013Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0013Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0013Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0013Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0013Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0013Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_14:
-.word ow_0014Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0014Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0014Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0014Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0014Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0014Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0014Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0014Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0014Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_15:
-.word ow_0015Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0015Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0015Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0015Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0015Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0015Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0015Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0015Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0015Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_16:
-.word ow_0016Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0016Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0016Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0016Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0016Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0016Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0016Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0016Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0016Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_17:
-.word ow_0017Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0017Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0017Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0017Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0017Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0017Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0017Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0017Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0017Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_18:
-.word ow_0018Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0018Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0018Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0018Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0018Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0018Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0018Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0018Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0018Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_19:
-.word ow_0019Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0019Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0019Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0019Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0019Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0019Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0019Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0019Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0019Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_20:
-.word ow_0020Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0020Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0020Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0020Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0020Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0020Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0020Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0020Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0020Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_21:
-.word ow_0021Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0021Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0021Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0021Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0021Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0021Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0021Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0021Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0021Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_22:
-.word ow_0022Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0022Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0022Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0022Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0022Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0022Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0022Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0022Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0022Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_23:
-.word ow_0023Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0023Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0023Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0023Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0023Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0023Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0023Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0023Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0023Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_24:
-.word ow_0024Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0024Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0024Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0024Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0024Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0024Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0024Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0024Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0024Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_25:
-.word ow_0025Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0025Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0025Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0025Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0025Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0025Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0025Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0025Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0025Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_26:
-.word ow_0026Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0026Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0026Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0026Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0026Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0026Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0026Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0026Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0026Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_27:
-.word ow_0027Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0027Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0027Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0027Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0027Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0027Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0027Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0027Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0027Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_28:
-.word ow_0028Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0028Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0028Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0028Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0028Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0028Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0028Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0028Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0028Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
 
-.align 2
-ow_frames_29:
-.word ow_0029Tiles+(0*0x200)
+.alignow_frames_npcs_0014:
+.word ow_npcs_0014Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0029Tiles+(1*0x200)
+.word ow_npcs_0014Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0029Tiles+(2*0x200)
+.word ow_npcs_0014Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0029Tiles+(3*0x200)
+.word ow_npcs_0014Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0029Tiles+(4*0x200)
+.word ow_npcs_0014Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0029Tiles+(5*0x200)
+.word ow_npcs_0014Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0029Tiles+(6*0x200)
+.word ow_npcs_0014Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0029Tiles+(7*0x200)
+.word ow_npcs_0014Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0029Tiles+(8*0x200)
+.word ow_npcs_0014Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_30:
-.word ow_0030Tiles+(0*0x200)
+.alignow_frames_npcs_0015:
+.word ow_npcs_0015Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0030Tiles+(1*0x200)
+.word ow_npcs_0015Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0030Tiles+(2*0x200)
+.word ow_npcs_0015Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0030Tiles+(3*0x200)
+.word ow_npcs_0015Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0030Tiles+(4*0x200)
+.word ow_npcs_0015Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0030Tiles+(5*0x200)
+.word ow_npcs_0015Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0030Tiles+(6*0x200)
+.word ow_npcs_0015Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0030Tiles+(7*0x200)
+.word ow_npcs_0015Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0030Tiles+(8*0x200)
+.word ow_npcs_0015Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_31:
-.word ow_0031Tiles+(0*0x200)
+.alignow_frames_npcs_0016:
+.word ow_npcs_0016Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0031Tiles+(1*0x200)
+.word ow_npcs_0016Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0031Tiles+(2*0x200)
+.word ow_npcs_0016Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0031Tiles+(3*0x200)
+.word ow_npcs_0016Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0031Tiles+(4*0x200)
+.word ow_npcs_0016Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0031Tiles+(5*0x200)
+.word ow_npcs_0016Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0031Tiles+(6*0x200)
+.word ow_npcs_0016Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0031Tiles+(7*0x200)
+.word ow_npcs_0016Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0031Tiles+(8*0x200)
+.word ow_npcs_0016Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_32:
-.word ow_0032Tiles+(0*0x200)
+.alignow_frames_npcs_0017:
+.word ow_npcs_0017Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0032Tiles+(1*0x200)
+.word ow_npcs_0017Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0032Tiles+(2*0x200)
+.word ow_npcs_0017Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0032Tiles+(3*0x200)
+.word ow_npcs_0017Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0032Tiles+(4*0x200)
+.word ow_npcs_0017Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0032Tiles+(5*0x200)
+.word ow_npcs_0017Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0032Tiles+(6*0x200)
+.word ow_npcs_0017Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0032Tiles+(7*0x200)
+.word ow_npcs_0017Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0032Tiles+(8*0x200)
+.word ow_npcs_0017Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_33:
-.word ow_0033Tiles+(0*0x200)
+.alignow_frames_npcs_0018:
+.word ow_npcs_0018Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0033Tiles+(1*0x200)
+.word ow_npcs_0018Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0033Tiles+(2*0x200)
+.word ow_npcs_0018Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0033Tiles+(3*0x200)
+.word ow_npcs_0018Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0033Tiles+(4*0x200)
+.word ow_npcs_0018Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0033Tiles+(5*0x200)
+.word ow_npcs_0018Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0033Tiles+(6*0x200)
+.word ow_npcs_0018Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0033Tiles+(7*0x200)
+.word ow_npcs_0018Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0033Tiles+(8*0x200)
+.word ow_npcs_0018Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_34:
-.word ow_0034Tiles+(0*0x200)
+.alignow_frames_npcs_0019:
+.word ow_npcs_0019Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0034Tiles+(1*0x200)
+.word ow_npcs_0019Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0034Tiles+(2*0x200)
+.word ow_npcs_0019Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0034Tiles+(3*0x200)
+.word ow_npcs_0019Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0034Tiles+(4*0x200)
+.word ow_npcs_0019Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0034Tiles+(5*0x200)
+.word ow_npcs_0019Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0034Tiles+(6*0x200)
+.word ow_npcs_0019Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0034Tiles+(7*0x200)
+.word ow_npcs_0019Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0034Tiles+(8*0x200)
+.word ow_npcs_0019Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_35:
-.word ow_0035Tiles+(0*0x200)
+.alignow_frames_npcs_0020:
+.word ow_npcs_0020Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0035Tiles+(1*0x200)
+.word ow_npcs_0020Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0035Tiles+(2*0x200)
+.word ow_npcs_0020Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0035Tiles+(3*0x200)
+.word ow_npcs_0020Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0035Tiles+(4*0x200)
+.word ow_npcs_0020Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0035Tiles+(5*0x200)
+.word ow_npcs_0020Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0035Tiles+(6*0x200)
+.word ow_npcs_0020Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0035Tiles+(7*0x200)
+.word ow_npcs_0020Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0035Tiles+(8*0x200)
+.word ow_npcs_0020Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_36:
-.word ow_0036Tiles+(0*0x200)
+.alignow_frames_npcs_0021:
+.word ow_npcs_0021Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0036Tiles+(1*0x200)
+.word ow_npcs_0021Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0036Tiles+(2*0x200)
+.word ow_npcs_0021Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0036Tiles+(3*0x200)
+.word ow_npcs_0021Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0036Tiles+(4*0x200)
+.word ow_npcs_0021Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0036Tiles+(5*0x200)
+.word ow_npcs_0021Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0036Tiles+(6*0x200)
+.word ow_npcs_0021Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0036Tiles+(7*0x200)
+.word ow_npcs_0021Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0036Tiles+(8*0x200)
+.word ow_npcs_0021Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_37:
-.word ow_0037Tiles+(0*0x200)
+.alignow_frames_npcs_0022:
+.word ow_npcs_0022Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0037Tiles+(1*0x200)
+.word ow_npcs_0022Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0037Tiles+(2*0x200)
+.word ow_npcs_0022Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0037Tiles+(3*0x200)
+.word ow_npcs_0022Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0037Tiles+(4*0x200)
+.word ow_npcs_0022Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0037Tiles+(5*0x200)
+.word ow_npcs_0022Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0037Tiles+(6*0x200)
+.word ow_npcs_0022Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0037Tiles+(7*0x200)
+.word ow_npcs_0022Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0037Tiles+(8*0x200)
+.word ow_npcs_0022Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_38:
-.word ow_0038Tiles+(0*0x200)
+.alignow_frames_npcs_0023:
+.word ow_npcs_0023Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0038Tiles+(1*0x200)
+.word ow_npcs_0023Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0038Tiles+(2*0x200)
+.word ow_npcs_0023Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0038Tiles+(3*0x200)
+.word ow_npcs_0023Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0038Tiles+(4*0x200)
+.word ow_npcs_0023Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0038Tiles+(5*0x200)
+.word ow_npcs_0023Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0038Tiles+(6*0x200)
+.word ow_npcs_0023Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0038Tiles+(7*0x200)
+.word ow_npcs_0023Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0038Tiles+(8*0x200)
+.word ow_npcs_0023Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_39:
-.word ow_0039Tiles+(0*0x200)
+.alignow_frames_npcs_0024:
+.word ow_npcs_0024Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0039Tiles+(1*0x200)
+.word ow_npcs_0024Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0039Tiles+(2*0x200)
+.word ow_npcs_0024Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0039Tiles+(3*0x200)
+.word ow_npcs_0024Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0039Tiles+(4*0x200)
+.word ow_npcs_0024Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0039Tiles+(5*0x200)
+.word ow_npcs_0024Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0039Tiles+(6*0x200)
+.word ow_npcs_0024Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0039Tiles+(7*0x200)
+.word ow_npcs_0024Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0039Tiles+(8*0x200)
+.word ow_npcs_0024Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_40:
-.word ow_0040Tiles+(0*0x200)
+.alignow_frames_npcs_0025:
+.word ow_npcs_0025Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0040Tiles+(1*0x200)
+.word ow_npcs_0025Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0040Tiles+(2*0x200)
+.word ow_npcs_0025Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0040Tiles+(3*0x200)
+.word ow_npcs_0025Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0040Tiles+(4*0x200)
+.word ow_npcs_0025Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0040Tiles+(5*0x200)
+.word ow_npcs_0025Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0040Tiles+(6*0x200)
+.word ow_npcs_0025Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0040Tiles+(7*0x200)
+.word ow_npcs_0025Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0040Tiles+(8*0x200)
+.word ow_npcs_0025Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_41:
-.word ow_0041Tiles+(0*0x200)
+.alignow_frames_npcs_0026:
+.word ow_npcs_0026Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0041Tiles+(1*0x200)
+.word ow_npcs_0026Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0041Tiles+(2*0x200)
+.word ow_npcs_0026Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0041Tiles+(3*0x200)
+.word ow_npcs_0026Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0041Tiles+(4*0x200)
+.word ow_npcs_0026Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0041Tiles+(5*0x200)
+.word ow_npcs_0026Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0041Tiles+(6*0x200)
+.word ow_npcs_0026Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0041Tiles+(7*0x200)
+.word ow_npcs_0026Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0041Tiles+(8*0x200)
+.word ow_npcs_0026Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_42:
-.word ow_0042Tiles+(0*0x200)
+.alignow_frames_npcs_0027:
+.word ow_npcs_0027Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0042Tiles+(1*0x200)
+.word ow_npcs_0027Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0042Tiles+(2*0x200)
+.word ow_npcs_0027Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0042Tiles+(3*0x200)
+.word ow_npcs_0027Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0042Tiles+(4*0x200)
+.word ow_npcs_0027Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0042Tiles+(5*0x200)
+.word ow_npcs_0027Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0042Tiles+(6*0x200)
+.word ow_npcs_0027Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0042Tiles+(7*0x200)
+.word ow_npcs_0027Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0042Tiles+(8*0x200)
+.word ow_npcs_0027Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_43:
-.word ow_0043Tiles+(0*0x200)
+.alignow_frames_npcs_0028:
+.word ow_npcs_0028Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0043Tiles+(1*0x200)
+.word ow_npcs_0028Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0043Tiles+(2*0x200)
+.word ow_npcs_0028Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0043Tiles+(3*0x200)
+.word ow_npcs_0028Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0043Tiles+(4*0x200)
+.word ow_npcs_0028Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0043Tiles+(5*0x200)
+.word ow_npcs_0028Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0043Tiles+(6*0x200)
+.word ow_npcs_0028Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0043Tiles+(7*0x200)
+.word ow_npcs_0028Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0043Tiles+(8*0x200)
+.word ow_npcs_0028Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_44:
-.word ow_0044Tiles+(0*0x200)
+.alignow_frames_npcs_0029:
+.word ow_npcs_0029Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0044Tiles+(1*0x200)
+.word ow_npcs_0029Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0044Tiles+(2*0x200)
+.word ow_npcs_0029Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0044Tiles+(3*0x200)
+.word ow_npcs_0029Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0044Tiles+(4*0x200)
+.word ow_npcs_0029Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0044Tiles+(5*0x200)
+.word ow_npcs_0029Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0044Tiles+(6*0x200)
+.word ow_npcs_0029Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0044Tiles+(7*0x200)
+.word ow_npcs_0029Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0044Tiles+(8*0x200)
+.word ow_npcs_0029Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_45:
-.word ow_0045Tiles+(0*0x200)
+.alignow_frames_npcs_0030:
+.word ow_npcs_0030Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0045Tiles+(1*0x200)
+.word ow_npcs_0030Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0045Tiles+(2*0x200)
+.word ow_npcs_0030Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0045Tiles+(3*0x200)
+.word ow_npcs_0030Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0045Tiles+(4*0x200)
+.word ow_npcs_0030Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0045Tiles+(5*0x200)
+.word ow_npcs_0030Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0045Tiles+(6*0x200)
+.word ow_npcs_0030Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0045Tiles+(7*0x200)
+.word ow_npcs_0030Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0045Tiles+(8*0x200)
+.word ow_npcs_0030Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_46:
-.word ow_0046Tiles+(0*0x200)
+.alignow_frames_npcs_0031:
+.word ow_npcs_0031Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0046Tiles+(1*0x200)
+.word ow_npcs_0031Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0046Tiles+(2*0x200)
+.word ow_npcs_0031Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0046Tiles+(3*0x200)
+.word ow_npcs_0031Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0046Tiles+(4*0x200)
+.word ow_npcs_0031Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0046Tiles+(5*0x200)
+.word ow_npcs_0031Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0046Tiles+(6*0x200)
+.word ow_npcs_0031Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0046Tiles+(7*0x200)
+.word ow_npcs_0031Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0046Tiles+(8*0x200)
+.word ow_npcs_0031Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_47:
-.word ow_0047Tiles+(0*0x200)
+.alignow_frames_npcs_0032:
+.word ow_npcs_0032Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0047Tiles+(1*0x200)
+.word ow_npcs_0032Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0047Tiles+(2*0x200)
+.word ow_npcs_0032Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0047Tiles+(3*0x200)
+.word ow_npcs_0032Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0047Tiles+(4*0x200)
+.word ow_npcs_0032Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0047Tiles+(5*0x200)
+.word ow_npcs_0032Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0047Tiles+(6*0x200)
+.word ow_npcs_0032Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0047Tiles+(7*0x200)
+.word ow_npcs_0032Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0047Tiles+(8*0x200)
+.word ow_npcs_0032Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_48:
-.word ow_0048Tiles+(0*0x200)
+.alignow_frames_npcs_0033:
+.word ow_npcs_0033Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0048Tiles+(1*0x200)
+.word ow_npcs_0033Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0048Tiles+(2*0x200)
+.word ow_npcs_0033Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0048Tiles+(3*0x200)
+.word ow_npcs_0033Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0048Tiles+(4*0x200)
+.word ow_npcs_0033Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0048Tiles+(5*0x200)
+.word ow_npcs_0033Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0048Tiles+(6*0x200)
+.word ow_npcs_0033Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0048Tiles+(7*0x200)
+.word ow_npcs_0033Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0048Tiles+(8*0x200)
+.word ow_npcs_0033Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_49:
-.word ow_0049Tiles+(0*0x200)
+.alignow_frames_npcs_0034:
+.word ow_npcs_0034Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0049Tiles+(1*0x200)
+.word ow_npcs_0034Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0049Tiles+(2*0x200)
+.word ow_npcs_0034Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0049Tiles+(3*0x200)
+.word ow_npcs_0034Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0049Tiles+(4*0x200)
+.word ow_npcs_0034Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0049Tiles+(5*0x200)
+.word ow_npcs_0034Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0049Tiles+(6*0x200)
+.word ow_npcs_0034Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0049Tiles+(7*0x200)
+.word ow_npcs_0034Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0049Tiles+(8*0x200)
+.word ow_npcs_0034Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_50:
-.word ow_0050Tiles+(0*0x200)
+.alignow_frames_npcs_0035:
+.word ow_npcs_0035Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0050Tiles+(1*0x200)
+.word ow_npcs_0035Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0050Tiles+(2*0x200)
+.word ow_npcs_0035Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0050Tiles+(3*0x200)
+.word ow_npcs_0035Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0050Tiles+(4*0x200)
+.word ow_npcs_0035Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0050Tiles+(5*0x200)
+.word ow_npcs_0035Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0050Tiles+(6*0x200)
+.word ow_npcs_0035Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0050Tiles+(7*0x200)
+.word ow_npcs_0035Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0050Tiles+(8*0x200)
+.word ow_npcs_0035Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_51:
-.word ow_0051Tiles+(0*0x200)
+.alignow_frames_npcs_0036:
+.word ow_npcs_0036Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0051Tiles+(1*0x200)
+.word ow_npcs_0036Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0051Tiles+(2*0x200)
+.word ow_npcs_0036Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0051Tiles+(3*0x200)
+.word ow_npcs_0036Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0051Tiles+(4*0x200)
+.word ow_npcs_0036Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0051Tiles+(5*0x200)
+.word ow_npcs_0036Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0051Tiles+(6*0x200)
+.word ow_npcs_0036Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0051Tiles+(7*0x200)
+.word ow_npcs_0036Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0051Tiles+(8*0x200)
+.word ow_npcs_0036Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_52:
-.word ow_0052Tiles+(0*0x200)
+.alignow_frames_npcs_0037:
+.word ow_npcs_0037Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0052Tiles+(1*0x200)
+.word ow_npcs_0037Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0052Tiles+(2*0x200)
+.word ow_npcs_0037Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0052Tiles+(3*0x200)
+.word ow_npcs_0037Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0052Tiles+(4*0x200)
+.word ow_npcs_0037Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0052Tiles+(5*0x200)
+.word ow_npcs_0037Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0052Tiles+(6*0x200)
+.word ow_npcs_0037Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0052Tiles+(7*0x200)
+.word ow_npcs_0037Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0052Tiles+(8*0x200)
+.word ow_npcs_0037Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_53:
-.word ow_0053Tiles+(0*0x200)
+.alignow_frames_npcs_0038:
+.word ow_npcs_0038Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0053Tiles+(1*0x200)
+.word ow_npcs_0038Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0053Tiles+(2*0x200)
+.word ow_npcs_0038Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0053Tiles+(3*0x200)
+.word ow_npcs_0038Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0053Tiles+(4*0x200)
+.word ow_npcs_0038Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0053Tiles+(5*0x200)
+.word ow_npcs_0038Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0053Tiles+(6*0x200)
+.word ow_npcs_0038Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0053Tiles+(7*0x200)
+.word ow_npcs_0038Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0053Tiles+(8*0x200)
+.word ow_npcs_0038Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_54:
-.word ow_0054Tiles+(0*0x200)
+.alignow_frames_npcs_0039:
+.word ow_npcs_0039Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0054Tiles+(1*0x200)
+.word ow_npcs_0039Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0054Tiles+(2*0x200)
+.word ow_npcs_0039Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0054Tiles+(3*0x200)
+.word ow_npcs_0039Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0054Tiles+(4*0x200)
+.word ow_npcs_0039Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0054Tiles+(5*0x200)
+.word ow_npcs_0039Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0054Tiles+(6*0x200)
+.word ow_npcs_0039Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0054Tiles+(7*0x200)
+.word ow_npcs_0039Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0054Tiles+(8*0x200)
+.word ow_npcs_0039Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_55:
-.word ow_0055Tiles+(0*0x200)
+.alignow_frames_npcs_0040:
+.word ow_npcs_0040Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0055Tiles+(1*0x200)
+.word ow_npcs_0040Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0055Tiles+(2*0x200)
+.word ow_npcs_0040Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0055Tiles+(3*0x200)
+.word ow_npcs_0040Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0055Tiles+(4*0x200)
+.word ow_npcs_0040Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0055Tiles+(5*0x200)
+.word ow_npcs_0040Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0055Tiles+(6*0x200)
+.word ow_npcs_0040Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0055Tiles+(7*0x200)
+.word ow_npcs_0040Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0055Tiles+(8*0x200)
+.word ow_npcs_0040Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_56:
-.word ow_0056Tiles+(0*0x200)
+.alignow_frames_npcs_0041:
+.word ow_npcs_0041Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0056Tiles+(1*0x200)
+.word ow_npcs_0041Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0056Tiles+(2*0x200)
+.word ow_npcs_0041Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0056Tiles+(3*0x200)
+.word ow_npcs_0041Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0056Tiles+(4*0x200)
+.word ow_npcs_0041Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0056Tiles+(5*0x200)
+.word ow_npcs_0041Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0056Tiles+(6*0x200)
+.word ow_npcs_0041Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0056Tiles+(7*0x200)
+.word ow_npcs_0041Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0056Tiles+(8*0x200)
+.word ow_npcs_0041Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_57:
-.word ow_0057Tiles+(0*0x200)
+.alignow_frames_npcs_0042:
+.word ow_npcs_0042Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0057Tiles+(1*0x200)
+.word ow_npcs_0042Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0057Tiles+(2*0x200)
+.word ow_npcs_0042Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0057Tiles+(3*0x200)
+.word ow_npcs_0042Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0057Tiles+(4*0x200)
+.word ow_npcs_0042Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0057Tiles+(5*0x200)
+.word ow_npcs_0042Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0057Tiles+(6*0x200)
+.word ow_npcs_0042Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0057Tiles+(7*0x200)
+.word ow_npcs_0042Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0057Tiles+(8*0x200)
+.word ow_npcs_0042Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_58:
-.word ow_0058Tiles+(0*0x200)
+.alignow_frames_npcs_0043:
+.word ow_npcs_0043Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0058Tiles+(1*0x200)
+.word ow_npcs_0043Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0058Tiles+(2*0x200)
+.word ow_npcs_0043Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0058Tiles+(3*0x200)
+.word ow_npcs_0043Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0058Tiles+(4*0x200)
+.word ow_npcs_0043Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0058Tiles+(5*0x200)
+.word ow_npcs_0043Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0058Tiles+(6*0x200)
+.word ow_npcs_0043Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0058Tiles+(7*0x200)
+.word ow_npcs_0043Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0058Tiles+(8*0x200)
+.word ow_npcs_0043Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_59:
-.word ow_0059Tiles+(0*0x200)
+.alignow_frames_npcs_0044:
+.word ow_npcs_0044Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0059Tiles+(1*0x200)
+.word ow_npcs_0044Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0059Tiles+(2*0x200)
+.word ow_npcs_0044Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0059Tiles+(3*0x200)
+.word ow_npcs_0044Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0059Tiles+(4*0x200)
+.word ow_npcs_0044Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0059Tiles+(5*0x200)
+.word ow_npcs_0044Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0059Tiles+(6*0x200)
+.word ow_npcs_0044Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0059Tiles+(7*0x200)
+.word ow_npcs_0044Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0059Tiles+(8*0x200)
+.word ow_npcs_0044Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_60:
-.word ow_0060Tiles+(0*0x200)
+.alignow_frames_npcs_0045:
+.word ow_npcs_0045Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0060Tiles+(1*0x200)
+.word ow_npcs_0045Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0060Tiles+(2*0x200)
+.word ow_npcs_0045Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0060Tiles+(3*0x200)
+.word ow_npcs_0045Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0060Tiles+(4*0x200)
+.word ow_npcs_0045Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0060Tiles+(5*0x200)
+.word ow_npcs_0045Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0060Tiles+(6*0x200)
+.word ow_npcs_0045Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0060Tiles+(7*0x200)
+.word ow_npcs_0045Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0060Tiles+(8*0x200)
+.word ow_npcs_0045Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_61:
-.word ow_0061Tiles+(0*0x200)
+.alignow_frames_npcs_0046:
+.word ow_npcs_0046Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0061Tiles+(1*0x200)
+.word ow_npcs_0046Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0061Tiles+(2*0x200)
+.word ow_npcs_0046Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0061Tiles+(3*0x200)
+.word ow_npcs_0046Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0061Tiles+(4*0x200)
+.word ow_npcs_0046Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0061Tiles+(5*0x200)
+.word ow_npcs_0046Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0061Tiles+(6*0x200)
+.word ow_npcs_0046Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0061Tiles+(7*0x200)
+.word ow_npcs_0046Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0061Tiles+(8*0x200)
+.word ow_npcs_0046Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_62:
-.word ow_0062Tiles+(0*0x200)
+.alignow_frames_npcs_0047:
+.word ow_npcs_0047Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0062Tiles+(1*0x200)
+.word ow_npcs_0047Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0062Tiles+(2*0x200)
+.word ow_npcs_0047Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0062Tiles+(3*0x200)
+.word ow_npcs_0047Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0062Tiles+(4*0x200)
+.word ow_npcs_0047Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0062Tiles+(5*0x200)
+.word ow_npcs_0047Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0062Tiles+(6*0x200)
+.word ow_npcs_0047Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0062Tiles+(7*0x200)
+.word ow_npcs_0047Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0062Tiles+(8*0x200)
+.word ow_npcs_0047Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_63:
-.word ow_0063Tiles+(0*0x200)
+.alignow_frames_npcs_0048:
+.word ow_npcs_0048Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0063Tiles+(1*0x200)
+.word ow_npcs_0048Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0063Tiles+(2*0x200)
+.word ow_npcs_0048Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0063Tiles+(3*0x200)
+.word ow_npcs_0048Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0063Tiles+(4*0x200)
+.word ow_npcs_0048Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0063Tiles+(5*0x200)
+.word ow_npcs_0048Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0063Tiles+(6*0x200)
+.word ow_npcs_0048Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0063Tiles+(7*0x200)
+.word ow_npcs_0048Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0063Tiles+(8*0x200)
+.word ow_npcs_0048Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_64:
-.word ow_0064Tiles+(0*0x200)
+.alignow_frames_npcs_0049:
+.word ow_npcs_0049Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0064Tiles+(1*0x200)
+.word ow_npcs_0049Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0064Tiles+(2*0x200)
+.word ow_npcs_0049Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0064Tiles+(3*0x200)
+.word ow_npcs_0049Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0064Tiles+(4*0x200)
+.word ow_npcs_0049Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0064Tiles+(5*0x200)
+.word ow_npcs_0049Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0064Tiles+(6*0x200)
+.word ow_npcs_0049Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0064Tiles+(7*0x200)
+.word ow_npcs_0049Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0064Tiles+(8*0x200)
+.word ow_npcs_0049Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_65:
-.word ow_0065Tiles+(0*0x200)
+.alignow_frames_npcs_0050:
+.word ow_npcs_0050Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0065Tiles+(1*0x200)
+.word ow_npcs_0050Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0065Tiles+(2*0x200)
+.word ow_npcs_0050Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0065Tiles+(3*0x200)
+.word ow_npcs_0050Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0065Tiles+(4*0x200)
+.word ow_npcs_0050Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0065Tiles+(5*0x200)
+.word ow_npcs_0050Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0065Tiles+(6*0x200)
+.word ow_npcs_0050Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0065Tiles+(7*0x200)
+.word ow_npcs_0050Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0065Tiles+(8*0x200)
+.word ow_npcs_0050Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_66:
-.word ow_0066Tiles+(0*0x200)
+.alignow_frames_npcs_0051:
+.word ow_npcs_0051Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0066Tiles+(1*0x200)
+.word ow_npcs_0051Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0066Tiles+(2*0x200)
+.word ow_npcs_0051Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0066Tiles+(3*0x200)
+.word ow_npcs_0051Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0066Tiles+(4*0x200)
+.word ow_npcs_0051Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0066Tiles+(5*0x200)
+.word ow_npcs_0051Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0066Tiles+(6*0x200)
+.word ow_npcs_0051Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0066Tiles+(7*0x200)
+.word ow_npcs_0051Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0066Tiles+(8*0x200)
+.word ow_npcs_0051Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_67:
-.word ow_0067Tiles+(0*0x200)
+.alignow_frames_npcs_0052:
+.word ow_npcs_0052Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0067Tiles+(1*0x200)
+.word ow_npcs_0052Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0067Tiles+(2*0x200)
+.word ow_npcs_0052Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0067Tiles+(3*0x200)
+.word ow_npcs_0052Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0067Tiles+(4*0x200)
+.word ow_npcs_0052Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0067Tiles+(5*0x200)
+.word ow_npcs_0052Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0067Tiles+(6*0x200)
+.word ow_npcs_0052Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0067Tiles+(7*0x200)
+.word ow_npcs_0052Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0067Tiles+(8*0x200)
+.word ow_npcs_0052Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_68:
-.word ow_0068Tiles+(0*0x200)
+.alignow_frames_npcs_0053:
+.word ow_npcs_0053Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0068Tiles+(1*0x200)
+.word ow_npcs_0053Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0068Tiles+(2*0x200)
+.word ow_npcs_0053Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0068Tiles+(3*0x200)
+.word ow_npcs_0053Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0068Tiles+(4*0x200)
+.word ow_npcs_0053Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0068Tiles+(5*0x200)
+.word ow_npcs_0053Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0068Tiles+(6*0x200)
+.word ow_npcs_0053Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0068Tiles+(7*0x200)
+.word ow_npcs_0053Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0068Tiles+(8*0x200)
+.word ow_npcs_0053Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_69:
-.word ow_0069Tiles+(0*0x200)
+.alignow_frames_npcs_0054:
+.word ow_npcs_0054Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0069Tiles+(1*0x200)
+.word ow_npcs_0054Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0069Tiles+(2*0x200)
+.word ow_npcs_0054Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0069Tiles+(3*0x200)
+.word ow_npcs_0054Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0069Tiles+(4*0x200)
+.word ow_npcs_0054Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0069Tiles+(5*0x200)
+.word ow_npcs_0054Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0069Tiles+(6*0x200)
+.word ow_npcs_0054Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0069Tiles+(7*0x200)
+.word ow_npcs_0054Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0069Tiles+(8*0x200)
+.word ow_npcs_0054Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_70:
-.word ow_0070Tiles+(0*0x200)
+.alignow_frames_npcs_0055:
+.word ow_npcs_0055Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0070Tiles+(1*0x200)
+.word ow_npcs_0055Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0070Tiles+(2*0x200)
+.word ow_npcs_0055Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0070Tiles+(3*0x200)
+.word ow_npcs_0055Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0070Tiles+(4*0x200)
+.word ow_npcs_0055Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0070Tiles+(5*0x200)
+.word ow_npcs_0055Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0070Tiles+(6*0x200)
+.word ow_npcs_0055Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0070Tiles+(7*0x200)
+.word ow_npcs_0055Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0070Tiles+(8*0x200)
+.word ow_npcs_0055Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_71:
-.word ow_0071Tiles+(0*0x200)
+.alignow_frames_npcs_0056:
+.word ow_npcs_0056Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0071Tiles+(1*0x200)
+.word ow_npcs_0056Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0071Tiles+(2*0x200)
+.word ow_npcs_0056Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0071Tiles+(3*0x200)
+.word ow_npcs_0056Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0071Tiles+(4*0x200)
+.word ow_npcs_0056Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0071Tiles+(5*0x200)
+.word ow_npcs_0056Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0071Tiles+(6*0x200)
+.word ow_npcs_0056Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0071Tiles+(7*0x200)
+.word ow_npcs_0056Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0071Tiles+(8*0x200)
+.word ow_npcs_0056Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_72:
-.word ow_0072Tiles+(0*0x200)
+.alignow_frames_npcs_0057:
+.word ow_npcs_0057Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0072Tiles+(1*0x200)
+.word ow_npcs_0057Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0072Tiles+(2*0x200)
+.word ow_npcs_0057Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0072Tiles+(3*0x200)
+.word ow_npcs_0057Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0072Tiles+(4*0x200)
+.word ow_npcs_0057Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0072Tiles+(5*0x200)
+.word ow_npcs_0057Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0072Tiles+(6*0x200)
+.word ow_npcs_0057Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0072Tiles+(7*0x200)
+.word ow_npcs_0057Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0072Tiles+(8*0x200)
+.word ow_npcs_0057Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_73:
-.word ow_0073Tiles+(0*0x200)
+.alignow_frames_npcs_0058:
+.word ow_npcs_0058Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0073Tiles+(1*0x200)
+.word ow_npcs_0058Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0073Tiles+(2*0x200)
+.word ow_npcs_0058Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0073Tiles+(3*0x200)
+.word ow_npcs_0058Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0073Tiles+(4*0x200)
+.word ow_npcs_0058Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0073Tiles+(5*0x200)
+.word ow_npcs_0058Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0073Tiles+(6*0x200)
+.word ow_npcs_0058Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0073Tiles+(7*0x200)
+.word ow_npcs_0058Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0073Tiles+(8*0x200)
+.word ow_npcs_0058Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_74:
-.word ow_0074Tiles+(0*0x200)
+.alignow_frames_npcs_0059:
+.word ow_npcs_0059Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0074Tiles+(1*0x200)
+.word ow_npcs_0059Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0074Tiles+(2*0x200)
+.word ow_npcs_0059Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0074Tiles+(3*0x200)
+.word ow_npcs_0059Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0074Tiles+(4*0x200)
+.word ow_npcs_0059Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0074Tiles+(5*0x200)
+.word ow_npcs_0059Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0074Tiles+(6*0x200)
+.word ow_npcs_0059Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0074Tiles+(7*0x200)
+.word ow_npcs_0059Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0074Tiles+(8*0x200)
+.word ow_npcs_0059Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_75:
-.word ow_0075Tiles+(0*0x200)
+.alignow_frames_npcs_0060:
+.word ow_npcs_0060Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0075Tiles+(1*0x200)
+.word ow_npcs_0060Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0075Tiles+(2*0x200)
+.word ow_npcs_0060Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0075Tiles+(3*0x200)
+.word ow_npcs_0060Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0075Tiles+(4*0x200)
+.word ow_npcs_0060Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0075Tiles+(5*0x200)
+.word ow_npcs_0060Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0075Tiles+(6*0x200)
+.word ow_npcs_0060Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0075Tiles+(7*0x200)
+.word ow_npcs_0060Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0075Tiles+(8*0x200)
+.word ow_npcs_0060Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_76:
-.word ow_0076Tiles+(0*0x200)
+.alignow_frames_npcs_0061:
+.word ow_npcs_0061Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0076Tiles+(1*0x200)
+.word ow_npcs_0061Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0076Tiles+(2*0x200)
+.word ow_npcs_0061Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0076Tiles+(3*0x200)
+.word ow_npcs_0061Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0076Tiles+(4*0x200)
+.word ow_npcs_0061Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0076Tiles+(5*0x200)
+.word ow_npcs_0061Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0076Tiles+(6*0x200)
+.word ow_npcs_0061Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0076Tiles+(7*0x200)
+.word ow_npcs_0061Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0076Tiles+(8*0x200)
+.word ow_npcs_0061Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_77:
-.word ow_0077Tiles+(0*0x200)
+.alignow_frames_npcs_0062:
+.word ow_npcs_0062Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0077Tiles+(1*0x200)
+.word ow_npcs_0062Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0077Tiles+(2*0x200)
+.word ow_npcs_0062Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0077Tiles+(3*0x200)
+.word ow_npcs_0062Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0077Tiles+(4*0x200)
+.word ow_npcs_0062Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0077Tiles+(5*0x200)
+.word ow_npcs_0062Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0077Tiles+(6*0x200)
+.word ow_npcs_0062Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0077Tiles+(7*0x200)
+.word ow_npcs_0062Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0077Tiles+(8*0x200)
+.word ow_npcs_0062Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_78:
-.word ow_0078Tiles+(0*0x200)
+.alignow_frames_npcs_0063:
+.word ow_npcs_0063Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0078Tiles+(1*0x200)
+.word ow_npcs_0063Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0078Tiles+(2*0x200)
+.word ow_npcs_0063Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0078Tiles+(3*0x200)
+.word ow_npcs_0063Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0078Tiles+(4*0x200)
+.word ow_npcs_0063Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0078Tiles+(5*0x200)
+.word ow_npcs_0063Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0078Tiles+(6*0x200)
+.word ow_npcs_0063Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0078Tiles+(7*0x200)
+.word ow_npcs_0063Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0078Tiles+(8*0x200)
+.word ow_npcs_0063Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_79:
-.word ow_0079Tiles+(0*0x200)
+.alignow_frames_npcs_0064:
+.word ow_npcs_0064Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0079Tiles+(1*0x200)
+.word ow_npcs_0064Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0079Tiles+(2*0x200)
+.word ow_npcs_0064Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0079Tiles+(3*0x200)
+.word ow_npcs_0064Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0079Tiles+(4*0x200)
+.word ow_npcs_0064Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0079Tiles+(5*0x200)
+.word ow_npcs_0064Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0079Tiles+(6*0x200)
+.word ow_npcs_0064Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0079Tiles+(7*0x200)
+.word ow_npcs_0064Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0079Tiles+(8*0x200)
+.word ow_npcs_0064Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_80:
-.word ow_0080Tiles+(0*0x200)
+.alignow_frames_npcs_0065:
+.word ow_npcs_0065Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0080Tiles+(1*0x200)
+.word ow_npcs_0065Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0080Tiles+(2*0x200)
+.word ow_npcs_0065Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0080Tiles+(3*0x200)
+.word ow_npcs_0065Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0080Tiles+(4*0x200)
+.word ow_npcs_0065Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0080Tiles+(5*0x200)
+.word ow_npcs_0065Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0080Tiles+(6*0x200)
+.word ow_npcs_0065Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0080Tiles+(7*0x200)
+.word ow_npcs_0065Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0080Tiles+(8*0x200)
+.word ow_npcs_0065Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_81:
-.word ow_0081Tiles+(0*0x200)
+.alignow_frames_npcs_0066:
+.word ow_npcs_0066Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0081Tiles+(1*0x200)
+.word ow_npcs_0066Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0081Tiles+(2*0x200)
+.word ow_npcs_0066Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0081Tiles+(3*0x200)
+.word ow_npcs_0066Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0081Tiles+(4*0x200)
+.word ow_npcs_0066Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0081Tiles+(5*0x200)
+.word ow_npcs_0066Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0081Tiles+(6*0x200)
+.word ow_npcs_0066Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0081Tiles+(7*0x200)
+.word ow_npcs_0066Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0081Tiles+(8*0x200)
+.word ow_npcs_0066Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_82:
-.word ow_0082Tiles+(0*0x200)
+.alignow_frames_npcs_0067:
+.word ow_npcs_0067Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0082Tiles+(1*0x200)
+.word ow_npcs_0067Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0082Tiles+(2*0x200)
+.word ow_npcs_0067Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0082Tiles+(3*0x200)
+.word ow_npcs_0067Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0082Tiles+(4*0x200)
+.word ow_npcs_0067Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0082Tiles+(5*0x200)
+.word ow_npcs_0067Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0082Tiles+(6*0x200)
+.word ow_npcs_0067Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0082Tiles+(7*0x200)
+.word ow_npcs_0067Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0082Tiles+(8*0x200)
+.word ow_npcs_0067Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_83:
-.word ow_0083Tiles+(0*0x200)
+.alignow_frames_npcs_0068:
+.word ow_npcs_0068Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0083Tiles+(1*0x200)
+.word ow_npcs_0068Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0083Tiles+(2*0x200)
+.word ow_npcs_0068Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0083Tiles+(3*0x200)
+.word ow_npcs_0068Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0083Tiles+(4*0x200)
+.word ow_npcs_0068Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0083Tiles+(5*0x200)
+.word ow_npcs_0068Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0083Tiles+(6*0x200)
+.word ow_npcs_0068Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0083Tiles+(7*0x200)
+.word ow_npcs_0068Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0083Tiles+(8*0x200)
+.word ow_npcs_0068Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_84:
-.word ow_0084Tiles+(0*0x200)
+.alignow_frames_npcs_0069:
+.word ow_npcs_0069Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0084Tiles+(1*0x200)
+.word ow_npcs_0069Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0084Tiles+(2*0x200)
+.word ow_npcs_0069Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0084Tiles+(3*0x200)
+.word ow_npcs_0069Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0084Tiles+(4*0x200)
+.word ow_npcs_0069Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0084Tiles+(5*0x200)
+.word ow_npcs_0069Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0084Tiles+(6*0x200)
+.word ow_npcs_0069Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0084Tiles+(7*0x200)
+.word ow_npcs_0069Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0084Tiles+(8*0x200)
+.word ow_npcs_0069Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_85:
-.word ow_0085Tiles+(0*0x200)
+.alignow_frames_npcs_0070:
+.word ow_npcs_0070Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0085Tiles+(1*0x200)
+.word ow_npcs_0070Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0085Tiles+(2*0x200)
+.word ow_npcs_0070Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0085Tiles+(3*0x200)
+.word ow_npcs_0070Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0085Tiles+(4*0x200)
+.word ow_npcs_0070Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0085Tiles+(5*0x200)
+.word ow_npcs_0070Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0085Tiles+(6*0x200)
+.word ow_npcs_0070Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0085Tiles+(7*0x200)
+.word ow_npcs_0070Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0085Tiles+(8*0x200)
+.word ow_npcs_0070Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_86:
-.word ow_0086Tiles+(0*0x200)
+.alignow_frames_npcs_0071:
+.word ow_npcs_0071Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0086Tiles+(1*0x200)
+.word ow_npcs_0071Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0086Tiles+(2*0x200)
+.word ow_npcs_0071Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0086Tiles+(3*0x200)
+.word ow_npcs_0071Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0086Tiles+(4*0x200)
+.word ow_npcs_0071Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0086Tiles+(5*0x200)
+.word ow_npcs_0071Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0086Tiles+(6*0x200)
+.word ow_npcs_0071Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0086Tiles+(7*0x200)
+.word ow_npcs_0071Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0086Tiles+(8*0x200)
+.word ow_npcs_0071Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_87:
-.word ow_0087Tiles+(0*0x200)
+.alignow_frames_npcs_0072:
+.word ow_npcs_0072Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0087Tiles+(1*0x200)
+.word ow_npcs_0072Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0087Tiles+(2*0x200)
+.word ow_npcs_0072Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0087Tiles+(3*0x200)
+.word ow_npcs_0072Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0087Tiles+(4*0x200)
+.word ow_npcs_0072Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0087Tiles+(5*0x200)
+.word ow_npcs_0072Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0087Tiles+(6*0x200)
+.word ow_npcs_0072Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0087Tiles+(7*0x200)
+.word ow_npcs_0072Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0087Tiles+(8*0x200)
+.word ow_npcs_0072Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_88:
-.word ow_0088Tiles+(0*0x200)
+.alignow_frames_npcs_0073:
+.word ow_npcs_0073Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0088Tiles+(1*0x200)
+.word ow_npcs_0073Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0088Tiles+(2*0x200)
+.word ow_npcs_0073Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0088Tiles+(3*0x200)
+.word ow_npcs_0073Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0088Tiles+(4*0x200)
+.word ow_npcs_0073Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0088Tiles+(5*0x200)
+.word ow_npcs_0073Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0088Tiles+(6*0x200)
+.word ow_npcs_0073Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0088Tiles+(7*0x200)
+.word ow_npcs_0073Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0088Tiles+(8*0x200)
+.word ow_npcs_0073Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_89:
-.word ow_0089Tiles+(0*0x200)
+.alignow_frames_npcs_0074:
+.word ow_npcs_0074Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0089Tiles+(1*0x200)
+.word ow_npcs_0074Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0089Tiles+(2*0x200)
+.word ow_npcs_0074Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0089Tiles+(3*0x200)
+.word ow_npcs_0074Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0089Tiles+(4*0x200)
+.word ow_npcs_0074Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0089Tiles+(5*0x200)
+.word ow_npcs_0074Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0089Tiles+(6*0x200)
+.word ow_npcs_0074Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0089Tiles+(7*0x200)
+.word ow_npcs_0074Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0089Tiles+(8*0x200)
+.word ow_npcs_0074Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_90:
-.word ow_0090Tiles+(0*0x200)
+.alignow_frames_npcs_0075:
+.word ow_npcs_0075Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0090Tiles+(1*0x200)
+.word ow_npcs_0075Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0090Tiles+(2*0x200)
+.word ow_npcs_0075Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0090Tiles+(3*0x200)
+.word ow_npcs_0075Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0090Tiles+(4*0x200)
+.word ow_npcs_0075Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0090Tiles+(5*0x200)
+.word ow_npcs_0075Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0090Tiles+(6*0x200)
+.word ow_npcs_0075Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0090Tiles+(7*0x200)
+.word ow_npcs_0075Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0090Tiles+(8*0x200)
+.word ow_npcs_0075Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_91:
-.word ow_0091Tiles+(0*0x200)
+.alignow_frames_npcs_0076:
+.word ow_npcs_0076Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0091Tiles+(1*0x200)
+.word ow_npcs_0076Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0091Tiles+(2*0x200)
+.word ow_npcs_0076Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0091Tiles+(3*0x200)
+.word ow_npcs_0076Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0091Tiles+(4*0x200)
+.word ow_npcs_0076Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0091Tiles+(5*0x200)
+.word ow_npcs_0076Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0091Tiles+(6*0x200)
+.word ow_npcs_0076Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0091Tiles+(7*0x200)
+.word ow_npcs_0076Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0091Tiles+(8*0x200)
+.word ow_npcs_0076Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_92:
-.word ow_0092Tiles+(0*0x200)
+.alignow_frames_npcs_0077:
+.word ow_npcs_0077Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0092Tiles+(1*0x200)
+.word ow_npcs_0077Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0092Tiles+(2*0x200)
+.word ow_npcs_0077Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0092Tiles+(3*0x200)
+.word ow_npcs_0077Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0092Tiles+(4*0x200)
+.word ow_npcs_0077Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0092Tiles+(5*0x200)
+.word ow_npcs_0077Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0092Tiles+(6*0x200)
+.word ow_npcs_0077Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0092Tiles+(7*0x200)
+.word ow_npcs_0077Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0092Tiles+(8*0x200)
+.word ow_npcs_0077Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_93:
-.word ow_0093Tiles+(0*0x200)
+.alignow_frames_npcs_0078:
+.word ow_npcs_0078Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0093Tiles+(1*0x200)
+.word ow_npcs_0078Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0093Tiles+(2*0x200)
+.word ow_npcs_0078Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0093Tiles+(3*0x200)
+.word ow_npcs_0078Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0093Tiles+(4*0x200)
+.word ow_npcs_0078Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0093Tiles+(5*0x200)
+.word ow_npcs_0078Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0093Tiles+(6*0x200)
+.word ow_npcs_0078Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0093Tiles+(7*0x200)
+.word ow_npcs_0078Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0093Tiles+(8*0x200)
+.word ow_npcs_0078Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_94:
-.word ow_0094Tiles+(0*0x200)
+.alignow_frames_npcs_0079:
+.word ow_npcs_0079Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0094Tiles+(1*0x200)
+.word ow_npcs_0079Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0094Tiles+(2*0x200)
+.word ow_npcs_0079Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0094Tiles+(3*0x200)
+.word ow_npcs_0079Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0094Tiles+(4*0x200)
+.word ow_npcs_0079Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0094Tiles+(5*0x200)
+.word ow_npcs_0079Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0094Tiles+(6*0x200)
+.word ow_npcs_0079Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0094Tiles+(7*0x200)
+.word ow_npcs_0079Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0094Tiles+(8*0x200)
+.word ow_npcs_0079Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_95:
-.word ow_0095Tiles+(0*0x200)
+.alignow_frames_npcs_0080:
+.word ow_npcs_0080Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0095Tiles+(1*0x200)
+.word ow_npcs_0080Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0095Tiles+(2*0x200)
+.word ow_npcs_0080Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0095Tiles+(3*0x200)
+.word ow_npcs_0080Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0095Tiles+(4*0x200)
+.word ow_npcs_0080Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0095Tiles+(5*0x200)
+.word ow_npcs_0080Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0095Tiles+(6*0x200)
+.word ow_npcs_0080Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0095Tiles+(7*0x200)
+.word ow_npcs_0080Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0095Tiles+(8*0x200)
+.word ow_npcs_0080Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_96:
-.word ow_0096Tiles+(0*0x200)
+.alignow_frames_npcs_0081:
+.word ow_npcs_0081Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0096Tiles+(1*0x200)
+.word ow_npcs_0081Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0096Tiles+(2*0x200)
+.word ow_npcs_0081Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0096Tiles+(3*0x200)
+.word ow_npcs_0081Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0096Tiles+(4*0x200)
+.word ow_npcs_0081Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0096Tiles+(5*0x200)
+.word ow_npcs_0081Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0096Tiles+(6*0x200)
+.word ow_npcs_0081Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0096Tiles+(7*0x200)
+.word ow_npcs_0081Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0096Tiles+(8*0x200)
+.word ow_npcs_0081Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_97:
-.word ow_0097Tiles+(0*0x200)
+.alignow_frames_npcs_0082:
+.word ow_npcs_0082Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0097Tiles+(1*0x200)
+.word ow_npcs_0082Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0097Tiles+(2*0x200)
+.word ow_npcs_0082Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0097Tiles+(3*0x200)
+.word ow_npcs_0082Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0097Tiles+(4*0x200)
+.word ow_npcs_0082Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0097Tiles+(5*0x200)
+.word ow_npcs_0082Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0097Tiles+(6*0x200)
+.word ow_npcs_0082Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0097Tiles+(7*0x200)
+.word ow_npcs_0082Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0097Tiles+(8*0x200)
+.word ow_npcs_0082Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_98:
-.word ow_0098Tiles+(0*0x200)
+.alignow_frames_npcs_0083:
+.word ow_npcs_0083Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0098Tiles+(1*0x200)
+.word ow_npcs_0083Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0098Tiles+(2*0x200)
+.word ow_npcs_0083Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0098Tiles+(3*0x200)
+.word ow_npcs_0083Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0098Tiles+(4*0x200)
+.word ow_npcs_0083Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0098Tiles+(5*0x200)
+.word ow_npcs_0083Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0098Tiles+(6*0x200)
+.word ow_npcs_0083Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0098Tiles+(7*0x200)
+.word ow_npcs_0083Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0098Tiles+(8*0x200)
+.word ow_npcs_0083Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_99:
-.word ow_0099Tiles+(0*0x200)
+.alignow_frames_npcs_0084:
+.word ow_npcs_0084Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0099Tiles+(1*0x200)
+.word ow_npcs_0084Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0099Tiles+(2*0x200)
+.word ow_npcs_0084Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0099Tiles+(3*0x200)
+.word ow_npcs_0084Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0099Tiles+(4*0x200)
+.word ow_npcs_0084Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0099Tiles+(5*0x200)
+.word ow_npcs_0084Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0099Tiles+(6*0x200)
+.word ow_npcs_0084Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0099Tiles+(7*0x200)
+.word ow_npcs_0084Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0099Tiles+(8*0x200)
+.word ow_npcs_0084Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_100:
-.word ow_0100Tiles+(0*0x200)
+.alignow_frames_npcs_0085:
+.word ow_npcs_0085Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0100Tiles+(1*0x200)
+.word ow_npcs_0085Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0100Tiles+(2*0x200)
+.word ow_npcs_0085Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0100Tiles+(3*0x200)
+.word ow_npcs_0085Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0100Tiles+(4*0x200)
+.word ow_npcs_0085Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0100Tiles+(5*0x200)
+.word ow_npcs_0085Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0100Tiles+(6*0x200)
+.word ow_npcs_0085Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0100Tiles+(7*0x200)
+.word ow_npcs_0085Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0100Tiles+(8*0x200)
+.word ow_npcs_0085Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_101:
-.word ow_0101Tiles+(0*0x200)
+.alignow_frames_npcs_0086:
+.word ow_npcs_0086Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0101Tiles+(1*0x200)
+.word ow_npcs_0086Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0101Tiles+(2*0x200)
+.word ow_npcs_0086Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0101Tiles+(3*0x200)
+.word ow_npcs_0086Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0101Tiles+(4*0x200)
+.word ow_npcs_0086Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0101Tiles+(5*0x200)
+.word ow_npcs_0086Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0101Tiles+(6*0x200)
+.word ow_npcs_0086Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0101Tiles+(7*0x200)
+.word ow_npcs_0086Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0101Tiles+(8*0x200)
+.word ow_npcs_0086Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_102:
-.word ow_0102Tiles+(0*0x200)
+.alignow_frames_npcs_0087:
+.word ow_npcs_0087Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0102Tiles+(1*0x200)
+.word ow_npcs_0087Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0102Tiles+(2*0x200)
+.word ow_npcs_0087Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0102Tiles+(3*0x200)
+.word ow_npcs_0087Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0102Tiles+(4*0x200)
+.word ow_npcs_0087Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0102Tiles+(5*0x200)
+.word ow_npcs_0087Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0102Tiles+(6*0x200)
+.word ow_npcs_0087Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0102Tiles+(7*0x200)
+.word ow_npcs_0087Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0102Tiles+(8*0x200)
+.word ow_npcs_0087Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_103:
-.word ow_0103Tiles+(0*0x200)
+.alignow_frames_npcs_0088:
+.word ow_npcs_0088Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0103Tiles+(1*0x200)
+.word ow_npcs_0088Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0103Tiles+(2*0x200)
+.word ow_npcs_0088Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0103Tiles+(3*0x200)
+.word ow_npcs_0088Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0103Tiles+(4*0x200)
+.word ow_npcs_0088Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0103Tiles+(5*0x200)
+.word ow_npcs_0088Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0103Tiles+(6*0x200)
+.word ow_npcs_0088Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0103Tiles+(7*0x200)
+.word ow_npcs_0088Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0103Tiles+(8*0x200)
+.word ow_npcs_0088Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_104:
-.word ow_00000Tiles+(0*0x80)
+.alignow_frames_npcs_0089:
+.word ow_npcs_0089Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word 
+.word ow_npcs_0089Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word 
+.word ow_npcs_0089Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word 
+.word ow_npcs_0089Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word 
+.word ow_npcs_0089Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word 
+.word ow_npcs_0089Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word 
+.word ow_npcs_0089Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word 
+.word ow_npcs_0089Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word 
+.word ow_npcs_0089Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_105:
-.word ow_0105Tiles+(0*0x200)
+.alignow_frames_npcs_0090:
+.word ow_npcs_0090Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0105Tiles+(1*0x200)
+.word ow_npcs_0090Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0105Tiles+(2*0x200)
+.word ow_npcs_0090Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0105Tiles+(3*0x200)
+.word ow_npcs_0090Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0105Tiles+(4*0x200)
+.word ow_npcs_0090Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0105Tiles+(5*0x200)
+.word ow_npcs_0090Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0105Tiles+(6*0x200)
+.word ow_npcs_0090Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0105Tiles+(7*0x200)
+.word ow_npcs_0090Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0105Tiles+(8*0x200)
+.word ow_npcs_0090Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_106:
-.word ow_0106Tiles+(0*0x200)
+.alignow_frames_npcs_0091:
+.word ow_npcs_0091Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0106Tiles+(1*0x200)
+.word ow_npcs_0091Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0106Tiles+(2*0x200)
+.word ow_npcs_0091Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0106Tiles+(3*0x200)
+.word ow_npcs_0091Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0106Tiles+(4*0x200)
+.word ow_npcs_0091Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0106Tiles+(5*0x200)
+.word ow_npcs_0091Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0106Tiles+(6*0x200)
+.word ow_npcs_0091Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0106Tiles+(7*0x200)
+.word ow_npcs_0091Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0106Tiles+(8*0x200)
+.word ow_npcs_0091Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_107:
-.word ow_0107Tiles+(0*0x200)
+.alignow_frames_npcs_0092:
+.word ow_npcs_0092Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0107Tiles+(1*0x200)
+.word ow_npcs_0092Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0107Tiles+(2*0x200)
+.word ow_npcs_0092Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0107Tiles+(3*0x200)
+.word ow_npcs_0092Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0107Tiles+(4*0x200)
+.word ow_npcs_0092Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0107Tiles+(5*0x200)
+.word ow_npcs_0092Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0107Tiles+(6*0x200)
+.word ow_npcs_0092Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0107Tiles+(7*0x200)
+.word ow_npcs_0092Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0107Tiles+(8*0x200)
+.word ow_npcs_0092Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_108:
-.word ow_0108Tiles+(0*0x200)
+.alignow_frames_npcs_0093:
+.word ow_npcs_0093Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0108Tiles+(1*0x200)
+.word ow_npcs_0093Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0108Tiles+(2*0x200)
+.word ow_npcs_0093Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0108Tiles+(3*0x200)
+.word ow_npcs_0093Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0108Tiles+(4*0x200)
+.word ow_npcs_0093Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0108Tiles+(5*0x200)
+.word ow_npcs_0093Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0108Tiles+(6*0x200)
+.word ow_npcs_0093Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0108Tiles+(7*0x200)
+.word ow_npcs_0093Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0108Tiles+(8*0x200)
+.word ow_npcs_0093Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_109:
-.word ow_0109Tiles+(0*0x200)
+.alignow_frames_npcs_0094:
+.word ow_npcs_0094Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0109Tiles+(1*0x200)
+.word ow_npcs_0094Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0109Tiles+(2*0x200)
+.word ow_npcs_0094Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0109Tiles+(3*0x200)
+.word ow_npcs_0094Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0109Tiles+(4*0x200)
+.word ow_npcs_0094Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0109Tiles+(5*0x200)
+.word ow_npcs_0094Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0109Tiles+(6*0x200)
+.word ow_npcs_0094Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0109Tiles+(7*0x200)
+.word ow_npcs_0094Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0109Tiles+(8*0x200)
+.word ow_npcs_0094Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_110:
-.word ow_0110Tiles+(0*0x200)
+.alignow_frames_npcs_0095:
+.word ow_npcs_0095Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0110Tiles+(1*0x200)
+.word ow_npcs_0095Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0110Tiles+(2*0x200)
+.word ow_npcs_0095Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0110Tiles+(3*0x200)
+.word ow_npcs_0095Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0110Tiles+(4*0x200)
+.word ow_npcs_0095Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0110Tiles+(5*0x200)
+.word ow_npcs_0095Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0110Tiles+(6*0x200)
+.word ow_npcs_0095Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0110Tiles+(7*0x200)
+.word ow_npcs_0095Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0110Tiles+(8*0x200)
+.word ow_npcs_0095Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_111:
-.word ow_0111Tiles+(0*0x200)
+.alignow_frames_npcs_0096:
+.word ow_npcs_0096Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0111Tiles+(1*0x200)
+.word ow_npcs_0096Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0111Tiles+(2*0x200)
+.word ow_npcs_0096Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0111Tiles+(3*0x200)
+.word ow_npcs_0096Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0111Tiles+(4*0x200)
+.word ow_npcs_0096Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0111Tiles+(5*0x200)
+.word ow_npcs_0096Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0111Tiles+(6*0x200)
+.word ow_npcs_0096Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0111Tiles+(7*0x200)
+.word ow_npcs_0096Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0111Tiles+(8*0x200)
+.word ow_npcs_0096Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_112:
-.word ow_0112Tiles+(0*0x200)
+.alignow_frames_npcs_0097:
+.word ow_npcs_0097Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0112Tiles+(1*0x200)
+.word ow_npcs_0097Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0112Tiles+(2*0x200)
+.word ow_npcs_0097Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0112Tiles+(3*0x200)
+.word ow_npcs_0097Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0112Tiles+(4*0x200)
+.word ow_npcs_0097Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0112Tiles+(5*0x200)
+.word ow_npcs_0097Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0112Tiles+(6*0x200)
+.word ow_npcs_0097Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0112Tiles+(7*0x200)
+.word ow_npcs_0097Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0112Tiles+(8*0x200)
+.word ow_npcs_0097Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_113:
-.word ow_0113Tiles+(0*0x200)
+.alignow_frames_npcs_0098:
+.word ow_npcs_0098Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0113Tiles+(1*0x200)
+.word ow_npcs_0098Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0113Tiles+(2*0x200)
+.word ow_npcs_0098Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0113Tiles+(3*0x200)
+.word ow_npcs_0098Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0113Tiles+(4*0x200)
+.word ow_npcs_0098Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0113Tiles+(5*0x200)
+.word ow_npcs_0098Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0113Tiles+(6*0x200)
+.word ow_npcs_0098Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0113Tiles+(7*0x200)
+.word ow_npcs_0098Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0113Tiles+(8*0x200)
+.word ow_npcs_0098Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_114:
-.word ow_0114Tiles+(0*0x200)
+.alignow_frames_npcs_0099:
+.word ow_npcs_0099Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0114Tiles+(1*0x200)
+.word ow_npcs_0099Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0114Tiles+(2*0x200)
+.word ow_npcs_0099Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0114Tiles+(3*0x200)
+.word ow_npcs_0099Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0114Tiles+(4*0x200)
+.word ow_npcs_0099Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0114Tiles+(5*0x200)
+.word ow_npcs_0099Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0114Tiles+(6*0x200)
+.word ow_npcs_0099Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0114Tiles+(7*0x200)
+.word ow_npcs_0099Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0114Tiles+(8*0x200)
+.word ow_npcs_0099Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_115:
-.word ow_00000Tiles+(0*0x80)
+.alignow_frames_npcs_0100:
+.word ow_npcs_0100Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word 
+.word ow_npcs_0100Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word 
+.word ow_npcs_0100Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word 
+.word ow_npcs_0100Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word 
+.word ow_npcs_0100Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word 
+.word ow_npcs_0100Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word 
+.word ow_npcs_0100Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word 
+.word ow_npcs_0100Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word 
+.word ow_npcs_0100Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_116:
-.word ow_0116Tiles+(0*0x200)
+.alignow_frames_npcs_0101:
+.word ow_npcs_0101Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0116Tiles+(1*0x200)
+.word ow_npcs_0101Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0116Tiles+(2*0x200)
+.word ow_npcs_0101Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0116Tiles+(3*0x200)
+.word ow_npcs_0101Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0116Tiles+(4*0x200)
+.word ow_npcs_0101Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0116Tiles+(5*0x200)
+.word ow_npcs_0101Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0116Tiles+(6*0x200)
+.word ow_npcs_0101Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0116Tiles+(7*0x200)
+.word ow_npcs_0101Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0116Tiles+(8*0x200)
+.word ow_npcs_0101Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_117:
-.word ow_0117Tiles+(0*0x200)
+.alignow_frames_npcs_0102:
+.word ow_npcs_0102Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0117Tiles+(1*0x200)
+.word ow_npcs_0102Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0117Tiles+(2*0x200)
+.word ow_npcs_0102Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0117Tiles+(3*0x200)
+.word ow_npcs_0102Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0117Tiles+(4*0x200)
+.word ow_npcs_0102Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0117Tiles+(5*0x200)
+.word ow_npcs_0102Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0117Tiles+(6*0x200)
+.word ow_npcs_0102Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0117Tiles+(7*0x200)
+.word ow_npcs_0102Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0117Tiles+(8*0x200)
+.word ow_npcs_0102Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_118:
-.word ow_0118Tiles+(0*0x200)
+.alignow_frames_npcs_0103:
+.word ow_npcs_0103Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0118Tiles+(1*0x200)
+.word ow_npcs_0103Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0118Tiles+(2*0x200)
+.word ow_npcs_0103Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0118Tiles+(3*0x200)
+.word ow_npcs_0103Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0118Tiles+(4*0x200)
+.word ow_npcs_0103Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0118Tiles+(5*0x200)
+.word ow_npcs_0103Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0118Tiles+(6*0x200)
+.word ow_npcs_0103Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0118Tiles+(7*0x200)
+.word ow_npcs_0103Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0118Tiles+(8*0x200)
+.word ow_npcs_0103Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_119:
-.word ow_0119Tiles+(0*0x200)
+.alignow_frames_npcs_0104:
+.word ow_npcs_0104Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0119Tiles+(1*0x200)
+.word ow_npcs_0104Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0119Tiles+(2*0x200)
+.word ow_npcs_0104Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0119Tiles+(3*0x200)
+.word ow_npcs_0104Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0119Tiles+(4*0x200)
+.word ow_npcs_0104Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0119Tiles+(5*0x200)
+.word ow_npcs_0104Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0119Tiles+(6*0x200)
+.word ow_npcs_0104Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0119Tiles+(7*0x200)
+.word ow_npcs_0104Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0119Tiles+(8*0x200)
+.word ow_npcs_0104Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_120:
-.word ow_0120Tiles+(0*0x200)
+.alignow_frames_npcs_0105:
+.word ow_npcs_0105Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0120Tiles+(1*0x200)
+.word ow_npcs_0105Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0120Tiles+(2*0x200)
+.word ow_npcs_0105Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0120Tiles+(3*0x200)
+.word ow_npcs_0105Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0120Tiles+(4*0x200)
+.word ow_npcs_0105Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0120Tiles+(5*0x200)
+.word ow_npcs_0105Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0120Tiles+(6*0x200)
+.word ow_npcs_0105Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0120Tiles+(7*0x200)
+.word ow_npcs_0105Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0120Tiles+(8*0x200)
+.word ow_npcs_0105Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_121:
-.word ow_0121Tiles+(0*0x200)
+.alignow_frames_npcs_0106:
+.word ow_npcs_0106Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0121Tiles+(1*0x200)
+.word ow_npcs_0106Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0121Tiles+(2*0x200)
+.word ow_npcs_0106Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0121Tiles+(3*0x200)
+.word ow_npcs_0106Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0121Tiles+(4*0x200)
+.word ow_npcs_0106Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0121Tiles+(5*0x200)
+.word ow_npcs_0106Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0121Tiles+(6*0x200)
+.word ow_npcs_0106Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0121Tiles+(7*0x200)
+.word ow_npcs_0106Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0121Tiles+(8*0x200)
+.word ow_npcs_0106Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_122:
-.word ow_0122Tiles+(0*0x200)
+.alignow_frames_npcs_0107:
+.word ow_npcs_0107Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0122Tiles+(1*0x200)
+.word ow_npcs_0107Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0122Tiles+(2*0x200)
+.word ow_npcs_0107Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0122Tiles+(3*0x200)
+.word ow_npcs_0107Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0122Tiles+(4*0x200)
+.word ow_npcs_0107Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0122Tiles+(5*0x200)
+.word ow_npcs_0107Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0122Tiles+(6*0x200)
+.word ow_npcs_0107Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0122Tiles+(7*0x200)
+.word ow_npcs_0107Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0122Tiles+(8*0x200)
+.word ow_npcs_0107Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_123:
-.word ow_0123Tiles+(0*0x200)
+.alignow_frames_npcs_0108:
+.word ow_npcs_0108Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0123Tiles+(1*0x200)
+.word ow_npcs_0108Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0123Tiles+(2*0x200)
+.word ow_npcs_0108Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0123Tiles+(3*0x200)
+.word ow_npcs_0108Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0123Tiles+(4*0x200)
+.word ow_npcs_0108Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0123Tiles+(5*0x200)
+.word ow_npcs_0108Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0123Tiles+(6*0x200)
+.word ow_npcs_0108Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0123Tiles+(7*0x200)
+.word ow_npcs_0108Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0123Tiles+(8*0x200)
+.word ow_npcs_0108Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_124:
-.word ow_0124Tiles+(0*0x200)
+.alignow_frames_npcs_0109:
+.word ow_npcs_0109Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0124Tiles+(1*0x200)
+.word ow_npcs_0109Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0124Tiles+(2*0x200)
+.word ow_npcs_0109Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0124Tiles+(3*0x200)
+.word ow_npcs_0109Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0124Tiles+(4*0x200)
+.word ow_npcs_0109Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0124Tiles+(5*0x200)
+.word ow_npcs_0109Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0124Tiles+(6*0x200)
+.word ow_npcs_0109Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0124Tiles+(7*0x200)
+.word ow_npcs_0109Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0124Tiles+(8*0x200)
+.word ow_npcs_0109Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_125:
-.word ow_0125Tiles+(0*0x200)
+.alignow_frames_npcs_0110:
+.word ow_npcs_0110Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0125Tiles+(1*0x200)
+.word ow_npcs_0110Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0125Tiles+(2*0x200)
+.word ow_npcs_0110Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0125Tiles+(3*0x200)
+.word ow_npcs_0110Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0125Tiles+(4*0x200)
+.word ow_npcs_0110Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0125Tiles+(5*0x200)
+.word ow_npcs_0110Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0125Tiles+(6*0x200)
+.word ow_npcs_0110Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0125Tiles+(7*0x200)
+.word ow_npcs_0110Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0125Tiles+(8*0x200)
+.word ow_npcs_0110Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_126:
-.word ow_0126Tiles+(0*0x200)
+.alignow_frames_npcs_0111:
+.word ow_npcs_0111Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0126Tiles+(1*0x200)
+.word ow_npcs_0111Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0126Tiles+(2*0x200)
+.word ow_npcs_0111Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0126Tiles+(3*0x200)
+.word ow_npcs_0111Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0126Tiles+(4*0x200)
+.word ow_npcs_0111Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0126Tiles+(5*0x200)
+.word ow_npcs_0111Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0126Tiles+(6*0x200)
+.word ow_npcs_0111Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0126Tiles+(7*0x200)
+.word ow_npcs_0111Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0126Tiles+(8*0x200)
+.word ow_npcs_0111Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_127:
-.word ow_0127Tiles+(0*0x200)
+.alignow_frames_npcs_0112:
+.word ow_npcs_0112Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0127Tiles+(1*0x200)
+.word ow_npcs_0112Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0127Tiles+(2*0x200)
+.word ow_npcs_0112Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0127Tiles+(3*0x200)
+.word ow_npcs_0112Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0127Tiles+(4*0x200)
+.word ow_npcs_0112Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0127Tiles+(5*0x200)
+.word ow_npcs_0112Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0127Tiles+(6*0x200)
+.word ow_npcs_0112Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0127Tiles+(7*0x200)
+.word ow_npcs_0112Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0127Tiles+(8*0x200)
+.word ow_npcs_0112Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_128:
-.word ow_0128Tiles+(0*0x200)
+.alignow_frames_npcs_0113:
+.word ow_npcs_0113Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0128Tiles+(1*0x200)
+.word ow_npcs_0113Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0128Tiles+(2*0x200)
+.word ow_npcs_0113Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0128Tiles+(3*0x200)
+.word ow_npcs_0113Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0128Tiles+(4*0x200)
+.word ow_npcs_0113Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0128Tiles+(5*0x200)
+.word ow_npcs_0113Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0128Tiles+(6*0x200)
+.word ow_npcs_0113Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0128Tiles+(7*0x200)
+.word ow_npcs_0113Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0128Tiles+(8*0x200)
+.word ow_npcs_0113Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_129:
-.word ow_0129Tiles+(0*0x200)
+.alignow_frames_npcs_0114:
+.word ow_npcs_0114Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0129Tiles+(1*0x200)
+.word ow_npcs_0114Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0129Tiles+(2*0x200)
+.word ow_npcs_0114Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0129Tiles+(3*0x200)
+.word ow_npcs_0114Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0129Tiles+(4*0x200)
+.word ow_npcs_0114Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0129Tiles+(5*0x200)
+.word ow_npcs_0114Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0129Tiles+(6*0x200)
+.word ow_npcs_0114Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0129Tiles+(7*0x200)
+.word ow_npcs_0114Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0129Tiles+(8*0x200)
+.word ow_npcs_0114Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_130:
-.word ow_0130Tiles+(0*0x200)
+.alignow_frames_npcs_0115:
+.word ow_npcs_0115Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0130Tiles+(1*0x200)
+.word ow_npcs_0115Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0130Tiles+(2*0x200)
+.word ow_npcs_0115Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0130Tiles+(3*0x200)
+.word ow_npcs_0115Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0130Tiles+(4*0x200)
+.word ow_npcs_0115Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0130Tiles+(5*0x200)
+.word ow_npcs_0115Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0130Tiles+(6*0x200)
+.word ow_npcs_0115Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0130Tiles+(7*0x200)
+.word ow_npcs_0115Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0130Tiles+(8*0x200)
+.word ow_npcs_0115Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_131:
-.word ow_0131Tiles+(0*0x200)
+.alignow_frames_npcs_0116:
+.word ow_npcs_0116Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0131Tiles+(1*0x200)
+.word ow_npcs_0116Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0131Tiles+(2*0x200)
+.word ow_npcs_0116Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0131Tiles+(3*0x200)
+.word ow_npcs_0116Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0131Tiles+(4*0x200)
+.word ow_npcs_0116Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0131Tiles+(5*0x200)
+.word ow_npcs_0116Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0131Tiles+(6*0x200)
+.word ow_npcs_0116Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0131Tiles+(7*0x200)
+.word ow_npcs_0116Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0131Tiles+(8*0x200)
+.word ow_npcs_0116Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_132:
-.word ow_0132Tiles+(0*0x200)
+.alignow_frames_npcs_0117:
+.word ow_npcs_0117Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0132Tiles+(1*0x200)
+.word ow_npcs_0117Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0132Tiles+(2*0x200)
+.word ow_npcs_0117Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0132Tiles+(3*0x200)
+.word ow_npcs_0117Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0132Tiles+(4*0x200)
+.word ow_npcs_0117Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0132Tiles+(5*0x200)
+.word ow_npcs_0117Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0132Tiles+(6*0x200)
+.word ow_npcs_0117Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0132Tiles+(7*0x200)
+.word ow_npcs_0117Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0132Tiles+(8*0x200)
+.word ow_npcs_0117Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_133:
-.word ow_0133Tiles+(0*0x200)
+.alignow_frames_npcs_0118:
+.word ow_npcs_0118Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0133Tiles+(1*0x200)
+.word ow_npcs_0118Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0133Tiles+(2*0x200)
+.word ow_npcs_0118Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0133Tiles+(3*0x200)
+.word ow_npcs_0118Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0133Tiles+(4*0x200)
+.word ow_npcs_0118Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0133Tiles+(5*0x200)
+.word ow_npcs_0118Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0133Tiles+(6*0x200)
+.word ow_npcs_0118Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0133Tiles+(7*0x200)
+.word ow_npcs_0118Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0133Tiles+(8*0x200)
+.word ow_npcs_0118Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_134:
-.word ow_0134Tiles+(0*0x200)
+.alignow_frames_npcs_0119:
+.word ow_npcs_0119Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0134Tiles+(1*0x200)
+.word ow_npcs_0119Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0134Tiles+(2*0x200)
+.word ow_npcs_0119Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0134Tiles+(3*0x200)
+.word ow_npcs_0119Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0134Tiles+(4*0x200)
+.word ow_npcs_0119Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0134Tiles+(5*0x200)
+.word ow_npcs_0119Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0134Tiles+(6*0x200)
+.word ow_npcs_0119Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0134Tiles+(7*0x200)
+.word ow_npcs_0119Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0134Tiles+(8*0x200)
+.word ow_npcs_0119Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_135:
-.word ow_0135Tiles+(0*0x200)
+.alignow_frames_npcs_0120:
+.word ow_npcs_0120Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0135Tiles+(1*0x200)
+.word ow_npcs_0120Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0135Tiles+(2*0x200)
+.word ow_npcs_0120Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0135Tiles+(3*0x200)
+.word ow_npcs_0120Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0135Tiles+(4*0x200)
+.word ow_npcs_0120Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0135Tiles+(5*0x200)
+.word ow_npcs_0120Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0135Tiles+(6*0x200)
+.word ow_npcs_0120Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0135Tiles+(7*0x200)
+.word ow_npcs_0120Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0135Tiles+(8*0x200)
+.word ow_npcs_0120Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_136:
-.word ow_0136Tiles+(0*0x200)
+.alignow_frames_npcs_0121:
+.word ow_npcs_0121Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0136Tiles+(1*0x200)
+.word ow_npcs_0121Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0136Tiles+(2*0x200)
+.word ow_npcs_0121Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0136Tiles+(3*0x200)
+.word ow_npcs_0121Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0136Tiles+(4*0x200)
+.word ow_npcs_0121Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0136Tiles+(5*0x200)
+.word ow_npcs_0121Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0136Tiles+(6*0x200)
+.word ow_npcs_0121Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0136Tiles+(7*0x200)
+.word ow_npcs_0121Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0136Tiles+(8*0x200)
+.word ow_npcs_0121Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_137:
-.word ow_0137Tiles+(0*0x200)
+.alignow_frames_npcs_0122:
+.word ow_npcs_0122Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0137Tiles+(1*0x200)
+.word ow_npcs_0122Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0137Tiles+(2*0x200)
+.word ow_npcs_0122Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0137Tiles+(3*0x200)
+.word ow_npcs_0122Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0137Tiles+(4*0x200)
+.word ow_npcs_0122Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0137Tiles+(5*0x200)
+.word ow_npcs_0122Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0137Tiles+(6*0x200)
+.word ow_npcs_0122Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0137Tiles+(7*0x200)
+.word ow_npcs_0122Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0137Tiles+(8*0x200)
+.word ow_npcs_0122Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_138:
-.word ow_0138Tiles+(0*0x200)
+.alignow_frames_npcs_0123:
+.word ow_npcs_0123Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0138Tiles+(1*0x200)
+.word ow_npcs_0123Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0138Tiles+(2*0x200)
+.word ow_npcs_0123Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0138Tiles+(3*0x200)
+.word ow_npcs_0123Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0138Tiles+(4*0x200)
+.word ow_npcs_0123Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0138Tiles+(5*0x200)
+.word ow_npcs_0123Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0138Tiles+(6*0x200)
+.word ow_npcs_0123Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0138Tiles+(7*0x200)
+.word ow_npcs_0123Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0138Tiles+(8*0x200)
+.word ow_npcs_0123Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_139:
-.word ow_0139Tiles+(0*0x200)
+.alignow_frames_npcs_0124:
+.word ow_npcs_0124Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0139Tiles+(1*0x200)
+.word ow_npcs_0124Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0139Tiles+(2*0x200)
+.word ow_npcs_0124Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0139Tiles+(3*0x200)
+.word ow_npcs_0124Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0139Tiles+(4*0x200)
+.word ow_npcs_0124Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0139Tiles+(5*0x200)
+.word ow_npcs_0124Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0139Tiles+(6*0x200)
+.word ow_npcs_0124Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0139Tiles+(7*0x200)
+.word ow_npcs_0124Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0139Tiles+(8*0x200)
+.word ow_npcs_0124Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_140:
-.word ow_0140Tiles+(0*0x200)
+.alignow_frames_npcs_0125:
+.word ow_npcs_0125Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0140Tiles+(1*0x200)
+.word ow_npcs_0125Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0140Tiles+(2*0x200)
+.word ow_npcs_0125Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0140Tiles+(3*0x200)
+.word ow_npcs_0125Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0140Tiles+(4*0x200)
+.word ow_npcs_0125Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0140Tiles+(5*0x200)
+.word ow_npcs_0125Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0140Tiles+(6*0x200)
+.word ow_npcs_0125Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0140Tiles+(7*0x200)
+.word ow_npcs_0125Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0140Tiles+(8*0x200)
+.word ow_npcs_0125Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_141:
-.word ow_0141Tiles+(0*0x200)
+.alignow_frames_npcs_0126:
+.word ow_npcs_0126Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0141Tiles+(1*0x200)
+.word ow_npcs_0126Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0141Tiles+(2*0x200)
+.word ow_npcs_0126Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0141Tiles+(3*0x200)
+.word ow_npcs_0126Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0141Tiles+(4*0x200)
+.word ow_npcs_0126Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0141Tiles+(5*0x200)
+.word ow_npcs_0126Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0141Tiles+(6*0x200)
+.word ow_npcs_0126Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0141Tiles+(7*0x200)
+.word ow_npcs_0126Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0141Tiles+(8*0x200)
+.word ow_npcs_0126Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_142:
-.word ow_0142Tiles+(0*0x200)
+.alignow_frames_npcs_0127:
+.word ow_npcs_0127Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0142Tiles+(1*0x200)
+.word ow_npcs_0127Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0142Tiles+(2*0x200)
+.word ow_npcs_0127Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0142Tiles+(3*0x200)
+.word ow_npcs_0127Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0142Tiles+(4*0x200)
+.word ow_npcs_0127Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0142Tiles+(5*0x200)
+.word ow_npcs_0127Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0142Tiles+(6*0x200)
+.word ow_npcs_0127Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0142Tiles+(7*0x200)
+.word ow_npcs_0127Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0142Tiles+(8*0x200)
+.word ow_npcs_0127Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_143:
-.word ow_0143Tiles+(0*0x200)
+.alignow_frames_npcs_0128:
+.word ow_npcs_0128Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0143Tiles+(1*0x200)
+.word ow_npcs_0128Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0143Tiles+(2*0x200)
+.word ow_npcs_0128Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0143Tiles+(3*0x200)
+.word ow_npcs_0128Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0143Tiles+(4*0x200)
+.word ow_npcs_0128Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0143Tiles+(5*0x200)
+.word ow_npcs_0128Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0143Tiles+(6*0x200)
+.word ow_npcs_0128Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0143Tiles+(7*0x200)
+.word ow_npcs_0128Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0143Tiles+(8*0x200)
+.word ow_npcs_0128Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_144:
-.word ow_0144Tiles+(0*0x200)
+.alignow_frames_npcs_0129:
+.word ow_npcs_0129Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0144Tiles+(1*0x200)
+.word ow_npcs_0129Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0144Tiles+(2*0x200)
+.word ow_npcs_0129Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0144Tiles+(3*0x200)
+.word ow_npcs_0129Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0144Tiles+(4*0x200)
+.word ow_npcs_0129Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0144Tiles+(5*0x200)
+.word ow_npcs_0129Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0144Tiles+(6*0x200)
+.word ow_npcs_0129Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0144Tiles+(7*0x200)
+.word ow_npcs_0129Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0144Tiles+(8*0x200)
+.word ow_npcs_0129Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_145:
-.word ow_0145Tiles+(0*0x200)
+.alignow_frames_npcs_0130:
+.word ow_npcs_0130Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0145Tiles+(1*0x200)
+.word ow_npcs_0130Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0145Tiles+(2*0x200)
+.word ow_npcs_0130Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0145Tiles+(3*0x200)
+.word ow_npcs_0130Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0145Tiles+(4*0x200)
+.word ow_npcs_0130Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0145Tiles+(5*0x200)
+.word ow_npcs_0130Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0145Tiles+(6*0x200)
+.word ow_npcs_0130Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0145Tiles+(7*0x200)
+.word ow_npcs_0130Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0145Tiles+(8*0x200)
+.word ow_npcs_0130Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_146:
-.word ow_0146Tiles+(0*0x200)
+.alignow_frames_npcs_0131:
+.word ow_npcs_0131Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0146Tiles+(1*0x200)
+.word ow_npcs_0131Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0146Tiles+(2*0x200)
+.word ow_npcs_0131Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0146Tiles+(3*0x200)
+.word ow_npcs_0131Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0146Tiles+(4*0x200)
+.word ow_npcs_0131Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0146Tiles+(5*0x200)
+.word ow_npcs_0131Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0146Tiles+(6*0x200)
+.word ow_npcs_0131Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0146Tiles+(7*0x200)
+.word ow_npcs_0131Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0146Tiles+(8*0x200)
+.word ow_npcs_0131Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_147:
-.word ow_0147Tiles+(0*0x200)
+.alignow_frames_npcs_0132:
+.word ow_npcs_0132Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0147Tiles+(1*0x200)
+.word ow_npcs_0132Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0147Tiles+(2*0x200)
+.word ow_npcs_0132Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0147Tiles+(3*0x200)
+.word ow_npcs_0132Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0147Tiles+(4*0x200)
+.word ow_npcs_0132Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0147Tiles+(5*0x200)
+.word ow_npcs_0132Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0147Tiles+(6*0x200)
+.word ow_npcs_0132Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0147Tiles+(7*0x200)
+.word ow_npcs_0132Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0147Tiles+(8*0x200)
+.word ow_npcs_0132Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_148:
-.word ow_0148Tiles+(0*0x200)
+.alignow_frames_npcs_0133:
+.word ow_npcs_0133Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0148Tiles+(1*0x200)
+.word ow_npcs_0133Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0148Tiles+(2*0x200)
+.word ow_npcs_0133Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0148Tiles+(3*0x200)
+.word ow_npcs_0133Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0148Tiles+(4*0x200)
+.word ow_npcs_0133Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0148Tiles+(5*0x200)
+.word ow_npcs_0133Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0148Tiles+(6*0x200)
+.word ow_npcs_0133Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0148Tiles+(7*0x200)
+.word ow_npcs_0133Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0148Tiles+(8*0x200)
+.word ow_npcs_0133Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_149:
-.word ow_0149Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0149Tiles+(1*0x200)
+.alignow_frames_npcs_0134:
+.word ow_npcs_0134Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0149Tiles+(2*0x200)
+.word ow_npcs_0134Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0149Tiles+(3*0x200)
+.word ow_npcs_0134Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0149Tiles+(4*0x200)
+.word ow_npcs_0134Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0149Tiles+(5*0x200)
+.word ow_npcs_0134Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0149Tiles+(6*0x200)
+.word ow_npcs_0134Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0149Tiles+(7*0x200)
+.word ow_npcs_0134Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0149Tiles+(8*0x200)
+.word ow_npcs_0134Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0149Tiles+(9*0x200)
+.word ow_npcs_0134Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_150:
-.word ow_0150Tiles+(0*0x200)
+.alignow_frames_npcs_0135:
+.word ow_npcs_0135Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0150Tiles+(0*0x200)
+.word ow_npcs_0135Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0150Tiles+(0*0x200)
+.word ow_npcs_0135Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0150Tiles+(1*0x200)
+.word ow_npcs_0135Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0150Tiles+(2*0x200)
+.word ow_npcs_0135Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0150Tiles+(1*0x200)
+.word ow_npcs_0135Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0150Tiles+(2*0x200)
+.word ow_npcs_0135Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0150Tiles+(1*0x200)
+.word ow_npcs_0135Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0150Tiles+(2*0x200)
+.word ow_npcs_0135Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_151:
-.word ow_0151Tiles+(0*0x200)
+.alignow_frames_npcs_0136:
+.word ow_npcs_0136Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0151Tiles+(0*0x200)
+.word ow_npcs_0136Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0151Tiles+(0*0x200)
+.word ow_npcs_0136Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0151Tiles+(1*0x200)
+.word ow_npcs_0136Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0151Tiles+(2*0x200)
+.word ow_npcs_0136Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0151Tiles+(1*0x200)
+.word ow_npcs_0136Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0151Tiles+(2*0x200)
+.word ow_npcs_0136Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0151Tiles+(1*0x200)
+.word ow_npcs_0136Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0151Tiles+(2*0x200)
+.word ow_npcs_0136Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_152:
-.word ow_0152Tiles+(0*0x200)
+.alignow_frames_npcs_0137:
+.word ow_npcs_0137Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0152Tiles+(0*0x200)
+.word ow_npcs_0137Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0152Tiles+(0*0x200)
+.word ow_npcs_0137Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0152Tiles+(1*0x200)
+.word ow_npcs_0137Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0152Tiles+(2*0x200)
+.word ow_npcs_0137Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0152Tiles+(1*0x200)
+.word ow_npcs_0137Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0152Tiles+(2*0x200)
+.word ow_npcs_0137Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0152Tiles+(1*0x200)
+.word ow_npcs_0137Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0152Tiles+(2*0x200)
+.word ow_npcs_0137Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_153:
-.word ow_0153Tiles+(0*0x200)
+.alignow_frames_npcs_0138:
+.word ow_npcs_0138Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0153Tiles+(0*0x200)
+.word ow_npcs_0138Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0153Tiles+(0*0x200)
+.word ow_npcs_0138Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0153Tiles+(1*0x200)
+.word ow_npcs_0138Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0153Tiles+(2*0x200)
+.word ow_npcs_0138Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0153Tiles+(1*0x200)
+.word ow_npcs_0138Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0153Tiles+(2*0x200)
+.word ow_npcs_0138Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0153Tiles+(1*0x200)
+.word ow_npcs_0138Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0153Tiles+(2*0x200)
+.word ow_npcs_0138Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_154:
-.word ow_0154Tiles+(0*0x200)
+.alignow_frames_npcs_0139:
+.word ow_npcs_0139Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0154Tiles+(0*0x200)
+.word ow_npcs_0139Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0154Tiles+(0*0x200)
+.word ow_npcs_0139Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0154Tiles+(1*0x200)
+.word ow_npcs_0139Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0154Tiles+(2*0x200)
+.word ow_npcs_0139Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0154Tiles+(1*0x200)
+.word ow_npcs_0139Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0154Tiles+(2*0x200)
+.word ow_npcs_0139Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0154Tiles+(1*0x200)
+.word ow_npcs_0139Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0154Tiles+(2*0x200)
+.word ow_npcs_0139Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_155:
-.word ow_0155Tiles+(0*0x200)
+.alignow_frames_npcs_0140:
+.word ow_npcs_0140Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0155Tiles+(0*0x200)
+.word ow_npcs_0140Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0155Tiles+(0*0x200)
+.word ow_npcs_0140Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0155Tiles+(1*0x200)
+.word ow_npcs_0140Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0155Tiles+(2*0x200)
+.word ow_npcs_0140Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0155Tiles+(1*0x200)
+.word ow_npcs_0140Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0155Tiles+(2*0x200)
+.word ow_npcs_0140Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0155Tiles+(1*0x200)
+.word ow_npcs_0140Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0155Tiles+(2*0x200)
+.word ow_npcs_0140Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_156:
-.word ow_0156Tiles+(0*0x200)
+.alignow_frames_npcs_0141:
+.word ow_npcs_0141Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0156Tiles+(1*0x200)
+.word ow_npcs_0141Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0156Tiles+(2*0x200)
+.word ow_npcs_0141Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0156Tiles+(3*0x200)
+.word ow_npcs_0141Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0156Tiles+(4*0x200)
+.word ow_npcs_0141Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0156Tiles+(5*0x200)
+.word ow_npcs_0141Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0156Tiles+(6*0x200)
+.word ow_npcs_0141Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0156Tiles+(7*0x200)
+.word ow_npcs_0141Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0156Tiles+(8*0x200)
+.word ow_npcs_0141Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_157:
-.word ow_0157Tiles+(0*0x200)
+.alignow_frames_npcs_0142:
+.word ow_npcs_0142Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0157Tiles+(1*0x200)
+.word ow_npcs_0142Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0157Tiles+(2*0x200)
+.word ow_npcs_0142Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0157Tiles+(3*0x200)
+.word ow_npcs_0142Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0157Tiles+(4*0x200)
+.word ow_npcs_0142Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0157Tiles+(5*0x200)
+.word ow_npcs_0142Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0157Tiles+(6*0x200)
+.word ow_npcs_0142Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0157Tiles+(7*0x200)
+.word ow_npcs_0142Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0157Tiles+(8*0x200)
+.word ow_npcs_0142Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_158:
-.word ow_0158Tiles+(0*0x200)
+.alignow_frames_npcs_0143:
+.word ow_npcs_0143Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0158Tiles+(1*0x200)
+.word ow_npcs_0143Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0158Tiles+(2*0x200)
+.word ow_npcs_0143Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0158Tiles+(3*0x200)
+.word ow_npcs_0143Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0158Tiles+(4*0x200)
+.word ow_npcs_0143Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0158Tiles+(5*0x200)
+.word ow_npcs_0143Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0158Tiles+(6*0x200)
+.word ow_npcs_0143Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0158Tiles+(7*0x200)
+.word ow_npcs_0143Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0158Tiles+(8*0x200)
+.word ow_npcs_0143Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_159:
-.word ow_0159Tiles+(0*0x200)
+.alignow_frames_npcs_0144:
+.word ow_npcs_0144Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0159Tiles+(1*0x200)
+.word ow_npcs_0144Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0159Tiles+(2*0x200)
+.word ow_npcs_0144Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0159Tiles+(3*0x200)
+.word ow_npcs_0144Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0159Tiles+(4*0x200)
+.word ow_npcs_0144Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0159Tiles+(5*0x200)
+.word ow_npcs_0144Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0159Tiles+(6*0x200)
+.word ow_npcs_0144Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0159Tiles+(7*0x200)
+.word ow_npcs_0144Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0159Tiles+(8*0x200)
+.word ow_npcs_0144Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_160:
-.word ow_0160Tiles+(0*0x200)
+.alignow_frames_npcs_0145:
+.word ow_npcs_0145Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0160Tiles+(1*0x200)
+.word ow_npcs_0145Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0160Tiles+(2*0x200)
+.word ow_npcs_0145Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0160Tiles+(3*0x200)
+.word ow_npcs_0145Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0160Tiles+(4*0x200)
+.word ow_npcs_0145Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0160Tiles+(5*0x200)
+.word ow_npcs_0145Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0160Tiles+(6*0x200)
+.word ow_npcs_0145Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0160Tiles+(7*0x200)
+.word ow_npcs_0145Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0160Tiles+(8*0x200)
+.word ow_npcs_0145Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_161:
-.word ow_0161Tiles+(0*0x200)
+.alignow_frames_npcs_0146:
+.word ow_npcs_0146Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0161Tiles+(1*0x200)
+.word ow_npcs_0146Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0161Tiles+(2*0x200)
+.word ow_npcs_0146Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0161Tiles+(3*0x200)
+.word ow_npcs_0146Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0161Tiles+(4*0x200)
+.word ow_npcs_0146Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0161Tiles+(5*0x200)
+.word ow_npcs_0146Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0161Tiles+(6*0x200)
+.word ow_npcs_0146Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0161Tiles+(7*0x200)
+.word ow_npcs_0146Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0161Tiles+(8*0x200)
+.word ow_npcs_0146Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_162:
-.word ow_0162Tiles+(0*0x200)
+.alignow_frames_npcs_0147:
+.word ow_npcs_0147Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0162Tiles+(0*0x200)
+.word ow_npcs_0147Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0162Tiles+(0*0x200)
+.word ow_npcs_0147Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0162Tiles+(1*0x200)
+.word ow_npcs_0147Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0162Tiles+(2*0x200)
+.word ow_npcs_0147Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0162Tiles+(1*0x200)
+.word ow_npcs_0147Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0162Tiles+(2*0x200)
+.word ow_npcs_0147Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0162Tiles+(1*0x200)
+.word ow_npcs_0147Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0162Tiles+(2*0x200)
+.word ow_npcs_0147Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_163:
-.word ow_0163Tiles+(0*0x200)
+.alignow_frames_npcs_0148:
+.word ow_npcs_0148Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0163Tiles+(1*0x200)
+.word ow_npcs_0148Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0163Tiles+(2*0x200)
+.word ow_npcs_0148Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0163Tiles+(3*0x200)
+.word ow_npcs_0148Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0163Tiles+(4*0x200)
+.word ow_npcs_0148Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0163Tiles+(5*0x200)
+.word ow_npcs_0148Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0163Tiles+(6*0x200)
+.word ow_npcs_0148Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0163Tiles+(7*0x200)
+.word ow_npcs_0148Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0163Tiles+(8*0x200)
+.word ow_npcs_0148Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_164:
-.word ow_0164Tiles+(0*0x200)
+.alignow_frames_npcs_0149:
+.word ow_npcs_0149Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0164Tiles+(1*0x200)
+.word ow_npcs_0149Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0164Tiles+(2*0x200)
+.word ow_npcs_0149Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0164Tiles+(3*0x200)
+.word ow_npcs_0149Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0164Tiles+(4*0x200)
+.word ow_npcs_0149Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0164Tiles+(5*0x200)
+.word ow_npcs_0149Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0164Tiles+(6*0x200)
+.word ow_npcs_0149Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0164Tiles+(7*0x200)
+.word ow_npcs_0149Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0164Tiles+(8*0x200)
+.word ow_npcs_0149Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_165:
-.word ow_0165Tiles+(0*0x200)
+.alignow_frames_npcs_0150:
+.word ow_npcs_0150Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0165Tiles+(1*0x200)
+.word ow_npcs_0150Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0165Tiles+(2*0x200)
+.word ow_npcs_0150Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0165Tiles+(3*0x200)
+.word ow_npcs_0150Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0165Tiles+(4*0x200)
+.word ow_npcs_0150Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0165Tiles+(5*0x200)
+.word ow_npcs_0150Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0165Tiles+(6*0x200)
+.word ow_npcs_0150Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0165Tiles+(7*0x200)
+.word ow_npcs_0150Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0165Tiles+(8*0x200)
+.word ow_npcs_0150Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_166:
-.word ow_0166Tiles+(0*0x200)
+.alignow_frames_npcs_0151:
+.word ow_npcs_0151Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0166Tiles+(1*0x200)
+.word ow_npcs_0151Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0166Tiles+(2*0x200)
+.word ow_npcs_0151Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0166Tiles+(3*0x200)
+.word ow_npcs_0151Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0166Tiles+(4*0x200)
+.word ow_npcs_0151Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0166Tiles+(5*0x200)
+.word ow_npcs_0151Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0166Tiles+(6*0x200)
+.word ow_npcs_0151Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0166Tiles+(7*0x200)
+.word ow_npcs_0151Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0166Tiles+(8*0x200)
+.word ow_npcs_0151Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_167:
-.word ow_0167Tiles+(0*0x200)
+.alignow_frames_npcs_0152:
+.word ow_npcs_0152Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0167Tiles+(1*0x200)
+.word ow_npcs_0152Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0167Tiles+(2*0x200)
+.word ow_npcs_0152Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0167Tiles+(3*0x200)
+.word ow_npcs_0152Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0167Tiles+(4*0x200)
+.word ow_npcs_0152Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0167Tiles+(5*0x200)
+.word ow_npcs_0152Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0167Tiles+(6*0x200)
+.word ow_npcs_0152Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0167Tiles+(7*0x200)
+.word ow_npcs_0152Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0167Tiles+(8*0x200)
+.word ow_npcs_0152Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_168:
-.word ow_0168Tiles+(0*0x200)
+.alignow_frames_npcs_0153:
+.word ow_npcs_0153Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0168Tiles+(1*0x200)
+.word ow_npcs_0153Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0168Tiles+(2*0x200)
+.word ow_npcs_0153Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0168Tiles+(0*0x200)
+.word ow_npcs_0153Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0168Tiles+(0*0x200)
+.word ow_npcs_0153Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0168Tiles+(1*0x200)
+.word ow_npcs_0153Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0168Tiles+(1*0x200)
+.word ow_npcs_0153Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0168Tiles+(2*0x200)
+.word ow_npcs_0153Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0168Tiles+(2*0x200)
+.word ow_npcs_0153Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_169:
-.word ow_0169Tiles+(0*0x200)
+.alignow_frames_npcs_0154:
+.word ow_npcs_0154Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0169Tiles+(1*0x200)
+.word ow_npcs_0154Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0169Tiles+(2*0x200)
+.word ow_npcs_0154Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0169Tiles+(3*0x200)
+.word ow_npcs_0154Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0169Tiles+(4*0x200)
+.word ow_npcs_0154Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0169Tiles+(5*0x200)
+.word ow_npcs_0154Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0169Tiles+(6*0x200)
+.word ow_npcs_0154Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0169Tiles+(7*0x200)
+.word ow_npcs_0154Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0169Tiles+(8*0x200)
+.word ow_npcs_0154Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_170:
-.word ow_0170Tiles+(0*0x200)
+.alignow_frames_npcs_0155:
+.word ow_npcs_0155Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0170Tiles+(1*0x200)
+.word ow_npcs_0155Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0170Tiles+(2*0x200)
+.word ow_npcs_0155Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0170Tiles+(3*0x200)
+.word ow_npcs_0155Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0170Tiles+(4*0x200)
+.word ow_npcs_0155Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0170Tiles+(5*0x200)
+.word ow_npcs_0155Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0170Tiles+(6*0x200)
+.word ow_npcs_0155Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0170Tiles+(7*0x200)
+.word ow_npcs_0155Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0170Tiles+(8*0x200)
+.word ow_npcs_0155Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_171:
-.word ow_0171Tiles+(0*0x200)
+.alignow_frames_npcs_0156:
+.word ow_npcs_0156Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0171Tiles+(1*0x200)
+.word ow_npcs_0156Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0171Tiles+(2*0x200)
+.word ow_npcs_0156Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0171Tiles+(3*0x200)
+.word ow_npcs_0156Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0171Tiles+(4*0x200)
+.word ow_npcs_0156Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0171Tiles+(5*0x200)
+.word ow_npcs_0156Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0171Tiles+(6*0x200)
+.word ow_npcs_0156Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0171Tiles+(7*0x200)
+.word ow_npcs_0156Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0171Tiles+(8*0x200)
+.word ow_npcs_0156Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_172:
-.word ow_0172Tiles+(0*0x200)
+.alignow_frames_npcs_0157:
+.word ow_npcs_0157Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0172Tiles+(1*0x200)
+.word ow_npcs_0157Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0172Tiles+(2*0x200)
+.word ow_npcs_0157Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0172Tiles+(3*0x200)
+.word ow_npcs_0157Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0172Tiles+(4*0x200)
+.word ow_npcs_0157Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0172Tiles+(5*0x200)
+.word ow_npcs_0157Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0172Tiles+(6*0x200)
+.word ow_npcs_0157Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0172Tiles+(7*0x200)
+.word ow_npcs_0157Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0172Tiles+(8*0x200)
+.word ow_npcs_0157Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_173:
-.word ow_0173Tiles+(0*0x200)
+.alignow_frames_npcs_0158:
+.word ow_npcs_0158Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0173Tiles+(1*0x200)
+.word ow_npcs_0158Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0173Tiles+(2*0x200)
+.word ow_npcs_0158Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0173Tiles+(3*0x200)
+.word ow_npcs_0158Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0173Tiles+(4*0x200)
+.word ow_npcs_0158Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0173Tiles+(5*0x200)
+.word ow_npcs_0158Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0173Tiles+(6*0x200)
+.word ow_npcs_0158Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0173Tiles+(7*0x200)
+.word ow_npcs_0158Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0173Tiles+(8*0x200)
+.word ow_npcs_0158Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_174:
-.word ow_0174Tiles+(0*0x200)
+.alignow_frames_npcs_0159:
+.word ow_npcs_0159Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0174Tiles+(1*0x200)
+.word ow_npcs_0159Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0174Tiles+(2*0x200)
+.word ow_npcs_0159Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0174Tiles+(3*0x200)
+.word ow_npcs_0159Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0174Tiles+(4*0x200)
+.word ow_npcs_0159Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0174Tiles+(5*0x200)
+.word ow_npcs_0159Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0174Tiles+(6*0x200)
+.word ow_npcs_0159Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0174Tiles+(7*0x200)
+.word ow_npcs_0159Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0174Tiles+(8*0x200)
+.word ow_npcs_0159Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_175:
-.word ow_0175Tiles+(0*0x200)
+.alignow_frames_npcs_0160:
+.word ow_npcs_0160Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0175Tiles+(1*0x200)
+.word ow_npcs_0160Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0175Tiles+(2*0x200)
+.word ow_npcs_0160Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0175Tiles+(3*0x200)
+.word ow_npcs_0160Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0175Tiles+(4*0x200)
+.word ow_npcs_0160Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0175Tiles+(5*0x200)
+.word ow_npcs_0160Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0175Tiles+(6*0x200)
+.word ow_npcs_0160Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0175Tiles+(7*0x200)
+.word ow_npcs_0160Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0175Tiles+(8*0x200)
+.word ow_npcs_0160Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_176:
-.word ow_0176Tiles+(0*0x200)
+.alignow_frames_npcs_0161:
+.word ow_npcs_0161Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0176Tiles+(1*0x200)
+.word ow_npcs_0161Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0176Tiles+(2*0x200)
+.word ow_npcs_0161Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0176Tiles+(3*0x200)
+.word ow_npcs_0161Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0176Tiles+(4*0x200)
+.word ow_npcs_0161Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0176Tiles+(5*0x200)
+.word ow_npcs_0161Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0176Tiles+(6*0x200)
+.word ow_npcs_0161Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0176Tiles+(7*0x200)
+.word ow_npcs_0161Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0176Tiles+(8*0x200)
+.word ow_npcs_0161Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_177:
-.word ow_0177Tiles+(0*0x200)
+.alignow_frames_npcs_0162:
+.word ow_npcs_0162Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0177Tiles+(1*0x200)
+.word ow_npcs_0162Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0177Tiles+(2*0x200)
+.word ow_npcs_0162Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0177Tiles+(3*0x200)
+.word ow_npcs_0162Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0177Tiles+(4*0x200)
+.word ow_npcs_0162Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0177Tiles+(5*0x200)
+.word ow_npcs_0162Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0177Tiles+(6*0x200)
+.word ow_npcs_0162Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0177Tiles+(7*0x200)
+.word ow_npcs_0162Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0177Tiles+(8*0x200)
+.word ow_npcs_0162Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_178:
-.word ow_0178Tiles+(0*0x200)
+.alignow_frames_npcs_0163:
+.word ow_npcs_0163Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0178Tiles+(1*0x200)
+.word ow_npcs_0163Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0178Tiles+(2*0x200)
+.word ow_npcs_0163Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0178Tiles+(3*0x200)
+.word ow_npcs_0163Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0178Tiles+(4*0x200)
+.word ow_npcs_0163Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0178Tiles+(5*0x200)
+.word ow_npcs_0163Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0178Tiles+(6*0x200)
+.word ow_npcs_0163Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0178Tiles+(7*0x200)
+.word ow_npcs_0163Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0178Tiles+(8*0x200)
+.word ow_npcs_0163Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_179:
-.word ow_0179Tiles+(0*0x200)
+.alignow_frames_npcs_0164:
+.word ow_npcs_0164Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0179Tiles+(1*0x200)
+.word ow_npcs_0164Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0179Tiles+(2*0x200)
+.word ow_npcs_0164Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0179Tiles+(3*0x200)
+.word ow_npcs_0164Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0179Tiles+(4*0x200)
+.word ow_npcs_0164Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0179Tiles+(5*0x200)
+.word ow_npcs_0164Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0179Tiles+(6*0x200)
+.word ow_npcs_0164Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0179Tiles+(7*0x200)
+.word ow_npcs_0164Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0179Tiles+(8*0x200)
+.word ow_npcs_0164Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_180:
-.word ow_0180Tiles+(0*0x200)
+.alignow_frames_npcs_0165:
+.word ow_npcs_0165Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0180Tiles+(1*0x200)
+.word ow_npcs_0165Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0180Tiles+(2*0x200)
+.word ow_npcs_0165Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0180Tiles+(3*0x200)
+.word ow_npcs_0165Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0180Tiles+(4*0x200)
+.word ow_npcs_0165Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0180Tiles+(5*0x200)
+.word ow_npcs_0165Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0180Tiles+(6*0x200)
+.word ow_npcs_0165Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0180Tiles+(7*0x200)
+.word ow_npcs_0165Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0180Tiles+(8*0x200)
+.word ow_npcs_0165Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_181:
-.word ow_0181Tiles+(0*0x200)
+.alignow_frames_npcs_0166:
+.word ow_npcs_0166Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0181Tiles+(1*0x200)
+.word ow_npcs_0166Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0181Tiles+(2*0x200)
+.word ow_npcs_0166Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0181Tiles+(3*0x200)
+.word ow_npcs_0166Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0181Tiles+(4*0x200)
+.word ow_npcs_0166Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0181Tiles+(5*0x200)
+.word ow_npcs_0166Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0181Tiles+(6*0x200)
+.word ow_npcs_0166Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0181Tiles+(7*0x200)
+.word ow_npcs_0166Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0181Tiles+(8*0x200)
+.word ow_npcs_0166Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_182:
-.word ow_0182Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0182Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0182Tiles+(2*0x200)
+.alignow_frames_npcs_0167:
+.word ow_npcs_0167Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0182Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0182Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0182Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0182Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0182Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0182Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_183:
-.word ow_0183Tiles+(0*0x200)
+.word 0
 .hword 0x200
 .hword 0x0
-.word ow_0183Tiles+(1*0x200)
+.word 0
 .hword 0x200
 .hword 0x0
-.word ow_0183Tiles+(2*0x200)
+.word 0
 .hword 0x200
 .hword 0x0
-.word ow_0183Tiles+(3*0x200)
+.word 0
 .hword 0x200
 .hword 0x0
-.word ow_0183Tiles+(4*0x200)
+.word 0
 .hword 0x200
 .hword 0x0
-.word ow_0183Tiles+(5*0x200)
+.word 0
 .hword 0x200
 .hword 0x0
-.word ow_0183Tiles+(6*0x200)
+.word 0
 .hword 0x200
 .hword 0x0
-.word ow_0183Tiles+(7*0x200)
+.word 0
 .hword 0x200
 .hword 0x0
-.word ow_0183Tiles+(8*0x200)
+.word ow_npcs_0167Tiles+(9*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_184:
-.word ow_0184Tiles+(0*0x200)
+.alignow_frames_npcs_0168:
+.word ow_npcs_0168Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0184Tiles+(1*0x200)
+.word ow_npcs_0168Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0184Tiles+(2*0x200)
+.word ow_npcs_0168Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0184Tiles+(3*0x200)
+.word ow_npcs_0168Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0184Tiles+(4*0x200)
+.word ow_npcs_0168Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0184Tiles+(5*0x200)
+.word ow_npcs_0168Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0184Tiles+(6*0x200)
+.word ow_npcs_0168Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0184Tiles+(7*0x200)
+.word ow_npcs_0168Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0184Tiles+(8*0x200)
+.word ow_npcs_0168Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_185:
-.word ow_0185Tiles+(0*0x200)
+.alignow_frames_npcs_0169:
+.word ow_npcs_0169Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0185Tiles+(1*0x200)
+.word ow_npcs_0169Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0185Tiles+(2*0x200)
+.word ow_npcs_0169Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0185Tiles+(3*0x200)
+.word ow_npcs_0169Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0185Tiles+(4*0x200)
+.word ow_npcs_0169Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0185Tiles+(5*0x200)
+.word ow_npcs_0169Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0185Tiles+(6*0x200)
+.word ow_npcs_0169Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0185Tiles+(7*0x200)
+.word ow_npcs_0169Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0185Tiles+(8*0x200)
+.word ow_npcs_0169Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_186:
-.word ow_0186Tiles+(0*0x200)
+.alignow_frames_npcs_0170:
+.word ow_npcs_0170Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0186Tiles+(1*0x200)
+.word ow_npcs_0170Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0186Tiles+(2*0x200)
+.word ow_npcs_0170Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0186Tiles+(3*0x200)
+.word ow_npcs_0170Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0186Tiles+(4*0x200)
+.word ow_npcs_0170Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0186Tiles+(5*0x200)
+.word ow_npcs_0170Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0186Tiles+(6*0x200)
+.word ow_npcs_0170Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0186Tiles+(7*0x200)
+.word ow_npcs_0170Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0186Tiles+(8*0x200)
+.word ow_npcs_0170Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_187:
-.word ow_0187Tiles+(0*0x200)
+.alignow_frames_npcs_0171:
+.word ow_npcs_0171Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0187Tiles+(1*0x200)
+.word ow_npcs_0171Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0187Tiles+(2*0x200)
+.word ow_npcs_0171Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0187Tiles+(3*0x200)
+.word ow_npcs_0171Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0187Tiles+(4*0x200)
+.word ow_npcs_0171Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0187Tiles+(5*0x200)
+.word ow_npcs_0171Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0187Tiles+(6*0x200)
+.word ow_npcs_0171Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0187Tiles+(7*0x200)
+.word ow_npcs_0171Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0187Tiles+(8*0x200)
+.word ow_npcs_0171Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_188:
-.word ow_0188Tiles+(0*0x200)
+.alignow_frames_npcs_0172:
+.word ow_npcs_0172Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0188Tiles+(1*0x200)
+.word ow_npcs_0172Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0188Tiles+(2*0x200)
+.word ow_npcs_0172Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0188Tiles+(3*0x200)
+.word ow_npcs_0172Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0188Tiles+(4*0x200)
+.word ow_npcs_0172Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0188Tiles+(5*0x200)
+.word ow_npcs_0172Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0188Tiles+(6*0x200)
+.word ow_npcs_0172Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0188Tiles+(7*0x200)
+.word ow_npcs_0172Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0188Tiles+(8*0x200)
+.word ow_npcs_0172Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_189:
-.word ow_0189Tiles+(0*0x200)
+.alignow_frames_npcs_0173:
+.word ow_npcs_0173Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0189Tiles+(1*0x200)
+.word ow_npcs_0173Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0189Tiles+(2*0x200)
+.word ow_npcs_0173Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0189Tiles+(3*0x200)
+.word ow_npcs_0173Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0189Tiles+(4*0x200)
+.word ow_npcs_0173Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0189Tiles+(5*0x200)
+.word ow_npcs_0173Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0189Tiles+(6*0x200)
+.word ow_npcs_0173Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0189Tiles+(7*0x200)
+.word ow_npcs_0173Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0189Tiles+(8*0x200)
+.word ow_npcs_0173Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_190:
-.word ow_0190Tiles+(0*0x200)
+.alignow_frames_npcs_0174:
+.word ow_npcs_0174Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0190Tiles+(1*0x200)
+.word ow_npcs_0174Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0190Tiles+(2*0x200)
+.word ow_npcs_0174Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0190Tiles+(3*0x200)
+.word ow_npcs_0174Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0190Tiles+(4*0x200)
+.word ow_npcs_0174Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0190Tiles+(5*0x200)
+.word ow_npcs_0174Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0190Tiles+(6*0x200)
+.word ow_npcs_0174Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0190Tiles+(7*0x200)
+.word ow_npcs_0174Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0190Tiles+(8*0x200)
+.word ow_npcs_0174Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_191:
-.word ow_0191Tiles+(0*0x200)
+.alignow_frames_npcs_0175:
+.word ow_npcs_0175Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0191Tiles+(1*0x200)
+.word ow_npcs_0175Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0191Tiles+(2*0x200)
+.word ow_npcs_0175Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0191Tiles+(3*0x200)
+.word ow_npcs_0175Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0191Tiles+(4*0x200)
+.word ow_npcs_0175Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0191Tiles+(5*0x200)
+.word ow_npcs_0175Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0191Tiles+(6*0x200)
+.word ow_npcs_0175Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0191Tiles+(7*0x200)
+.word ow_npcs_0175Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0191Tiles+(8*0x200)
+.word ow_npcs_0175Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_192:
-.word ow_0192Tiles+(0*0x200)
+.alignow_frames_npcs_0176:
+.word ow_npcs_0176Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0192Tiles+(1*0x200)
+.word ow_npcs_0176Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0192Tiles+(2*0x200)
+.word ow_npcs_0176Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0192Tiles+(3*0x200)
+.word ow_npcs_0176Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0192Tiles+(4*0x200)
+.word ow_npcs_0176Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0192Tiles+(5*0x200)
+.word ow_npcs_0176Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0192Tiles+(6*0x200)
+.word ow_npcs_0176Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0192Tiles+(7*0x200)
+.word ow_npcs_0176Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0192Tiles+(8*0x200)
+.word ow_npcs_0176Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_193:
-.word ow_0193Tiles+(0*0x200)
+.alignow_frames_npcs_0177:
+.word ow_npcs_0177Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0193Tiles+(1*0x200)
+.word ow_npcs_0177Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0193Tiles+(2*0x200)
+.word ow_npcs_0177Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0193Tiles+(3*0x200)
+.word ow_npcs_0177Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0193Tiles+(4*0x200)
+.word ow_npcs_0177Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0193Tiles+(5*0x200)
+.word ow_npcs_0177Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0193Tiles+(6*0x200)
+.word ow_npcs_0177Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0193Tiles+(7*0x200)
+.word ow_npcs_0177Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0193Tiles+(8*0x200)
+.word ow_npcs_0177Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_194:
-.word ow_0194Tiles+(0*0x200)
+.alignow_frames_npcs_0178:
+.word ow_npcs_0178Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0194Tiles+(1*0x200)
+.word ow_npcs_0178Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0194Tiles+(2*0x200)
+.word ow_npcs_0178Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0194Tiles+(3*0x200)
+.word ow_npcs_0178Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0194Tiles+(4*0x200)
+.word ow_npcs_0178Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0194Tiles+(5*0x200)
+.word ow_npcs_0178Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0194Tiles+(6*0x200)
+.word ow_npcs_0178Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0194Tiles+(7*0x200)
+.word ow_npcs_0178Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0194Tiles+(8*0x200)
+.word ow_npcs_0178Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_195:
-.word ow_0195Tiles+(0*0x200)
+.alignow_frames_npcs_0179:
+.word ow_npcs_0179Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0195Tiles+(1*0x200)
+.word ow_npcs_0179Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0195Tiles+(2*0x200)
+.word ow_npcs_0179Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0195Tiles+(3*0x200)
+.word ow_npcs_0179Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0195Tiles+(4*0x200)
+.word ow_npcs_0179Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0195Tiles+(5*0x200)
+.word ow_npcs_0179Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0195Tiles+(6*0x200)
+.word ow_npcs_0179Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0195Tiles+(7*0x200)
+.word ow_npcs_0179Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0195Tiles+(8*0x200)
+.word ow_npcs_0179Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_196:
-.word ow_0196Tiles+(0*0x200)
+.alignow_frames_npcs_0180:
+.word ow_npcs_0180Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0196Tiles+(1*0x200)
+.word ow_npcs_0180Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0196Tiles+(2*0x200)
+.word ow_npcs_0180Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0196Tiles+(3*0x200)
+.word ow_npcs_0180Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0196Tiles+(4*0x200)
+.word ow_npcs_0180Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0196Tiles+(5*0x200)
+.word ow_npcs_0180Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0196Tiles+(6*0x200)
+.word ow_npcs_0180Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0196Tiles+(7*0x200)
+.word ow_npcs_0180Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0196Tiles+(8*0x200)
+.word ow_npcs_0180Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_197:
-.word ow_0197Tiles+(0*0x200)
+.alignow_frames_npcs_0181:
+.word ow_npcs_0181Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0197Tiles+(1*0x200)
+.word ow_npcs_0181Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0197Tiles+(2*0x200)
+.word ow_npcs_0181Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0197Tiles+(3*0x200)
+.word ow_npcs_0181Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0197Tiles+(4*0x200)
+.word ow_npcs_0181Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0197Tiles+(5*0x200)
+.word ow_npcs_0181Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0197Tiles+(6*0x200)
+.word ow_npcs_0181Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0197Tiles+(7*0x200)
+.word ow_npcs_0181Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0197Tiles+(8*0x200)
+.word ow_npcs_0181Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_198:
-.word ow_0198Tiles+(0*0x200)
+.alignow_frames_npcs_0182:
+.word ow_npcs_0182Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0198Tiles+(1*0x200)
+.word ow_npcs_0182Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0198Tiles+(2*0x200)
+.word ow_npcs_0182Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0198Tiles+(3*0x200)
+.word ow_npcs_0182Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0198Tiles+(4*0x200)
+.word ow_npcs_0182Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0198Tiles+(5*0x200)
+.word ow_npcs_0182Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0198Tiles+(6*0x200)
+.word ow_npcs_0182Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0198Tiles+(7*0x200)
+.word ow_npcs_0182Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0198Tiles+(8*0x200)
+.word ow_npcs_0182Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_199:
-.word ow_0199Tiles+(0*0x200)
+.alignow_frames_npcs_0183:
+.word ow_npcs_0183Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0199Tiles+(1*0x200)
+.word ow_npcs_0183Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0199Tiles+(2*0x200)
+.word ow_npcs_0183Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0199Tiles+(3*0x200)
+.word ow_npcs_0183Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0199Tiles+(4*0x200)
+.word ow_npcs_0183Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0199Tiles+(5*0x200)
+.word ow_npcs_0183Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0199Tiles+(6*0x200)
+.word ow_npcs_0183Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0199Tiles+(7*0x200)
+.word ow_npcs_0183Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0199Tiles+(8*0x200)
+.word ow_npcs_0183Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_200:
-.word ow_0200Tiles+(0*0x200)
+.alignow_frames_npcs_0184:
+.word ow_npcs_0184Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0200Tiles+(1*0x200)
+.word ow_npcs_0184Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0200Tiles+(2*0x200)
+.word ow_npcs_0184Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0200Tiles+(3*0x200)
+.word ow_npcs_0184Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0200Tiles+(4*0x200)
+.word ow_npcs_0184Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0200Tiles+(5*0x200)
+.word ow_npcs_0184Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0200Tiles+(6*0x200)
+.word ow_npcs_0184Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0200Tiles+(7*0x200)
+.word ow_npcs_0184Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0200Tiles+(8*0x200)
+.word ow_npcs_0184Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_201:
-.word ow_0201Tiles+(0*0x200)
+.alignow_frames_npcs_0185:
+.word ow_npcs_0185Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0201Tiles+(1*0x200)
+.word ow_npcs_0185Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0201Tiles+(2*0x200)
+.word ow_npcs_0185Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0201Tiles+(3*0x200)
+.word ow_npcs_0185Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0201Tiles+(4*0x200)
+.word ow_npcs_0185Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0201Tiles+(5*0x200)
+.word ow_npcs_0185Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0201Tiles+(6*0x200)
+.word ow_npcs_0185Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0201Tiles+(7*0x200)
+.word ow_npcs_0185Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0201Tiles+(8*0x200)
+.word ow_npcs_0185Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_202:
-.word ow_0202Tiles+(0*0x200)
+.alignow_frames_npcs_0186:
+.word ow_npcs_0186Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0202Tiles+(1*0x200)
+.word ow_npcs_0186Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0202Tiles+(2*0x200)
+.word ow_npcs_0186Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0202Tiles+(3*0x200)
+.word ow_npcs_0186Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0202Tiles+(4*0x200)
+.word ow_npcs_0186Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0202Tiles+(5*0x200)
+.word ow_npcs_0186Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0202Tiles+(6*0x200)
+.word ow_npcs_0186Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0202Tiles+(7*0x200)
+.word ow_npcs_0186Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0202Tiles+(8*0x200)
+.word ow_npcs_0186Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_203:
-.word ow_0203Tiles+(0*0x200)
+.alignow_frames_npcs_0187:
+.word ow_npcs_0187Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0203Tiles+(1*0x200)
+.word ow_npcs_0187Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0203Tiles+(2*0x200)
+.word ow_npcs_0187Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0203Tiles+(3*0x200)
+.word ow_npcs_0187Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0203Tiles+(4*0x200)
+.word ow_npcs_0187Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0203Tiles+(5*0x200)
+.word ow_npcs_0187Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0203Tiles+(6*0x200)
+.word ow_npcs_0187Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0203Tiles+(7*0x200)
+.word ow_npcs_0187Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0203Tiles+(8*0x200)
+.word ow_npcs_0187Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_204:
-.word ow_0204Tiles+(0*0x200)
+.alignow_frames_npcs_0188:
+.word ow_npcs_0188Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0204Tiles+(1*0x200)
+.word ow_npcs_0188Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0204Tiles+(2*0x200)
+.word ow_npcs_0188Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0204Tiles+(3*0x200)
+.word ow_npcs_0188Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0204Tiles+(4*0x200)
+.word ow_npcs_0188Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0204Tiles+(5*0x200)
+.word ow_npcs_0188Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0204Tiles+(6*0x200)
+.word ow_npcs_0188Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0204Tiles+(7*0x200)
+.word ow_npcs_0188Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0204Tiles+(8*0x200)
+.word ow_npcs_0188Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_205:
-.word ow_0205Tiles+(0*0x200)
+.alignow_frames_npcs_0189:
+.word ow_npcs_0189Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0205Tiles+(1*0x200)
+.word ow_npcs_0189Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0205Tiles+(2*0x200)
+.word ow_npcs_0189Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0205Tiles+(3*0x200)
+.word ow_npcs_0189Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0205Tiles+(4*0x200)
+.word ow_npcs_0189Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0205Tiles+(5*0x200)
+.word ow_npcs_0189Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0205Tiles+(6*0x200)
+.word ow_npcs_0189Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0205Tiles+(7*0x200)
+.word ow_npcs_0189Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0205Tiles+(8*0x200)
+.word ow_npcs_0189Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_206:
-.word ow_0206Tiles+(0*0x200)
+.alignow_frames_npcs_0190:
+.word ow_npcs_0190Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0206Tiles+(1*0x200)
+.word ow_npcs_0190Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0206Tiles+(2*0x200)
+.word ow_npcs_0190Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0206Tiles+(3*0x200)
+.word ow_npcs_0190Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0206Tiles+(4*0x200)
+.word ow_npcs_0190Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0206Tiles+(5*0x200)
+.word ow_npcs_0190Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0206Tiles+(6*0x200)
+.word ow_npcs_0190Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0206Tiles+(7*0x200)
+.word ow_npcs_0190Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0206Tiles+(8*0x200)
+.word ow_npcs_0190Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_207:
-.word ow_0207Tiles+(0*0x200)
+.alignow_frames_npcs_0191:
+.word ow_npcs_0191Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0207Tiles+(1*0x200)
+.word ow_npcs_0191Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0207Tiles+(2*0x200)
+.word ow_npcs_0191Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0207Tiles+(3*0x200)
+.word ow_npcs_0191Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0207Tiles+(4*0x200)
+.word ow_npcs_0191Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0207Tiles+(5*0x200)
+.word ow_npcs_0191Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0207Tiles+(6*0x200)
+.word ow_npcs_0191Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0207Tiles+(7*0x200)
+.word ow_npcs_0191Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0207Tiles+(8*0x200)
+.word ow_npcs_0191Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_208:
-.word ow_0208Tiles+(0*0x200)
+.alignow_frames_npcs_0192:
+.word ow_npcs_0192Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0208Tiles+(1*0x200)
+.word ow_npcs_0192Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0208Tiles+(2*0x200)
+.word ow_npcs_0192Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0208Tiles+(3*0x200)
+.word ow_npcs_0192Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0208Tiles+(4*0x200)
+.word ow_npcs_0192Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0208Tiles+(5*0x200)
+.word ow_npcs_0192Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0208Tiles+(6*0x200)
+.word ow_npcs_0192Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0208Tiles+(7*0x200)
+.word ow_npcs_0192Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0208Tiles+(8*0x200)
+.word ow_npcs_0192Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_209:
-.word ow_0209Tiles+(0*0x200)
+.alignow_frames_npcs_0193:
+.word ow_npcs_0193Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0209Tiles+(1*0x200)
+.word ow_npcs_0193Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0209Tiles+(2*0x200)
+.word ow_npcs_0193Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0209Tiles+(3*0x200)
+.word ow_npcs_0193Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0209Tiles+(4*0x200)
+.word ow_npcs_0193Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0209Tiles+(5*0x200)
+.word ow_npcs_0193Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0209Tiles+(6*0x200)
+.word ow_npcs_0193Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0209Tiles+(7*0x200)
+.word ow_npcs_0193Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0209Tiles+(8*0x200)
+.word ow_npcs_0193Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_210:
-.word ow_0210Tiles+(0*0x200)
+.alignow_frames_npcs_0194:
+.word ow_npcs_0194Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0210Tiles+(1*0x200)
+.word ow_npcs_0194Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0210Tiles+(2*0x200)
+.word ow_npcs_0194Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0210Tiles+(3*0x200)
+.word ow_npcs_0194Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0210Tiles+(4*0x200)
+.word ow_npcs_0194Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0210Tiles+(5*0x200)
+.word ow_npcs_0194Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0210Tiles+(6*0x200)
+.word ow_npcs_0194Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0210Tiles+(7*0x200)
+.word ow_npcs_0194Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0210Tiles+(8*0x200)
+.word ow_npcs_0194Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_211:
-.word ow_0211Tiles+(0*0x200)
+.alignow_frames_npcs_0195:
+.word ow_npcs_0195Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0211Tiles+(1*0x200)
+.word ow_npcs_0195Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0211Tiles+(2*0x200)
+.word ow_npcs_0195Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0211Tiles+(3*0x200)
+.word ow_npcs_0195Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0211Tiles+(4*0x200)
+.word ow_npcs_0195Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0211Tiles+(5*0x200)
+.word ow_npcs_0195Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0211Tiles+(6*0x200)
+.word ow_npcs_0195Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0211Tiles+(7*0x200)
+.word ow_npcs_0195Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0211Tiles+(8*0x200)
+.word ow_npcs_0195Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_212:
-.word ow_0212Tiles+(0*0x200)
+.alignow_frames_npcs_0196:
+.word ow_npcs_0196Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0212Tiles+(1*0x200)
+.word ow_npcs_0196Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0212Tiles+(2*0x200)
+.word ow_npcs_0196Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0212Tiles+(3*0x200)
+.word ow_npcs_0196Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0212Tiles+(4*0x200)
+.word ow_npcs_0196Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0212Tiles+(5*0x200)
+.word ow_npcs_0196Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0212Tiles+(6*0x200)
+.word ow_npcs_0196Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0212Tiles+(7*0x200)
+.word ow_npcs_0196Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0212Tiles+(8*0x200)
+.word ow_npcs_0196Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_213:
+.alignow_frames_npcs_0197:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_214:
+.alignow_frames_npcs_0198:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_215:
+.alignow_frames_npcs_0199:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_216:
+.alignow_frames_npcs_0200:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_217:
+.alignow_frames_npcs_0201:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_218:
+.alignow_frames_npcs_0202:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_219:
+.alignow_frames_npcs_0203:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_220:
+.alignow_frames_npcs_0204:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_221:
+.alignow_frames_npcs_0205:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_222:
+.alignow_frames_npcs_0206:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_223:
+.alignow_frames_npcs_0207:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_224:
+.alignow_frames_npcs_0208:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_225:
+.alignow_frames_npcs_0209:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_226:
+.alignow_frames_npcs_0210:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_227:
+.alignow_frames_npcs_0211:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_228:
+.alignow_frames_npcs_0212:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_229:
+.alignow_frames_npcs_0213:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_230:
+.alignow_frames_npcs_0214:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_231:
+.alignow_frames_npcs_0215:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_232:
+.alignow_frames_npcs_0216:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_233:
+.alignow_frames_npcs_0217:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_234:
+.alignow_frames_npcs_0218:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_235:
+.alignow_frames_npcs_0219:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_236:
+.alignow_frames_npcs_0220:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_237:
+.alignow_frames_npcs_0221:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_238:
+.alignow_frames_npcs_0222:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_239:
+.alignow_frames_npcs_0223:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_240:
+.alignow_frames_npcs_0224:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_241:
+.alignow_frames_npcs_0225:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_242:
+.alignow_frames_npcs_0226:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_243:
+.alignow_frames_npcs_0227:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_244:
+.alignow_frames_npcs_0228:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_245:
+.alignow_frames_npcs_0229:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_246:
+.alignow_frames_npcs_0230:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_247:
+.alignow_frames_npcs_0231:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_248:
+.alignow_frames_npcs_0232:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_249:
+.alignow_frames_npcs_0233:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_250:
+.alignow_frames_npcs_0234:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_251:
+.alignow_frames_npcs_0235:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_252:
+.alignow_frames_npcs_0236:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_253:
+.alignow_frames_npcs_0237:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_254:
+.alignow_frames_npcs_0238:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_255:
+.alignow_frames_npcs_0239:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_256:
-.word ow_0256Tiles+(0*0x800)
+.alignow_frames_npcs_0240:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_npcs_0241:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_npcs_0242:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_npcs_0243:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_npcs_0244:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_npcs_0245:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_npcs_0246:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_npcs_0247:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_npcs_0248:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_npcs_0249:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_npcs_0250:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_npcs_0251:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_npcs_0252:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_npcs_0253:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_npcs_0254:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_npcs_0255:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0000:
+.word ow_poke_0000Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0256Tiles+(1*0x800)
+.word ow_poke_0000Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0256Tiles+(2*0x800)
+.word ow_poke_0000Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0256Tiles+(3*0x800)
+.word ow_poke_0000Tiles+(3*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0256Tiles+(4*0x800)
+.word ow_poke_0000Tiles+(4*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0256Tiles+(3*0x800)
+.word ow_poke_0000Tiles+(5*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0256Tiles+(4*0x800)
+.word ow_poke_0000Tiles+(6*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0256Tiles+(3*0x800)
+.word ow_poke_0000Tiles+(7*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0256Tiles+(4*0x800)
+.word ow_poke_0000Tiles+(8*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_257:
-.word ow_0257Tiles+(0*0x800)
+.alignow_frames_poke_0001:
+.word ow_poke_0001Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0001Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0001Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0001Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0001Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0001Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0001Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0001Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0001Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0002:
+.word ow_poke_0002Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0002Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0002Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0002Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0002Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0002Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0002Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0002Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0002Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0003:
+.word ow_poke_0003Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0003Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0003Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0003Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0003Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0003Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0003Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0003Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0003Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0004:
+.word ow_poke_0004Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0004Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0004Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0004Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0004Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0004Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0004Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0004Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0004Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0005:
+.word ow_poke_0005Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0005Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0005Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0005Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0005Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0005Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0005Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0005Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0005Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0006:
+.word ow_poke_0006Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0006Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0006Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0006Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0006Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0006Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0006Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0006Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0006Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0007:
+.word ow_poke_0007Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0007Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0007Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0007Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0007Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0007Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0007Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0007Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0007Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0008:
+.word ow_poke_0008Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0008Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0008Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0008Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0008Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0008Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0008Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0008Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0008Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0009:
+.word ow_poke_0009Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0009Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0009Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0009Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0009Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0009Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0009Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0009Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0009Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0010:
+.word ow_poke_0010Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0010Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0010Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0010Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0010Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0010Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0010Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0010Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0010Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0011:
+.word ow_poke_0011Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0011Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0011Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0011Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0011Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0011Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0011Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0011Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0011Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0012:
+.word ow_poke_0012Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0012Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0012Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0012Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0012Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0012Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0012Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0012Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0012Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0013:
+.word ow_poke_0013Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0013Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0013Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0013Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0013Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0013Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0013Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0013Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0013Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0014:
+.word ow_poke_0014Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0014Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0014Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0014Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0014Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0014Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0014Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0014Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0014Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0015:
+.word ow_poke_0015Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0015Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0015Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0015Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0015Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0015Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0015Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0015Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0015Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0016:
+.word ow_poke_0016Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0016Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0016Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0016Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0016Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0016Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0016Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0016Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0016Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0017:
+.word ow_poke_0017Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0017Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0017Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0017Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0017Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0017Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0017Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0017Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0017Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0018:
+.word ow_poke_0018Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0018Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0018Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0018Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0018Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0018Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0018Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0018Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0018Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0019:
+.word ow_poke_0019Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0019Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0019Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0019Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0019Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0019Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0019Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0019Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0019Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0020:
+.word ow_poke_0020Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0020Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0020Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0020Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0020Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0020Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0020Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0020Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0020Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0021:
+.word ow_poke_0021Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0021Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0021Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0021Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0021Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0021Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0021Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0021Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0021Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0022:
+.word ow_poke_0022Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0022Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0022Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0022Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0022Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0022Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0022Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0022Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0022Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0023:
+.word ow_poke_0023Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0023Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0023Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0023Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0023Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0023Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0023Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0023Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0023Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0024:
+.word ow_poke_0024Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0024Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0024Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0024Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0024Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0024Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0024Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0024Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0024Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0025:
+.word ow_poke_0025Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0025Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0025Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0025Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0025Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0025Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0025Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0025Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0025Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0026:
+.word ow_poke_0026Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0026Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0026Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0026Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0026Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0026Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0026Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0026Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0026Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0027:
+.word ow_poke_0027Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0027Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0027Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0027Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0027Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0027Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0027Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0027Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0027Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0028:
+.word ow_poke_0028Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0028Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0028Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0028Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0028Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0028Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0028Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0028Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0028Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0029:
+.word ow_poke_0029Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0029Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0029Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0029Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0029Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0029Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0029Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0029Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0029Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0030:
+.word ow_poke_0030Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0030Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0030Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0030Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0030Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0030Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0030Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0030Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0030Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0031:
+.word ow_poke_0031Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0031Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0031Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0031Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0031Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0031Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0031Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0031Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0031Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0032:
+.word ow_poke_0032Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0032Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0032Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0032Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0032Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0032Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0032Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0032Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0032Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0033:
+.word ow_poke_0033Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0033Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0033Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0033Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0033Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0033Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0033Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0033Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0033Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0034:
+.word ow_poke_0034Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0034Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0034Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0034Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0034Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0034Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0034Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0034Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0034Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0035:
+.word ow_poke_0035Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0035Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0035Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0035Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0035Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0035Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0035Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0035Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0035Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0036:
+.word ow_poke_0036Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0036Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0036Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0036Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0036Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0036Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0036Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0036Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0036Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0037:
+.word ow_poke_0037Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0037Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0037Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0037Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0037Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0037Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0037Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0037Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0037Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0038:
+.word ow_poke_0038Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0038Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0038Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0038Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0038Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0038Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0038Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0038Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0038Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0039:
+.word ow_poke_0039Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0039Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0039Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0039Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0039Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0039Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0039Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0039Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0039Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0040:
+.word ow_poke_0040Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0040Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0040Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0040Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0040Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0040Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0040Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0040Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0040Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0041:
+.word ow_poke_0041Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0041Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0041Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0041Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0041Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0041Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0041Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0041Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0041Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0042:
+.word ow_poke_0042Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0042Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0042Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0042Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0042Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0042Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0042Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0042Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0042Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0043:
+.word ow_poke_0043Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0043Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0043Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0043Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0043Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0043Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0043Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0043Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0043Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0044:
+.word ow_poke_0044Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0044Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0044Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0044Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0044Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0044Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0044Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0044Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0044Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0045:
+.word ow_poke_0045Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0045Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0045Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0045Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0045Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0045Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0045Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0045Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0045Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0046:
+.word ow_poke_0046Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0046Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0046Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0046Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0046Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0046Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0046Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0046Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0046Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0047:
+.word ow_poke_0047Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0047Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0047Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0047Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0047Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0047Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0047Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0047Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0047Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0048:
+.word ow_poke_0048Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0048Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0048Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0048Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0048Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0048Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0048Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0048Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0048Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0049:
+.word ow_poke_0049Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0049Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0049Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0049Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0049Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0049Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0049Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0049Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0049Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0050:
+.word ow_poke_0050Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0050Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0050Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0050Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0050Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0050Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0050Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0050Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0050Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0051:
+.word ow_poke_0051Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0051Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0051Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0051Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0051Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0051Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0051Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0051Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0051Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0052:
+.word ow_poke_0052Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0052Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0052Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0052Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0052Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0052Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0052Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0052Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0052Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0053:
+.word ow_poke_0053Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0053Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0053Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0053Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0053Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0053Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0053Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0053Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0053Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0054:
+.word ow_poke_0054Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0054Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0054Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0054Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0054Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0054Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0054Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0054Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0054Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0055:
+.word ow_poke_0055Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0055Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0055Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0055Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0055Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0055Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0055Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0055Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0055Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0056:
+.word ow_poke_0056Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0056Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0056Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0056Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0056Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0056Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0056Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0056Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0056Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0057:
+.word ow_poke_0057Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0057Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0057Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0057Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0057Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0057Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0057Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0057Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0057Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0058:
+.word ow_poke_0058Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0058Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0058Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0058Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0058Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0058Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0058Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0058Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0058Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0059:
+.word ow_poke_0059Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0059Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0059Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0059Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0059Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0059Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0059Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0059Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0059Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0060:
+.word ow_poke_0060Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0060Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0060Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0060Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0060Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0060Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0060Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0060Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0060Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0061:
+.word ow_poke_0061Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0061Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0061Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0061Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0061Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0061Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0061Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0061Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0061Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0062:
+.word ow_poke_0062Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0062Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0062Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0062Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0062Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0062Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0062Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0062Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0062Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0063:
+.word ow_poke_0063Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0063Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0063Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0063Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0063Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0063Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0063Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0063Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0063Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0064:
+.word ow_poke_0064Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0064Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0064Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0064Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0064Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0064Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0064Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0064Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0064Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0065:
+.word ow_poke_0065Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0065Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0065Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0065Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0065Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0065Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0065Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0065Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0065Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0066:
+.word ow_poke_0066Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0066Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0066Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0066Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0066Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0066Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0066Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0066Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0066Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0067:
+.word ow_poke_0067Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0067Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0067Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0067Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0067Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0067Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0067Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0067Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0067Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0068:
+.word ow_poke_0068Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0068Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0068Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0068Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0068Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0068Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0068Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0068Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0068Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0069:
+.word ow_poke_0069Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0069Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0069Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0069Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0069Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0069Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0069Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0069Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0069Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0070:
+.word ow_poke_0070Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0070Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0070Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0070Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0070Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0070Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0070Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0070Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0070Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0071:
+.word ow_poke_0071Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0071Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0071Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0071Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0071Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0071Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0071Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0071Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0071Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0072:
+.word ow_poke_0072Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0072Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0072Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0072Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0072Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0072Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0072Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0072Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0072Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0073:
+.word ow_poke_0073Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0073Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0073Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0073Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0073Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0073Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0073Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0073Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0073Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0074:
+.word ow_poke_0074Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0074Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0074Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0074Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0074Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0074Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0074Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0074Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0074Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0075:
+.word ow_poke_0075Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0075Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0075Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0075Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0075Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0075Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0075Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0075Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0075Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0076:
+.word ow_poke_0076Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0076Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0076Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0076Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0076Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0076Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0076Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0076Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0076Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0077:
+.word ow_poke_0077Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0077Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0077Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0077Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0077Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0077Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0077Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0077Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0077Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0078:
+.word ow_poke_0078Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0078Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0078Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0078Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0078Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0078Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0078Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0078Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0078Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0079:
+.word ow_poke_0079Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0079Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0079Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0079Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0079Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0079Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0079Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0079Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0079Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0080:
+.word ow_poke_0080Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0080Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0080Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0080Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0080Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0080Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0080Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0080Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0080Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0081:
+.word ow_poke_0081Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0081Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0081Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0081Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0081Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0081Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0081Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0081Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0081Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0082:
+.word ow_poke_0082Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0082Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0082Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0082Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0082Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0082Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0082Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0082Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0082Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0083:
+.word ow_poke_0083Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0083Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0083Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0083Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0083Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0083Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0083Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0083Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0083Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0084:
+.word ow_poke_0084Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0084Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0084Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0084Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0084Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0084Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0084Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0084Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0084Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0085:
+.word ow_poke_0085Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0085Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0085Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0085Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0085Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0085Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0085Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0085Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0085Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0086:
+.word ow_poke_0086Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0086Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0086Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0086Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0086Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0086Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0086Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0086Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0086Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0087:
+.word ow_poke_0087Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0087Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0087Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0087Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0087Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0087Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0087Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0087Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0087Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0088:
+.word ow_poke_0088Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0088Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0088Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0088Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0088Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0088Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0088Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0088Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0088Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0089:
+.word ow_poke_0089Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0089Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0089Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0089Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0089Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0089Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0089Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0089Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0089Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0090:
+.word ow_poke_0090Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0090Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0090Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0090Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0090Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0090Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0090Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0090Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0090Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0091:
+.word ow_poke_0091Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0091Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0091Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0091Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0091Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0091Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0091Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0091Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0091Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0092:
+.word ow_poke_0092Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0092Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0092Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0092Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0092Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0092Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0092Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0092Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0092Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0093:
+.word ow_poke_0093Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0093Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0093Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0093Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0093Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0093Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0093Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0093Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0093Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0094:
+.word ow_poke_0094Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0094Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0094Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0094Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0094Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0094Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0094Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0094Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0094Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0095:
+.word ow_poke_0095Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0095Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0095Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0095Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0095Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0095Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0095Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0095Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0095Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0096:
+.word ow_poke_0096Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0096Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0096Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0096Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0096Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0096Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0096Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0096Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0096Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0097:
+.word ow_poke_0097Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0097Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0097Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0097Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0097Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0097Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0097Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0097Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0097Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0098:
+.word ow_poke_0098Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0098Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0098Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0098Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0098Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0098Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0098Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0098Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0098Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0099:
+.word ow_poke_0099Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0099Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0099Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0099Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0099Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0099Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0099Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0099Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0099Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0100:
+.word ow_poke_0100Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0100Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0100Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0100Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0100Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0100Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0100Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0100Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0100Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0101:
+.word ow_poke_0101Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0101Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0101Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0101Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0101Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0101Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0101Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0101Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0101Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0102:
+.word ow_poke_0102Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0102Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0102Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0102Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0102Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0102Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0102Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0102Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0102Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0103:
+.word ow_poke_0103Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0103Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0103Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0103Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0103Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0103Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0103Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0103Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0103Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0104:
+.word ow_poke_0104Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0104Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0104Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0104Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0104Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0104Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0104Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0104Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0104Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0105:
+.word ow_poke_0105Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0105Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0105Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0105Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0105Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0105Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0105Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0105Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0105Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0106:
+.word ow_poke_0106Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0106Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0106Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0106Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0106Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0106Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0106Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0106Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0106Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0107:
+.word ow_poke_0107Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0107Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0107Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0107Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0107Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0107Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0107Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0107Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0107Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0108:
+.word ow_poke_0108Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0108Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0108Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0108Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0108Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0108Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0108Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0108Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0108Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0109:
+.word ow_poke_0109Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0109Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0109Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0109Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0109Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0109Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0109Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0109Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0109Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0110:
+.word ow_poke_0110Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0110Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0110Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0110Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0110Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0110Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0110Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0110Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0110Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0111:
+.word ow_poke_0111Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0111Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0111Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0111Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0111Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0111Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0111Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0111Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0111Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0112:
+.word ow_poke_0112Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0112Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0112Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0112Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0112Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0112Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0112Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0112Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0112Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0113:
+.word ow_poke_0113Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0113Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0113Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0113Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0113Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0113Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0113Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0113Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0113Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0114:
+.word ow_poke_0114Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0114Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0114Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0114Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0114Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0114Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0114Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0114Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0114Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0115:
+.word ow_poke_0115Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0115Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0115Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0115Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0115Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0115Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0115Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0115Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0115Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0116:
+.word ow_poke_0116Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0116Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0116Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0116Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0116Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0116Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0116Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0116Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0116Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0117:
+.word ow_poke_0117Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0117Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0117Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0117Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0117Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0117Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0117Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0117Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0117Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0118:
+.word ow_poke_0118Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0118Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0118Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0118Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0118Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0118Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0118Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0118Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0118Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0119:
+.word ow_poke_0119Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0119Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0119Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0119Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0119Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0119Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0119Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0119Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0119Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0120:
+.word ow_poke_0120Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0120Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0120Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0120Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0120Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0120Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0120Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0120Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0120Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0121:
+.word ow_poke_0121Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0121Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0121Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0121Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0121Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0121Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0121Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0121Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0121Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0122:
+.word ow_poke_0122Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0122Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0122Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0122Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0122Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0122Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0122Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0122Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0122Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0123:
+.word ow_poke_0123Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0123Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0123Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0123Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0123Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0123Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0123Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0123Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0123Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0124:
+.word ow_poke_0124Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0124Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0124Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0124Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0124Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0124Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0124Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0124Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0124Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0125:
+.word ow_poke_0125Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0125Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0125Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0125Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0125Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0125Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0125Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0125Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0125Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0126:
+.word ow_poke_0126Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0126Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0126Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0126Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0126Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0126Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0126Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0126Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0126Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0127:
+.word ow_poke_0127Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0127Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0127Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0127Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0127Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0127Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0127Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0127Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0127Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0128:
+.word ow_poke_0128Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0128Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0128Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0128Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0128Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0128Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0128Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0128Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0128Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0129:
+.word ow_poke_0129Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0129Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0129Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0129Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0129Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0129Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0129Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0129Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0129Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0130:
+.word ow_poke_0130Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0130Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0130Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0130Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0130Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0130Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0130Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0130Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0130Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0131:
+.word ow_poke_0131Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0131Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0131Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0131Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0131Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0131Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0131Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0131Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0131Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0132:
+.word ow_poke_0132Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0132Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0132Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0132Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0132Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0132Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0132Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0132Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0132Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0133:
+.word ow_poke_0133Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0133Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0133Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0133Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0133Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0133Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0133Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0133Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0133Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0134:
+.word ow_poke_0134Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0134Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0134Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0134Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0134Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0134Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0134Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0134Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0134Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0135:
+.word ow_poke_0135Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0135Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0135Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0135Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0135Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0135Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0135Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0135Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0135Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0136:
+.word ow_poke_0136Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0136Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0136Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0136Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0136Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0136Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0136Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0136Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0136Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0137:
+.word ow_poke_0137Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0137Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0137Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0137Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0137Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0137Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0137Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0137Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0137Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0138:
+.word ow_poke_0138Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0138Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0138Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0138Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0138Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0138Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0138Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0138Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0138Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0139:
+.word ow_poke_0139Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0139Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0139Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0139Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0139Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0139Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0139Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0139Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0139Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0140:
+.word ow_poke_0140Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0140Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0140Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0140Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0140Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0140Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0140Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0140Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0140Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0141:
+.word ow_poke_0141Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0141Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0141Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0141Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0141Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0141Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0141Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0141Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0141Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0142:
+.word ow_poke_0142Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0142Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0142Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0142Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0142Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0142Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0142Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0142Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0142Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0143:
+.word ow_poke_0143Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0143Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0143Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0143Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0143Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0143Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0143Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0143Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0143Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0144:
+.word ow_poke_0144Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0144Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0144Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0144Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0144Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0144Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0144Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0144Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0144Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0145:
+.word ow_poke_0145Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0145Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0145Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0145Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0145Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0145Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0145Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0145Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0145Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0146:
+.word ow_poke_0146Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0146Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0146Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0146Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0146Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0146Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0146Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0146Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0146Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0147:
+.word ow_poke_0147Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0147Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0147Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0147Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0147Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0147Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0147Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0147Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0147Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0148:
+.word ow_poke_0148Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0148Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0148Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0148Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0148Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0148Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0148Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0148Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0148Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0149:
+.word ow_poke_0149Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0149Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0149Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0149Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0149Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0149Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0149Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0149Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0149Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0150:
+.word ow_poke_0150Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0150Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0150Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0150Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0150Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0150Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0150Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0150Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0150Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0151:
+.word ow_poke_0151Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0151Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0151Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0151Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0151Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0151Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0151Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0151Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0151Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0152:
+.word ow_poke_0152Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0152Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0152Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0152Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0152Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0152Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0152Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0152Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0152Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0153:
+.word ow_poke_0153Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0153Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0153Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0153Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0153Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0153Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0153Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0153Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0153Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0154:
+.word ow_poke_0154Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0154Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0154Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0154Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0154Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0154Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0154Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0154Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0154Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0155:
+.word ow_poke_0155Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0155Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0155Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0155Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0155Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0155Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0155Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0155Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0155Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0156:
+.word ow_poke_0156Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0156Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0156Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0156Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0156Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0156Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0156Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0156Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0156Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0157:
+.word ow_poke_0157Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0157Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0157Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0157Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0157Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0157Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0157Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0157Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0157Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0158:
+.word ow_poke_0158Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0158Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0158Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0158Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0158Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0158Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0158Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0158Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0158Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0159:
+.word ow_poke_0159Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0159Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0159Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0159Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0159Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0159Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0159Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0159Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0159Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0160:
+.word ow_poke_0160Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0160Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0160Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0160Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0160Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0160Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0160Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0160Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0160Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0161:
+.word ow_poke_0161Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0161Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0161Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0161Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0161Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0161Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0161Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0161Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0161Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0162:
+.word ow_poke_0162Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0162Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0162Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0162Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0162Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0162Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0162Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0162Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0162Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0163:
+.word ow_poke_0163Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0163Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0163Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0163Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0163Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0163Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0163Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0163Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0163Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0164:
+.word ow_poke_0164Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0164Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0164Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0164Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0164Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0164Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0164Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0164Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0164Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0165:
+.word ow_poke_0165Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0165Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0165Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0165Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0165Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0165Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0165Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0165Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0165Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0166:
+.word ow_poke_0166Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0166Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0166Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0166Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0166Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0166Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0166Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0166Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0166Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0167:
+.word ow_poke_0167Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0167Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0167Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0167Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0167Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0167Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0167Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0167Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0167Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0168:
+.word ow_poke_0168Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0168Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0168Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0168Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0168Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0168Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0168Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0168Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0168Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0169:
+.word ow_poke_0169Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0169Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0169Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0169Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0169Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0169Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0169Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0169Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0169Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0170:
+.word ow_poke_0170Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0170Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0170Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0170Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0170Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0170Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0170Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0170Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0170Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0171:
+.word ow_poke_0171Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0171Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0171Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0171Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0171Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0171Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0171Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0171Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0171Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0172:
+.word ow_poke_0172Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0172Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0172Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0172Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0172Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0172Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0172Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0172Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0172Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0173:
+.word ow_poke_0173Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0173Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0173Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0173Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0173Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0173Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0173Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0173Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0173Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0174:
+.word ow_poke_0174Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0174Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0174Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0174Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0174Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0174Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0174Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0174Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0174Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0175:
+.word ow_poke_0175Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0175Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0175Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0175Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0175Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0175Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0175Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0175Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0175Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0176:
+.word ow_poke_0176Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0176Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0176Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0176Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0176Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0176Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0176Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0176Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0176Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0177:
+.word ow_poke_0177Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0177Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0177Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0177Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0177Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0177Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0177Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0177Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0177Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0178:
+.word ow_poke_0178Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0178Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0178Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0178Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0178Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0178Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0178Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0178Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0178Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0179:
+.word ow_poke_0179Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0179Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0179Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0179Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0179Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0179Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0179Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0179Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0179Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0180:
+.word ow_poke_0180Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0257Tiles+(1*0x800)
+.word ow_poke_0180Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0257Tiles+(2*0x800)
+.word ow_poke_0180Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0257Tiles+(3*0x800)
+.word ow_poke_0180Tiles+(3*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0257Tiles+(4*0x800)
+.word ow_poke_0180Tiles+(4*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0257Tiles+(3*0x800)
+.word ow_poke_0180Tiles+(5*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0257Tiles+(4*0x800)
+.word ow_poke_0180Tiles+(6*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0257Tiles+(3*0x800)
+.word ow_poke_0180Tiles+(7*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0257Tiles+(4*0x800)
+.word ow_poke_0180Tiles+(8*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_258:
-.word ow_0258Tiles+(0*0x1000)
+.alignow_frames_poke_0181:
+.word ow_poke_0181Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0181Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0181Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0181Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0181Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0181Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0181Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0181Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0181Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0182:
+.word ow_poke_0182Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0182Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0182Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0182Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0182Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0182Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0182Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0182Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0182Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0183:
+.word ow_poke_0183Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0183Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0183Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0183Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0183Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0183Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0183Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0183Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0183Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0184:
+.word ow_poke_0184Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0184Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0184Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0184Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0184Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0184Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0184Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0184Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_0184Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_0185:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0186:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0187:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0188:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0189:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0190:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0191:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0192:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0193:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0194:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0195:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0196:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0197:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0198:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0199:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0200:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0201:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0202:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0203:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0204:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0205:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0206:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0207:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0208:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0209:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0210:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0211:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0212:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0213:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0214:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0215:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0216:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0217:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0218:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0219:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0220:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0221:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0222:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0223:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0224:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0225:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0226:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0227:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0228:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0229:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0230:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0231:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0232:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0233:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0234:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0235:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0236:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0237:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0238:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0239:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0240:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0241:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0242:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0243:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0244:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0245:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0246:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0247:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0248:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0249:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0250:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0251:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0252:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0253:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0254:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_0255:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0000:
+.word ow_poke_leg_0000Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0000Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0000Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0000Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0000Tiles+(4*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0000Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0000Tiles+(4*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0000Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0000Tiles+(4*0x800)
+.hword 0x800
+.hword 0x0
+
+.alignow_frames_poke_leg_0001:
+.word ow_poke_leg_0001Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0001Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0001Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0001Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0001Tiles+(4*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0001Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0001Tiles+(4*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0001Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0001Tiles+(4*0x800)
+.hword 0x800
+.hword 0x0
+
+.alignow_frames_poke_leg_0002:
+.word ow_poke_leg_0002Tiles+(0*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0258Tiles+(1*0x1000)
+.word ow_poke_leg_0002Tiles+(1*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0258Tiles+(2*0x1000)
+.word ow_poke_leg_0002Tiles+(2*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0258Tiles+(3*0x1000)
+.word ow_poke_leg_0002Tiles+(3*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0258Tiles+(4*0x1000)
+.word ow_poke_leg_0002Tiles+(4*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0258Tiles+(3*0x1000)
+.word ow_poke_leg_0002Tiles+(3*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0258Tiles+(4*0x1000)
+.word ow_poke_leg_0002Tiles+(4*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0258Tiles+(3*0x1000)
+.word ow_poke_leg_0002Tiles+(3*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0258Tiles+(4*0x1000)
-.hword 0x1000
-.hword 0x0
-
-.align 2
-ow_frames_259:
-.word ow_0259Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0259Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0259Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0259Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0259Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0259Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0259Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0259Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0259Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_260:
-.word ow_0260Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0260Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0260Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0260Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0260Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0260Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0260Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0260Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0260Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0260Tiles+(9*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_261:
-.word ow_0261Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0261Tiles+(1*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0261Tiles+(2*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0261Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0261Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0261Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0261Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0261Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0261Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-
-.align 2
-ow_frames_262:
-.word ow_0262Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0262Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0262Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0262Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0262Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0262Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0262Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0262Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0262Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_263:
-.word ow_0263Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0263Tiles+(1*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0263Tiles+(2*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0263Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0263Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0263Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0263Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0263Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0263Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-
-.align 2
-ow_frames_264:
-.word ow_0264Tiles+(0*0x1000)
-.hword 0x1000
-.hword 0x0
-.word ow_0264Tiles+(1*0x1000)
-.hword 0x1000
-.hword 0x0
-.word ow_0264Tiles+(2*0x1000)
-.hword 0x1000
-.hword 0x0
-.word ow_0264Tiles+(3*0x1000)
-.hword 0x1000
-.hword 0x0
-.word ow_0264Tiles+(4*0x1000)
-.hword 0x1000
-.hword 0x0
-.word ow_0264Tiles+(3*0x1000)
-.hword 0x1000
-.hword 0x0
-.word ow_0264Tiles+(4*0x1000)
-.hword 0x1000
-.hword 0x0
-.word ow_0264Tiles+(3*0x1000)
-.hword 0x1000
-.hword 0x0
-.word ow_0264Tiles+(4*0x1000)
+.word ow_poke_leg_0002Tiles+(4*0x1000)
 .hword 0x1000
 .hword 0x0
 
-.align 2
-ow_frames_265:
-.word ow_0265Tiles+(0*0x1000)
-.hword 0x1000
-.hword 0x0
-.word ow_0265Tiles+(1*0x1000)
-.hword 0x1000
-.hword 0x0
-.word ow_0265Tiles+(2*0x1000)
-.hword 0x1000
-.hword 0x0
-.word ow_0265Tiles+(3*0x1000)
-.hword 0x1000
-.hword 0x0
-.word ow_0265Tiles+(4*0x1000)
-.hword 0x1000
-.hword 0x0
-.word ow_0265Tiles+(3*0x1000)
-.hword 0x1000
-.hword 0x0
-.word ow_0265Tiles+(4*0x1000)
-.hword 0x1000
-.hword 0x0
-.word ow_0265Tiles+(3*0x1000)
-.hword 0x1000
-.hword 0x0
-.word ow_0265Tiles+(4*0x1000)
-.hword 0x1000
-.hword 0x0
-
-.align 2
-ow_frames_266:
-.word ow_0266Tiles+(0*0x200)
+.alignow_frames_poke_leg_0003:
+.word ow_poke_leg_0003Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0266Tiles+(1*0x200)
+.word ow_poke_leg_0003Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0266Tiles+(2*0x200)
+.word ow_poke_leg_0003Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0266Tiles+(3*0x200)
+.word ow_poke_leg_0003Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0266Tiles+(4*0x200)
+.word ow_poke_leg_0003Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0266Tiles+(5*0x200)
+.word ow_poke_leg_0003Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0266Tiles+(6*0x200)
+.word ow_poke_leg_0003Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0266Tiles+(7*0x200)
+.word ow_poke_leg_0003Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0266Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0266Tiles+(9*0x200)
+.word ow_poke_leg_0003Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_267:
-.word ow_0267Tiles+(0*0x200)
+.alignow_frames_poke_leg_0004:
+.word ow_poke_leg_0004Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0267Tiles+(1*0x200)
+.word ow_poke_leg_0004Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0267Tiles+(2*0x200)
+.word ow_poke_leg_0004Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0267Tiles+(0*0x200)
+.word ow_poke_leg_0004Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0267Tiles+(0*0x200)
+.word ow_poke_leg_0004Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0267Tiles+(1*0x200)
+.word ow_poke_leg_0004Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0267Tiles+(1*0x200)
+.word ow_poke_leg_0004Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0267Tiles+(2*0x200)
+.word ow_poke_leg_0004Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0267Tiles+(2*0x200)
+.word ow_poke_leg_0004Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
-
-.align 2
-ow_frames_268:
-.word ow_0268Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0268Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0268Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0268Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0268Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0268Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0268Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0268Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0268Tiles+(2*0x200)
+.word ow_poke_leg_0004Tiles+(9*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_269:
-.word ow_0269Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0269Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0269Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0269Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0269Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0269Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0269Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0269Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0269Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_270:
-.word ow_0270Tiles+(0*0x800)
+.alignow_frames_poke_leg_0005:
+.word ow_poke_leg_0005Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0270Tiles+(1*0x800)
+.word ow_poke_leg_0005Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0270Tiles+(2*0x800)
+.word ow_poke_leg_0005Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0270Tiles+(3*0x800)
+.word ow_poke_leg_0005Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0270Tiles+(4*0x800)
+.word ow_poke_leg_0005Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0270Tiles+(5*0x800)
+.word ow_poke_leg_0005Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0270Tiles+(6*0x800)
+.word ow_poke_leg_0005Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0270Tiles+(7*0x800)
+.word ow_poke_leg_0005Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0270Tiles+(8*0x800)
+.word ow_poke_leg_0005Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_271:
-.word ow_0271Tiles+(0*0x800)
+.alignow_frames_poke_leg_0006:
+.word ow_poke_leg_0006Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0006Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0006Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0006Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0006Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0006Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0006Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0006Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0006Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_leg_0007:
+.word ow_poke_leg_0007Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0271Tiles+(1*0x800)
+.word ow_poke_leg_0007Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0271Tiles+(2*0x800)
+.word ow_poke_leg_0007Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0271Tiles+(3*0x800)
+.word ow_poke_leg_0007Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0271Tiles+(4*0x800)
+.word ow_poke_leg_0007Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0271Tiles+(5*0x800)
+.word ow_poke_leg_0007Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0271Tiles+(6*0x800)
+.word ow_poke_leg_0007Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0271Tiles+(7*0x800)
+.word ow_poke_leg_0007Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0271Tiles+(8*0x800)
+.word ow_poke_leg_0007Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_272:
-.word ow_0272Tiles+(0*0x1000)
+.alignow_frames_poke_leg_0008:
+.word ow_poke_leg_0008Tiles+(0*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0272Tiles+(0*0x1000)
+.word ow_poke_leg_0008Tiles+(1*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0272Tiles+(0*0x1000)
+.word ow_poke_leg_0008Tiles+(2*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0272Tiles+(1*0x1000)
+.word ow_poke_leg_0008Tiles+(3*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0272Tiles+(2*0x1000)
+.word ow_poke_leg_0008Tiles+(4*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0272Tiles+(1*0x1000)
+.word ow_poke_leg_0008Tiles+(3*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0272Tiles+(2*0x1000)
+.word ow_poke_leg_0008Tiles+(4*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0272Tiles+(1*0x1000)
+.word ow_poke_leg_0008Tiles+(3*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0272Tiles+(2*0x1000)
+.word ow_poke_leg_0008Tiles+(4*0x1000)
 .hword 0x1000
 .hword 0x0
 
-.align 2
-ow_frames_273:
-.word ow_0273Tiles+(0*0x800)
-.hword 0x800
+.alignow_frames_poke_leg_0009:
+.word ow_poke_leg_0009Tiles+(0*0x1000)
+.hword 0x1000
 .hword 0x0
-.word ow_0273Tiles+(1*0x800)
-.hword 0x800
+.word ow_poke_leg_0009Tiles+(1*0x1000)
+.hword 0x1000
 .hword 0x0
-.word ow_0273Tiles+(2*0x800)
-.hword 0x800
+.word ow_poke_leg_0009Tiles+(2*0x1000)
+.hword 0x1000
 .hword 0x0
-.word ow_0273Tiles+(3*0x800)
-.hword 0x800
+.word ow_poke_leg_0009Tiles+(3*0x1000)
+.hword 0x1000
 .hword 0x0
-.word ow_0273Tiles+(4*0x800)
-.hword 0x800
+.word ow_poke_leg_0009Tiles+(4*0x1000)
+.hword 0x1000
 .hword 0x0
-.word ow_0273Tiles+(3*0x800)
-.hword 0x800
+.word ow_poke_leg_0009Tiles+(3*0x1000)
+.hword 0x1000
 .hword 0x0
-.word ow_0273Tiles+(4*0x800)
-.hword 0x800
+.word ow_poke_leg_0009Tiles+(4*0x1000)
+.hword 0x1000
 .hword 0x0
-.word ow_0273Tiles+(3*0x800)
-.hword 0x800
+.word ow_poke_leg_0009Tiles+(3*0x1000)
+.hword 0x1000
 .hword 0x0
-.word ow_0273Tiles+(4*0x800)
-.hword 0x800
-.hword 0x0
-
-.align 2
-ow_frames_274:
-.word ow_0274Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0274Tiles+(1*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0274Tiles+(2*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0274Tiles+(3*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0274Tiles+(4*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0274Tiles+(3*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0274Tiles+(4*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0274Tiles+(3*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0274Tiles+(4*0x800)
-.hword 0x800
+.word ow_poke_leg_0009Tiles+(4*0x1000)
+.hword 0x1000
 .hword 0x0
 
-.align 2
-ow_frames_275:
-.word ow_0275Tiles+(0*0x200)
+.alignow_frames_poke_leg_0010:
+.word ow_poke_leg_0010Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0275Tiles+(1*0x200)
+.word ow_poke_leg_0010Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0275Tiles+(2*0x200)
+.word ow_poke_leg_0010Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0275Tiles+(3*0x200)
+.word ow_poke_leg_0010Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0275Tiles+(4*0x200)
+.word ow_poke_leg_0010Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0275Tiles+(5*0x200)
+.word ow_poke_leg_0010Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0275Tiles+(6*0x200)
+.word ow_poke_leg_0010Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0275Tiles+(7*0x200)
+.word ow_poke_leg_0010Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0275Tiles+(8*0x200)
+.word ow_poke_leg_0010Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0275Tiles+(9*0x200)
+.word ow_poke_leg_0010Tiles+(9*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_276:
-.word ow_0276Tiles+(0*0x200)
+.alignow_frames_poke_leg_0011:
+.word ow_poke_leg_0011Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0276Tiles+(1*0x200)
+.word ow_poke_leg_0011Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0276Tiles+(2*0x200)
+.word ow_poke_leg_0011Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0276Tiles+(3*0x200)
+.word ow_poke_leg_0011Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0276Tiles+(4*0x200)
+.word ow_poke_leg_0011Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0276Tiles+(5*0x200)
+.word ow_poke_leg_0011Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0276Tiles+(6*0x200)
+.word ow_poke_leg_0011Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0276Tiles+(7*0x200)
+.word ow_poke_leg_0011Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0276Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_277:
-.word ow_0277Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0277Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0277Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0277Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0277Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0277Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0277Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0277Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0277Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0277Tiles+(9*0x200)
+.word ow_poke_leg_0011Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_278:
-.word ow_0278Tiles+(0*0x200)
+.alignow_frames_poke_leg_0012:
+.word ow_poke_leg_0012Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0278Tiles+(1*0x200)
+.word ow_poke_leg_0012Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0278Tiles+(2*0x200)
+.word ow_poke_leg_0012Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0278Tiles+(3*0x200)
+.word ow_poke_leg_0012Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0278Tiles+(4*0x200)
+.word ow_poke_leg_0012Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0278Tiles+(5*0x200)
+.word ow_poke_leg_0012Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0278Tiles+(6*0x200)
+.word ow_poke_leg_0012Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0278Tiles+(7*0x200)
+.word ow_poke_leg_0012Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0278Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0278Tiles+(9*0x200)
+.word ow_poke_leg_0012Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_279:
-.word ow_0279Tiles+(0*0x200)
+.alignow_frames_poke_leg_0013:
+.word ow_poke_leg_0013Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0279Tiles+(1*0x200)
+.word ow_poke_leg_0013Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0279Tiles+(2*0x200)
+.word ow_poke_leg_0013Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0279Tiles+(3*0x200)
+.word ow_poke_leg_0013Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0279Tiles+(4*0x200)
+.word ow_poke_leg_0013Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0279Tiles+(5*0x200)
+.word ow_poke_leg_0013Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0279Tiles+(6*0x200)
+.word ow_poke_leg_0013Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0279Tiles+(7*0x200)
+.word ow_poke_leg_0013Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0279Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0279Tiles+(9*0x200)
+.word ow_poke_leg_0013Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_280:
-.word ow_0280Tiles+(0*0x800)
+.alignow_frames_poke_leg_0014:
+.word ow_poke_leg_0014Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0280Tiles+(1*0x800)
+.word ow_poke_leg_0014Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0280Tiles+(2*0x800)
+.word ow_poke_leg_0014Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0280Tiles+(0*0x800)
+.word ow_poke_leg_0014Tiles+(3*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0280Tiles+(0*0x800)
+.word ow_poke_leg_0014Tiles+(4*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0280Tiles+(0*0x800)
+.word ow_poke_leg_0014Tiles+(5*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0280Tiles+(0*0x800)
+.word ow_poke_leg_0014Tiles+(6*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0280Tiles+(0*0x800)
+.word ow_poke_leg_0014Tiles+(7*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0280Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-
-.align 2
-ow_frames_281:
-.word ow_0281Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0281Tiles+(1*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0281Tiles+(2*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0281Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0281Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0281Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0281Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0281Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0281Tiles+(0*0x800)
+.word ow_poke_leg_0014Tiles+(8*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_282:
-.word ow_0282Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0282Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0282Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0282Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0282Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0282Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0282Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0282Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0282Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_283:
-.word ow_0283Tiles+(0*0x800)
+.alignow_frames_poke_leg_0015:
+.word ow_poke_leg_0015Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0283Tiles+(1*0x800)
+.word ow_poke_leg_0015Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0283Tiles+(2*0x800)
+.word ow_poke_leg_0015Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0283Tiles+(3*0x800)
+.word ow_poke_leg_0015Tiles+(3*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0283Tiles+(4*0x800)
+.word ow_poke_leg_0015Tiles+(4*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0283Tiles+(3*0x800)
+.word ow_poke_leg_0015Tiles+(5*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0283Tiles+(4*0x800)
+.word ow_poke_leg_0015Tiles+(6*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0283Tiles+(3*0x800)
+.word ow_poke_leg_0015Tiles+(7*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0283Tiles+(4*0x800)
+.word ow_poke_leg_0015Tiles+(8*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_284:
-.word ow_0284Tiles+(0*0x800)
+.alignow_frames_poke_leg_0016:
+.word ow_poke_leg_0016Tiles+(0*0x1000)
+.hword 0x1000
+.hword 0x0
+.word ow_poke_leg_0016Tiles+(0*0x1000)
+.hword 0x1000
+.hword 0x0
+.word ow_poke_leg_0016Tiles+(0*0x1000)
+.hword 0x1000
+.hword 0x0
+.word ow_poke_leg_0016Tiles+(1*0x1000)
+.hword 0x1000
+.hword 0x0
+.word ow_poke_leg_0016Tiles+(2*0x1000)
+.hword 0x1000
+.hword 0x0
+.word ow_poke_leg_0016Tiles+(1*0x1000)
+.hword 0x1000
+.hword 0x0
+.word ow_poke_leg_0016Tiles+(2*0x1000)
+.hword 0x1000
+.hword 0x0
+.word ow_poke_leg_0016Tiles+(1*0x1000)
+.hword 0x1000
+.hword 0x0
+.word ow_poke_leg_0016Tiles+(2*0x1000)
+.hword 0x1000
+.hword 0x0
+
+.alignow_frames_poke_leg_0017:
+.word ow_poke_leg_0017Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0284Tiles+(1*0x800)
+.word ow_poke_leg_0017Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0284Tiles+(2*0x800)
+.word ow_poke_leg_0017Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0284Tiles+(3*0x800)
+.word ow_poke_leg_0017Tiles+(3*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0284Tiles+(4*0x800)
+.word ow_poke_leg_0017Tiles+(4*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0284Tiles+(3*0x800)
+.word ow_poke_leg_0017Tiles+(3*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0284Tiles+(4*0x800)
+.word ow_poke_leg_0017Tiles+(4*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0284Tiles+(3*0x800)
+.word ow_poke_leg_0017Tiles+(3*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0284Tiles+(4*0x800)
+.word ow_poke_leg_0017Tiles+(4*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_285:
-.word ow_0285Tiles+(0*0x800)
+.alignow_frames_poke_leg_0018:
+.word ow_poke_leg_0018Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0018Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0018Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0018Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0018Tiles+(4*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0018Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0018Tiles+(4*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0018Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0018Tiles+(4*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_286:
-.word ow_0286Tiles+(0*0x200)
+.alignow_frames_poke_leg_0019:
+.word ow_poke_leg_0019Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0286Tiles+(1*0x200)
+.word ow_poke_leg_0019Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0286Tiles+(2*0x200)
+.word ow_poke_leg_0019Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0286Tiles+(3*0x200)
+.word ow_poke_leg_0019Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0286Tiles+(4*0x200)
+.word ow_poke_leg_0019Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0286Tiles+(5*0x200)
+.word ow_poke_leg_0019Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0286Tiles+(6*0x200)
+.word ow_poke_leg_0019Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0286Tiles+(7*0x200)
+.word ow_poke_leg_0019Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0286Tiles+(8*0x200)
+.word ow_poke_leg_0019Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0286Tiles+(9*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_287:
-.word ow_0287Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0287Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0287Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0287Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0287Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0287Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0287Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0287Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0287Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0287Tiles+(9*0x200)
+.word ow_poke_leg_0019Tiles+(9*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_288:
-.word ow_0288Tiles+(0*0x200)
+.alignow_frames_poke_leg_0020:
+.word ow_poke_leg_0020Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0288Tiles+(1*0x200)
+.word ow_poke_leg_0020Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0288Tiles+(2*0x200)
+.word ow_poke_leg_0020Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0288Tiles+(3*0x200)
+.word ow_poke_leg_0020Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0288Tiles+(4*0x200)
+.word ow_poke_leg_0020Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0288Tiles+(5*0x200)
+.word ow_poke_leg_0020Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0288Tiles+(6*0x200)
+.word ow_poke_leg_0020Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0288Tiles+(7*0x200)
+.word ow_poke_leg_0020Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0288Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0288Tiles+(9*0x200)
+.word ow_poke_leg_0020Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_289:
-.word ow_0289Tiles+(0*0x200)
+.alignow_frames_poke_leg_0021:
+.word ow_poke_leg_0021Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0289Tiles+(1*0x200)
+.word ow_poke_leg_0021Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0289Tiles+(0*0x200)
+.word ow_poke_leg_0021Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0289Tiles+(0*0x200)
+.word ow_poke_leg_0021Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0289Tiles+(0*0x200)
+.word ow_poke_leg_0021Tiles+(4*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0289Tiles+(0*0x200)
+.word ow_poke_leg_0021Tiles+(5*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0289Tiles+(0*0x200)
+.word ow_poke_leg_0021Tiles+(6*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0289Tiles+(0*0x200)
+.word ow_poke_leg_0021Tiles+(7*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0289Tiles+(0*0x200)
+.word ow_poke_leg_0021Tiles+(8*0x200)
 .hword 0x200
 .hword 0x0
-
-.align 2
-ow_frames_290:
-.word ow_0290Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0290Tiles+(1*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0290Tiles+(2*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0290Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0290Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0290Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0290Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0290Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0290Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-
-.align 2
-ow_frames_291:
-.word ow_0291Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0291Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0291Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0291Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0291Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0291Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0291Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0291Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0291Tiles+(0*0x200)
+.word ow_poke_leg_0021Tiles+(9*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_292:
-.word ow_0292Tiles+(0*0x800)
+.alignow_frames_poke_leg_0022:
+.word ow_poke_leg_0022Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0022Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0022Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0022Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0022Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0022Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0022Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0022Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0022Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0022Tiles+(9*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_leg_0023:
+.word ow_poke_leg_0023Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0023Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0023Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0023Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0023Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0023Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0023Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0023Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0023Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0023Tiles+(9*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_leg_0024:
+.word ow_poke_leg_0024Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0292Tiles+(1*0x800)
+.word ow_poke_leg_0024Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0292Tiles+(2*0x800)
+.word ow_poke_leg_0024Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0292Tiles+(0*0x800)
+.word ow_poke_leg_0024Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0292Tiles+(0*0x800)
+.word ow_poke_leg_0024Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0292Tiles+(0*0x800)
+.word ow_poke_leg_0024Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0292Tiles+(0*0x800)
+.word ow_poke_leg_0024Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0292Tiles+(0*0x800)
+.word ow_poke_leg_0024Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0292Tiles+(0*0x800)
+.word ow_poke_leg_0024Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_293:
-.word ow_0293Tiles+(0*0x800)
+.alignow_frames_poke_leg_0025:
+.word ow_poke_leg_0025Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0293Tiles+(1*0x800)
+.word ow_poke_leg_0025Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0293Tiles+(0*0x800)
+.word ow_poke_leg_0025Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0293Tiles+(0*0x800)
+.word ow_poke_leg_0025Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0293Tiles+(0*0x800)
+.word ow_poke_leg_0025Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0293Tiles+(0*0x800)
+.word ow_poke_leg_0025Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0293Tiles+(0*0x800)
+.word ow_poke_leg_0025Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0293Tiles+(0*0x800)
+.word ow_poke_leg_0025Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0293Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-
-.align 2
-ow_frames_294:
-.word ow_0294Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0294Tiles+(1*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0294Tiles+(2*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0294Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0294Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0294Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0294Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0294Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0294Tiles+(0*0x800)
+.word ow_poke_leg_0025Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_295:
-.word ow_0295Tiles+(0*0x800)
+.alignow_frames_poke_leg_0026:
+.word ow_poke_leg_0026Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0026Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0026Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0026Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0026Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0026Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0026Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0026Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0026Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_leg_0027:
+.word ow_poke_leg_0027Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0295Tiles+(1*0x800)
+.word ow_poke_leg_0027Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0295Tiles+(2*0x800)
+.word ow_poke_leg_0027Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0295Tiles+(3*0x800)
+.word ow_poke_leg_0027Tiles+(3*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0295Tiles+(4*0x800)
+.word ow_poke_leg_0027Tiles+(4*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0295Tiles+(3*0x800)
+.word ow_poke_leg_0027Tiles+(3*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0295Tiles+(4*0x800)
+.word ow_poke_leg_0027Tiles+(4*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0295Tiles+(3*0x800)
+.word ow_poke_leg_0027Tiles+(3*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0295Tiles+(4*0x800)
+.word ow_poke_leg_0027Tiles+(4*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_296:
-.word ow_0296Tiles+(0*0x800)
+.alignow_frames_poke_leg_0028:
+.word ow_poke_leg_0028Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0296Tiles+(1*0x800)
+.word ow_poke_leg_0028Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0296Tiles+(2*0x800)
+.word ow_poke_leg_0028Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0296Tiles+(3*0x800)
+.word ow_poke_leg_0028Tiles+(3*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0296Tiles+(4*0x800)
+.word ow_poke_leg_0028Tiles+(4*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0296Tiles+(3*0x800)
+.word ow_poke_leg_0028Tiles+(3*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0296Tiles+(4*0x800)
+.word ow_poke_leg_0028Tiles+(4*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0296Tiles+(3*0x800)
+.word ow_poke_leg_0028Tiles+(3*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0296Tiles+(4*0x800)
-.hword 0x800
-.hword 0x0
-
-.align 2
-ow_frames_297:
-.word ow_0297Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0297Tiles+(1*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0297Tiles+(2*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0297Tiles+(3*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0297Tiles+(4*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0297Tiles+(3*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0297Tiles+(4*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0297Tiles+(3*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0297Tiles+(4*0x800)
+.word ow_poke_leg_0028Tiles+(4*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_298:
-.word ow_0298Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0298Tiles+(1*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0298Tiles+(2*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0298Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0298Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0298Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0298Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0298Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0298Tiles+(0*0x800)
+.alignow_frames_poke_leg_0029:
+.word ow_poke_leg_0029Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_299:
-.word ow_0299Tiles+(0*0x800)
+.alignow_frames_poke_leg_0030:
+.word ow_poke_leg_0030Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0030Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0030Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0030Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0030Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0030Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0030Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0030Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0030Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0030Tiles+(9*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_leg_0031:
+.word ow_poke_leg_0031Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0031Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0031Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0031Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0031Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0031Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0031Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0031Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0031Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0031Tiles+(9*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_leg_0032:
+.word ow_poke_leg_0032Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0032Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0032Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0032Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0032Tiles+(4*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0032Tiles+(5*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0032Tiles+(6*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0032Tiles+(7*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0032Tiles+(8*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0032Tiles+(9*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_leg_0033:
+.word ow_poke_leg_0033Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0033Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0033Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0033Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0033Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0033Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0033Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0033Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0033Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_leg_0034:
+.word ow_poke_leg_0034Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0299Tiles+(1*0x800)
+.word ow_poke_leg_0034Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0299Tiles+(2*0x800)
+.word ow_poke_leg_0034Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0299Tiles+(0*0x800)
+.word ow_poke_leg_0034Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0299Tiles+(0*0x800)
+.word ow_poke_leg_0034Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0299Tiles+(0*0x800)
+.word ow_poke_leg_0034Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0299Tiles+(0*0x800)
+.word ow_poke_leg_0034Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0299Tiles+(0*0x800)
+.word ow_poke_leg_0034Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0299Tiles+(0*0x800)
+.word ow_poke_leg_0034Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_300:
-.word ow_0300Tiles+(0*0x800)
+.alignow_frames_poke_leg_0035:
+.word ow_poke_leg_0035Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0035Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0035Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0035Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0035Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0035Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0035Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0035Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0035Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_leg_0036:
+.word ow_poke_leg_0036Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0300Tiles+(1*0x800)
+.word ow_poke_leg_0036Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0300Tiles+(0*0x800)
+.word ow_poke_leg_0036Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0300Tiles+(0*0x800)
+.word ow_poke_leg_0036Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0300Tiles+(0*0x800)
+.word ow_poke_leg_0036Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0300Tiles+(0*0x800)
+.word ow_poke_leg_0036Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0300Tiles+(0*0x800)
+.word ow_poke_leg_0036Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0300Tiles+(0*0x800)
+.word ow_poke_leg_0036Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0300Tiles+(0*0x800)
+.word ow_poke_leg_0036Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_301:
-.word ow_0301Tiles+(0*0x100)
+.alignow_frames_poke_leg_0037:
+.word ow_poke_leg_0037Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0037Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0037Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0037Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0037Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0037Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0037Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0037Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0037Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+
+.alignow_frames_poke_leg_0038:
+.word ow_poke_leg_0038Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0038Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0038Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0038Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0038Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0038Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0038Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0038Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0038Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+
+.alignow_frames_poke_leg_0039:
+.word ow_poke_leg_0039Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0039Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0039Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0039Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0039Tiles+(4*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0039Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0039Tiles+(4*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0039Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0039Tiles+(4*0x800)
+.hword 0x800
+.hword 0x0
+
+.alignow_frames_poke_leg_0040:
+.word ow_poke_leg_0040Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0040Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0040Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0040Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0040Tiles+(4*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0040Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0040Tiles+(4*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0040Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0040Tiles+(4*0x800)
+.hword 0x800
+.hword 0x0
+
+.alignow_frames_poke_leg_0041:
+.word ow_poke_leg_0041Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0041Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0041Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0041Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0041Tiles+(4*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0041Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0041Tiles+(4*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0041Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0041Tiles+(4*0x800)
+.hword 0x800
+.hword 0x0
+
+.alignow_frames_poke_leg_0042:
+.word ow_poke_leg_0042Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0042Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0042Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0042Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0042Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0042Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0042Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0042Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0042Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+
+.alignow_frames_poke_leg_0043:
+.word ow_poke_leg_0043Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0043Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0043Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0043Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0043Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0043Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0043Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0043Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0043Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+
+.alignow_frames_poke_leg_0044:
+.word ow_poke_leg_0044Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0044Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0044Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0044Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0044Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0044Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0044Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0044Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0044Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+
+.alignow_frames_poke_leg_0045:
+.word ow_poke_leg_0045Tiles+(0*0x100)
 .hword 0x100
 .hword 0x0
-.word ow_0301Tiles+(1*0x100)
+.word ow_poke_leg_0045Tiles+(1*0x100)
 .hword 0x100
 .hword 0x0
-.word ow_0301Tiles+(2*0x100)
+.word ow_poke_leg_0045Tiles+(2*0x100)
 .hword 0x100
 .hword 0x0
-.word ow_0301Tiles+(0*0x100)
+.word ow_poke_leg_0045Tiles+(0*0x100)
 .hword 0x100
 .hword 0x0
-.word ow_0301Tiles+(0*0x100)
+.word ow_poke_leg_0045Tiles+(0*0x100)
 .hword 0x100
 .hword 0x0
-.word ow_0301Tiles+(0*0x100)
+.word ow_poke_leg_0045Tiles+(0*0x100)
 .hword 0x100
 .hword 0x0
-.word ow_0301Tiles+(0*0x100)
+.word ow_poke_leg_0045Tiles+(0*0x100)
 .hword 0x100
 .hword 0x0
-.word ow_0301Tiles+(0*0x100)
+.word ow_poke_leg_0045Tiles+(0*0x100)
 .hword 0x100
 .hword 0x0
-.word ow_0301Tiles+(0*0x100)
-.hword 0x100
-.hword 0x0
-
-.align 2
-ow_frames_302:
-.word ow_0302Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0302Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0302Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0302Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0302Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0302Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0302Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0302Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0302Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_303:
-.word ow_0303Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0303Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0303Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0303Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0303Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0303Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0303Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0303Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0303Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_304:
-.word ow_0304Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-
-.align 2
-ow_frames_305:
-.word ow_0305Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0305Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0305Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0305Tiles+(1*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0305Tiles+(2*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0305Tiles+(1*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0305Tiles+(2*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0305Tiles+(1*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0305Tiles+(2*0x800)
-.hword 0x800
-.hword 0x0
-
-.align 2
-ow_frames_306:
-.word ow_0306Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-
-.align 2
-ow_frames_307:
-.word ow_0307Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_308:
-.word ow_0308Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0308Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0308Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0308Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0308Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0308Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0308Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0308Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0308Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_309:
-.word ow_0309Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_310:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_311:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_312:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-.word 
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_313:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x80
-.hword 0x0
-
-.align 2
-ow_frames_314:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x80
-.hword 0x0
-
-.align 2
-ow_frames_315:
-.word ow_0315Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0315Tiles+(1*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0315Tiles+(2*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0315Tiles+(3*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0315Tiles+(4*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0315Tiles+(5*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0315Tiles+(6*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0315Tiles+(7*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0315Tiles+(8*0x800)
-.hword 0x800
-.hword 0x0
-
-.align 2
-ow_frames_316:
-.word ow_0316Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0316Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0316Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0316Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0316Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0316Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0316Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0316Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0316Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_317:
-.word ow_0317Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0317Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0317Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0317Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0317Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0317Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0317Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0317Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0317Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_318:
-.word ow_0318Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0318Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0318Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0318Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0318Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0318Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0318Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0318Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0318Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_319:
-.word ow_0319Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0319Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0319Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0319Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0319Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0319Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0319Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0319Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0319Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_320:
-.word ow_0320Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0320Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0320Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0320Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0320Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0320Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0320Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0320Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0320Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_321:
-.word ow_0321Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0321Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0321Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0321Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0321Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0321Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0321Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0321Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0321Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_322:
-.word ow_0322Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0322Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0322Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0322Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0322Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0322Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0322Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0322Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0322Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_323:
-.word ow_0323Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0323Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0323Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0323Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0323Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0323Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0323Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0323Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0323Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_324:
-.word ow_0324Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0324Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0324Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0324Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0324Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0324Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0324Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0324Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0324Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_325:
-.word ow_0325Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0325Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0325Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0325Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0325Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0325Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0325Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0325Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0325Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_326:
-.word ow_0326Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0326Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0326Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0326Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0326Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0326Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0326Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0326Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0326Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_327:
-.word ow_0327Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0327Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0327Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0327Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0327Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0327Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0327Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0327Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0327Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_328:
-.word ow_0328Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0328Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0328Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0328Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0328Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0328Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0328Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0328Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0328Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_329:
-.word ow_0329Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0329Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0329Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0329Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0329Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0329Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0329Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0329Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0329Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_330:
-.word ow_0330Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0330Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0330Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0330Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0330Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0330Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0330Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0330Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0330Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_331:
-.word ow_0331Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0331Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0331Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0331Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0331Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0331Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0331Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0331Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0331Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_332:
-.word ow_0332Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0332Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0332Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0332Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0332Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0332Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0332Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0332Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0332Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_333:
-.word ow_0333Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0333Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0333Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0333Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0333Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0333Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0333Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0333Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0333Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_334:
-.word ow_0334Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0334Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0334Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0334Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0334Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0334Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0334Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0334Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0334Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_335:
-.word ow_0335Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0335Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0335Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0335Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0335Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0335Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0335Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0335Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0335Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_336:
-.word ow_0336Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0336Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0336Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0336Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0336Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0336Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0336Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0336Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0336Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_337:
-.word ow_0337Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0337Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0337Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0337Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0337Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0337Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0337Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0337Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0337Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_338:
-.word ow_0338Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0338Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0338Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0338Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0338Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0338Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0338Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0338Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0338Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_339:
-.word ow_0339Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0339Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0339Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0339Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0339Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0339Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0339Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0339Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0339Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_340:
-.word ow_0340Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0340Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0340Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0340Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0340Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0340Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0340Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0340Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0340Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_341:
-.word ow_0341Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0341Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0341Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0341Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0341Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0341Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0341Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0341Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0341Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_342:
-.word ow_0342Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0342Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0342Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0342Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0342Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0342Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0342Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0342Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0342Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_343:
-.word ow_0343Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0343Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0343Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0343Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0343Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0343Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0343Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0343Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0343Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_344:
-.word ow_0344Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0344Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0344Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0344Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0344Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0344Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0344Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0344Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0344Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_345:
-.word ow_0345Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0345Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0345Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0345Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0345Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0345Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0345Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0345Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0345Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_346:
-.word ow_0346Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0346Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0346Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0346Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0346Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0346Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0346Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0346Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0346Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_347:
-.word ow_0347Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0347Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0347Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0347Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0347Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0347Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0347Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0347Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0347Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_348:
-.word ow_0348Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0348Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0348Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0348Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0348Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0348Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0348Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0348Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0348Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_349:
-.word ow_0349Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0349Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0349Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0349Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0349Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0349Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0349Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0349Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0349Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_350:
-.word ow_0350Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0350Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0350Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0350Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0350Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0350Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0350Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0350Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0350Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_351:
-.word ow_0351Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0351Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0351Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0351Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0351Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0351Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0351Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0351Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0351Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_352:
-.word ow_0352Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0352Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0352Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0352Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0352Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0352Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0352Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0352Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0352Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_353:
-.word ow_0353Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0353Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0353Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0353Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0353Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0353Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0353Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0353Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0353Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_354:
-.word ow_0354Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0354Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0354Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0354Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0354Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0354Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0354Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0354Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0354Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_355:
-.word ow_0355Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0355Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0355Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0355Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0355Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0355Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0355Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0355Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0355Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_356:
-.word ow_0356Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0356Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0356Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0356Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0356Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0356Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0356Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0356Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0356Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_357:
-.word ow_0357Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0357Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0357Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0357Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0357Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0357Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0357Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0357Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0357Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_358:
-.word ow_0358Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0358Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0358Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0358Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0358Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0358Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0358Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0358Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0358Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_359:
-.word ow_0359Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0359Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0359Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0359Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0359Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0359Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0359Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0359Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0359Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_360:
-.word ow_0360Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0360Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0360Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0360Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0360Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0360Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0360Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0360Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0360Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_361:
-.word ow_0361Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0361Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0361Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0361Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0361Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0361Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0361Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0361Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0361Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_362:
-.word ow_0362Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0362Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0362Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0362Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0362Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0362Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0362Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0362Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0362Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_363:
-.word ow_0363Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0363Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0363Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0363Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0363Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0363Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0363Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0363Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0363Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_364:
-.word ow_0364Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0364Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0364Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0364Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0364Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0364Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0364Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0364Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0364Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_365:
-.word ow_0365Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0365Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0365Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0365Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0365Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0365Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0365Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0365Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0365Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_366:
-.word ow_0366Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0366Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0366Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0366Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0366Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0366Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0366Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0366Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0366Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_367:
-.word ow_0367Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0367Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0367Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0367Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0367Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0367Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0367Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0367Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0367Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_368:
-.word ow_0368Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0368Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0368Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0368Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0368Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0368Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0368Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0368Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0368Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_369:
-.word ow_0369Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0369Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0369Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0369Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0369Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0369Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0369Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0369Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0369Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_370:
-.word ow_0370Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0370Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0370Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0370Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0370Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0370Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0370Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0370Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0370Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_371:
-.word ow_0371Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0371Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0371Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0371Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0371Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0371Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0371Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0371Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0371Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_372:
-.word ow_0372Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0372Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0372Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0372Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0372Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0372Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0372Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0372Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0372Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_373:
-.word ow_0373Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0373Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0373Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0373Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0373Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0373Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0373Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0373Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0373Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_374:
-.word ow_0374Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0374Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0374Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0374Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0374Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0374Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0374Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0374Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0374Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_375:
-.word ow_0375Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0375Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0375Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0375Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0375Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0375Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0375Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0375Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0375Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_376:
-.word ow_0376Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0376Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0376Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0376Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0376Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0376Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0376Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0376Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0376Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_377:
-.word ow_0377Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0377Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0377Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0377Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0377Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0377Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0377Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0377Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0377Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_378:
-.word ow_0378Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0378Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0378Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0378Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0378Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0378Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0378Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0378Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0378Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_379:
-.word ow_0379Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0379Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0379Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0379Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0379Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0379Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0379Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0379Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0379Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_380:
-.word ow_0380Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0380Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0380Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0380Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0380Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0380Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0380Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0380Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0380Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_381:
-.word ow_0381Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0381Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0381Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0381Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0381Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0381Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0381Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0381Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0381Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_382:
-.word ow_0382Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0382Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0382Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0382Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0382Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0382Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0382Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0382Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0382Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_383:
-.word ow_0383Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0383Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0383Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0383Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0383Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0383Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0383Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0383Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0383Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_384:
-.word ow_0384Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0384Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0384Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0384Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0384Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0384Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0384Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0384Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0384Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_385:
-.word ow_0385Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0385Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0385Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0385Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0385Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0385Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0385Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0385Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0385Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_386:
-.word ow_0386Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0386Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0386Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0386Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0386Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0386Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0386Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0386Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0386Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_387:
-.word ow_0387Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0387Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0387Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0387Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0387Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0387Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0387Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0387Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0387Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_388:
-.word ow_0388Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0388Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0388Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0388Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0388Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0388Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0388Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0388Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0388Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_389:
-.word ow_0389Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0389Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0389Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0389Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0389Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0389Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0389Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0389Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0389Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_390:
-.word ow_0390Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0390Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0390Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0390Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0390Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0390Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0390Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0390Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0390Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_391:
-.word ow_0391Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0391Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0391Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0391Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0391Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0391Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0391Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0391Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0391Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_392:
-.word ow_0392Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0392Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0392Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0392Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0392Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0392Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0392Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0392Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0392Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_393:
-.word ow_0393Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0393Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0393Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0393Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0393Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0393Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0393Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0393Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0393Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_394:
-.word ow_0394Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0394Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0394Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0394Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0394Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0394Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0394Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0394Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0394Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_395:
-.word ow_0395Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0395Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0395Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0395Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0395Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0395Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0395Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0395Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0395Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_396:
-.word ow_0396Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0396Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0396Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0396Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0396Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0396Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0396Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0396Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0396Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_397:
-.word ow_0397Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0397Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0397Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0397Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0397Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0397Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0397Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0397Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0397Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_398:
-.word ow_0398Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0398Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0398Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0398Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0398Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0398Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0398Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0398Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0398Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_399:
-.word ow_0399Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0399Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0399Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0399Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0399Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0399Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0399Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0399Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0399Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_400:
-.word ow_0400Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0400Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0400Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0400Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0400Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0400Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0400Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0400Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0400Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_401:
-.word ow_0401Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0401Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0401Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0401Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0401Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0401Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0401Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0401Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0401Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_402:
-.word ow_0402Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0402Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0402Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0402Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0402Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0402Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0402Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0402Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0402Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_403:
-.word ow_0403Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0403Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0403Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0403Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0403Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0403Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0403Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0403Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0403Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_404:
-.word ow_0404Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0404Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0404Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0404Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0404Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0404Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0404Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0404Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0404Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_405:
-.word ow_0405Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0405Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0405Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0405Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0405Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0405Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0405Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0405Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0405Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_406:
-.word ow_0406Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0406Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0406Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0406Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0406Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0406Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0406Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0406Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0406Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_407:
-.word ow_0407Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0407Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0407Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0407Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0407Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0407Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0407Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0407Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0407Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_408:
-.word ow_0408Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0408Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0408Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0408Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0408Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0408Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0408Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0408Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0408Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_409:
-.word ow_0409Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0409Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0409Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0409Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0409Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0409Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0409Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0409Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0409Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_410:
-.word ow_0410Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0410Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0410Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0410Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0410Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0410Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0410Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0410Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0410Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_411:
-.word ow_0411Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0411Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0411Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0411Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0411Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0411Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0411Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0411Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0411Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_412:
-.word ow_0412Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0412Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0412Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0412Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0412Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0412Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0412Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0412Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0412Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_413:
-.word ow_0413Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0413Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0413Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0413Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0413Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0413Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0413Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0413Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0413Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_414:
-.word ow_0414Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0414Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0414Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0414Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0414Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0414Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0414Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0414Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0414Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_415:
-.word ow_0415Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0415Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0415Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0415Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0415Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0415Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0415Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0415Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0415Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_416:
-.word ow_0416Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0416Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0416Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0416Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0416Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0416Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0416Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0416Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0416Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_417:
-.word ow_0417Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0417Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0417Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0417Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0417Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0417Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0417Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0417Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0417Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_418:
-.word ow_0418Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0418Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0418Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0418Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0418Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0418Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0418Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0418Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0418Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_419:
-.word ow_0419Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0419Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0419Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0419Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0419Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0419Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0419Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0419Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0419Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_420:
-.word ow_0420Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0420Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0420Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0420Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0420Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0420Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0420Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0420Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0420Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_421:
-.word ow_0421Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0421Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0421Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0421Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0421Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0421Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0421Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0421Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0421Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_422:
-.word ow_0422Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0422Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0422Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0422Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0422Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0422Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0422Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0422Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0422Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_423:
-.word ow_0423Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0423Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0423Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0423Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0423Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0423Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0423Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0423Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0423Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_424:
-.word ow_0424Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0424Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0424Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0424Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0424Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0424Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0424Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0424Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0424Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_425:
-.word ow_0425Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0425Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0425Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0425Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0425Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0425Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0425Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0425Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0425Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_426:
-.word ow_0426Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0426Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0426Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0426Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0426Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0426Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0426Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0426Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0426Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_427:
-.word ow_0427Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0427Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0427Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0427Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0427Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0427Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0427Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0427Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0427Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_428:
-.word ow_0428Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0428Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0428Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0428Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0428Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0428Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0428Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0428Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0428Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_429:
-.word ow_0429Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0429Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0429Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0429Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0429Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0429Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0429Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0429Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0429Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_430:
-.word ow_0430Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0430Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0430Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0430Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0430Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0430Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0430Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0430Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0430Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_431:
-.word ow_0431Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0431Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0431Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0431Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0431Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0431Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0431Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0431Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0431Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_432:
-.word ow_0432Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0432Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0432Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0432Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0432Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0432Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0432Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0432Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0432Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_433:
-.word ow_0433Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0433Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0433Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0433Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0433Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0433Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0433Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0433Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0433Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_434:
-.word ow_0434Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0434Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0434Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0434Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0434Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0434Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0434Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0434Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0434Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_435:
-.word ow_0435Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0435Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0435Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0435Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0435Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0435Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0435Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0435Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0435Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_436:
-.word ow_0436Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0436Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0436Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0436Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0436Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0436Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0436Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0436Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0436Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_437:
-.word ow_0437Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0437Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0437Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0437Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0437Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0437Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0437Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0437Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0437Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_438:
-.word ow_0438Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0438Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0438Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0438Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0438Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0438Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0438Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0438Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0438Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_439:
-.word ow_0439Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0439Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0439Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0439Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0439Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0439Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0439Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0439Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0439Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_440:
-.word ow_0440Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0440Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0440Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0440Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0440Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0440Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0440Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0440Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0440Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_441:
-.word ow_0441Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0441Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0441Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0441Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0441Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0441Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0441Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0441Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0441Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_442:
-.word ow_0442Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0442Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0442Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0442Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0442Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0442Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0442Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0442Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0442Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_443:
-.word ow_0443Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0443Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0443Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0443Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0443Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0443Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0443Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0443Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0443Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_444:
-.word ow_0444Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0444Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0444Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0444Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0444Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0444Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0444Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0444Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0444Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_445:
-.word ow_0445Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0445Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0445Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0445Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0445Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0445Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0445Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0445Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0445Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_446:
-.word ow_0446Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0446Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0446Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0446Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0446Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0446Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0446Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0446Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0446Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_447:
-.word ow_0447Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0447Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0447Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0447Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0447Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0447Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0447Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0447Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0447Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_448:
-.word ow_0448Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0448Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0448Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0448Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0448Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0448Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0448Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0448Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0448Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_449:
-.word ow_0449Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0449Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0449Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0449Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0449Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0449Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0449Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0449Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0449Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_450:
-.word ow_0450Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0450Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0450Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0450Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0450Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0450Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0450Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0450Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0450Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_451:
-.word ow_0451Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0451Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0451Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0451Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0451Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0451Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0451Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0451Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0451Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_452:
-.word ow_0452Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0452Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0452Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0452Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0452Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0452Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0452Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0452Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0452Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_453:
-.word ow_0453Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0453Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0453Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0453Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0453Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0453Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0453Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0453Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0453Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_454:
-.word ow_0454Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0454Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0454Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0454Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0454Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0454Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0454Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0454Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0454Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_455:
-.word ow_0455Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0455Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0455Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0455Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0455Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0455Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0455Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0455Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0455Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_456:
-.word ow_0456Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0456Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0456Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0456Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0456Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0456Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0456Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0456Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0456Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_457:
-.word ow_0457Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0457Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0457Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0457Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0457Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0457Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0457Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0457Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0457Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_458:
-.word ow_0458Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0458Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0458Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0458Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0458Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0458Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0458Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0458Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0458Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_459:
-.word ow_0459Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0459Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0459Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0459Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0459Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0459Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0459Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0459Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0459Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_460:
-.word ow_0460Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0460Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0460Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0460Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0460Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0460Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0460Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0460Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0460Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_461:
-.word ow_0461Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0461Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0461Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0461Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0461Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0461Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0461Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0461Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0461Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_462:
-.word ow_0462Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0462Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0462Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0462Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0462Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0462Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0462Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0462Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0462Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_463:
-.word ow_0463Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0463Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0463Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0463Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0463Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0463Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0463Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0463Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0463Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_464:
-.word ow_0464Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0464Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0464Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0464Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0464Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0464Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0464Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0464Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0464Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_465:
-.word ow_0465Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0465Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0465Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0465Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0465Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0465Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0465Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0465Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0465Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_466:
-.word ow_0466Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0466Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0466Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0466Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0466Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0466Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0466Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0466Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0466Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_467:
-.word ow_0467Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0467Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0467Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0467Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0467Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0467Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0467Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0467Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0467Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_468:
-.word ow_0468Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0468Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0468Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0468Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0468Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0468Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0468Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0468Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0468Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_469:
-.word ow_0469Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0469Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0469Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0469Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0469Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0469Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0469Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0469Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0469Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_470:
-.word ow_0470Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0470Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0470Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0470Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0470Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0470Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0470Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0470Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0470Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_471:
-.word ow_0471Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0471Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0471Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0471Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0471Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0471Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0471Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0471Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0471Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_472:
-.word ow_0472Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0472Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0472Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0472Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0472Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0472Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0472Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0472Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0472Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_473:
-.word ow_0473Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0473Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0473Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0473Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0473Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0473Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0473Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0473Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0473Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_474:
-.word ow_0474Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0474Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0474Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0474Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0474Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0474Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0474Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0474Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0474Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_475:
-.word ow_0475Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0475Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0475Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0475Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0475Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0475Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0475Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0475Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0475Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_476:
-.word ow_0476Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0476Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0476Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0476Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0476Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0476Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0476Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0476Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0476Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_477:
-.word ow_0477Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0477Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0477Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0477Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0477Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0477Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0477Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0477Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0477Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_478:
-.word ow_0478Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0478Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0478Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0478Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0478Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0478Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0478Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0478Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0478Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_479:
-.word ow_0479Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0479Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0479Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0479Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0479Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0479Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0479Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0479Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0479Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_480:
-.word ow_0480Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0480Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0480Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0480Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0480Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0480Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0480Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0480Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0480Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_481:
-.word ow_0481Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0481Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0481Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0481Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0481Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0481Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0481Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0481Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0481Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_482:
-.word ow_0482Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0482Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0482Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0482Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0482Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0482Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0482Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0482Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0482Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_483:
-.word ow_0483Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0483Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0483Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0483Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0483Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0483Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0483Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0483Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0483Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_484:
-.word ow_0484Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0484Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0484Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0484Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0484Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0484Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0484Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0484Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0484Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_485:
-.word ow_0485Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0485Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0485Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0485Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0485Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0485Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0485Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0485Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0485Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_486:
-.word ow_0486Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0486Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0486Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0486Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0486Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0486Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0486Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0486Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0486Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_487:
-.word ow_0487Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0487Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0487Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0487Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0487Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0487Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0487Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0487Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0487Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_488:
-.word ow_0488Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0488Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0488Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0488Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0488Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0488Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0488Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0488Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0488Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_489:
-.word ow_0489Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0489Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0489Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0489Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0489Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0489Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0489Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0489Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0489Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_490:
-.word ow_0490Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0490Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0490Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0490Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0490Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0490Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0490Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0490Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0490Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_491:
-.word ow_0491Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0491Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0491Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0491Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0491Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0491Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0491Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0491Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0491Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_492:
-.word ow_0492Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0492Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0492Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0492Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0492Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0492Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0492Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0492Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0492Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_493:
-.word ow_0493Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0493Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0493Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0493Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0493Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0493Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0493Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0493Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0493Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_494:
-.word ow_0494Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0494Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0494Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0494Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0494Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0494Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0494Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0494Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0494Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_495:
-.word ow_0495Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0495Tiles+(1*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0495Tiles+(2*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0495Tiles+(3*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0495Tiles+(4*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0495Tiles+(5*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0495Tiles+(6*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0495Tiles+(7*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0495Tiles+(8*0x800)
-.hword 0x800
-.hword 0x0
-
-.align 2
-ow_frames_496:
-.word ow_0496Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0496Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0496Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0496Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0496Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0496Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0496Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0496Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0496Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_497:
-.word ow_0497Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0497Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0497Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0497Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0497Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0497Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0497Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0497Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0497Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_498:
-.word ow_0498Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0498Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0498Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0498Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0498Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0498Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0498Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0498Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0498Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_499:
-.word ow_0499Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0499Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0499Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0499Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0499Tiles+(4*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0499Tiles+(5*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0499Tiles+(6*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0499Tiles+(7*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0499Tiles+(8*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_500:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x80
-.hword 0x0
-
-.align 2
-ow_frames_501:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x80
-.hword 0x0
-
-.align 2
-ow_frames_502:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x80
-.hword 0x0
-
-.align 2
-ow_frames_503:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x80
-.hword 0x0
-
-.align 2
-ow_frames_504:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x80
-.hword 0x0
-
-.align 2
-ow_frames_505:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x80
-.hword 0x0
-
-.align 2
-ow_frames_506:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x80
-.hword 0x0
-
-.align 2
-ow_frames_507:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x80
-.hword 0x0
-
-.align 2
-ow_frames_508:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x80
-.hword 0x0
-
-.align 2
-ow_frames_509:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x80
-.hword 0x0
-
-.align 2
-ow_frames_510:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x80
-.hword 0x0
-
-.align 2
-ow_frames_511:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x80
-.hword 0x0
-
-.align 2
-ow_frames_512:
-.word ow_0512Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0512Tiles+(1*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0512Tiles+(2*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0512Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0512Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0512Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0512Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0512Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0512Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-
-.align 2
-ow_frames_513:
-.word ow_0513Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0513Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0513Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0513Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_514:
-.word ow_0514Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0514Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0514Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0514Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_515:
-.word ow_0515Tiles+(0*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0515Tiles+(1*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0515Tiles+(2*0x200)
-.hword 0x200
-.hword 0x0
-.word ow_0515Tiles+(3*0x200)
-.hword 0x200
-.hword 0x0
-
-.align 2
-ow_frames_516:
-.word ow_0516Tiles+(0*0x100)
+.word ow_poke_leg_0045Tiles+(0*0x100)
 .hword 0x100
 .hword 0x0
 
-.align 2
-ow_frames_517:
-.word ow_0517Tiles+(0*0x100)
+.alignow_frames_poke_leg_0046:
+.word ow_poke_leg_0046Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0046Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0046Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0046Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0046Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0046Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0046Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0046Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0046Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_leg_0047:
+.word ow_poke_leg_0047Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0047Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0047Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0047Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0047Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0047Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0047Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0047Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0047Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_leg_0048:
+.word ow_poke_leg_0048Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+
+.alignow_frames_poke_leg_0049:
+.word ow_poke_leg_0049Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0049Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0049Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0049Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0049Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0049Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0049Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0049Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_poke_leg_0049Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+
+.alignow_frames_poke_leg_0050:
+.word ow_poke_leg_0050Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+
+.alignow_frames_poke_leg_0051:
+.word ow_poke_leg_0051Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_leg_0052:
+.word ow_poke_leg_0052Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0052Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0052Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0052Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0052Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0052Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0052Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0052Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_poke_leg_0052Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_leg_0053:
+.word ow_poke_leg_0053Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_poke_leg_0054:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0055:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0056:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0057:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0058:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0059:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0060:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0061:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0062:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0063:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0064:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0065:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0066:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0067:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0068:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0069:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0070:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0071:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0072:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0073:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0074:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0075:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0076:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0077:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0078:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0079:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0080:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0081:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0082:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0083:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0084:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0085:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0086:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0087:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0088:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0089:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0090:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0091:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0092:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0093:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0094:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0095:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0096:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0097:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0098:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0099:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0100:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0101:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0102:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0103:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0104:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0105:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0106:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0107:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0108:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0109:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0110:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0111:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0112:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0113:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0114:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0115:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0116:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0117:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0118:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0119:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0120:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0121:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0122:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0123:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0124:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0125:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0126:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0127:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0128:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0129:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0130:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0131:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0132:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0133:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0134:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0135:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0136:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0137:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0138:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0139:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0140:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0141:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0142:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0143:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0144:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0145:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0146:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0147:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0148:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0149:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0150:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0151:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0152:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0153:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0154:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0155:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0156:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0157:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0158:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0159:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0160:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0161:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0162:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0163:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0164:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0165:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0166:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0167:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0168:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0169:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0170:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0171:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0172:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0173:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0174:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0175:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0176:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0177:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0178:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0179:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0180:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0181:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0182:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0183:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0184:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0185:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0186:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0187:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0188:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0189:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0190:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0191:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0192:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0193:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0194:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0195:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0196:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0197:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0198:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0199:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0200:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0201:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0202:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0203:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0204:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0205:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0206:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0207:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0208:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0209:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0210:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0211:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0212:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0213:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0214:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0215:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0216:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0217:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0218:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0219:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0220:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0221:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0222:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0223:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0224:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0225:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0226:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0227:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0228:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0229:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0230:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0231:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0232:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0233:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0234:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0235:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0236:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0237:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0238:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0239:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0240:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0241:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0242:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0243:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0244:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0245:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0246:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0247:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0248:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0249:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0250:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0251:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0252:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0253:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0254:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_poke_leg_0255:
+.word ow_00000Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_objekt_0000:
+.word ow_objekt_0000Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0000Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0000Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0000Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0000Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0000Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0000Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0000Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0000Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+
+.alignow_frames_objekt_0001:
+.word ow_objekt_0001Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_objekt_0001Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_objekt_0001Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_objekt_0001Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_objekt_0002:
+.word ow_objekt_0002Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_objekt_0002Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_objekt_0002Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_objekt_0002Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_objekt_0003:
+.word ow_objekt_0003Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_objekt_0003Tiles+(1*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_objekt_0003Tiles+(2*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_objekt_0003Tiles+(3*0x200)
+.hword 0x200
+.hword 0x0
+
+.alignow_frames_objekt_0004:
+.word ow_objekt_0004Tiles+(0*0x100)
 .hword 0x100
 .hword 0x0
 
-.align 2
-ow_frames_518:
-.word ow_0518Tiles+(0*0x800)
+.alignow_frames_objekt_0005:
+.word ow_objekt_0005Tiles+(0*0x100)
+.hword 0x100
+.hword 0x0
+
+.alignow_frames_objekt_0006:
+.word ow_objekt_0006Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0518Tiles+(1*0x800)
+.word ow_objekt_0006Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0518Tiles+(2*0x800)
+.word ow_objekt_0006Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0518Tiles+(3*0x800)
+.word ow_objekt_0006Tiles+(3*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_519:
-.word ow_0519Tiles+(0*0x80)
+.alignow_frames_objekt_0007:
+.word ow_objekt_0007Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_520:
-.word ow_0520Tiles+(0*0x200)
+.alignow_frames_objekt_0008:
+.word ow_objekt_0008Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0520Tiles+(0*0x200)
+.word ow_objekt_0008Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0520Tiles+(0*0x200)
+.word ow_objekt_0008Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0520Tiles+(1*0x200)
+.word ow_objekt_0008Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0520Tiles+(2*0x200)
+.word ow_objekt_0008Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0520Tiles+(1*0x200)
+.word ow_objekt_0008Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0520Tiles+(2*0x200)
+.word ow_objekt_0008Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0520Tiles+(1*0x200)
+.word ow_objekt_0008Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0520Tiles+(2*0x200)
+.word ow_objekt_0008Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_521:
-.word ow_0521Tiles+(0*0x80)
+.alignow_frames_objekt_0009:
+.word ow_objekt_0009Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
-.word ow_0521Tiles+(0*0x80)
+.word ow_objekt_0009Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
-.word ow_0521Tiles+(0*0x80)
+.word ow_objekt_0009Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
-.word ow_0521Tiles+(1*0x80)
+.word ow_objekt_0009Tiles+(1*0x80)
 .hword 0x80
 .hword 0x0
-.word ow_0521Tiles+(2*0x80)
+.word ow_objekt_0009Tiles+(2*0x80)
 .hword 0x80
 .hword 0x0
-.word ow_0521Tiles+(1*0x80)
+.word ow_objekt_0009Tiles+(1*0x80)
 .hword 0x80
 .hword 0x0
-.word ow_0521Tiles+(2*0x80)
+.word ow_objekt_0009Tiles+(2*0x80)
 .hword 0x80
 .hword 0x0
-.word ow_0521Tiles+(1*0x80)
+.word ow_objekt_0009Tiles+(1*0x80)
 .hword 0x80
 .hword 0x0
-.word ow_0521Tiles+(2*0x80)
-.hword 0x80
-.hword 0x0
-
-.align 2
-ow_frames_522:
-.word ow_0522Tiles+(0*0x80)
+.word ow_objekt_0009Tiles+(2*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_523:
-.word ow_0523Tiles+(0*0x80)
+.alignow_frames_objekt_0010:
+.word ow_objekt_0010Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_524:
-.word ow_0524Tiles+(0*0x800)
+.alignow_frames_objekt_0011:
+.word ow_objekt_0011Tiles+(0*0x80)
+.hword 0x80
+.hword 0x0
+
+.alignow_frames_objekt_0012:
+.word ow_objekt_0012Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0524Tiles+(0*0x800)
+.word ow_objekt_0012Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0524Tiles+(0*0x800)
+.word ow_objekt_0012Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0524Tiles+(0*0x800)
+.word ow_objekt_0012Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0524Tiles+(0*0x800)
+.word ow_objekt_0012Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0524Tiles+(0*0x800)
+.word ow_objekt_0012Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0524Tiles+(0*0x800)
+.word ow_objekt_0012Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0524Tiles+(0*0x800)
+.word ow_objekt_0012Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0524Tiles+(0*0x800)
+.word ow_objekt_0012Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_525:
-.word ow_0525Tiles+(0*0x1000)
+.alignow_frames_objekt_0013:
+.word ow_objekt_0013Tiles+(0*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0525Tiles+(0*0x1000)
+.word ow_objekt_0013Tiles+(0*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0525Tiles+(0*0x1000)
+.word ow_objekt_0013Tiles+(0*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0525Tiles+(0*0x1000)
+.word ow_objekt_0013Tiles+(0*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0525Tiles+(0*0x1000)
+.word ow_objekt_0013Tiles+(0*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0525Tiles+(0*0x1000)
+.word ow_objekt_0013Tiles+(0*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0525Tiles+(0*0x1000)
+.word ow_objekt_0013Tiles+(0*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0525Tiles+(0*0x1000)
+.word ow_objekt_0013Tiles+(0*0x1000)
 .hword 0x1000
 .hword 0x0
-.word ow_0525Tiles+(0*0x1000)
+.word ow_objekt_0013Tiles+(0*0x1000)
 .hword 0x1000
 .hword 0x0
 
-.align 2
-ow_frames_526:
-.word ow_0526Tiles+(0*0x800)
+.alignow_frames_objekt_0014:
+.word ow_objekt_0014Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0526Tiles+(0*0x800)
+.word ow_objekt_0014Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0526Tiles+(0*0x800)
+.word ow_objekt_0014Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0526Tiles+(1*0x800)
+.word ow_objekt_0014Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0526Tiles+(2*0x800)
+.word ow_objekt_0014Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0526Tiles+(1*0x800)
+.word ow_objekt_0014Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0526Tiles+(2*0x800)
+.word ow_objekt_0014Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0526Tiles+(1*0x800)
+.word ow_objekt_0014Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0526Tiles+(2*0x800)
-.hword 0x800
-.hword 0x0
-
-.align 2
-ow_frames_527:
-.word ow_0527Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0527Tiles+(1*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0527Tiles+(2*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0527Tiles+(3*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0527Tiles+(4*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0527Tiles+(5*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0527Tiles+(6*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0527Tiles+(7*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0527Tiles+(8*0x800)
+.word ow_objekt_0014Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_528:
-.word ow_0528Tiles+(0*0x200)
+.alignow_frames_objekt_0015:
+.word ow_objekt_0015Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0015Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0015Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0015Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0015Tiles+(4*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0015Tiles+(5*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0015Tiles+(6*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0015Tiles+(7*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0015Tiles+(8*0x800)
+.hword 0x800
+.hword 0x0
+
+.alignow_frames_objekt_0016:
+.word ow_objekt_0016Tiles+(0*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0528Tiles+(1*0x200)
+.word ow_objekt_0016Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0528Tiles+(2*0x200)
+.word ow_objekt_0016Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_0528Tiles+(3*0x200)
+.word ow_objekt_0016Tiles+(3*0x200)
 .hword 0x200
 .hword 0x0
 
-.align 2
-ow_frames_529:
-.word ow_0529Tiles+(0*0x800)
+.alignow_frames_objekt_0017:
+.word ow_objekt_0017Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0529Tiles+(1*0x800)
+.word ow_objekt_0017Tiles+(1*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0529Tiles+(2*0x800)
+.word ow_objekt_0017Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0529Tiles+(3*0x800)
+.word ow_objekt_0017Tiles+(3*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0529Tiles+(4*0x800)
+.word ow_objekt_0017Tiles+(4*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0529Tiles+(5*0x800)
+.word ow_objekt_0017Tiles+(5*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0529Tiles+(6*0x800)
+.word ow_objekt_0017Tiles+(6*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0529Tiles+(7*0x800)
+.word ow_objekt_0017Tiles+(7*0x800)
 .hword 0x800
 .hword 0x0
-.word ow_0529Tiles+(8*0x800)
-.hword 0x800
-.hword 0x0
-
-.align 2
-ow_frames_530:
-.word ow_0530Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0530Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0530Tiles+(0*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0530Tiles+(1*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0530Tiles+(2*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0530Tiles+(1*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0530Tiles+(2*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0530Tiles+(1*0x800)
-.hword 0x800
-.hword 0x0
-.word ow_0530Tiles+(2*0x800)
+.word ow_objekt_0017Tiles+(8*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_531:
-.word ow_0531Tiles+(0*0x800)
+.alignow_frames_objekt_0018:
+.word ow_objekt_0018Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0018Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0018Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0018Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0018Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0018Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0018Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0018Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0018Tiles+(2*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_532:
-.word ow_0532Tiles+(0*0x800)
+.alignow_frames_objekt_0019:
+.word ow_objekt_0019Tiles+(0*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_533:
-.word ow_0533Tiles+(0*0x800)
+.alignow_frames_objekt_0020:
+.word ow_objekt_0020Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0020Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0020Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0020Tiles+(3*0x800)
 .hword 0x800
 .hword 0x0
 
-.align 2
-ow_frames_534:
+.alignow_frames_objekt_0021:
+.word ow_objekt_0021Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0021Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0021Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0021Tiles+(3*0x800)
+.hword 0x800
+.hword 0x0
+
+.alignow_frames_objekt_0022:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_535:
+.alignow_frames_objekt_0023:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_536:
+.alignow_frames_objekt_0024:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_537:
+.alignow_frames_objekt_0025:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_538:
+.alignow_frames_objekt_0026:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_539:
+.alignow_frames_objekt_0027:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_540:
+.alignow_frames_objekt_0028:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_541:
+.alignow_frames_objekt_0029:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_542:
+.alignow_frames_objekt_0030:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_543:
+.alignow_frames_objekt_0031:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_544:
+.alignow_frames_objekt_0032:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_545:
+.alignow_frames_objekt_0033:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_546:
+.alignow_frames_objekt_0034:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_547:
+.alignow_frames_objekt_0035:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_548:
+.alignow_frames_objekt_0036:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_549:
+.alignow_frames_objekt_0037:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_550:
+.alignow_frames_objekt_0038:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_551:
+.alignow_frames_objekt_0039:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_552:
+.alignow_frames_objekt_0040:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_553:
+.alignow_frames_objekt_0041:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_554:
+.alignow_frames_objekt_0042:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_555:
+.alignow_frames_objekt_0043:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_556:
+.alignow_frames_objekt_0044:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_557:
+.alignow_frames_objekt_0045:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_558:
+.alignow_frames_objekt_0046:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_559:
+.alignow_frames_objekt_0047:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_560:
+.alignow_frames_objekt_0048:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_561:
+.alignow_frames_objekt_0049:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_562:
+.alignow_frames_objekt_0050:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_563:
+.alignow_frames_objekt_0051:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_564:
+.alignow_frames_objekt_0052:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_565:
+.alignow_frames_objekt_0053:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_566:
+.alignow_frames_objekt_0054:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_567:
+.alignow_frames_objekt_0055:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_568:
+.alignow_frames_objekt_0056:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_569:
+.alignow_frames_objekt_0057:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_570:
+.alignow_frames_objekt_0058:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_571:
+.alignow_frames_objekt_0059:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_572:
+.alignow_frames_objekt_0060:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_573:
+.alignow_frames_objekt_0061:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_574:
+.alignow_frames_objekt_0062:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_575:
+.alignow_frames_objekt_0063:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_576:
+.alignow_frames_objekt_0064:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_577:
+.alignow_frames_objekt_0065:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_578:
+.alignow_frames_objekt_0066:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_579:
+.alignow_frames_objekt_0067:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_580:
+.alignow_frames_objekt_0068:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_581:
+.alignow_frames_objekt_0069:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_582:
+.alignow_frames_objekt_0070:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_583:
+.alignow_frames_objekt_0071:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_584:
+.alignow_frames_objekt_0072:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_585:
+.alignow_frames_objekt_0073:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_586:
+.alignow_frames_objekt_0074:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_587:
+.alignow_frames_objekt_0075:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_588:
+.alignow_frames_objekt_0076:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_589:
+.alignow_frames_objekt_0077:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_590:
+.alignow_frames_objekt_0078:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_591:
+.alignow_frames_objekt_0079:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_592:
+.alignow_frames_objekt_0080:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_593:
+.alignow_frames_objekt_0081:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_594:
+.alignow_frames_objekt_0082:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_595:
+.alignow_frames_objekt_0083:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_596:
+.alignow_frames_objekt_0084:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_597:
+.alignow_frames_objekt_0085:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_598:
+.alignow_frames_objekt_0086:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_599:
+.alignow_frames_objekt_0087:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_600:
+.alignow_frames_objekt_0088:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_601:
+.alignow_frames_objekt_0089:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_602:
+.alignow_frames_objekt_0090:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_603:
+.alignow_frames_objekt_0091:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_604:
+.alignow_frames_objekt_0092:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_605:
+.alignow_frames_objekt_0093:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_606:
+.alignow_frames_objekt_0094:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_607:
+.alignow_frames_objekt_0095:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_608:
+.alignow_frames_objekt_0096:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_609:
+.alignow_frames_objekt_0097:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_610:
+.alignow_frames_objekt_0098:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_611:
+.alignow_frames_objekt_0099:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_612:
+.alignow_frames_objekt_0100:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_613:
+.alignow_frames_objekt_0101:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_614:
+.alignow_frames_objekt_0102:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_615:
+.alignow_frames_objekt_0103:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_616:
+.alignow_frames_objekt_0104:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_617:
+.alignow_frames_objekt_0105:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_618:
+.alignow_frames_objekt_0106:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_619:
+.alignow_frames_objekt_0107:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_620:
+.alignow_frames_objekt_0108:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_621:
+.alignow_frames_objekt_0109:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_622:
+.alignow_frames_objekt_0110:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_623:
+.alignow_frames_objekt_0111:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_624:
+.alignow_frames_objekt_0112:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_625:
+.alignow_frames_objekt_0113:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_626:
+.alignow_frames_objekt_0114:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_627:
+.alignow_frames_objekt_0115:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_628:
+.alignow_frames_objekt_0116:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_629:
+.alignow_frames_objekt_0117:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_630:
+.alignow_frames_objekt_0118:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_631:
+.alignow_frames_objekt_0119:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_632:
+.alignow_frames_objekt_0120:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_633:
+.alignow_frames_objekt_0121:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_634:
+.alignow_frames_objekt_0122:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_635:
+.alignow_frames_objekt_0123:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_636:
+.alignow_frames_objekt_0124:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_637:
+.alignow_frames_objekt_0125:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_638:
+.alignow_frames_objekt_0126:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_639:
+.alignow_frames_objekt_0127:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_640:
+.alignow_frames_objekt_0128:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_641:
+.alignow_frames_objekt_0129:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_642:
+.alignow_frames_objekt_0130:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_643:
+.alignow_frames_objekt_0131:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_644:
+.alignow_frames_objekt_0132:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_645:
+.alignow_frames_objekt_0133:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_646:
+.alignow_frames_objekt_0134:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_647:
+.alignow_frames_objekt_0135:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_648:
+.alignow_frames_objekt_0136:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_649:
+.alignow_frames_objekt_0137:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_650:
+.alignow_frames_objekt_0138:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_651:
+.alignow_frames_objekt_0139:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_652:
+.alignow_frames_objekt_0140:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_653:
+.alignow_frames_objekt_0141:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_654:
+.alignow_frames_objekt_0142:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_655:
+.alignow_frames_objekt_0143:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_656:
+.alignow_frames_objekt_0144:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_657:
+.alignow_frames_objekt_0145:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_658:
+.alignow_frames_objekt_0146:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_659:
+.alignow_frames_objekt_0147:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_660:
+.alignow_frames_objekt_0148:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_661:
+.alignow_frames_objekt_0149:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_662:
+.alignow_frames_objekt_0150:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_663:
+.alignow_frames_objekt_0151:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_664:
+.alignow_frames_objekt_0152:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_665:
+.alignow_frames_objekt_0153:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_666:
+.alignow_frames_objekt_0154:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_667:
+.alignow_frames_objekt_0155:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_668:
+.alignow_frames_objekt_0156:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_669:
+.alignow_frames_objekt_0157:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_670:
+.alignow_frames_objekt_0158:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_671:
+.alignow_frames_objekt_0159:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_672:
+.alignow_frames_objekt_0160:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_673:
+.alignow_frames_objekt_0161:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_674:
+.alignow_frames_objekt_0162:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_675:
+.alignow_frames_objekt_0163:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_676:
+.alignow_frames_objekt_0164:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_677:
+.alignow_frames_objekt_0165:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_678:
+.alignow_frames_objekt_0166:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_679:
+.alignow_frames_objekt_0167:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_680:
+.alignow_frames_objekt_0168:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_681:
+.alignow_frames_objekt_0169:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_682:
+.alignow_frames_objekt_0170:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_683:
+.alignow_frames_objekt_0171:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_684:
+.alignow_frames_objekt_0172:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_685:
+.alignow_frames_objekt_0173:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_686:
+.alignow_frames_objekt_0174:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_687:
+.alignow_frames_objekt_0175:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_688:
+.alignow_frames_objekt_0176:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_689:
+.alignow_frames_objekt_0177:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_690:
+.alignow_frames_objekt_0178:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_691:
+.alignow_frames_objekt_0179:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_692:
+.alignow_frames_objekt_0180:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_693:
+.alignow_frames_objekt_0181:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_694:
+.alignow_frames_objekt_0182:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_695:
+.alignow_frames_objekt_0183:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_696:
+.alignow_frames_objekt_0184:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_697:
+.alignow_frames_objekt_0185:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_698:
+.alignow_frames_objekt_0186:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_699:
+.alignow_frames_objekt_0187:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_700:
+.alignow_frames_objekt_0188:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_701:
+.alignow_frames_objekt_0189:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_702:
+.alignow_frames_objekt_0190:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_703:
+.alignow_frames_objekt_0191:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_704:
+.alignow_frames_objekt_0192:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_705:
+.alignow_frames_objekt_0193:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_706:
+.alignow_frames_objekt_0194:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_707:
+.alignow_frames_objekt_0195:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_708:
+.alignow_frames_objekt_0196:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_709:
+.alignow_frames_objekt_0197:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_710:
+.alignow_frames_objekt_0198:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_711:
+.alignow_frames_objekt_0199:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_712:
+.alignow_frames_objekt_0200:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_713:
+.alignow_frames_objekt_0201:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_714:
+.alignow_frames_objekt_0202:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_715:
+.alignow_frames_objekt_0203:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_716:
+.alignow_frames_objekt_0204:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_717:
+.alignow_frames_objekt_0205:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_718:
+.alignow_frames_objekt_0206:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_719:
+.alignow_frames_objekt_0207:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_720:
+.alignow_frames_objekt_0208:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_721:
+.alignow_frames_objekt_0209:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_722:
+.alignow_frames_objekt_0210:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_723:
+.alignow_frames_objekt_0211:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_724:
+.alignow_frames_objekt_0212:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_725:
+.alignow_frames_objekt_0213:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_726:
+.alignow_frames_objekt_0214:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_727:
+.alignow_frames_objekt_0215:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_728:
+.alignow_frames_objekt_0216:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_729:
+.alignow_frames_objekt_0217:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_730:
+.alignow_frames_objekt_0218:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_731:
+.alignow_frames_objekt_0219:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_732:
+.alignow_frames_objekt_0220:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_733:
+.alignow_frames_objekt_0221:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_734:
+.alignow_frames_objekt_0222:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_735:
+.alignow_frames_objekt_0223:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_736:
+.alignow_frames_objekt_0224:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_737:
+.alignow_frames_objekt_0225:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_738:
+.alignow_frames_objekt_0226:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_739:
+.alignow_frames_objekt_0227:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_740:
+.alignow_frames_objekt_0228:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_741:
+.alignow_frames_objekt_0229:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_742:
+.alignow_frames_objekt_0230:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_743:
+.alignow_frames_objekt_0231:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_744:
+.alignow_frames_objekt_0232:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_745:
+.alignow_frames_objekt_0233:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_746:
+.alignow_frames_objekt_0234:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_747:
+.alignow_frames_objekt_0235:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_748:
+.alignow_frames_objekt_0236:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_749:
+.alignow_frames_objekt_0237:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_750:
+.alignow_frames_objekt_0238:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_751:
+.alignow_frames_objekt_0239:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_752:
+.alignow_frames_objekt_0240:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_753:
+.alignow_frames_objekt_0241:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_754:
+.alignow_frames_objekt_0242:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_755:
+.alignow_frames_objekt_0243:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_756:
+.alignow_frames_objekt_0244:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_757:
+.alignow_frames_objekt_0245:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_758:
+.alignow_frames_objekt_0246:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_759:
+.alignow_frames_objekt_0247:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_760:
+.alignow_frames_objekt_0248:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_761:
+.alignow_frames_objekt_0249:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_762:
+.alignow_frames_objekt_0250:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_763:
+.alignow_frames_objekt_0251:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_764:
+.alignow_frames_objekt_0252:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_765:
+.alignow_frames_objekt_0253:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_766:
+.alignow_frames_objekt_0254:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
 
-.align 2
-ow_frames_767:
+.alignow_frames_objekt_0255:
 .word ow_00000Tiles+(0*0x80)
 .hword 0x80
 .hword 0x0
