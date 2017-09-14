@@ -1,5 +1,6 @@
 #include <pokeagb/pokeagb.h>
 #include <tileset_animation/font.h>
+#include <config.h>
 
 #define CANVAS_X_START (22)
 #define CANVAS_Y_START (35)
@@ -103,8 +104,9 @@ void anim_init_text(void) {
     blockset_one_current_tile = 0;
     blockset_one_max_tile = 0x280;
     blockset_one_animator = NULL;
-    if (var_8000 != 0) {
-        draw_text_on_canvas(map_texts[var_8000]);
+    u16 text = var_load(TEXT_ANIMATION_VAR);
+    if (text != 0) {
+        draw_text_on_canvas(map_texts[text]);
         blockset_one_animator = text_animator;
     }
 }
