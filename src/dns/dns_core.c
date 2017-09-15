@@ -367,7 +367,7 @@ void dns_mapdata_load_palette_one(struct mapdata_header* data_header) {
 void dns_apply_lighting(void* blockset, u8 secondary, struct color* buffer) {
     if (dns_get_time_of_day() != NIGHT)
         return;
-    for (int i = 0; i < (sizeof (lightmap) / sizeof (lightmap[0])); ++i) {
+    for (unsigned int i = 0; i < (sizeof (lightmap) / sizeof (lightmap[0])); ++i) {
         if (blockset == lightmap[i].blockset) {
             buffer[(lightmap[i].pal - (secondary ? 7 : 0)) * 16 + lightmap[i].index] = lightmap[i].color;
         }
