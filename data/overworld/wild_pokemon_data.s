@@ -82,474 +82,505 @@ wild_pokemon_data:
 .byte 0x8, 0xE, 0x0, 0x0
 .word grass_data_38, water_data_38, 0x0, fishing_data_38
 
-.align 2
+.align 2 
 water_data_0:
 .byte 0xF
 .byte 0x0, 0x0, 0x0
 .word pkmn_water_data_0
 .hword 0xFFFF
 
-.align 2
+.align 2 
 fishing_data_0:
 .byte 0x14
 .byte 0x0, 0x0, 0x0
 .word pkmn_fishing_data_0
 .hword 0xFFFF
 
-.align 2
+.align 2 
 water_data_1:
 .byte 0xF
 .byte 0x0, 0x0, 0x0
 .word pkmn_water_data_1
 .hword 0xFFFF
 
-.align 2
+.align 2 
 fishing_data_1:
 .byte 0x14
 .byte 0x0, 0x0, 0x0
 .word pkmn_fishing_data_1
 .hword 0xFFFF
 
-.align 2
+.align 2 
 grass_data_2:
-.byte 0xA
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_2
 .hword 0xFFFF
 
-.align 2
+.align 2 
 water_data_2:
 .byte 0xF
 .byte 0x0, 0x0, 0x0
 .word pkmn_water_data_2
 .hword 0xFFFF
 
-.align 2
+.align 2 
 fishing_data_2:
 .byte 0x14
 .byte 0x0, 0x0, 0x0
 .word pkmn_fishing_data_2
 .hword 0xFFFF
 
-.align 2
+.align 2 
 grass_data_3:
-.byte 0xA
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_2
 .hword 0xFFFF
 
-.align 2
+.align 2 
 water_data_3:
 .byte 0xF
 .byte 0x0, 0x0, 0x0
 .word pkmn_water_data_2
 .hword 0xFFFF
 
-.align 2
+.align 2 
 fishing_data_3:
 .byte 0x14
 .byte 0x0, 0x0, 0x0
 .word pkmn_fishing_data_2
 .hword 0xFFFF
 
-.align 2
+.align 2 
 grass_data_4:
-.byte 0xA
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_3
 .hword 0xFFFF
 
-.align 2
+.align 2 
 water_data_4:
 .byte 0xF
 .byte 0x0, 0x0, 0x0
 .word pkmn_water_data_3
 .hword 0xFFFF
 
-.align 2
+.align 2 
 fishing_data_4:
 .byte 0x14
 .byte 0x0, 0x0, 0x0
 .word pkmn_fishing_data_3
 .hword 0xFFFF
 
-.align 2
+.align 2 
 grass_data_5:
-.byte 0xA
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_4
 .hword 0xFFFF
 
-.align 2
+.align 2 
 water_data_5:
 .byte 0xF
 .byte 0x0, 0x0, 0x0
 .word pkmn_water_data_4
 .hword 0xFFFF
 
-.align 2
+.align 2 
 fishing_data_5:
 .byte 0x14
 .byte 0x0, 0x0, 0x0
 .word pkmn_fishing_data_4
 .hword 0xFFFF
 
-.align 2
+.align 2 
 grass_data_6:
-.byte 0xA
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_5
 .hword 0xFFFF
 
-.align 2
+.align 2 
 water_data_6:
 .byte 0xF
 .byte 0x0, 0x0, 0x0
 .word pkmn_water_data_5
 .hword 0xFFFF
 
-.align 2
+.align 2 
 fishing_data_6:
 .byte 0x14
 .byte 0x0, 0x0, 0x0
 .word pkmn_fishing_data_5
 .hword 0xFFFF
 
-.align 2
+.align 2 
 water_data_7:
 .byte 0xF
 .byte 0x0, 0x0, 0x0
 .word pkmn_water_data_5
 .hword 0xFFFF
 
-.align 2
+.align 2 
 fishing_data_7:
 .byte 0x14
 .byte 0x0, 0x0, 0x0
 .word pkmn_fishing_data_5
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_8:
-.byte 0xA
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_5
 .hword 0xFFFF
 
-.align 2
+.align 2 
 water_data_8:
 .byte 0xF
 .byte 0x0, 0x0, 0x0
 .word pkmn_water_data_5
 .hword 0xFFFF
 
-.align 2
+.align 2 
 fishing_data_8:
 .byte 0x14
 .byte 0x0, 0x0, 0x0
 .word pkmn_fishing_data_5
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_9:
-.byte 0xA
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_5
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 water_data_10:
 .byte 0xF
 .byte 0x0, 0x0, 0x0
 .word pkmn_water_data_5
 .hword 0xFFFF
 
-.align 2
+.align 2 
 fishing_data_10:
 .byte 0x14
 .byte 0x0, 0x0, 0x0
 .word pkmn_fishing_data_5
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_11:
-.byte 0xA
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_5
 .hword 0xFFFF
 
-.align 2
+.align 2 
 water_data_11:
 .byte 0xF
 .byte 0x0, 0x0, 0x0
 .word pkmn_water_data_5
 .hword 0xFFFF
 
-.align 2
+.align 2 
 fishing_data_11:
 .byte 0x14
 .byte 0x0, 0x0, 0x0
 .word pkmn_fishing_data_5
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_12:
-.byte 0xA
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_5
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_13:
-.byte 0xA
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_5
 .hword 0xFFFF
 
-.align 2
+.align 2 
 water_data_13:
 .byte 0xF
 .byte 0x0, 0x0, 0x0
 .word pkmn_water_data_5
 .hword 0xFFFF
 
-.align 2
+.align 2 
 fishing_data_13:
 .byte 0x14
 .byte 0x0, 0x0, 0x0
 .word pkmn_fishing_data_5
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_14:
-.byte 0xA
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_5
 .hword 0xFFFF
 
-.align 2
+.align 2 
 water_data_14:
 .byte 0xF
 .byte 0x0, 0x0, 0x0
 .word pkmn_water_data_5
 .hword 0xFFFF
 
-.align 2
+.align 2 
 fishing_data_14:
 .byte 0x14
 .byte 0x0, 0x0, 0x0
 .word pkmn_fishing_data_5
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_15:
-.byte 0x5
+.byte 0x2
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_6
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_16:
-.byte 0x5
+.byte 0x2
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_6
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_17:
-.byte 0x5
+.byte 0x2
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_6
 .hword 0xFFFF
 
-.align 2
+.align 2 
 water_data_17:
 .byte 0xF
 .byte 0x0, 0x0, 0x0
 .word pkmn_water_data_6
 .hword 0xFFFF
 
-.align 2
+.align 2 
 fishing_data_17:
 .byte 0x14
 .byte 0x0, 0x0, 0x0
 .word pkmn_fishing_data_6
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_18:
-.byte 0x5
+.byte 0x2
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_6
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_19:
-.byte 0xA
+.byte 0x2
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_7
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_20:
-.byte 0xA
+.byte 0x2
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_7
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_21:
-.byte 0xA
+.byte 0x2
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_7
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_22:
-.byte 0xA
+.byte 0x2
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_7
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_23:
-.byte 0xA
+.byte 0x2
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_7
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_24:
-.byte 0xA
+.byte 0x2
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_7
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_25:
-.byte 0xA
+.byte 0x2
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_7
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_26:
-.byte 0x5
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_8
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_27:
-.byte 0x5
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_8
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_28:
-.byte 0x5
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_8
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_29:
-.byte 0x5
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_8
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_30:
-.byte 0x5
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_8
 .hword 0xFFFF
 
-.align 2
+.align 2 
 water_data_30:
 .byte 0xF
 .byte 0x0, 0x0, 0x0
 .word pkmn_water_data_8
 .hword 0xFFFF
 
-.align 2
+.align 2 
 fishing_data_30:
 .byte 0x14
 .byte 0x0, 0x0, 0x0
 .word pkmn_fishing_data_8
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_31:
-.byte 0x5
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_8
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_32:
-.byte 0x5
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_8
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_33:
-.byte 0x5
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_8
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_34:
-.byte 0x5
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_8
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_35:
-.byte 0x5
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_8
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_36:
-.byte 0x5
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_8
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_37:
-.byte 0x5
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_8
 .hword 0xFFFF
 
-.align 2
+
+.align 2 
 grass_data_38:
-.byte 0x5
+.byte 0x3
 .byte 0x0, 0x0, 0x0
 .word pkmn_grass_data_8
 .hword 0xFFFF
 
-.align 2
+.align 2 
 water_data_38:
 .byte 0xF
 .byte 0x0, 0x0, 0x0
 .word pkmn_water_data_8
 .hword 0xFFFF
 
-.align 2
+.align 2 
 fishing_data_38:
 .byte 0x14
 .byte 0x0, 0x0, 0x0
 .word pkmn_fishing_data_8
-.hword 0xFFFF 
+.hword 0xFFFF
 
 .align 2
 pkmn_water_data_0:
@@ -603,8 +634,6 @@ pkmn_fishing_data_0:
 .byte 0x37 
 .hword 0x149
 .hword 0xFFFF
-
-.hword 0xFFFF 
 
 .align 2
 pkmn_water_data_1:
@@ -949,34 +978,34 @@ pkmn_grass_data_5:
 .hword 0x122
 .byte 0x5 
 .byte 0x6 
-.hword 0x251
+.hword 0xA
+.byte 0x5 
+.byte 0x8 
+.hword 0xD
 .byte 0x5 
 .byte 0x8 
 .hword 0xA7
 .byte 0x5 
 .byte 0x8 
-.hword 0x234
+.hword 0x2CD
 .byte 0x5 
+.byte 0x8 
+.hword 0xA5
+.byte 0x6 
+.byte 0x8 
+.hword 0x288
+.byte 0x6 
+.byte 0x8 
+.hword 0x251
+.byte 0x7 
+.byte 0x8 
+.hword 0x234
+.byte 0x7 
 .byte 0x8 
 .hword 0x236
-.byte 0x5 
-.byte 0x8 
-.hword 0x238
-.byte 0x6 
-.byte 0x8 
-.hword 0xA5
-.byte 0x6 
-.byte 0x8 
-.hword 0xA5
-.byte 0x7 
-.byte 0x8 
-.hword 0x1D6
-.byte 0x7 
-.byte 0x8 
-.hword 0x1D6
 .byte 0x8 
 .byte 0xA 
-.hword 0x2B1
+.hword 0x238
 .byte 0x8 
 .byte 0xA 
 .hword 0x2B1
@@ -1137,34 +1166,31 @@ pkmn_grass_data_7:
 .hword 0xA7
 .byte 0x7 
 .byte 0x9 
-.hword 0xCC
+.hword 0x288
 .byte 0x7 
 .byte 0x9 
 .hword 0x283
 .byte 0x7 
 .byte 0x9 
-.hword 0x283
+.hword 0x315
 .byte 0x7 
 .byte 0x9 
 .hword 0x1D1
-.byte 0x7 
-.byte 0x9 
-.hword 0x1D1
+.byte 0x8 
+.byte 0xA 
+.hword 0x30
 .byte 0x8 
 .byte 0xA 
 .hword 0x1D4
 .byte 0x8 
 .byte 0xA 
-.hword 0x1D4
-.byte 0x8 
-.byte 0xA 
-.hword 0x281
+.hword 0x2E
 .byte 0x8 
 .byte 0xA 
 .hword 0x281
 .byte 0x9 
 .byte 0xC 
-.hword 0x1F8
+.hword 0x254
 .byte 0x9 
 .byte 0xC 
 .hword 0x1F8

@@ -402,6 +402,7 @@ pokemon_von_id_57:
 pokemon_von_id_58:
 .hword 0, 9, 512, 0
 .hword 0, 10, 765, 0
+.hword 60, 10, 220, 0
 .hword 0xFFFF
 
 .align 2
@@ -409,6 +410,7 @@ pokemon_von_id_58:
 pokemon_von_id_59:
 .hword 30, 9, 512, 0
 .hword 30, 10, 765, 0
+.hword 60, 10, 220, 0
 .hword 0xFFFF
 
 .align 2
@@ -417,6 +419,7 @@ pokemon_von_id_60:
 .hword 60, 9, 512, 0
 .hword 60, 10, 765, 0
 .hword 60, 10, 220, 0
+.hword 60, 11, 215, 0
 .hword 0xFFFF
 
 .align 2
