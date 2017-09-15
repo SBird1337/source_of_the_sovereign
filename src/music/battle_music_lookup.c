@@ -281,7 +281,7 @@ u16 mhk_intro_music_id_to_song(u8 introid) {
             res = 486;
             break;
         case 88:
-            res = 470;
+            res = 478;
             break;
         case 89:
             res = 472;
@@ -393,7 +393,7 @@ u16 mhk_song_id_for_battle(void) {
         res = SEQ_BGM_VS_RSE;
     } else if (battle_type_flags.battle_trainer) {
         switch (trainer_data[trainerbattle_flag_id].trainer_class) {
-            case 36:
+            case 88:
                 res = 527;
                 break;
             case 90:
