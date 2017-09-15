@@ -13,7 +13,7 @@ ow_second_table:
 ow_third_table:
     .word ow_maintable_3
 ow_fourth_table:
-    .word ow_maintable_3
+    .word ow_maintable_4
 
 .align 2
 ow_maintable_1:
