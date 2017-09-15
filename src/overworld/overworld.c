@@ -34,6 +34,7 @@
 /* === DEFINES === */
 #define OW_REPLACE_VAR 0x500A
 #define OW_REPLACE_TO_VAR 0x500B
+#define MAX_NPC_TABLES 4
 
 /* === PROTOTYPES === */
 /**
@@ -44,19 +45,20 @@
 struct npc_type *npc_get_type(u16 npc_id);
 
 /* === EXTERN STATICS ===*/
-struct npc_type **ow_main_table;
-struct npc_type **ow_second_table;
-struct npc_type **ow_third_table;
+extern struct npc_type **ow_main_table;
+extern struct npc_type **ow_second_table;
+extern struct npc_type **ow_third_table;
+extern struct npc_type **ow_fourth_table;
 
 /* === IMPLEMENTATIONS === */
 struct npc_type *npc_get_type(u16 npc_id)
 {
 
     /* Not possible in a global scope because of gcc cow magic */
-    struct npc_type **npc_tables[3] = {ow_main_table, ow_second_table, ow_third_table};
+    struct npc_type **npc_tables[MAX_NPC_TABLES] = {ow_main_table, ow_second_table, ow_third_table, ow_fourth_table};
     //struct npc_type** npc_tables[] = {ow_main_table, ow_second_table, ow_third_table};
     u8 table_id = npc_id >> 8;
-    if (table_id > 2)
+    if (table_id > (MAX_NPC_TABLES -1))
         npc_id = (u8)npc_id;
 
     u16 replace_ow = var_get(OW_REPLACE_VAR);
