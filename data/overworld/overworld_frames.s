@@ -1226,7 +1226,7 @@ ow_frames_npcs_0005:
 .word ow_npcs_0003Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_npcs_0005Tiles+(2*0x200)
+.word ow_npcs_0003Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
 .word ow_npcs_0003Tiles+(3*0x200)
@@ -1469,7 +1469,7 @@ ow_frames_npcs_0012:
 .word ow_npcs_0010Tiles+(1*0x200)
 .hword 0x200
 .hword 0x0
-.word ow_npcs_0012Tiles+(2*0x200)
+.word ow_npcs_0010Tiles+(2*0x200)
 .hword 0x200
 .hword 0x0
 .word ow_npcs_0010Tiles+(3*0x200)

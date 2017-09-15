@@ -4,2054 +4,1030 @@
 
 .global ow_pal_table
 ow_pal_table:
-.word ow_npcs_0000Pal
-.byte 0, 17, 0, 0
-.word ow_npcs_0001Pal
-.byte 1, 17, 0, 0
-.word ow_npcs_0002Pal
-.byte 2, 17, 0, 0
-.word ow_npcs_0003Pal
-.byte 3, 17, 0, 0
-.word ow_npcs_0004Pal
-.byte 4, 17, 0, 0
-.word ow_npcs_0005Pal
-.byte 5, 17, 0, 0
-.word ow_npcs_0006Pal
-.byte 6, 17, 0, 0
-.word ow_npcs_0007Pal
-.byte 7, 17, 0, 0
-.word ow_npcs_0008Pal
-.byte 8, 17, 0, 0
-.word ow_npcs_0009Pal
-.byte 9, 17, 0, 0
-.word ow_npcs_0010Pal
-.byte 10, 17, 0, 0
-.word ow_npcs_0011Pal
-.byte 11, 17, 0, 0
-.word ow_npcs_0012Pal
-.byte 12, 17, 0, 0
-.word ow_npcs_0013Pal
-.byte 13, 17, 0, 0
-.word ow_npcs_0014Pal
-.byte 14, 17, 0, 0
-.word ow_npcs_0015Pal
-.byte 14, 17, 0, 0
-.word ow_npcs_0016Pal
-.byte 15, 17, 0, 0
-.word ow_npcs_0017Pal
-.byte 15, 17, 0, 0
-.word ow_npcs_0018Pal
-.byte 16, 17, 0, 0
-.word ow_npcs_0019Pal
-.byte 16, 17, 0, 0
-.word ow_npcs_0020Pal
-.byte 17, 17, 0, 0
-.word ow_npcs_0021Pal
-.byte 17, 17, 0, 0
-.word ow_npcs_0022Pal
-.byte 18, 17, 0, 0
-.word ow_npcs_0023Pal
-.byte 18, 17, 0, 0
-.word ow_npcs_0024Pal
-.byte 19, 17, 0, 0
-.word ow_npcs_0025Pal
-.byte 20, 17, 0, 0
-.word ow_npcs_0026Pal
-.byte 21, 17, 0, 0
-.word ow_npcs_0027Pal
-.byte 22, 17, 0, 0
-.word ow_npcs_0028Pal
-.byte 23, 17, 0, 0
-.word ow_npcs_0029Pal
-.byte 24, 17, 0, 0
-.word ow_npcs_0030Pal
-.byte 25, 17, 0, 0
-.word ow_npcs_0031Pal
-.byte 26, 17, 0, 0
-.word ow_npcs_0032Pal
-.byte 27, 17, 0, 0
-.word ow_npcs_0033Pal
-.byte 28, 17, 0, 0
-.word ow_npcs_0034Pal
-.byte 29, 17, 0, 0
-.word ow_npcs_0035Pal
-.byte 30, 17, 0, 0
-.word ow_npcs_0036Pal
-.byte 31, 17, 0, 0
-.word ow_npcs_0037Pal
-.byte 32, 17, 0, 0
-.word ow_npcs_0038Pal
-.byte 33, 17, 0, 0
-.word ow_npcs_0039Pal
-.byte 34, 17, 0, 0
-.word ow_npcs_0040Pal
-.byte 35, 17, 0, 0
-.word ow_npcs_0041Pal
-.byte 36, 17, 0, 0
-.word ow_npcs_0042Pal
-.byte 37, 17, 0, 0
-.word ow_npcs_0043Pal
-.byte 38, 17, 0, 0
-.word ow_npcs_0044Pal
-.byte 39, 17, 0, 0
-.word ow_npcs_0045Pal
-.byte 40, 17, 0, 0
-.word ow_npcs_0046Pal
-.byte 41, 17, 0, 0
-.word ow_npcs_0047Pal
-.byte 42, 17, 0, 0
-.word ow_npcs_0048Pal
-.byte 43, 17, 0, 0
-.word ow_npcs_0049Pal
-.byte 44, 17, 0, 0
-.word ow_npcs_0050Pal
-.byte 45, 17, 0, 0
-.word ow_npcs_0051Pal
-.byte 46, 17, 0, 0
-.word ow_npcs_0052Pal
-.byte 47, 17, 0, 0
-.word ow_npcs_0053Pal
-.byte 48, 17, 0, 0
-.word ow_npcs_0054Pal
-.byte 49, 17, 0, 0
-.word ow_npcs_0055Pal
-.byte 50, 17, 0, 0
-.word ow_npcs_0056Pal
-.byte 51, 17, 0, 0
-.word ow_npcs_0057Pal
-.byte 52, 17, 0, 0
-.word ow_npcs_0058Pal
-.byte 53, 17, 0, 0
-.word ow_npcs_0059Pal
-.byte 54, 17, 0, 0
-.word ow_npcs_0060Pal
-.byte 55, 17, 0, 0
-.word ow_npcs_0061Pal
-.byte 56, 17, 0, 0
-.word ow_npcs_0062Pal
-.byte 57, 17, 0, 0
-.word ow_npcs_0063Pal
-.byte 58, 17, 0, 0
-.word ow_npcs_0064Pal
-.byte 59, 17, 0, 0
-.word ow_npcs_0065Pal
-.byte 60, 17, 0, 0
-.word ow_npcs_0066Pal
-.byte 61, 17, 0, 0
-.word ow_npcs_0067Pal
-.byte 62, 17, 0, 0
-.word ow_npcs_0068Pal
-.byte 63, 17, 0, 0
-.word ow_npcs_0069Pal
-.byte 64, 17, 0, 0
-.word ow_npcs_0070Pal
-.byte 65, 17, 0, 0
-.word ow_npcs_0071Pal
-.byte 66, 17, 0, 0
-.word ow_npcs_0072Pal
-.byte 67, 17, 0, 0
-.word ow_npcs_0073Pal
-.byte 68, 17, 0, 0
-.word ow_npcs_0074Pal
-.byte 69, 17, 0, 0
-.word ow_npcs_0075Pal
-.byte 70, 17, 0, 0
-.word ow_npcs_0076Pal
-.byte 71, 17, 0, 0
-.word ow_npcs_0077Pal
-.byte 72, 17, 0, 0
-.word ow_npcs_0078Pal
-.byte 73, 17, 0, 0
-.word ow_npcs_0079Pal
-.byte 74, 17, 0, 0
-.word ow_npcs_0080Pal
-.byte 75, 17, 0, 0
-.word ow_npcs_0081Pal
-.byte 76, 17, 0, 0
-.word ow_npcs_0082Pal
-.byte 77, 17, 0, 0
-.word ow_npcs_0083Pal
-.byte 78, 17, 0, 0
-.word ow_npcs_0084Pal
-.byte 79, 17, 0, 0
-.word ow_npcs_0085Pal
-.byte 80, 17, 0, 0
-.word ow_npcs_0086Pal
-.byte 81, 17, 0, 0
-.word ow_npcs_0087Pal
-.byte 82, 17, 0, 0
-.word ow_npcs_0088Pal
-.byte 83, 17, 0, 0
-.word ow_npcs_0089Pal
-.byte 84, 17, 0, 0
-.word ow_npcs_0090Pal
-.byte 85, 17, 0, 0
-.word ow_npcs_0091Pal
-.byte 86, 17, 0, 0
-.word ow_npcs_0092Pal
-.byte 87, 17, 0, 0
-.word ow_npcs_0093Pal
-.byte 88, 17, 0, 0
-.word ow_npcs_0094Pal
-.byte 89, 17, 0, 0
-.word ow_npcs_0095Pal
-.byte 90, 17, 0, 0
-.word ow_npcs_0096Pal
-.byte 91, 17, 0, 0
-.word ow_npcs_0097Pal
-.byte 92, 17, 0, 0
-.word ow_npcs_0098Pal
-.byte 93, 17, 0, 0
-.word ow_npcs_0099Pal
-.byte 94, 17, 0, 0
-.word ow_npcs_0100Pal
-.byte 95, 17, 0, 0
-.word ow_npcs_0101Pal
-.byte 96, 17, 0, 0
-.word ow_npcs_0102Pal
-.byte 97, 17, 0, 0
-.word ow_npcs_0103Pal
-.byte 98, 17, 0, 0
-.word ow_npcs_0104Pal
-.byte 99, 17, 0, 0
-.word ow_npcs_0105Pal
-.byte 100, 17, 0, 0
-.word ow_npcs_0106Pal
-.byte 101, 17, 0, 0
-.word ow_npcs_0107Pal
-.byte 102, 17, 0, 0
-.word ow_npcs_0108Pal
-.byte 103, 17, 0, 0
-.word ow_npcs_0109Pal
-.byte 104, 17, 0, 0
-.word ow_npcs_0110Pal
-.byte 105, 17, 0, 0
-.word ow_npcs_0111Pal
-.byte 106, 17, 0, 0
-.word ow_npcs_0112Pal
-.byte 107, 17, 0, 0
-.word ow_npcs_0113Pal
-.byte 108, 17, 0, 0
-.word ow_npcs_0114Pal
-.byte 109, 17, 0, 0
-.word ow_npcs_0115Pal
-.byte 110, 17, 0, 0
-.word ow_npcs_0116Pal
-.byte 111, 17, 0, 0
-.word ow_npcs_0117Pal
-.byte 112, 17, 0, 0
-.word ow_npcs_0118Pal
-.byte 113, 17, 0, 0
-.word ow_npcs_0119Pal
-.byte 114, 17, 0, 0
-.word ow_npcs_0120Pal
-.byte 115, 17, 0, 0
-.word ow_npcs_0121Pal
-.byte 116, 17, 0, 0
-.word ow_npcs_0122Pal
-.byte 117, 17, 0, 0
-.word ow_npcs_0123Pal
-.byte 118, 17, 0, 0
-.word ow_npcs_0124Pal
-.byte 119, 17, 0, 0
-.word ow_npcs_0125Pal
-.byte 120, 17, 0, 0
-.word ow_npcs_0126Pal
-.byte 121, 17, 0, 0
-.word ow_npcs_0127Pal
-.byte 122, 17, 0, 0
-.word ow_npcs_0128Pal
-.byte 123, 17, 0, 0
-.word ow_npcs_0129Pal
-.byte 124, 17, 0, 0
-.word ow_npcs_0130Pal
-.byte 125, 17, 0, 0
-.word ow_npcs_0131Pal
-.byte 126, 17, 0, 0
-.word ow_npcs_0132Pal
-.byte 127, 17, 0, 0
-.word ow_npcs_0133Pal
-.byte 128, 17, 0, 0
-.word ow_npcs_0134Pal
-.byte 129, 17, 0, 0
-.word ow_npcs_0135Pal
-.byte 130, 17, 0, 0
-.word ow_npcs_0136Pal
-.byte 131, 17, 0, 0
-.word ow_npcs_0137Pal
-.byte 132, 17, 0, 0
-.word ow_npcs_0138Pal
-.byte 133, 17, 0, 0
-.word ow_npcs_0139Pal
-.byte 134, 17, 0, 0
-.word ow_npcs_0140Pal
-.byte 135, 17, 0, 0
-.word ow_npcs_0141Pal
-.byte 136, 17, 0, 0
-.word ow_npcs_0142Pal
-.byte 137, 17, 0, 0
-.word ow_npcs_0143Pal
-.byte 138, 17, 0, 0
-.word ow_npcs_0144Pal
-.byte 139, 17, 0, 0
-.word ow_npcs_0145Pal
-.byte 140, 17, 0, 0
-.word ow_npcs_0146Pal
-.byte 141, 17, 0, 0
-.word ow_npcs_0147Pal
-.byte 142, 17, 0, 0
-.word ow_npcs_0148Pal
-.byte 143, 17, 0, 0
-.word ow_npcs_0149Pal
-.byte 144, 17, 0, 0
-.word ow_npcs_0150Pal
-.byte 145, 17, 0, 0
-.word ow_npcs_0151Pal
-.byte 146, 17, 0, 0
-.word ow_npcs_0152Pal
-.byte 147, 17, 0, 0
-.word ow_npcs_0153Pal
-.byte 148, 17, 0, 0
-.word ow_npcs_0154Pal
-.byte 149, 17, 0, 0
-.word ow_npcs_0155Pal
-.byte 150, 17, 0, 0
-.word ow_npcs_0156Pal
-.byte 151, 17, 0, 0
-.word ow_npcs_0157Pal
-.byte 152, 17, 0, 0
-.word ow_npcs_0158Pal
-.byte 153, 17, 0, 0
-.word ow_npcs_0159Pal
-.byte 154, 17, 0, 0
-.word ow_npcs_0160Pal
-.byte 155, 17, 0, 0
-.word ow_npcs_0161Pal
-.byte 156, 17, 0, 0
-.word ow_npcs_0162Pal
-.byte 157, 17, 0, 0
-.word ow_npcs_0163Pal
-.byte 158, 17, 0, 0
-.word ow_npcs_0164Pal
-.byte 159, 17, 0, 0
-.word ow_npcs_0165Pal
-.byte 160, 17, 0, 0
-.word ow_npcs_0166Pal
-.byte 161, 17, 0, 0
-.word ow_npcs_0167Pal
-.byte 162, 17, 0, 0
-.word ow_npcs_0168Pal
-.byte 163, 17, 0, 0
-.word ow_npcs_0169Pal
-.byte 164, 17, 0, 0
-.word ow_npcs_0170Pal
-.byte 165, 17, 0, 0
-.word ow_npcs_0171Pal
-.byte 166, 17, 0, 0
-.word ow_npcs_0172Pal
-.byte 167, 17, 0, 0
-.word ow_npcs_0173Pal
-.byte 168, 17, 0, 0
-.word ow_npcs_0174Pal
-.byte 169, 17, 0, 0
-.word ow_npcs_0175Pal
-.byte 170, 17, 0, 0
-.word ow_npcs_0176Pal
-.byte 171, 17, 0, 0
-.word ow_npcs_0177Pal
-.byte 172, 17, 0, 0
-.word ow_npcs_0178Pal
-.byte 172, 17, 0, 0
-.word ow_npcs_0179Pal
-.byte 172, 17, 0, 0
-.word ow_npcs_0180Pal
-.byte 172, 17, 0, 0
-.word ow_npcs_0181Pal
-.byte 173, 17, 0, 0
-.word ow_npcs_0182Pal
-.byte 173, 17, 0, 0
-.word ow_npcs_0183Pal
-.byte 174, 17, 0, 0
-.word ow_npcs_0184Pal
-.byte 175, 17, 0, 0
-.word ow_npcs_0185Pal
-.byte 176, 17, 0, 0
-.word ow_npcs_0186Pal
-.byte 177, 17, 0, 0
-.word ow_npcs_0187Pal
-.byte 178, 17, 0, 0
-.word ow_npcs_0188Pal
-.byte 179, 17, 0, 0
-.word ow_npcs_0189Pal
-.byte 180, 17, 0, 0
-.word ow_npcs_0190Pal
-.byte 181, 17, 0, 0
-.word ow_npcs_0191Pal
-.byte 182, 17, 0, 0
-.word ow_npcs_0192Pal
-.byte 183, 17, 0, 0
-.word ow_npcs_0193Pal
-.byte 184, 17, 0, 0
-.word ow_npcs_0194Pal
-.byte 185, 17, 0, 0
-.word ow_npcs_0195Pal
-.byte 186, 17, 0, 0
-.word ow_npcs_0196Pal
-.byte 187, 17, 0, 0
-.word ow_00000Pal
-.byte 188, 17, 0, 0
-.word ow_00000Pal
-.byte 189, 17, 0, 0
-.word ow_00000Pal
-.byte 190, 17, 0, 0
-.word ow_00000Pal
-.byte 191, 17, 0, 0
-.word ow_00000Pal
-.byte 192, 17, 0, 0
-.word ow_00000Pal
-.byte 193, 17, 0, 0
-.word ow_00000Pal
-.byte 194, 17, 0, 0
-.word ow_00000Pal
-.byte 195, 17, 0, 0
-.word ow_00000Pal
-.byte 196, 17, 0, 0
-.word ow_00000Pal
-.byte 197, 17, 0, 0
-.word ow_00000Pal
-.byte 198, 17, 0, 0
-.word ow_00000Pal
-.byte 199, 17, 0, 0
-.word ow_00000Pal
-.byte 200, 17, 0, 0
-.word ow_00000Pal
-.byte 201, 17, 0, 0
-.word ow_00000Pal
-.byte 202, 17, 0, 0
-.word ow_00000Pal
-.byte 203, 17, 0, 0
-.word ow_00000Pal
-.byte 204, 17, 0, 0
-.word ow_00000Pal
-.byte 205, 17, 0, 0
-.word ow_00000Pal
-.byte 206, 17, 0, 0
-.word ow_00000Pal
-.byte 207, 17, 0, 0
-.word ow_00000Pal
-.byte 208, 17, 0, 0
-.word ow_00000Pal
-.byte 209, 17, 0, 0
-.word ow_00000Pal
-.byte 210, 17, 0, 0
-.word ow_00000Pal
-.byte 211, 17, 0, 0
-.word ow_00000Pal
-.byte 212, 17, 0, 0
-.word ow_00000Pal
-.byte 213, 17, 0, 0
-.word ow_00000Pal
-.byte 214, 17, 0, 0
-.word ow_00000Pal
-.byte 215, 17, 0, 0
-.word ow_00000Pal
-.byte 216, 17, 0, 0
-.word ow_00000Pal
-.byte 217, 17, 0, 0
-.word ow_00000Pal
-.byte 218, 17, 0, 0
-.word ow_00000Pal
-.byte 219, 17, 0, 0
-.word ow_00000Pal
-.byte 220, 17, 0, 0
-.word ow_00000Pal
-.byte 221, 17, 0, 0
-.word ow_00000Pal
-.byte 222, 17, 0, 0
-.word ow_00000Pal
-.byte 223, 17, 0, 0
-.word ow_00000Pal
-.byte 224, 17, 0, 0
-.word ow_00000Pal
-.byte 225, 17, 0, 0
-.word ow_00000Pal
-.byte 226, 17, 0, 0
-.word ow_00000Pal
-.byte 227, 17, 0, 0
-.word ow_00000Pal
-.byte 228, 17, 0, 0
-.word ow_00000Pal
-.byte 229, 17, 0, 0
-.word ow_00000Pal
-.byte 230, 17, 0, 0
-.word ow_00000Pal
-.byte 231, 17, 0, 0
-.word ow_00000Pal
-.byte 232, 17, 0, 0
-.word ow_00000Pal
-.byte 233, 17, 0, 0
-.word ow_00000Pal
-.byte 234, 17, 0, 0
-.word ow_00000Pal
-.byte 235, 17, 0, 0
-.word ow_00000Pal
-.byte 236, 17, 0, 0
-.word ow_00000Pal
-.byte 237, 17, 0, 0
-.word ow_00000Pal
-.byte 238, 17, 0, 0
-.word ow_00000Pal
-.byte 239, 17, 0, 0
-.word ow_00000Pal
-.byte 240, 17, 0, 0
-.word ow_00000Pal
-.byte 241, 17, 0, 0
-.word ow_00000Pal
-.byte 242, 17, 0, 0
-.word ow_00000Pal
-.byte 243, 17, 0, 0
-.word ow_00000Pal
-.byte 244, 17, 0, 0
-.word ow_00000Pal
-.byte 245, 17, 0, 0
-.word ow_00000Pal
-.byte 246, 17, 0, 0
-.word ow_poke_0000Pal
-.byte 0, 18, 0, 0
-.word ow_poke_0001Pal
-.byte 1, 18, 0, 0
-.word ow_poke_0002Pal
-.byte 2, 18, 0, 0
-.word ow_poke_0003Pal
-.byte 3, 18, 0, 0
-.word ow_poke_0004Pal
-.byte 4, 18, 0, 0
-.word ow_poke_0005Pal
-.byte 5, 18, 0, 0
-.word ow_poke_0006Pal
-.byte 6, 18, 0, 0
-.word ow_poke_0007Pal
-.byte 7, 18, 0, 0
-.word ow_poke_0008Pal
-.byte 8, 18, 0, 0
-.word ow_poke_0009Pal
-.byte 9, 18, 0, 0
-.word ow_poke_0010Pal
-.byte 10, 18, 0, 0
-.word ow_poke_0011Pal
-.byte 11, 18, 0, 0
-.word ow_poke_0012Pal
-.byte 12, 18, 0, 0
-.word ow_poke_0013Pal
-.byte 13, 18, 0, 0
-.word ow_poke_0014Pal
-.byte 14, 18, 0, 0
-.word ow_poke_0015Pal
-.byte 15, 18, 0, 0
-.word ow_poke_0016Pal
-.byte 16, 18, 0, 0
-.word ow_poke_0017Pal
-.byte 17, 18, 0, 0
-.word ow_poke_0018Pal
-.byte 18, 18, 0, 0
-.word ow_poke_0019Pal
-.byte 19, 18, 0, 0
-.word ow_poke_0020Pal
-.byte 20, 18, 0, 0
-.word ow_poke_0021Pal
-.byte 21, 18, 0, 0
-.word ow_poke_0022Pal
-.byte 22, 18, 0, 0
-.word ow_poke_0023Pal
-.byte 23, 18, 0, 0
-.word ow_poke_0024Pal
-.byte 24, 18, 0, 0
-.word ow_poke_0025Pal
-.byte 25, 18, 0, 0
-.word ow_poke_0026Pal
-.byte 26, 18, 0, 0
-.word ow_poke_0027Pal
-.byte 27, 18, 0, 0
-.word ow_poke_0028Pal
-.byte 28, 18, 0, 0
-.word ow_poke_0029Pal
-.byte 29, 18, 0, 0
-.word ow_poke_0030Pal
-.byte 30, 18, 0, 0
-.word ow_poke_0031Pal
-.byte 31, 18, 0, 0
-.word ow_poke_0032Pal
-.byte 32, 18, 0, 0
-.word ow_poke_0033Pal
-.byte 33, 18, 0, 0
-.word ow_poke_0034Pal
-.byte 34, 18, 0, 0
-.word ow_poke_0035Pal
-.byte 35, 18, 0, 0
-.word ow_poke_0036Pal
-.byte 36, 18, 0, 0
-.word ow_poke_0037Pal
-.byte 37, 18, 0, 0
-.word ow_poke_0038Pal
-.byte 38, 18, 0, 0
-.word ow_poke_0039Pal
-.byte 39, 18, 0, 0
-.word ow_poke_0040Pal
-.byte 40, 18, 0, 0
-.word ow_poke_0041Pal
-.byte 41, 18, 0, 0
-.word ow_poke_0042Pal
-.byte 42, 18, 0, 0
-.word ow_poke_0043Pal
-.byte 43, 18, 0, 0
-.word ow_poke_0044Pal
-.byte 44, 18, 0, 0
-.word ow_poke_0045Pal
-.byte 45, 18, 0, 0
-.word ow_poke_0046Pal
-.byte 46, 18, 0, 0
-.word ow_poke_0047Pal
-.byte 47, 18, 0, 0
-.word ow_poke_0048Pal
-.byte 48, 18, 0, 0
-.word ow_poke_0049Pal
-.byte 49, 18, 0, 0
-.word ow_poke_0050Pal
-.byte 50, 18, 0, 0
-.word ow_poke_0051Pal
-.byte 51, 18, 0, 0
-.word ow_poke_0052Pal
-.byte 52, 18, 0, 0
-.word ow_poke_0053Pal
-.byte 53, 18, 0, 0
-.word ow_poke_0054Pal
-.byte 54, 18, 0, 0
-.word ow_poke_0055Pal
-.byte 55, 18, 0, 0
-.word ow_poke_0056Pal
-.byte 56, 18, 0, 0
-.word ow_poke_0057Pal
-.byte 57, 18, 0, 0
-.word ow_poke_0058Pal
-.byte 58, 18, 0, 0
-.word ow_poke_0059Pal
-.byte 59, 18, 0, 0
-.word ow_poke_0060Pal
-.byte 60, 18, 0, 0
-.word ow_poke_0061Pal
-.byte 61, 18, 0, 0
-.word ow_poke_0062Pal
-.byte 62, 18, 0, 0
-.word ow_poke_0063Pal
-.byte 63, 18, 0, 0
-.word ow_poke_0064Pal
-.byte 64, 18, 0, 0
-.word ow_poke_0065Pal
-.byte 65, 18, 0, 0
-.word ow_poke_0066Pal
-.byte 66, 18, 0, 0
-.word ow_poke_0067Pal
-.byte 67, 18, 0, 0
-.word ow_poke_0068Pal
-.byte 68, 18, 0, 0
-.word ow_poke_0069Pal
-.byte 69, 18, 0, 0
-.word ow_poke_0070Pal
-.byte 70, 18, 0, 0
-.word ow_poke_0071Pal
-.byte 71, 18, 0, 0
-.word ow_poke_0072Pal
-.byte 72, 18, 0, 0
-.word ow_poke_0073Pal
-.byte 73, 18, 0, 0
-.word ow_poke_0074Pal
-.byte 74, 18, 0, 0
-.word ow_poke_0075Pal
-.byte 75, 18, 0, 0
-.word ow_poke_0076Pal
-.byte 76, 18, 0, 0
-.word ow_poke_0077Pal
-.byte 77, 18, 0, 0
-.word ow_poke_0078Pal
-.byte 78, 18, 0, 0
-.word ow_poke_0079Pal
-.byte 79, 18, 0, 0
-.word ow_poke_0080Pal
-.byte 80, 18, 0, 0
-.word ow_poke_0081Pal
-.byte 81, 18, 0, 0
-.word ow_poke_0082Pal
-.byte 82, 18, 0, 0
-.word ow_poke_0083Pal
-.byte 83, 18, 0, 0
-.word ow_poke_0084Pal
-.byte 84, 18, 0, 0
-.word ow_poke_0085Pal
-.byte 85, 18, 0, 0
-.word ow_poke_0086Pal
-.byte 86, 18, 0, 0
-.word ow_poke_0087Pal
-.byte 87, 18, 0, 0
-.word ow_poke_0088Pal
-.byte 88, 18, 0, 0
-.word ow_poke_0089Pal
-.byte 89, 18, 0, 0
-.word ow_poke_0090Pal
-.byte 90, 18, 0, 0
-.word ow_poke_0091Pal
-.byte 91, 18, 0, 0
-.word ow_poke_0092Pal
-.byte 92, 18, 0, 0
-.word ow_poke_0093Pal
-.byte 93, 18, 0, 0
-.word ow_poke_0094Pal
-.byte 94, 18, 0, 0
-.word ow_poke_0095Pal
-.byte 95, 18, 0, 0
-.word ow_poke_0096Pal
-.byte 96, 18, 0, 0
-.word ow_poke_0097Pal
-.byte 97, 18, 0, 0
-.word ow_poke_0098Pal
-.byte 98, 18, 0, 0
-.word ow_poke_0099Pal
-.byte 99, 18, 0, 0
-.word ow_poke_0100Pal
-.byte 100, 18, 0, 0
-.word ow_poke_0101Pal
-.byte 101, 18, 0, 0
-.word ow_poke_0102Pal
-.byte 102, 18, 0, 0
-.word ow_poke_0103Pal
-.byte 103, 18, 0, 0
-.word ow_poke_0104Pal
-.byte 104, 18, 0, 0
-.word ow_poke_0105Pal
-.byte 105, 18, 0, 0
-.word ow_poke_0106Pal
-.byte 106, 18, 0, 0
-.word ow_poke_0107Pal
-.byte 107, 18, 0, 0
-.word ow_poke_0108Pal
-.byte 108, 18, 0, 0
-.word ow_poke_0109Pal
-.byte 109, 18, 0, 0
-.word ow_poke_0110Pal
-.byte 110, 18, 0, 0
-.word ow_poke_0111Pal
-.byte 111, 18, 0, 0
-.word ow_poke_0112Pal
-.byte 112, 18, 0, 0
-.word ow_poke_0113Pal
-.byte 113, 18, 0, 0
-.word ow_poke_0114Pal
-.byte 114, 18, 0, 0
-.word ow_poke_0115Pal
-.byte 115, 18, 0, 0
-.word ow_poke_0116Pal
-.byte 116, 18, 0, 0
-.word ow_poke_0117Pal
-.byte 117, 18, 0, 0
-.word ow_poke_0118Pal
-.byte 118, 18, 0, 0
-.word ow_poke_0119Pal
-.byte 119, 18, 0, 0
-.word ow_poke_0120Pal
-.byte 120, 18, 0, 0
-.word ow_poke_0121Pal
-.byte 121, 18, 0, 0
-.word ow_poke_0122Pal
-.byte 122, 18, 0, 0
-.word ow_poke_0123Pal
-.byte 123, 18, 0, 0
-.word ow_poke_0124Pal
-.byte 124, 18, 0, 0
-.word ow_poke_0125Pal
-.byte 125, 18, 0, 0
-.word ow_poke_0126Pal
-.byte 126, 18, 0, 0
-.word ow_poke_0127Pal
-.byte 127, 18, 0, 0
-.word ow_poke_0128Pal
-.byte 128, 18, 0, 0
-.word ow_poke_0129Pal
-.byte 129, 18, 0, 0
-.word ow_poke_0130Pal
-.byte 130, 18, 0, 0
-.word ow_poke_0131Pal
-.byte 131, 18, 0, 0
-.word ow_poke_0132Pal
-.byte 132, 18, 0, 0
-.word ow_poke_0133Pal
-.byte 133, 18, 0, 0
-.word ow_poke_0134Pal
-.byte 134, 18, 0, 0
-.word ow_poke_0135Pal
-.byte 135, 18, 0, 0
-.word ow_poke_0136Pal
-.byte 136, 18, 0, 0
-.word ow_poke_0137Pal
-.byte 137, 18, 0, 0
-.word ow_poke_0138Pal
-.byte 138, 18, 0, 0
-.word ow_poke_0139Pal
-.byte 139, 18, 0, 0
-.word ow_poke_0140Pal
-.byte 140, 18, 0, 0
-.word ow_poke_0141Pal
-.byte 141, 18, 0, 0
-.word ow_poke_0142Pal
-.byte 142, 18, 0, 0
-.word ow_poke_0143Pal
-.byte 143, 18, 0, 0
-.word ow_poke_0144Pal
-.byte 144, 18, 0, 0
-.word ow_poke_0145Pal
-.byte 145, 18, 0, 0
-.word ow_poke_0146Pal
-.byte 146, 18, 0, 0
-.word ow_poke_0147Pal
-.byte 147, 18, 0, 0
-.word ow_poke_0148Pal
-.byte 148, 18, 0, 0
-.word ow_poke_0149Pal
-.byte 149, 18, 0, 0
-.word ow_poke_0150Pal
-.byte 150, 18, 0, 0
-.word ow_poke_0151Pal
-.byte 151, 18, 0, 0
-.word ow_poke_0152Pal
-.byte 152, 18, 0, 0
-.word ow_poke_0153Pal
-.byte 153, 18, 0, 0
-.word ow_poke_0154Pal
-.byte 154, 18, 0, 0
-.word ow_poke_0155Pal
-.byte 155, 18, 0, 0
-.word ow_poke_0156Pal
-.byte 156, 18, 0, 0
-.word ow_poke_0157Pal
-.byte 157, 18, 0, 0
-.word ow_poke_0158Pal
-.byte 158, 18, 0, 0
-.word ow_poke_0159Pal
-.byte 159, 18, 0, 0
-.word ow_poke_0160Pal
-.byte 160, 18, 0, 0
-.word ow_poke_0161Pal
-.byte 161, 18, 0, 0
-.word ow_poke_0162Pal
-.byte 162, 18, 0, 0
-.word ow_poke_0163Pal
-.byte 163, 18, 0, 0
-.word ow_poke_0164Pal
-.byte 164, 18, 0, 0
-.word ow_poke_0165Pal
-.byte 165, 18, 0, 0
-.word ow_poke_0166Pal
-.byte 166, 18, 0, 0
-.word ow_poke_0167Pal
-.byte 167, 18, 0, 0
-.word ow_poke_0168Pal
-.byte 168, 18, 0, 0
-.word ow_poke_0169Pal
-.byte 169, 18, 0, 0
-.word ow_poke_0170Pal
-.byte 170, 18, 0, 0
-.word ow_poke_0171Pal
-.byte 171, 18, 0, 0
-.word ow_poke_0172Pal
-.byte 172, 18, 0, 0
-.word ow_poke_0173Pal
-.byte 173, 18, 0, 0
-.word ow_poke_0174Pal
-.byte 174, 18, 0, 0
-.word ow_poke_0175Pal
-.byte 175, 18, 0, 0
-.word ow_poke_0176Pal
-.byte 176, 18, 0, 0
-.word ow_poke_0177Pal
-.byte 177, 18, 0, 0
-.word ow_poke_0178Pal
-.byte 178, 18, 0, 0
-.word ow_poke_0179Pal
-.byte 179, 18, 0, 0
-.word ow_poke_0180Pal
-.byte 180, 18, 0, 0
-.word ow_poke_0181Pal
-.byte 181, 18, 0, 0
-.word ow_poke_0182Pal
-.byte 182, 18, 0, 0
-.word ow_poke_0183Pal
-.byte 183, 18, 0, 0
-.word ow_poke_0184Pal
-.byte 184, 18, 0, 0
-.word ow_00000Pal
-.byte 185, 18, 0, 0
-.word ow_00000Pal
-.byte 186, 18, 0, 0
-.word ow_00000Pal
-.byte 187, 18, 0, 0
-.word ow_00000Pal
-.byte 188, 18, 0, 0
-.word ow_00000Pal
-.byte 189, 18, 0, 0
-.word ow_00000Pal
-.byte 190, 18, 0, 0
-.word ow_00000Pal
-.byte 191, 18, 0, 0
-.word ow_00000Pal
-.byte 192, 18, 0, 0
-.word ow_00000Pal
-.byte 193, 18, 0, 0
-.word ow_00000Pal
-.byte 194, 18, 0, 0
-.word ow_00000Pal
-.byte 195, 18, 0, 0
-.word ow_00000Pal
-.byte 196, 18, 0, 0
-.word ow_00000Pal
-.byte 197, 18, 0, 0
-.word ow_00000Pal
-.byte 198, 18, 0, 0
-.word ow_00000Pal
-.byte 199, 18, 0, 0
-.word ow_00000Pal
-.byte 200, 18, 0, 0
-.word ow_00000Pal
-.byte 201, 18, 0, 0
-.word ow_00000Pal
-.byte 202, 18, 0, 0
-.word ow_00000Pal
-.byte 203, 18, 0, 0
-.word ow_00000Pal
-.byte 204, 18, 0, 0
-.word ow_00000Pal
-.byte 205, 18, 0, 0
-.word ow_00000Pal
-.byte 206, 18, 0, 0
-.word ow_00000Pal
-.byte 207, 18, 0, 0
-.word ow_00000Pal
-.byte 208, 18, 0, 0
-.word ow_00000Pal
-.byte 209, 18, 0, 0
-.word ow_00000Pal
-.byte 210, 18, 0, 0
-.word ow_00000Pal
-.byte 211, 18, 0, 0
-.word ow_00000Pal
-.byte 212, 18, 0, 0
-.word ow_00000Pal
-.byte 213, 18, 0, 0
-.word ow_00000Pal
-.byte 214, 18, 0, 0
-.word ow_00000Pal
-.byte 215, 18, 0, 0
-.word ow_00000Pal
-.byte 216, 18, 0, 0
-.word ow_00000Pal
-.byte 217, 18, 0, 0
-.word ow_00000Pal
-.byte 218, 18, 0, 0
-.word ow_00000Pal
-.byte 219, 18, 0, 0
-.word ow_00000Pal
-.byte 220, 18, 0, 0
-.word ow_00000Pal
-.byte 221, 18, 0, 0
-.word ow_00000Pal
-.byte 222, 18, 0, 0
-.word ow_00000Pal
-.byte 223, 18, 0, 0
-.word ow_00000Pal
-.byte 224, 18, 0, 0
-.word ow_00000Pal
-.byte 225, 18, 0, 0
-.word ow_00000Pal
-.byte 226, 18, 0, 0
-.word ow_00000Pal
-.byte 227, 18, 0, 0
-.word ow_00000Pal
-.byte 228, 18, 0, 0
-.word ow_00000Pal
-.byte 229, 18, 0, 0
-.word ow_00000Pal
-.byte 230, 18, 0, 0
-.word ow_00000Pal
-.byte 231, 18, 0, 0
-.word ow_00000Pal
-.byte 232, 18, 0, 0
-.word ow_00000Pal
-.byte 233, 18, 0, 0
-.word ow_00000Pal
-.byte 234, 18, 0, 0
-.word ow_00000Pal
-.byte 235, 18, 0, 0
-.word ow_00000Pal
-.byte 236, 18, 0, 0
-.word ow_00000Pal
-.byte 237, 18, 0, 0
-.word ow_00000Pal
-.byte 238, 18, 0, 0
-.word ow_00000Pal
-.byte 239, 18, 0, 0
-.word ow_00000Pal
-.byte 240, 18, 0, 0
-.word ow_00000Pal
-.byte 241, 18, 0, 0
-.word ow_00000Pal
-.byte 242, 18, 0, 0
-.word ow_00000Pal
-.byte 243, 18, 0, 0
-.word ow_00000Pal
-.byte 244, 18, 0, 0
-.word ow_00000Pal
-.byte 245, 18, 0, 0
-.word ow_00000Pal
-.byte 246, 18, 0, 0
-.word ow_00000Pal
-.byte 247, 18, 0, 0
-.word ow_00000Pal
-.byte 248, 18, 0, 0
-.word ow_00000Pal
-.byte 249, 18, 0, 0
-.word ow_00000Pal
-.byte 250, 18, 0, 0
-.word ow_00000Pal
-.byte 251, 18, 0, 0
-.word ow_00000Pal
-.byte 252, 18, 0, 0
-.word ow_00000Pal
-.byte 253, 18, 0, 0
-.word ow_00000Pal
-.byte 254, 18, 0, 0
-.word ow_00000Pal
-.byte 255, 18, 0, 0
-.word ow_poke_leg_0000Pal
-.byte 0, 19, 0, 0
-.word ow_poke_leg_0001Pal
-.byte 1, 19, 0, 0
-.word ow_poke_leg_0002Pal
-.byte 2, 19, 0, 0
-.word ow_poke_leg_0003Pal
-.byte 3, 19, 0, 0
-.word ow_poke_leg_0004Pal
-.byte 4, 19, 0, 0
-.word ow_poke_leg_0005Pal
-.byte 5, 19, 0, 0
-.word ow_poke_leg_0006Pal
-.byte 6, 19, 0, 0
-.word ow_poke_leg_0007Pal
-.byte 7, 19, 0, 0
-.word ow_poke_leg_0008Pal
-.byte 8, 19, 0, 0
-.word ow_poke_leg_0009Pal
-.byte 9, 19, 0, 0
-.word ow_poke_leg_0010Pal
-.byte 10, 19, 0, 0
-.word ow_poke_leg_0011Pal
-.byte 11, 19, 0, 0
-.word ow_poke_leg_0012Pal
-.byte 12, 19, 0, 0
-.word ow_poke_leg_0013Pal
-.byte 13, 19, 0, 0
-.word ow_poke_leg_0014Pal
-.byte 14, 19, 0, 0
-.word ow_poke_leg_0015Pal
-.byte 15, 19, 0, 0
-.word ow_poke_leg_0016Pal
-.byte 16, 19, 0, 0
-.word ow_poke_leg_0017Pal
-.byte 17, 19, 0, 0
-.word ow_poke_leg_0018Pal
-.byte 18, 19, 0, 0
-.word ow_poke_leg_0019Pal
-.byte 19, 19, 0, 0
-.word ow_poke_leg_0020Pal
-.byte 20, 19, 0, 0
-.word ow_poke_leg_0021Pal
-.byte 21, 19, 0, 0
-.word ow_poke_leg_0022Pal
-.byte 22, 19, 0, 0
-.word ow_poke_leg_0023Pal
-.byte 23, 19, 0, 0
-.word ow_poke_leg_0024Pal
-.byte 24, 19, 0, 0
-.word ow_poke_leg_0025Pal
-.byte 25, 19, 0, 0
-.word ow_poke_leg_0026Pal
-.byte 26, 19, 0, 0
-.word ow_poke_leg_0027Pal
-.byte 27, 19, 0, 0
-.word ow_poke_leg_0028Pal
-.byte 28, 19, 0, 0
-.word ow_poke_leg_0029Pal
-.byte 29, 19, 0, 0
-.word ow_poke_leg_0030Pal
-.byte 30, 19, 0, 0
-.word ow_poke_leg_0031Pal
-.byte 31, 19, 0, 0
-.word ow_poke_leg_0032Pal
-.byte 32, 19, 0, 0
-.word ow_poke_leg_0033Pal
-.byte 33, 19, 0, 0
-.word ow_poke_leg_0034Pal
-.byte 34, 19, 0, 0
-.word ow_poke_leg_0035Pal
-.byte 35, 19, 0, 0
-.word ow_poke_leg_0036Pal
-.byte 36, 19, 0, 0
-.word ow_poke_leg_0037Pal
-.byte 37, 19, 0, 0
-.word ow_poke_leg_0038Pal
-.byte 38, 19, 0, 0
-.word ow_poke_leg_0039Pal
-.byte 39, 19, 0, 0
-.word ow_poke_leg_0040Pal
-.byte 40, 19, 0, 0
-.word ow_poke_leg_0041Pal
-.byte 41, 19, 0, 0
-.word ow_poke_leg_0042Pal
-.byte 42, 19, 0, 0
-.word ow_poke_leg_0043Pal
-.byte 43, 19, 0, 0
-.word ow_poke_leg_0044Pal
-.byte 44, 19, 0, 0
-.word ow_poke_leg_0045Pal
-.byte 45, 19, 0, 0
-.word ow_poke_leg_0046Pal
-.byte 46, 19, 0, 0
-.word ow_poke_leg_0047Pal
-.byte 47, 19, 0, 0
-.word ow_poke_leg_0048Pal
-.byte 48, 19, 0, 0
-.word ow_poke_leg_0049Pal
-.byte 49, 19, 0, 0
-.word ow_poke_leg_0050Pal
-.byte 50, 19, 0, 0
-.word ow_poke_leg_0051Pal
-.byte 51, 19, 0, 0
-.word ow_poke_leg_0052Pal
-.byte 52, 19, 0, 0
-.word ow_poke_leg_0053Pal
-.byte 53, 19, 0, 0
-.word ow_00000Pal
-.byte 54, 19, 0, 0
-.word ow_00000Pal
-.byte 55, 19, 0, 0
-.word ow_00000Pal
-.byte 56, 19, 0, 0
-.word ow_00000Pal
-.byte 57, 19, 0, 0
-.word ow_00000Pal
-.byte 58, 19, 0, 0
-.word ow_00000Pal
-.byte 59, 19, 0, 0
-.word ow_00000Pal
-.byte 60, 19, 0, 0
-.word ow_00000Pal
-.byte 61, 19, 0, 0
-.word ow_00000Pal
-.byte 62, 19, 0, 0
-.word ow_00000Pal
-.byte 63, 19, 0, 0
-.word ow_00000Pal
-.byte 64, 19, 0, 0
-.word ow_00000Pal
-.byte 65, 19, 0, 0
-.word ow_00000Pal
-.byte 66, 19, 0, 0
-.word ow_00000Pal
-.byte 67, 19, 0, 0
-.word ow_00000Pal
-.byte 68, 19, 0, 0
-.word ow_00000Pal
-.byte 69, 19, 0, 0
-.word ow_00000Pal
-.byte 70, 19, 0, 0
-.word ow_00000Pal
-.byte 71, 19, 0, 0
-.word ow_00000Pal
-.byte 72, 19, 0, 0
-.word ow_00000Pal
-.byte 73, 19, 0, 0
-.word ow_00000Pal
-.byte 74, 19, 0, 0
-.word ow_00000Pal
-.byte 75, 19, 0, 0
-.word ow_00000Pal
-.byte 76, 19, 0, 0
-.word ow_00000Pal
-.byte 77, 19, 0, 0
-.word ow_00000Pal
-.byte 78, 19, 0, 0
-.word ow_00000Pal
-.byte 79, 19, 0, 0
-.word ow_00000Pal
-.byte 80, 19, 0, 0
-.word ow_00000Pal
-.byte 81, 19, 0, 0
-.word ow_00000Pal
-.byte 82, 19, 0, 0
-.word ow_00000Pal
-.byte 83, 19, 0, 0
-.word ow_00000Pal
-.byte 84, 19, 0, 0
-.word ow_00000Pal
-.byte 85, 19, 0, 0
-.word ow_00000Pal
-.byte 86, 19, 0, 0
-.word ow_00000Pal
-.byte 87, 19, 0, 0
-.word ow_00000Pal
-.byte 88, 19, 0, 0
-.word ow_00000Pal
-.byte 89, 19, 0, 0
-.word ow_00000Pal
-.byte 90, 19, 0, 0
-.word ow_00000Pal
-.byte 91, 19, 0, 0
-.word ow_00000Pal
-.byte 92, 19, 0, 0
-.word ow_00000Pal
-.byte 93, 19, 0, 0
-.word ow_00000Pal
-.byte 94, 19, 0, 0
-.word ow_00000Pal
-.byte 95, 19, 0, 0
-.word ow_00000Pal
-.byte 96, 19, 0, 0
-.word ow_00000Pal
-.byte 97, 19, 0, 0
-.word ow_00000Pal
-.byte 98, 19, 0, 0
-.word ow_00000Pal
-.byte 99, 19, 0, 0
-.word ow_00000Pal
-.byte 100, 19, 0, 0
-.word ow_00000Pal
-.byte 101, 19, 0, 0
-.word ow_00000Pal
-.byte 102, 19, 0, 0
-.word ow_00000Pal
-.byte 103, 19, 0, 0
-.word ow_00000Pal
-.byte 104, 19, 0, 0
-.word ow_00000Pal
-.byte 105, 19, 0, 0
-.word ow_00000Pal
-.byte 106, 19, 0, 0
-.word ow_00000Pal
-.byte 107, 19, 0, 0
-.word ow_00000Pal
-.byte 108, 19, 0, 0
-.word ow_00000Pal
-.byte 109, 19, 0, 0
-.word ow_00000Pal
-.byte 110, 19, 0, 0
-.word ow_00000Pal
-.byte 111, 19, 0, 0
-.word ow_00000Pal
-.byte 112, 19, 0, 0
-.word ow_00000Pal
-.byte 113, 19, 0, 0
-.word ow_00000Pal
-.byte 114, 19, 0, 0
-.word ow_00000Pal
-.byte 115, 19, 0, 0
-.word ow_00000Pal
-.byte 116, 19, 0, 0
-.word ow_00000Pal
-.byte 117, 19, 0, 0
-.word ow_00000Pal
-.byte 118, 19, 0, 0
-.word ow_00000Pal
-.byte 119, 19, 0, 0
-.word ow_00000Pal
-.byte 120, 19, 0, 0
-.word ow_00000Pal
-.byte 121, 19, 0, 0
-.word ow_00000Pal
-.byte 122, 19, 0, 0
-.word ow_00000Pal
-.byte 123, 19, 0, 0
-.word ow_00000Pal
-.byte 124, 19, 0, 0
-.word ow_00000Pal
-.byte 125, 19, 0, 0
-.word ow_00000Pal
-.byte 126, 19, 0, 0
-.word ow_00000Pal
-.byte 127, 19, 0, 0
-.word ow_00000Pal
-.byte 128, 19, 0, 0
-.word ow_00000Pal
-.byte 129, 19, 0, 0
-.word ow_00000Pal
-.byte 130, 19, 0, 0
-.word ow_00000Pal
-.byte 131, 19, 0, 0
-.word ow_00000Pal
-.byte 132, 19, 0, 0
-.word ow_00000Pal
-.byte 133, 19, 0, 0
-.word ow_00000Pal
-.byte 134, 19, 0, 0
-.word ow_00000Pal
-.byte 135, 19, 0, 0
-.word ow_00000Pal
-.byte 136, 19, 0, 0
-.word ow_00000Pal
-.byte 137, 19, 0, 0
-.word ow_00000Pal
-.byte 138, 19, 0, 0
-.word ow_00000Pal
-.byte 139, 19, 0, 0
-.word ow_00000Pal
-.byte 140, 19, 0, 0
-.word ow_00000Pal
-.byte 141, 19, 0, 0
-.word ow_00000Pal
-.byte 142, 19, 0, 0
-.word ow_00000Pal
-.byte 143, 19, 0, 0
-.word ow_00000Pal
-.byte 144, 19, 0, 0
-.word ow_00000Pal
-.byte 145, 19, 0, 0
-.word ow_00000Pal
-.byte 146, 19, 0, 0
-.word ow_00000Pal
-.byte 147, 19, 0, 0
-.word ow_00000Pal
-.byte 148, 19, 0, 0
-.word ow_00000Pal
-.byte 149, 19, 0, 0
-.word ow_00000Pal
-.byte 150, 19, 0, 0
-.word ow_00000Pal
-.byte 151, 19, 0, 0
-.word ow_00000Pal
-.byte 152, 19, 0, 0
-.word ow_00000Pal
-.byte 153, 19, 0, 0
-.word ow_00000Pal
-.byte 154, 19, 0, 0
-.word ow_00000Pal
-.byte 155, 19, 0, 0
-.word ow_00000Pal
-.byte 156, 19, 0, 0
-.word ow_00000Pal
-.byte 157, 19, 0, 0
-.word ow_00000Pal
-.byte 158, 19, 0, 0
-.word ow_00000Pal
-.byte 159, 19, 0, 0
-.word ow_00000Pal
-.byte 160, 19, 0, 0
-.word ow_00000Pal
-.byte 161, 19, 0, 0
-.word ow_00000Pal
-.byte 162, 19, 0, 0
-.word ow_00000Pal
-.byte 163, 19, 0, 0
-.word ow_00000Pal
-.byte 164, 19, 0, 0
-.word ow_00000Pal
-.byte 165, 19, 0, 0
-.word ow_00000Pal
-.byte 166, 19, 0, 0
-.word ow_00000Pal
-.byte 167, 19, 0, 0
-.word ow_00000Pal
-.byte 168, 19, 0, 0
-.word ow_00000Pal
-.byte 169, 19, 0, 0
-.word ow_00000Pal
-.byte 170, 19, 0, 0
-.word ow_00000Pal
-.byte 171, 19, 0, 0
-.word ow_00000Pal
-.byte 172, 19, 0, 0
-.word ow_00000Pal
-.byte 173, 19, 0, 0
-.word ow_00000Pal
-.byte 174, 19, 0, 0
-.word ow_00000Pal
-.byte 175, 19, 0, 0
-.word ow_00000Pal
-.byte 176, 19, 0, 0
-.word ow_00000Pal
-.byte 177, 19, 0, 0
-.word ow_00000Pal
-.byte 178, 19, 0, 0
-.word ow_00000Pal
-.byte 179, 19, 0, 0
-.word ow_00000Pal
-.byte 180, 19, 0, 0
-.word ow_00000Pal
-.byte 181, 19, 0, 0
-.word ow_00000Pal
-.byte 182, 19, 0, 0
-.word ow_00000Pal
-.byte 183, 19, 0, 0
-.word ow_00000Pal
-.byte 184, 19, 0, 0
-.word ow_00000Pal
-.byte 185, 19, 0, 0
-.word ow_00000Pal
-.byte 186, 19, 0, 0
-.word ow_00000Pal
-.byte 187, 19, 0, 0
-.word ow_00000Pal
-.byte 188, 19, 0, 0
-.word ow_00000Pal
-.byte 189, 19, 0, 0
-.word ow_00000Pal
-.byte 190, 19, 0, 0
-.word ow_00000Pal
-.byte 191, 19, 0, 0
-.word ow_00000Pal
-.byte 192, 19, 0, 0
-.word ow_00000Pal
-.byte 193, 19, 0, 0
-.word ow_00000Pal
-.byte 194, 19, 0, 0
-.word ow_00000Pal
-.byte 195, 19, 0, 0
-.word ow_00000Pal
-.byte 196, 19, 0, 0
-.word ow_00000Pal
-.byte 197, 19, 0, 0
-.word ow_00000Pal
-.byte 198, 19, 0, 0
-.word ow_00000Pal
-.byte 199, 19, 0, 0
-.word ow_00000Pal
-.byte 200, 19, 0, 0
-.word ow_00000Pal
-.byte 201, 19, 0, 0
-.word ow_00000Pal
-.byte 202, 19, 0, 0
-.word ow_00000Pal
-.byte 203, 19, 0, 0
-.word ow_00000Pal
-.byte 204, 19, 0, 0
-.word ow_00000Pal
-.byte 205, 19, 0, 0
-.word ow_00000Pal
-.byte 206, 19, 0, 0
-.word ow_00000Pal
-.byte 207, 19, 0, 0
-.word ow_00000Pal
-.byte 208, 19, 0, 0
-.word ow_00000Pal
-.byte 209, 19, 0, 0
-.word ow_00000Pal
-.byte 210, 19, 0, 0
-.word ow_00000Pal
-.byte 211, 19, 0, 0
-.word ow_00000Pal
-.byte 212, 19, 0, 0
-.word ow_00000Pal
-.byte 213, 19, 0, 0
-.word ow_00000Pal
-.byte 214, 19, 0, 0
-.word ow_00000Pal
-.byte 215, 19, 0, 0
-.word ow_00000Pal
-.byte 216, 19, 0, 0
-.word ow_00000Pal
-.byte 217, 19, 0, 0
-.word ow_00000Pal
-.byte 218, 19, 0, 0
-.word ow_00000Pal
-.byte 219, 19, 0, 0
-.word ow_00000Pal
-.byte 220, 19, 0, 0
-.word ow_00000Pal
-.byte 221, 19, 0, 0
-.word ow_00000Pal
-.byte 222, 19, 0, 0
-.word ow_00000Pal
-.byte 223, 19, 0, 0
-.word ow_00000Pal
-.byte 224, 19, 0, 0
-.word ow_00000Pal
-.byte 225, 19, 0, 0
-.word ow_00000Pal
-.byte 226, 19, 0, 0
-.word ow_00000Pal
-.byte 227, 19, 0, 0
-.word ow_00000Pal
-.byte 228, 19, 0, 0
-.word ow_00000Pal
-.byte 229, 19, 0, 0
-.word ow_00000Pal
-.byte 230, 19, 0, 0
-.word ow_00000Pal
-.byte 231, 19, 0, 0
-.word ow_00000Pal
-.byte 232, 19, 0, 0
-.word ow_00000Pal
-.byte 233, 19, 0, 0
-.word ow_00000Pal
-.byte 234, 19, 0, 0
-.word ow_00000Pal
-.byte 235, 19, 0, 0
-.word ow_00000Pal
-.byte 236, 19, 0, 0
-.word ow_00000Pal
-.byte 237, 19, 0, 0
-.word ow_00000Pal
-.byte 238, 19, 0, 0
-.word ow_00000Pal
-.byte 239, 19, 0, 0
-.word ow_00000Pal
-.byte 240, 19, 0, 0
-.word ow_00000Pal
-.byte 241, 19, 0, 0
-.word ow_00000Pal
-.byte 242, 19, 0, 0
-.word ow_00000Pal
-.byte 243, 19, 0, 0
-.word ow_00000Pal
-.byte 244, 19, 0, 0
-.word ow_00000Pal
-.byte 245, 19, 0, 0
-.word ow_00000Pal
-.byte 246, 19, 0, 0
-.word ow_00000Pal
-.byte 247, 19, 0, 0
-.word ow_00000Pal
-.byte 248, 19, 0, 0
-.word ow_00000Pal
-.byte 249, 19, 0, 0
-.word ow_00000Pal
-.byte 250, 19, 0, 0
-.word ow_00000Pal
-.byte 251, 19, 0, 0
-.word ow_00000Pal
-.byte 252, 19, 0, 0
-.word ow_00000Pal
-.byte 253, 19, 0, 0
-.word ow_00000Pal
-.byte 254, 19, 0, 0
-.word ow_00000Pal
-.byte 255, 19, 0, 0
-.word ow_objekt_0000Pal
-.byte 0, 20, 0, 0
-.word ow_objekt_0001Pal
-.byte 1, 20, 0, 0
-.word ow_objekt_0002Pal
-.byte 2, 20, 0, 0
-.word ow_objekt_0003Pal
-.byte 3, 20, 0, 0
-.word ow_objekt_0004Pal
-.byte 4, 20, 0, 0
-.word ow_objekt_0005Pal
-.byte 5, 20, 0, 0
-.word ow_objekt_0006Pal
-.byte 6, 20, 0, 0
-.word ow_objekt_0007Pal
-.byte 7, 20, 0, 0
-.word ow_objekt_0008Pal
-.byte 8, 20, 0, 0
-.word ow_objekt_0009Pal
-.byte 9, 20, 0, 0
-.word ow_objekt_0010Pal
-.byte 10, 20, 0, 0
-.word ow_objekt_0011Pal
-.byte 11, 20, 0, 0
-.word ow_objekt_0012Pal
-.byte 12, 20, 0, 0
-.word ow_objekt_0013Pal
-.byte 13, 20, 0, 0
-.word ow_objekt_0014Pal
-.byte 14, 20, 0, 0
-.word ow_objekt_0015Pal
-.byte 15, 20, 0, 0
-.word ow_objekt_0016Pal
-.byte 16, 20, 0, 0
-.word ow_objekt_0017Pal
-.byte 17, 20, 0, 0
-.word ow_objekt_0018Pal
-.byte 18, 20, 0, 0
-.word ow_objekt_0019Pal
-.byte 19, 20, 0, 0
-.word ow_objekt_0020Pal
-.byte 20, 20, 0, 0
-.word ow_objekt_0021Pal
-.byte 21, 20, 0, 0
-.word ow_00000Pal
-.byte 22, 20, 0, 0
-.word ow_00000Pal
-.byte 23, 20, 0, 0
-.word ow_00000Pal
-.byte 24, 20, 0, 0
-.word ow_00000Pal
-.byte 25, 20, 0, 0
-.word ow_00000Pal
-.byte 26, 20, 0, 0
-.word ow_00000Pal
-.byte 27, 20, 0, 0
-.word ow_00000Pal
-.byte 28, 20, 0, 0
-.word ow_00000Pal
-.byte 29, 20, 0, 0
-.word ow_00000Pal
-.byte 30, 20, 0, 0
-.word ow_00000Pal
-.byte 31, 20, 0, 0
-.word ow_00000Pal
-.byte 32, 20, 0, 0
-.word ow_00000Pal
-.byte 33, 20, 0, 0
-.word ow_00000Pal
-.byte 34, 20, 0, 0
-.word ow_00000Pal
-.byte 35, 20, 0, 0
-.word ow_00000Pal
-.byte 36, 20, 0, 0
-.word ow_00000Pal
-.byte 37, 20, 0, 0
-.word ow_00000Pal
-.byte 38, 20, 0, 0
-.word ow_00000Pal
-.byte 39, 20, 0, 0
-.word ow_00000Pal
-.byte 40, 20, 0, 0
-.word ow_00000Pal
-.byte 41, 20, 0, 0
-.word ow_00000Pal
-.byte 42, 20, 0, 0
-.word ow_00000Pal
-.byte 43, 20, 0, 0
-.word ow_00000Pal
-.byte 44, 20, 0, 0
-.word ow_00000Pal
-.byte 45, 20, 0, 0
-.word ow_00000Pal
-.byte 46, 20, 0, 0
-.word ow_00000Pal
-.byte 47, 20, 0, 0
-.word ow_00000Pal
-.byte 48, 20, 0, 0
-.word ow_00000Pal
-.byte 49, 20, 0, 0
-.word ow_00000Pal
-.byte 50, 20, 0, 0
-.word ow_00000Pal
-.byte 51, 20, 0, 0
-.word ow_00000Pal
-.byte 52, 20, 0, 0
-.word ow_00000Pal
-.byte 53, 20, 0, 0
-.word ow_00000Pal
-.byte 54, 20, 0, 0
-.word ow_00000Pal
-.byte 55, 20, 0, 0
-.word ow_00000Pal
-.byte 56, 20, 0, 0
-.word ow_00000Pal
-.byte 57, 20, 0, 0
-.word ow_00000Pal
-.byte 58, 20, 0, 0
-.word ow_00000Pal
-.byte 59, 20, 0, 0
-.word ow_00000Pal
-.byte 60, 20, 0, 0
-.word ow_00000Pal
-.byte 61, 20, 0, 0
-.word ow_00000Pal
-.byte 62, 20, 0, 0
-.word ow_00000Pal
-.byte 63, 20, 0, 0
-.word ow_00000Pal
-.byte 64, 20, 0, 0
-.word ow_00000Pal
-.byte 65, 20, 0, 0
-.word ow_00000Pal
-.byte 66, 20, 0, 0
-.word ow_00000Pal
-.byte 67, 20, 0, 0
-.word ow_00000Pal
-.byte 68, 20, 0, 0
-.word ow_00000Pal
-.byte 69, 20, 0, 0
-.word ow_00000Pal
-.byte 70, 20, 0, 0
-.word ow_00000Pal
-.byte 71, 20, 0, 0
-.word ow_00000Pal
-.byte 72, 20, 0, 0
-.word ow_00000Pal
-.byte 73, 20, 0, 0
-.word ow_00000Pal
-.byte 74, 20, 0, 0
-.word ow_00000Pal
-.byte 75, 20, 0, 0
-.word ow_00000Pal
-.byte 76, 20, 0, 0
-.word ow_00000Pal
-.byte 77, 20, 0, 0
-.word ow_00000Pal
-.byte 78, 20, 0, 0
-.word ow_00000Pal
-.byte 79, 20, 0, 0
-.word ow_00000Pal
-.byte 80, 20, 0, 0
-.word ow_00000Pal
-.byte 81, 20, 0, 0
-.word ow_00000Pal
-.byte 82, 20, 0, 0
-.word ow_00000Pal
-.byte 83, 20, 0, 0
-.word ow_00000Pal
-.byte 84, 20, 0, 0
-.word ow_00000Pal
-.byte 85, 20, 0, 0
-.word ow_00000Pal
-.byte 86, 20, 0, 0
-.word ow_00000Pal
-.byte 87, 20, 0, 0
-.word ow_00000Pal
-.byte 88, 20, 0, 0
-.word ow_00000Pal
-.byte 89, 20, 0, 0
-.word ow_00000Pal
-.byte 90, 20, 0, 0
-.word ow_00000Pal
-.byte 91, 20, 0, 0
-.word ow_00000Pal
-.byte 92, 20, 0, 0
-.word ow_00000Pal
-.byte 93, 20, 0, 0
-.word ow_00000Pal
-.byte 94, 20, 0, 0
-.word ow_00000Pal
-.byte 95, 20, 0, 0
-.word ow_00000Pal
-.byte 96, 20, 0, 0
-.word ow_00000Pal
-.byte 97, 20, 0, 0
-.word ow_00000Pal
-.byte 98, 20, 0, 0
-.word ow_00000Pal
-.byte 99, 20, 0, 0
-.word ow_00000Pal
-.byte 100, 20, 0, 0
-.word ow_00000Pal
-.byte 101, 20, 0, 0
-.word ow_00000Pal
-.byte 102, 20, 0, 0
-.word ow_00000Pal
-.byte 103, 20, 0, 0
-.word ow_00000Pal
-.byte 104, 20, 0, 0
-.word ow_00000Pal
-.byte 105, 20, 0, 0
-.word ow_00000Pal
-.byte 106, 20, 0, 0
-.word ow_00000Pal
-.byte 107, 20, 0, 0
-.word ow_00000Pal
-.byte 108, 20, 0, 0
-.word ow_00000Pal
-.byte 109, 20, 0, 0
-.word ow_00000Pal
-.byte 110, 20, 0, 0
-.word ow_00000Pal
-.byte 111, 20, 0, 0
-.word ow_00000Pal
-.byte 112, 20, 0, 0
-.word ow_00000Pal
-.byte 113, 20, 0, 0
-.word ow_00000Pal
-.byte 114, 20, 0, 0
-.word ow_00000Pal
-.byte 115, 20, 0, 0
-.word ow_00000Pal
-.byte 116, 20, 0, 0
-.word ow_00000Pal
-.byte 117, 20, 0, 0
-.word ow_00000Pal
-.byte 118, 20, 0, 0
-.word ow_00000Pal
-.byte 119, 20, 0, 0
-.word ow_00000Pal
-.byte 120, 20, 0, 0
-.word ow_00000Pal
-.byte 121, 20, 0, 0
-.word ow_00000Pal
-.byte 122, 20, 0, 0
-.word ow_00000Pal
-.byte 123, 20, 0, 0
-.word ow_00000Pal
-.byte 124, 20, 0, 0
-.word ow_00000Pal
-.byte 125, 20, 0, 0
-.word ow_00000Pal
-.byte 126, 20, 0, 0
-.word ow_00000Pal
-.byte 127, 20, 0, 0
-.word ow_00000Pal
-.byte 128, 20, 0, 0
-.word ow_00000Pal
-.byte 129, 20, 0, 0
-.word ow_00000Pal
-.byte 130, 20, 0, 0
-.word ow_00000Pal
-.byte 131, 20, 0, 0
-.word ow_00000Pal
-.byte 132, 20, 0, 0
-.word ow_00000Pal
-.byte 133, 20, 0, 0
-.word ow_00000Pal
-.byte 134, 20, 0, 0
-.word ow_00000Pal
-.byte 135, 20, 0, 0
-.word ow_00000Pal
-.byte 136, 20, 0, 0
-.word ow_00000Pal
-.byte 137, 20, 0, 0
-.word ow_00000Pal
-.byte 138, 20, 0, 0
-.word ow_00000Pal
-.byte 139, 20, 0, 0
-.word ow_00000Pal
-.byte 140, 20, 0, 0
-.word ow_00000Pal
-.byte 141, 20, 0, 0
-.word ow_00000Pal
-.byte 142, 20, 0, 0
-.word ow_00000Pal
-.byte 143, 20, 0, 0
-.word ow_00000Pal
-.byte 144, 20, 0, 0
-.word ow_00000Pal
-.byte 145, 20, 0, 0
-.word ow_00000Pal
-.byte 146, 20, 0, 0
-.word ow_00000Pal
-.byte 147, 20, 0, 0
-.word ow_00000Pal
-.byte 148, 20, 0, 0
-.word ow_00000Pal
-.byte 149, 20, 0, 0
-.word ow_00000Pal
-.byte 150, 20, 0, 0
-.word ow_00000Pal
-.byte 151, 20, 0, 0
-.word ow_00000Pal
-.byte 152, 20, 0, 0
-.word ow_00000Pal
-.byte 153, 20, 0, 0
-.word ow_00000Pal
-.byte 154, 20, 0, 0
-.word ow_00000Pal
-.byte 155, 20, 0, 0
-.word ow_00000Pal
-.byte 156, 20, 0, 0
-.word ow_00000Pal
-.byte 157, 20, 0, 0
-.word ow_00000Pal
-.byte 158, 20, 0, 0
-.word ow_00000Pal
-.byte 159, 20, 0, 0
-.word ow_00000Pal
-.byte 160, 20, 0, 0
-.word ow_00000Pal
-.byte 161, 20, 0, 0
-.word ow_00000Pal
-.byte 162, 20, 0, 0
-.word ow_00000Pal
-.byte 163, 20, 0, 0
-.word ow_00000Pal
-.byte 164, 20, 0, 0
-.word ow_00000Pal
-.byte 165, 20, 0, 0
-.word ow_00000Pal
-.byte 166, 20, 0, 0
-.word ow_00000Pal
-.byte 167, 20, 0, 0
-.word ow_00000Pal
-.byte 168, 20, 0, 0
-.word ow_00000Pal
-.byte 169, 20, 0, 0
-.word ow_00000Pal
-.byte 170, 20, 0, 0
-.word ow_00000Pal
-.byte 171, 20, 0, 0
-.word ow_00000Pal
-.byte 172, 20, 0, 0
-.word ow_00000Pal
-.byte 173, 20, 0, 0
-.word ow_00000Pal
-.byte 174, 20, 0, 0
-.word ow_00000Pal
-.byte 175, 20, 0, 0
-.word ow_00000Pal
-.byte 176, 20, 0, 0
-.word ow_00000Pal
-.byte 177, 20, 0, 0
-.word ow_00000Pal
-.byte 178, 20, 0, 0
-.word ow_00000Pal
-.byte 179, 20, 0, 0
-.word ow_00000Pal
-.byte 180, 20, 0, 0
-.word ow_00000Pal
-.byte 181, 20, 0, 0
-.word ow_00000Pal
-.byte 182, 20, 0, 0
-.word ow_00000Pal
-.byte 183, 20, 0, 0
-.word ow_00000Pal
-.byte 184, 20, 0, 0
-.word ow_00000Pal
-.byte 185, 20, 0, 0
-.word ow_00000Pal
-.byte 186, 20, 0, 0
-.word ow_00000Pal
-.byte 187, 20, 0, 0
-.word ow_00000Pal
-.byte 188, 20, 0, 0
-.word ow_00000Pal
-.byte 189, 20, 0, 0
-.word ow_00000Pal
-.byte 190, 20, 0, 0
-.word ow_00000Pal
-.byte 191, 20, 0, 0
-.word ow_00000Pal
-.byte 192, 20, 0, 0
-.word ow_00000Pal
-.byte 193, 20, 0, 0
-.word ow_00000Pal
-.byte 194, 20, 0, 0
-.word ow_00000Pal
-.byte 195, 20, 0, 0
-.word ow_00000Pal
-.byte 196, 20, 0, 0
-.word ow_00000Pal
-.byte 197, 20, 0, 0
-.word ow_00000Pal
-.byte 198, 20, 0, 0
-.word ow_00000Pal
-.byte 199, 20, 0, 0
-.word ow_00000Pal
-.byte 200, 20, 0, 0
-.word ow_00000Pal
-.byte 201, 20, 0, 0
-.word ow_00000Pal
-.byte 202, 20, 0, 0
-.word ow_00000Pal
-.byte 203, 20, 0, 0
-.word ow_00000Pal
-.byte 204, 20, 0, 0
-.word ow_00000Pal
-.byte 205, 20, 0, 0
-.word ow_00000Pal
-.byte 206, 20, 0, 0
-.word ow_00000Pal
-.byte 207, 20, 0, 0
-.word ow_00000Pal
-.byte 208, 20, 0, 0
-.word ow_00000Pal
-.byte 209, 20, 0, 0
-.word ow_00000Pal
-.byte 210, 20, 0, 0
-.word ow_00000Pal
-.byte 211, 20, 0, 0
-.word ow_00000Pal
-.byte 212, 20, 0, 0
-.word ow_00000Pal
-.byte 213, 20, 0, 0
-.word ow_00000Pal
-.byte 214, 20, 0, 0
-.word ow_00000Pal
-.byte 215, 20, 0, 0
-.word ow_00000Pal
-.byte 216, 20, 0, 0
-.word ow_00000Pal
-.byte 217, 20, 0, 0
-.word ow_00000Pal
-.byte 218, 20, 0, 0
-.word ow_00000Pal
-.byte 219, 20, 0, 0
-.word ow_00000Pal
-.byte 220, 20, 0, 0
-.word ow_00000Pal
-.byte 221, 20, 0, 0
-.word ow_00000Pal
-.byte 222, 20, 0, 0
-.word ow_00000Pal
-.byte 223, 20, 0, 0
-.word ow_00000Pal
-.byte 224, 20, 0, 0
-.word ow_00000Pal
-.byte 225, 20, 0, 0
-.word ow_00000Pal
-.byte 226, 20, 0, 0
-.word ow_00000Pal
-.byte 227, 20, 0, 0
-.word ow_00000Pal
-.byte 228, 20, 0, 0
-.word ow_00000Pal
-.byte 229, 20, 0, 0
-.word ow_00000Pal
-.byte 230, 20, 0, 0
-.word ow_00000Pal
-.byte 231, 20, 0, 0
-.word ow_00000Pal
-.byte 232, 20, 0, 0
-.word ow_00000Pal
-.byte 233, 20, 0, 0
-.word ow_00000Pal
-.byte 234, 20, 0, 0
-.word ow_00000Pal
-.byte 235, 20, 0, 0
-.word ow_00000Pal
-.byte 236, 20, 0, 0
-.word ow_00000Pal
-.byte 237, 20, 0, 0
-.word ow_00000Pal
-.byte 238, 20, 0, 0
-.word ow_00000Pal
-.byte 239, 20, 0, 0
-.word ow_00000Pal
-.byte 240, 20, 0, 0
-.word ow_00000Pal
-.byte 241, 20, 0, 0
-.word ow_00000Pal
-.byte 242, 20, 0, 0
-.word ow_00000Pal
-.byte 243, 20, 0, 0
-.word ow_00000Pal
-.byte 244, 20, 0, 0
-.word ow_00000Pal
-.byte 245, 20, 0, 0
-.word ow_00000Pal
-.byte 246, 20, 0, 0
-.word ow_00000Pal
-.byte 247, 20, 0, 0
-.word ow_00000Pal
-.byte 248, 20, 0, 0
-.word ow_00000Pal
-.byte 249, 20, 0, 0
-.word ow_00000Pal
-.byte 250, 20, 0, 0
-.word ow_00000Pal
-.byte 251, 20, 0, 0
-.word ow_00000Pal
-.byte 252, 20, 0, 0
-.word ow_00000Pal
-.byte 253, 20, 0, 0
-.word ow_00000Pal
-.byte 254, 20, 0, 0
-.word ow_00000Pal
-.byte 255, 20, 0, 0
+.word ow_npcs_0000Pal, 0xC000
+.word ow_npcs_0001Pal, 0xC000
+.word ow_npcs_0002Pal, 0xC000
+.word ow_npcs_0003Pal, 0xC000
+.word ow_npcs_0004Pal, 0xC000
+.word ow_npcs_0003Pal, 0xC000
+.word ow_npcs_0006Pal, 0xC000
+.word ow_npcs_0007Pal, 0xC001
+.word ow_npcs_0008Pal, 0xC001
+.word ow_npcs_0009Pal, 0xC001
+.word ow_npcs_0010Pal, 0xC001
+.word ow_npcs_0011Pal, 0xC001
+.word ow_npcs_0010Pal, 0xC001
+.word ow_npcs_0013Pal, 0xC001
+.word ow_npcs_0014Pal, 0xC002
+.word ow_npcs_0015Pal, 0xC002
+.word ow_npcs_0016Pal, 0xC003
+.word ow_npcs_0017Pal, 0xC003
+.word ow_npcs_0018Pal, 0xC004
+.word ow_npcs_0019Pal, 0xC004
+.word ow_npcs_0020Pal, 0xC005
+.word ow_npcs_0021Pal, 0xC005
+.word ow_npcs_0022Pal, 0xC006
+.word ow_npcs_0023Pal, 0xC006
+.word ow_npcs_0024Pal, 0xC007
+.word ow_npcs_0025Pal, 0xC008
+.word ow_npcs_0026Pal, 0xC009
+.word ow_npcs_0027Pal, 0xC00A
+.word ow_npcs_0028Pal, 0xC00B
+.word ow_npcs_0029Pal, 0xC00C
+.word ow_npcs_0030Pal, 0xC00D
+.word ow_npcs_0031Pal, 0xC00E
+.word ow_npcs_0032Pal, 0xC00F
+.word ow_npcs_0033Pal, 0xC010
+.word ow_npcs_0034Pal, 0xC011
+.word ow_npcs_0035Pal, 0xC012
+.word ow_npcs_0036Pal, 0xC013
+.word ow_npcs_0037Pal, 0xC014
+.word ow_npcs_0038Pal, 0xC015
+.word ow_npcs_0039Pal, 0xC016
+.word ow_npcs_0040Pal, 0xC017
+.word ow_npcs_0041Pal, 0xC018
+.word ow_npcs_0042Pal, 0xC019
+.word ow_npcs_0043Pal, 0xC01A
+.word ow_npcs_0044Pal, 0xC01B
+.word ow_npcs_0045Pal, 0xC01C
+.word ow_npcs_0046Pal, 0xC01D
+.word ow_npcs_0047Pal, 0xC01E
+.word ow_npcs_0048Pal, 0xC01F
+.word ow_npcs_0049Pal, 0xC020
+.word ow_npcs_0050Pal, 0xC021
+.word ow_npcs_0051Pal, 0xC022
+.word ow_npcs_0052Pal, 0xC023
+.word ow_npcs_0053Pal, 0xC024
+.word ow_npcs_0054Pal, 0xC025
+.word ow_npcs_0055Pal, 0xC026
+.word ow_npcs_0056Pal, 0xC027
+.word ow_npcs_0057Pal, 0xC028
+.word ow_npcs_0058Pal, 0xC029
+.word ow_npcs_0059Pal, 0xC02A
+.word ow_npcs_0060Pal, 0xC02B
+.word ow_npcs_0061Pal, 0xC02C
+.word ow_npcs_0062Pal, 0xC02D
+.word ow_npcs_0063Pal, 0xC02E
+.word ow_npcs_0064Pal, 0xC02F
+.word ow_npcs_0065Pal, 0xC030
+.word ow_npcs_0066Pal, 0xC031
+.word ow_npcs_0067Pal, 0xC032
+.word ow_npcs_0068Pal, 0xC033
+.word ow_npcs_0069Pal, 0xC034
+.word ow_npcs_0070Pal, 0xC035
+.word ow_npcs_0071Pal, 0xC036
+.word ow_npcs_0072Pal, 0xC037
+.word ow_npcs_0073Pal, 0xC038
+.word ow_npcs_0074Pal, 0xC039
+.word ow_npcs_0075Pal, 0xC03A
+.word ow_npcs_0076Pal, 0xC03B
+.word ow_npcs_0077Pal, 0xC03C
+.word ow_npcs_0078Pal, 0xC03D
+.word ow_npcs_0079Pal, 0xC03E
+.word ow_npcs_0080Pal, 0xC03F
+.word ow_npcs_0081Pal, 0xC040
+.word ow_npcs_0082Pal, 0xC041
+.word ow_npcs_0083Pal, 0xC042
+.word ow_npcs_0084Pal, 0xC043
+.word ow_npcs_0085Pal, 0xC044
+.word ow_npcs_0086Pal, 0xC045
+.word ow_npcs_0087Pal, 0xC046
+.word ow_npcs_0088Pal, 0xC047
+.word ow_npcs_0089Pal, 0xC048
+.word ow_npcs_0090Pal, 0xC049
+.word ow_npcs_0091Pal, 0xC04A
+.word ow_npcs_0092Pal, 0xC04B
+.word ow_npcs_0093Pal, 0xC04C
+.word ow_npcs_0094Pal, 0xC04D
+.word ow_npcs_0095Pal, 0xC04E
+.word ow_npcs_0096Pal, 0xC04F
+.word ow_npcs_0097Pal, 0xC050
+.word ow_npcs_0098Pal, 0xC051
+.word ow_npcs_0099Pal, 0xC052
+.word ow_npcs_0100Pal, 0xC053
+.word ow_npcs_0101Pal, 0xC054
+.word ow_npcs_0102Pal, 0xC055
+.word ow_npcs_0103Pal, 0xC056
+.word ow_npcs_0104Pal, 0xC057
+.word ow_npcs_0105Pal, 0xC058
+.word ow_npcs_0106Pal, 0xC059
+.word ow_npcs_0107Pal, 0xC05A
+.word ow_npcs_0108Pal, 0xC05B
+.word ow_npcs_0109Pal, 0xC05C
+.word ow_npcs_0110Pal, 0xC05D
+.word ow_npcs_0111Pal, 0xC05E
+.word ow_npcs_0112Pal, 0xC05F
+.word ow_npcs_0113Pal, 0xC060
+.word ow_npcs_0114Pal, 0xC061
+.word ow_npcs_0115Pal, 0xC062
+.word ow_npcs_0116Pal, 0xC063
+.word ow_npcs_0117Pal, 0xC064
+.word ow_npcs_0118Pal, 0xC065
+.word ow_npcs_0119Pal, 0xC066
+.word ow_npcs_0120Pal, 0xC067
+.word ow_npcs_0121Pal, 0xC068
+.word ow_npcs_0122Pal, 0xC069
+.word ow_npcs_0123Pal, 0xC06A
+.word ow_npcs_0124Pal, 0xC06B
+.word ow_npcs_0125Pal, 0xC06C
+.word ow_npcs_0126Pal, 0xC06D
+.word ow_npcs_0127Pal, 0xC06E
+.word ow_npcs_0128Pal, 0xC06F
+.word ow_npcs_0129Pal, 0xC070
+.word ow_npcs_0130Pal, 0xC071
+.word ow_npcs_0131Pal, 0xC072
+.word ow_npcs_0132Pal, 0xC073
+.word ow_npcs_0133Pal, 0xC074
+.word ow_npcs_0134Pal, 0xC075
+.word ow_npcs_0135Pal, 0xC076
+.word ow_npcs_0136Pal, 0xC077
+.word ow_npcs_0137Pal, 0xC078
+.word ow_npcs_0138Pal, 0xC079
+.word ow_npcs_0139Pal, 0xC07A
+.word ow_npcs_0140Pal, 0xC07B
+.word ow_npcs_0141Pal, 0xC07C
+.word ow_npcs_0142Pal, 0xC07D
+.word ow_npcs_0143Pal, 0xC07E
+.word ow_npcs_0144Pal, 0xC07F
+.word ow_npcs_0145Pal, 0xC080
+.word ow_npcs_0146Pal, 0xC081
+.word ow_npcs_0147Pal, 0xC082
+.word ow_npcs_0148Pal, 0xC083
+.word ow_npcs_0149Pal, 0xC084
+.word ow_npcs_0150Pal, 0xC085
+.word ow_npcs_0151Pal, 0xC086
+.word ow_npcs_0152Pal, 0xC087
+.word ow_npcs_0153Pal, 0xC088
+.word ow_npcs_0154Pal, 0xC089
+.word ow_npcs_0155Pal, 0xC08A
+.word ow_npcs_0156Pal, 0xC08B
+.word ow_npcs_0157Pal, 0xC08C
+.word ow_npcs_0158Pal, 0xC08D
+.word ow_npcs_0159Pal, 0xC08E
+.word ow_npcs_0160Pal, 0xC08F
+.word ow_npcs_0161Pal, 0xC090
+.word ow_npcs_0162Pal, 0xC091
+.word ow_npcs_0163Pal, 0xC092
+.word ow_npcs_0164Pal, 0xC093
+.word ow_npcs_0165Pal, 0xC094
+.word ow_npcs_0166Pal, 0xC095
+.word ow_npcs_0167Pal, 0xC096
+.word ow_npcs_0168Pal, 0xC097
+.word ow_npcs_0169Pal, 0xC098
+.word ow_npcs_0170Pal, 0xC099
+.word ow_npcs_0171Pal, 0xC09A
+.word ow_npcs_0172Pal, 0xC09B
+.word ow_npcs_0173Pal, 0xC09C
+.word ow_npcs_0174Pal, 0xC09D
+.word ow_npcs_0175Pal, 0xC09E
+.word ow_npcs_0176Pal, 0xC09F
+.word ow_npcs_0177Pal, 0xC0A0
+.word ow_npcs_0178Pal, 0xC0A1
+.word ow_npcs_0179Pal, 0xC0A2
+.word ow_npcs_0180Pal, 0xC0A3
+.word ow_npcs_0181Pal, 0xC0A4
+.word ow_npcs_0182Pal, 0xC0A5
+.word ow_npcs_0183Pal, 0xC0A6
+.word ow_npcs_0184Pal, 0xC0A7
+.word ow_npcs_0185Pal, 0xC0A8
+.word ow_npcs_0186Pal, 0xC0A9
+.word ow_npcs_0187Pal, 0xC0AA
+.word ow_npcs_0188Pal, 0xC0AB
+.word ow_npcs_0189Pal, 0xC0AC
+.word ow_npcs_0190Pal, 0xC0AD
+.word ow_npcs_0191Pal, 0xC0AE
+.word ow_npcs_0192Pal, 0xC0AF
+.word ow_npcs_0193Pal, 0xC0B0
+.word ow_npcs_0194Pal, 0xC0B1
+.word ow_npcs_0195Pal, 0xC0B2
+.word ow_npcs_0196Pal, 0xC0B3
+.word ow_00000Pal, 0xC0B4
+.word ow_00000Pal, 0xC0B5
+.word ow_00000Pal, 0xC0B6
+.word ow_00000Pal, 0xC0B7
+.word ow_00000Pal, 0xC0B8
+.word ow_00000Pal, 0xC0B9
+.word ow_00000Pal, 0xC0BA
+.word ow_00000Pal, 0xC0BB
+.word ow_00000Pal, 0xC0BC
+.word ow_00000Pal, 0xC0BD
+.word ow_00000Pal, 0xC0BE
+.word ow_00000Pal, 0xC0BF
+.word ow_00000Pal, 0xC0C0
+.word ow_00000Pal, 0xC0C1
+.word ow_00000Pal, 0xC0C2
+.word ow_00000Pal, 0xC0C3
+.word ow_00000Pal, 0xC0C4
+.word ow_00000Pal, 0xC0C5
+.word ow_00000Pal, 0xC0C6
+.word ow_00000Pal, 0xC0C7
+.word ow_00000Pal, 0xC0C8
+.word ow_00000Pal, 0xC0C9
+.word ow_00000Pal, 0xC0CA
+.word ow_00000Pal, 0xC0CB
+.word ow_00000Pal, 0xC0CC
+.word ow_00000Pal, 0xC0CD
+.word ow_00000Pal, 0xC0CE
+.word ow_00000Pal, 0xC0CF
+.word ow_00000Pal, 0xC0D0
+.word ow_00000Pal, 0xC0D1
+.word ow_00000Pal, 0xC0D2
+.word ow_00000Pal, 0xC0D3
+.word ow_00000Pal, 0xC0D4
+.word ow_00000Pal, 0xC0D5
+.word ow_00000Pal, 0xC0D6
+.word ow_00000Pal, 0xC0D7
+.word ow_00000Pal, 0xC0D8
+.word ow_00000Pal, 0xC0D9
+.word ow_00000Pal, 0xC0DA
+.word ow_00000Pal, 0xC0DB
+.word ow_00000Pal, 0xC0DC
+.word ow_00000Pal, 0xC0DD
+.word ow_00000Pal, 0xC0DE
+.word ow_00000Pal, 0xC0DF
+.word ow_00000Pal, 0xC0E0
+.word ow_00000Pal, 0xC0E1
+.word ow_00000Pal, 0xC0E2
+.word ow_00000Pal, 0xC0E3
+.word ow_00000Pal, 0xC0E4
+.word ow_00000Pal, 0xC0E5
+.word ow_00000Pal, 0xC0E6
+.word ow_00000Pal, 0xC0E7
+.word ow_00000Pal, 0xC0E8
+.word ow_00000Pal, 0xC0E9
+.word ow_00000Pal, 0xC0EA
+.word ow_00000Pal, 0xC0EB
+.word ow_00000Pal, 0xC0EC
+.word ow_00000Pal, 0xC0ED
+.word ow_00000Pal, 0xC0EE
+.word ow_poke_0000Pal, 0xC100
+.word ow_poke_0001Pal, 0xC101
+.word ow_poke_0002Pal, 0xC102
+.word ow_poke_0003Pal, 0xC103
+.word ow_poke_0004Pal, 0xC104
+.word ow_poke_0005Pal, 0xC105
+.word ow_poke_0006Pal, 0xC106
+.word ow_poke_0007Pal, 0xC107
+.word ow_poke_0008Pal, 0xC108
+.word ow_poke_0009Pal, 0xC109
+.word ow_poke_0010Pal, 0xC10A
+.word ow_poke_0011Pal, 0xC10B
+.word ow_poke_0012Pal, 0xC10C
+.word ow_poke_0013Pal, 0xC10D
+.word ow_poke_0014Pal, 0xC10E
+.word ow_poke_0015Pal, 0xC10F
+.word ow_poke_0016Pal, 0xC110
+.word ow_poke_0017Pal, 0xC111
+.word ow_poke_0018Pal, 0xC112
+.word ow_poke_0019Pal, 0xC113
+.word ow_poke_0020Pal, 0xC114
+.word ow_poke_0021Pal, 0xC115
+.word ow_poke_0022Pal, 0xC116
+.word ow_poke_0023Pal, 0xC117
+.word ow_poke_0024Pal, 0xC118
+.word ow_poke_0025Pal, 0xC119
+.word ow_poke_0026Pal, 0xC11A
+.word ow_poke_0027Pal, 0xC11B
+.word ow_poke_0028Pal, 0xC11C
+.word ow_poke_0029Pal, 0xC11D
+.word ow_poke_0030Pal, 0xC11E
+.word ow_poke_0031Pal, 0xC11F
+.word ow_poke_0032Pal, 0xC120
+.word ow_poke_0033Pal, 0xC121
+.word ow_poke_0034Pal, 0xC122
+.word ow_poke_0035Pal, 0xC123
+.word ow_poke_0036Pal, 0xC124
+.word ow_poke_0037Pal, 0xC125
+.word ow_poke_0038Pal, 0xC126
+.word ow_poke_0039Pal, 0xC127
+.word ow_poke_0040Pal, 0xC128
+.word ow_poke_0041Pal, 0xC129
+.word ow_poke_0042Pal, 0xC12A
+.word ow_poke_0043Pal, 0xC12B
+.word ow_poke_0044Pal, 0xC12C
+.word ow_poke_0045Pal, 0xC12D
+.word ow_poke_0046Pal, 0xC12E
+.word ow_poke_0047Pal, 0xC12F
+.word ow_poke_0048Pal, 0xC130
+.word ow_poke_0049Pal, 0xC131
+.word ow_poke_0050Pal, 0xC132
+.word ow_poke_0051Pal, 0xC133
+.word ow_poke_0052Pal, 0xC134
+.word ow_poke_0053Pal, 0xC135
+.word ow_poke_0054Pal, 0xC136
+.word ow_poke_0055Pal, 0xC137
+.word ow_poke_0056Pal, 0xC138
+.word ow_poke_0057Pal, 0xC139
+.word ow_poke_0058Pal, 0xC13A
+.word ow_poke_0059Pal, 0xC13B
+.word ow_poke_0060Pal, 0xC13C
+.word ow_poke_0061Pal, 0xC13D
+.word ow_poke_0062Pal, 0xC13E
+.word ow_poke_0063Pal, 0xC13F
+.word ow_poke_0064Pal, 0xC140
+.word ow_poke_0065Pal, 0xC141
+.word ow_poke_0066Pal, 0xC142
+.word ow_poke_0067Pal, 0xC143
+.word ow_poke_0068Pal, 0xC144
+.word ow_poke_0069Pal, 0xC145
+.word ow_poke_0070Pal, 0xC146
+.word ow_poke_0071Pal, 0xC147
+.word ow_poke_0072Pal, 0xC148
+.word ow_poke_0073Pal, 0xC149
+.word ow_poke_0074Pal, 0xC14A
+.word ow_poke_0075Pal, 0xC14B
+.word ow_poke_0076Pal, 0xC14C
+.word ow_poke_0077Pal, 0xC14D
+.word ow_poke_0078Pal, 0xC14E
+.word ow_poke_0079Pal, 0xC14F
+.word ow_poke_0080Pal, 0xC150
+.word ow_poke_0081Pal, 0xC151
+.word ow_poke_0082Pal, 0xC152
+.word ow_poke_0083Pal, 0xC153
+.word ow_poke_0084Pal, 0xC154
+.word ow_poke_0085Pal, 0xC155
+.word ow_poke_0086Pal, 0xC156
+.word ow_poke_0087Pal, 0xC157
+.word ow_poke_0088Pal, 0xC158
+.word ow_poke_0089Pal, 0xC159
+.word ow_poke_0090Pal, 0xC15A
+.word ow_poke_0091Pal, 0xC15B
+.word ow_poke_0092Pal, 0xC15C
+.word ow_poke_0093Pal, 0xC15D
+.word ow_poke_0094Pal, 0xC15E
+.word ow_poke_0095Pal, 0xC15F
+.word ow_poke_0096Pal, 0xC160
+.word ow_poke_0097Pal, 0xC161
+.word ow_poke_0098Pal, 0xC162
+.word ow_poke_0099Pal, 0xC163
+.word ow_poke_0100Pal, 0xC164
+.word ow_poke_0101Pal, 0xC165
+.word ow_poke_0102Pal, 0xC166
+.word ow_poke_0103Pal, 0xC167
+.word ow_poke_0104Pal, 0xC168
+.word ow_poke_0105Pal, 0xC169
+.word ow_poke_0106Pal, 0xC16A
+.word ow_poke_0107Pal, 0xC16B
+.word ow_poke_0108Pal, 0xC16C
+.word ow_poke_0109Pal, 0xC16D
+.word ow_poke_0110Pal, 0xC16E
+.word ow_poke_0111Pal, 0xC16F
+.word ow_poke_0112Pal, 0xC170
+.word ow_poke_0113Pal, 0xC171
+.word ow_poke_0114Pal, 0xC172
+.word ow_poke_0115Pal, 0xC173
+.word ow_poke_0116Pal, 0xC174
+.word ow_poke_0117Pal, 0xC175
+.word ow_poke_0118Pal, 0xC176
+.word ow_poke_0119Pal, 0xC177
+.word ow_poke_0120Pal, 0xC178
+.word ow_poke_0121Pal, 0xC179
+.word ow_poke_0122Pal, 0xC17A
+.word ow_poke_0123Pal, 0xC17B
+.word ow_poke_0124Pal, 0xC17C
+.word ow_poke_0125Pal, 0xC17D
+.word ow_poke_0126Pal, 0xC17E
+.word ow_poke_0127Pal, 0xC17F
+.word ow_poke_0128Pal, 0xC180
+.word ow_poke_0129Pal, 0xC181
+.word ow_poke_0130Pal, 0xC182
+.word ow_poke_0131Pal, 0xC183
+.word ow_poke_0132Pal, 0xC184
+.word ow_poke_0133Pal, 0xC185
+.word ow_poke_0134Pal, 0xC186
+.word ow_poke_0135Pal, 0xC187
+.word ow_poke_0136Pal, 0xC188
+.word ow_poke_0137Pal, 0xC189
+.word ow_poke_0138Pal, 0xC18A
+.word ow_poke_0139Pal, 0xC18B
+.word ow_poke_0140Pal, 0xC18C
+.word ow_poke_0141Pal, 0xC18D
+.word ow_poke_0142Pal, 0xC18E
+.word ow_poke_0143Pal, 0xC18F
+.word ow_poke_0144Pal, 0xC190
+.word ow_poke_0145Pal, 0xC191
+.word ow_poke_0146Pal, 0xC192
+.word ow_poke_0147Pal, 0xC193
+.word ow_poke_0148Pal, 0xC194
+.word ow_poke_0149Pal, 0xC195
+.word ow_poke_0150Pal, 0xC196
+.word ow_poke_0151Pal, 0xC197
+.word ow_poke_0152Pal, 0xC198
+.word ow_poke_0153Pal, 0xC199
+.word ow_poke_0154Pal, 0xC19A
+.word ow_poke_0155Pal, 0xC19B
+.word ow_poke_0156Pal, 0xC19C
+.word ow_poke_0157Pal, 0xC19D
+.word ow_poke_0158Pal, 0xC19E
+.word ow_poke_0159Pal, 0xC19F
+.word ow_poke_0160Pal, 0xC1A0
+.word ow_poke_0161Pal, 0xC1A1
+.word ow_poke_0162Pal, 0xC1A2
+.word ow_poke_0163Pal, 0xC1A3
+.word ow_poke_0164Pal, 0xC1A4
+.word ow_poke_0165Pal, 0xC1A5
+.word ow_poke_0166Pal, 0xC1A6
+.word ow_poke_0167Pal, 0xC1A7
+.word ow_poke_0168Pal, 0xC1A8
+.word ow_poke_0169Pal, 0xC1A9
+.word ow_poke_0170Pal, 0xC1AA
+.word ow_poke_0171Pal, 0xC1AB
+.word ow_poke_0172Pal, 0xC1AC
+.word ow_poke_0173Pal, 0xC1AD
+.word ow_poke_0174Pal, 0xC1AE
+.word ow_poke_0175Pal, 0xC1AF
+.word ow_poke_0176Pal, 0xC1B0
+.word ow_poke_0177Pal, 0xC1B1
+.word ow_poke_0178Pal, 0xC1B2
+.word ow_poke_0179Pal, 0xC1B3
+.word ow_poke_0180Pal, 0xC1B4
+.word ow_poke_0181Pal, 0xC1B5
+.word ow_poke_0182Pal, 0xC1B6
+.word ow_poke_0183Pal, 0xC1B7
+.word ow_poke_0184Pal, 0xC1B8
+.word ow_00000Pal, 0xC1B9
+.word ow_00000Pal, 0xC1BA
+.word ow_00000Pal, 0xC1BB
+.word ow_00000Pal, 0xC1BC
+.word ow_00000Pal, 0xC1BD
+.word ow_00000Pal, 0xC1BE
+.word ow_00000Pal, 0xC1BF
+.word ow_00000Pal, 0xC1C0
+.word ow_00000Pal, 0xC1C1
+.word ow_00000Pal, 0xC1C2
+.word ow_00000Pal, 0xC1C3
+.word ow_00000Pal, 0xC1C4
+.word ow_00000Pal, 0xC1C5
+.word ow_00000Pal, 0xC1C6
+.word ow_00000Pal, 0xC1C7
+.word ow_00000Pal, 0xC1C8
+.word ow_00000Pal, 0xC1C9
+.word ow_00000Pal, 0xC1CA
+.word ow_00000Pal, 0xC1CB
+.word ow_00000Pal, 0xC1CC
+.word ow_00000Pal, 0xC1CD
+.word ow_00000Pal, 0xC1CE
+.word ow_00000Pal, 0xC1CF
+.word ow_00000Pal, 0xC1D0
+.word ow_00000Pal, 0xC1D1
+.word ow_00000Pal, 0xC1D2
+.word ow_00000Pal, 0xC1D3
+.word ow_00000Pal, 0xC1D4
+.word ow_00000Pal, 0xC1D5
+.word ow_00000Pal, 0xC1D6
+.word ow_00000Pal, 0xC1D7
+.word ow_00000Pal, 0xC1D8
+.word ow_00000Pal, 0xC1D9
+.word ow_00000Pal, 0xC1DA
+.word ow_00000Pal, 0xC1DB
+.word ow_00000Pal, 0xC1DC
+.word ow_00000Pal, 0xC1DD
+.word ow_00000Pal, 0xC1DE
+.word ow_00000Pal, 0xC1DF
+.word ow_00000Pal, 0xC1E0
+.word ow_00000Pal, 0xC1E1
+.word ow_00000Pal, 0xC1E2
+.word ow_00000Pal, 0xC1E3
+.word ow_00000Pal, 0xC1E4
+.word ow_00000Pal, 0xC1E5
+.word ow_00000Pal, 0xC1E6
+.word ow_00000Pal, 0xC1E7
+.word ow_00000Pal, 0xC1E8
+.word ow_00000Pal, 0xC1E9
+.word ow_00000Pal, 0xC1EA
+.word ow_00000Pal, 0xC1EB
+.word ow_00000Pal, 0xC1EC
+.word ow_00000Pal, 0xC1ED
+.word ow_00000Pal, 0xC1EE
+.word ow_00000Pal, 0xC1EF
+.word ow_00000Pal, 0xC1F0
+.word ow_00000Pal, 0xC1F1
+.word ow_00000Pal, 0xC1F2
+.word ow_00000Pal, 0xC1F3
+.word ow_00000Pal, 0xC1F4
+.word ow_00000Pal, 0xC1F5
+.word ow_00000Pal, 0xC1F6
+.word ow_00000Pal, 0xC1F7
+.word ow_00000Pal, 0xC1F8
+.word ow_00000Pal, 0xC1F9
+.word ow_00000Pal, 0xC1FA
+.word ow_00000Pal, 0xC1FB
+.word ow_00000Pal, 0xC1FC
+.word ow_00000Pal, 0xC1FD
+.word ow_00000Pal, 0xC1FE
+.word ow_00000Pal, 0xC1FF
+.word ow_poke_leg_0000Pal, 0xC200
+.word ow_poke_leg_0001Pal, 0xC201
+.word ow_poke_leg_0002Pal, 0xC202
+.word ow_poke_leg_0003Pal, 0xC203
+.word ow_poke_leg_0004Pal, 0xC204
+.word ow_poke_leg_0005Pal, 0xC205
+.word ow_poke_leg_0006Pal, 0xC206
+.word ow_poke_leg_0007Pal, 0xC207
+.word ow_poke_leg_0008Pal, 0xC208
+.word ow_poke_leg_0009Pal, 0xC209
+.word ow_poke_leg_0010Pal, 0xC20A
+.word ow_poke_leg_0011Pal, 0xC20B
+.word ow_poke_leg_0012Pal, 0xC20C
+.word ow_poke_leg_0013Pal, 0xC20D
+.word ow_poke_leg_0014Pal, 0xC20E
+.word ow_poke_leg_0015Pal, 0xC20F
+.word ow_poke_leg_0016Pal, 0xC210
+.word ow_poke_leg_0017Pal, 0xC211
+.word ow_poke_leg_0018Pal, 0xC212
+.word ow_poke_leg_0019Pal, 0xC213
+.word ow_poke_leg_0020Pal, 0xC214
+.word ow_poke_leg_0021Pal, 0xC215
+.word ow_poke_leg_0022Pal, 0xC216
+.word ow_poke_leg_0023Pal, 0xC217
+.word ow_poke_leg_0024Pal, 0xC218
+.word ow_poke_leg_0025Pal, 0xC219
+.word ow_poke_leg_0026Pal, 0xC21A
+.word ow_poke_leg_0027Pal, 0xC21B
+.word ow_poke_leg_0028Pal, 0xC21C
+.word ow_poke_leg_0029Pal, 0xC21D
+.word ow_poke_leg_0030Pal, 0xC21E
+.word ow_poke_leg_0031Pal, 0xC21F
+.word ow_poke_leg_0032Pal, 0xC220
+.word ow_poke_leg_0033Pal, 0xC221
+.word ow_poke_leg_0034Pal, 0xC222
+.word ow_poke_leg_0035Pal, 0xC223
+.word ow_poke_leg_0036Pal, 0xC224
+.word ow_poke_leg_0037Pal, 0xC225
+.word ow_poke_leg_0038Pal, 0xC226
+.word ow_poke_leg_0039Pal, 0xC227
+.word ow_poke_leg_0040Pal, 0xC228
+.word ow_poke_leg_0041Pal, 0xC229
+.word ow_poke_leg_0042Pal, 0xC22A
+.word ow_poke_leg_0043Pal, 0xC22B
+.word ow_poke_leg_0044Pal, 0xC22C
+.word ow_poke_leg_0045Pal, 0xC22D
+.word ow_poke_leg_0046Pal, 0xC22E
+.word ow_poke_leg_0047Pal, 0xC22F
+.word ow_poke_leg_0048Pal, 0xC230
+.word ow_poke_leg_0049Pal, 0xC231
+.word ow_poke_leg_0050Pal, 0xC232
+.word ow_poke_leg_0051Pal, 0xC233
+.word ow_poke_leg_0052Pal, 0xC234
+.word ow_poke_leg_0053Pal, 0xC235
+.word ow_00000Pal, 0xC236
+.word ow_00000Pal, 0xC237
+.word ow_00000Pal, 0xC238
+.word ow_00000Pal, 0xC239
+.word ow_00000Pal, 0xC23A
+.word ow_00000Pal, 0xC23B
+.word ow_00000Pal, 0xC23C
+.word ow_00000Pal, 0xC23D
+.word ow_00000Pal, 0xC23E
+.word ow_00000Pal, 0xC23F
+.word ow_00000Pal, 0xC240
+.word ow_00000Pal, 0xC241
+.word ow_00000Pal, 0xC242
+.word ow_00000Pal, 0xC243
+.word ow_00000Pal, 0xC244
+.word ow_00000Pal, 0xC245
+.word ow_00000Pal, 0xC246
+.word ow_00000Pal, 0xC247
+.word ow_00000Pal, 0xC248
+.word ow_00000Pal, 0xC249
+.word ow_00000Pal, 0xC24A
+.word ow_00000Pal, 0xC24B
+.word ow_00000Pal, 0xC24C
+.word ow_00000Pal, 0xC24D
+.word ow_00000Pal, 0xC24E
+.word ow_00000Pal, 0xC24F
+.word ow_00000Pal, 0xC250
+.word ow_00000Pal, 0xC251
+.word ow_00000Pal, 0xC252
+.word ow_00000Pal, 0xC253
+.word ow_00000Pal, 0xC254
+.word ow_00000Pal, 0xC255
+.word ow_00000Pal, 0xC256
+.word ow_00000Pal, 0xC257
+.word ow_00000Pal, 0xC258
+.word ow_00000Pal, 0xC259
+.word ow_00000Pal, 0xC25A
+.word ow_00000Pal, 0xC25B
+.word ow_00000Pal, 0xC25C
+.word ow_00000Pal, 0xC25D
+.word ow_00000Pal, 0xC25E
+.word ow_00000Pal, 0xC25F
+.word ow_00000Pal, 0xC260
+.word ow_00000Pal, 0xC261
+.word ow_00000Pal, 0xC262
+.word ow_00000Pal, 0xC263
+.word ow_00000Pal, 0xC264
+.word ow_00000Pal, 0xC265
+.word ow_00000Pal, 0xC266
+.word ow_00000Pal, 0xC267
+.word ow_00000Pal, 0xC268
+.word ow_00000Pal, 0xC269
+.word ow_00000Pal, 0xC26A
+.word ow_00000Pal, 0xC26B
+.word ow_00000Pal, 0xC26C
+.word ow_00000Pal, 0xC26D
+.word ow_00000Pal, 0xC26E
+.word ow_00000Pal, 0xC26F
+.word ow_00000Pal, 0xC270
+.word ow_00000Pal, 0xC271
+.word ow_00000Pal, 0xC272
+.word ow_00000Pal, 0xC273
+.word ow_00000Pal, 0xC274
+.word ow_00000Pal, 0xC275
+.word ow_00000Pal, 0xC276
+.word ow_00000Pal, 0xC277
+.word ow_00000Pal, 0xC278
+.word ow_00000Pal, 0xC279
+.word ow_00000Pal, 0xC27A
+.word ow_00000Pal, 0xC27B
+.word ow_00000Pal, 0xC27C
+.word ow_00000Pal, 0xC27D
+.word ow_00000Pal, 0xC27E
+.word ow_00000Pal, 0xC27F
+.word ow_00000Pal, 0xC280
+.word ow_00000Pal, 0xC281
+.word ow_00000Pal, 0xC282
+.word ow_00000Pal, 0xC283
+.word ow_00000Pal, 0xC284
+.word ow_00000Pal, 0xC285
+.word ow_00000Pal, 0xC286
+.word ow_00000Pal, 0xC287
+.word ow_00000Pal, 0xC288
+.word ow_00000Pal, 0xC289
+.word ow_00000Pal, 0xC28A
+.word ow_00000Pal, 0xC28B
+.word ow_00000Pal, 0xC28C
+.word ow_00000Pal, 0xC28D
+.word ow_00000Pal, 0xC28E
+.word ow_00000Pal, 0xC28F
+.word ow_00000Pal, 0xC290
+.word ow_00000Pal, 0xC291
+.word ow_00000Pal, 0xC292
+.word ow_00000Pal, 0xC293
+.word ow_00000Pal, 0xC294
+.word ow_00000Pal, 0xC295
+.word ow_00000Pal, 0xC296
+.word ow_00000Pal, 0xC297
+.word ow_00000Pal, 0xC298
+.word ow_00000Pal, 0xC299
+.word ow_00000Pal, 0xC29A
+.word ow_00000Pal, 0xC29B
+.word ow_00000Pal, 0xC29C
+.word ow_00000Pal, 0xC29D
+.word ow_00000Pal, 0xC29E
+.word ow_00000Pal, 0xC29F
+.word ow_00000Pal, 0xC2A0
+.word ow_00000Pal, 0xC2A1
+.word ow_00000Pal, 0xC2A2
+.word ow_00000Pal, 0xC2A3
+.word ow_00000Pal, 0xC2A4
+.word ow_00000Pal, 0xC2A5
+.word ow_00000Pal, 0xC2A6
+.word ow_00000Pal, 0xC2A7
+.word ow_00000Pal, 0xC2A8
+.word ow_00000Pal, 0xC2A9
+.word ow_00000Pal, 0xC2AA
+.word ow_00000Pal, 0xC2AB
+.word ow_00000Pal, 0xC2AC
+.word ow_00000Pal, 0xC2AD
+.word ow_00000Pal, 0xC2AE
+.word ow_00000Pal, 0xC2AF
+.word ow_00000Pal, 0xC2B0
+.word ow_00000Pal, 0xC2B1
+.word ow_00000Pal, 0xC2B2
+.word ow_00000Pal, 0xC2B3
+.word ow_00000Pal, 0xC2B4
+.word ow_00000Pal, 0xC2B5
+.word ow_00000Pal, 0xC2B6
+.word ow_00000Pal, 0xC2B7
+.word ow_00000Pal, 0xC2B8
+.word ow_00000Pal, 0xC2B9
+.word ow_00000Pal, 0xC2BA
+.word ow_00000Pal, 0xC2BB
+.word ow_00000Pal, 0xC2BC
+.word ow_00000Pal, 0xC2BD
+.word ow_00000Pal, 0xC2BE
+.word ow_00000Pal, 0xC2BF
+.word ow_00000Pal, 0xC2C0
+.word ow_00000Pal, 0xC2C1
+.word ow_00000Pal, 0xC2C2
+.word ow_00000Pal, 0xC2C3
+.word ow_00000Pal, 0xC2C4
+.word ow_00000Pal, 0xC2C5
+.word ow_00000Pal, 0xC2C6
+.word ow_00000Pal, 0xC2C7
+.word ow_00000Pal, 0xC2C8
+.word ow_00000Pal, 0xC2C9
+.word ow_00000Pal, 0xC2CA
+.word ow_00000Pal, 0xC2CB
+.word ow_00000Pal, 0xC2CC
+.word ow_00000Pal, 0xC2CD
+.word ow_00000Pal, 0xC2CE
+.word ow_00000Pal, 0xC2CF
+.word ow_00000Pal, 0xC2D0
+.word ow_00000Pal, 0xC2D1
+.word ow_00000Pal, 0xC2D2
+.word ow_00000Pal, 0xC2D3
+.word ow_00000Pal, 0xC2D4
+.word ow_00000Pal, 0xC2D5
+.word ow_00000Pal, 0xC2D6
+.word ow_00000Pal, 0xC2D7
+.word ow_00000Pal, 0xC2D8
+.word ow_00000Pal, 0xC2D9
+.word ow_00000Pal, 0xC2DA
+.word ow_00000Pal, 0xC2DB
+.word ow_00000Pal, 0xC2DC
+.word ow_00000Pal, 0xC2DD
+.word ow_00000Pal, 0xC2DE
+.word ow_00000Pal, 0xC2DF
+.word ow_00000Pal, 0xC2E0
+.word ow_00000Pal, 0xC2E1
+.word ow_00000Pal, 0xC2E2
+.word ow_00000Pal, 0xC2E3
+.word ow_00000Pal, 0xC2E4
+.word ow_00000Pal, 0xC2E5
+.word ow_00000Pal, 0xC2E6
+.word ow_00000Pal, 0xC2E7
+.word ow_00000Pal, 0xC2E8
+.word ow_00000Pal, 0xC2E9
+.word ow_00000Pal, 0xC2EA
+.word ow_00000Pal, 0xC2EB
+.word ow_00000Pal, 0xC2EC
+.word ow_00000Pal, 0xC2ED
+.word ow_00000Pal, 0xC2EE
+.word ow_00000Pal, 0xC2EF
+.word ow_00000Pal, 0xC2F0
+.word ow_00000Pal, 0xC2F1
+.word ow_00000Pal, 0xC2F2
+.word ow_00000Pal, 0xC2F3
+.word ow_00000Pal, 0xC2F4
+.word ow_00000Pal, 0xC2F5
+.word ow_00000Pal, 0xC2F6
+.word ow_00000Pal, 0xC2F7
+.word ow_00000Pal, 0xC2F8
+.word ow_00000Pal, 0xC2F9
+.word ow_00000Pal, 0xC2FA
+.word ow_00000Pal, 0xC2FB
+.word ow_00000Pal, 0xC2FC
+.word ow_00000Pal, 0xC2FD
+.word ow_00000Pal, 0xC2FE
+.word ow_00000Pal, 0xC2FF
+.word ow_objekt_0000Pal, 0xC300
+.word ow_objekt_0001Pal, 0xC301
+.word ow_objekt_0002Pal, 0xC302
+.word ow_objekt_0003Pal, 0xC303
+.word ow_objekt_0004Pal, 0xC304
+.word ow_objekt_0005Pal, 0xC305
+.word ow_objekt_0006Pal, 0xC306
+.word ow_objekt_0007Pal, 0xC307
+.word ow_objekt_0008Pal, 0xC308
+.word ow_objekt_0009Pal, 0xC309
+.word ow_objekt_0010Pal, 0xC30A
+.word ow_objekt_0011Pal, 0xC30B
+.word ow_objekt_0012Pal, 0xC30C
+.word ow_objekt_0013Pal, 0xC30D
+.word ow_objekt_0014Pal, 0xC30E
+.word ow_objekt_0015Pal, 0xC30F
+.word ow_objekt_0016Pal, 0xC310
+.word ow_objekt_0017Pal, 0xC311
+.word ow_objekt_0018Pal, 0xC312
+.word ow_objekt_0019Pal, 0xC313
+.word ow_objekt_0020Pal, 0xC314
+.word ow_objekt_0021Pal, 0xC315
+.word ow_00000Pal, 0xC316
+.word ow_00000Pal, 0xC317
+.word ow_00000Pal, 0xC318
+.word ow_00000Pal, 0xC319
+.word ow_00000Pal, 0xC31A
+.word ow_00000Pal, 0xC31B
+.word ow_00000Pal, 0xC31C
+.word ow_00000Pal, 0xC31D
+.word ow_00000Pal, 0xC31E
+.word ow_00000Pal, 0xC31F
+.word ow_00000Pal, 0xC320
+.word ow_00000Pal, 0xC321
+.word ow_00000Pal, 0xC322
+.word ow_00000Pal, 0xC323
+.word ow_00000Pal, 0xC324
+.word ow_00000Pal, 0xC325
+.word ow_00000Pal, 0xC326
+.word ow_00000Pal, 0xC327
+.word ow_00000Pal, 0xC328
+.word ow_00000Pal, 0xC329
+.word ow_00000Pal, 0xC32A
+.word ow_00000Pal, 0xC32B
+.word ow_00000Pal, 0xC32C
+.word ow_00000Pal, 0xC32D
+.word ow_00000Pal, 0xC32E
+.word ow_00000Pal, 0xC32F
+.word ow_00000Pal, 0xC330
+.word ow_00000Pal, 0xC331
+.word ow_00000Pal, 0xC332
+.word ow_00000Pal, 0xC333
+.word ow_00000Pal, 0xC334
+.word ow_00000Pal, 0xC335
+.word ow_00000Pal, 0xC336
+.word ow_00000Pal, 0xC337
+.word ow_00000Pal, 0xC338
+.word ow_00000Pal, 0xC339
+.word ow_00000Pal, 0xC33A
+.word ow_00000Pal, 0xC33B
+.word ow_00000Pal, 0xC33C
+.word ow_00000Pal, 0xC33D
+.word ow_00000Pal, 0xC33E
+.word ow_00000Pal, 0xC33F
+.word ow_00000Pal, 0xC340
+.word ow_00000Pal, 0xC341
+.word ow_00000Pal, 0xC342
+.word ow_00000Pal, 0xC343
+.word ow_00000Pal, 0xC344
+.word ow_00000Pal, 0xC345
+.word ow_00000Pal, 0xC346
+.word ow_00000Pal, 0xC347
+.word ow_00000Pal, 0xC348
+.word ow_00000Pal, 0xC349
+.word ow_00000Pal, 0xC34A
+.word ow_00000Pal, 0xC34B
+.word ow_00000Pal, 0xC34C
+.word ow_00000Pal, 0xC34D
+.word ow_00000Pal, 0xC34E
+.word ow_00000Pal, 0xC34F
+.word ow_00000Pal, 0xC350
+.word ow_00000Pal, 0xC351
+.word ow_00000Pal, 0xC352
+.word ow_00000Pal, 0xC353
+.word ow_00000Pal, 0xC354
+.word ow_00000Pal, 0xC355
+.word ow_00000Pal, 0xC356
+.word ow_00000Pal, 0xC357
+.word ow_00000Pal, 0xC358
+.word ow_00000Pal, 0xC359
+.word ow_00000Pal, 0xC35A
+.word ow_00000Pal, 0xC35B
+.word ow_00000Pal, 0xC35C
+.word ow_00000Pal, 0xC35D
+.word ow_00000Pal, 0xC35E
+.word ow_00000Pal, 0xC35F
+.word ow_00000Pal, 0xC360
+.word ow_00000Pal, 0xC361
+.word ow_00000Pal, 0xC362
+.word ow_00000Pal, 0xC363
+.word ow_00000Pal, 0xC364
+.word ow_00000Pal, 0xC365
+.word ow_00000Pal, 0xC366
+.word ow_00000Pal, 0xC367
+.word ow_00000Pal, 0xC368
+.word ow_00000Pal, 0xC369
+.word ow_00000Pal, 0xC36A
+.word ow_00000Pal, 0xC36B
+.word ow_00000Pal, 0xC36C
+.word ow_00000Pal, 0xC36D
+.word ow_00000Pal, 0xC36E
+.word ow_00000Pal, 0xC36F
+.word ow_00000Pal, 0xC370
+.word ow_00000Pal, 0xC371
+.word ow_00000Pal, 0xC372
+.word ow_00000Pal, 0xC373
+.word ow_00000Pal, 0xC374
+.word ow_00000Pal, 0xC375
+.word ow_00000Pal, 0xC376
+.word ow_00000Pal, 0xC377
+.word ow_00000Pal, 0xC378
+.word ow_00000Pal, 0xC379
+.word ow_00000Pal, 0xC37A
+.word ow_00000Pal, 0xC37B
+.word ow_00000Pal, 0xC37C
+.word ow_00000Pal, 0xC37D
+.word ow_00000Pal, 0xC37E
+.word ow_00000Pal, 0xC37F
+.word ow_00000Pal, 0xC380
+.word ow_00000Pal, 0xC381
+.word ow_00000Pal, 0xC382
+.word ow_00000Pal, 0xC383
+.word ow_00000Pal, 0xC384
+.word ow_00000Pal, 0xC385
+.word ow_00000Pal, 0xC386
+.word ow_00000Pal, 0xC387
+.word ow_00000Pal, 0xC388
+.word ow_00000Pal, 0xC389
+.word ow_00000Pal, 0xC38A
+.word ow_00000Pal, 0xC38B
+.word ow_00000Pal, 0xC38C
+.word ow_00000Pal, 0xC38D
+.word ow_00000Pal, 0xC38E
+.word ow_00000Pal, 0xC38F
+.word ow_00000Pal, 0xC390
+.word ow_00000Pal, 0xC391
+.word ow_00000Pal, 0xC392
+.word ow_00000Pal, 0xC393
+.word ow_00000Pal, 0xC394
+.word ow_00000Pal, 0xC395
+.word ow_00000Pal, 0xC396
+.word ow_00000Pal, 0xC397
+.word ow_00000Pal, 0xC398
+.word ow_00000Pal, 0xC399
+.word ow_00000Pal, 0xC39A
+.word ow_00000Pal, 0xC39B
+.word ow_00000Pal, 0xC39C
+.word ow_00000Pal, 0xC39D
+.word ow_00000Pal, 0xC39E
+.word ow_00000Pal, 0xC39F
+.word ow_00000Pal, 0xC3A0
+.word ow_00000Pal, 0xC3A1
+.word ow_00000Pal, 0xC3A2
+.word ow_00000Pal, 0xC3A3
+.word ow_00000Pal, 0xC3A4
+.word ow_00000Pal, 0xC3A5
+.word ow_00000Pal, 0xC3A6
+.word ow_00000Pal, 0xC3A7
+.word ow_00000Pal, 0xC3A8
+.word ow_00000Pal, 0xC3A9
+.word ow_00000Pal, 0xC3AA
+.word ow_00000Pal, 0xC3AB
+.word ow_00000Pal, 0xC3AC
+.word ow_00000Pal, 0xC3AD
+.word ow_00000Pal, 0xC3AE
+.word ow_00000Pal, 0xC3AF
+.word ow_00000Pal, 0xC3B0
+.word ow_00000Pal, 0xC3B1
+.word ow_00000Pal, 0xC3B2
+.word ow_00000Pal, 0xC3B3
+.word ow_00000Pal, 0xC3B4
+.word ow_00000Pal, 0xC3B5
+.word ow_00000Pal, 0xC3B6
+.word ow_00000Pal, 0xC3B7
+.word ow_00000Pal, 0xC3B8
+.word ow_00000Pal, 0xC3B9
+.word ow_00000Pal, 0xC3BA
+.word ow_00000Pal, 0xC3BB
+.word ow_00000Pal, 0xC3BC
+.word ow_00000Pal, 0xC3BD
+.word ow_00000Pal, 0xC3BE
+.word ow_00000Pal, 0xC3BF
+.word ow_00000Pal, 0xC3C0
+.word ow_00000Pal, 0xC3C1
+.word ow_00000Pal, 0xC3C2
+.word ow_00000Pal, 0xC3C3
+.word ow_00000Pal, 0xC3C4
+.word ow_00000Pal, 0xC3C5
+.word ow_00000Pal, 0xC3C6
+.word ow_00000Pal, 0xC3C7
+.word ow_00000Pal, 0xC3C8
+.word ow_00000Pal, 0xC3C9
+.word ow_00000Pal, 0xC3CA
+.word ow_00000Pal, 0xC3CB
+.word ow_00000Pal, 0xC3CC
+.word ow_00000Pal, 0xC3CD
+.word ow_00000Pal, 0xC3CE
+.word ow_00000Pal, 0xC3CF
+.word ow_00000Pal, 0xC3D0
+.word ow_00000Pal, 0xC3D1
+.word ow_00000Pal, 0xC3D2
+.word ow_00000Pal, 0xC3D3
+.word ow_00000Pal, 0xC3D4
+.word ow_00000Pal, 0xC3D5
+.word ow_00000Pal, 0xC3D6
+.word ow_00000Pal, 0xC3D7
+.word ow_00000Pal, 0xC3D8
+.word ow_00000Pal, 0xC3D9
+.word ow_00000Pal, 0xC3DA
+.word ow_00000Pal, 0xC3DB
+.word ow_00000Pal, 0xC3DC
+.word ow_00000Pal, 0xC3DD
+.word ow_00000Pal, 0xC3DE
+.word ow_00000Pal, 0xC3DF
+.word ow_00000Pal, 0xC3E0
+.word ow_00000Pal, 0xC3E1
+.word ow_00000Pal, 0xC3E2
+.word ow_00000Pal, 0xC3E3
+.word ow_00000Pal, 0xC3E4
+.word ow_00000Pal, 0xC3E5
+.word ow_00000Pal, 0xC3E6
+.word ow_00000Pal, 0xC3E7
+.word ow_00000Pal, 0xC3E8
+.word ow_00000Pal, 0xC3E9
+.word ow_00000Pal, 0xC3EA
+.word ow_00000Pal, 0xC3EB
+.word ow_00000Pal, 0xC3EC
+.word ow_00000Pal, 0xC3ED
+.word ow_00000Pal, 0xC3EE
+.word ow_00000Pal, 0xC3EF
+.word ow_00000Pal, 0xC3F0
+.word ow_00000Pal, 0xC3F1
+.word ow_00000Pal, 0xC3F2
+.word ow_00000Pal, 0xC3F3
+.word ow_00000Pal, 0xC3F4
+.word ow_00000Pal, 0xC3F5
+.word ow_00000Pal, 0xC3F6
+.word ow_00000Pal, 0xC3F7
+.word ow_00000Pal, 0xC3F8
+.word ow_00000Pal, 0xC3F9
+.word ow_00000Pal, 0xC3FA
+.word ow_00000Pal, 0xC3FB
+.word ow_00000Pal, 0xC3FC
+.word ow_00000Pal, 0xC3FD
+.word ow_00000Pal, 0xC3FE
+.word ow_00000Pal, 0xC3FF
 
 .global npc_palettes
 npc_palettes:
