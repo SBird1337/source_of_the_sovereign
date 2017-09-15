@@ -166,11 +166,10 @@ int mini_vsnprintf(char * buffer, u32 buffer_len,
 
 void dprintf(const char * str, ...)
 {
-    char* __outstr = malloc(256);
+    char __outstr[256];
     va_list args;
     va_start(args, str);
     mini_vsnprintf(__outstr, 256, str, args);
     va_end(args);
     dprint(__outstr);
-    free(__outstr);
 }
