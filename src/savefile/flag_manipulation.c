@@ -28,6 +28,8 @@
 */
 #include <pokeagb/pokeagb.h>
 
+#include <agb_debug.h>
+
 #define TRAINER_FLAG_SPACE_START 0x1000
 
 extern u16 tb_modify_flag_id(u16 flag_id);
