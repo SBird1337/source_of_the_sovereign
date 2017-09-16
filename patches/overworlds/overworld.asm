@@ -111,3 +111,12 @@ strb r0, [r4, #0x1A]
     .word movement_animations
 .org 0x080645B4
     .word movement_animations
+
+.org 0x0805F5CC
+.halfword 0xC3FF
+
+.org 0x0805F634
+.halfword 0xC3FF
+
+.org 0x0805F6AC
+.halfword 0xC3FF
