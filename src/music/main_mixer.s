@@ -14,9 +14,10 @@
     .equ    GAME_KWJ6, 3
     .equ    GAME_AE7E, 4
     .equ    GAME_BPRD, 5
+    .equ    GAME_SOTS, 6
 
     /* SELECT USED GAME HERE */
-    .equ    USED_GAME, GAME_BPRE
+    .equ    USED_GAME, GAME_SOTS
 
     .equ    FRAME_LENGTH_5734, 0x60
     .equ    FRAME_LENGTH_7884, 0x84             @ THIS MODE IS NOT SUPPORTED BY THIS ENGINE BECAUSE IT DOESN'T USE AN 8 ALIGNED BUFFER LENGTH
@@ -37,6 +38,7 @@
 
     .equ    BUFFER_IRAM_BPE, 0x03001AA8
     .equ    BUFFER_IRAM_BPR, 0x030028E0
+    .equ    BUFFER_IRAM_SOTS, 0x030028A0
     .equ    BUFFER_IRAM_KWJ, 0x03005840
     .equ    BUFFER_IRAM_AE7, 0x03006D60
 
@@ -149,6 +151,16 @@
 .if USED_GAME==GAME_BPRE
 
     .equ    hq_buffer_ptr, BUFFER_IRAM_BPR
+    .equ    decoder_buffer_target, DECODER_BUFFER_BPR
+    .equ    POKE_INIT, 1
+    .equ    DMA_FIX, 1
+    .equ    ENABLE_DECOMPRESSION, 1
+
+.endif
+@*********** IF POKEMON SOTS
+.if USED_GAME==GAME_SOTS
+
+    .equ    hq_buffer_ptr, BUFFER_IRAM_SOTS
     .equ    decoder_buffer_target, DECODER_BUFFER_BPR
     .equ    POKE_INIT, 1
     .equ    DMA_FIX, 1
@@ -1359,12 +1371,13 @@ C_uncompressed_reverse_mixing_load_skip:
  */
 F_bdpcm_decoder:
 
-    STMFD   SP!, {R0, R2, R5-R7, LR}
+    STMFD   SP!, {R0, LR}
     MOV     R0, R3, LSR#6                       @ clip off everything but the block offset, each block is 0x40 samples long
     LDR     R12, [R4, #CHN_BLOCK_COUNT]
     CMP     R0, R12
     BEQ     C_bdpcm_decoder_return              @ block already decoded -> skip
 
+    STMFD   SP!, {R2, R5-R7}
     STR     R0, [R4, #CHN_BLOCK_COUNT]
     MOV     R12, #0x21                          @ 1 Block = 0x21 Bytes, 0x40 decoded samples
     MUL     R2, R12, R0
@@ -1393,12 +1406,13 @@ C_bdpcm_decoder_lsb:
         STRB    LR, [R5], #1
         SUBS    R7, R7, #2
         BGT     C_bdpcm_decoder_msb
-
+    
+    LDMFD   SP!, {R2, R5-R7}
 C_bdpcm_decoder_return:
-    LDR     R5, decoder_buffer
+    LDR     R12, decoder_buffer
     AND     R0, R3, #0x3F
-    LDRSB   R12, [R5, R0]
-    LDMFD   SP!, {R0, R2, R5-R7, PC}
+    LDRSB   R12, [R12, R0]
+    LDMFD   SP!, {R0, PC}
 
     .align  2
 

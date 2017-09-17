@@ -12,8 +12,8 @@ _call_via_r1 equ 0x081E3BAC
     .word  0x0203E000   // new PCM work area
 .org 0x081DD0C8
      // set correct sound driver operation mode
-     // 12 channels at 26758 Hz samplerate
-    .byte  0x00, 0xCC, 0x98, 0x00
+     // 12 channels at 31536 Hz samplerate
+    .byte  0x00, 0xCC, 0x99, 0x00
 .org 0x081DC094
     .word  0x03005F50+1 // new mixer RAM location (used for branch)
 
@@ -70,6 +70,34 @@ _call_via_r1 equ 0x081E3BAC
 //Don't know what thats all about... leaving it commented for now
 //.org 0x0800f268
 //    .halfword 0xE000
+
+// disable help menu
+// see: https://www.pokecommunity.com/showthread.php?t=364909
+.org 0x0813B8C2
+    .halfword 0xE01D
+
+// decrease amount of valid file handles from 20 to 12 to free up some IRAM
+NUM_FILE_HANDLES equ 12
+.org 0x081E9948
+    cmp r1, #(NUM_FILE_HANDLES - 1)
+.org 0x081E99E4
+    add r0, #((NUM_FILE_HANDLES - 1) * 8)
+.org 0x081E9AA4
+    cmp r6, #NUM_FILE_HANDLES
+.org 0x081E9ADE
+    cmp r6, #NUM_FILE_HANDLES
+.org 0x081E9B1C
+    cmp r6, #NUM_FILE_HANDLES
+    bge 0x081E9B2E
+.org 0x081E9BA6
+    cmp r7, #NUM_FILE_HANDLES
+    bge 0x081E9BB8
+.org 0x081E9BDA
+    cmp r0, #NUM_FILE_HANDLES
+    blo 0x081E9BE2
+.org 0x081E9C84
+    cmp r1, #NUM_FILE_HANDLES
+    bge 0x081E9C94
 
 //flag routine
 .org 0x0806E5D6
