@@ -177,6 +177,12 @@ special 0x3B
 playsong \costumtrainerbattlemusic_id 0x0
 .endm
 
+.macro colorflicker colorflicker_farbbyte:req
+setvar 0x8000 \colorflicker_farbbyte
+setvar 0x5006 0x8
+special 0x68
+.endm
+
 .macro mugmsg mugmsg_textpointer:req mugmsg_callstd:req mugmsg_sprite:req mugmsg_facing:req
 .if \mugmsg_facing==MUGFACE_LEFT
     setvar MUGHSOT_1_TABLE \mugmsg_sprite | 0x8000

@@ -707,7 +707,7 @@ str_trainer_name_88=Rüpel
 @hword 0, 0, 0, 0
 @byte 0, 0, 0, 0 
 @hword 0, 0
-@byte 3, 0, 0, 0 
+@byte 2, 0, 0, 0 
 @word pokemon_von_id_88
 
 @byte 0, 111, 111, 131 
@@ -715,7 +715,7 @@ str_trainer_name_89=Rüpel
 @hword 0, 0, 0, 0
 @byte 0, 0, 0, 0 
 @hword 15, 0
-@byte 3, 0, 0, 0 
+@byte 2, 0, 0, 0 
 @word pokemon_von_id_89
 
 @byte 0, 111, 111, 131 
@@ -723,7 +723,7 @@ str_trainer_name_90=Rüpel
 @hword 0, 0, 0, 0
 @byte 0, 0, 0, 0 
 @hword 383, 0
-@byte 4, 0, 0, 0 
+@byte 3, 0, 0, 0 
 @word pokemon_von_id_90
 
 @byte 0, 111, 239, 132 
@@ -731,7 +731,7 @@ str_trainer_name_91=Rüpel
 @hword 0, 0, 0, 0
 @byte 0, 0, 0, 0 
 @hword 0, 0
-@byte 3, 0, 0, 0 
+@byte 2, 0, 0, 0 
 @word pokemon_von_id_91
 
 @byte 0, 111, 239, 132 
@@ -739,7 +739,7 @@ str_trainer_name_92=Rüpel
 @hword 0, 0, 0, 0
 @byte 0, 0, 0, 0 
 @hword 15, 0
-@byte 3, 0, 0, 0 
+@byte 2, 0, 0, 0 
 @word pokemon_von_id_92
 
 @byte 0, 111, 239, 132 
@@ -747,5 +747,5 @@ str_trainer_name_93=Rüpel
 @hword 0, 0, 0, 0
 @byte 0, 0, 0, 0 
 @hword 383, 0
-@byte 4, 0, 0, 0 
+@byte 3, 0, 0, 0 
 @word pokemon_von_id_93
