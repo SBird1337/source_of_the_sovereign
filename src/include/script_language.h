@@ -5,6 +5,7 @@
 #include <applymovements.h>
 #include <mugssprites.h>
 #include <battlescreen.h>
+#include <script_constant.h>
 
 @@ Costum Specials
 .equ SP_BATCHMAPTILE, 0x7
@@ -64,11 +65,20 @@
 
 @@ Custom commands
 
-.macro batchmaptile batchmaptile_tiles_from:req batchmaptile_tiles_to:req batchmaptile_kollision_from:req batchmaptile_kollision_to:req
+.macro batchmaptilefromto batchmaptile_tiles_from:req batchmaptile_tiles_to:req batchmaptile_kollision_from:req batchmaptile_kollision_to:req
 setvar 0x8000 \batchmaptile_tiles_from
 setvar 0x8001 \batchmaptile_tiles_to
 setvar 0x8002 \batchmaptile_kollision_from
 setvar 0x8003 \batchmaptile_kollision_to
+setvar 0x5006 SP_BATCHMAPTILE
+special 0x68
+.endm
+
+.macro batchmaptiletofrom batchmaptile_tiles_from:req batchmaptile_tiles_to:req batchmaptile_kollision_from:req batchmaptile_kollision_to:req
+setvar 0x8001 \batchmaptile_tiles_from
+setvar 0x8002 \batchmaptile_tiles_to
+setvar 0x8003 \batchmaptile_kollision_from
+setvar 0x8002 \batchmaptile_kollision_to
 setvar 0x5006 SP_BATCHMAPTILE
 special 0x68
 .endm
