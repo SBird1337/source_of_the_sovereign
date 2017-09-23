@@ -512,7 +512,6 @@ C_mixing_setup:
         ADD     R10, R10, R0
         CMP     R10, SP
         ADD     R10, R3, R0
-        ADR     R9, stack_backup
         /*
          * R2 = remaining samples after processing
          * R10 = final sample position
@@ -520,8 +519,9 @@ C_mixing_setup:
          * These values will get reloaded after channel processing
          * due to the lack of registers.
          */
-        STMIA   R9, {R2, R10, SP}
+        STMFD   SP!, {R2, R10}
         CMPCC   R0, #0x400                      @ > 0x400 bytes --> read directly from ROM rather than buffered
+        MOV     R10, SP
         BCS     C_select_highspeed_codepath
         /*
          * The code below inits the DMA to read word aligned
@@ -547,6 +547,7 @@ C_mixing_setup:
     .endif
 
 C_select_highspeed_codepath:
+        STMFD   SP!, {R10}                      @ save original SP for VLA
         /*
          * This code decides which piece of code to load
          * depending on playback-rate / default-rate ratio.
@@ -587,7 +588,7 @@ C_skip_fast_mixing_creation:
         MOV     R2, #0xFF000000                 @ load the fine position overflow bitmask
 C_fast_mixing_loop:
         /* This is the actual processing and interpolation code loop; NOPs will be replaced by the code above */
-            LDMIA   R5, {R0, R1, R10, LR}         @ load 4 stereo samples to Registers
+            LDMIA   R5, {R0, R1, R10, LR}       @ load 4 stereo samples to Registers
             MUL     R9, R7, R12
 fast_mixing_instructions:
             NOP                                 @ Block #1
@@ -625,9 +626,9 @@ fast_mixing_instructions:
             NOP
             NOP
             BIC     R7, R7, R2, ASR#1
-            STMIA   R5!, {R0, R1, R10, LR}        @ write 4 stereo samples
+            STMIA   R5!, {R0, R1, R10, LR}      @ write 4 stereo samples
 
-            LDMIA   R5, {R0, R1, R10, LR}         @ load the next 4 stereo samples
+            LDMIA   R5, {R0, R1, R10, LR}       @ load the next 4 stereo samples
             MULNE   R9, R7, R12
             NOP                                 @ Block #1
             NOP
@@ -668,15 +669,13 @@ fast_mixing_instructions:
             SUBS    R8, R8, #8
             BGT     C_fast_mixing_loop
         /* restore previously saved values */
-        ADR     R12, stack_backup
-        LDMIA   R12, {R2, R3, SP}
+        LDMFD   SP, {SP}                        @ reload original stack pointer from VLA
+        LDMFD   SP!, {R2, R3}
         B       C_end_mixing
 
 /* Various variables for the cached mixer */
 
     .align    2
-stack_backup:
-    .word    0x0, 0x0, 0x0
 upper_stack_bounds:
     .word    0x03007910
 previous_fast_code:
@@ -795,7 +794,7 @@ C_fixed_mixing_length_check:
         MOVGT   LR, R8                          @ min(buffer_size, sample_countdown)
         SUB     LR, LR, #1
         MOVS    LR, LR, LSR#2
-        BEQ     C_fixed_mixing_process_rest  @ <= 3 samples to process
+        BEQ     C_fixed_mixing_process_rest     @ <= 3 samples to process
 
         SUB     R8, R8, LR, LSL#2               @ subtract the amount of samples we need to process from the buffer length
         SUB     R2, R2, LR, LSL#2               @ subtract the amount of samples we need to process from the remaining samples
