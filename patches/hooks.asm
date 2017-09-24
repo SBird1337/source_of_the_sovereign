@@ -1,7 +1,10 @@
 _call_via_r0 equ 0x081E3BA8
 _call_via_r1 equ 0x081E3BAC
 
-//Ipatix sound stuff
+//----------------------
+// ipatix sound stuff
+//----------------------
+
 .org 0x080007B4
     .word  0x0203E000   // new PCM work area
 .org 0x081DD0B4
@@ -64,17 +67,33 @@ _call_via_r1 equ 0x081E3BAC
     B   0x080159DC
     .pool
 
-
-//End of sound stuff
-
-//Don't know what thats all about... leaving it commented for now
-//.org 0x0800f268
-//    .halfword 0xE000
+//---------------------
+// ipatix misc stuff
+//---------------------
 
 // disable help menu
 // see: https://www.pokecommunity.com/showthread.php?t=364909
 .org 0x0813B8C2
     .halfword 0xE01D
+
+// idle loop eliminiation
+.org 0x080008A4
+    cmp r0, #0
+    bne ile_end_wait
+    mov r3, #1
+ile_idle_loop:
+    swi #2
+    ldrh r1, [r2, #0x1c]
+    mov r0, r3
+    and r0, r1
+    beq ile_idle_loop
+ile_end_wait:
+    pop {r0}
+    bx r0
+
+//--------------
+// IRAM hacks
+//--------------
 
 // decrease amount of valid file handles from 20 to 12 to free up some IRAM
 NUM_FILE_HANDLES equ 12
@@ -98,6 +117,15 @@ NUM_FILE_HANDLES equ 12
 .org 0x081E9C84
     cmp r1, #NUM_FILE_HANDLES
     bge 0x081E9C94
+
+//----------------
+// S-Bird stuff
+//----------------
+
+//Don't know what thats all about... leaving it commented for now
+//.org 0x0800f268
+//    .halfword 0xE000
+
 
 //flag routine
 .org 0x0806E5D6
