@@ -69,11 +69,19 @@ u32 mini_itoa(int value, u32 radix, u32 uppercase, u32 unsig, char * buffer, u32
         value = -value;
     }
     /* This builds the string back to front ... */
-    do {
-        u32 digit = value % radix;
-        * (pbuffer++) = (digit < 10 ? '0' + digit : (uppercase ? 'A' : 'a') + digit - 10);
-        value /= radix;
-    } while (value > 0);
+    if (radix == 16) {
+        do {
+            u32 digit = value & 0xF;
+            * (pbuffer++) = (digit < 10 ? '0' + digit : (uppercase ? 'A' : 'a') + digit - 10);
+            value >>= 4;
+        } while (value > 0);
+    } else {
+        do {
+            u32 digit = value % radix;
+            * (pbuffer++) = (digit < 10 ? '0' + digit : (uppercase ? 'A' : 'a') + digit - 10);
+            value /= radix;
+        } while (value > 0);
+    }
     for (i = (pbuffer - buffer); i < zero_pad; i++)
         * (pbuffer++) = '0';
     if (negative)
