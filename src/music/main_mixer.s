@@ -262,8 +262,7 @@ C_setup_channel_state_loop:
     /*
      * this stroes the buffer length to a backup location
      */
-    ADR     R0, hq_buffer_length
-    STR     R4, [R0]
+    STR     R4, [SP, #ARG_FRAME_LENGTH]
     /* init channel loop */
     LDR     R4, [SP, #ARG_PCM_STRUCT]           @ R4 = main work area pointer
     LDR     R0, [R4, #VAR_DEF_PITCH_FAC]        @ R0 = samplingrate pitch factor
@@ -445,15 +444,13 @@ C_skip_sample_loop_setup:
     .align  2
 hq_buffer:
     .word   hq_buffer_ptr
-hq_buffer_length:     @ TODO: Replace with variable on stack
-    .word   0xFFFFFFFF
 
     .arm
     .align  2
 
 C_mixing_setup:
         /* frequency and mixing loading routine */
-        LDR     R8, hq_buffer_length
+        LDR     R8, [SP, #ARG_FRAME_LENGTH]
         ORRS    R11, R11, R10, LSL#16           @ R11 = 00LL00RR
         BEQ     C_mixing_epilogue               @ volume #0 --> branch and skip channel processing
         /* normal processing otherwise */
@@ -540,10 +537,10 @@ C_mixing_setup:
 
         /* Somehow is neccesary for some games not to break */
     .if DMA_FIX==1
-        MOV    R0, #0
-        MOV    R1, #0
-        MOV    R2, #0
-        STMIA R9, {R0, R1, R2}
+        MOV     R0, #0
+        MOV     R1, #0
+        MOV     R2, #0
+        STMIA   R9, {R0, R1, R2}
     .endif
 
 C_select_highspeed_codepath:
@@ -582,7 +579,8 @@ C_fast_mixing_creation_loop:
             ADDS    R5, R5, #0x40000000         @ do that for 4 blocks
             BCC     C_fast_mixing_creation_loop
 
-        LDR     R8, hq_buffer_length
+        LDR     R8, [SP]                        @ restore R8 with the frame length
+        LDR     R8, [R8, #(ARG_FRAME_LENGTH + 0x8 + 0xC)]
 
 C_skip_fast_mixing_creation:
         MOV     R2, #0xFF000000                 @ load the fine position overflow bitmask
@@ -881,7 +879,7 @@ C_main_mixer_return:
 C_downsampler:
     LDR     R4, =0xFFF80035
     LDR     R5, =0x0034FFF8
-    LDR     R8, hq_buffer_length
+    LDR     R8, [SP, #ARG_FRAME_LENGTH]
     LDR     R9, [SP, #ARG_BUFFER_POS]
     LDR     R10, hq_buffer
     MOV     R11, #0xFF000000
