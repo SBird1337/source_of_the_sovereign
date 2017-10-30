@@ -119,10 +119,10 @@ u16 mhk_intro_music_id_to_song(u8 introid) {
             res = 490;
             break;
         case 34:
-            res = 472;
+            res = 497;
             break;
         case 35:
-            res = 472;
+            res = 497;
             break;
         case 36:
             res = 471;
