@@ -1,9 +1,9 @@
 [submodule "sots-private"]
 	path = sots-private
 	url = ssh://sotshost:/home/sots-michy/sots-private.git
-[submodule "battle_engine"]
-	path = battle_engine
-	url = https://github.com/SBird1337/battle_engine
 [submodule "g3headers"]
 	path = g3headers
 	url = https://github.com/SBird1337/g3headers
+[submodule "battle_engine"]
+	path = battle_engine
+	url = https://github.com/SBird1337/battle_engine
