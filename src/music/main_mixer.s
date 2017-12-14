@@ -889,21 +889,21 @@ C_downsampler_loop:
 
         MOV     R12, R0             @ left sample #1
         CMP     R12, #0x40000000
-        MOVGE   R12, #0x3F800000
+        MOVGE   R12, #0x3FC00000
         CMP     R12, #-0x40000000
         MOVLT   R12, #-0x40000000
         AND     R6, R11, R12, LSL#1
 
         MOV     R0, R0, LSL#16      @ right
         CMP     R0, #0x40000000
-        MOVGE   R0, #0x3F800000
+        MOVGE   R0, #0x3FC00000
         CMP     R0, #-0x40000000
         MOVLT   R0, #-0x40000000
         AND     R7, R11, R0, LSL#1
 
         MOV     R12, R1             @ left sample #2
         CMP     R12, #0x40000000
-        MOVGE   R12, #0x3F800000
+        MOVGE   R12, #0x3FC00000
         CMP     R12, #-0x40000000
         MOVLT   R12, #-0x40000000
         AND     R12, R11, R12, LSL#1
@@ -911,7 +911,7 @@ C_downsampler_loop:
 
         MOV     R1, R1, LSL#16      @ right
         CMP     R1, #0x40000000
-        MOVGE   R1, #0x3F800000
+        MOVGE   R1, #0x3FC00000
         CMP     R1, #-0x40000000
         MOVLT   R1, #-0x40000000
         AND     R1, R11, R1, LSL#1
@@ -919,7 +919,7 @@ C_downsampler_loop:
 
         MOV     R12, R2             @ left sample #3
         CMP     R12, #0x40000000
-        MOVGE   R12, #0x3F800000
+        MOVGE   R12, #0x3FC00000
         CMP     R12, #-0x40000000
         MOVLT   R12, #-0x40000000
         AND     R12, R11, R12, LSL#1
@@ -927,7 +927,7 @@ C_downsampler_loop:
 
         MOV     R2, R2, LSL#16      @ right
         CMP     R2, #0x40000000
-        MOVGE   R2, #0x3F800000
+        MOVGE   R2, #0x3FC00000
         CMP     R2, #-0x40000000
         MOVLT   R2, #-0x40000000
         AND     R2, R11, R2, LSL#1
@@ -935,7 +935,7 @@ C_downsampler_loop:
 
         MOV     R12, R3             @ left sample #4
         CMP     R12, #0x40000000
-        MOVGE   R12, #0x3F800000
+        MOVGE   R12, #0x3FC00000
         CMP     R12, #-0x40000000
         MOVLT   R12, #-0x40000000
         AND     R12, R11, R12, LSL#1
@@ -943,7 +943,7 @@ C_downsampler_loop:
 
         MOV     R3, R3, LSL#16      @ right
         CMP     R3, #0x40000000
-        MOVGE   R3, #0x3F800000
+        MOVGE   R3, #0x3FC00000
         CMP     R3, #-0x40000000
         MOVLT   R3, #-0x40000000
         AND     R3, R11, R3, LSL#1

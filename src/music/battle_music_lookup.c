@@ -83,10 +83,10 @@ u16 mhk_intro_music_id_to_song(u8 introid) {
             res = 481;
             break;
         case 22:
-            res = 471;
+            res = 498;
             break;
         case 23:
-            res = 471;
+            res = 498;
             break;
         case 24:
             res = 473;
@@ -119,10 +119,10 @@ u16 mhk_intro_music_id_to_song(u8 introid) {
             res = 490;
             break;
         case 34:
-            res = 472;
+            res = 497;
             break;
         case 35:
-            res = 472;
+            res = 497;
             break;
         case 36:
             res = 471;
@@ -137,7 +137,7 @@ u16 mhk_intro_music_id_to_song(u8 introid) {
             res = 490;
             break;
         case 40:
-            res = 472;
+            res = 499;
             break;
         case 41:
             res = 491;
