@@ -101,8 +101,8 @@ void text_animator(u16 current_frame) {
 }
 
 void anim_init_text(void) {
-    blockset_one_current_tile = 0;
-    blockset_one_max_tile = 0x280;
+    blockset_one_current_frame = 0;
+    blockset_one_max_frame = 0x280;
     blockset_one_animator = NULL;
     u16 text = var_load(TEXT_ANIMATION_VAR);
     if (text != 0) {

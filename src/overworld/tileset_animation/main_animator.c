@@ -38,13 +38,13 @@ void main_second_animator(u16 current_frame) {
 }
 
 void main_animator_init(void) {
-    blockset_one_current_tile = 0;
-    blockset_one_max_tile = 0x280;
+    blockset_one_current_frame = 0;
+    blockset_one_max_frame = 0x280;
     blockset_one_animator = main_animator;
 }
 
 void main_second_animator_init(void) {
-    blockset_two_current_tile = 0;
-    blockset_two_max_tile = 0x100;
+    blockset_two_current_frame = 0;
+    blockset_two_max_frame = 0x100;
     blockset_two_animator = main_second_animator;
 }
