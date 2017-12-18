@@ -12,7 +12,7 @@
 #define CANVAS_FIRST ((u8 *)(574 * 0x20 + 0x06000000))
 #define CANVAS_SECOND ((u8 *)(592 * 0x20 + 0x06000000))
 
-static const char *map_texts[] = {"--------", "← Carun City", "Route 2 >", "< Route 3", "< Urbania City", "Route 5 >", "< Route 6", NULL};
+static const char *map_texts[] = {"--------", "← Carun City", "Route 2 →", "← Route 3", "← Urbania City", "Route 5 →", "← Route 6", NULL};
 
 /*
  * Tile IDs:

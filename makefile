@@ -170,6 +170,16 @@ clean:
 	$(MAKE) -f sprites.makefile clean
 	$(MAKE) -f icons.makefile clean
 
+.PHONY: cleannogfx
+	rm -f  $(OUTPATH)/__symbols.sym $(OUTPATH)/pkmn_sots.gba
+	rm -rf generated_image/*
+	rm -R -f object/*
+	$(MAKE) -C $(dir $(MUSIC_AR)) clean
+	$(MAKE) -C $(dir $(SMPL_AR)) clean
+	$(MAKE) -C $(dir $(VOICE_AR)) clean
+	$(MAKE) -C $(dir $(LIST_AR)) clean
+	$(MAKE) -C $(dir $(CRY_AR)) clean
+
 .PHONY: $(ASSETS)
 $(ASSETS):
 	@echo -e "\e[95mMaking Assets\e[0m"
