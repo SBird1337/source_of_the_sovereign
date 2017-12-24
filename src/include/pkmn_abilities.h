@@ -1,7 +1,7 @@
 #ifndef ABILITY_IDS
 #define ABILITY_IDS
 
-
+/* ABILITY ENGLISH */
 #define ABILITY_NO_ABILITY 0x0
 #define ABILITY_STENCH 0x1
 #define ABILITY_DRIZZLE 0x2
