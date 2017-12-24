@@ -1,6 +1,10 @@
 #ifndef ITEM_IDS_H
 #define ITEM_IDS_H
 
+/* Items English */
+#define ITEM_ENIGMABERRY 0xAF
+
+/* Items Deutsch */
 #define ITEM_NONE 0
 #define ITEM_MEISTERBALL 1
 #define ITEM_HYPERBALL 2
