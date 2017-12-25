@@ -5,12 +5,7 @@
 #include <applymovements.h>
 #include <mugssprites.h>
 #include <battlescreen.h>
-#include <pkmn_names.h>
-#include <pkmn_abilities.h>
-#include <pkmn_items.h>
-#include <pkmn_moves.h>
-#include <pkmn_stats.h>
-
+#include <script_constant.h>
 
 @@ Costum Specials
 .equ SP_BATCHMAPTILE, 0x7
@@ -22,14 +17,6 @@
 .equ B_LE, 0x3
 .equ B_GE, 0x4
 .equ B_NE, 0x5
-
-@@ Compare operands
-.equ KLEINER, 0x0
-.equ GLEICH, 0x1
-.equ GROESSER, 0x2
-.equ KLEINERGLEICH, 0x3
-.equ GROESSERGLEICH, 0x4
-.equ UNGLEICH, 0x5
 
 @@ Important flags
 .equ FLAG_PKMN_MENU, 0x828
@@ -55,10 +42,6 @@
 @@ Flag operands
 .equ B_T, 0x0
 .equ B_F, 0x1
-
-@@ Flag operands
-.equ FALSCH, 0x0
-.equ WAHR, 0x1
 
 @@ callstd alias
 .equ ITEM_OBTAIN, 0x0

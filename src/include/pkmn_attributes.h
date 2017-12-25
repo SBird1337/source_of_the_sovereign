@@ -56,4 +56,7 @@
 #define ATTR_SPECIAL_DEFENCE 0x3F
 #define ATTR_SPECIES_2 0x41
 
+
+
 #endif /* PKMN_ATTRIBUTES_H */
+

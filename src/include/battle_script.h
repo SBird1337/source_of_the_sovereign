@@ -28,7 +28,7 @@
  */
 
 
-#include <pkmn_moves.h>
+#include <attack_names.h>
 
 @@ Banks
 #define BANK_USER	1
