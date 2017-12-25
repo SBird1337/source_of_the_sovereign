@@ -1,4 +1,4 @@
-#include <moves.h>
+#include <pkmn_moves.h>
 
 .text
 .align 2
