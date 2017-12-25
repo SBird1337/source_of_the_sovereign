@@ -1,1550 +1,1544 @@
+//Pointer
 .align 2
 
 .global habitat_header
-
 habitat_header:
-.word habitat_gras
+.word habitat_gras 
 .hword 57, 0
-.word habitat_wald
+.word habitat_wald 
 .hword 55, 0
-.word habitat_ufer_und_see
+.word habitat_ufer_und_see 
 .hword 29, 0
-.word habitat_wasser
+.word habitat_wasser 
 .hword 34, 0
-.word habitat_höhle
+.word habitat_höhle 
 .hword 26, 0
-.word habitat_gebirge
+.word habitat_gebirge 
 .hword 33, 0
-.word habitat_wildniss
+.word habitat_wildniss 
 .hword 48, 0
-.word habitat_stadt
+.word habitat_stadt 
 .hword 48, 0
-.word habitat_selten
+.word habitat_selten 
 .hword 39, 0
 
 .align 2
 habitat_gras:
-.word gras_seite_1
+.word gras_seite_1 
 .hword 2, 0
-.word gras_seite_2
+.word gras_seite_2 
 .hword 2, 0
-.word gras_seite_3
+.word gras_seite_3 
 .hword 2, 0
-.word gras_seite_4
+.word gras_seite_4 
 .hword 2, 0
-.word gras_seite_5
+.word gras_seite_5 
 .hword 3, 0
-.word gras_seite_6
+.word gras_seite_6 
 .hword 3, 0
-.word gras_seite_7
+.word gras_seite_7 
 .hword 2, 0
-.word gras_seite_8
+.word gras_seite_8 
 .hword 2, 0
-.word gras_seite_9
+.word gras_seite_9 
 .hword 2, 0
-.word gras_seite_10
+.word gras_seite_10 
 .hword 2, 0
-.word gras_seite_11
+.word gras_seite_11 
 .hword 3, 0
-.word gras_seite_12
+.word gras_seite_12 
 .hword 3, 0
-.word gras_seite_13
+.word gras_seite_13 
 .hword 4, 0
-.word gras_seite_14
+.word gras_seite_14 
 .hword 2, 0
-.word gras_seite_15
+.word gras_seite_15 
 .hword 3, 0
-.word gras_seite_16
+.word gras_seite_16 
 .hword 3, 0
-.word gras_seite_17
+.word gras_seite_17 
 .hword 3, 0
-.word gras_seite_18
+.word gras_seite_18 
 .hword 2, 0
-.word gras_seite_19
+.word gras_seite_19 
 .hword 2, 0
-.word gras_seite_20
+.word gras_seite_20 
 .hword 2, 0
-.word gras_seite_21
+.word gras_seite_21 
 .hword 2, 0
-.word gras_seite_22
+.word gras_seite_22 
 .hword 2, 0
-.word gras_seite_23
+.word gras_seite_23 
 .hword 2, 0
-.word gras_seite_24
+.word gras_seite_24 
 .hword 3, 0
-.word gras_seite_25
+.word gras_seite_25 
 .hword 3, 0
-.word gras_seite_26
+.word gras_seite_26 
 .hword 2, 0
-.word gras_seite_27
+.word gras_seite_27 
 .hword 2, 0
-.word gras_seite_28
+.word gras_seite_28 
 .hword 2, 0
-.word gras_seite_29
+.word gras_seite_29 
 .hword 2, 0
-.word gras_seite_30
+.word gras_seite_30 
 .hword 1, 0
-.word gras_seite_31
+.word gras_seite_31 
 .hword 2, 0
-.word gras_seite_32
+.word gras_seite_32 
 .hword 3, 0
-.word gras_seite_33
+.word gras_seite_33 
 .hword 3, 0
-.word gras_seite_34
+.word gras_seite_34 
 .hword 3, 0
-.word gras_seite_35
+.word gras_seite_35 
 .hword 3, 0
-.word gras_seite_36
+.word gras_seite_36 
 .hword 3, 0
-.word gras_seite_37
+.word gras_seite_37 
 .hword 1, 0
-.word gras_seite_38
+.word gras_seite_38 
 .hword 2, 0
-.word gras_seite_39
+.word gras_seite_39 
 .hword 3, 0
-.word gras_seite_40
+.word gras_seite_40 
 .hword 2, 0
-.word gras_seite_41
+.word gras_seite_41 
 .hword 3, 0
-.word gras_seite_42
+.word gras_seite_42 
 .hword 1, 0
-.word gras_seite_43
+.word gras_seite_43 
 .hword 1, 0
-.word gras_seite_44
+.word gras_seite_44 
 .hword 2, 0
-.word gras_seite_45
+.word gras_seite_45 
 .hword 2, 0
-.word gras_seite_46
+.word gras_seite_46 
 .hword 3, 0
-.word gras_seite_47
+.word gras_seite_47 
 .hword 3, 0
-.word gras_seite_48
+.word gras_seite_48 
 .hword 2, 0
-.word gras_seite_49
+.word gras_seite_49 
 .hword 4, 0
-.word gras_seite_50
+.word gras_seite_50 
 .hword 2, 0
-.word gras_seite_51
+.word gras_seite_51 
 .hword 1, 0
-.word gras_seite_52
+.word gras_seite_52 
 .hword 2, 0
-.word gras_seite_53
+.word gras_seite_53 
 .hword 2, 0
-.word gras_seite_54
+.word gras_seite_54 
 .hword 2, 0
-.word gras_seite_55
+.word gras_seite_55 
 .hword 3, 0
-.word gras_seite_56
+.word gras_seite_56 
 .hword 2, 0
-.word gras_seite_57
+.word gras_seite_57 
 .hword 2, 0
 
 .align 2
 gras_seite_1:
-.hword PKMN_RATTFRATZ, PKMN_RATTIKARL
+.hword 19, 20
 gras_seite_2:
-.hword PKMN_WIESOR, PKMN_WIESENIOR
+.hword 161, 162
 gras_seite_3:
-.hword PKMN_ZIGZACHS, PKMN_GERADAKS
+.hword 288, 289
 gras_seite_4:
-.hword PKMN_FIFFYEN, PKMN_MAGNAYEN
+.hword 286, 287
 gras_seite_5:
-.hword PKMN_NIDORAN_W, PKMN_NIDORINA, PKMN_NIDOQUEEN
+.hword 29, 30, 31
 gras_seite_6:
-.hword PKMN_NIDORAN_M, PKMN_NIDORINO, PKMN_NIDOKING
+.hword 32, 33, 34
 gras_seite_7:
-.hword PKMN_DODU, PKMN_DODRI
+.hword 84, 85
 gras_seite_8:
-.hword PKMN_SCHWALBINI, PKMN_SCHWALBOSS
+.hword 304, 305
 gras_seite_9:
-.hword PKMN_TANGELA, PKMN_TANGOLOSS
+.hword 114, 518
 gras_seite_10:
-.hword PKMN_SONNKERN, PKMN_SONNFLORA
+.hword 191, 192
 gras_seite_11:
-.hword PKMN_KNOSPI, PKMN_ROSELIA, PKMN_ROSERADE
+.hword 459, 363, 460
 gras_seite_12:
-.hword PKMN_HOPPSPROSS, PKMN_HUBELUPF, PKMN_PAPUNGHA
+.hword 187, 188, 189
 gras_seite_13:
-.hword PKMN_MYRAPLA, PKMN_DUFLOR, PKMN_GIFLOR, PKMN_BLUBELLA
+.hword 43, 44, 45, 182
 gras_seite_14:
-.hword PKMN_RETTAN, PKMN_ARBOK
+.hword 23, 24
 gras_seite_15:
-.hword PKMN_FLUFFELUFF, PKMN_PUMMELUFF, PKMN_KNUDDELUFF
+.hword 174, 39, 40
 gras_seite_16:
-.hword PKMN_VOLTILAMM, PKMN_WAATY, PKMN_AMPHAROS
+.hword 179, 180, 181
 gras_seite_17:
-.hword PKMN_PORENTA, PKMN_SCHLURP, PKMN_SCHLURPLEK
+.hword 83, 108, 516
 gras_seite_18:
-.hword PKMN_SICHLOR, PKMN_SCHEROX
+.hword 123, 212
 gras_seite_19:
-.hword PKMN_TRAUMATO, PKMN_HYPNO
+.hword 96, 97
 gras_seite_20:
-.hword PKMN_SCHLUPPUCK, PKMN_SCHLUKWECH
+.hword 367, 368
 gras_seite_21:
-.hword PKMN_KANGAMA, PKMN_GIRAFARIG
+.hword 115, 203
 gras_seite_22:
-.hword PKMN_PONITA, PKMN_GALLOPA
+.hword 77, 78
 gras_seite_23:
-.hword PKMN_VULPIX, PKMN_VULNONA
+.hword 37, 38
 gras_seite_24:
-.hword PKMN_TAUROS, PKMN_MILTANK, PKMN_BISOFANK
+.hword 128, 241, 679
 gras_seite_25:
-.hword PKMN_ELEKID, PKMN_ELEKTEK, PKMN_ELEVOLTEK
+.hword 239, 125, 519
 gras_seite_26:
-.hword PKMN_FRIZELBLIZ, PKMN_VOLTENSO
+.hword 337, 338
 gras_seite_27:
-.hword PKMN_PLUSLE, PKMN_MINUN
+.hword 353, 354
 gras_seite_28:
-.hword PKMN_SENGO, PKMN_VIPITIS
+.hword 380, 379
 gras_seite_29:
-.hword PKMN_FUKANO, PKMN_ARKANI
+.hword 58, 59
 gras_seite_30:
-.hword PKMN_FORMEO
+.hword 385
 gras_seite_31:
-.hword PKMN_KLINGPLIM, PKMN_PALIMPALIM
+.hword 486, 411
 gras_seite_32:
-.hword PKMN_BISASAM, PKMN_BISAKNOSP, PKMN_BISAFLOR
+.hword 1, 2, 3
 gras_seite_33:
-.hword PKMN_ENDIVIE, PKMN_LORBLATT, PKMN_MEGANIE
+.hword 152, 153, 154
 gras_seite_34:
-.hword PKMN_FEURIGEL, PKMN_IGELAVAR, PKMN_TORNUPTO
+.hword 155, 156, 157
 gras_seite_35:
-.hword PKMN_FLEMMLI, PKMN_JUNGGLUT, PKMN_LOHGOCK
+.hword 280, 281, 282
 gras_seite_36:
-.hword PKMN_SHEINUX, PKMN_LUXIO, PKMN_LUXTRA
+.hword 456, 457, 458
 gras_seite_37:
-.hword PKMN_PACHIRISU
+.hword 470
 gras_seite_38:
-.hword PKMN_SHNEBEDECK, PKMN_REXBLISAR
+.hword 512, 513
 gras_seite_39:
-.hword PKMN_SERPIFEU, PKMN_EFOSERP, PKMN_SERPIROYAL
+.hword 548, 549, 550
 gras_seite_40:
-.hword PKMN_NAGELOTZ, PKMN_KUKMARDA
+.hword 557, 558
 gras_seite_41:
-.hword PKMN_YORKLEFF, PKMN_TERRIBARK, PKMN_BISSBARK
+.hword 559, 560, 561
 gras_seite_42:
-.hword PKMN_SYMVOLARA
+.hword 614
 gras_seite_43:
-.hword PKMN_EMOLGA
+.hword 640
 gras_seite_44:
-.hword PKMN_TARNPIGNON, PKMN_HUTSASSA
+.hword 643, 644
 gras_seite_45:
-.hword PKMN_SCOPPEL, PKMN_GREBBIT
+.hword 712, 713
 gras_seite_46:
-.hword PKMN_DARTIRI, PKMN_DARTIGNIS, PKMN_FIARO
+.hword 714, 715, 716
 gras_seite_47:
-.hword PKMN_FLABEBE, PKMN_FLOETTE, PKMN_FLORGES
+.hword 722, 723, 724
 gras_seite_48:
-.hword PKMN_MAEHIKEL, PKMN_CHEVRUMM
+.hword 725, 726
 gras_seite_49:
-.hword PKMN_PARFI, PKMN_PARFINESSE, PKMN_FLAUSCHLING, PKMN_SABBAIONE
+.hword 735, 736, 737, 738
 gras_seite_50:
-.hword PKMN_EGUANA, PKMN_ELEZARD
+.hword 747, 748
 gras_seite_51:
-.hword PKMN_DEDENNE
+.hword 755
 gras_seite_52:
-.hword PKMN_MANGUNIOR, PKMN_MANGUSPEKTOR
+.hword 787, 788
 gras_seite_53:
-.hword PKMN_IMANTIS, PKMN_MANTIDEA
+.hword 806, 807
 gras_seite_54:
-.hword PKMN_BUBUNGUS, PKMN_LAMELLUX
+.hword 808, 809
 gras_seite_55:
-.hword PKMN_FRUBBERL, PKMN_FRUBAILA, PKMN_FRUYAL
+.hword 814, 815, 816
 gras_seite_56:
-.hword PKMN_TOGEDEMARU, PKMN_MIMIGMA
+.hword 830, 831
 gras_seite_57:
-.hword PKMN_ALOLA_RATTFRATZ, PKMN_ALOLA_RATIKARL
+.hword 931, 932
 
 .align 2
 habitat_wald:
-.word wald_seite_1
+.word wald_seite_1 
 .hword 3, 0
-.word wald_seite_2
+.word wald_seite_2 
 .hword 3, 0
-.word wald_seite_3
+.word wald_seite_3 
 .hword 3, 0
-.word wald_seite_4
+.word wald_seite_4 
 .hword 2, 0
-.word wald_seite_5
+.word wald_seite_5 
 .hword 3, 0
-.word wald_seite_6
+.word wald_seite_6 
 .hword 2, 0
-.word wald_seite_7
+.word wald_seite_7 
 .hword 2, 0
-.word wald_seite_8
+.word wald_seite_8 
 .hword 4, 0
-.word wald_seite_9
+.word wald_seite_9 
 .hword 3, 0
-.word wald_seite_10
+.word wald_seite_10 
 .hword 2, 0
-.word wald_seite_11
+.word wald_seite_11 
 .hword 2, 0
-.word wald_seite_12
+.word wald_seite_12 
 .hword 3, 0
-.word wald_seite_13
+.word wald_seite_13 
 .hword 2, 0
-.word wald_seite_14
+.word wald_seite_14 
 .hword 2, 0
-.word wald_seite_15
+.word wald_seite_15 
 .hword 2, 0
-.word wald_seite_16
+.word wald_seite_16 
 .hword 4, 0
-.word wald_seite_17
+.word wald_seite_17 
 .hword 3, 0
-.word wald_seite_18
+.word wald_seite_18 
 .hword 2, 0
-.word wald_seite_19
+.word wald_seite_19 
 .hword 2, 0
-.word wald_seite_20
+.word wald_seite_20 
 .hword 3, 0
-.word wald_seite_21
+.word wald_seite_21 
 .hword 2, 0
-.word wald_seite_22
+.word wald_seite_22 
 .hword 2, 0
-.word wald_seite_23
+.word wald_seite_23 
 .hword 2, 0
-.word wald_seite_24
+.word wald_seite_24 
 .hword 3, 0
-.word wald_seite_25
+.word wald_seite_25 
 .hword 2, 0
-.word wald_seite_26
+.word wald_seite_26 
 .hword 2, 0
-.word wald_seite_27
+.word wald_seite_27 
 .hword 1, 0
-.word wald_seite_28
+.word wald_seite_28 
 .hword 1, 0
-.word wald_seite_29
+.word wald_seite_29 
 .hword 2, 0
-.word wald_seite_30
+.word wald_seite_30 
 .hword 2, 0
-.word wald_seite_31
+.word wald_seite_31 
 .hword 1, 0
-.word wald_seite_32
+.word wald_seite_32 
 .hword 3, 0
-.word wald_seite_33
+.word wald_seite_33 
 .hword 3, 0
-.word wald_seite_34
+.word wald_seite_34 
 .hword 3, 0
-.word wald_seite_35
+.word wald_seite_35 
 .hword 3, 0
-.word wald_seite_36
+.word wald_seite_36 
 .hword 2, 0
-.word wald_seite_37
+.word wald_seite_37 
 .hword 3, 0
-.word wald_seite_38
+.word wald_seite_38 
 .hword 2, 0
-.word wald_seite_39
+.word wald_seite_39 
 .hword 2, 0
-.word wald_seite_40
+.word wald_seite_40 
 .hword 2, 0
-.word wald_seite_41
+.word wald_seite_41 
 .hword 2, 0
-.word wald_seite_42
+.word wald_seite_42 
 .hword 2, 0
-.word wald_seite_43
+.word wald_seite_43 
 .hword 3, 0
-.word wald_seite_44
+.word wald_seite_44 
 .hword 3, 0
-.word wald_seite_45
+.word wald_seite_45 
 .hword 2, 0
-.word wald_seite_46
+.word wald_seite_46 
 .hword 2, 0
-.word wald_seite_47
+.word wald_seite_47 
 .hword 2, 0
-.word wald_seite_48
+.word wald_seite_48 
 .hword 2, 0
-.word wald_seite_49
+.word wald_seite_49 
 .hword 3, 0
-.word wald_seite_50
+.word wald_seite_50 
 .hword 3, 0
-.word wald_seite_51
+.word wald_seite_51 
 .hword 2, 0
-.word wald_seite_52
+.word wald_seite_52 
 .hword 2, 0
-.word wald_seite_53
-.hword 3, 0
-.word wald_seite_54
-.hword 3, 0
-.word wald_seite_55
-.hword 2, 0
+.word wald_seite_53 
+.hword 3, 1
+.word wald_seite_54 
+.hword 3, 2
+.word wald_seite_55 
+.hword 2, 3
 
 .align 2
 wald_seite_1:
-.hword PKMN_RAUPY, PKMN_SAFCON, PKMN_SMETTBO
+.hword 10, 11, 12
 wald_seite_2:
-.hword PKMN_HORNLIU, PKMN_KOKUNA, PKMN_BIBOR
+.hword 13, 14, 15
 wald_seite_3:
-.hword PKMN_WAUMPEL, PKMN_SCHALOKO, PKMN_PAPINELLA
+.hword 290, 291, 292
 wald_seite_4:
-.hword PKMN_PANEKON, PKMN_PUDOX
+.hword 293, 294
 wald_seite_5:
-.hword PKMN_TAUBSI, PKMN_TAUBOGA, PKMN_TAUBOSS
+.hword 16, 17, 18
 wald_seite_6:
-.hword PKMN_HOOTHOOT, PKMN_NOCTUH
+.hword 163, 164
 wald_seite_7:
-.hword PKMN_NATU, PKMN_XATU
+.hword 177, 178
 wald_seite_8:
-.hword PKMN_PICHU, PKMN_PIKACHU, PKMN_RAICHU, PKMN_ALOLA_RAICHU
+.hword 172, 25, 26, 933
 wald_seite_9:
-.hword PKMN_KNOFENSA, PKMN_ULTRIGARIA, PKMN_SARZENIA
+.hword 69, 70, 71
 wald_seite_10:
-.hword PKMN_PARAS, PKMN_PARASEK
+.hword 46, 47
 wald_seite_11:
-.hword PKMN_KNILZ, PKMN_KAPILZ
+.hword 306, 307
 wald_seite_12:
-.hword PKMN_SAMURZEL, PKMN_BLANAS, PKMN_TENGULIST
+.hword 298, 299, 300
 wald_seite_13:
-.hword PKMN_BLUZUK, PKMN_OMOT
+.hword 48, 49
 wald_seite_14:
-.hword PKMN_YANMA, PKMN_YANMEGA
+.hword 193, 522
 wald_seite_15:
-.hword PKMN_LEDYBA, PKMN_LEDIAN
+.hword 165, 166
 wald_seite_16:
-.hword PKMN_WEBARAK, PKMN_ARIADOS, PKMN_WATTZAPF, PKMN_VOLTULA
+.hword 167, 168, 648, 649
 wald_seite_17:
-.hword PKMN_NINCADA, PKMN_NINJASK, PKMN_NINJATOM
+.hword 301, 302, 303
 wald_seite_18:
-.hword PKMN_VOLBEAT, PKMN_ILLUMISE
+.hword 386, 387
 wald_seite_19:
-.hword PKMN_TANNZA, PKMN_FORSTELLKA
+.hword 204, 205
 wald_seite_20:
-.hword PKMN_BUMMELZ, PKMN_MUNTIER, PKMN_LETARKING
+.hword 364, 365, 366
 wald_seite_21:
-.hword PKMN_ENECO, PKMN_ENEKORO
+.hword 315, 316
 wald_seite_22:
-.hword PKMN_KRAMURX, PKMN_KRAMSHEF
+.hword 198, 483
 wald_seite_23:
-.hword PKMN_SNIEBEL, PKMN_SNIBUNNA
+.hword 215, 514
 wald_seite_24:
-.hword PKMN_OWEI, PKMN_KOKOWEI, PKMN_ALOLA_KOKOWEI
+.hword 102, 103, 947
 wald_seite_25:
-.hword PKMN_MOBAI, PKMN_MOGELBAUM
+.hword 491, 185
 wald_seite_26:
-.hword PKMN_GRIFFEL, PKMN_AMBIDIFFEL
+.hword 190, 477
 wald_seite_27:
-.hword PKMN_DAMHIRPLEX
+.hword 234
 wald_seite_28:
-.hword PKMN_KECLEON
+.hword 317
 wald_seite_29:
-.hword PKMN_PINSIR, PKMN_SKARABORN
+.hword 127, 214
 wald_seite_30:
-.hword PKMN_WABLU, PKMN_ALTARIA
+.hword 358, 359
 wald_seite_31:
-.hword PKMN_TROPIUS
+.hword 369
 wald_seite_32:
-.hword PKMN_ZWIRRLICHT, PKMN_ZWIRRKLOP, PKMN_ZWIRRFINST
+.hword 361, 362, 530
 wald_seite_33:
-.hword PKMN_TOGEPI, PKMN_TOGETIC, PKMN_TOGEKISS
+.hword 175, 176, 521
 wald_seite_34:
-.hword PKMN_GECKARBOR, PKMN_REPTAIN, PKMN_GEWALDRO
+.hword 277, 278, 279
 wald_seite_35:
-.hword PKMN_PANFLAM, PKMN_PANPYRO, PKMN_PANFERNO
+.hword 443, 444, 445
 wald_seite_36:
-.hword PKMN_ZIRPURZE, PKMN_ZIRPEISE
+.hword 454, 455
 wald_seite_37:
-.hword PKMN_BURMY, PKMN_BURMADAME, PKMN_MOTERPEL
+.hword 465, 466, 467
 wald_seite_38:
-.hword PKMN_WADRIBIE, PKMN_HONWEISEL
+.hword 468, 469
 wald_seite_39:
-.hword PKMN_KIKUGI, PKMN_KINOSO
+.hword 473, 474
 wald_seite_40:
-.hword PKMN_VEGIMAK, PKMN_VEGICHITA
+.hword 564, 565
 wald_seite_41:
-.hword PKMN_GRILLMAK, PKMN_GRILLCHITA
+.hword 566, 567
 wald_seite_42:
-.hword PKMN_SODAMAK, PKMN_SODACHITA
+.hword 568, 569
 wald_seite_43:
-.hword PKMN_STRAWICKL, PKMN_FOLIKON, PKMN_MATRIFOL
+.hword 593, 594, 595
 wald_seite_44:
-.hword PKMN_TOXIPED, PKMN_ROLLUM, PKMN_CERAPENDRA
+.hword 596, 597, 598
 wald_seite_45:
-.hword PKMN_WAUMBOLL, PKMN_ELFUN
+.hword 599, 600
 wald_seite_46:
-.hword PKMN_LILMINIP, PKMN_DRESSELLA
+.hword 601, 602
 wald_seite_47:
-.hword PKMN_SCHNUTHELM, PKMN_HYDRAGIL
+.hword 669, 670
 wald_seite_48:
-.hword PKMN_IGNIVOR, PKMN_RAMOTH
+.hword 689, 690
 wald_seite_49:
-.hword PKMN_FYNX, PKMN_RUTENA, PKMN_FENNEXIS
+.hword 706, 707, 708
 wald_seite_50:
-.hword PKMN_PURMEL, PKMN_PUPONCHO, PKMN_VIVILLON
+.hword 717, 718, 719
 wald_seite_51:
-.hword PKMN_PARAGONI, PKMN_TROMBORK
+.hword 761, 762
 wald_seite_52:
-.hword PKMN_IRRBIS, PKMN_PUMPDJINN
+.hword 763, 764
 wald_seite_53:
-.hword PKMN_BAUZ, PKMN_ARBORETOSS, PKMN_SILVARRO
+.hword 775, 776, 777
 wald_seite_54:
-.hword PKMN_MABULA, PKMN_AKKUP, PKMN_DONARION
+.hword 789, 790, 791
 wald_seite_55:
-.hword PKMN_WOMMEL, PKMN_BANDELBY
+.hword 795, 796
 
 .align 2
 habitat_ufer_und_see:
-.word seite_ufer_1
+.word seite_ufer_1 
 .hword 2, 0
-.word seite_ufer_2
+.word seite_ufer_2 
 .hword 2, 0
-.word seite_ufer_3
+.word seite_ufer_3 
 .hword 4, 0
-.word seite_ufer_4
+.word seite_ufer_4 
 .hword 2, 0
-.word seite_ufer_5
+.word seite_ufer_5 
 .hword 3, 0
-.word seite_ufer_6
+.word seite_ufer_6 
 .hword 2, 0
-.word seite_ufer_7
+.word seite_ufer_7 
 .hword 2, 0
-.word seite_ufer_8
+.word seite_ufer_8 
 .hword 2, 0
-.word seite_ufer_9
+.word seite_ufer_9 
 .hword 4, 0
-.word seite_ufer_10
+.word seite_ufer_10 
 .hword 3, 0
-.word seite_ufer_11
+.word seite_ufer_11 
 .hword 3, 0
-.word seite_ufer_12
+.word seite_ufer_12 
 .hword 2, 0
-.word seite_ufer_13
+.word seite_ufer_13 
 .hword 2, 0
-.word seite_ufer_14
+.word seite_ufer_14 
 .hword 3, 0
-.word seite_ufer_15
+.word seite_ufer_15 
 .hword 3, 0
-.word seite_ufer_16
+.word seite_ufer_16 
 .hword 3, 0
-.word seite_ufer_17
+.word seite_ufer_17 
 .hword 3, 0
-.word seite_ufer_18
+.word seite_ufer_18 
 .hword 3, 0
-.word seite_ufer_19
+.word seite_ufer_19 
 .hword 2, 0
-.word seite_ufer_20
+.word seite_ufer_20 
 .hword 2, 0
-.word seite_ufer_21
+.word seite_ufer_21 
 .hword 2, 0
-.word seite_ufer_22
+.word seite_ufer_22 
 .hword 2, 0
-.word seite_ufer_23
+.word seite_ufer_23 
 .hword 2, 0
-.word seite_ufer_24
+.word seite_ufer_24 
 .hword 3, 0
-.word seite_ufer_25
+.word seite_ufer_25 
 .hword 3, 0
-.word seite_ufer_26
+.word seite_ufer_26 
 .hword 2, 0
-.word seite_ufer_27
+.word seite_ufer_27 
 .hword 2, 0
-.word seite_ufer_28
+.word seite_ufer_28 
 .hword 2, 0
-.word seite_ufer_29
+.word seite_ufer_29 
 .hword 3, 0
 
 .align 2
 seite_ufer_1:
-.hword PKMN_GOLDINI, PKMN_GOLKING
+.hword 118, 119
 seite_ufer_2:
-.hword PKMN_KARPADOR, PKMN_GARADOS
+.hword 129, 130
 seite_ufer_3:
-.hword PKMN_KRABBY, PKMN_KINGLER, PKMN_KREBSCORPS, PKMN_KREBUTACK
+.hword 98, 99, 326, 327
 seite_ufer_4:
-.hword PKMN_SCHMERBE, PKMN_WELSAR
+.hword 323, 324
 seite_ufer_5:
-.hword PKMN_LOTURZEL, PKMN_LOMBRERO, PKMN_KAPPALORES
+.hword 295, 296, 297
 seite_ufer_6:
-.hword PKMN_GEHWEIHER, PKMN_MASKEREGEN
+.hword 311, 312
 seite_ufer_7:
-.hword PKMN_ENTON, PKMN_ENTORON
+.hword 54, 55
 seite_ufer_8:
-.hword PKMN_FELINO, PKMN_MORLORD
+.hword 194, 195
 seite_ufer_9:
-.hword PKMN_QUAPSEL, PKMN_QUAPUTZI, PKMN_QUAPPO, PKMN_QUAXO
+.hword 60, 61, 62, 186
 seite_ufer_10:
-.hword PKMN_AZURILL, PKMN_MARILL, PKMN_AZUMARILL
+.hword 350, 183, 184
 seite_ufer_11:
-.hword PKMN_FLEGMON, PKMN_LAHMUS, PKMN_LASCHOKING
+.hword 79, 80, 199
 seite_ufer_12:
-.hword PKMN_BARSCHWA, PKMN_MILOTIC
+.hword 328, 329
 seite_ufer_13:
-.hword PKMN_ANORITH, PKMN_ARMALDO
+.hword 390, 391
 seite_ufer_14:
-.hword PKMN_DRATINI, PKMN_DRAGONIR, PKMN_DRAGORAN
+.hword 147, 148, 149
 seite_ufer_15:
-.hword PKMN_SCHIGGY, PKMN_SCHILLOK, PKMN_TURTOK
+.hword 7, 8, 9
 seite_ufer_16:
-.hword PKMN_KARNIMANI, PKMN_TYRACROC, PKMN_IMPERGATOR
+.hword 158, 159, 160
 seite_ufer_17:
-.hword PKMN_HYDROPI, PKMN_MOORABBEL, PKMN_SUMPEX
+.hword 283, 284, 285
 seite_ufer_18:
-.hword PKMN_CHELAST, PKMN_CHELCARAIN, PKMN_CHELTERRAR
+.hword 440, 441, 442
 seite_ufer_19:
-.hword PKMN_BIDIZA, PKMN_BIDIFAS
+.hword 452, 453
 seite_ufer_20:
-.hword PKMN_BAMELIN, PKMN_BOJELIN
+.hword 471, 472
 seite_ufer_21:
-.hword PKMN_SCHALELLOS, PKMN_GASTRODON
+.hword 475, 476
 seite_ufer_22:
-.hword PKMN_PICCOLENTE, PKMN_SWARONESS
+.hword 633, 634
 seite_ufer_23:
-.hword PKMN_PETZNIEF, PKMN_SIBERIO
+.hword 666, 667
 seite_ufer_24:
-.hword PKMN_FROXY, PKMN_AMPHIZEL, PKMN_QUAJUTSU
+.hword 709, 710, 711
 seite_ufer_25:
-.hword PKMN_VISCORA, PKMN_VISCARGOT, PKMN_VISCOGON
+.hword 757, 758, 759
 seite_ufer_26:
-.hword PKMN_KRABBOX, PKMN_KRAWELL
+.hword 792, 793
 seite_ufer_27:
-.hword PKMN_GARSTELLA, PKMN_AGGROSTELLA
+.hword 800, 801
 seite_ufer_28:
-.hword PKMN_ARAQUA, PKMN_ARANESTRO
+.hword 804, 805
 seite_ufer_29:
-.hword PKMN_REISSLAUS, PKMN_TECTASS, PKMN_GUFA
+.hword 820, 821, 824
 
 .align 2
 habitat_wasser:
-.word seite_wasser_1
+.word seite_wasser_1 
 .hword 2, 0
-.word seite_wasser_2
+.word seite_wasser_2 
 .hword 2, 0
-.word seite_wasser_3
+.word seite_wasser_3 
 .hword 2, 0
-.word seite_wasser_4
+.word seite_wasser_4 
 .hword 2, 0
-.word seite_wasser_5
+.word seite_wasser_5 
 .hword 2, 0
-.word seite_wasser_6
+.word seite_wasser_6 
 .hword 2, 0
-.word seite_wasser_7
+.word seite_wasser_7 
 .hword 3, 0
-.word seite_wasser_8
+.word seite_wasser_8 
 .hword 2, 0
-.word seite_wasser_9
+.word seite_wasser_9 
 .hword 1, 0
-.word seite_wasser_10
+.word seite_wasser_10 
 .hword 2, 0
-.word seite_wasser_11
+.word seite_wasser_11 
 .hword 1, 0
-.word seite_wasser_12
+.word seite_wasser_12 
 .hword 2, 0
-.word seite_wasser_13
+.word seite_wasser_13 
 .hword 3, 0
-.word seite_wasser_14
+.word seite_wasser_14 
 .hword 2, 0
-.word seite_wasser_15
+.word seite_wasser_15 
 .hword 3, 0
-.word seite_wasser_16
+.word seite_wasser_16 
 .hword 3, 0
-.word seite_wasser_17
+.word seite_wasser_17 
 .hword 1, 0
-.word seite_wasser_18
+.word seite_wasser_18 
 .hword 4, 0
-.word seite_wasser_19
+.word seite_wasser_19 
 .hword 2, 0
-.word seite_wasser_20
+.word seite_wasser_20 
 .hword 3, 0
-.word seite_wasser_21
+.word seite_wasser_21 
 .hword 2, 0
-.word seite_wasser_22
+.word seite_wasser_22 
 .hword 3, 0
-.word seite_wasser_23
+.word seite_wasser_23 
 .hword 3, 0
-.word seite_wasser_24
+.word seite_wasser_24 
 .hword 1, 0
-.word seite_wasser_25
+.word seite_wasser_25 
 .hword 2, 0
-.word seite_wasser_26
+.word seite_wasser_26 
 .hword 2, 0
-.word seite_wasser_27
+.word seite_wasser_27 
 .hword 1, 0
-.word seite_wasser_28
+.word seite_wasser_28 
 .hword 1, 0
-.word seite_wasser_29
+.word seite_wasser_29 
 .hword 2, 0
-.word seite_wasser_30
+.word seite_wasser_30 
 .hword 2, 0
-.word seite_wasser_31
+.word seite_wasser_31 
 .hword 2, 0
-.word seite_wasser_32
+.word seite_wasser_32 
 .hword 3, 0
-.word seite_wasser_33
+.word seite_wasser_33 
 .hword 1, 0
-.word seite_wasser_34
+.word seite_wasser_34 
 .hword 1, 0
 
 .align 2
 seite_wasser_1:
-.hword PKMN_TENTACHA, PKMN_TENTOXA
+.hword 72, 73
 seite_wasser_2:
-.hword PKMN_WINGULL, PKMN_PELIPPER
+.hword 309, 310
 seite_wasser_3:
-.hword PKMN_STERNDU, PKMN_STARMIE
+.hword 120, 121
 seite_wasser_4:
-.hword PKMN_LAMPI, PKMN_LANTURN
+.hword 170, 171
 seite_wasser_5:
-.hword PKMN_REMORAID, PKMN_OCTILLERY
+.hword 223, 224
 seite_wasser_6:
-.hword PKMN_MUSCHAS, PKMN_AUSTOS
+.hword 90, 91
 seite_wasser_7:
-.hword PKMN_PERLU, PKMN_AALABYSS, PKMN_SAGANABYSS
+.hword 373, 374, 375
 seite_wasser_8:
-.hword PKMN_BALDORFISH, PKMN_KNIRFISH
+.hword 211, 832
 seite_wasser_9:
-.hword PKMN_CORASONN
+.hword 222
 seite_wasser_10:
-.hword PKMN_MANTIRPS, PKMN_MANTAX
+.hword 511, 226
 seite_wasser_11:
-.hword PKMN_LIEBISKUS
+.hword 325
 seite_wasser_12:
-.hword PKMN_JUROB, PKMN_JUGONG
+.hword 86, 87
 seite_wasser_13:
-.hword PKMN_SEEMOPS, PKMN_SEEJONG, PKMN_WALRAISA
+.hword 341, 342, 343
 seite_wasser_14:
-.hword PKMN_KANIVANHA, PKMN_TOHAIDO
+.hword 330, 331
 seite_wasser_15:
-.hword PKMN_WAILMER, PKMN_WAILORD, PKMN_RELICANTH
+.hword 313, 314, 381
 seite_wasser_16:
-.hword PKMN_SEEPER, PKMN_SEEMON, PKMN_SEEDRAKING
+.hword 116, 117, 230
 seite_wasser_17:
-.hword PKMN_LAPRAS
+.hword 131
 seite_wasser_18:
-.hword PKMN_AMONITAS, PKMN_AMOROSO, PKMN_KABUTO, PKMN_KABUTOPS
+.hword 138, 139, 140, 141
 seite_wasser_19:
-.hword PKMN_LILIEP, PKMN_WIELIE
+.hword 388, 389
 seite_wasser_20:
-.hword PKMN_PLINFA, PKMN_PLIPRIN, PKMN_IMPOLEON
+.hword 446, 447, 448
 seite_wasser_21:
-.hword PKMN_FINNEON, PKMN_LUMINEON
+.hword 509, 510
 seite_wasser_22:
-.hword PKMN_OTTARO, PKMN_ZWOTTRONIN, PKMN_ADMURAI
+.hword 554, 555, 556
 seite_wasser_23:
-.hword PKMN_SCHALLQUAP, PKMN_MEBRANA, PKMN_BRANAWARZ
+.hword 588, 589, 590
 seite_wasser_24:
-.hword PKMN_BARSCHUFT
+.hword 603
 seite_wasser_25:
-.hword PKMN_GALAPAFLOS, PKMN_KARIPPAS
+.hword 617, 618
 seite_wasser_26:
-.hword PKMN_QUABBEL, PKMN_APOQUALLYP
+.hword 645, 646
 seite_wasser_27:
-.hword PKMN_MAMOLIDA
+.hword 647
 seite_wasser_28:
-.hword PKMN_FLUNSCHLIK
+.hword 671
 seite_wasser_29:
-.hword PKMN_BITHORA, PKMN_THANATHORA
+.hword 741, 742
 seite_wasser_30:
-.hword PKMN_ALGITT, PKMN_TANDRAK
+.hword 743, 744
 seite_wasser_31:
-.hword PKMN_SCAMPISTO, PKMN_WUMMER
+.hword 745, 746
 seite_wasser_32:
-.hword PKMN_ROBBALL, PKMN_MARIKECK, PKMN_PRIMARENE
+.hword 781, 782, 783
 seite_wasser_33:
-.hword PKMN_LUSARDIN
+.hword 799
 seite_wasser_34:
-.hword PKMN_MORUDA
+.hword 834
 
 .align 2
-habitat_hoehl:
-.word seite_hoehle_1
+habitat_höhle:
+.word seite_hoehle_1 
 .hword 3, 0
-.word seite_hoehle_2
+.word seite_hoehle_2 
 .hword 4, 0
-.word seite_hoehle_3
+.word seite_hoehle_3 
 .hword 2, 0
-.word seite_hoehle_4
+.word seite_hoehle_4 
 .hword 3, 0
-.word seite_hoehle_5
+.word seite_hoehle_5 
 .hword 3, 0
-.word seite_hoehle_6
+.word seite_hoehle_6 
 .hword 3, 0
-.word seite_hoehle_7
+.word seite_hoehle_7 
 .hword 2, 0
-.word seite_hoehle_8
+.word seite_hoehle_8 
 .hword 1, 0
-.word seite_hoehle_9
+.word seite_hoehle_9 
 .hword 2, 0
-.word seite_hoehle_10
+.word seite_hoehle_10 
 .hword 1, 0
-.word seite_hoehle_11
+.word seite_hoehle_11 
 .hword 1, 0
-.word seite_hoehle_12
+.word seite_hoehle_12 
 .hword 3, 0
-.word seite_hoehle_13
+.word seite_hoehle_13 
 .hword 2, 0
-.word seite_hoehle_14
+.word seite_hoehle_14 
 .hword 2, 0
-.word seite_hoehle_15
+.word seite_hoehle_15 
 .hword 2, 0
-.word seite_hoehle_16
+.word seite_hoehle_16 
 .hword 2, 0
-.word seite_hoehle_17
+.word seite_hoehle_17 
 .hword 2, 0
-.word seite_hoehle_18
+.word seite_hoehle_18 
 .hword 3, 0
-.word seite_hoehle_19
+.word seite_hoehle_19 
 .hword 2, 0
-.word seite_hoehle_20
+.word seite_hoehle_20 
 .hword 3, 0
-.word seite_hoehle_21
+.word seite_hoehle_21 
 .hword 1, 0
-.word seite_hoehle_22
+.word seite_hoehle_22 
 .hword 2, 0
-.word seite_hoehle_23
+.word seite_hoehle_23 
 .hword 1, 0
-.word seite_hoehle_24
+.word seite_hoehle_24 
 .hword 2, 0
-.word seite_hoehle_25
+.word seite_hoehle_25 
 .hword 1, 0
-.word seite_hoehle_26
+.word seite_hoehle_26 
 .hword 3, 0
 
 .align 2
 seite_hoehle_1:
-.hword PKMN_ZUBAT, PKMN_GOLBAT, PKMN_IKSBAT
+.hword 41, 42, 169
 seite_hoehle_2:
-.hword PKMN_DIGDA, PKMN_DIGDRI, PKMN_ALOLA_DIGDA, PKMN_ALOLA_DIGDRI
+.hword 50, 51, 938, 939
 seite_hoehle_3:
-.hword PKMN_ONIX, PKMN_STAHLOS
+.hword 95, 208
 seite_hoehle_4:
-.hword PKMN_QUIEKEL, PKMN_KEIFEL, PKMN_MAMUTEL
+.hword 220, 221, 526
 seite_hoehle_5:
-.hword PKMN_SCHNEPPKE, PKMN_FIRNONTOR, PKMN_FROSDEDJE
+.hword 346, 347, 531
 seite_hoehle_6:
-.hword PKMN_FLURMEL, PKMN_KRAKEELO, PKMN_KRAWUMMS
+.hword 370, 371, 372
 seite_hoehle_7:
-.hword PKMN_TRAUNFUGIL, PKMN_TRAUNMAGIL
+.hword 200, 482
 seite_hoehle_8:
-.hword PKMN_DUMMISEL
+.hword 206
 seite_hoehle_9:
-.hword PKMN_NASGNET, PKMN_VOLUMINAS
+.hword 320, 529
 seite_hoehle_10:
-.hword PKMN_ZOBIRIS
+.hword 322
 seite_hoehle_11:
-.hword PKMN_FLUNKIFER
+.hword 355
 seite_hoehle_12:
-.hword PKMN_NEBULAK, PKMN_ALPOLLO, PKMN_GENGAR
+.hword 92, 93, 94
 seite_hoehle_13:
-.hword PKMN_ISSO, PKMN_WOINGENAU
+.hword 360, 202
 seite_hoehle_14:
-.hword PKMN_LUNASTEIN, PKMN_SONNFEL
+.hword 348, 349
 seite_hoehle_15:
-.hword PKMN_BRONZEL, PKMN_BRONZONG
+.hword 489, 490
 seite_hoehle_16:
-.hword PKMN_FLEKNOIL, PKMN_FLETIAMO
+.hword 580, 581
 seite_hoehle_17:
-.hword PKMN_ROTOMURF, PKMN_STALOBOR
+.hword 582, 583
 seite_hoehle_18:
-.hword PKMN_GELATINI, PKMN_GELATROPPO, PKMN_GELATWINO
+.hword 635, 636, 637
 seite_hoehle_19:
-.hword PKMN_PYGRAULON, PKMN_MEGALON
+.hword 658, 659
 seite_hoehle_20:
-.hword PKMN_LICHTEL, PKMN_LATERNECTO, PKMN_SKELABRA
+.hword 660, 661, 662
 seite_hoehle_21:
-.hword PKMN_FRIGOMETRI
+.hword 668
 seite_hoehle_22:
-.hword PKMN_GOLBIT, PKMN_GOLGANTES
+.hword 675, 676
 seite_hoehle_23:
-.hword PKMN_ROCARA
+.hword 756
 seite_hoehle_24:
-.hword PKMN_ARKTIP, PKMN_ARKTILAS
+.hword 765, 766
 seite_hoehle_25:
-.hword PKMN_TORTUNATOR
+.hword 829
 seite_hoehle_26:
-.hword PKMN_ALOLA_KLEINSTEIN, PKMN_ALOLA_GEOROK, PKMN_ALOLA_GEOWAZ
+.hword 944, 945, 946
 
 .align 2
 habitat_gebirge:
-.word seite_gebirge_1
+.word seite_gebirge_1 
 .hword 3, 0
-.word seite_gebirge_2
+.word seite_gebirge_2 
 .hword 2, 0
-.word seite_gebirge_3
+.word seite_gebirge_3 
 .hword 2, 0
-.word seite_gebirge_4
+.word seite_gebirge_4 
 .hword 3, 0
-.word seite_gebirge_5
+.word seite_gebirge_5 
 .hword 3, 0
-.word seite_gebirge_6
+.word seite_gebirge_6 
 .hword 3, 0
-.word seite_gebirge_7
+.word seite_gebirge_7 
 .hword 2, 0
-.word seite_gebirge_8
+.word seite_gebirge_8 
 .hword 3, 0
-.word seite_gebirge_9
+.word seite_gebirge_9 
 .hword 2, 0
-.word seite_gebirge_10
+.word seite_gebirge_10 
 .hword 2, 0
-.word seite_gebirge_11
+.word seite_gebirge_11 
 .hword 1, 0
-.word seite_gebirge_12
+.word seite_gebirge_12 
 .hword 2, 0
-.word seite_gebirge_13
+.word seite_gebirge_13 
 .hword 1, 0
-.word seite_gebirge_14
+.word seite_gebirge_14 
 .hword 2, 0
-.word seite_gebirge_15
+.word seite_gebirge_15 
 .hword 1, 0
-.word seite_gebirge_16
+.word seite_gebirge_16 
 .hword 3, 0
-.word seite_gebirge_17
+.word seite_gebirge_17 
 .hword 3, 0
-.word seite_gebirge_18
+.word seite_gebirge_18 
 .hword 3, 0
-.word seite_gebirge_19
+.word seite_gebirge_19 
 .hword 2, 0
-.word seite_gebirge_20
+.word seite_gebirge_20 
 .hword 1, 0
-.word seite_gebirge_21
+.word seite_gebirge_21 
 .hword 1, 0
-.word seite_gebirge_22
+.word seite_gebirge_22 
 .hword 3, 0
-.word seite_gebirge_23
+.word seite_gebirge_23 
 .hword 4, 0
-.word seite_gebirge_24
+.word seite_gebirge_24 
 .hword 3, 0
-.word seite_gebirge_25
+.word seite_gebirge_25 
 .hword 3, 0
-.word seite_gebirge_26
+.word seite_gebirge_26 
 .hword 2, 0
-.word seite_gebirge_27
+.word seite_gebirge_27 
 .hword 1, 0
-.word seite_gebirge_28
+.word seite_gebirge_28 
 .hword 3, 0
-.word seite_gebirge_29
+.word seite_gebirge_29 
 .hword 2, 0
-.word seite_gebirge_30
+.word seite_gebirge_30 
 .hword 2, 0
-.word seite_gebirge_31
+.word seite_gebirge_31 
 .hword 1, 0
-.word seite_gebirge_32
+.word seite_gebirge_32 
 .hword 2, 0
-.word seite_gebirge_33
+.word seite_gebirge_33 
 .hword 2, 0
 
 .align 2
 seite_gebirge_1:
-.hword PKMN_KLEINSTEIN, PKMN_GEOROK, PKMN_GEOWAZ
+.hword 74, 75, 76
 seite_gebirge_2:
-.hword PKMN_MENKI, PKMN_RASAFF
+.hword 56, 57
 seite_gebirge_3:
-.hword PKMN_SPOINK, PKMN_GROINK
+.hword 351, 352
 seite_gebirge_4:
-.hword PKMN_MACHOLLO, PKMN_MASCHOCK, PKMN_MACHOMEI
+.hword 66, 67, 68
 seite_gebirge_5:
-.hword PKMN_PII, PKMN_PIEPI, PKMN_PIXI
+.hword 173, 35, 36
 seite_gebirge_6:
-.hword PKMN_TRAGOSSO, PKMN_KNOGGA, PKMN_ALOLA_KOKOWEI
+.hword 104, 105, 947
 seite_gebirge_7:
-.hword PKMN_SCHNECKMAG, PKMN_MAGCARGO
+.hword 218, 219
 seite_gebirge_8:
-.hword PKMN_CAMAUB, PKMN_CAMERUPT, PKMN_QURTEL
+.hword 339, 340, 321
 seite_gebirge_9:
-.hword PKMN_MAKUHITA, PKMN_HARIYAMA
+.hword 335, 336
 seite_gebirge_10:
-.hword PKMN_MEDITIE, PKMN_MEDITALIS
+.hword 356, 357
 seite_gebirge_11:
-.hword PKMN_POTTROTT
+.hword 213
 seite_gebirge_12:
-.hword PKMN_TEDDIURSA, PKMN_URSARING
+.hword 216, 217
 seite_gebirge_13:
-.hword PKMN_BOTOGEL
+.hword 225
 seite_gebirge_14:
-.hword PKMN_SKORGLA, PKMN_SKORGRO
+.hword 207, 525
 seite_gebirge_15:
-.hword PKMN_PANDIR
+.hword 308
 seite_gebirge_16:
-.hword PKMN_MAGBY, PKMN_MAGMAR, PKMN_MAGBRANT
+.hword 240, 126, 520
 seite_gebirge_17:
-.hword PKMN_STOLLUNIOR, PKMN_STOLLRAK, PKMN_STOLLOSS
+.hword 382, 383, 384
 seite_gebirge_18:
-.hword PKMN_LARVITAR, PKMN_PUPITAR, PKMN_DESPOTAR
+.hword 246, 247, 248
 seite_gebirge_19:
-.hword PKMN_MAMPFAXO, PKMN_RELAXO
+.hword 499, 143
 seite_gebirge_20:
-.hword PKMN_ABSOL
+.hword 376
 seite_gebirge_21:
-.hword PKMN_AERODACTYL
+.hword 142
 seite_gebirge_22:
-.hword PKMN_GLUMANDA, PKMN_GLUTEXO, PKMN_GLURAK
+.hword 4, 5, 6
 seite_gebirge_23:
-.hword PKMN_KOKNODON, PKMN_RAMEIDON, PKMN_SCHILTERUS, PKMN_BOLLTERUS
+.hword 461, 462, 463, 464
 seite_gebirge_24:
-.hword PKMN_KAUMALAT, PKMN_KNARKSEL, PKMN_KNAKRACK
+.hword 496, 497, 498
 seite_gebirge_25:
-.hword PKMN_KIESLING, PKMN_SEDIMANTUR, PKMN_BROCKOLOSS
+.hword 577, 578, 579
 seite_gebirge_26:
-.hword PKMN_FLAPTERYX, PKMN_AEROPTERYX
+.hword 619, 620
 seite_gebirge_27:
-.hword PKMN_SHARDRAGO
+.hword 674
 seite_gebirge_28:
-.hword PKMN_KAPUNO, PKMN_DUODINO, PKMN_TRIKEPHALO
+.hword 686, 687, 688
 seite_gebirge_29:
-.hword PKMN_AMARINO, PKMN_AMAGARGA
+.hword 751, 752
 seite_gebirge_30:
-.hword PKMN_PAMPULI, PKMN_PAMPROSS
+.hword 802, 803
 seite_gebirge_31:
-.hword PKMN_SEN_LONG
+.hword 833
 seite_gebirge_32:
-.hword PKMN_ALOLA_VULPIX, PKMN_ALOLA_VULNONA
+.hword 936, 937
 seite_gebirge_33:
-.hword PKMN_ALOLA_SANDAN, PKMN_ALOLA_SANDAMER
+.hword 934, 935
 
 .align 2
 habitat_wildniss:
-.word seite_wildniss_1
+.word seite_wildniss_1 
 .hword 2, 0
-.word seite_wildniss_2
+.word seite_wildniss_2 
 .hword 2, 0
-.word seite_wildniss_3
+.word seite_wildniss_3 
 .hword 3, 0
-.word seite_wildniss_4
+.word seite_wildniss_4 
 .hword 3, 0
-.word seite_wildniss_5
+.word seite_wildniss_5 
 .hword 2, 0
-.word seite_wildniss_6
+.word seite_wildniss_6 
 .hword 2, 0
-.word seite_wildniss_7
+.word seite_wildniss_7 
 .hword 2, 0
-.word seite_wildniss_8
+.word seite_wildniss_8 
 .hword 3, 0
-.word seite_wildniss_9
+.word seite_wildniss_9 
 .hword 1, 0
-.word seite_wildniss_10
+.word seite_wildniss_10 
 .hword 2, 0
-.word seite_wildniss_11
+.word seite_wildniss_11 
 .hword 3, 0
-.word seite_wildniss_12
+.word seite_wildniss_12 
 .hword 3, 0
-.word seite_wildniss_13
+.word seite_wildniss_13 
 .hword 3, 0
-.word seite_wildniss_14
+.word seite_wildniss_14 
 .hword 2, 0
-.word seite_wildniss_15
+.word seite_wildniss_15 
 .hword 1, 0
-.word seite_wildniss_16
+.word seite_wildniss_16 
 .hword 2, 0
-.word seite_wildniss_17
+.word seite_wildniss_17 
 .hword 2, 0
-.word seite_wildniss_18
+.word seite_wildniss_18 
 .hword 2, 0
-.word seite_wildniss_19
+.word seite_wildniss_19 
 .hword 2, 0
-.word seite_wildniss_20
+.word seite_wildniss_20 
 .hword 1, 0
-.word seite_wildniss_21
+.word seite_wildniss_21 
 .hword 3, 0
-.word seite_wildniss_22
+.word seite_wildniss_22 
 .hword 2, 0
-.word seite_wildniss_23
+.word seite_wildniss_23 
 .hword 3, 0
-.word seite_wildniss_24
+.word seite_wildniss_24 
 .hword 2, 0
-.word seite_wildniss_25
+.word seite_wildniss_25 
 .hword 3, 0
-.word seite_wildniss_26
+.word seite_wildniss_26 
 .hword 2, 0
-.word seite_wildniss_27
+.word seite_wildniss_27 
 .hword 1, 0
-.word seite_wildniss_28
+.word seite_wildniss_28 
 .hword 2, 0
-.word seite_wildniss_29
+.word seite_wildniss_29 
 .hword 3, 0
-.word seite_wildniss_30
+.word seite_wildniss_30 
 .hword 2, 0
-.word seite_wildniss_31
+.word seite_wildniss_31 
 .hword 2, 0
-.word seite_wildniss_32
+.word seite_wildniss_32 
 .hword 2, 0
-.word seite_wildniss_33
+.word seite_wildniss_33 
 .hword 3, 0
-.word seite_wildniss_34
+.word seite_wildniss_34 
 .hword 4, 0
-.word seite_wildniss_35
+.word seite_wildniss_35 
 .hword 2, 0
-.word seite_wildniss_36
+.word seite_wildniss_36 
 .hword 3, 0
-.word seite_wildniss_37
+.word seite_wildniss_37 
 .hword 2, 0
-.word seite_wildniss_38
+.word seite_wildniss_38 
 .hword 2, 0
-.word seite_wildniss_39
+.word seite_wildniss_39 
 .hword 2, 0
-.word seite_wildniss_40
+.word seite_wildniss_40 
 .hword 2, 0
-.word seite_wildniss_41
+.word seite_wildniss_41 
 .hword 1, 0
-.word seite_wildniss_42
+.word seite_wildniss_42 
 .hword 2, 0
-.word seite_wildniss_43
-.hword 3, 0
-.word seite_wildniss_44
+.word seite_wildniss_43 
+.hword 3, 2
+.word seite_wildniss_44 
 .hword 3, 1
-.word seite_wildniss_45
-.hword 2, 0
-.word seite_wildniss_46
+.word seite_wildniss_45 
+.hword 2, 4
+.word seite_wildniss_46 
 .hword 2, 2
-.word seite_wildniss_47
-.hword 3, 0
-.word seite_wildniss_48
+.word seite_wildniss_47 
+.hword 3, 6
+.word seite_wildniss_48 
 .hword 3, 3
 
 .align 2
 seite_wildniss_1:
-.hword PKMN_HABITAK, PKMN_IBITAK
+.hword 21, 22
 seite_wildniss_2:
-.hword PKMN_SANDAN, PKMN_SANDAMER
+.hword 27, 28
 seite_wildniss_3:
-.hword PKMN_RIHORN, PKMN_RIZEROS, PKMN_RIHORNIOR
+.hword 111, 112, 517
 seite_wildniss_4:
-.hword PKMN_MAGNETILO, PKMN_MAGNETON, PKMN_MAGNEZONE
+.hword 81, 82, 515
 seite_wildniss_5:
-.hword PKMN_HUNDUSTER, PKMN_HUNDEMON
+.hword 228, 229
 seite_wildniss_6:
-.hword PKMN_PHANPY, PKMN_DONPHAN
+.hword 231, 232
 seite_wildniss_7:
-.hword PKMN_TUSKA, PKMN_NOKTUSKA
+.hword 344, 345
 seite_wildniss_8:
-.hword PKMN_KNACKLION, PKMN_VIBRAVA, PKMN_LIBELLDRA
+.hword 332, 333, 334
 seite_wildniss_9:
-.hword PKMN_PANZAERON
+.hword 227
 seite_wildniss_10:
-.hword PKMN_PUPPANCE, PKMN_LEPUMENTAS
+.hword 318, 319
 seite_wildniss_11:
-.hword PKMN_KINDWURM, PKMN_DRASCHEL, PKMN_BRUTALANDA
+.hword 395, 396, 397
 seite_wildniss_12:
-.hword PKMN_TANHEL, PKMN_METANG, PKMN_METAGROSS
+.hword 398, 399, 400
 seite_wildniss_13:
-.hword PKMN_STARALILI, PKMN_STARAVIA, PKMN_STARAPTOR
+.hword 449, 450, 451
 seite_wildniss_14:
-.hword PKMN_SKUNKAPUH, PKMN_SKUNTANK
+.hword 487, 488
 seite_wildniss_15:
-.hword PKMN_KRYPPUK
+.hword 495
 seite_wildniss_16:
-.hword PKMN_RIOLU, PKMN_LUCARIO
+.hword 500, 501
 seite_wildniss_17:
-.hword PKMN_HIPPOPOTAS, PKMN_HIPPOTERUS
+.hword 502, 503
 seite_wildniss_18:
-.hword PKMN_PIONSKORA, PKMN_PIONDRAGI
+.hword 504, 505
 seite_wildniss_19:
-.hword PKMN_GLIBUNKEL, PKMN_TOXIQUAK
+.hword 506, 507
 seite_wildniss_20:
-.hword PKMN_VENUFLIBIS
+.hword 508
 seite_wildniss_21:
-.hword PKMN_FLOINK, PKMN_FERKOKEL, PKMN_FLAMBIREX
+.hword 551, 552, 553
 seite_wildniss_22:
-.hword PKMN_SOMNIAM, PKMN_SOMNIVORA
+.hword 570, 571
 seite_wildniss_23:
-.hword PKMN_DUSSELGURR, PKMN_NAVITAUB, PKMN_FASASNOB
+.hword 572, 573, 574
 seite_wildniss_24:
-.hword PKMN_ELEZEBA, PKMN_ZEBRITZ
+.hword 575, 576
 seite_wildniss_25:
-.hword PKMN_GANOVIL, PKMN_ROKKAIMAN, PKMN_RABIGATOR
+.hword 604, 605, 606
 seite_wildniss_26:
-.hword PKMN_FLAMPION, PKMN_FLAMPIVIAN
+.hword 607, 608
 seite_wildniss_27:
-.hword PKMN_MARACAMBA
+.hword 609
 seite_wildniss_28:
-.hword PKMN_LITHOMITH, PKMN_CASTELLITH
+.hword 610, 611
 seite_wildniss_29:
-.hword PKMN_MONOZYTO, PKMN_MITODOS, PKMN_ZYTOMEGA
+.hword 630, 631, 632
 seite_wildniss_30:
-.hword PKMN_SESOKITZ, PKMN_KRONJUWILD
+.hword 638, 639
 seite_wildniss_31:
-.hword PKMN_LAUKAPS, PKMN_CAVALANZAS
+.hword 641, 642
 seite_wildniss_32:
-.hword PKMN_KASTADUR, PKMN_TENTANTEL
+.hword 650, 651
 seite_wildniss_33:
-.hword PKMN_MILZA, PKMN_SHARFAX, PKMN_MAXAX
+.hword 663, 664, 665
 seite_wildniss_34:
-.hword PKMN_GERONIMATZ, PKMN_WASHAKWIL, PKMN_SKALLYK, PKMN_GRYPHELDIS
+.hword 680, 681, 682, 683
 seite_wildniss_35:
-.hword PKMN_FURNIFRASS, PKMN_FERMICULA
+.hword 684, 685
 seite_wildniss_36:
-.hword PKMN_IGAMARO, PKMN_IGASTANISH, PKMN_BRIGARON
+.hword 703, 704, 705
 seite_wildniss_37:
-.hword PKMN_LEUFEO, PKMN_PYROLEO
+.hword 720, 721
 seite_wildniss_38:
-.hword PKMN_PAM_PAM, PKMN_PANDAGRO
+.hword 727, 728
 seite_wildniss_39:
-.hword PKMN_ISCALAR, PKMN_CALAMANERO
+.hword 739, 740
 seite_wildniss_40:
-.hword PKMN_BALGORAS, PKMN_MONARGORAS
+.hword 749, 750
 seite_wildniss_41:
-.hword PKMN_RESLADERO
+.hword 754
 seite_wildniss_42:
-.hword PKMN_EF_EM, PKMN_UHAFNIR
+.hword 767, 768
 seite_wildniss_43:
-.hword PKMN_FLAMIAU, PKMN_MIEZUNDER, PKMN_FUEGRO
+.hword 778, 779, 780
 seite_wildniss_44:
-.hword PKMN_PEPPECK, PKMN_TROMPECK, PKMN_TUKANON
+.hword 784, 785, 786
 seite_wildniss_45:
-.hword PKMN_WUFFELS, PKMN_WOLWEROCK
+.hword 797, 798
 seite_wildniss_46:
-.hword PKMN_MOLUNK, PKMN_AMFIRA
+.hword 810, 811
 seite_wildniss_47:
-.hword PKMN_KOMMANDUTAN, PKMN_QUARTERMAK, PKMN_KOALELU
+.hword 818, 819, 828
 seite_wildniss_48:
-.hword PKMN_MINIRAS, PKMN_MEDIRAS, PKMN_GRANDIRAS
+.hword 835, 836, 837
 
 .align 2
 habitat_stadt:
-.word seite_stadt_1
+.word seite_stadt_1 
 .hword 4, 0
-.word seite_stadt_2
+.word seite_stadt_2 
 .hword 2, 0
-.word seite_stadt_3
+.word seite_stadt_3 
 .hword 2, 0
-.word seite_stadt_4
+.word seite_stadt_4 
 .hword 4, 0
-.word seite_stadt_5
+.word seite_stadt_5 
 .hword 2, 0
-.word seite_stadt_6
+.word seite_stadt_6 
 .hword 2, 0
-.word seite_stadt_7
+.word seite_stadt_7 
 .hword 3, 0
-.word seite_stadt_8
+.word seite_stadt_8 
 .hword 4, 0
-.word seite_stadt_9
+.word seite_stadt_9 
 .hword 2, 0
-.word seite_stadt_10
+.word seite_stadt_10 
 .hword 2, 0
-.word seite_stadt_11
+.word seite_stadt_11 
 .hword 1, 0
-.word seite_stadt_12
+.word seite_stadt_12 
 .hword 4, 0
-.word seite_stadt_13
+.word seite_stadt_13 
 .hword 3, 0
-.word seite_stadt_14
+.word seite_stadt_14 
 .hword 2, 0
-.word seite_stadt_15
+.word seite_stadt_15 
 .hword 3, 0
-.word seite_stadt_16
+.word seite_stadt_16 
 .hword 1, 0
-.word seite_stadt_17
+.word seite_stadt_17 
 .hword 4, 0
-.word seite_stadt_18
+.word seite_stadt_18 
 .hword 2, 0
-.word seite_stadt_19
+.word seite_stadt_19 
 .hword 2, 0
-.word seite_stadt_20
+.word seite_stadt_20 
 .hword 1, 0
-.word seite_stadt_21
+.word seite_stadt_21 
 .hword 2, 0
-.word seite_stadt_22
+.word seite_stadt_22 
 .hword 2, 0
-.word seite_stadt_23
+.word seite_stadt_23 
 .hword 1, 0
-.word seite_stadt_24
+.word seite_stadt_24 
 .hword 1, 0
-.word seite_stadt_25
+.word seite_stadt_25 
 .hword 2, 0
-.word seite_stadt_26
+.word seite_stadt_26 
 .hword 1, 0
-.word seite_stadt_27
+.word seite_stadt_27 
 .hword 3, 0
-.word seite_stadt_28
+.word seite_stadt_28 
 .hword 2, 0
-.word seite_stadt_29
+.word seite_stadt_29 
 .hword 2, 0
-.word seite_stadt_30
+.word seite_stadt_30 
 .hword 2, 0
-.word seite_stadt_31
+.word seite_stadt_31 
 .hword 2, 0
-.word seite_stadt_32
+.word seite_stadt_32 
 .hword 2, 0
-.word seite_stadt_33
+.word seite_stadt_33 
 .hword 2, 0
-.word seite_stadt_34
+.word seite_stadt_34 
 .hword 3, 0
-.word seite_stadt_35
+.word seite_stadt_35 
 .hword 3, 0
-.word seite_stadt_36
+.word seite_stadt_36 
 .hword 3, 0
-.word seite_stadt_37
+.word seite_stadt_37 
 .hword 2, 0
-.word seite_stadt_38
+.word seite_stadt_38 
 .hword 3, 0
-.word seite_stadt_39
+.word seite_stadt_39 
 .hword 2, 0
-.word seite_stadt_40
+.word seite_stadt_40 
 .hword 2, 0
-.word seite_stadt_41
+.word seite_stadt_41 
 .hword 1, 0
-.word seite_stadt_42
+.word seite_stadt_42 
 .hword 2, 0
-.word seite_stadt_43
+.word seite_stadt_43 
 .hword 3, 0
-.word seite_stadt_44
+.word seite_stadt_44 
 .hword 1, 0
-.word seite_stadt_45
+.word seite_stadt_45 
 .hword 1, 0
-.word seite_stadt_46
+.word seite_stadt_46 
 .hword 2, 0
-.word seite_stadt_47
+.word seite_stadt_47 
 .hword 1, 0
-.word seite_stadt_48
+.word seite_stadt_48 
 .hword 2, 0
 
 .align 2
 seite_stadt_1:
-.hword PKMN_MAUZI, PKMN_SNOBILIKAT, PKMN_ALOLA_MAUZI, PKMN_ALOLA_SNOBILIKAT
+.hword 52, 53, 940, 941
 seite_stadt_2:
-.hword PKMN_CHARMIAN, PKMN_SHNURGARST
+.hword 484, 485
 seite_stadt_3:
-.hword PKMN_SNUBBULL, PKMN_GRANBULL
+.hword 209, 210
 seite_stadt_4:
-.hword PKMN_SLEIMA, PKMN_SLEIMOK, PKMN_ALOLA_SLEIMA, PKMN_ALOLA_SLEIMOK
+.hword 88, 89, 942, 943
 seite_stadt_5:
-.hword PKMN_SMOGON, PKMN_SMOGMOG
+.hword 109, 110
 seite_stadt_6:
-.hword PKMN_SHUPPET, PKMN_BANETTE
+.hword 377, 378
 seite_stadt_7:
-.hword PKMN_ABRA, PKMN_KADABRA, PKMN_SIMSALA
+.hword 63, 64, 65
 seite_stadt_8:
-.hword PKMN_TRASLA, PKMN_KIRLIA, PKMN_GUARDEVOIR, PKMN_GALAGLADI
+.hword 392, 393, 394, 528
 seite_stadt_9:
-.hword PKMN_KUSSILLA, PKMN_ROSSANA
+.hword 238, 124
 seite_stadt_10:
-.hword PKMN_PANTIMIMI, PKMN_PANTIMOS
+.hword 492, 122
 seite_stadt_11:
-.hword PKMN_FARBEAGLE
+.hword 235
 seite_stadt_12:
-.hword PKMN_RABAUZ, PKMN_KICKLEE, PKMN_NOCKCHAN, PKMN_KAPOERA
+.hword 236, 106, 107, 237
 seite_stadt_13:
-.hword PKMN_WONNEIRA, PKMN_CHANEIRA, PKMN_HEITEIRA
+.hword 493, 113, 242
 seite_stadt_14:
-.hword PKMN_VOLTOBAL, PKMN_LEKTROBAL
+.hword 100, 101
 seite_stadt_15:
-.hword PKMN_PORYGON, PKMN_PORYGON2, PKMN_PORYGON_Z
+.hword 137, 233, 527
 seite_stadt_16:
-.hword PKMN_DITTO
+.hword 132
 seite_stadt_17:
-.hword PKMN_EVOLI, PKMN_AQUANA, PKMN_BLITZA, PKMN_FLAMARA
+.hword 133, 134, 135, 136
 seite_stadt_18:
-.hword PKMN_PSIANA, PKMN_NACHTARA
+.hword 196, 197
 seite_stadt_19:
-.hword PKMN_FOLIPURBA, PKMN_GLAZIOLA
+.hword 523, 524
 seite_stadt_20:
-.hword PKMN_FEELINARA
+.hword 753
 seite_stadt_21:
-.hword PKMN_DRIFTLON, PKMN_DRIFZEPELI
+.hword 478, 479
 seite_stadt_22:
-.hword PKMN_HASPIROR, PKMN_SCHLAPOR
+.hword 480, 481
 seite_stadt_23:
-.hword PKMN_PLAUDAGEI
+.hword 494
 seite_stadt_24:
-.hword PKMN_ROTOM
+.hword 532
 seite_stadt_25:
-.hword PKMN_FELILOU, PKMN_KLEOPARDA
+.hword 562, 563
 seite_stadt_26:
-.hword PKMN_OHRDOCH
+.hword 584
 seite_stadt_27:
-.hword PKMN_PRAKTIBALK, PKMN_STREPOLI, PKMN_MEISTAGRIF
+.hword 585, 586, 587
 seite_stadt_28:
-.hword PKMN_JIUTESTO, PKMN_KARADONIS
+.hword 591, 592
 seite_stadt_29:
-.hword PKMN_ZURROKEX, PKMN_IROKEX
+.hword 612, 613
 seite_stadt_30:
-.hword PKMN_MAKABAJA, PKMN_ECHNATOLL
+.hword 615, 616
 seite_stadt_31:
-.hword PKMN_UNRATUETOX, PKMN_DEPONITOX
+.hword 621, 622
 seite_stadt_32:
-.hword PKMN_ZORUA, PKMN_ZOROARK
+.hword 623, 624
 seite_stadt_33:
-.hword PKMN_PICOCHILLA, PKMN_CHILLABELL
+.hword 625, 626
 seite_stadt_34:
-.hword PKMN_MOLLIMORBA, PKMN_HYPNOMORBA, PKMN_MORBITESSE
+.hword 627, 628, 629
 seite_stadt_35:
-.hword PKMN_KLIKK, PKMN_KLIKLAK, PKMN_KLIKDIKLAK
+.hword 652, 653, 654
 seite_stadt_36:
-.hword PKMN_ZAPPLARDIN, PKMN_ZAPPLALEK, PKMN_ZAPPLARANG
+.hword 655, 656, 657
 seite_stadt_37:
-.hword PKMN_PYGRAULON, PKMN_MEGALON
+.hword 658, 659
 seite_stadt_38:
-.hword PKMN_LICHTEL, PKMN_LATERNECTO, PKMN_SKELABRA
+.hword 660, 661, 662
 seite_stadt_39:
-.hword PKMN_LIN_FU, PKMN_WIE_SHU
+.hword 672, 673
 seite_stadt_40:
-.hword PKMN_GLADIANTRI, PKMN_CAESURIO
+.hword 677, 678
 seite_stadt_41:
-.hword PKMN_COIFFWAFF
+.hword 729
 seite_stadt_42:
-.hword PKMN_PSIAU, PKMN_PSIAUGON_M
+.hword 730, 731
 seite_stadt_43:
-.hword PKMN_GRAMOKLES, PKMN_DUOKLES, PKMN_DURENGARD
+.hword 732, 733, 734
 seite_stadt_44:
-.hword PKMN_CLAVION
+.hword 760
 seite_stadt_45:
-.hword PKMN_CHOREOGEL
+.hword 794
 seite_stadt_46:
-.hword PKMN_VELURSI, PKMN_KOSTURSO
+.hword 812, 813
 seite_stadt_47:
-.hword PKMN_CURELEI
+.hword 817
 seite_stadt_48:
-.hword PKMN_SANKABUH, PKMN_COLOSSAND
+.hword 822, 823
 
 .align 2
 habitat_selten:
-.word seite_selten_1
+.word seite_selten_1 
 .hword 1, 0
-.word seite_selten_2
+.word seite_selten_2 
 .hword 3, 0
-.word seite_selten_3
+.word seite_selten_3 
 .hword 2, 0
-.word seite_selten_4
+.word seite_selten_4 
 .hword 3, 0
-.word seite_selten_5
+.word seite_selten_5 
 .hword 1, 0
-.word seite_selten_6
+.word seite_selten_6 
 .hword 1, 0
-.word seite_selten_7
+.word seite_selten_7 
 .hword 1, 0
-.word seite_selten_8
+.word seite_selten_8 
 .hword 4, 0
-.word seite_selten_9
+.word seite_selten_9 
 .hword 4, 0
-.word seite_selten_10
+.word seite_selten_10 
 .hword 4, 0
-.word seite_selten_11
+.word seite_selten_11 
 .hword 3, 0
-.word seite_selten_12
+.word seite_selten_12 
 .hword 1, 0
-.word seite_selten_13
+.word seite_selten_13 
 .hword 1, 0
-.word seite_selten_14
+.word seite_selten_14 
 .hword 3, 0
-.word seite_selten_15
+.word seite_selten_15 
 .hword 2, 0
-.word seite_selten_16
+.word seite_selten_16 
 .hword 1, 0
-.word seite_selten_17
+.word seite_selten_17 
 .hword 1, 0
-.word seite_selten_18
+.word seite_selten_18 
 .hword 2, 0
-.word seite_selten_19
+.word seite_selten_19 
 .hword 2, 0
-.word seite_selten_20
+.word seite_selten_20 
 .hword 1, 0
-.word seite_selten_21
+.word seite_selten_21 
 .hword 1, 0
-.word seite_selten_22
+.word seite_selten_22 
 .hword 1, 0
-.word seite_selten_23
+.word seite_selten_23 
 .hword 1, 0
-.word seite_selten_24
+.word seite_selten_24 
 .hword 3, 0
-.word seite_selten_25
+.word seite_selten_25 
 .hword 3, 0
-.word seite_selten_26
+.word seite_selten_26 
 .hword 3, 0
-.word seite_selten_27
+.word seite_selten_27 
 .hword 1, 0
-.word seite_selten_28
+.word seite_selten_28 
 .hword 1, 0
-.word seite_selten_29
+.word seite_selten_29 
 .hword 1, 0
-.word seite_selten_30
+.word seite_selten_30 
 .hword 3, 0
-.word seite_selten_31
+.word seite_selten_31 
 .hword 1, 0
-.word seite_selten_32
+.word seite_selten_32 
 .hword 1, 0
-.word seite_selten_33
-.hword 1, 0
-.word seite_selten_34
+.word seite_selten_33 
+.hword 1, 1
+.word seite_selten_34 
 .hword 3, 1
-.word seite_selten_35
-.hword 4, 0
-.word seite_selten_36
+.word seite_selten_35 
+.hword 4, 1
+.word seite_selten_36 
 .hword 4, 2
-.word seite_selten_37
-.hword 4, 0
-.word seite_selten_38
+.word seite_selten_37 
+.hword 4, 1, 4
+.word seite_selten_38 
 .hword 4, 3
-.word seite_selten_39
-.hword 1, 0
+.word seite_selten_39 
+.hword 1, 1, 8
 
 .align 2
 seite_selten_1:
-.hword PKMN_ICOGNITO
+.hword 201
 seite_selten_2:
-.hword PKMN_ARKTOS, PKMN_ZAPDOS, PKMN_LAVADOS
+.hword 144, 145, 146
 seite_selten_3:
-.hword PKMN_MEW, PKMN_MEWTU
+.hword 151, 150
 seite_selten_4:
-.hword PKMN_RAIKOU, PKMN_ENTEI, PKMN_SUICUNE
+.hword 243, 244, 245
 seite_selten_5:
-.hword PKMN_LUGIA
+.hword 249
 seite_selten_6:
-.hword PKMN_HO_OH
+.hword 250
 seite_selten_7:
-.hword PKMN_CELEBI
+.hword 251
 seite_selten_8:
-.hword PKMN_REGIROCK, PKMN_REGICE, PKMN_REGISTEEL, PKMN_REGIGIGAS
+.hword 401, 402, 403, 539
 seite_selten_9:
-.hword PKMN_VEMOI, PKMN_LUMONA, PKMN_LIASU, PKMN_LATIAS
+.hword 892, 893, 894, 407
 seite_selten_10:
-.hword PKMN_MAMOI, PKMN_LUMOYO, PKMN_LIOSU, PKMN_LATIOS
+.hword 895, 896, 897, 408
 seite_selten_11:
-.hword PKMN_GROUDON, PKMN_KYOGRE, PKMN_RAYQUAZA
+.hword 405, 404, 406
 seite_selten_12:
-.hword PKMN_DEOXYS
+.hword 410
 seite_selten_13:
-.hword PKMN_JIRACHI
+.hword 409
 seite_selten_14:
-.hword PKMN_SELFE, PKMN_VESPRIT, PKMN_TOBUTZ
+.hword 533, 534, 535
 seite_selten_15:
-.hword PKMN_DIALGA, PKMN_PALKIA
+.hword 536, 537
 seite_selten_16:
-.hword PKMN_GIRATINA
+.hword 540
 seite_selten_17:
-.hword PKMN_GIRATINA
+.hword 540
 seite_selten_18:
-.hword PKMN_CRESSELIA, PKMN_DARKRAI
+.hword 541, 544
 seite_selten_19:
-.hword PKMN_PHIONE, PKMN_MANAPHY
+.hword 542, 543
 seite_selten_20:
-.hword PKMN_HEATRAN
+.hword 538
 seite_selten_21:
-.hword PKMN_SHAYMIN
+.hword 545
 seite_selten_22:
-.hword PKMN_ARCEUS
+.hword 546
 seite_selten_23:
-.hword PKMN_VICTINI
+.hword 547
 seite_selten_24:
-.hword PKMN_KOBALIUM, PKMN_TERRAKIUM, PKMN_VIRIDIUM
+.hword 691, 692, 693
 seite_selten_25:
-.hword PKMN_BOREOS, PKMN_VOLTOLOS, PKMN_DEMETEROS
+.hword 694, 695, 698
 seite_selten_26:
-.hword PKMN_RESHIRAM, PKMN_ZEKROM, PKMN_KYUREM
+.hword 696, 697, 699
 seite_selten_27:
-.hword PKMN_KELDEO
+.hword 700
 seite_selten_28:
-.hword PKMN_MELOETTA
+.hword 701
 seite_selten_29:
-.hword PKMN_GENESECT
+.hword 702
 seite_selten_30:
-.hword PKMN_XERNEAS, PKMN_YVELTAL, PKMN_ZYGARDE
+.hword 769, 770, 771
 seite_selten_31:
-.hword PKMN_DIANCIE
+.hword 772
 seite_selten_32:
-.hword PKMN_HOOPA
+.hword 773
 seite_selten_33:
-.hword PKMN_VOLCANION
+.hword 774
 seite_selten_34:
-.hword PKMN_TYP_NULL, PKMN_AMIGENTO, PKMN_METENO
+.hword 825, 826, 827
 seite_selten_35:
-.hword PKMN_KAPU_RIKI, PKMN_KAPU_FALA, PKMN_KAPU_TORO, PKMN_KAPU_KIME
+.hword 838, 839, 840, 841
 seite_selten_36:
-.hword PKMN_COSMOG, PKMN_COSMOVUM, PKMN_SOLGALEO, PKMN_LUNALA
+.hword 842, 843, 844, 845
 seite_selten_37:
-.hword PKMN_ANEGO, PKMN_MASSKITO, PKMN_SCHABELLE, PKMN_VOLTRIANT
+.hword 846, 847, 848, 849
 seite_selten_38:
-.hword PKMN_KAGURON, PKMN_KATAGAMI, PKMN_SCHLINGKING, PKMN_NECROZMA
+.hword 850, 851, 852, 853
 seite_selten_39:
-.hword PKMN_MAGEARNA
-seite_selten_40:
-.hword PKMN_MURAMURA, PKMN_KOPPLOSIO
-seite_selten_41:
-.hword PKMN_VENICRO, PKMN_AGOYON
-seite_selten_42:
-.hword PKMN_ZERAORA
+.hword 854

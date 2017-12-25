@@ -859,11 +859,6 @@ pokemon_palette_normal:
 .word n_p_0853Pal, 0x0
 .word n_p_0854Pal, 0x0
 .word n_p_0855Pal, 0x0
-.word n_p_0856Pal, 0x0
-.word n_p_0857Pal, 0x0
-.word n_p_0858Pal, 0x0
-.word n_p_0859Pal, 0x0
-.word n_p_0860Pal, 0x0
 .word n_p_0000Pal, 0x0
 .word n_p_0000Pal, 0x0
 .word n_p_0000Pal, 0x0
@@ -889,11 +884,16 @@ pokemon_palette_normal:
 .word n_p_0000Pal, 0x0
 .word n_p_0000Pal, 0x0
 .word n_p_0000Pal, 0x0
-.word n_p_0886Pal, 0x0
-.word n_p_0887Pal, 0x0
-.word n_p_0888Pal, 0x0
-.word n_p_0889Pal, 0x0
-.word n_p_0890Pal, 0x0
+.word n_p_0000Pal, 0x0
+.word n_p_0000Pal, 0x0
+.word n_p_0000Pal, 0x0
+.word n_p_0000Pal, 0x0
+.word n_p_0000Pal, 0x0
+.word n_p_0000Pal, 0x0
+.word n_p_0000Pal, 0x0
+.word n_p_0000Pal, 0x0
+.word n_p_0000Pal, 0x0
+.word n_p_0000Pal, 0x0
 .word n_p_0891Pal, 0x0
 .word n_p_0892Pal, 0x0
 .word n_p_0893Pal, 0x0
@@ -1203,4 +1203,3 @@ pokemon_palette_normal:
 .word n_p_1197Pal, 0x0
 .word n_p_1198Pal, 0x0
 .word n_p_1199Pal, 0x0
-
