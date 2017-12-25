@@ -1125,13 +1125,11 @@ moveset_table:
 .word pkmn_moveset_405
 
 /* Unbekannt */
-.align 2
 pkmn_moveset_0:
 .hword 0x0
 .byte 0xFF
 
 /* Bisasam */
-.align 2
 pkmn_moveset_1:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -1165,7 +1163,6 @@ pkmn_moveset_1:
 .byte 0xFF
 
 /* Bisaknosp */
-.align 2
 pkmn_moveset_2:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -1203,7 +1200,6 @@ pkmn_moveset_2:
 .byte 0xFF
 
 /* Bisaflor */
-.align 2
 pkmn_moveset_3:
 .hword MOVE_BLAETTERTANZ
 .byte 0x1
@@ -1247,7 +1243,6 @@ pkmn_moveset_3:
 .byte 0xFF
 
 /* Glumanda */
-.align 2
 pkmn_moveset_4:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -1277,7 +1272,6 @@ pkmn_moveset_4:
 .byte 0xFF
 
 /* Glutexo */
-.align 2
 pkmn_moveset_5:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -1309,7 +1303,6 @@ pkmn_moveset_5:
 .byte 0xFF
 
 /* Glurak */
-.align 2
 pkmn_moveset_6:
 .hword MOVE_FLUEGELSCHLAG
 .byte 0x1
@@ -1357,7 +1350,6 @@ pkmn_moveset_6:
 .byte 0xFF
 
 /* Schiggy */
-.align 2
 pkmn_moveset_7:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -1391,7 +1383,6 @@ pkmn_moveset_7:
 .byte 0xFF
 
 /* Schillok */
-.align 2
 pkmn_moveset_8:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -1429,7 +1420,6 @@ pkmn_moveset_8:
 .byte 0xFF
 
 /* Turtok */
-.align 2
 pkmn_moveset_9:
 .hword MOVE_LICHTKANONE
 .byte 0x1
@@ -1471,7 +1461,6 @@ pkmn_moveset_9:
 .byte 0xFF
 
 /* Raupy */
-.align 2
 pkmn_moveset_10:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -1483,7 +1472,6 @@ pkmn_moveset_10:
 .byte 0xFF
 
 /* Safcon */
-.align 2
 pkmn_moveset_11:
 .hword MOVE_HAERTNER
 .byte 0x1
@@ -1491,7 +1479,6 @@ pkmn_moveset_11:
 .byte 0xFF
 
 /* Smettbo */
-.align 2
 pkmn_moveset_12:
 .hword MOVE_WINDSTOSS
 .byte 0x1
@@ -1531,7 +1518,6 @@ pkmn_moveset_12:
 .byte 0xFF
 
 /* Hornliu */
-.align 2
 pkmn_moveset_13:
 .hword MOVE_GIFTSTACHEL
 .byte 0x1
@@ -1543,7 +1529,6 @@ pkmn_moveset_13:
 .byte 0xFF
 
 /* Kokuna */
-.align 2
 pkmn_moveset_14:
 .hword MOVE_HAERTNER
 .byte 0x1
@@ -1551,7 +1536,6 @@ pkmn_moveset_14:
 .byte 0xFF
 
 /* Bibor */
-.align 2
 pkmn_moveset_15:
 .hword MOVE_DUONADEL
 .byte 0x1
@@ -1585,7 +1569,6 @@ pkmn_moveset_15:
 .byte 0xFF
 
 /* Taubsi */
-.align 2
 pkmn_moveset_16:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -1619,7 +1602,6 @@ pkmn_moveset_16:
 .byte 0xFF
 
 /* Tauboga */
-.align 2
 pkmn_moveset_17:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -1657,7 +1639,6 @@ pkmn_moveset_17:
 .byte 0xFF
 
 /* Tauboss */
-.align 2
 pkmn_moveset_18:
 .hword MOVE_ORKAN
 .byte 0x1
@@ -1699,7 +1680,6 @@ pkmn_moveset_18:
 .byte 0xFF
 
 /* Rattfratz */
-.align 2
 pkmn_moveset_19:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -1731,7 +1711,6 @@ pkmn_moveset_19:
 .byte 0xFF
 
 /* Rattikarl */
-.align 2
 pkmn_moveset_20:
 .hword MOVE_GRIMASSE
 .byte 0x1
@@ -1771,7 +1750,6 @@ pkmn_moveset_20:
 .byte 0xFF
 
 /* Habitak */
-.align 2
 pkmn_moveset_21:
 .hword MOVE_SCHNABEL
 .byte 0x1
@@ -1801,7 +1779,6 @@ pkmn_moveset_21:
 .byte 0xFF
 
 /* Ibitak */
-.align 2
 pkmn_moveset_22:
 .hword MOVE_SCHLAGBOHRER
 .byte 0x1
@@ -1841,7 +1818,6 @@ pkmn_moveset_22:
 .byte 0xFF
 
 /* Rettan */
-.align 2
 pkmn_moveset_23:
 .hword MOVE_WICKEL
 .byte 0x1
@@ -1881,7 +1857,6 @@ pkmn_moveset_23:
 .byte 0xFF
 
 /* Arbok */
-.align 2
 pkmn_moveset_24:
 .hword MOVE_KNIRSCHER
 .byte 0x1
@@ -1935,7 +1910,6 @@ pkmn_moveset_24:
 .byte 0xFF
 
 /* Pikachu */
-.align 2
 pkmn_moveset_25:
 .hword MOVE_RUTENSCHLAG
 .byte 0x1
@@ -1977,7 +1951,6 @@ pkmn_moveset_25:
 .byte 0xFF
 
 /* Raichu */
-.align 2
 pkmn_moveset_26:
 .hword MOVE_DONNERSCHOCK
 .byte 0x1
@@ -1991,7 +1964,6 @@ pkmn_moveset_26:
 .byte 0xFF
 
 /* Alola-Raichu */
-.align 2
 pkmn_moveset_27:
 .hword MOVE_PSYCHOKINESE
 .byte 0x1
@@ -2001,7 +1973,6 @@ pkmn_moveset_27:
 .byte 0xFF
 
 /* Sandan */
-.align 2
 pkmn_moveset_28:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -2041,7 +2012,6 @@ pkmn_moveset_28:
 .byte 0xFF
 
 /* Alola-Sandan */
-.align 2
 pkmn_moveset_29:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -2081,7 +2051,6 @@ pkmn_moveset_29:
 .byte 0xFF
 
 /* Sandamer */
-.align 2
 pkmn_moveset_30:
 .hword MOVE_ZERMALMKLAUE
 .byte 0x1
@@ -2129,7 +2098,6 @@ pkmn_moveset_30:
 .byte 0xFF
 
 /* Alola-Sandamer */
-.align 2
 pkmn_moveset_31:
 .hword MOVE_EISSPEER
 .byte 0x1
@@ -2149,7 +2117,6 @@ pkmn_moveset_31:
 .byte 0xFF
 
 /* Nidoran♀ */
-.align 2
 pkmn_moveset_32:
 .hword MOVE_HEULER
 .byte 0x1
@@ -2181,7 +2148,6 @@ pkmn_moveset_32:
 .byte 0xFF
 
 /* Nidorina */
-.align 2
 pkmn_moveset_33:
 .hword MOVE_HEULE
 .byte 0x1
@@ -2213,7 +2179,6 @@ pkmn_moveset_33:
 .byte 0xFF
 
 /* Nidoqueen */
-.align 2
 pkmn_moveset_34:
 .hword MOVE_KRAFTKOLOSS
 .byte 0x1
@@ -2237,7 +2202,6 @@ pkmn_moveset_34:
 .byte 0xFF
 
 /* Nidoran♂ */
-.align 2
 pkmn_moveset_35:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -2269,7 +2233,6 @@ pkmn_moveset_35:
 .byte 0xFF
 
 /* Nidorino */
-.align 2
 pkmn_moveset_36:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -2301,7 +2264,6 @@ pkmn_moveset_36:
 .byte 0xFF
 
 /* Nidoking */
-.align 2
 pkmn_moveset_37:
 .hword MOVE_VIELENDER
 .byte 0x1
@@ -2325,7 +2287,6 @@ pkmn_moveset_37:
 .byte 0xFF
 
 /* Piepi */
-.align 2
 pkmn_moveset_38:
 .hword MOVE_RAMPENLICHT
 .byte 0x1
@@ -2377,7 +2338,6 @@ pkmn_moveset_38:
 .byte 0xFF
 
 /* Pixi */
-.align 2
 pkmn_moveset_39:
 .hword MOVE_RAMPENLICHT
 .byte 0x1
@@ -2395,7 +2355,6 @@ pkmn_moveset_39:
 .byte 0xFF
 
 /* Vulpix */
-.align 2
 pkmn_moveset_40:
 .hword MOVE_GLUT
 .byte 0x1
@@ -2441,7 +2400,6 @@ pkmn_moveset_40:
 .byte 0xFF
 
 /* Alola-Vulpix */
-.align 2
 pkmn_moveset_41:
 .hword MOVE_PULVERSCHNEE
 .byte 0x1
@@ -2487,7 +2445,6 @@ pkmn_moveset_41:
 .byte 0xFF
 
 /* Vulnona */
-.align 2
 pkmn_moveset_42:
 .hword MOVE_BEGRENZER
 .byte 0x1
@@ -2505,7 +2462,6 @@ pkmn_moveset_42:
 .byte 0xFF
 
 /* Alola-Vulnona */
-.align 2
 pkmn_moveset_43:
 .hword MOVE_ZAUBERSCHEIN
 .byte 0x1
@@ -2525,7 +2481,6 @@ pkmn_moveset_43:
 .byte 0xFF
 
 /* Pummeluff */
-.align 2
 pkmn_moveset_44:
 .hword MOVE_GESANG
 .byte 0x1
@@ -2569,7 +2524,6 @@ pkmn_moveset_44:
 .byte 0xFF
 
 /* Knuddeluff */
-.align 2
 pkmn_moveset_45:
 .hword MOVE_RISIKOTACKLE
 .byte 0x1
@@ -2587,7 +2541,6 @@ pkmn_moveset_45:
 .byte 0xFF
 
 /* Zubat */
-.align 2
 pkmn_moveset_46:
 .hword MOVE_ABSORBER
 .byte 0x1
@@ -2623,7 +2576,6 @@ pkmn_moveset_46:
 .byte 0xFF
 
 /* Golbat */
-.align 2
 pkmn_moveset_47:
 .hword MOVE_KREIDESCHREI
 .byte 0x1
@@ -2667,7 +2619,6 @@ pkmn_moveset_47:
 .byte 0xFF
 
 /* Myrapla */
-.align 2
 pkmn_moveset_48:
 .hword MOVE_ABSORBER
 .byte 0x1
@@ -2705,7 +2656,6 @@ pkmn_moveset_48:
 .byte 0xFF
 
 /* Duflor */
-.align 2
 pkmn_moveset_49:
 .hword MOVE_ABSORBER
 .byte 0x1
@@ -2747,7 +2697,6 @@ pkmn_moveset_49:
 .byte 0xFF
 
 /* Giflor */
-.align 2
 pkmn_moveset_50:
 .hword MOVE_MEGASAUGER
 .byte 0x1
@@ -2767,7 +2716,6 @@ pkmn_moveset_50:
 .byte 0xFF
 
 /* Paras */
-.align 2
 pkmn_moveset_51:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -2797,7 +2745,6 @@ pkmn_moveset_51:
 .byte 0xFF
 
 /* Parasek */
-.align 2
 pkmn_moveset_52:
 .hword MOVE_GIFTSTREICH
 .byte 0x1
@@ -2835,7 +2782,6 @@ pkmn_moveset_52:
 .byte 0xFF
 
 /* Bluzuk */
-.align 2
 pkmn_moveset_53:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -2869,7 +2815,6 @@ pkmn_moveset_53:
 .byte 0xFF
 
 /* Omot */
-.align 2
 pkmn_moveset_54:
 .hword MOVE_WINDSTOSS
 .byte 0x1
@@ -2919,7 +2864,6 @@ pkmn_moveset_54:
 .byte 0xFF
 
 /* Digda */
-.align 2
 pkmn_moveset_55:
 .hword MOVE_SANDWIRBEL
 .byte 0x1
@@ -2953,7 +2897,6 @@ pkmn_moveset_55:
 .byte 0xFF
 
 /* Alola-Digda */
-.align 2
 pkmn_moveset_56:
 .hword MOVE_SANDWIRBEL
 .byte 0x1
@@ -2987,7 +2930,6 @@ pkmn_moveset_56:
 .byte 0xFF
 
 /* Digdri */
-.align 2
 pkmn_moveset_57:
 .hword MOVE_SANDGRAB
 .byte 0x1
@@ -3033,7 +2975,6 @@ pkmn_moveset_57:
 .byte 0xFF
 
 /* Alola-Digdri */
-.align 2
 pkmn_moveset_58:
 .hword MOVE_SANDGRAB
 .byte 0x1
@@ -3079,7 +3020,6 @@ pkmn_moveset_58:
 .byte 0xFF
 
 /* Mauzi */
-.align 2
 pkmn_moveset_59:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -3115,7 +3055,6 @@ pkmn_moveset_59:
 .byte 0xFF
 
 /* Alola-Mauzi */
-.align 2
 pkmn_moveset_60:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -3153,7 +3092,6 @@ pkmn_moveset_60:
 .byte 0xFF
 
 /* Snobilikat */
-.align 2
 pkmn_moveset_61:
 .hword MOVE_STERNSCHAUER
 .byte 0x1
@@ -3199,7 +3137,6 @@ pkmn_moveset_61:
 .byte 0xFF
 
 /* Alola-Snobilikat */
-.align 2
 pkmn_moveset_62:
 .hword MOVE_STERNSCHAUER
 .byte 0x1
@@ -3249,7 +3186,6 @@ pkmn_moveset_62:
 .byte 0xFF
 
 /* Enton */
-.align 2
 pkmn_moveset_63:
 .hword MOVE_NASSMACHER
 .byte 0x1
@@ -3273,7 +3209,7 @@ pkmn_moveset_63:
 .byte 0x19
 .hword MOVE_NASSSCHWEIF
 .byte 0x1C
-.hword MOVE_ÜBERFLUTUNG
+.hword MOVE_UEBERFLUTUNG
 .byte 0x1F
 .hword MOVE_PSYCHO_PLUS
 .byte 0x22
@@ -3287,7 +3223,6 @@ pkmn_moveset_63:
 .byte 0xFF
 
 /* Entoron */
-.align 2
 pkmn_moveset_64:
 .hword MOVE_EGOTRIP
 .byte 0x1
@@ -3319,7 +3254,7 @@ pkmn_moveset_64:
 .byte 0x19
 .hword MOVE_NASSSCHWEIF
 .byte 0x1C
-.hword MOVE_ÜBERFLUTUNG
+.hword MOVE_UEBERFLUTUNG
 .byte 0x1F
 .hword MOVE_PSYCHO_PLUS
 .byte 0x24
@@ -3333,7 +3268,6 @@ pkmn_moveset_64:
 .byte 0xFF
 
 /* Menki */
-.align 2
 pkmn_moveset_65:
 .hword MOVE_BEZIRZER
 .byte 0x1
@@ -3377,7 +3311,6 @@ pkmn_moveset_65:
 .byte 0xFF
 
 /* Rasaff */
-.align 2
 pkmn_moveset_66:
 .hword MOVE_RASEREI
 .byte 0x1
@@ -3427,7 +3360,6 @@ pkmn_moveset_66:
 .byte 0xFF
 
 /* Fukano */
-.align 2
 pkmn_moveset_67:
 .hword MOVE_BISS
 .byte 0x1
@@ -3469,7 +3401,6 @@ pkmn_moveset_67:
 .byte 0xFF
 
 /* Arkani */
-.align 2
 pkmn_moveset_68:
 .hword MOVE_DONNERZAHN
 .byte 0x1
@@ -3487,7 +3418,6 @@ pkmn_moveset_68:
 .byte 0xFF
 
 /* Quapsel */
-.align 2
 pkmn_moveset_69:
 .hword MOVE_NASSMACHER
 .byte 0x1
@@ -3519,7 +3449,6 @@ pkmn_moveset_69:
 .byte 0xFF
 
 /* Quaputzi */
-.align 2
 pkmn_moveset_70:
 .hword MOVE_NASSMACHER
 .byte 0x1
@@ -3555,11 +3484,10 @@ pkmn_moveset_70:
 .byte 0xFF
 
 /* Quappo */
-.align 2
 pkmn_moveset_71:
-.hword MOVE_ÜBERROLLER
+.hword MOVE_UEBERROLLER
 .byte 0x1
-.hword MOVE_ÜBERKOPFWURF
+.hword MOVE_UEBERKOPFWURF
 .byte 0x1
 .hword MOVE_BLUBBSTRAHL
 .byte 0x1
@@ -3571,13 +3499,12 @@ pkmn_moveset_71:
 .byte 0x20
 .hword MOVE_WILLENSLESER
 .byte 0x2B
-.hword MOVE_ÜBERKOPFWURF
+.hword MOVE_UEBERKOPFWURF
 .byte 0x35
 .hword 0x0
 .byte 0xFF
 
 /* Abra */
-.align 2
 pkmn_moveset_72:
 .hword MOVE_TELEPORT
 .byte 0x1
@@ -3585,7 +3512,6 @@ pkmn_moveset_72:
 .byte 0xFF
 
 /* Kadabra */
-.align 2
 pkmn_moveset_73:
 .hword MOVE_PSYKRAFT
 .byte 0x1
@@ -3625,7 +3551,6 @@ pkmn_moveset_73:
 .byte 0xFF
 
 /* Simsala */
-.align 2
 pkmn_moveset_74:
 .hword MOVE_PSYKRAFT
 .byte 0x1
@@ -3663,7 +3588,6 @@ pkmn_moveset_74:
 .byte 0xFF
 
 /* Machollo */
-.align 2
 pkmn_moveset_75:
 .hword MOVE_FUSSKICK
 .byte 0x1
@@ -3683,13 +3607,13 @@ pkmn_moveset_75:
 .byte 0x13
 .hword MOVE_ABSCHLAG
 .byte 0x15
-.hword MOVE_ÜBERWURF
+.hword MOVE_UEBERWURF
 .byte 0x19
 .hword MOVE_WECKRUF
 .byte 0x1B
 .hword MOVE_DOPPELHIEB
 .byte 0x1F
-.hword MOVE_ÜBERROLLER
+.hword MOVE_UEBERROLLER
 .byte 0x21
 .hword MOVE_PROTZER
 .byte 0x25
@@ -3703,7 +3627,6 @@ pkmn_moveset_75:
 .byte 0xFF
 
 /* Maschock */
-.align 2
 pkmn_moveset_76:
 .hword MOVE_FUSSKICK
 .byte 0x1
@@ -3727,13 +3650,13 @@ pkmn_moveset_76:
 .byte 0x13
 .hword MOVE_ABSCHLAG
 .byte 0x15
-.hword MOVE_ÜBERWURF
+.hword MOVE_UEBERWURF
 .byte 0x19
 .hword MOVE_WECKRUF
 .byte 0x1B
 .hword MOVE_DOPPELHIEB
 .byte 0x21
-.hword MOVE_ÜBERROLLER
+.hword MOVE_UEBERROLLER
 .byte 0x25
 .hword MOVE_PROTZER
 .byte 0x2B
@@ -3747,7 +3670,6 @@ pkmn_moveset_76:
 .byte 0xFF
 
 /* Machomei */
-.align 2
 pkmn_moveset_77:
 .hword MOVE_STAERKE
 .byte 0x1
@@ -3775,13 +3697,13 @@ pkmn_moveset_77:
 .byte 0x13
 .hword MOVE_ABSCHLAG
 .byte 0x15
-.hword MOVE_ÜBERWURF
+.hword MOVE_UEBERWURF
 .byte 0x19
 .hword MOVE_WECKRUF
 .byte 0x1B
 .hword MOVE_DOPPELHIEB
 .byte 0x21
-.hword MOVE_ÜBERROLLER
+.hword MOVE_UEBERROLLER
 .byte 0x25
 .hword MOVE_PROTZER
 .byte 0x2B
@@ -3795,7 +3717,6 @@ pkmn_moveset_77:
 .byte 0xFF
 
 /* Knofensa */
-.align 2
 pkmn_moveset_78:
 .hword MOVE_RANKENHIEB
 .byte 0x1
@@ -3829,7 +3750,6 @@ pkmn_moveset_78:
 .byte 0xFF
 
 /* Ultrigaria */
-.align 2
 pkmn_moveset_79:
 .hword MOVE_RANKENHIEB
 .byte 0x1
@@ -3867,7 +3787,6 @@ pkmn_moveset_79:
 .byte 0xFF
 
 /* Sarzenia */
-.align 2
 pkmn_moveset_80:
 .hword MOVE_GRASMIXER
 .byte 0x1
@@ -3893,7 +3812,6 @@ pkmn_moveset_80:
 .byte 0xFF
 
 /* Tentacha */
-.align 2
 pkmn_moveset_81:
 .hword MOVE_GIFTSTACHEL
 .byte 0x1
@@ -3933,7 +3851,6 @@ pkmn_moveset_81:
 .byte 0xFF
 
 /* Tentoxa */
-.align 2
 pkmn_moveset_82:
 .hword MOVE_TYPENSPIEGEL
 .byte 0x1
@@ -3983,7 +3900,6 @@ pkmn_moveset_82:
 .byte 0xFF
 
 /* Kleinstein */
-.align 2
 pkmn_moveset_83:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -4021,7 +3937,6 @@ pkmn_moveset_83:
 .byte 0xFF
 
 /* Alola-Kleinstein */
-.align 2
 pkmn_moveset_84:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -4059,7 +3974,6 @@ pkmn_moveset_84:
 .byte 0xFF
 
 /* Georok */
-.align 2
 pkmn_moveset_85:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -4101,7 +4015,6 @@ pkmn_moveset_85:
 .byte 0xFF
 
 /* Alola-Georok */
-.align 2
 pkmn_moveset_86:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -4143,7 +4056,6 @@ pkmn_moveset_86:
 .byte 0xFF
 
 /* Geowaz */
-.align 2
 pkmn_moveset_87:
 .hword MOVE_RAMMBOSS
 .byte 0x1
@@ -4189,7 +4101,6 @@ pkmn_moveset_87:
 .byte 0xFF
 
 /* Alola-Geowaz */
-.align 2
 pkmn_moveset_88:
 .hword MOVE_RAMMBOSS
 .byte 0x1
@@ -4235,7 +4146,6 @@ pkmn_moveset_88:
 .byte 0xFF
 
 /* Ponita */
-.align 2
 pkmn_moveset_89:
 .hword MOVE_HEULER
 .byte 0x1
@@ -4269,7 +4179,6 @@ pkmn_moveset_89:
 .byte 0xFF
 
 /* Gallopa */
-.align 2
 pkmn_moveset_90:
 .hword MOVE_FURIENSCHLAG
 .byte 0x1
@@ -4315,7 +4224,6 @@ pkmn_moveset_90:
 .byte 0xFF
 
 /* Flegmon */
-.align 2
 pkmn_moveset_91:
 .hword MOVE_FLUCH
 .byte 0x1
@@ -4353,7 +4261,6 @@ pkmn_moveset_91:
 .byte 0xFF
 
 /* Lahmus */
-.align 2
 pkmn_moveset_92:
 .hword MOVE_PANZERSCHUTZ
 .byte 0x1
@@ -4399,7 +4306,6 @@ pkmn_moveset_92:
 .byte 0xFF
 
 /* Magnetilo */
-.align 2
 pkmn_moveset_93:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -4441,7 +4347,6 @@ pkmn_moveset_93:
 .byte 0xFF
 
 /* Magneton */
-.align 2
 pkmn_moveset_94:
 .hword MOVE_TRIPLETTE
 .byte 0x1
@@ -4495,7 +4400,6 @@ pkmn_moveset_94:
 .byte 0xFF
 
 /* Porenta */
-.align 2
 pkmn_moveset_95:
 .hword MOVE_STURZFLUG
 .byte 0x1
@@ -4539,7 +4443,6 @@ pkmn_moveset_95:
 .byte 0xFF
 
 /* Dodu */
-.align 2
 pkmn_moveset_96:
 .hword MOVE_SCHNABEL
 .byte 0x1
@@ -4577,7 +4480,6 @@ pkmn_moveset_96:
 .byte 0xFF
 
 /* Dodri */
-.align 2
 pkmn_moveset_97:
 .hword MOVE_TRIPLETTE
 .byte 0x1
@@ -4623,7 +4525,6 @@ pkmn_moveset_97:
 .byte 0xFF
 
 /* Jurob */
-.align 2
 pkmn_moveset_98:
 .hword MOVE_KOPFNUSS
 .byte 0x1
@@ -4663,7 +4564,6 @@ pkmn_moveset_98:
 .byte 0xFF
 
 /* Jugong */
-.align 2
 pkmn_moveset_99:
 .hword MOVE_EISESKAELTE
 .byte 0x1
@@ -4713,7 +4613,6 @@ pkmn_moveset_99:
 .byte 0xFF
 
 /* Sleima */
-.align 2
 pkmn_moveset_100:
 .hword MOVE_PFUND
 .byte 0x1
@@ -4751,7 +4650,6 @@ pkmn_moveset_100:
 .byte 0xFF
 
 /* Alola-Sleima */
-.align 2
 pkmn_moveset_101:
 .hword MOVE_PFUND
 .byte 0x1
@@ -4789,7 +4687,6 @@ pkmn_moveset_101:
 .byte 0xFF
 
 /* Sleimok */
-.align 2
 pkmn_moveset_102:
 .hword MOVE_GIFTFALLE
 .byte 0x1
@@ -4835,7 +4732,6 @@ pkmn_moveset_102:
 .byte 0xFF
 
 /* Alola-Sleimok */
-.align 2
 pkmn_moveset_103:
 .hword MOVE_GIFTFALLE
 .byte 0x1
@@ -4881,7 +4777,6 @@ pkmn_moveset_103:
 .byte 0xFF
 
 /* Muschas */
-.align 2
 pkmn_moveset_104:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -4921,7 +4816,6 @@ pkmn_moveset_104:
 .byte 0xFF
 
 /* Austos */
-.align 2
 pkmn_moveset_105:
 .hword MOVE_HYDROPUMPE
 .byte 0x1
@@ -4947,7 +4841,6 @@ pkmn_moveset_105:
 .byte 0xFF
 
 /* Nebulak */
-.align 2
 pkmn_moveset_106:
 .hword MOVE_HYPNOSE
 .byte 0x1
@@ -4983,7 +4876,6 @@ pkmn_moveset_106:
 .byte 0xFF
 
 /* Alpollo */
-.align 2
 pkmn_moveset_107:
 .hword MOVE_FINSTERFAUST
 .byte 0x1
@@ -5025,7 +4917,6 @@ pkmn_moveset_107:
 .byte 0xFF
 
 /* Gengar */
-.align 2
 pkmn_moveset_108:
 .hword MOVE_FINSTERFAUST
 .byte 0x1
@@ -5065,7 +4956,6 @@ pkmn_moveset_108:
 .byte 0xFF
 
 /* Onix */
-.align 2
 pkmn_moveset_109:
 .hword MOVE_LEHMSUHLER
 .byte 0x1
@@ -5115,7 +5005,6 @@ pkmn_moveset_109:
 .byte 0xFF
 
 /* Traumato */
-.align 2
 pkmn_moveset_110:
 .hword MOVE_PFUND
 .byte 0x1
@@ -5155,7 +5044,6 @@ pkmn_moveset_110:
 .byte 0xFF
 
 /* Hypno */
-.align 2
 pkmn_moveset_111:
 .hword MOVE_SEHER
 .byte 0x1
@@ -5207,7 +5095,6 @@ pkmn_moveset_111:
 .byte 0xFF
 
 /* Krabby */
-.align 2
 pkmn_moveset_112:
 .hword MOVE_LEHMSUHLER
 .byte 0x1
@@ -5243,7 +5130,6 @@ pkmn_moveset_112:
 .byte 0xFF
 
 /* Kingler */
-.align 2
 pkmn_moveset_113:
 .hword MOVE_RUNDUMSCHUTZ
 .byte 0x1
@@ -5285,7 +5171,6 @@ pkmn_moveset_113:
 .byte 0xFF
 
 /* Voltobal */
-.align 2
 pkmn_moveset_114:
 .hword MOVE_LADEVORGANG
 .byte 0x1
@@ -5325,7 +5210,6 @@ pkmn_moveset_114:
 .byte 0xFF
 
 /* Lektrobal */
-.align 2
 pkmn_moveset_115:
 .hword MOVE_MAGNETREGLER
 .byte 0x1
@@ -5371,7 +5255,6 @@ pkmn_moveset_115:
 .byte 0xFF
 
 /* Owei */
-.align 2
 pkmn_moveset_116:
 .hword MOVE_STAKKATO
 .byte 0x1
@@ -5407,7 +5290,6 @@ pkmn_moveset_116:
 .byte 0xFF
 
 /* Kokowei */
-.align 2
 pkmn_moveset_117:
 .hword MOVE_STAMPFER
 .byte 0x1
@@ -5431,7 +5313,6 @@ pkmn_moveset_117:
 .byte 0xFF
 
 /* Alola-Kokowei */
-.align 2
 pkmn_moveset_118:
 .hword MOVE_DRACHENHAMMER
 .byte 0x1
@@ -5455,7 +5336,6 @@ pkmn_moveset_118:
 .byte 0xFF
 
 /* Tragosso */
-.align 2
 pkmn_moveset_119:
 .hword MOVE_HEULER
 .byte 0x1
@@ -5493,7 +5373,6 @@ pkmn_moveset_119:
 .byte 0xFF
 
 /* Knogga */
-.align 2
 pkmn_moveset_120:
 .hword MOVE_HEULER
 .byte 0x1
@@ -5537,7 +5416,6 @@ pkmn_moveset_120:
 .byte 0xFF
 
 /* Alola-Knogga */
-.align 2
 pkmn_moveset_121:
 .hword MOVE_HEULER
 .byte 0x1
@@ -5581,7 +5459,6 @@ pkmn_moveset_121:
 .byte 0xFF
 
 /* Kicklee */
-.align 2
 pkmn_moveset_122:
 .hword MOVE_DOPPELKICK
 .byte 0x1
@@ -5635,7 +5512,6 @@ pkmn_moveset_122:
 .byte 0xFF
 
 /* Nockchan */
-.align 2
 pkmn_moveset_123:
 .hword MOVE_KOMETENHIEB
 .byte 0x1
@@ -5691,7 +5567,6 @@ pkmn_moveset_123:
 .byte 0xFF
 
 /* Schlurp */
-.align 2
 pkmn_moveset_124:
 .hword MOVE_SCHLECKER
 .byte 0x1
@@ -5727,7 +5602,6 @@ pkmn_moveset_124:
 .byte 0xFF
 
 /* Smogon */
-.align 2
 pkmn_moveset_125:
 .hword MOVE_GIFTWOLKE
 .byte 0x1
@@ -5763,7 +5637,6 @@ pkmn_moveset_125:
 .byte 0xFF
 
 /* Smogmog */
-.align 2
 pkmn_moveset_126:
 .hword MOVE_DOPPELSCHLAG
 .byte 0x1
@@ -5807,7 +5680,6 @@ pkmn_moveset_126:
 .byte 0xFF
 
 /* Rihorn */
-.align 2
 pkmn_moveset_127:
 .hword MOVE_HORNATTACKE
 .byte 0x1
@@ -5843,7 +5715,6 @@ pkmn_moveset_127:
 .byte 0xFF
 
 /* Rizeros */
-.align 2
 pkmn_moveset_128:
 .hword MOVE_HAMMERARM
 .byte 0x1
@@ -5889,7 +5760,6 @@ pkmn_moveset_128:
 .byte 0xFF
 
 /* Chaneira */
-.align 2
 pkmn_moveset_129:
 .hword MOVE_RISIKOTACKLE
 .byte 0x1
@@ -5931,7 +5801,6 @@ pkmn_moveset_129:
 .byte 0xFF
 
 /* Tangela */
-.align 2
 pkmn_moveset_130:
 .hword MOVE_VERWURZLER
 .byte 0x1
@@ -5975,7 +5844,6 @@ pkmn_moveset_130:
 .byte 0xFF
 
 /* Kangama */
-.align 2
 pkmn_moveset_131:
 .hword MOVE_KOMETENHIEB
 .byte 0x1
@@ -6011,7 +5879,6 @@ pkmn_moveset_131:
 .byte 0xFF
 
 /* Seeper */
-.align 2
 pkmn_moveset_132:
 .hword MOVE_BLUBBER
 .byte 0x1
@@ -6041,7 +5908,6 @@ pkmn_moveset_132:
 .byte 0xFF
 
 /* Seemon */
-.align 2
 pkmn_moveset_133:
 .hword MOVE_HYDROPUMPE
 .byte 0x1
@@ -6079,7 +5945,6 @@ pkmn_moveset_133:
 .byte 0xFF
 
 /* Goldini */
-.align 2
 pkmn_moveset_134:
 .hword MOVE_SCHNABEL
 .byte 0x1
@@ -6105,7 +5970,7 @@ pkmn_moveset_134:
 .byte 0x20
 .hword MOVE_HORNBOHRER
 .byte 0x25
-.hword MOVE_ÜBERFLUTUNG
+.hword MOVE_UEBERFLUTUNG
 .byte 0x28
 .hword MOVE_VIELENDER
 .byte 0x2D
@@ -6113,7 +5978,6 @@ pkmn_moveset_134:
 .byte 0xFF
 
 /* Golking */
-.align 2
 pkmn_moveset_135:
 .hword MOVE_VIELENDER
 .byte 0x1
@@ -6145,7 +6009,7 @@ pkmn_moveset_135:
 .byte 0x20
 .hword MOVE_HORNBOHRER
 .byte 0x28
-.hword MOVE_ÜBERFLUTUNG
+.hword MOVE_UEBERFLUTUNG
 .byte 0x2E
 .hword MOVE_VIELENDER
 .byte 0x36
@@ -6153,7 +6017,6 @@ pkmn_moveset_135:
 .byte 0xFF
 
 /* Sterndu */
-.align 2
 pkmn_moveset_136:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -6197,7 +6060,6 @@ pkmn_moveset_136:
 .byte 0xFF
 
 /* Starmie */
-.align 2
 pkmn_moveset_137:
 .hword MOVE_HYDROPUMPE
 .byte 0x1
@@ -6217,7 +6079,6 @@ pkmn_moveset_137:
 .byte 0xFF
 
 /* Pantimos */
-.align 2
 pkmn_moveset_138:
 .hword MOVE_NEBELFELD
 .byte 0x1
@@ -6273,7 +6134,6 @@ pkmn_moveset_138:
 .byte 0xFF
 
 /* Sichlor */
-.align 2
 pkmn_moveset_139:
 .hword MOVE_VAKUUMWELLE
 .byte 0x1
@@ -6315,7 +6175,6 @@ pkmn_moveset_139:
 .byte 0xFF
 
 /* Rossana */
-.align 2
 pkmn_moveset_140:
 .hword MOVE_DIEBESKUSS
 .byte 0x1
@@ -6361,7 +6220,6 @@ pkmn_moveset_140:
 .byte 0xFF
 
 /* Elektek */
-.align 2
 pkmn_moveset_141:
 .hword MOVE_RUCKZUCKHIEB
 .byte 0x1
@@ -6397,7 +6255,6 @@ pkmn_moveset_141:
 .byte 0xFF
 
 /* Magmar */
-.align 2
 pkmn_moveset_142:
 .hword MOVE_SMOG
 .byte 0x1
@@ -6433,7 +6290,6 @@ pkmn_moveset_142:
 .byte 0xFF
 
 /* Pinsir */
-.align 2
 pkmn_moveset_143:
 .hword MOVE_KLAMMER
 .byte 0x1
@@ -6447,7 +6303,7 @@ pkmn_moveset_143:
 .byte 0xB
 .hword MOVE_VERGELTUNG
 .byte 0xF
-.hword MOVE_ÜBERWURF
+.hword MOVE_UEBERWURF
 .byte 0x12
 .hword MOVE_DOPPELSCHLAG
 .byte 0x16
@@ -6455,7 +6311,7 @@ pkmn_moveset_143:
 .byte 0x1A
 .hword MOVE_KREUZSCHERE
 .byte 0x1D
-.hword MOVE_ÜBERROLLER
+.hword MOVE_UEBERROLLER
 .byte 0x21
 .hword MOVE_BERGSTURM
 .byte 0x24
@@ -6471,7 +6327,6 @@ pkmn_moveset_143:
 .byte 0xFF
 
 /* Tauros */
-.align 2
 pkmn_moveset_144:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -6507,7 +6362,6 @@ pkmn_moveset_144:
 .byte 0xFF
 
 /* Karpador */
-.align 2
 pkmn_moveset_145:
 .hword MOVE_PLATSCHER
 .byte 0x1
@@ -6519,7 +6373,6 @@ pkmn_moveset_145:
 .byte 0xFF
 
 /* Garados */
-.align 2
 pkmn_moveset_146:
 .hword MOVE_BISS
 .byte 0x1
@@ -6555,7 +6408,6 @@ pkmn_moveset_146:
 .byte 0xFF
 
 /* Lapras */
-.align 2
 pkmn_moveset_147:
 .hword MOVE_GESANG
 .byte 0x1
@@ -6591,7 +6443,6 @@ pkmn_moveset_147:
 .byte 0xFF
 
 /* Ditto */
-.align 2
 pkmn_moveset_148:
 .hword MOVE_WANDLER
 .byte 0x1
@@ -6599,7 +6450,6 @@ pkmn_moveset_148:
 .byte 0xFF
 
 /* Evoli */
-.align 2
 pkmn_moveset_149:
 .hword MOVE_BEZIRZER
 .byte 0x1
@@ -6639,7 +6489,6 @@ pkmn_moveset_149:
 .byte 0xFF
 
 /* Aquana */
-.align 2
 pkmn_moveset_150:
 .hword MOVE_AQUAKNARRE
 .byte 0x1
@@ -6675,7 +6524,6 @@ pkmn_moveset_150:
 .byte 0xFF
 
 /* Blitza */
-.align 2
 pkmn_moveset_151:
 .hword MOVE_DONNERSCHOCK
 .byte 0x1
@@ -6711,7 +6559,6 @@ pkmn_moveset_151:
 .byte 0xFF
 
 /* Flamara */
-.align 2
 pkmn_moveset_152:
 .hword MOVE_GLUT
 .byte 0x1
@@ -6747,7 +6594,6 @@ pkmn_moveset_152:
 .byte 0xFF
 
 /* Porygon */
-.align 2
 pkmn_moveset_153:
 .hword MOVE_UMWANDLUNG2
 .byte 0x1
@@ -6783,7 +6629,6 @@ pkmn_moveset_153:
 .byte 0xFF
 
 /* Amonitas */
-.align 2
 pkmn_moveset_154:
 .hword MOVE_UMKLAMMERUNG
 .byte 0x1
@@ -6817,7 +6662,6 @@ pkmn_moveset_154:
 .byte 0xFF
 
 /* Amoroso */
-.align 2
 pkmn_moveset_155:
 .hword MOVE_DORNKANONE
 .byte 0x1
@@ -6859,7 +6703,6 @@ pkmn_moveset_155:
 .byte 0xFF
 
 /* Kabuto */
-.align 2
 pkmn_moveset_156:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -6889,7 +6732,6 @@ pkmn_moveset_156:
 .byte 0xFF
 
 /* Kabutops */
-.align 2
 pkmn_moveset_157:
 .hword MOVE_SCHLITZER
 .byte 0x1
@@ -6933,7 +6775,6 @@ pkmn_moveset_157:
 .byte 0xFF
 
 /* Aerodactyl */
-.align 2
 pkmn_moveset_158:
 .hword MOVE_EISENSCHAEDEL
 .byte 0x1
@@ -6975,7 +6816,6 @@ pkmn_moveset_158:
 .byte 0xFF
 
 /* Relaxo */
-.align 2
 pkmn_moveset_159:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -7015,7 +6855,6 @@ pkmn_moveset_159:
 .byte 0xFF
 
 /* Arktos */
-.align 2
 pkmn_moveset_160:
 .hword MOVE_WINDSTOSS
 .byte 0x1
@@ -7053,7 +6892,6 @@ pkmn_moveset_160:
 .byte 0xFF
 
 /* Zapdos */
-.align 2
 pkmn_moveset_161:
 .hword MOVE_SCHNABEL
 .byte 0x1
@@ -7091,7 +6929,6 @@ pkmn_moveset_161:
 .byte 0xFF
 
 /* Lavados */
-.align 2
 pkmn_moveset_162:
 .hword MOVE_FLUEGELSCHLAG
 .byte 0x1
@@ -7129,7 +6966,6 @@ pkmn_moveset_162:
 .byte 0xFF
 
 /* Dratini */
-.align 2
 pkmn_moveset_163:
 .hword MOVE_WICKEL
 .byte 0x1
@@ -7163,7 +6999,6 @@ pkmn_moveset_163:
 .byte 0xFF
 
 /* Dragonir */
-.align 2
 pkmn_moveset_164:
 .hword MOVE_WICKEL
 .byte 0x1
@@ -7201,7 +7036,6 @@ pkmn_moveset_164:
 .byte 0xFF
 
 /* Dragoran */
-.align 2
 pkmn_moveset_165:
 .hword MOVE_FLUEGELSCHLAG
 .byte 0x1
@@ -7253,7 +7087,6 @@ pkmn_moveset_165:
 .byte 0xFF
 
 /* Mewtu */
-.align 2
 pkmn_moveset_166:
 .hword MOVE_KONZENTRATION
 .byte 0x1
@@ -7299,7 +7132,6 @@ pkmn_moveset_166:
 .byte 0xFF
 
 /* Mew */
-.align 2
 pkmn_moveset_167:
 .hword MOVE_PFUND
 .byte 0x1
@@ -7331,7 +7163,6 @@ pkmn_moveset_167:
 .byte 0xFF
 
 /* Endivie */
-.align 2
 pkmn_moveset_168:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -7365,7 +7196,6 @@ pkmn_moveset_168:
 .byte 0xFF
 
 /* Lorblatt */
-.align 2
 pkmn_moveset_169:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -7403,7 +7233,6 @@ pkmn_moveset_169:
 .byte 0xFF
 
 /* Meganie */
-.align 2
 pkmn_moveset_170:
 .hword MOVE_BLAETTERTANZ
 .byte 0x1
@@ -7449,7 +7278,6 @@ pkmn_moveset_170:
 .byte 0xFF
 
 /* Feurigel */
-.align 2
 pkmn_moveset_171:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -7487,7 +7315,6 @@ pkmn_moveset_171:
 .byte 0xFF
 
 /* Igelavar */
-.align 2
 pkmn_moveset_172:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -7527,7 +7354,6 @@ pkmn_moveset_172:
 .byte 0xFF
 
 /* Tornupto */
-.align 2
 pkmn_moveset_173:
 .hword MOVE_ERUPTION
 .byte 0x1
@@ -7575,7 +7401,6 @@ pkmn_moveset_173:
 .byte 0xFF
 
 /* Karnimani */
-.align 2
 pkmn_moveset_174:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -7613,7 +7438,6 @@ pkmn_moveset_174:
 .byte 0xFF
 
 /* Tyracroc */
-.align 2
 pkmn_moveset_175:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -7653,7 +7477,6 @@ pkmn_moveset_175:
 .byte 0xFF
 
 /* Impergator */
-.align 2
 pkmn_moveset_176:
 .hword MOVE_AGILITAET
 .byte 0x1
@@ -7697,7 +7520,6 @@ pkmn_moveset_176:
 .byte 0xFF
 
 /* Wiesor */
-.align 2
 pkmn_moveset_177:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -7731,7 +7553,6 @@ pkmn_moveset_177:
 .byte 0xFF
 
 /* Wiesenior */
-.align 2
 pkmn_moveset_178:
 .hword MOVE_AGILITAET
 .byte 0x1
@@ -7775,7 +7596,6 @@ pkmn_moveset_178:
 .byte 0xFF
 
 /* Hoothoot */
-.align 2
 pkmn_moveset_179:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -7817,7 +7637,6 @@ pkmn_moveset_179:
 .byte 0xFF
 
 /* Noctuh */
-.align 2
 pkmn_moveset_180:
 .hword MOVE_TRAUMFRESSER
 .byte 0x1
@@ -7865,7 +7684,6 @@ pkmn_moveset_180:
 .byte 0xFF
 
 /* Ledyba */
-.align 2
 pkmn_moveset_181:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -7899,7 +7717,6 @@ pkmn_moveset_181:
 .byte 0xFF
 
 /* Ledian */
-.align 2
 pkmn_moveset_182:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -7937,7 +7754,6 @@ pkmn_moveset_182:
 .byte 0xFF
 
 /* Webarak */
-.align 2
 pkmn_moveset_183:
 .hword MOVE_GIFTSTACHEL
 .byte 0x1
@@ -7979,7 +7795,6 @@ pkmn_moveset_183:
 .byte 0xFF
 
 /* Ariados */
-.align 2
 pkmn_moveset_184:
 .hword MOVE_SCHWERTTANZ
 .byte 0x1
@@ -8035,7 +7850,6 @@ pkmn_moveset_184:
 .byte 0xFF
 
 /* Iksbat */
-.align 2
 pkmn_moveset_185:
 .hword MOVE_GIFTSTREICH
 .byte 0x1
@@ -8081,7 +7895,6 @@ pkmn_moveset_185:
 .byte 0xFF
 
 /* Lampi */
-.align 2
 pkmn_moveset_186:
 .hword MOVE_BLUBBER
 .byte 0x1
@@ -8119,7 +7932,6 @@ pkmn_moveset_186:
 .byte 0xFF
 
 /* Lanturn */
-.align 2
 pkmn_moveset_187:
 .hword MOVE_HORTER
 .byte 0x1
@@ -8129,7 +7941,7 @@ pkmn_moveset_187:
 .byte 0x1
 .hword MOVE_MYSTOWELLEN
 .byte 0x1
-.hword MOVE_RAMPENLICHT
+.hword MOVE_RAMPENLICHT USUM
 .byte 0x1
 .hword MOVE_BLUBBER
 .byte 0x1
@@ -8177,7 +7989,6 @@ pkmn_moveset_187:
 .byte 0xFF
 
 /* Pichu */
-.align 2
 pkmn_moveset_188:
 .hword MOVE_DONNERSCHOCK
 .byte 0x1
@@ -8195,7 +8006,6 @@ pkmn_moveset_188:
 .byte 0xFF
 
 /* Pii */
-.align 2
 pkmn_moveset_189:
 .hword MOVE_PFUND
 .byte 0x1
@@ -8215,7 +8025,6 @@ pkmn_moveset_189:
 .byte 0xFF
 
 /* Fluffeluff */
-.align 2
 pkmn_moveset_190:
 .hword MOVE_GESANG
 .byte 0x1
@@ -8233,7 +8042,6 @@ pkmn_moveset_190:
 .byte 0xFF
 
 /* Togepi */
-.align 2
 pkmn_moveset_191:
 .hword MOVE_HEULER
 .byte 0x1
@@ -8269,7 +8077,6 @@ pkmn_moveset_191:
 .byte 0xFF
 
 /* Togetic */
-.align 2
 pkmn_moveset_192:
 .hword MOVE_ZAUBERBLATT
 .byte 0x1
@@ -8313,7 +8120,6 @@ pkmn_moveset_192:
 .byte 0xFF
 
 /* Natu */
-.align 2
 pkmn_moveset_193:
 .hword MOVE_SCHNABEL
 .byte 0x1
@@ -8351,7 +8157,6 @@ pkmn_moveset_193:
 .byte 0xFF
 
 /* Xatu */
-.align 2
 pkmn_moveset_194:
 .hword MOVE_LUFTSCHNITT
 .byte 0x1
@@ -8399,7 +8204,6 @@ pkmn_moveset_194:
 .byte 0xFF
 
 /* Voltilamm */
-.align 2
 pkmn_moveset_195:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -8435,7 +8239,6 @@ pkmn_moveset_195:
 .byte 0xFF
 
 /* Waaty */
-.align 2
 pkmn_moveset_196:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -8475,7 +8278,6 @@ pkmn_moveset_196:
 .byte 0xFF
 
 /* Ampharos */
-.align 2
 pkmn_moveset_197:
 .hword MOVE_DONNERSCHLAG
 .byte 0x1
@@ -8531,7 +8333,6 @@ pkmn_moveset_197:
 .byte 0xFF
 
 /* Blubella */
-.align 2
 pkmn_moveset_198:
 .hword MOVE_ZAUBERBLATT
 .byte 0x1
@@ -8559,7 +8360,6 @@ pkmn_moveset_198:
 .byte 0xFF
 
 /* Marill */
-.align 2
 pkmn_moveset_199:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -8597,7 +8397,6 @@ pkmn_moveset_199:
 .byte 0xFF
 
 /* Azumarill */
-.align 2
 pkmn_moveset_200:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -8639,7 +8438,6 @@ pkmn_moveset_200:
 .byte 0xFF
 
 /* Mogelbaum */
-.align 2
 pkmn_moveset_201:
 .hword MOVE_SLAM
 .byte 0x1
@@ -8687,7 +8485,6 @@ pkmn_moveset_201:
 .byte 0xFF
 
 /* Quaxo */
-.align 2
 pkmn_moveset_202:
 .hword MOVE_BLUBBSTRAHL
 .byte 0x1
@@ -8707,7 +8504,6 @@ pkmn_moveset_202:
 .byte 0xFF
 
 /* Hoppspross */
-.align 2
 pkmn_moveset_203:
 .hword MOVE_PLATSCHER
 .byte 0x1
@@ -8753,7 +8549,6 @@ pkmn_moveset_203:
 .byte 0xFF
 
 /* Hubelupf */
-.align 2
 pkmn_moveset_204:
 .hword MOVE_PLATSCHER
 .byte 0x1
@@ -8803,7 +8598,6 @@ pkmn_moveset_204:
 .byte 0xFF
 
 /* Papungha */
-.align 2
 pkmn_moveset_205:
 .hword MOVE_PLATSCHER
 .byte 0x1
@@ -8853,7 +8647,6 @@ pkmn_moveset_205:
 .byte 0xFF
 
 /* Griffel */
-.align 2
 pkmn_moveset_206:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -8887,7 +8680,6 @@ pkmn_moveset_206:
 .byte 0xFF
 
 /* Sonnkern */
-.align 2
 pkmn_moveset_207:
 .hword MOVE_ABSORBER
 .byte 0x1
@@ -8925,7 +8717,6 @@ pkmn_moveset_207:
 .byte 0xFF
 
 /* Sonnflora */
-.align 2
 pkmn_moveset_208:
 .hword MOVE_FLORASCHUTZ
 .byte 0x1
@@ -8969,7 +8760,6 @@ pkmn_moveset_208:
 .byte 0xFF
 
 /* Yanma */
-.align 2
 pkmn_moveset_209:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -9007,7 +8797,6 @@ pkmn_moveset_209:
 .byte 0xFF
 
 /* Felino */
-.align 2
 pkmn_moveset_210:
 .hword MOVE_AQUAKNARRE
 .byte 0x1
@@ -9039,7 +8828,6 @@ pkmn_moveset_210:
 .byte 0xFF
 
 /* Morlord */
-.align 2
 pkmn_moveset_211:
 .hword MOVE_AQUAKNARRE
 .byte 0x1
@@ -9073,7 +8861,6 @@ pkmn_moveset_211:
 .byte 0xFF
 
 /* Psiana */
-.align 2
 pkmn_moveset_212:
 .hword MOVE_KONFUSION
 .byte 0x1
@@ -9109,7 +8896,6 @@ pkmn_moveset_212:
 .byte 0xFF
 
 /* Nachtara */
-.align 2
 pkmn_moveset_213:
 .hword MOVE_VERFOLGUNG
 .byte 0x1
@@ -9145,7 +8931,6 @@ pkmn_moveset_213:
 .byte 0xFF
 
 /* Kramurx */
-.align 2
 pkmn_moveset_214:
 .hword MOVE_SCHNABEL
 .byte 0x1
@@ -9181,7 +8966,6 @@ pkmn_moveset_214:
 .byte 0xFF
 
 /* Laschoking */
-.align 2
 pkmn_moveset_215:
 .hword MOVE_HEILWOGE
 .byte 0x1
@@ -9225,7 +9009,6 @@ pkmn_moveset_215:
 .byte 0xFF
 
 /* Traunfugil */
-.align 2
 pkmn_moveset_216:
 .hword MOVE_HEULER
 .byte 0x1
@@ -9259,7 +9042,6 @@ pkmn_moveset_216:
 .byte 0xFF
 
 /* Icognito */
-.align 2
 pkmn_moveset_217:
 .hword MOVE_KRAFTRESERVE
 .byte 0x1
@@ -9267,7 +9049,6 @@ pkmn_moveset_217:
 .byte 0xFF
 
 /* Woingenau */
-.align 2
 pkmn_moveset_218:
 .hword MOVE_KONTER
 .byte 0x1
@@ -9281,7 +9062,6 @@ pkmn_moveset_218:
 .byte 0xFF
 
 /* Girafarig */
-.align 2
 pkmn_moveset_219:
 .hword MOVE_KRAFTTAUSCH
 .byte 0x1
@@ -9321,7 +9101,6 @@ pkmn_moveset_219:
 .byte 0xFF
 
 /* Tannza */
-.align 2
 pkmn_moveset_220:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -9355,7 +9134,6 @@ pkmn_moveset_220:
 .byte 0xFF
 
 /* Forstellka */
-.align 2
 pkmn_moveset_221:
 .hword MOVE_SPIEGELSALVE
 .byte 0x1
@@ -9415,7 +9193,6 @@ pkmn_moveset_221:
 .byte 0xFF
 
 /* Dummisel */
-.align 2
 pkmn_moveset_222:
 .hword MOVE_RASEREI
 .byte 0x1
@@ -9465,7 +9242,6 @@ pkmn_moveset_222:
 .byte 0xFF
 
 /* Skorgla */
-.align 2
 pkmn_moveset_223:
 .hword MOVE_GIFTSTACHEL
 .byte 0x1
@@ -9501,7 +9277,6 @@ pkmn_moveset_223:
 .byte 0xFF
 
 /* Stahlos */
-.align 2
 pkmn_moveset_224:
 .hword MOVE_DONNERZAHN
 .byte 0x1
@@ -9557,7 +9332,6 @@ pkmn_moveset_224:
 .byte 0xFF
 
 /* Snubbull */
-.align 2
 pkmn_moveset_225:
 .hword MOVE_EISZAHN
 .byte 0x1
@@ -9593,7 +9367,6 @@ pkmn_moveset_225:
 .byte 0xFF
 
 /* Granbull */
-.align 2
 pkmn_moveset_226:
 .hword MOVE_WUTANFALL
 .byte 0x1
@@ -9633,7 +9406,6 @@ pkmn_moveset_226:
 .byte 0xFF
 
 /* Baldorfish */
-.align 2
 pkmn_moveset_227:
 .hword MOVE_STACHELFINALE
 .byte 0x1
@@ -9685,7 +9457,6 @@ pkmn_moveset_227:
 .byte 0xFF
 
 /* Scherox */
-.align 2
 pkmn_moveset_228:
 .hword MOVE_OFFENLEGUNG
 .byte 0x1
@@ -9729,7 +9500,6 @@ pkmn_moveset_228:
 .byte 0xFF
 
 /* Pottrott */
-.align 2
 pkmn_moveset_229:
 .hword MOVE_KLEBENETZ
 .byte 0x1
@@ -9775,7 +9545,6 @@ pkmn_moveset_229:
 .byte 0xFF
 
 /* Skaraborn */
-.align 2
 pkmn_moveset_230:
 .hword MOVE_ARMSTOSS
 .byte 0x1
@@ -9817,7 +9586,6 @@ pkmn_moveset_230:
 .byte 0xFF
 
 /* Sniebel */
-.align 2
 pkmn_moveset_231:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -9845,7 +9613,7 @@ pkmn_moveset_231:
 .byte 0x20
 .hword MOVE_SCHLITZER
 .byte 0x23
-.hword MOVE_ÜBERNAHME
+.hword MOVE_UEBERNAHME
 .byte 0x28
 .hword MOVE_STRAFATTACKE
 .byte 0x2C
@@ -9855,7 +9623,6 @@ pkmn_moveset_231:
 .byte 0xFF
 
 /* Teddiursa */
-.align 2
 pkmn_moveset_232:
 .hword MOVE_SCHLEUDER
 .byte 0x1
@@ -9893,7 +9660,6 @@ pkmn_moveset_232:
 .byte 0xFF
 
 /* Ursaring */
-.align 2
 pkmn_moveset_233:
 .hword MOVE_HAMMERARM
 .byte 0x1
@@ -9931,7 +9697,6 @@ pkmn_moveset_233:
 .byte 0xFF
 
 /* Schneckmag */
-.align 2
 pkmn_moveset_234:
 .hword MOVE_GAEHNER
 .byte 0x1
@@ -9969,7 +9734,6 @@ pkmn_moveset_234:
 .byte 0xFF
 
 /* Magcargo */
-.align 2
 pkmn_moveset_235:
 .hword MOVE_HAUSBRUCH
 .byte 0x1
@@ -10017,7 +9781,6 @@ pkmn_moveset_235:
 .byte 0xFF
 
 /* Quiekel */
-.align 2
 pkmn_moveset_236:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -10053,7 +9816,6 @@ pkmn_moveset_236:
 .byte 0xFF
 
 /* Keifel */
-.align 2
 pkmn_moveset_237:
 .hword MOVE_FURIENSCHLAG
 .byte 0x1
@@ -10099,7 +9861,6 @@ pkmn_moveset_237:
 .byte 0xFF
 
 /* Corasonn */
-.align 2
 pkmn_moveset_238:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -10141,7 +9902,6 @@ pkmn_moveset_238:
 .byte 0xFF
 
 /* Remoraid */
-.align 2
 pkmn_moveset_239:
 .hword MOVE_AQUAKNARRE
 .byte 0x1
@@ -10167,13 +9927,12 @@ pkmn_moveset_239:
 .byte 0x2A
 .hword MOVE_HYPERSTRAHL
 .byte 0x2E
-.hword MOVE_ÜBERFLUTUNG
+.hword MOVE_UEBERFLUTUNG
 .byte 0x32
 .hword 0x0
 .byte 0xFF
 
 /* Octillery */
-.align 2
 pkmn_moveset_240:
 .hword MOVE_OCTAZOOKA
 .byte 0x1
@@ -10213,13 +9972,12 @@ pkmn_moveset_240:
 .byte 0x34
 .hword MOVE_HYPERSTRAHL
 .byte 0x3A
-.hword MOVE_ÜBERFLUTUNG
+.hword MOVE_UEBERFLUTUNG
 .byte 0x40
 .hword 0x0
 .byte 0xFF
 
 /* Botogel */
-.align 2
 pkmn_moveset_241:
 .hword MOVE_GESCHENK
 .byte 0x1
@@ -10229,7 +9987,6 @@ pkmn_moveset_241:
 .byte 0xFF
 
 /* Mantax */
-.align 2
 pkmn_moveset_242:
 .hword MOVE_PSYSTRAHL
 .byte 0x1
@@ -10277,7 +10034,6 @@ pkmn_moveset_242:
 .byte 0xFF
 
 /* Panzaeron */
-.align 2
 pkmn_moveset_243:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -10315,7 +10071,6 @@ pkmn_moveset_243:
 .byte 0xFF
 
 /* Hunduster */
-.align 2
 pkmn_moveset_244:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -10353,7 +10108,6 @@ pkmn_moveset_244:
 .byte 0xFF
 
 /* Hundemon */
-.align 2
 pkmn_moveset_245:
 .hword MOVE_INFERNO
 .byte 0x1
@@ -10401,7 +10155,6 @@ pkmn_moveset_245:
 .byte 0xFF
 
 /* Seedraking */
-.align 2
 pkmn_moveset_246:
 .hword MOVE_HYDROPUMPE
 .byte 0x1
@@ -10441,7 +10194,6 @@ pkmn_moveset_246:
 .byte 0xFF
 
 /* Phanpy */
-.align 2
 pkmn_moveset_247:
 .hword MOVE_SCHNUEFFLER
 .byte 0x1
@@ -10473,7 +10225,6 @@ pkmn_moveset_247:
 .byte 0xFF
 
 /* Donphan */
-.align 2
 pkmn_moveset_248:
 .hword MOVE_FURIENSCHLAG
 .byte 0x1
@@ -10513,7 +10264,6 @@ pkmn_moveset_248:
 .byte 0xFF
 
 /* Porygon2 */
-.align 2
 pkmn_moveset_249:
 .hword MOVE_BLITZKANONE
 .byte 0x1
@@ -10555,7 +10305,6 @@ pkmn_moveset_249:
 .byte 0xFF
 
 /* Damhirplex */
-.align 2
 pkmn_moveset_250:
 .hword MOVE_EGOTRIP
 .byte 0x1
@@ -10593,7 +10342,6 @@ pkmn_moveset_250:
 .byte 0xFF
 
 /* Farbeagle */
-.align 2
 pkmn_moveset_251:
 .hword MOVE_NACHAHMER
 .byte 0x1
@@ -10619,7 +10367,6 @@ pkmn_moveset_251:
 .byte 0xFF
 
 /* Rabauz */
-.align 2
 pkmn_moveset_252:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -10633,7 +10380,6 @@ pkmn_moveset_252:
 .byte 0xFF
 
 /* Kapoera */
-.align 2
 pkmn_moveset_253:
 .hword MOVE_FEGEKICK
 .byte 0x1
@@ -10685,7 +10431,6 @@ pkmn_moveset_253:
 .byte 0xFF
 
 /* Kussilla */
-.align 2
 pkmn_moveset_254:
 .hword MOVE_PFUND
 .byte 0x1
@@ -10721,7 +10466,6 @@ pkmn_moveset_254:
 .byte 0xFF
 
 /* Elekid */
-.align 2
 pkmn_moveset_255:
 .hword MOVE_RUCKZUCKHIEB
 .byte 0x1
@@ -10755,7 +10499,6 @@ pkmn_moveset_255:
 .byte 0xFF
 
 /* Magby */
-.align 2
 pkmn_moveset_256:
 .hword MOVE_SMOG
 .byte 0x1
@@ -10789,7 +10532,6 @@ pkmn_moveset_256:
 .byte 0xFF
 
 /* Miltank */
-.align 2
 pkmn_moveset_257:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -10821,7 +10563,6 @@ pkmn_moveset_257:
 .byte 0xFF
 
 /* Heiteira */
-.align 2
 pkmn_moveset_258:
 .hword MOVE_RISIKOTACKLE
 .byte 0x1
@@ -10863,7 +10604,6 @@ pkmn_moveset_258:
 .byte 0xFF
 
 /* Raikou */
-.align 2
 pkmn_moveset_259:
 .hword MOVE_SONDERSENSOR
 .byte 0x1
@@ -10901,7 +10641,6 @@ pkmn_moveset_259:
 .byte 0xFF
 
 /* Entei */
-.align 2
 pkmn_moveset_260:
 .hword MOVE_LAEUTERFEUER
 .byte 0x1
@@ -10943,7 +10682,6 @@ pkmn_moveset_260:
 .byte 0xFF
 
 /* Suicune */
-.align 2
 pkmn_moveset_261:
 .hword MOVE_EISESKAELTE
 .byte 0x1
@@ -10983,7 +10721,6 @@ pkmn_moveset_261:
 .byte 0xFF
 
 /* Larvitar */
-.align 2
 pkmn_moveset_262:
 .hword MOVE_BISS
 .byte 0x1
@@ -11017,7 +10754,6 @@ pkmn_moveset_262:
 .byte 0xFF
 
 /* Pupitar */
-.align 2
 pkmn_moveset_263:
 .hword MOVE_BISS
 .byte 0x1
@@ -11055,7 +10791,6 @@ pkmn_moveset_263:
 .byte 0xFF
 
 /* Despotar */
-.align 2
 pkmn_moveset_264:
 .hword MOVE_DONNERZAHN
 .byte 0x1
@@ -11101,7 +10836,6 @@ pkmn_moveset_264:
 .byte 0xFF
 
 /* Lugia */
-.align 2
 pkmn_moveset_265:
 .hword MOVE_WIRBELWIND
 .byte 0x1
@@ -11139,7 +10873,6 @@ pkmn_moveset_265:
 .byte 0xFF
 
 /* Ho-Oh */
-.align 2
 pkmn_moveset_266:
 .hword MOVE_WIRBELWIND
 .byte 0x1
@@ -11177,7 +10910,6 @@ pkmn_moveset_266:
 .byte 0xFF
 
 /* Celebi */
-.align 2
 pkmn_moveset_267:
 .hword MOVE_EGELSAMEN
 .byte 0x1
@@ -11211,7 +10943,6 @@ pkmn_moveset_267:
 .byte 0xFF
 
 /* Geckarbor */
-.align 2
 pkmn_moveset_268:
 .hword MOVE_PFUND
 .byte 0x1
@@ -11245,7 +10976,6 @@ pkmn_moveset_268:
 .byte 0xFF
 
 /* Reptain */
-.align 2
 pkmn_moveset_269:
 .hword MOVE_ZORNKLINGE
 .byte 0x1
@@ -11289,7 +11019,6 @@ pkmn_moveset_269:
 .byte 0xFF
 
 /* Gewaldro */
-.align 2
 pkmn_moveset_270:
 .hword MOVE_DOPPELHIEB
 .byte 0x1
@@ -11337,7 +11066,6 @@ pkmn_moveset_270:
 .byte 0xFF
 
 /* Flemmli */
-.align 2
 pkmn_moveset_271:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -11367,7 +11095,6 @@ pkmn_moveset_271:
 .byte 0xFF
 
 /* Jungglut */
-.align 2
 pkmn_moveset_272:
 .hword MOVE_DOPPELKICK
 .byte 0x1
@@ -11407,7 +11134,6 @@ pkmn_moveset_272:
 .byte 0xFF
 
 /* Lohgock */
-.align 2
 pkmn_moveset_273:
 .hword MOVE_FEUERFEGER
 .byte 0x1
@@ -11455,7 +11181,6 @@ pkmn_moveset_273:
 .byte 0xFF
 
 /* Hydropi */
-.align 2
 pkmn_moveset_274:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -11487,7 +11212,6 @@ pkmn_moveset_274:
 .byte 0xFF
 
 /* Moorabbel */
-.align 2
 pkmn_moveset_275:
 .hword MOVE_LEHMSCHUSS
 .byte 0x1
@@ -11527,7 +11251,6 @@ pkmn_moveset_275:
 .byte 0xFF
 
 /* Sumpex */
-.align 2
 pkmn_moveset_276:
 .hword MOVE_LEHMSCHUSS
 .byte 0x1
@@ -11569,7 +11292,6 @@ pkmn_moveset_276:
 .byte 0xFF
 
 /* Fiffyen */
-.align 2
 pkmn_moveset_277:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -11607,7 +11329,6 @@ pkmn_moveset_277:
 .byte 0xFF
 
 /* Magnayen */
-.align 2
 pkmn_moveset_278:
 .hword MOVE_STANDPAUKE
 .byte 0x1
@@ -11669,7 +11390,6 @@ pkmn_moveset_278:
 .byte 0xFF
 
 /* Zigzachs */
-.align 2
 pkmn_moveset_279:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -11707,7 +11427,6 @@ pkmn_moveset_279:
 .byte 0xFF
 
 /* Geradaks */
-.align 2
 pkmn_moveset_280:
 .hword MOVE_KNUDDLER
 .byte 0x1
@@ -11753,7 +11472,6 @@ pkmn_moveset_280:
 .byte 0xFF
 
 /* Waumpel */
-.align 2
 pkmn_moveset_281:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -11767,7 +11485,6 @@ pkmn_moveset_281:
 .byte 0xFF
 
 /* Schaloko */
-.align 2
 pkmn_moveset_282:
 .hword MOVE_HAERTNER
 .byte 0x1
@@ -11777,7 +11494,6 @@ pkmn_moveset_282:
 .byte 0xFF
 
 /* Papinella */
-.align 2
 pkmn_moveset_283:
 .hword MOVE_WINDSTOSS
 .byte 0x1
@@ -11811,7 +11527,6 @@ pkmn_moveset_283:
 .byte 0xFF
 
 /* Panekon */
-.align 2
 pkmn_moveset_284:
 .hword MOVE_HAERTNER
 .byte 0x1
@@ -11821,7 +11536,6 @@ pkmn_moveset_284:
 .byte 0xFF
 
 /* Pudox */
-.align 2
 pkmn_moveset_285:
 .hword MOVE_WINDSTOSS
 .byte 0x1
@@ -11855,7 +11569,6 @@ pkmn_moveset_285:
 .byte 0xFF
 
 /* Loturzel */
-.align 2
 pkmn_moveset_286:
 .hword MOVE_ERSTAUNER
 .byte 0x1
@@ -11887,7 +11600,6 @@ pkmn_moveset_286:
 .byte 0xFF
 
 /* Lombrero */
-.align 2
 pkmn_moveset_287:
 .hword MOVE_ERSTAUNER
 .byte 0x1
@@ -11919,7 +11631,6 @@ pkmn_moveset_287:
 .byte 0xFF
 
 /* Kappalores */
-.align 2
 pkmn_moveset_288:
 .hword MOVE_ERSTAUNER
 .byte 0x1
@@ -11933,7 +11644,6 @@ pkmn_moveset_288:
 .byte 0xFF
 
 /* Samurzel */
-.align 2
 pkmn_moveset_289:
 .hword MOVE_GEDULD
 .byte 0x1
@@ -11953,7 +11663,6 @@ pkmn_moveset_289:
 .byte 0xFF
 
 /* Blanas */
-.align 2
 pkmn_moveset_290:
 .hword MOVE_RASIERBLATT
 .byte 0x1
@@ -11985,7 +11694,6 @@ pkmn_moveset_290:
 .byte 0xFF
 
 /* Tengulist */
-.align 2
 pkmn_moveset_291:
 .hword MOVE_RASIERBLATT
 .byte 0x1
@@ -12005,7 +11713,6 @@ pkmn_moveset_291:
 .byte 0xFF
 
 /* Schwalbini */
-.align 2
 pkmn_moveset_292:
 .hword MOVE_SCHNABEL
 .byte 0x1
@@ -12037,7 +11744,6 @@ pkmn_moveset_292:
 .byte 0xFF
 
 /* Schwalboss */
-.align 2
 pkmn_moveset_293:
 .hword MOVE_STURZFLUG
 .byte 0x1
@@ -12079,7 +11785,6 @@ pkmn_moveset_293:
 .byte 0xFF
 
 /* Wingull */
-.align 2
 pkmn_moveset_294:
 .hword MOVE_HEULER
 .byte 0x1
@@ -12113,7 +11818,6 @@ pkmn_moveset_294:
 .byte 0xFF
 
 /* Pelipper */
-.align 2
 pkmn_moveset_295:
 .hword MOVE_SCHUTZSCHILD
 .byte 0x1
@@ -12123,7 +11827,7 @@ pkmn_moveset_295:
 .byte 0x1
 .hword MOVE_RUECKENWIND
 .byte 0x1
-.hword MOVE_ÜBERFLUTUNG
+.hword MOVE_UEBERFLUTUNG
 .byte 0x1
 .hword MOVE_HEULER
 .byte 0x1
@@ -12167,7 +11871,6 @@ pkmn_moveset_295:
 .byte 0xFF
 
 /* Trasla */
-.align 2
 pkmn_moveset_296:
 .hword MOVE_HEULER
 .byte 0x1
@@ -12207,7 +11910,6 @@ pkmn_moveset_296:
 .byte 0xFF
 
 /* Kirlia */
-.align 2
 pkmn_moveset_297:
 .hword MOVE_HEULER
 .byte 0x1
@@ -12253,7 +11955,6 @@ pkmn_moveset_297:
 .byte 0xFF
 
 /* Guardevoir */
-.align 2
 pkmn_moveset_298:
 .hword MOVE_MONDGEWALT
 .byte 0x1
@@ -12311,7 +12012,6 @@ pkmn_moveset_298:
 .byte 0xFF
 
 /* Gehweiher */
-.align 2
 pkmn_moveset_299:
 .hword MOVE_BLUBBER
 .byte 0x1
@@ -12339,7 +12039,6 @@ pkmn_moveset_299:
 .byte 0xFF
 
 /* Maskeregen */
-.align 2
 pkmn_moveset_300:
 .hword MOVE_FALTERREIGEN
 .byte 0x1
@@ -12385,7 +12084,6 @@ pkmn_moveset_300:
 .byte 0xFF
 
 /* Knilz */
-.align 2
 pkmn_moveset_301:
 .hword MOVE_ABSORBER
 .byte 0x1
@@ -12417,7 +12115,6 @@ pkmn_moveset_301:
 .byte 0xFF
 
 /* Kapilz */
-.align 2
 pkmn_moveset_302:
 .hword MOVE_TEMPOHIEB
 .byte 0x1
@@ -12457,7 +12154,6 @@ pkmn_moveset_302:
 .byte 0xFF
 
 /* Bummelz */
-.align 2
 pkmn_moveset_303:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -12485,7 +12181,6 @@ pkmn_moveset_303:
 .byte 0xFF
 
 /* Muntier */
-.align 2
 pkmn_moveset_304:
 .hword MOVE_GEGENSCHLAG
 .byte 0x1
@@ -12519,7 +12214,6 @@ pkmn_moveset_304:
 .byte 0xFF
 
 /* Letarking */
-.align 2
 pkmn_moveset_305:
 .hword MOVE_ANGEBEREI
 .byte 0x1
@@ -12565,7 +12259,6 @@ pkmn_moveset_305:
 .byte 0xFF
 
 /* Nincada */
-.align 2
 pkmn_moveset_306:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -12593,7 +12286,6 @@ pkmn_moveset_306:
 .byte 0xFF
 
 /* Ninjask */
-.align 2
 pkmn_moveset_307:
 .hword MOVE_DOPPELTEAM
 .byte 0x1
@@ -12637,7 +12329,6 @@ pkmn_moveset_307:
 .byte 0xFF
 
 /* Ninjatom */
-.align 2
 pkmn_moveset_308:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -12673,7 +12364,6 @@ pkmn_moveset_308:
 .byte 0xFF
 
 /* Flurmel */
-.align 2
 pkmn_moveset_309:
 .hword MOVE_PFUND
 .byte 0x1
@@ -12705,7 +12395,6 @@ pkmn_moveset_309:
 .byte 0xFF
 
 /* Krakeelo */
-.align 2
 pkmn_moveset_310:
 .hword MOVE_BISS
 .byte 0x1
@@ -12747,13 +12436,12 @@ pkmn_moveset_310:
 .byte 0xFF
 
 /* Krawumms */
-.align 2
 pkmn_moveset_311:
 .hword MOVE_KNIRSCHER
 .byte 0x1
 .hword MOVE_BISS
 .byte 0x1
-.hword MOVE_ÜBERSCHALLKNALL
+.hword MOVE_UEBERSCHALLKNALL
 .byte 0x1
 .hword MOVE_EISZAHN
 .byte 0x1
@@ -12795,7 +12483,7 @@ pkmn_moveset_311:
 .byte 0x2F
 .hword MOVE_SYNCHROLAERM
 .byte 0x35
-.hword MOVE_ÜBERSCHALLKNALL
+.hword MOVE_UEBERSCHALLKNALL
 .byte 0x3A
 .hword MOVE_HYPERSTRAHL
 .byte 0x40
@@ -12805,7 +12493,6 @@ pkmn_moveset_311:
 .byte 0xFF
 
 /* Makuhita */
-.align 2
 pkmn_moveset_312:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -12823,7 +12510,7 @@ pkmn_moveset_312:
 .byte 0x10
 .hword MOVE_ABSCHLAG
 .byte 0x13
-.hword MOVE_ÜBERWURF
+.hword MOVE_UEBERWURF
 .byte 0x16
 .hword MOVE_BAUCHTROMMEL
 .byte 0x19
@@ -12845,7 +12532,6 @@ pkmn_moveset_312:
 .byte 0xFF
 
 /* Hariyama */
-.align 2
 pkmn_moveset_313:
 .hword MOVE_LAKE
 .byte 0x1
@@ -12869,7 +12555,7 @@ pkmn_moveset_313:
 .byte 0x10
 .hword MOVE_ABSCHLAG
 .byte 0x13
-.hword MOVE_ÜBERWURF
+.hword MOVE_UEBERWURF
 .byte 0x16
 .hword MOVE_BAUCHTROMMEL
 .byte 0x1A
@@ -12891,7 +12577,6 @@ pkmn_moveset_313:
 .byte 0xFF
 
 /* Azurill */
-.align 2
 pkmn_moveset_314:
 .hword MOVE_PLATSCHER
 .byte 0x1
@@ -12917,7 +12602,6 @@ pkmn_moveset_314:
 .byte 0xFF
 
 /* Nasgnet */
-.align 2
 pkmn_moveset_315:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -12955,7 +12639,6 @@ pkmn_moveset_315:
 .byte 0xFF
 
 /* Eneco */
-.align 2
 pkmn_moveset_316:
 .hword MOVE_MOGELHIEB
 .byte 0x1
@@ -12999,7 +12682,6 @@ pkmn_moveset_316:
 .byte 0xFF
 
 /* Enekoro */
-.align 2
 pkmn_moveset_317:
 .hword MOVE_MOGELHIEB
 .byte 0x1
@@ -13013,7 +12695,6 @@ pkmn_moveset_317:
 .byte 0xFF
 
 /* Zobiris */
-.align 2
 pkmn_moveset_318:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -13059,7 +12740,6 @@ pkmn_moveset_318:
 .byte 0xFF
 
 /* Flunkifer */
-.align 2
 pkmn_moveset_319:
 .hword MOVE_KNUDDLER
 .byte 0x1
@@ -13105,7 +12785,6 @@ pkmn_moveset_319:
 .byte 0xFF
 
 /* Stollunior */
-.align 2
 pkmn_moveset_320:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -13147,7 +12826,6 @@ pkmn_moveset_320:
 .byte 0xFF
 
 /* Stollrak */
-.align 2
 pkmn_moveset_321:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -13193,7 +12871,6 @@ pkmn_moveset_321:
 .byte 0xFF
 
 /* Stolloss */
-.align 2
 pkmn_moveset_322:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -13239,7 +12916,6 @@ pkmn_moveset_322:
 .byte 0xFF
 
 /* Meditie */
-.align 2
 pkmn_moveset_323:
 .hword MOVE_GEDULD
 .byte 0x1
@@ -13279,7 +12955,6 @@ pkmn_moveset_323:
 .byte 0xFF
 
 /* Meditalis */
-.align 2
 pkmn_moveset_324:
 .hword MOVE_ZEN_KOPFSTOSS
 .byte 0x1
@@ -13333,7 +13008,6 @@ pkmn_moveset_324:
 .byte 0xFF
 
 /* Frizelbliz */
-.align 2
 pkmn_moveset_325:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -13367,7 +13041,6 @@ pkmn_moveset_325:
 .byte 0xFF
 
 /* Voltenso */
-.align 2
 pkmn_moveset_326:
 .hword MOVE_ELEKTROFELD
 .byte 0x1
@@ -13411,7 +13084,6 @@ pkmn_moveset_326:
 .byte 0xFF
 
 /* Plusle */
-.align 2
 pkmn_moveset_327:
 .hword MOVE_WANGENRUBBLER
 .byte 0x1
@@ -13459,7 +13131,6 @@ pkmn_moveset_327:
 .byte 0xFF
 
 /* Minun */
-.align 2
 pkmn_moveset_328:
 .hword MOVE_WANGENRUBBLER
 .byte 0x1
@@ -13507,7 +13178,6 @@ pkmn_moveset_328:
 .byte 0xFF
 
 /* Volbeat */
-.align 2
 pkmn_moveset_329:
 .hword MOVE_BLITZ
 .byte 0x1
@@ -13545,7 +13215,6 @@ pkmn_moveset_329:
 .byte 0xFF
 
 /* Illumise */
-.align 2
 pkmn_moveset_330:
 .hword MOVE_KAMERADSCHAFT
 .byte 0x1
@@ -13583,7 +13252,6 @@ pkmn_moveset_330:
 .byte 0xFF
 
 /* Roselia */
-.align 2
 pkmn_moveset_331:
 .hword MOVE_ABSORBER
 .byte 0x1
@@ -13623,7 +13291,6 @@ pkmn_moveset_331:
 .byte 0xFF
 
 /* Schluppuck */
-.align 2
 pkmn_moveset_332:
 .hword MOVE_PFUND
 .byte 0x1
@@ -13661,7 +13328,6 @@ pkmn_moveset_332:
 .byte 0xFF
 
 /* Schlukwech */
-.align 2
 pkmn_moveset_333:
 .hword MOVE_BODYSLAM
 .byte 0x1
@@ -13715,7 +13381,6 @@ pkmn_moveset_333:
 .byte 0xFF
 
 /* Kanivanha */
-.align 2
 pkmn_moveset_334:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -13749,7 +13414,6 @@ pkmn_moveset_334:
 .byte 0xFF
 
 /* Tohaido */
-.align 2
 pkmn_moveset_335:
 .hword MOVE_SCHLITZER
 .byte 0x1
@@ -13799,7 +13463,6 @@ pkmn_moveset_335:
 .byte 0xFF
 
 /* Wailmer */
-.align 2
 pkmn_moveset_336:
 .hword MOVE_PLATSCHER
 .byte 0x1
@@ -13837,9 +13500,8 @@ pkmn_moveset_336:
 .byte 0xFF
 
 /* Wailord */
-.align 2
 pkmn_moveset_337:
-.hword MOVE_ÜBERFLUTUNG
+.hword MOVE_UEBERFLUTUNG
 .byte 0x1
 .hword MOVE_KAMPFGEBRUELL
 .byte 0x1
@@ -13887,7 +13549,6 @@ pkmn_moveset_337:
 .byte 0xFF
 
 /* Camaub */
-.align 2
 pkmn_moveset_338:
 .hword MOVE_HEULER
 .byte 0x1
@@ -13923,7 +13584,6 @@ pkmn_moveset_338:
 .byte 0xFF
 
 /* Camerupt */
-.align 2
 pkmn_moveset_339:
 .hword MOVE_STEINHAGEL
 .byte 0x1
@@ -13939,7 +13599,9 @@ pkmn_moveset_339:
 .byte 0x1
 .hword MOVE_ENERGIEFOKUS
 .byte 0x1
-.hword MOVE_GLUT
+.hword MOVE_GLUT MEGA_FORM
+.byte 0x5
+.hword MOVE_GLUT NORMALE_FORM
 .byte 0x8
 .hword MOVE_ENERGIEFOKUS
 .byte 0x8
@@ -13971,7 +13633,6 @@ pkmn_moveset_339:
 .byte 0xFF
 
 /* Qurtel */
-.align 2
 pkmn_moveset_340:
 .hword MOVE_GLUT
 .byte 0x1
@@ -14013,7 +13674,6 @@ pkmn_moveset_340:
 .byte 0xFF
 
 /* Spoink */
-.align 2
 pkmn_moveset_341:
 .hword MOVE_PLATSCHER
 .byte 0x1
@@ -14049,7 +13709,6 @@ pkmn_moveset_341:
 .byte 0xFF
 
 /* Groink */
-.align 2
 pkmn_moveset_342:
 .hword MOVE_TAUMELTANZ
 .byte 0x1
@@ -14097,7 +13756,6 @@ pkmn_moveset_342:
 .byte 0xFF
 
 /* Pandir */
-.align 2
 pkmn_moveset_343:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -14129,7 +13787,6 @@ pkmn_moveset_343:
 .byte 0xFF
 
 /* Knacklion */
-.align 2
 pkmn_moveset_344:
 .hword MOVE_SANDWIRBEL
 .byte 0x1
@@ -14169,7 +13826,6 @@ pkmn_moveset_344:
 .byte 0xFF
 
 /* Vibrava */
-.align 2
 pkmn_moveset_345:
 .hword MOVE_FEUERODEM
 .byte 0x1
@@ -14207,13 +13863,12 @@ pkmn_moveset_345:
 .byte 0x28
 .hword MOVE_HYPERSTRAHL
 .byte 0x2B
-.hword MOVE_ÜBERSCHALLKNALL
+.hword MOVE_UEBERSCHALLKNALL
 .byte 0x2F
 .hword 0x0
 .byte 0xFF
 
 /* Libelldra */
-.align 2
 pkmn_moveset_346:
 .hword MOVE_DRACHENKLAUE
 .byte 0x1
@@ -14261,7 +13916,6 @@ pkmn_moveset_346:
 .byte 0xFF
 
 /* Tuska */
-.align 2
 pkmn_moveset_347:
 .hword MOVE_GIFTSTACHEL
 .byte 0x1
@@ -14301,7 +13955,6 @@ pkmn_moveset_347:
 .byte 0xFF
 
 /* Noktuska */
-.align 2
 pkmn_moveset_348:
 .hword MOVE_SCHUTZSTACHELN
 .byte 0x1
@@ -14351,7 +14004,6 @@ pkmn_moveset_348:
 .byte 0xFF
 
 /* Wablu */
-.align 2
 pkmn_moveset_349:
 .hword MOVE_SCHNABEL
 .byte 0x1
@@ -14391,7 +14043,6 @@ pkmn_moveset_349:
 .byte 0xFF
 
 /* Altaria */
-.align 2
 pkmn_moveset_350:
 .hword MOVE_FEUERODEM
 .byte 0x1
@@ -14445,7 +14096,6 @@ pkmn_moveset_350:
 .byte 0xFF
 
 /* Sengo */
-.align 2
 pkmn_moveset_351:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -14483,7 +14133,6 @@ pkmn_moveset_351:
 .byte 0xFF
 
 /* Vipitis */
-.align 2
 pkmn_moveset_352:
 .hword MOVE_WICKEL
 .byte 0x1
@@ -14529,7 +14178,6 @@ pkmn_moveset_352:
 .byte 0xFF
 
 /* Lunastein */
-.align 2
 pkmn_moveset_353:
 .hword MOVE_JUWELENKRAFT
 .byte 0x1
@@ -14573,7 +14221,6 @@ pkmn_moveset_353:
 .byte 0xFF
 
 /* Sonnfel */
-.align 2
 pkmn_moveset_354:
 .hword MOVE_FLAMMENBLITZ
 .byte 0x1
@@ -14613,7 +14260,6 @@ pkmn_moveset_354:
 .byte 0xFF
 
 /* Schmerbe */
-.align 2
 pkmn_moveset_355:
 .hword MOVE_LEHMSCHELLE
 .byte 0x1
@@ -14649,7 +14295,6 @@ pkmn_moveset_355:
 .byte 0xFF
 
 /* Welsar */
-.align 2
 pkmn_moveset_356:
 .hword MOVE_FUCHTLER
 .byte 0x1
@@ -14701,7 +14346,6 @@ pkmn_moveset_356:
 .byte 0xFF
 
 /* Krebscorps */
-.align 2
 pkmn_moveset_357:
 .hword MOVE_BLUBBER
 .byte 0x1
@@ -14737,7 +14381,6 @@ pkmn_moveset_357:
 .byte 0xFF
 
 /* Krebutack */
-.align 2
 pkmn_moveset_358:
 .hword MOVE_STERNSCHAUER
 .byte 0x1
@@ -14783,7 +14426,6 @@ pkmn_moveset_358:
 .byte 0xFF
 
 /* Puppance */
-.align 2
 pkmn_moveset_359:
 .hword MOVE_HAERTNER
 .byte 0x1
@@ -14825,7 +14467,6 @@ pkmn_moveset_359:
 .byte 0xFF
 
 /* Lepumentas */
-.align 2
 pkmn_moveset_360:
 .hword MOVE_HYPERSTRAHL
 .byte 0x1
@@ -14875,7 +14516,6 @@ pkmn_moveset_360:
 .byte 0xFF
 
 /* Liliep */
-.align 2
 pkmn_moveset_361:
 .hword MOVE_ERSTAUNER
 .byte 0x1
@@ -14911,7 +14551,6 @@ pkmn_moveset_361:
 .byte 0xFF
 
 /* Wielie */
-.align 2
 pkmn_moveset_362:
 .hword MOVE_AUSWRINGEN
 .byte 0x1
@@ -14953,7 +14592,6 @@ pkmn_moveset_362:
 .byte 0xFF
 
 /* Anorith */
-.align 2
 pkmn_moveset_363:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -14989,7 +14627,6 @@ pkmn_moveset_363:
 .byte 0xFF
 
 /* Armaldo */
-.align 2
 pkmn_moveset_364:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -15029,7 +14666,6 @@ pkmn_moveset_364:
 .byte 0xFF
 
 /* Barschwa */
-.align 2
 pkmn_moveset_365:
 .hword MOVE_PLATSCHER
 .byte 0x1
@@ -15041,7 +14677,6 @@ pkmn_moveset_365:
 .byte 0xFF
 
 /* Milotic */
-.align 2
 pkmn_moveset_366:
 .hword MOVE_AQUAWELLE
 .byte 0x1
@@ -15085,7 +14720,6 @@ pkmn_moveset_366:
 .byte 0xFF
 
 /* Formeo */
-.align 2
 pkmn_moveset_367:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -15117,7 +14751,6 @@ pkmn_moveset_367:
 .byte 0xFF
 
 /* Kecleon */
-.align 2
 pkmn_moveset_368:
 .hword MOVE_RAUB
 .byte 0x1
@@ -15161,7 +14794,6 @@ pkmn_moveset_368:
 .byte 0xFF
 
 /* Shuppet */
-.align 2
 pkmn_moveset_369:
 .hword MOVE_ABSCHLAG
 .byte 0x1
@@ -15187,7 +14819,7 @@ pkmn_moveset_369:
 .byte 0x22
 .hword MOVE_TIEFSCHLAG
 .byte 0x26
-.hword MOVE_ÜBERNAHME
+.hword MOVE_UEBERNAHME
 .byte 0x2A
 .hword MOVE_NACHSPIEL
 .byte 0x2E
@@ -15199,7 +14831,6 @@ pkmn_moveset_369:
 .byte 0xFF
 
 /* Banette */
-.align 2
 pkmn_moveset_370:
 .hword MOVE_PHANTOMKRAFT
 .byte 0x1
@@ -15233,7 +14864,7 @@ pkmn_moveset_370:
 .byte 0x22
 .hword MOVE_TIEFSCHLAG
 .byte 0x28
-.hword MOVE_ÜBERNAHME
+.hword MOVE_UEBERNAHME
 .byte 0x2E
 .hword MOVE_NACHSPIEL
 .byte 0x34
@@ -15245,7 +14876,6 @@ pkmn_moveset_370:
 .byte 0xFF
 
 /* Zwirrlicht */
-.align 2
 pkmn_moveset_371:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -15281,7 +14911,6 @@ pkmn_moveset_371:
 .byte 0xFF
 
 /* Zwirrklop */
-.align 2
 pkmn_moveset_372:
 .hword MOVE_FINSTERFAUST
 .byte 0x1
@@ -15339,7 +14968,6 @@ pkmn_moveset_372:
 .byte 0xFF
 
 /* Tropius */
-.align 2
 pkmn_moveset_373:
 .hword MOVE_BLAETTERSTURM
 .byte 0x1
@@ -15379,7 +15007,6 @@ pkmn_moveset_373:
 .byte 0xFF
 
 /* Palimpalim */
-.align 2
 pkmn_moveset_374:
 .hword MOVE_HEILOPFER
 .byte 0x1
@@ -15425,7 +15052,6 @@ pkmn_moveset_374:
 .byte 0xFF
 
 /* Absol */
-.align 2
 pkmn_moveset_375:
 .hword MOVE_ABGESANG
 .byte 0x1
@@ -15475,7 +15101,6 @@ pkmn_moveset_375:
 .byte 0xFF
 
 /* Isso */
-.align 2
 pkmn_moveset_376:
 .hword MOVE_PLATSCHER
 .byte 0x1
@@ -15495,7 +15120,6 @@ pkmn_moveset_376:
 .byte 0xFF
 
 /* Schneppke */
-.align 2
 pkmn_moveset_377:
 .hword MOVE_PULVERSCHNEE
 .byte 0x1
@@ -15527,7 +15151,6 @@ pkmn_moveset_377:
 .byte 0xFF
 
 /* Firnontor */
-.align 2
 pkmn_moveset_378:
 .hword MOVE_GEFRIERTROCKNER
 .byte 0x1
@@ -15571,7 +15194,6 @@ pkmn_moveset_378:
 .byte 0xFF
 
 /* Seemops */
-.align 2
 pkmn_moveset_379:
 .hword MOVE_EINIGLER
 .byte 0x1
@@ -15607,7 +15229,6 @@ pkmn_moveset_379:
 .byte 0xFF
 
 /* Seejong */
-.align 2
 pkmn_moveset_380:#WERT!
 .hword MOVE_ANGEBEREI
 .byte 0x1
@@ -15647,7 +15268,6 @@ pkmn_moveset_380:#WERT!
 .byte 0xFF
 
 /* Walraisa */
-.align 2
 pkmn_moveset_381:
 .hword MOVE_EISZAHN
 .byte 0x1
@@ -15691,7 +15311,6 @@ pkmn_moveset_381:
 .byte 0xFF
 
 /* Perlu */
-.align 2
 pkmn_moveset_382:
 .hword MOVE_SCHNAPPER
 .byte 0x1
@@ -15707,7 +15326,6 @@ pkmn_moveset_382:
 .byte 0xFF
 
 /* Aalabyss */
-.align 2
 pkmn_moveset_383:
 .hword MOVE_WHIRLPOOL
 .byte 0x1
@@ -15743,7 +15361,6 @@ pkmn_moveset_383:
 .byte 0xFF
 
 /* Saganabyss */
-.align 2
 pkmn_moveset_384:
 .hword MOVE_WHIRLPOOL
 .byte 0x1
@@ -15779,7 +15396,6 @@ pkmn_moveset_384:
 .byte 0xFF
 
 /* Relicanth */
-.align 2
 pkmn_moveset_385:
 .hword MOVE_DRESCHFLEGEL
 .byte 0x1
@@ -15819,7 +15435,6 @@ pkmn_moveset_385:
 .byte 0xFF
 
 /* Liebiskus */
-.align 2
 pkmn_moveset_386:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -15849,7 +15464,7 @@ pkmn_moveset_386:
 .byte 0x25
 .hword MOVE_WASSERRING
 .byte 0x28
-.hword MOVE_ÜBERFLUTUNG
+.hword MOVE_UEBERFLUTUNG
 .byte 0x2A
 .hword MOVE_HYDROPUMPE
 .byte 0x2E
@@ -15859,7 +15474,6 @@ pkmn_moveset_386:
 .byte 0xFF
 
 /* Kindwurm */
-.align 2
 pkmn_moveset_387:
 .hword MOVE_RASEREI
 .byte 0x1
@@ -15891,7 +15505,6 @@ pkmn_moveset_387:
 .byte 0xFF
 
 /* Draschel */
-.align 2
 pkmn_moveset_388:
 .hword MOVE_SCHUTZSCHILD
 .byte 0x1
@@ -15933,7 +15546,6 @@ pkmn_moveset_388:
 .byte 0xFF
 
 /* Brutalanda */
-.align 2
 pkmn_moveset_389:
 .hword MOVE_FLIEGEN
 .byte 0x1
@@ -15983,7 +15595,6 @@ pkmn_moveset_389:
 .byte 0xFF
 
 /* Tanhel */
-.align 2
 pkmn_moveset_390:
 .hword MOVE_BODYCHECK
 .byte 0x1
@@ -15991,7 +15602,6 @@ pkmn_moveset_390:
 .byte 0xFF
 
 /* Metang */
-.align 2
 pkmn_moveset_391:
 .hword MOVE_KONFUSION
 .byte 0x1
@@ -16029,7 +15639,6 @@ pkmn_moveset_391:
 .byte 0xFF
 
 /* Metagross */
-.align 2
 pkmn_moveset_392:
 .hword MOVE_HAMMERARM
 .byte 0x1
@@ -16067,7 +15676,6 @@ pkmn_moveset_392:
 .byte 0xFF
 
 /* Regirock */
-.align 2
 pkmn_moveset_393:
 .hword MOVE_EXPLOSION
 .byte 0x1
@@ -16107,7 +15715,6 @@ pkmn_moveset_393:
 .byte 0xFF
 
 /* Regice */
-.align 2
 pkmn_moveset_394:
 .hword MOVE_EXPLOSION
 .byte 0x1
@@ -16147,7 +15754,6 @@ pkmn_moveset_394:
 .byte 0xFF
 
 /* Registeel */
-.align 2
 pkmn_moveset_395:
 .hword MOVE_EXPLOSION
 .byte 0x1
@@ -16191,7 +15797,6 @@ pkmn_moveset_395:
 .byte 0xFF
 
 /* Vemoi */
-.align 2
 pkmn_moveset_396:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -16231,7 +15836,6 @@ pkmn_moveset_396:
 .byte 0xFF
 
 /* Lumona */
-.align 2
 pkmn_moveset_397:
 .hword MOVE_HEILOPFER
 .byte 0x1
@@ -16277,7 +15881,6 @@ pkmn_moveset_397:
 .byte 0xFF
 
 /* Liasu */
-.align 2
 pkmn_moveset_398:
 .hword MOVE_HEILOPFER
 .byte 0x1
@@ -16323,7 +15926,6 @@ pkmn_moveset_398:
 .byte 0xFF
 
 /* Latias */
-.align 2
 pkmn_moveset_399:
 .hword MOVE_HEILOPFER
 .byte 0x1
@@ -16369,7 +15971,6 @@ pkmn_moveset_399:
 .byte 0xFF
 
 /* Mamoi */
-.align 2
 pkmn_moveset_400:
 .hword MOVE_HEULER
 .byte 0x1
@@ -16409,7 +16010,6 @@ pkmn_moveset_400:
 .byte 0xFF
 
 /* Lumoyo */
-.align 2
 pkmn_moveset_401:
 .hword MOVE_MEMENTO_MORI
 .byte 0x1
@@ -16455,7 +16055,6 @@ pkmn_moveset_401:
 .byte 0xFF
 
 /* Liosu */
-.align 2
 pkmn_moveset_402:
 .hword MOVE_MEMENTO_MORI
 .byte 0x1
@@ -16501,7 +16100,6 @@ pkmn_moveset_402:
 .byte 0xFF
 
 /* Latios */
-.align 2
 pkmn_moveset_403:
 .hword MOVE_MEMENTO_MORI
 .byte 0x1
@@ -16547,7 +16145,6 @@ pkmn_moveset_403:
 .byte 0xFF
 
 /* Kyogre */
-.align 2
 pkmn_moveset_404:
 .hword MOVE_ANTIK_KRAFT
 .byte 0x1
@@ -16581,7 +16178,6 @@ pkmn_moveset_404:
 .byte 0xFF
 
 /* Groudon */
-.align 2
 pkmn_moveset_405:
 .hword MOVE_ANTIK_KRAFT
 .byte 0x1
@@ -16615,7 +16211,6 @@ pkmn_moveset_405:
 .byte 0xFF
 
 /* Rayquaza */
-.align 2
 pkmn_moveset_406:
 .hword MOVE_WINDHOSE
 .byte 0x1
@@ -16647,7 +16242,6 @@ pkmn_moveset_406:
 .byte 0xFF
 
 /* Jirachi */
-.align 2
 pkmn_moveset_407:
 .hword MOVE_WUNSCHTRAUM
 .byte 0x1
@@ -16685,7 +16279,6 @@ pkmn_moveset_407:
 .byte 0xFF
 
 /* Deoxys */
-.align 2
 pkmn_moveset_408:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -16701,7 +16294,7 @@ pkmn_moveset_408:
 .byte 0x19
 .hword MOVE_PSYCHOKINESE
 .byte 0x1F
-.hword MOVE_ÜBERNAHME
+.hword MOVE_UEBERNAHME
 .byte 0x25
 .hword MOVE_PSYBANN
 .byte 0x2B
@@ -16717,7 +16310,6 @@ pkmn_moveset_408:
 .byte 0xFF
 
 /* Deoxys [Angriff] */
-.align 2
 pkmn_moveset_409:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -16751,7 +16343,6 @@ pkmn_moveset_409:
 .byte 0xFF
 
 /* Deoxys [Defensiv] */
-.align 2
 pkmn_moveset_410:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -16767,7 +16358,7 @@ pkmn_moveset_410:
 .byte 0x19
 .hword MOVE_PSYCHOKINESE
 .byte 0x1F
-.hword MOVE_ÜBERNAHME
+.hword MOVE_UEBERNAHME
 .byte 0x25
 .hword MOVE_PSYBANN
 .byte 0x2B
@@ -16789,7 +16380,6 @@ pkmn_moveset_410:
 .byte 0xFF
 
 /* Deoxys [Initiative] */
-.align 2
 pkmn_moveset_411:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -16823,7 +16413,6 @@ pkmn_moveset_411:
 .byte 0xFF
 
 /* Chelast */
-.align 2
 pkmn_moveset_412:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -16853,7 +16442,6 @@ pkmn_moveset_412:
 .byte 0xFF
 
 /* Chelcarain */
-.align 2
 pkmn_moveset_413:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -16887,7 +16475,6 @@ pkmn_moveset_413:
 .byte 0xFF
 
 /* Chelterrar */
-.align 2
 pkmn_moveset_414:
 .hword MOVE_ERDBEBEN
 .byte 0x1
@@ -16929,7 +16516,6 @@ pkmn_moveset_414:
 .byte 0xFF
 
 /* Panflam */
-.align 2
 pkmn_moveset_415:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -16961,7 +16547,6 @@ pkmn_moveset_415:
 .byte 0xFF
 
 /* Panpyro */
-.align 2
 pkmn_moveset_416:
 .hword MOVE_TEMPOHIEB
 .byte 0x1
@@ -16999,7 +16584,6 @@ pkmn_moveset_416:
 .byte 0xFF
 
 /* Panferno */
-.align 2
 pkmn_moveset_417:
 .hword MOVE_NAHKAMPF
 .byte 0x1
@@ -17041,7 +16625,6 @@ pkmn_moveset_417:
 .byte 0xFF
 
 /* Plinfa */
-.align 2
 pkmn_moveset_418:
 .hword MOVE_PFUND
 .byte 0x1
@@ -17073,7 +16656,6 @@ pkmn_moveset_418:
 .byte 0xFF
 
 /* Pliprin */
-.align 2
 pkmn_moveset_419:
 .hword MOVE_METALLKLAUE
 .byte 0x1
@@ -17113,7 +16695,6 @@ pkmn_moveset_419:
 .byte 0xFF
 
 /* Impoleon */
-.align 2
 pkmn_moveset_420:
 .hword MOVE_WASSERDUESE
 .byte 0x1
@@ -17155,7 +16736,6 @@ pkmn_moveset_420:
 .byte 0xFF
 
 /* Staralili */
-.align 2
 pkmn_moveset_421:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -17185,7 +16765,6 @@ pkmn_moveset_421:
 .byte 0xFF
 
 /* Staravia */
-.align 2
 pkmn_moveset_422:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -17217,7 +16796,6 @@ pkmn_moveset_422:
 .byte 0xFF
 
 /* Staraptor */
-.align 2
 pkmn_moveset_423:
 .hword MOVE_NAHKAMPF
 .byte 0x1
@@ -17255,7 +16833,6 @@ pkmn_moveset_423:
 .byte 0xFF
 
 /* Bidiza */
-.align 2
 pkmn_moveset_424:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -17289,7 +16866,6 @@ pkmn_moveset_424:
 .byte 0xFF
 
 /* Bidifas */
-.align 2
 pkmn_moveset_425:
 .hword MOVE_AQUAKNARRE
 .byte 0x1
@@ -17331,7 +16907,6 @@ pkmn_moveset_425:
 .byte 0xFF
 
 /* Zirpurze */
-.align 2
 pkmn_moveset_426:
 .hword MOVE_HEULER
 .byte 0x1
@@ -17345,7 +16920,6 @@ pkmn_moveset_426:
 .byte 0xFF
 
 /* Zirpeise */
-.align 2
 pkmn_moveset_427:
 .hword MOVE_ZORNKLINGE
 .byte 0x1
@@ -17383,7 +16957,6 @@ pkmn_moveset_427:
 .byte 0xFF
 
 /* Sheinux */
-.align 2
 pkmn_moveset_428:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -17415,7 +16988,6 @@ pkmn_moveset_428:
 .byte 0xFF
 
 /* Luxio */
-.align 2
 pkmn_moveset_429:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -17447,7 +17019,6 @@ pkmn_moveset_429:
 .byte 0xFF
 
 /* Luxtra */
-.align 2
 pkmn_moveset_430:
 .hword MOVE_ELEKTROFELD
 .byte 0x1
@@ -17485,7 +17056,6 @@ pkmn_moveset_430:
 .byte 0xFF
 
 /* Knospi */
-.align 2
 pkmn_moveset_431:
 .hword MOVE_ABSORBER
 .byte 0x1
@@ -17503,7 +17073,6 @@ pkmn_moveset_431:
 .byte 0xFF
 
 /* Roserade */
-.align 2
 pkmn_moveset_432:
 .hword MOVE_GIFTFALLE
 .byte 0x1
@@ -17523,7 +17092,6 @@ pkmn_moveset_432:
 .byte 0xFF
 
 /* Koknodon */
-.align 2
 pkmn_moveset_433:
 .hword MOVE_KOPFNUSS
 .byte 0x1
@@ -17553,7 +17121,6 @@ pkmn_moveset_433:
 .byte 0xFF
 
 /* Rameidon */
-.align 2
 pkmn_moveset_434:
 .hword MOVE_NOTSITUATION
 .byte 0x1
@@ -17591,7 +17158,6 @@ pkmn_moveset_434:
 .byte 0xFF
 
 /* Schilterus */
-.align 2
 pkmn_moveset_435:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -17621,7 +17187,6 @@ pkmn_moveset_435:
 .byte 0xFF
 
 /* Bollterus */
-.align 2
 pkmn_moveset_436:
 .hword MOVE_RUECKENTZUG
 .byte 0x1
@@ -17659,7 +17224,6 @@ pkmn_moveset_436:
 .byte 0xFF
 
 /* Burmy */
-.align 2
 pkmn_moveset_437:
 .hword MOVE_SCHUTZSCHILD
 .byte 0x1
@@ -17673,7 +17237,6 @@ pkmn_moveset_437:
 .byte 0xFF
 
 /* Burmadame [Pflanzenumhang] */
-.align 2
 pkmn_moveset_438:
 .hword MOVE_FALTERREIGEN
 .byte 0x1
@@ -17717,7 +17280,6 @@ pkmn_moveset_438:
 .byte 0xFF
 
 /* Burmadame [Sandumhang] */
-.align 2
 pkmn_moveset_439:
 .hword MOVE_FALTERREIGEN
 .byte 0x1
@@ -17759,7 +17321,6 @@ pkmn_moveset_439:
 .byte 0xFF
 
 /* Burmadame [Lumpenumhang] */
-.align 2
 pkmn_moveset_440:
 .hword MOVE_FALTERREIGEN
 .byte 0x1
@@ -17807,7 +17368,6 @@ pkmn_moveset_440:
 .byte 0xFF
 
 /* Moterpel */
-.align 2
 pkmn_moveset_441:
 .hword MOVE_FALTERREIGEN
 .byte 0x1
@@ -17849,7 +17409,6 @@ pkmn_moveset_441:
 .byte 0xFF
 
 /* Wadribie */
-.align 2
 pkmn_moveset_442:
 .hword MOVE_LOCKDUFT
 .byte 0x1
@@ -17863,7 +17422,6 @@ pkmn_moveset_442:
 .byte 0xFF
 
 /* Honweisel */
-.align 2
 pkmn_moveset_443:
 .hword MOVE_SCHLITZER
 .byte 0x1
@@ -17911,7 +17469,6 @@ pkmn_moveset_443:
 .byte 0xFF
 
 /* Pachirisu */
-.align 2
 pkmn_moveset_444:
 .hword MOVE_HEULER
 .byte 0x1
@@ -17947,7 +17504,6 @@ pkmn_moveset_444:
 .byte 0xFF
 
 /* Bamelin */
-.align 2
 pkmn_moveset_445:
 .hword MOVE_ULTRASCHALL
 .byte 0x1
@@ -17981,7 +17537,6 @@ pkmn_moveset_445:
 .byte 0xFF
 
 /* Bojelin */
-.align 2
 pkmn_moveset_446:
 .hword MOVE_EISZAHN
 .byte 0x1
@@ -18025,7 +17580,6 @@ pkmn_moveset_446:
 .byte 0xFF
 
 /* Kikugi */
-.align 2
 pkmn_moveset_447:
 .hword MOVE_MORGENGRAUEN
 .byte 0x1
@@ -18055,7 +17609,6 @@ pkmn_moveset_447:
 .byte 0xFF
 
 /* Kinoso */
-.align 2
 pkmn_moveset_448:
 .hword MOVE_BLAETTERTANZ
 .byte 0x1
@@ -18093,7 +17646,6 @@ pkmn_moveset_448:
 .byte 0xFF
 
 /* Schalellos */
-.align 2
 pkmn_moveset_449:
 .hword MOVE_LEHMSCHELLE
 .byte 0x1
@@ -18119,7 +17671,6 @@ pkmn_moveset_449:
 .byte 0xFF
 
 /* Gastrodon */
-.align 2
 pkmn_moveset_450:
 .hword MOVE_LEHMSCHELLE
 .byte 0x1
@@ -18151,7 +17702,6 @@ pkmn_moveset_450:
 .byte 0xFF
 
 /* Ambidiffel */
-.align 2
 pkmn_moveset_451:
 .hword MOVE_DOPPELHIEB
 .byte 0x1
@@ -18191,7 +17741,6 @@ pkmn_moveset_451:
 .byte 0xFF
 
 /* Driftlon */
-.align 2
 pkmn_moveset_452:
 .hword MOVE_UMKLAMMERUNG
 .byte 0x1
@@ -18227,7 +17776,6 @@ pkmn_moveset_452:
 .byte 0xFF
 
 /* Drifzepeli */
-.align 2
 pkmn_moveset_453:
 .hword MOVE_PHANTOMKRAFT
 .byte 0x1
@@ -18271,7 +17819,6 @@ pkmn_moveset_453:
 .byte 0xFF
 
 /* Haspiror */
-.align 2
 pkmn_moveset_454:
 .hword MOVE_FRUSTRATION
 .byte 0x1
@@ -18311,7 +17858,6 @@ pkmn_moveset_454:
 .byte 0xFF
 
 /* Schlapor */
-.align 2
 pkmn_moveset_455:
 .hword MOVE_RUECKKEHR
 .byte 0x1
@@ -18363,7 +17909,6 @@ pkmn_moveset_455:
 .byte 0xFF
 
 /* Traunmagil */
-.align 2
 pkmn_moveset_456:
 .hword MOVE_MAGIEFLAMME
 .byte 0x1
@@ -18387,7 +17932,6 @@ pkmn_moveset_456:
 .byte 0xFF
 
 /* Kramshef */
-.align 2
 pkmn_moveset_457:
 .hword MOVE_NACHTHIEB
 .byte 0x1
@@ -18417,7 +17961,6 @@ pkmn_moveset_457:
 .byte 0xFF
 
 /* Charmian */
-.align 2
 pkmn_moveset_458:
 .hword MOVE_MOGELHIEB
 .byte 0x1
@@ -18451,7 +17994,6 @@ pkmn_moveset_458:
 .byte 0xFF
 
 /* Shnurgarst */
-.align 2
 pkmn_moveset_459:
 .hword MOVE_ANGEBEREI
 .byte 0x1
@@ -18491,7 +18033,6 @@ pkmn_moveset_459:
 .byte 0xFF
 
 /* Klingplim */
-.align 2
 pkmn_moveset_460:
 .hword MOVE_WICKEL
 .byte 0x1
@@ -18513,7 +18054,6 @@ pkmn_moveset_460:
 .byte 0xFF
 
 /* Skunkapuh */
-.align 2
 pkmn_moveset_461:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -18553,7 +18093,6 @@ pkmn_moveset_461:
 .byte 0xFF
 
 /* Skuntank */
-.align 2
 pkmn_moveset_462:
 .hword MOVE_FLAMMENWURF
 .byte 0x1
@@ -18601,7 +18140,6 @@ pkmn_moveset_462:
 .byte 0xFF
 
 /* Bronzel */
-.align 2
 pkmn_moveset_463:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -18639,7 +18177,6 @@ pkmn_moveset_463:
 .byte 0xFF
 
 /* Bronzong */
-.align 2
 pkmn_moveset_464:
 .hword MOVE_RUECKENTZUG
 .byte 0x1
@@ -18689,7 +18226,6 @@ pkmn_moveset_464:
 .byte 0xFF
 
 /* Mobai */
-.align 2
 pkmn_moveset_465:
 .hword MOVE_TRUGTRAENE
 .byte 0x1
@@ -18723,13 +18259,12 @@ pkmn_moveset_465:
 .byte 0xFF
 
 /* Pantimimi */
-.align 2
 pkmn_moveset_466:
 .hword MOVE_SPASSKANONE
 .byte 0x1
 .hword MOVE_BARRIERE
 .byte 0x1
-.hword MOVE_PFUND
+.hword MOVE_PFUND USUM
 .byte 0x1
 .hword MOVE_KONFUSION
 .byte 0x1
@@ -18767,7 +18302,6 @@ pkmn_moveset_466:
 .byte 0xFF
 
 /* Wonneira */
-.align 2
 pkmn_moveset_467:
 .hword MOVE_PFUND
 .byte 0x1
@@ -18783,7 +18317,6 @@ pkmn_moveset_467:
 .byte 0xFF
 
 /* Plaudagei */
-.align 2
 pkmn_moveset_468:
 .hword MOVE_SCHALLWELLE
 .byte 0x1
@@ -18827,7 +18360,6 @@ pkmn_moveset_468:
 .byte 0xFF
 
 /* Kryppuk */
-.align 2
 pkmn_moveset_469:
 .hword MOVE_FLUCH
 .byte 0x1
@@ -18859,7 +18391,6 @@ pkmn_moveset_469:
 .byte 0xFF
 
 /* Kaumalat */
-.align 2
 pkmn_moveset_470:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -18885,7 +18416,6 @@ pkmn_moveset_470:
 .byte 0xFF
 
 /* Knarksel */
-.align 2
 pkmn_moveset_471:
 .hword MOVE_DOPPELHIEB
 .byte 0x1
@@ -18919,7 +18449,6 @@ pkmn_moveset_471:
 .byte 0xFF
 
 /* Knakrack */
-.align 2
 pkmn_moveset_472:
 .hword MOVE_KNIRSCHER
 .byte 0x1
@@ -18959,7 +18488,6 @@ pkmn_moveset_472:
 .byte 0xFF
 
 /* Mampfaxo */
-.align 2
 pkmn_moveset_473:
 .hword MOVE_ZUFLUCHT
 .byte 0x1
@@ -18997,7 +18525,7 @@ pkmn_moveset_473:
 .byte 0x2C
 .hword MOVE_BEERENKRAEFTE
 .byte 0x31
-.hword MOVE_ÜBERNAHME
+.hword MOVE_UEBERNAHME
 .byte 0x32
 .hword MOVE_ZUFLUCHT
 .byte 0x39
@@ -19005,7 +18533,6 @@ pkmn_moveset_473:
 .byte 0xFF
 
 /* Riolu */
-.align 2
 pkmn_moveset_474:
 .hword MOVE_GESICHTE
 .byte 0x1
@@ -19033,7 +18560,6 @@ pkmn_moveset_474:
 .byte 0xFF
 
 /* Lucario */
-.align 2
 pkmn_moveset_475:
 .hword MOVE_AURASPHAERE
 .byte 0x1
@@ -19079,7 +18605,6 @@ pkmn_moveset_475:
 .byte 0xFF
 
 /* Hippopotas */
-.align 2
 pkmn_moveset_476:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -19107,7 +18632,6 @@ pkmn_moveset_476:
 .byte 0xFF
 
 /* Hippoterus */
-.align 2
 pkmn_moveset_477:
 .hword MOVE_EISZAHN
 .byte 0x1
@@ -19145,7 +18669,6 @@ pkmn_moveset_477:
 .byte 0xFF
 
 /* Pionskora */
-.align 2
 pkmn_moveset_478:
 .hword MOVE_BISS
 .byte 0x1
@@ -19185,7 +18708,6 @@ pkmn_moveset_478:
 .byte 0xFF
 
 /* Piondragi */
-.align 2
 pkmn_moveset_479:
 .hword MOVE_DONNERZAHN
 .byte 0x1
@@ -19233,7 +18755,6 @@ pkmn_moveset_479:
 .byte 0xFF
 
 /* Glibunkel */
-.align 2
 pkmn_moveset_480:
 .hword MOVE_ERSTAUNER
 .byte 0x1
@@ -19271,7 +18792,6 @@ pkmn_moveset_480:
 .byte 0xFF
 
 /* Toxiquak */
-.align 2
 pkmn_moveset_481:
 .hword MOVE_ERSTAUNER
 .byte 0x1
@@ -19313,7 +18833,6 @@ pkmn_moveset_481:
 .byte 0xFF
 
 /* Venuflibis */
-.align 2
 pkmn_moveset_482:
 .hword MOVE_KLAMMERGRIFF
 .byte 0x1
@@ -19347,7 +18866,6 @@ pkmn_moveset_482:
 .byte 0xFF
 
 /* Finneon */
-.align 2
 pkmn_moveset_483:
 .hword MOVE_PFUND
 .byte 0x1
@@ -19375,15 +18893,14 @@ pkmn_moveset_483:
 .byte 0x2D
 .hword MOVE_SILBERHAUCH
 .byte 0x31
-.hword MOVE_ÜBERFLUTUNG
+.hword MOVE_UEBERFLUTUNG
 .byte 0x36
 .hword 0x0
 .byte 0xFF
 
 /* Lumineon */
-.align 2
 pkmn_moveset_484:
-.hword MOVE_ÜBERFLUTUNG
+.hword MOVE_UEBERFLUTUNG
 .byte 0x1
 .hword MOVE_WINDSTOSS
 .byte 0x1
@@ -19417,13 +18934,12 @@ pkmn_moveset_484:
 .byte 0x35
 .hword MOVE_SILBERHAUCH
 .byte 0x3B
-.hword MOVE_ÜBERFLUTUNG
+.hword MOVE_UEBERFLUTUNG
 .byte 0x42
 .hword 0x0
 .byte 0xFF
 
 /* Mantirps */
-.align 2
 pkmn_moveset_485:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -19459,7 +18975,6 @@ pkmn_moveset_485:
 .byte 0xFF
 
 /* Shnebedeck */
-.align 2
 pkmn_moveset_486:
 .hword MOVE_PULVERSCHNEE
 .byte 0x1
@@ -19489,7 +19004,6 @@ pkmn_moveset_486:
 .byte 0xFF
 
 /* Rexblisar */
-.align 2
 pkmn_moveset_487:
 .hword MOVE_EISHIEB
 .byte 0x1
@@ -19525,7 +19039,6 @@ pkmn_moveset_487:
 .byte 0xFF
 
 /* Snibunna */
-.align 2
 pkmn_moveset_488:
 .hword MOVE_ITEMSPERRE
 .byte 0x1
@@ -19561,7 +19074,7 @@ pkmn_moveset_488:
 .byte 0x20
 .hword MOVE_NACHTHIEB
 .byte 0x23
-.hword MOVE_ÜBERNAHME
+.hword MOVE_UEBERNAHME
 .byte 0x28
 .hword MOVE_STRAFATTACKE
 .byte 0x2C
@@ -19571,7 +19084,6 @@ pkmn_moveset_488:
 .byte 0xFF
 
 /* Magnezone */
-.align 2
 pkmn_moveset_489:
 .hword MOVE_TRIPLETTE
 .byte 0x1
@@ -19629,7 +19141,6 @@ pkmn_moveset_489:
 .byte 0xFF
 
 /* Schlurplek */
-.align 2
 pkmn_moveset_490:
 .hword MOVE_AUSWRINGEN
 .byte 0x1
@@ -19671,7 +19182,6 @@ pkmn_moveset_490:
 .byte 0xFF
 
 /* Rihornior */
-.align 2
 pkmn_moveset_491:
 .hword MOVE_HAMMERARM
 .byte 0x1
@@ -19721,7 +19231,6 @@ pkmn_moveset_491:
 .byte 0xFF
 
 /* Tangoloss */
-.align 2
 pkmn_moveset_492:
 .hword MOVE_RUECKENTZUG
 .byte 0x1
@@ -19769,7 +19278,6 @@ pkmn_moveset_492:
 .byte 0xFF
 
 /* Elevoltek */
-.align 2
 pkmn_moveset_493:
 .hword MOVE_ELEKTROFELD
 .byte 0x1
@@ -19817,7 +19325,6 @@ pkmn_moveset_493:
 .byte 0xFF
 
 /* Magbrant */
-.align 2
 pkmn_moveset_494:
 .hword MOVE_DONNERSCHLAG
 .byte 0x1
@@ -19859,7 +19366,6 @@ pkmn_moveset_494:
 .byte 0xFF
 
 /* Togekiss */
-.align 2
 pkmn_moveset_495:
 .hword MOVE_GALANTERIE
 .byte 0x1
@@ -19875,7 +19381,6 @@ pkmn_moveset_495:
 .byte 0xFF
 
 /* Yanmega */
-.align 2
 pkmn_moveset_496:
 .hword MOVE_KAEFERGEBRUMM
 .byte 0x1
@@ -19925,7 +19430,6 @@ pkmn_moveset_496:
 .byte 0xFF
 
 /* Folipurba */
-.align 2
 pkmn_moveset_497:
 .hword MOVE_RASIERBLATT
 .byte 0x1
@@ -19961,7 +19465,6 @@ pkmn_moveset_497:
 .byte 0xFF
 
 /* Glaziola */
-.align 2
 pkmn_moveset_498:
 .hword MOVE_EISSTURM
 .byte 0x1
@@ -19997,7 +19500,6 @@ pkmn_moveset_498:
 .byte 0xFF
 
 /* Skorgro */
-.align 2
 pkmn_moveset_499:
 .hword MOVE_GUILLOTINE
 .byte 0x1
@@ -20047,7 +19549,6 @@ pkmn_moveset_499:
 .byte 0xFF
 
 /* Mamutel */
-.align 2
 pkmn_moveset_500:
 .hword MOVE_FURIENSCHLAG
 .byte 0x1
@@ -20095,7 +19596,6 @@ pkmn_moveset_500:
 .byte 0xFF
 
 /* Porygon-Z */
-.align 2
 pkmn_moveset_501:
 .hword MOVE_BIZARRORAUM
 .byte 0x1
@@ -20139,7 +19639,6 @@ pkmn_moveset_501:
 .byte 0xFF
 
 /* Galagladi */
-.align 2
 pkmn_moveset_502:
 .hword MOVE_SCHLITZER
 .byte 0x1
@@ -20195,7 +19694,6 @@ pkmn_moveset_502:
 .byte 0xFF
 
 /* Voluminas */
-.align 2
 pkmn_moveset_503:
 .hword MOVE_TRIPLETTE
 .byte 0x1
@@ -20249,7 +19747,6 @@ pkmn_moveset_503:
 .byte 0xFF
 
 /* Zwirrfinst */
-.align 2
 pkmn_moveset_504:
 .hword MOVE_FINSTERFAUST
 .byte 0x1
@@ -20303,7 +19800,6 @@ pkmn_moveset_504:
 .byte 0xFF
 
 /* Frosdedje */
-.align 2
 pkmn_moveset_505:
 .hword MOVE_UNHEILBOEEN
 .byte 0x1
@@ -20347,7 +19843,6 @@ pkmn_moveset_505:
 .byte 0xFF
 
 /* Rotom */
-.align 2
 pkmn_moveset_506:
 .hword MOVE_LADUNGSSTOSS
 .byte 0x1
@@ -20385,7 +19880,6 @@ pkmn_moveset_506:
 .byte 0xFF
 
 /* Selfe */
-.align 2
 pkmn_moveset_507:
 .hword MOVE_MEMENTO_MORI
 .byte 0x1
@@ -20421,7 +19915,6 @@ pkmn_moveset_507:
 .byte 0xFF
 
 /* Vesprit */
-.align 2
 pkmn_moveset_508:
 .hword MOVE_HEILOPFER
 .byte 0x1
@@ -20457,7 +19950,6 @@ pkmn_moveset_508:
 .byte 0xFF
 
 /* Tobutz */
-.align 2
 pkmn_moveset_509:
 .hword MOVE_BEERENKRAEFTE
 .byte 0x1
@@ -20491,7 +19983,6 @@ pkmn_moveset_509:
 .byte 0xFF
 
 /* Dialga */
-.align 2
 pkmn_moveset_510:
 .hword MOVE_FEUERODEM
 .byte 0x1
@@ -20523,7 +20014,6 @@ pkmn_moveset_510:
 .byte 0xFF
 
 /* Palkia */
-.align 2
 pkmn_moveset_511:
 .hword MOVE_FEUERODEM
 .byte 0x1
@@ -20555,7 +20045,6 @@ pkmn_moveset_511:
 .byte 0xFF
 
 /* Heatran */
-.align 2
 pkmn_moveset_512:
 .hword MOVE_LAVASTURM
 .byte 0x1
@@ -20597,7 +20086,6 @@ pkmn_moveset_512:
 .byte 0xFF
 
 /* Regigigas */
-.align 2
 pkmn_moveset_513:
 .hword MOVE_RAMMBOSS
 .byte 0x1
@@ -20635,7 +20123,6 @@ pkmn_moveset_513:
 .byte 0xFF
 
 /* Giratina */
-.align 2
 pkmn_moveset_514:
 .hword MOVE_FEUERODEM
 .byte 0x1
@@ -20667,7 +20154,6 @@ pkmn_moveset_514:
 .byte 0xFF
 
 /* Cresselia */
-.align 2
 pkmn_moveset_515:
 .hword MOVE_LUNARTANZ
 .byte 0x1
@@ -20707,7 +20193,6 @@ pkmn_moveset_515:
 .byte 0xFF
 
 /* Phione */
-.align 2
 pkmn_moveset_516:
 .hword MOVE_BLUBBER
 .byte 0x1
@@ -20735,7 +20220,6 @@ pkmn_moveset_516:
 .byte 0xFF
 
 /* Manaphy */
-.align 2
 pkmn_moveset_517:
 .hword MOVE_SCHWEIFGLANZ
 .byte 0x1
@@ -20767,7 +20251,6 @@ pkmn_moveset_517:
 .byte 0xFF
 
 /* Darkrai */
-.align 2
 pkmn_moveset_518:
 .hword MOVE_UNHEILBOEEN
 .byte 0x1
@@ -20797,7 +20280,6 @@ pkmn_moveset_518:
 .byte 0xFF
 
 /* Shaymin */
-.align 2
 pkmn_moveset_519:
 .hword MOVE_WACHSTUM
 .byte 0x1
@@ -20827,7 +20309,6 @@ pkmn_moveset_519:
 .byte 0xFF
 
 /* Shaymin [Zenitform] */
-.align 2
 pkmn_moveset_520:
 .hword MOVE_WACHSTUM
 .byte 0x1
@@ -20857,7 +20338,6 @@ pkmn_moveset_520:
 .byte 0xFF
 
 /* Arceus */
-.align 2
 pkmn_moveset_521:
 .hword MOVE_GEOWURF
 .byte 0x1
@@ -20891,7 +20371,6 @@ pkmn_moveset_521:
 .byte 0xFF
 
 /* Victini */
-.align 2
 pkmn_moveset_522:
 .hword MOVE_FLAMMENBALL
 .byte 0x1
@@ -20931,7 +20410,6 @@ pkmn_moveset_522:
 .byte 0xFF
 
 /* Serpifeu */
-.align 2
 pkmn_moveset_523:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -20967,7 +20445,6 @@ pkmn_moveset_523:
 .byte 0xFF
 
 /* Efoserp */
-.align 2
 pkmn_moveset_524:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -21009,7 +20486,6 @@ pkmn_moveset_524:
 .byte 0xFF
 
 /* Serpiroyal */
-.align 2
 pkmn_moveset_525:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -21051,7 +20527,6 @@ pkmn_moveset_525:
 .byte 0xFF
 
 /* Floink */
-.align 2
 pkmn_moveset_526:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -21087,7 +20562,6 @@ pkmn_moveset_526:
 .byte 0xFF
 
 /* Ferkokel */
-.align 2
 pkmn_moveset_527:
 .hword MOVE_ARMSTOSS
 .byte 0x1
@@ -21133,7 +20607,6 @@ pkmn_moveset_527:
 .byte 0xFF
 
 /* Flambirex */
-.align 2
 pkmn_moveset_528:
 .hword MOVE_ARMSTOSS
 .byte 0x1
@@ -21179,7 +20652,6 @@ pkmn_moveset_528:
 .byte 0xFF
 
 /* Ottaro */
-.align 2
 pkmn_moveset_529:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -21215,7 +20687,6 @@ pkmn_moveset_529:
 .byte 0xFF
 
 /* Zwottronin */
-.align 2
 pkmn_moveset_530:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -21257,7 +20728,6 @@ pkmn_moveset_530:
 .byte 0xFF
 
 /* Admurai */
-.align 2
 pkmn_moveset_531:
 .hword MOVE_SCHLITZER
 .byte 0x1
@@ -21305,7 +20775,6 @@ pkmn_moveset_531:
 .byte 0xFF
 
 /* Nagelotz */
-.align 2
 pkmn_moveset_532:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -21345,7 +20814,6 @@ pkmn_moveset_532:
 .byte 0xFF
 
 /* Kukmarda */
-.align 2
 pkmn_moveset_533:
 .hword MOVE_KONFUSTRAHL
 .byte 0x1
@@ -21397,7 +20865,6 @@ pkmn_moveset_533:
 .byte 0xFF
 
 /* Yorkleff */
-.align 2
 pkmn_moveset_534:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -21433,7 +20900,6 @@ pkmn_moveset_534:
 .byte 0xFF
 
 /* Terribark */
-.align 2
 pkmn_moveset_535:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -21471,7 +20937,6 @@ pkmn_moveset_535:
 .byte 0xFF
 
 /* Bissbark */
-.align 2
 pkmn_moveset_536:
 .hword MOVE_EISZAHN
 .byte 0x1
@@ -21515,7 +20980,6 @@ pkmn_moveset_536:
 .byte 0xFF
 
 /* Felilou */
-.align 2
 pkmn_moveset_537:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -21543,7 +21007,7 @@ pkmn_moveset_537:
 .byte 0x21
 .hword MOVE_NACHTHIEB
 .byte 0x25
-.hword MOVE_ÜBERNAHME
+.hword MOVE_UEBERNAHME
 .byte 0x27
 .hword MOVE_RAENKESCHMIED
 .byte 0x2A
@@ -21555,7 +21019,6 @@ pkmn_moveset_537:
 .byte 0xFF
 
 /* Kleoparda */
-.align 2
 pkmn_moveset_538:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -21589,7 +21052,7 @@ pkmn_moveset_538:
 .byte 0x26
 .hword MOVE_NACHTHIEB
 .byte 0x2B
-.hword MOVE_ÜBERNAHME
+.hword MOVE_UEBERNAHME
 .byte 0x2F
 .hword MOVE_RAENKESCHMIED
 .byte 0x32
@@ -21601,7 +21064,6 @@ pkmn_moveset_538:
 .byte 0xFF
 
 /* Vegimak */
-.align 2
 pkmn_moveset_539:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -21639,7 +21101,6 @@ pkmn_moveset_539:
 .byte 0xFF
 
 /* Vegichita */
-.align 2
 pkmn_moveset_540:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -21653,7 +21114,6 @@ pkmn_moveset_540:
 .byte 0xFF
 
 /* Grillmak */
-.align 2
 pkmn_moveset_541:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -21691,7 +21151,6 @@ pkmn_moveset_541:
 .byte 0xFF
 
 /* Grillchita */
-.align 2
 pkmn_moveset_542:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -21705,7 +21164,6 @@ pkmn_moveset_542:
 .byte 0xFF
 
 /* Sodamak */
-.align 2
 pkmn_moveset_543:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -21743,7 +21201,6 @@ pkmn_moveset_543:
 .byte 0xFF
 
 /* Sodachita */
-.align 2
 pkmn_moveset_544:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -21757,7 +21214,6 @@ pkmn_moveset_544:
 .byte 0xFF
 
 /* Somniam */
-.align 2
 pkmn_moveset_545:
 .hword MOVE_PSYWELLE
 .byte 0x1
@@ -21797,7 +21253,6 @@ pkmn_moveset_545:
 .byte 0xFF
 
 /* Somnivora */
-.align 2
 pkmn_moveset_546:
 .hword MOVE_PSYCHOFELD
 .byte 0x1
@@ -21813,7 +21268,6 @@ pkmn_moveset_546:
 .byte 0xFF
 
 /* Dusselgurr */
-.align 2
 pkmn_moveset_547:
 .hword MOVE_WINDSTOSS
 .byte 0x1
@@ -21849,7 +21303,6 @@ pkmn_moveset_547:
 .byte 0xFF
 
 /* Navitaub */
-.align 2
 pkmn_moveset_548:
 .hword MOVE_WINDSTOSS
 .byte 0x1
@@ -21891,7 +21344,6 @@ pkmn_moveset_548:
 .byte 0xFF
 
 /* Fasasnob */
-.align 2
 pkmn_moveset_549:
 .hword MOVE_WINDSTOSS
 .byte 0x1
@@ -21933,7 +21385,6 @@ pkmn_moveset_549:
 .byte 0xFF
 
 /* Elezeba */
-.align 2
 pkmn_moveset_550:
 .hword MOVE_RUCKZUCKHIEB
 .byte 0x1
@@ -21965,7 +21416,6 @@ pkmn_moveset_550:
 .byte 0xFF
 
 /* Zebritz */
-.align 2
 pkmn_moveset_551:
 .hword MOVE_PLASMASCHAUER
 .byte 0x1
@@ -22007,7 +21457,6 @@ pkmn_moveset_551:
 .byte 0xFF
 
 /* Kiesling */
-.align 2
 pkmn_moveset_552:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -22039,7 +21488,6 @@ pkmn_moveset_552:
 .byte 0xFF
 
 /* Sedimantur */
-.align 2
 pkmn_moveset_553:
 .hword MOVE_JUWELENKRAFT
 .byte 0x1
@@ -22081,7 +21529,6 @@ pkmn_moveset_553:
 .byte 0xFF
 
 /* Brockoloss */
-.align 2
 pkmn_moveset_554:
 .hword MOVE_JUWELENKRAFT
 .byte 0x1
@@ -22121,7 +21568,6 @@ pkmn_moveset_554:
 .byte 0xFF
 
 /* Fleknoil */
-.align 2
 pkmn_moveset_555:
 .hword MOVE_KONFUSION
 .byte 0x1
@@ -22155,7 +21601,6 @@ pkmn_moveset_555:
 .byte 0xFF
 
 /* Fletiamo */
-.align 2
 pkmn_moveset_556:
 .hword MOVE_KONFUSION
 .byte 0x1
@@ -22195,7 +21640,6 @@ pkmn_moveset_556:
 .byte 0xFF
 
 /* Rotomurf */
-.align 2
 pkmn_moveset_557:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -22231,7 +21675,6 @@ pkmn_moveset_557:
 .byte 0xFF
 
 /* Stalobor */
-.align 2
 pkmn_moveset_558:
 .hword MOVE_HORNBOHRER
 .byte 0x1
@@ -22277,7 +21720,6 @@ pkmn_moveset_558:
 .byte 0xFF
 
 /* Ohrdoch */
-.align 2
 pkmn_moveset_559:
 .hword MOVE_ZUFLUCHT
 .byte 0x1
@@ -22325,7 +21767,6 @@ pkmn_moveset_559:
 .byte 0xFF
 
 /* Praktibalk */
-.align 2
 pkmn_moveset_560:
 .hword MOVE_PFUND
 .byte 0x1
@@ -22363,7 +21804,6 @@ pkmn_moveset_560:
 .byte 0xFF
 
 /* Strepoli */
-.align 2
 pkmn_moveset_561:
 .hword MOVE_PFUND
 .byte 0x1
@@ -22405,7 +21845,6 @@ pkmn_moveset_561:
 .byte 0xFF
 
 /* Meistagrif */
-.align 2
 pkmn_moveset_562:
 .hword MOVE_PFUND
 .byte 0x1
@@ -22447,7 +21886,6 @@ pkmn_moveset_562:
 .byte 0xFF
 
 /* Schallquap */
-.align 2
 pkmn_moveset_563:
 .hword MOVE_BLUBBER
 .byte 0x1
@@ -22481,7 +21919,6 @@ pkmn_moveset_563:
 .byte 0xFF
 
 /* Mebrana */
-.align 2
 pkmn_moveset_564:
 .hword MOVE_BLUBBER
 .byte 0x1
@@ -22519,7 +21956,6 @@ pkmn_moveset_564:
 .byte 0xFF
 
 /* Branawarz */
-.align 2
 pkmn_moveset_565:
 .hword MOVE_SAEURE
 .byte 0x1
@@ -22563,7 +21999,6 @@ pkmn_moveset_565:
 .byte 0xFF
 
 /* Jiutesto */
-.align 2
 pkmn_moveset_566:
 .hword MOVE_TATAMI_SCHILD
 .byte 0x1
@@ -22577,7 +22012,7 @@ pkmn_moveset_566:
 .byte 0x1
 .hword MOVE_GEOWURF
 .byte 0x5
-.hword MOVE_ÜBERWURF
+.hword MOVE_UEBERWURF
 .byte 0x9
 .hword MOVE_VERGELTUNG
 .byte 0xD
@@ -22587,7 +22022,7 @@ pkmn_moveset_566:
 .byte 0x15
 .hword MOVE_PROTZER
 .byte 0x19
-.hword MOVE_ÜBERKOPFWURF
+.hword MOVE_UEBERKOPFWURF
 .byte 0x1D
 .hword MOVE_AUSDAUER
 .byte 0x21
@@ -22601,7 +22036,6 @@ pkmn_moveset_566:
 .byte 0xFF
 
 /* Karadonis */
-.align 2
 pkmn_moveset_567:
 .hword MOVE_ZERTRUEMMERER
 .byte 0x1
@@ -22637,7 +22071,6 @@ pkmn_moveset_567:
 .byte 0xFF
 
 /* Strawickl */
-.align 2
 pkmn_moveset_568:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -22661,7 +22094,6 @@ pkmn_moveset_568:
 .byte 0xFF
 
 /* Folikon */
-.align 2
 pkmn_moveset_569:
 .hword MOVE_SCHUTZSCHILD
 .byte 0x1
@@ -22681,7 +22113,6 @@ pkmn_moveset_569:
 .byte 0xFF
 
 /* Matrifol */
-.align 2
 pkmn_moveset_570:
 .hword MOVE_SCHLITZER
 .byte 0x1
@@ -22719,7 +22150,6 @@ pkmn_moveset_570:
 .byte 0xFF
 
 /* Toxiped */
-.align 2
 pkmn_moveset_571:
 .hword MOVE_EINIGLER
 .byte 0x1
@@ -22755,7 +22185,6 @@ pkmn_moveset_571:
 .byte 0xFF
 
 /* Rollum */
-.align 2
 pkmn_moveset_572:
 .hword MOVE_EISENABWEHR
 .byte 0x1
@@ -22799,7 +22228,6 @@ pkmn_moveset_572:
 .byte 0xFF
 
 /* Cerapendra */
-.align 2
 pkmn_moveset_573:
 .hword MOVE_STAFETTE
 .byte 0x1
@@ -22849,7 +22277,6 @@ pkmn_moveset_573:
 .byte 0xFF
 
 /* Waumboll */
-.align 2
 pkmn_moveset_574:
 .hword MOVE_ABSORBER
 .byte 0x1
@@ -22889,7 +22316,6 @@ pkmn_moveset_574:
 .byte 0xFF
 
 /* Elfun */
-.align 2
 pkmn_moveset_575:
 .hword MOVE_WACHSTUM
 .byte 0x1
@@ -22911,7 +22337,6 @@ pkmn_moveset_575:
 .byte 0xFF
 
 /* Lilminip */
-.align 2
 pkmn_moveset_576:
 .hword MOVE_ABSORBER
 .byte 0x1
@@ -22949,7 +22374,6 @@ pkmn_moveset_576:
 .byte 0xFF
 
 /* Dressella */
-.align 2
 pkmn_moveset_577:
 .hword MOVE_WACHSTUM
 .byte 0x1
@@ -22971,7 +22395,6 @@ pkmn_moveset_577:
 .byte 0xFF
 
 /* Barschuft */
-.align 2
 pkmn_moveset_578:
 .hword MOVE_RUTENSCHLAG
 .byte 0x1
@@ -22995,7 +22418,7 @@ pkmn_moveset_578:
 .byte 0x11
 .hword MOVE_NASSSCHWEIF
 .byte 0x14
-.hword MOVE_ÜBERFLUTUNG
+.hword MOVE_UEBERFLUTUNG
 .byte 0x17
 .hword MOVE_RISIKOTACKLE
 .byte 0x1A
@@ -23013,7 +22436,6 @@ pkmn_moveset_578:
 .byte 0xFF
 
 /* Ganovil */
-.align 2
 pkmn_moveset_579:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -23053,7 +22475,6 @@ pkmn_moveset_579:
 .byte 0xFF
 
 /* Rokkaiman */
-.align 2
 pkmn_moveset_580:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -23097,9 +22518,8 @@ pkmn_moveset_580:
 .byte 0xFF
 
 /* Rabigator */
-.align 2
 pkmn_moveset_581:
-.hword MOVE_ÜBERHEBLICHKEIT
+.hword MOVE_UEBERHEBLICHKEIT
 .byte 0x1
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -23143,7 +22563,6 @@ pkmn_moveset_581:
 .byte 0xFF
 
 /* Flampion */
-.align 2
 pkmn_moveset_582:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -23181,7 +22600,6 @@ pkmn_moveset_582:
 .byte 0xFF
 
 /* Flampivian */
-.align 2
 pkmn_moveset_583:
 .hword MOVE_HAMMERARM
 .byte 0x1
@@ -23229,7 +22647,6 @@ pkmn_moveset_583:
 .byte 0xFF
 
 /* Maracamba */
-.align 2
 pkmn_moveset_584:
 .hword MOVE_SCHUTZSTACHELN
 .byte 0x1
@@ -23279,7 +22696,6 @@ pkmn_moveset_584:
 .byte 0xFF
 
 /* Lithomith */
-.align 2
 pkmn_moveset_585:
 .hword MOVE_ZORNKLINGE
 .byte 0x1
@@ -23315,7 +22731,6 @@ pkmn_moveset_585:
 .byte 0xFF
 
 /* Castellith */
-.align 2
 pkmn_moveset_586:
 .hword MOVE_HAUSBRUCH
 .byte 0x1
@@ -23357,7 +22772,6 @@ pkmn_moveset_586:
 .byte 0xFF
 
 /* Zurrokex */
-.align 2
 pkmn_moveset_587:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -23395,7 +22809,6 @@ pkmn_moveset_587:
 .byte 0xFF
 
 /* Irokex */
-.align 2
 pkmn_moveset_588:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -23437,7 +22850,6 @@ pkmn_moveset_588:
 .byte 0xFF
 
 /* Symvolara */
-.align 2
 pkmn_moveset_589:
 .hword MOVE_WINDSTOSS
 .byte 0x1
@@ -23477,7 +22889,6 @@ pkmn_moveset_589:
 .byte 0xFF
 
 /* Makabaja */
-.align 2
 pkmn_moveset_590:
 .hword MOVE_ERSTAUNER
 .byte 0x1
@@ -23513,7 +22924,6 @@ pkmn_moveset_590:
 .byte 0xFF
 
 /* Echnatoll */
-.align 2
 pkmn_moveset_591:
 .hword MOVE_GRIMASSE
 .byte 0x1
@@ -23557,7 +22967,6 @@ pkmn_moveset_591:
 .byte 0xFF
 
 /* Galapaflos */
-.align 2
 pkmn_moveset_592:
 .hword MOVE_GEDULD
 .byte 0x1
@@ -23599,7 +23008,6 @@ pkmn_moveset_592:
 .byte 0xFF
 
 /* Karippas */
-.align 2
 pkmn_moveset_593:
 .hword MOVE_GEDULD
 .byte 0x1
@@ -23643,7 +23051,6 @@ pkmn_moveset_593:
 .byte 0xFF
 
 /* Flapteryx */
-.align 2
 pkmn_moveset_594:
 .hword MOVE_RUCKZUCKHIEB
 .byte 0x1
@@ -23685,7 +23092,6 @@ pkmn_moveset_594:
 .byte 0xFF
 
 /* Aeropteryx */
-.align 2
 pkmn_moveset_595:
 .hword MOVE_RUCKZUCKHIEB
 .byte 0x1
@@ -23729,7 +23135,6 @@ pkmn_moveset_595:
 .byte 0xFF
 
 /* Unratütox */
-.align 2
 pkmn_moveset_596:
 .hword MOVE_PFUND
 .byte 0x1
@@ -23769,7 +23174,6 @@ pkmn_moveset_596:
 .byte 0xFF
 
 /* Deponitox */
-.align 2
 pkmn_moveset_597:
 .hword MOVE_PFUND
 .byte 0x1
@@ -23813,7 +23217,6 @@ pkmn_moveset_597:
 .byte 0xFF
 
 /* Zorua */
-.align 2
 pkmn_moveset_598:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -23851,7 +23254,6 @@ pkmn_moveset_598:
 .byte 0xFF
 
 /* Zoroark */
-.align 2
 pkmn_moveset_599:
 .hword MOVE_NACHTHIEB
 .byte 0x1
@@ -23903,7 +23305,6 @@ pkmn_moveset_599:
 .byte 0xFF
 
 /* Picochilla */
-.align 2
 pkmn_moveset_600:
 .hword MOVE_PFUND
 .byte 0x1
@@ -23943,7 +23344,6 @@ pkmn_moveset_600:
 .byte 0xFF
 
 /* Chillabell */
-.align 2
 pkmn_moveset_601:
 .hword MOVE_KUGELSAAT
 .byte 0x1
@@ -23961,7 +23361,6 @@ pkmn_moveset_601:
 .byte 0xFF
 
 /* Mollimorba */
-.align 2
 pkmn_moveset_602:
 .hword MOVE_PFUND
 .byte 0x1
@@ -24001,7 +23400,6 @@ pkmn_moveset_602:
 .byte 0xFF
 
 /* Hypnomorba */
-.align 2
 pkmn_moveset_603:
 .hword MOVE_PFUND
 .byte 0x1
@@ -24045,7 +23443,6 @@ pkmn_moveset_603:
 .byte 0xFF
 
 /* Morbitesse */
-.align 2
 pkmn_moveset_604:
 .hword MOVE_PFUND
 .byte 0x1
@@ -24089,7 +23486,6 @@ pkmn_moveset_604:
 .byte 0xFF
 
 /* Monozyto */
-.align 2
 pkmn_moveset_605:
 .hword MOVE_PSYWELLE
 .byte 0x1
@@ -24097,7 +23493,7 @@ pkmn_moveset_605:
 .byte 0x3
 .hword MOVE_WALZER
 .byte 0x7
-.hword MOVE_ÜBERNAHME
+.hword MOVE_UEBERNAHME
 .byte 0xA
 .hword MOVE_KRAFTRESERVE
 .byte 0xE
@@ -24127,7 +23523,6 @@ pkmn_moveset_605:
 .byte 0xFF
 
 /* Mitodos */
-.align 2
 pkmn_moveset_606:
 .hword MOVE_PSYWELLE
 .byte 0x1
@@ -24135,13 +23530,13 @@ pkmn_moveset_606:
 .byte 0x1
 .hword MOVE_WALZER
 .byte 0x1
-.hword MOVE_ÜBERNAHME
+.hword MOVE_UEBERNAHME
 .byte 0x1
 .hword MOVE_REFLEKTOR
 .byte 0x3
 .hword MOVE_WALZER
 .byte 0x7
-.hword MOVE_ÜBERNAHME
+.hword MOVE_UEBERNAHME
 .byte 0xA
 .hword MOVE_KRAFTRESERVE
 .byte 0xE
@@ -24171,7 +23566,6 @@ pkmn_moveset_606:
 .byte 0xFF
 
 /* Zytomega */
-.align 2
 pkmn_moveset_607:
 .hword MOVE_IRRSCHLAG
 .byte 0x1
@@ -24181,13 +23575,13 @@ pkmn_moveset_607:
 .byte 0x1
 .hword MOVE_WALZER
 .byte 0x1
-.hword MOVE_ÜBERNAHME
+.hword MOVE_UEBERNAHME
 .byte 0x1
 .hword MOVE_REFLEKTOR
 .byte 0x3
 .hword MOVE_WALZER
 .byte 0x7
-.hword MOVE_ÜBERNAHME
+.hword MOVE_UEBERNAHME
 .byte 0xA
 .hword MOVE_KRAFTRESERVE
 .byte 0xE
@@ -24219,7 +23613,6 @@ pkmn_moveset_607:
 .byte 0xFF
 
 /* Piccolente */
-.align 2
 pkmn_moveset_608:
 .hword MOVE_AQUAKNARRE
 .byte 0x1
@@ -24255,7 +23648,6 @@ pkmn_moveset_608:
 .byte 0xFF
 
 /* Swaroness */
-.align 2
 pkmn_moveset_609:
 .hword MOVE_AQUAKNARRE
 .byte 0x1
@@ -24297,7 +23689,6 @@ pkmn_moveset_609:
 .byte 0xFF
 
 /* Gelatini */
-.align 2
 pkmn_moveset_610:
 .hword MOVE_EISSPEER
 .byte 0x1
@@ -24333,7 +23724,6 @@ pkmn_moveset_610:
 .byte 0xFF
 
 /* Gelatroppo */
-.align 2
 pkmn_moveset_611:
 .hword MOVE_EISSPEER
 .byte 0x1
@@ -24375,7 +23765,6 @@ pkmn_moveset_611:
 .byte 0xFF
 
 /* Gelatwino */
-.align 2
 pkmn_moveset_612:
 .hword MOVE_EISESKAELTE
 .byte 0x1
@@ -24423,7 +23812,6 @@ pkmn_moveset_612:
 .byte 0xFF
 
 /* Sesokitz */
-.align 2
 pkmn_moveset_613:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -24459,7 +23847,6 @@ pkmn_moveset_613:
 .byte 0xFF
 
 /* Kronjuwild */
-.align 2
 pkmn_moveset_614:
 .hword MOVE_HOLZGEWEIH
 .byte 0x1
@@ -24505,7 +23892,6 @@ pkmn_moveset_614:
 .byte 0xFF
 
 /* Emolga */
-.align 2
 pkmn_moveset_615:
 .hword MOVE_DONNERSCHOCK
 .byte 0x1
@@ -24543,7 +23929,6 @@ pkmn_moveset_615:
 .byte 0xFF
 
 /* Laukaps */
-.align 2
 pkmn_moveset_616:
 .hword MOVE_SCHNABEL
 .byte 0x1
@@ -24579,7 +23964,6 @@ pkmn_moveset_616:
 .byte 0xFF
 
 /* Cavalanzas */
-.align 2
 pkmn_moveset_617:
 .hword MOVE_RISIKOTACKLE
 .byte 0x1
@@ -24627,7 +24011,6 @@ pkmn_moveset_617:
 .byte 0xFF
 
 /* Tarnpignon */
-.align 2
 pkmn_moveset_618:
 .hword MOVE_ABSORBER
 .byte 0x1
@@ -24663,7 +24046,6 @@ pkmn_moveset_618:
 .byte 0xFF
 
 /* Hutsassa */
-.align 2
 pkmn_moveset_619:
 .hword MOVE_ABSORBER
 .byte 0x1
@@ -24705,7 +24087,6 @@ pkmn_moveset_619:
 .byte 0xFF
 
 /* Quabbel */
-.align 2
 pkmn_moveset_620:
 .hword MOVE_BLUBBER
 .byte 0x1
@@ -24739,7 +24120,6 @@ pkmn_moveset_620:
 .byte 0xFF
 
 /* Apoquallyp */
-.align 2
 pkmn_moveset_621:
 .hword MOVE_FONTRAENEN
 .byte 0x1
@@ -24781,7 +24161,6 @@ pkmn_moveset_621:
 .byte 0xFF
 
 /* Mamolida */
-.align 2
 pkmn_moveset_622:
 .hword MOVE_KAMERADSCHAFT
 .byte 0x1
@@ -24811,7 +24190,7 @@ pkmn_moveset_622:
 .byte 0x19
 .hword MOVE_WECKRUF
 .byte 0x1D
-.hword MOVE_ÜBERFLUTUNG
+.hword MOVE_UEBERFLUTUNG
 .byte 0x21
 .hword MOVE_WUNSCHTRAUM
 .byte 0x25
@@ -24833,7 +24212,6 @@ pkmn_moveset_622:
 .byte 0xFF
 
 /* Wattzapf */
-.align 2
 pkmn_moveset_623:
 .hword MOVE_FADENSCHUSS
 .byte 0x1
@@ -24871,7 +24249,6 @@ pkmn_moveset_623:
 .byte 0xFF
 
 /* Voltula */
-.align 2
 pkmn_moveset_624:
 .hword MOVE_KLEBENETZ
 .byte 0x1
@@ -24915,7 +24292,6 @@ pkmn_moveset_624:
 .byte 0xFF
 
 /* Kastadur */
-.align 2
 pkmn_moveset_625:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -24951,7 +24327,6 @@ pkmn_moveset_625:
 .byte 0xFF
 
 /* Tentantel */
-.align 2
 pkmn_moveset_626:
 .hword MOVE_BLATTGEISSEL
 .byte 0x1
@@ -24997,7 +24372,6 @@ pkmn_moveset_626:
 .byte 0xFF
 
 /* Klikk */
-.align 2
 pkmn_moveset_627:
 .hword MOVE_KLAMMER
 .byte 0x1
@@ -25033,7 +24407,6 @@ pkmn_moveset_627:
 .byte 0xFF
 
 /* Kliklak */
-.align 2
 pkmn_moveset_628:
 .hword MOVE_KLAMMER
 .byte 0x1
@@ -25075,7 +24448,6 @@ pkmn_moveset_628:
 .byte 0xFF
 
 /* Klikdiklak */
-.align 2
 pkmn_moveset_629:
 .hword MOVE_MAGNETREGLER
 .byte 0x1
@@ -25123,7 +24495,6 @@ pkmn_moveset_629:
 .byte 0xFF
 
 /* Zapplardin */
-.align 2
 pkmn_moveset_630:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -25137,7 +24508,6 @@ pkmn_moveset_630:
 .byte 0xFF
 
 /* Zapplalek */
-.align 2
 pkmn_moveset_631:
 .hword MOVE_KNIRSCHER
 .byte 0x1
@@ -25175,7 +24545,6 @@ pkmn_moveset_631:
 .byte 0xFF
 
 /* Zapplarang */
-.align 2
 pkmn_moveset_632:
 .hword MOVE_KNIRSCHER
 .byte 0x1
@@ -25201,7 +24570,6 @@ pkmn_moveset_632:
 .byte 0xFF
 
 /* Pygraulon */
-.align 2
 pkmn_moveset_633:
 .hword MOVE_KONFUSION
 .byte 0x1
@@ -25243,7 +24611,6 @@ pkmn_moveset_633:
 .byte 0xFF
 
 /* Megalon */
-.align 2
 pkmn_moveset_634:
 .hword MOVE_PSYCHOFELD
 .byte 0x1
@@ -25297,7 +24664,6 @@ pkmn_moveset_634:
 .byte 0xFF
 
 /* Lichtel */
-.align 2
 pkmn_moveset_635:
 .hword MOVE_GLUT
 .byte 0x1
@@ -25337,7 +24703,6 @@ pkmn_moveset_635:
 .byte 0xFF
 
 /* Laternecto */
-.align 2
 pkmn_moveset_636:
 .hword MOVE_GLUT
 .byte 0x1
@@ -25381,7 +24746,6 @@ pkmn_moveset_636:
 .byte 0xFF
 
 /* Skelabra */
-.align 2
 pkmn_moveset_637:
 .hword MOVE_LEIDTEILER
 .byte 0x1
@@ -25397,7 +24761,6 @@ pkmn_moveset_637:
 .byte 0xFF
 
 /* Milza */
-.align 2
 pkmn_moveset_638:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -25435,7 +24798,6 @@ pkmn_moveset_638:
 .byte 0xFF
 
 /* Sharfax */
-.align 2
 pkmn_moveset_639:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -25479,7 +24841,6 @@ pkmn_moveset_639:
 .byte 0xFF
 
 /* Maxax */
-.align 2
 pkmn_moveset_640:
 .hword MOVE_WUTANFALL
 .byte 0x1
@@ -25525,7 +24886,6 @@ pkmn_moveset_640:
 .byte 0xFF
 
 /* Petznief */
-.align 2
 pkmn_moveset_641:
 .hword MOVE_HEULER
 .byte 0x1
@@ -25563,7 +24923,6 @@ pkmn_moveset_641:
 .byte 0xFF
 
 /* Siberio */
-.align 2
 pkmn_moveset_642:
 .hword MOVE_EISZAPFHAGEL
 .byte 0x1
@@ -25619,7 +24978,6 @@ pkmn_moveset_642:
 .byte 0xFF
 
 /* Frigometri */
-.align 2
 pkmn_moveset_643:
 .hword MOVE_EISESKAELTE
 .byte 0x1
@@ -25669,7 +25027,6 @@ pkmn_moveset_643:
 .byte 0xFF
 
 /* Schnuthelm */
-.align 2
 pkmn_moveset_644:
 .hword MOVE_ABSORBER
 .byte 0x1
@@ -25705,7 +25062,6 @@ pkmn_moveset_644:
 .byte 0xFF
 
 /* Hydragil */
-.align 2
 pkmn_moveset_645:
 .hword MOVE_WASSER_SHURIKEN
 .byte 0x1
@@ -25753,7 +25109,6 @@ pkmn_moveset_645:
 .byte 0xFF
 
 /* Flunschlik */
-.align 2
 pkmn_moveset_646:
 .hword MOVE_GEOFISSUR
 .byte 0x1
@@ -25797,7 +25152,6 @@ pkmn_moveset_646:
 .byte 0xFF
 
 /* Lin-Fu */
-.align 2
 pkmn_moveset_647:
 .hword MOVE_PFUND
 .byte 0x1
@@ -25835,7 +25189,6 @@ pkmn_moveset_647:
 .byte 0xFF
 
 /* Wie-Shu */
-.align 2
 pkmn_moveset_648:
 .hword MOVE_AURASPHAERE
 .byte 0x1
@@ -25883,7 +25236,6 @@ pkmn_moveset_648:
 .byte 0xFF
 
 /* Shardrago */
-.align 2
 pkmn_moveset_649:
 .hword MOVE_SILBERBLICK
 .byte 0x1
@@ -25921,7 +25273,6 @@ pkmn_moveset_649:
 .byte 0xFF
 
 /* Golbit */
-.align 2
 pkmn_moveset_650:
 .hword MOVE_PFUND
 .byte 0x1
@@ -25959,7 +25310,6 @@ pkmn_moveset_650:
 .byte 0xFF
 
 /* Golgantes */
-.align 2
 pkmn_moveset_651:
 .hword MOVE_RAMMBOSS
 .byte 0x1
@@ -26007,7 +25357,6 @@ pkmn_moveset_651:
 .byte 0xFF
 
 /* Gladiantri */
-.align 2
 pkmn_moveset_652:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -26045,7 +25394,6 @@ pkmn_moveset_652:
 .byte 0xFF
 
 /* Caesurio */
-.align 2
 pkmn_moveset_653:
 .hword MOVE_GUILLOTINE
 .byte 0x1
@@ -26095,7 +25443,6 @@ pkmn_moveset_653:
 .byte 0xFF
 
 /* Bisofank */
-.align 2
 pkmn_moveset_654:
 .hword MOVE_VERFOLGUNG
 .byte 0x1
@@ -26129,7 +25476,6 @@ pkmn_moveset_654:
 .byte 0xFF
 
 /* Geronimatz */
-.align 2
 pkmn_moveset_655:
 .hword MOVE_SCHNABEL
 .byte 0x1
@@ -26167,7 +25513,6 @@ pkmn_moveset_655:
 .byte 0xFF
 
 /* Washakwil */
-.align 2
 pkmn_moveset_656:
 .hword MOVE_KRAFTKOLOSS
 .byte 0x1
@@ -26219,7 +25564,6 @@ pkmn_moveset_656:
 .byte 0xFF
 
 /* Skallyk */
-.align 2
 pkmn_moveset_657:
 .hword MOVE_WINDSTOSS
 .byte 0x1
@@ -26257,7 +25601,6 @@ pkmn_moveset_657:
 .byte 0xFF
 
 /* Grypheldis */
-.align 2
 pkmn_moveset_658:
 .hword MOVE_KNOCHENHATZ
 .byte 0x1
@@ -26309,7 +25652,6 @@ pkmn_moveset_658:
 .byte 0xFF
 
 /* Furnifraß */
-.align 2
 pkmn_moveset_659:
 .hword MOVE_KLAUENWETZER
 .byte 0x1
@@ -26327,7 +25669,7 @@ pkmn_moveset_659:
 .byte 0x10
 .hword MOVE_KRATZFURIE
 .byte 0x15
-.hword MOVE_ÜBERNAHME
+.hword MOVE_UEBERNAHME
 .byte 0x1A
 .hword MOVE_FUNKENFLUG
 .byte 0x1F
@@ -26355,7 +25697,6 @@ pkmn_moveset_659:
 .byte 0xFF
 
 /* Fermicula */
-.align 2
 pkmn_moveset_660:
 .hword MOVE_METALLSOUND
 .byte 0x1
@@ -26395,7 +25736,6 @@ pkmn_moveset_660:
 .byte 0xFF
 
 /* Kapuno */
-.align 2
 pkmn_moveset_661:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -26433,7 +25773,6 @@ pkmn_moveset_661:
 .byte 0xFF
 
 /* Duodino */
-.align 2
 pkmn_moveset_662:
 .hword MOVE_DOPPELSCHLAG
 .byte 0x1
@@ -26475,7 +25814,6 @@ pkmn_moveset_662:
 .byte 0xFF
 
 /* Trikephalo */
-.align 2
 pkmn_moveset_663:
 .hword MOVE_WUTANFALL
 .byte 0x1
@@ -26521,7 +25859,6 @@ pkmn_moveset_663:
 .byte 0xFF
 
 /* Ignivor */
-.align 2
 pkmn_moveset_664:
 .hword MOVE_GLUT
 .byte 0x1
@@ -26551,7 +25888,6 @@ pkmn_moveset_664:
 .byte 0xFF
 
 /* Ramoth */
-.align 2
 pkmn_moveset_665:
 .hword MOVE_FALTERREIGEN
 .byte 0x1
@@ -26607,7 +25943,6 @@ pkmn_moveset_665:
 .byte 0xFF
 
 /* Kobalium */
-.align 2
 pkmn_moveset_666:
 .hword MOVE_NAHKAMPF
 .byte 0x1
@@ -26645,7 +25980,6 @@ pkmn_moveset_666:
 .byte 0xFF
 
 /* Terrakium */
-.align 2
 pkmn_moveset_667:
 .hword MOVE_NAHKAMPF
 .byte 0x1
@@ -26681,7 +26015,6 @@ pkmn_moveset_667:
 .byte 0xFF
 
 /* Viridium */
-.align 2
 pkmn_moveset_668:
 .hword MOVE_NAHKAMPF
 .byte 0x1
@@ -26719,7 +26052,6 @@ pkmn_moveset_668:
 .byte 0xFF
 
 /* Boreos */
-.align 2
 pkmn_moveset_669:
 .hword MOVE_FUCHTLER
 .byte 0x1
@@ -26765,7 +26097,6 @@ pkmn_moveset_669:
 .byte 0xFF
 
 /* Voltolos */
-.align 2
 pkmn_moveset_670:
 .hword MOVE_FUCHTLER
 .byte 0x1
@@ -26811,7 +26142,6 @@ pkmn_moveset_670:
 .byte 0xFF
 
 /* Reshiram */
-.align 2
 pkmn_moveset_671:
 .hword MOVE_FEUERZAHN
 .byte 0x1
@@ -26849,7 +26179,6 @@ pkmn_moveset_671:
 .byte 0xFF
 
 /* Zekrom */
-.align 2
 pkmn_moveset_672:
 .hword MOVE_DONNERZAHN
 .byte 0x1
@@ -26887,7 +26216,6 @@ pkmn_moveset_672:
 .byte 0xFF
 
 /* Demeteros */
-.align 2
 pkmn_moveset_673:
 .hword MOVE_WUTANFALL
 .byte 0x1
@@ -26933,7 +26261,6 @@ pkmn_moveset_673:
 .byte 0xFF
 
 /* Kyurem */
-.align 2
 pkmn_moveset_674:
 .hword MOVE_EISSTURM
 .byte 0x1
@@ -26969,7 +26296,6 @@ pkmn_moveset_674:
 .byte 0xFF
 
 /* Schwarzes Kyurem */
-.align 2
 pkmn_moveset_675:
 .hword MOVE_EISSTURM
 .byte 0x1
@@ -27007,7 +26333,6 @@ pkmn_moveset_675:
 .byte 0xFF
 
 /* Weißes Kyurem */
-.align 2
 pkmn_moveset_676:
 .hword MOVE_EISSTURM
 .byte 0x1
@@ -27045,7 +26370,6 @@ pkmn_moveset_676:
 .byte 0xFF
 
 /* Keldeo */
-.align 2
 pkmn_moveset_677:
 .hword MOVE_WASSERDUESE
 .byte 0x1
@@ -27083,7 +26407,6 @@ pkmn_moveset_677:
 .byte 0xFF
 
 /* Meloetta */
-.align 2
 pkmn_moveset_678:
 .hword MOVE_KANON
 .byte 0x1
@@ -27125,7 +26448,6 @@ pkmn_moveset_678:
 .byte 0xFF
 
 /* Genesect */
-.align 2
 pkmn_moveset_679:
 .hword MOVE_STACHELFINALE
 .byte 0x1
@@ -27171,7 +26493,6 @@ pkmn_moveset_679:
 .byte 0xFF
 
 /* Igamaro */
-.align 2
 pkmn_moveset_680:
 .hword MOVE_HEULER
 .byte 0x1
@@ -27205,7 +26526,6 @@ pkmn_moveset_680:
 .byte 0xFF
 
 /* Igastanish */
-.align 2
 pkmn_moveset_681:
 .hword MOVE_NIETENRANKE
 .byte 0x1
@@ -27243,7 +26563,6 @@ pkmn_moveset_681:
 .byte 0xFF
 
 /* Brigaron */
-.align 2
 pkmn_moveset_682:
 .hword MOVE_SCHUTZSTACHELN
 .byte 0x1
@@ -27297,7 +26616,6 @@ pkmn_moveset_682:
 .byte 0xFF
 
 /* Fynx */
-.align 2
 pkmn_moveset_683:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -27335,7 +26653,6 @@ pkmn_moveset_683:
 .byte 0xFF
 
 /* Rutena */
-.align 2
 pkmn_moveset_684:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -27375,7 +26692,6 @@ pkmn_moveset_684:
 .byte 0xFF
 
 /* Fennexis */
-.align 2
 pkmn_moveset_685:
 .hword MOVE_MAGIEFLAMME
 .byte 0x1
@@ -27431,7 +26747,6 @@ pkmn_moveset_685:
 .byte 0xFF
 
 /* Froxy */
-.align 2
 pkmn_moveset_686:
 .hword MOVE_PFUND
 .byte 0x1
@@ -27465,7 +26780,6 @@ pkmn_moveset_686:
 .byte 0xFF
 
 /* Amphizel */
-.align 2
 pkmn_moveset_687:
 .hword MOVE_PFUND
 .byte 0x1
@@ -27501,7 +26815,6 @@ pkmn_moveset_687:
 .byte 0xFF
 
 /* Quajutsu */
-.align 2
 pkmn_moveset_688:
 .hword MOVE_WASSER_SHURIKEN
 .byte 0x1
@@ -27555,7 +26868,6 @@ pkmn_moveset_688:
 .byte 0xFF
 
 /* Scoppel */
-.align 2
 pkmn_moveset_689:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -27593,7 +26905,6 @@ pkmn_moveset_689:
 .byte 0xFF
 
 /* Grebbit */
-.align 2
 pkmn_moveset_690:
 .hword MOVE_HAMMERARM
 .byte 0x1
@@ -27641,7 +26952,6 @@ pkmn_moveset_690:
 .byte 0xFF
 
 /* Dartiri */
-.align 2
 pkmn_moveset_691:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -27675,7 +26985,6 @@ pkmn_moveset_691:
 .byte 0xFF
 
 /* Dartignis */
-.align 2
 pkmn_moveset_692:
 .hword MOVE_GLUT
 .byte 0x1
@@ -27715,7 +27024,6 @@ pkmn_moveset_692:
 .byte 0xFF
 
 /* Fiaro */
-.align 2
 pkmn_moveset_693:
 .hword MOVE_GLUT
 .byte 0x1
@@ -27761,7 +27069,6 @@ pkmn_moveset_693:
 .byte 0xFF
 
 /* Purmel */
-.align 2
 pkmn_moveset_694:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -27775,7 +27082,6 @@ pkmn_moveset_694:
 .byte 0xFF
 
 /* Puponcho */
-.align 2
 pkmn_moveset_695:
 .hword MOVE_SCHUTZSCHILD
 .byte 0x1
@@ -27787,7 +27093,6 @@ pkmn_moveset_695:
 .byte 0xFF
 
 /* Vivillon */
-.align 2
 pkmn_moveset_696:
 .hword MOVE_WINDSTOSS
 .byte 0x1
@@ -27827,7 +27132,6 @@ pkmn_moveset_696:
 .byte 0xFF
 
 /* Leufeo */
-.align 2
 pkmn_moveset_697:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -27863,7 +27167,6 @@ pkmn_moveset_697:
 .byte 0xFF
 
 /* Pyroleo */
-.align 2
 pkmn_moveset_698:
 .hword MOVE_HYPERSTRAHL
 .byte 0x1
@@ -27905,7 +27208,6 @@ pkmn_moveset_698:
 .byte 0xFF
 
 /* Flabébé */
-.align 2
 pkmn_moveset_699:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -27939,7 +27241,6 @@ pkmn_moveset_699:
 .byte 0xFF
 
 /* Floette */
-.align 2
 pkmn_moveset_700:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -27975,7 +27276,6 @@ pkmn_moveset_700:
 .byte 0xFF
 
 /* Florges */
-.align 2
 pkmn_moveset_701:
 .hword MOVE_SAEUSELSTIMME
 .byte 0x1
@@ -28005,7 +27305,6 @@ pkmn_moveset_701:
 .byte 0xFF
 
 /* Mähikel */
-.align 2
 pkmn_moveset_702:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -28043,7 +27342,6 @@ pkmn_moveset_702:
 .byte 0xFF
 
 /* Chevrumm */
-.align 2
 pkmn_moveset_703:
 .hword MOVE_AERO_ASS
 .byte 0x1
@@ -28091,7 +27389,6 @@ pkmn_moveset_703:
 .byte 0xFF
 
 /* Pam-Pam */
-.align 2
 pkmn_moveset_704:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -28107,9 +27404,9 @@ pkmn_moveset_704:
 .byte 0xF
 .hword MOVE_SCHLITZER
 .byte 0x14
-.hword MOVE_ÜBERKOPFWURF
+.hword MOVE_UEBERKOPFWURF
 .byte 0x19
-.hword MOVE_ÜBERWURF
+.hword MOVE_UEBERWURF
 .byte 0x1B
 .hword MOVE_BODYSLAM
 .byte 0x21
@@ -28125,7 +27422,6 @@ pkmn_moveset_704:
 .byte 0xFF
 
 /* Pandagro */
-.align 2
 pkmn_moveset_705:
 .hword MOVE_PATRONENHIEB
 .byte 0x1
@@ -28153,9 +27449,9 @@ pkmn_moveset_705:
 .byte 0xF
 .hword MOVE_SCHLITZER
 .byte 0x14
-.hword MOVE_ÜBERKOPFWURF
+.hword MOVE_UEBERKOPFWURF
 .byte 0x19
-.hword MOVE_ÜBERWURF
+.hword MOVE_UEBERWURF
 .byte 0x1B
 .hword MOVE_PATRONENHIEB
 .byte 0x20
@@ -28179,7 +27475,6 @@ pkmn_moveset_705:
 .byte 0xFF
 
 /* Coiffwaff */
-.align 2
 pkmn_moveset_706:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -28211,7 +27506,6 @@ pkmn_moveset_706:
 .byte 0xFF
 
 /* Psiau */
-.align 2
 pkmn_moveset_707:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -28235,7 +27529,6 @@ pkmn_moveset_707:
 .byte 0xFF
 
 /* Psiaugon♂ */
-.align 2
 pkmn_moveset_708:
 .hword MOVE_RAPIDSCHUTZ
 .byte 0x1
@@ -28287,7 +27580,6 @@ pkmn_moveset_708:
 .byte 0xFF
 
 /* Psiaugon♀ */
-.align 2
 pkmn_moveset_709:
 .hword MOVE_KRAFTVORRAT
 .byte 0x1
@@ -28339,7 +27631,6 @@ pkmn_moveset_709:
 .byte 0xFF
 
 /* Gramokles */
-.align 2
 pkmn_moveset_710:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -28375,7 +27666,6 @@ pkmn_moveset_710:
 .byte 0xFF
 
 /* Duokles */
-.align 2
 pkmn_moveset_711:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -28413,7 +27703,6 @@ pkmn_moveset_711:
 .byte 0xFF
 
 /* Durengard */
-.align 2
 pkmn_moveset_712:
 .hword MOVE_ZORNKLINGE
 .byte 0x1
@@ -28447,7 +27736,6 @@ pkmn_moveset_712:
 .byte 0xFF
 
 /* Parfi */
-.align 2
 pkmn_moveset_713:
 .hword MOVE_LOCKDUFT
 .byte 0x1
@@ -28485,7 +27773,6 @@ pkmn_moveset_713:
 .byte 0xFF
 
 /* Parfinesse */
-.align 2
 pkmn_moveset_714:
 .hword MOVE_DUFTWOLKE
 .byte 0x1
@@ -28535,7 +27822,6 @@ pkmn_moveset_714:
 .byte 0xFF
 
 /* Flauschling */
-.align 2
 pkmn_moveset_715:
 .hword MOVE_LOCKDUFT
 .byte 0x1
@@ -28573,7 +27859,6 @@ pkmn_moveset_715:
 .byte 0xFF
 
 /* Sabbaione */
-.align 2
 pkmn_moveset_716:
 .hword MOVE_LOCKDUFT
 .byte 0x1
@@ -28615,7 +27900,6 @@ pkmn_moveset_716:
 .byte 0xFF
 
 /* Iscalar */
-.align 2
 pkmn_moveset_717:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -28657,7 +27941,6 @@ pkmn_moveset_717:
 .byte 0xFF
 
 /* Calamanero */
-.align 2
 pkmn_moveset_718:
 .hword MOVE_GEGENSCHLAG
 .byte 0x1
@@ -28703,7 +27986,6 @@ pkmn_moveset_718:
 .byte 0xFF
 
 /* Bithora */
-.align 2
 pkmn_moveset_719:
 .hword MOVE_HAUSBRUCH
 .byte 0x1
@@ -28741,7 +28023,6 @@ pkmn_moveset_719:
 .byte 0xFF
 
 /* Thanathora */
-.align 2
 pkmn_moveset_720:
 .hword MOVE_SCHAEDELWUMME
 .byte 0x1
@@ -28789,7 +28070,6 @@ pkmn_moveset_720:
 .byte 0xFF
 
 /* Algitt */
-.align 2
 pkmn_moveset_721:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -28827,7 +28107,6 @@ pkmn_moveset_721:
 .byte 0xFF
 
 /* Tandrak */
-.align 2
 pkmn_moveset_722:
 .hword MOVE_WINDHOSE
 .byte 0x1
@@ -28875,7 +28154,6 @@ pkmn_moveset_722:
 .byte 0xFF
 
 /* Scampisto */
-.align 2
 pkmn_moveset_723:
 .hword MOVE_PLATSCHER
 .byte 0x1
@@ -28907,7 +28185,6 @@ pkmn_moveset_723:
 .byte 0xFF
 
 /* Wummer */
-.align 2
 pkmn_moveset_724:
 .hword MOVE_AURASPHAERE
 .byte 0x1
@@ -28953,7 +28230,6 @@ pkmn_moveset_724:
 .byte 0xFF
 
 /* Eguana */
-.align 2
 pkmn_moveset_725:
 .hword MOVE_PFUND
 .byte 0x1
@@ -28985,7 +28261,6 @@ pkmn_moveset_725:
 .byte 0xFF
 
 /* Elezard */
-.align 2
 pkmn_moveset_726:
 .hword MOVE_MYSTOWELLEN
 .byte 0x1
@@ -29005,7 +28280,6 @@ pkmn_moveset_726:
 .byte 0xFF
 
 /* Balgoras */
-.align 2
 pkmn_moveset_727:
 .hword MOVE_RUTENSCHLAG
 .byte 0x1
@@ -29041,7 +28315,6 @@ pkmn_moveset_727:
 .byte 0xFF
 
 /* Monargoras */
-.align 2
 pkmn_moveset_728:
 .hword MOVE_STEINHAGEL
 .byte 0x1
@@ -29091,7 +28364,6 @@ pkmn_moveset_728:
 .byte 0xFF
 
 /* Amarino */
-.align 2
 pkmn_moveset_729:
 .hword MOVE_HEULER
 .byte 0x1
@@ -29133,7 +28405,6 @@ pkmn_moveset_729:
 .byte 0xFF
 
 /* Amagarga */
-.align 2
 pkmn_moveset_730:
 .hword MOVE_GEFRIERTROCKNER
 .byte 0x1
@@ -29183,7 +28454,6 @@ pkmn_moveset_730:
 .byte 0xFF
 
 /* Feelinara */
-.align 2
 pkmn_moveset_731:
 .hword MOVE_FEENBRISE
 .byte 0x1
@@ -29221,7 +28491,6 @@ pkmn_moveset_731:
 .byte 0xFF
 
 /* Resladero */
-.align 2
 pkmn_moveset_732:
 .hword MOVE_SCANNER
 .byte 0x1
@@ -29261,7 +28530,6 @@ pkmn_moveset_732:
 .byte 0xFF
 
 /* Dedenne */
-.align 2
 pkmn_moveset_733:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -29299,7 +28567,6 @@ pkmn_moveset_733:
 .byte 0xFF
 
 /* Rocara */
-.align 2
 pkmn_moveset_734:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -29337,7 +28604,6 @@ pkmn_moveset_734:
 .byte 0xFF
 
 /* Viscora */
-.align 2
 pkmn_moveset_735:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -29365,7 +28631,6 @@ pkmn_moveset_735:
 .byte 0xFF
 
 /* Viscargot */
-.align 2
 pkmn_moveset_736:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -29395,7 +28660,6 @@ pkmn_moveset_736:
 .byte 0xFF
 
 /* Viscogon */
-.align 2
 pkmn_moveset_737:
 .hword MOVE_NASSSCHWEIF
 .byte 0x1
@@ -29439,7 +28703,6 @@ pkmn_moveset_737:
 .byte 0xFF
 
 /* Clavion */
-.align 2
 pkmn_moveset_738:
 .hword MOVE_FEENSCHLOSS
 .byte 0x1
@@ -29477,7 +28740,6 @@ pkmn_moveset_738:
 .byte 0xFF
 
 /* Paragoni */
-.align 2
 pkmn_moveset_739:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -29511,7 +28773,6 @@ pkmn_moveset_739:
 .byte 0xFF
 
 /* Trombork */
-.align 2
 pkmn_moveset_740:
 .hword MOVE_DUNKELKLAUE
 .byte 0x1
@@ -29553,7 +28814,6 @@ pkmn_moveset_740:
 .byte 0xFF
 
 /* Irrbis */
-.align 2
 pkmn_moveset_741:
 .hword MOVE_TRICKBETRUG
 .byte 0x1
@@ -29589,7 +28849,6 @@ pkmn_moveset_741:
 .byte 0xFF
 
 /* Pumpdjinn */
-.align 2
 pkmn_moveset_742:
 .hword MOVE_EXPLOSION
 .byte 0x1
@@ -29637,7 +28896,6 @@ pkmn_moveset_742:
 .byte 0xFF
 
 /* Arktip */
-.align 2
 pkmn_moveset_743:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -29673,7 +28931,6 @@ pkmn_moveset_743:
 .byte 0xFF
 
 /* Arktilas */
-.align 2
 pkmn_moveset_744:
 .hword MOVE_BODYSLAM
 .byte 0x1
@@ -29727,7 +28984,6 @@ pkmn_moveset_744:
 .byte 0xFF
 
 /* eF-eM */
-.align 2
 pkmn_moveset_745:
 .hword MOVE_KREIDESCHREI
 .byte 0x1
@@ -29765,9 +29021,8 @@ pkmn_moveset_745:
 .byte 0xFF
 
 /* UHaFnir */
-.align 2
 pkmn_moveset_746:
-.hword MOVE_ÜBERSCHALLKNALL
+.hword MOVE_UEBERSCHALLKNALL
 .byte 0x1
 .hword MOVE_DRACHENPULS
 .byte 0x1
@@ -29811,13 +29066,12 @@ pkmn_moveset_746:
 .byte 0x3E
 .hword MOVE_DRACHENPULS
 .byte 0x46
-.hword MOVE_ÜBERSCHALLKNALL
+.hword MOVE_UEBERSCHALLKNALL
 .byte 0x4B
 .hword 0x0
 .byte 0xFF
 
 /* Xerneas */
-.align 2
 pkmn_moveset_747:
 .hword MOVE_HEILWOGE
 .byte 0x1
@@ -29859,7 +29113,6 @@ pkmn_moveset_747:
 .byte 0xFF
 
 /* Yveltal */
-.align 2
 pkmn_moveset_748:
 .hword MOVE_ORKAN
 .byte 0x1
@@ -29901,7 +29154,6 @@ pkmn_moveset_748:
 .byte 0xFF
 
 /* Zygarde */
-.align 2
 pkmn_moveset_749:
 .hword MOVE_GIFTBLICK
 .byte 0x1
@@ -29939,7 +29191,6 @@ pkmn_moveset_749:
 .byte 0xFF
 
 /* Diancie */
-.align 2
 pkmn_moveset_750:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -29981,7 +29232,6 @@ pkmn_moveset_750:
 .byte 0xFF
 
 /* Hoopa */
-.align 2
 pkmn_moveset_751:
 .hword MOVE_DIMENSIONSLOCH
 .byte 0x1
@@ -30027,7 +29277,6 @@ pkmn_moveset_751:
 .byte 0xFF
 
 /* Entfesseltes Hoopa */
-.align 2
 pkmn_moveset_752:
 .hword MOVE_DIMENSIONSWAHN
 .byte 0x1
@@ -30069,7 +29318,6 @@ pkmn_moveset_752:
 .byte 0xFF
 
 /* Volcanion */
-.align 2
 pkmn_moveset_753:
 .hword MOVE_DAMPFSCHWALL
 .byte 0x1
@@ -30107,7 +29355,6 @@ pkmn_moveset_753:
 .byte 0xFF
 
 /* Bauz */
-.align 2
 pkmn_moveset_754:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -30145,7 +29392,6 @@ pkmn_moveset_754:
 .byte 0xFF
 
 /* Arboretoss */
-.align 2
 pkmn_moveset_755:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -30187,7 +29433,6 @@ pkmn_moveset_755:
 .byte 0xFF
 
 /* Silvarro */
-.align 2
 pkmn_moveset_756:
 .hword MOVE_SCHATTENFESSEL
 .byte 0x1
@@ -30241,7 +29486,6 @@ pkmn_moveset_756:
 .byte 0xFF
 
 /* Flamiau */
-.align 2
 pkmn_moveset_757:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -30279,7 +29523,6 @@ pkmn_moveset_757:
 .byte 0xFF
 
 /* Miezunder */
-.align 2
 pkmn_moveset_758:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -30321,7 +29564,6 @@ pkmn_moveset_758:
 .byte 0xFF
 
 /* Fuegro */
-.align 2
 pkmn_moveset_759:
 .hword MOVE_DARK_LARIAT
 .byte 0x1
@@ -30373,7 +29615,6 @@ pkmn_moveset_759:
 .byte 0xFF
 
 /* Robball */
-.align 2
 pkmn_moveset_760:
 .hword MOVE_PFUND
 .byte 0x1
@@ -30411,7 +29652,6 @@ pkmn_moveset_760:
 .byte 0xFF
 
 /* Marikeck */
-.align 2
 pkmn_moveset_761:
 .hword MOVE_PFUND
 .byte 0x1
@@ -30453,7 +29693,6 @@ pkmn_moveset_761:
 .byte 0xFF
 
 /* Primarene */
-.align 2
 pkmn_moveset_762:
 .hword MOVE_SCHAUMSERENADE
 .byte 0x1
@@ -30499,7 +29738,6 @@ pkmn_moveset_762:
 .byte 0xFF
 
 /* Peppeck */
-.align 2
 pkmn_moveset_763:
 .hword MOVE_SCHNABEL
 .byte 0x1
@@ -30531,7 +29769,6 @@ pkmn_moveset_763:
 .byte 0xFF
 
 /* Trompeck */
-.align 2
 pkmn_moveset_764:
 .hword MOVE_FELSWURF
 .byte 0x1
@@ -30571,7 +29808,6 @@ pkmn_moveset_764:
 .byte 0xFF
 
 /* Tukanon */
-.align 2
 pkmn_moveset_765:
 .hword MOVE_SCHNABELKANONE
 .byte 0x1
@@ -30615,7 +29851,6 @@ pkmn_moveset_765:
 .byte 0xFF
 
 /* Mangunior */
-.align 2
 pkmn_moveset_766:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -30653,7 +29888,6 @@ pkmn_moveset_766:
 .byte 0xFF
 
 /* Manguspektor */
-.align 2
 pkmn_moveset_767:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -30697,7 +29931,6 @@ pkmn_moveset_767:
 .byte 0xFF
 
 /* Mabula */
-.align 2
 pkmn_moveset_768:
 .hword MOVE_KLAMMER
 .byte 0x1
@@ -30723,7 +29956,6 @@ pkmn_moveset_768:
 .byte 0xFF
 
 /* Akkup */
-.align 2
 pkmn_moveset_769:
 .hword MOVE_LADEVORGANG
 .byte 0x1
@@ -30763,7 +29995,6 @@ pkmn_moveset_769:
 .byte 0xFF
 
 /* Donarion */
-.align 2
 pkmn_moveset_770:
 .hword MOVE_DONNERBLITZ
 .byte 0x1
@@ -30805,7 +30036,6 @@ pkmn_moveset_770:
 .byte 0xFF
 
 /* Krabbox */
-.align 2
 pkmn_moveset_771:
 .hword MOVE_BLUBBER
 .byte 0x1
@@ -30837,7 +30067,6 @@ pkmn_moveset_771:
 .byte 0xFF
 
 /* Krawell */
-.align 2
 pkmn_moveset_772:
 .hword MOVE_EISHIEB
 .byte 0x1
@@ -30877,7 +30106,6 @@ pkmn_moveset_772:
 .byte 0xFF
 
 /* Choreogel */
-.align 2
 pkmn_moveset_773:
 .hword MOVE_PFUND
 .byte 0x1
@@ -30915,7 +30143,6 @@ pkmn_moveset_773:
 .byte 0xFF
 
 /* Wommel */
-.align 2
 pkmn_moveset_774:
 .hword MOVE_ABSORBER
 .byte 0x1
@@ -30943,7 +30170,6 @@ pkmn_moveset_774:
 .byte 0xFF
 
 /* Bandelby */
-.align 2
 pkmn_moveset_775:
 .hword MOVE_POLLENKNOEDEL
 .byte 0x1
@@ -30981,7 +30207,6 @@ pkmn_moveset_775:
 .byte 0xFF
 
 /* Wuffels */
-.align 2
 pkmn_moveset_776:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -31017,7 +30242,6 @@ pkmn_moveset_776:
 .byte 0xFF
 
 /* Wolwerock */
-.align 2
 pkmn_moveset_777:
 .hword MOVE_TURBOFELSEN
 .byte 0x1
@@ -31065,7 +30289,6 @@ pkmn_moveset_777:
 .byte 0xFF
 
 /* Wolwerock (Nachtform) */
-.align 2
 pkmn_moveset_778:
 .hword MOVE_KONTER
 .byte 0x1
@@ -31113,7 +30336,6 @@ pkmn_moveset_778:
 .byte 0xFF
 
 /* Wolwerock (Zwielichtform) */
-.align 2
 pkmn_moveset_779:
 .hword MOVE_FUCHTLER
 .byte 0x1
@@ -31161,7 +30383,6 @@ pkmn_moveset_779:
 .byte 0xFF
 
 /* Lusardin */
-.align 2
 pkmn_moveset_780:
 .hword MOVE_AQUAKNARRE
 .byte 0x1
@@ -31187,7 +30408,7 @@ pkmn_moveset_780:
 .byte 0x26
 .hword MOVE_RISIKOTACKLE
 .byte 0x29
-.hword MOVE_ÜBERFLUTUNG
+.hword MOVE_UEBERFLUTUNG
 .byte 0x2E
 .hword MOVE_NOTSITUATION
 .byte 0x31
@@ -31197,7 +30418,6 @@ pkmn_moveset_780:
 .byte 0xFF
 
 /* Garstella */
-.align 2
 pkmn_moveset_781:
 .hword MOVE_GIFTSTACHEL
 .byte 0x1
@@ -31229,7 +30449,6 @@ pkmn_moveset_781:
 .byte 0xFF
 
 /* Toxapex */
-.align 2
 pkmn_moveset_782:
 .hword MOVE_BUNKER
 .byte 0x1
@@ -31271,7 +30490,6 @@ pkmn_moveset_782:
 .byte 0xFF
 
 /* Pampuli */
-.align 2
 pkmn_moveset_783:
 .hword MOVE_LEHMSCHELLE
 .byte 0x1
@@ -31305,7 +30523,6 @@ pkmn_moveset_783:
 .byte 0xFF
 
 /* Pampross */
-.align 2
 pkmn_moveset_784:
 .hword MOVE_LEHMSCHELLE
 .byte 0x1
@@ -31345,7 +30562,6 @@ pkmn_moveset_784:
 .byte 0xFF
 
 /* Araqua */
-.align 2
 pkmn_moveset_785:
 .hword MOVE_NASSMACHER
 .byte 0x1
@@ -31379,11 +30595,10 @@ pkmn_moveset_785:
 .byte 0xFF
 
 /* Aranestro */
-.align 2
 pkmn_moveset_786:
 .hword MOVE_RUNDUMSCHUTZ
 .byte 0x1
-.hword MOVE_ÜBERFLUTUNG
+.hword MOVE_UEBERFLUTUNG
 .byte 0x1
 .hword MOVE_BLUBBER
 .byte 0x1
@@ -31421,7 +30636,6 @@ pkmn_moveset_786:
 .byte 0xFF
 
 /* Imantis */
-.align 2
 pkmn_moveset_787:
 .hword MOVE_ZORNKLINGE
 .byte 0x1
@@ -31449,7 +30663,6 @@ pkmn_moveset_787:
 .byte 0xFF
 
 /* Mantidea */
-.align 2
 pkmn_moveset_788:
 .hword MOVE_BLUETENWIRBEL
 .byte 0x1
@@ -31491,7 +30704,6 @@ pkmn_moveset_788:
 .byte 0xFF
 
 /* Bubungus */
-.align 2
 pkmn_moveset_789:
 .hword MOVE_ABSORBER
 .byte 0x1
@@ -31525,7 +30737,6 @@ pkmn_moveset_789:
 .byte 0xFF
 
 /* Lamellux */
-.align 2
 pkmn_moveset_790:
 .hword MOVE_ABSORBER
 .byte 0x1
@@ -31565,7 +30776,6 @@ pkmn_moveset_790:
 .byte 0xFF
 
 /* Molunk */
-.align 2
 pkmn_moveset_791:
 .hword MOVE_KRATZER
 .byte 0x1
@@ -31599,7 +30809,6 @@ pkmn_moveset_791:
 .byte 0xFF
 
 /* Amfira */
-.align 2
 pkmn_moveset_792:
 .hword MOVE_LIEBREIZ
 .byte 0x1
@@ -31649,7 +30858,6 @@ pkmn_moveset_792:
 .byte 0xFF
 
 /* Velursi */
-.align 2
 pkmn_moveset_793:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -31681,7 +30889,6 @@ pkmn_moveset_793:
 .byte 0xFF
 
 /* Kosturso */
-.align 2
 pkmn_moveset_794:
 .hword MOVE_KLAMMERGRIFF
 .byte 0x1
@@ -31717,7 +30924,6 @@ pkmn_moveset_794:
 .byte 0xFF
 
 /* Frubberl */
-.align 2
 pkmn_moveset_795:
 .hword MOVE_PLATSCHER
 .byte 0x1
@@ -31741,7 +30947,6 @@ pkmn_moveset_795:
 .byte 0xFF
 
 /* Frubaila */
-.align 2
 pkmn_moveset_796:
 .hword MOVE_DUPLEXHIEB
 .byte 0x1
@@ -31781,7 +30986,6 @@ pkmn_moveset_796:
 .byte 0xFF
 
 /* Fruyal */
-.align 2
 pkmn_moveset_797:
 .hword MOVE_TROPENKICK
 .byte 0x1
@@ -31827,7 +31031,6 @@ pkmn_moveset_797:
 .byte 0xFF
 
 /* Curelei */
-.align 2
 pkmn_moveset_798:
 .hword MOVE_RECHTE_HAND
 .byte 0x1
@@ -31871,7 +31074,6 @@ pkmn_moveset_798:
 .byte 0xFF
 
 /* Oranguru */
-.align 2
 pkmn_moveset_799:
 .hword MOVE_KONFUSION
 .byte 0x1
@@ -31907,7 +31109,6 @@ pkmn_moveset_799:
 .byte 0xFF
 
 /* Quartermak */
-.align 2
 pkmn_moveset_800:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -31943,7 +31144,6 @@ pkmn_moveset_800:
 .byte 0xFF
 
 /* Reißlaus */
-.align 2
 pkmn_moveset_801:
 .hword MOVE_KAEFERTRUTZ
 .byte 0x1
@@ -31953,9 +31153,8 @@ pkmn_moveset_801:
 .byte 0xFF
 
 /* Tectass */
-.align 2
 pkmn_moveset_802:
-.hword MOVE_ÜBERRUMPLER
+.hword MOVE_UEBERRUMPLER
 .byte 0x1
 .hword MOVE_KAEFERTRUTZ
 .byte 0x1
@@ -31979,7 +31178,7 @@ pkmn_moveset_802:
 .byte 0x15
 .hword MOVE_KALKKLINGE
 .byte 0x1A
-.hword MOVE_ÜBERRUMPLER
+.hword MOVE_UEBERRUMPLER
 .byte 0x1E
 .hword MOVE_TIEFSCHLAG
 .byte 0x1F
@@ -31993,7 +31192,6 @@ pkmn_moveset_802:
 .byte 0xFF
 
 /* Sankabuh */
-.align 2
 pkmn_moveset_803:
 .hword MOVE_HAERTNER
 .byte 0x1
@@ -32027,7 +31225,6 @@ pkmn_moveset_803:
 .byte 0xFF
 
 /* Colossand */
-.align 2
 pkmn_moveset_804:
 .hword MOVE_HAERTNER
 .byte 0x1
@@ -32065,7 +31262,6 @@ pkmn_moveset_804:
 .byte 0xFF
 
 /* Gufa */
-.align 2
 pkmn_moveset_805:
 .hword MOVE_STAFETTE
 .byte 0x1
@@ -32095,7 +31291,7 @@ pkmn_moveset_805:
 .byte 0x21
 .hword MOVE_GENESUNG
 .byte 0x25
-.hword MOVE_ÜBERFLUTUNG
+.hword MOVE_UEBERFLUTUNG
 .byte 0x29
 .hword MOVE_TOXIN
 .byte 0x2D
@@ -32105,7 +31301,6 @@ pkmn_moveset_805:
 .byte 0xFF
 
 /* Typ:Null */
-.align 2
 pkmn_moveset_806:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -32147,7 +31342,6 @@ pkmn_moveset_806:
 .byte 0xFF
 
 /* Amigento */
-.align 2
 pkmn_moveset_807:
 .hword MOVE_MULTI_ANGRIFF
 .byte 0x1
@@ -32205,7 +31399,6 @@ pkmn_moveset_807:
 .byte 0xFF
 
 /* Meteno */
-.align 2
 pkmn_moveset_808:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -32241,7 +31434,6 @@ pkmn_moveset_808:
 .byte 0xFF
 
 /* Koalelu */
-.align 2
 pkmn_moveset_809:
 .hword MOVE_EINIGLER
 .byte 0x1
@@ -32273,7 +31465,6 @@ pkmn_moveset_809:
 .byte 0xFF
 
 /* Tortunator */
-.align 2
 pkmn_moveset_810:
 .hword MOVE_GLUT
 .byte 0x1
@@ -32309,7 +31500,6 @@ pkmn_moveset_810:
 .byte 0xFF
 
 /* Togedemaru */
-.align 2
 pkmn_moveset_811:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -32345,7 +31535,6 @@ pkmn_moveset_811:
 .byte 0xFF
 
 /* Mimigma */
-.align 2
 pkmn_moveset_812:
 .hword MOVE_HOLZHAMMER
 .byte 0x1
@@ -32383,7 +31572,6 @@ pkmn_moveset_812:
 .byte 0xFF
 
 /* Knirfish */
-.align 2
 pkmn_moveset_813:
 .hword MOVE_AQUAKNARRE
 .byte 0x1
@@ -32413,7 +31601,6 @@ pkmn_moveset_813:
 .byte 0xFF
 
 /* Sen-Long */
-.align 2
 pkmn_moveset_814:
 .hword MOVE_KAMERADSCHAFT
 .byte 0x1
@@ -32449,7 +31636,6 @@ pkmn_moveset_814:
 .byte 0xFF
 
 /* Moruda */
-.align 2
 pkmn_moveset_815:
 .hword MOVE_WECHSELDICH
 .byte 0x1
@@ -32491,7 +31677,6 @@ pkmn_moveset_815:
 .byte 0xFF
 
 /* Miniras */
-.align 2
 pkmn_moveset_816:
 .hword MOVE_TACKLE
 .byte 0x1
@@ -32525,7 +31710,6 @@ pkmn_moveset_816:
 .byte 0xFF
 
 /* Mediras */
-.align 2
 pkmn_moveset_817:
 .hword MOVE_HIMMELHIEB
 .byte 0x1
@@ -32573,7 +31757,6 @@ pkmn_moveset_817:
 .byte 0xFF
 
 /* Grandiras */
-.align 2
 pkmn_moveset_818:
 .hword MOVE_SCHUPPENRASSELN
 .byte 0x1
@@ -32625,7 +31808,6 @@ pkmn_moveset_818:
 .byte 0xFF
 
 /* Kapu-Riki */
-.align 2
 pkmn_moveset_819:
 .hword MOVE_ELEKTROFELD
 .byte 0x1
@@ -32667,7 +31849,6 @@ pkmn_moveset_819:
 .byte 0xFF
 
 /* Kapu-Fala */
-.align 2
 pkmn_moveset_820:
 .hword MOVE_PSYCHOFELD
 .byte 0x1
@@ -32709,7 +31890,6 @@ pkmn_moveset_820:
 .byte 0xFF
 
 /* Kapu-Toro */
-.align 2
 pkmn_moveset_821:
 .hword MOVE_GRASFELD
 .byte 0x1
@@ -32751,7 +31931,6 @@ pkmn_moveset_821:
 .byte 0xFF
 
 /* Kapu-Kime */
-.align 2
 pkmn_moveset_822:
 .hword MOVE_NEBELFELD
 .byte 0x1
@@ -32773,7 +31952,7 @@ pkmn_moveset_822:
 .byte 0x8
 .hword MOVE_WHIRLPOOL
 .byte 0xE
-.hword MOVE_ÜBERFLUTUNG
+.hword MOVE_UEBERFLUTUNG
 .byte 0x14
 .hword MOVE_HEILUNG
 .byte 0x1A
@@ -32793,7 +31972,6 @@ pkmn_moveset_822:
 .byte 0xFF
 
 /* Cosmog */
-.align 2
 pkmn_moveset_823:
 .hword MOVE_PLATSCHER
 .byte 0x1
@@ -32803,7 +31981,6 @@ pkmn_moveset_823:
 .byte 0xFF
 
 /* Cosmovum */
-.align 2
 pkmn_moveset_824:
 .hword MOVE_KOSMIK_KRAFT
 .byte 0x1
@@ -32815,7 +31992,6 @@ pkmn_moveset_824:
 .byte 0xFF
 
 /* Solgaleo */
-.align 2
 pkmn_moveset_825:
 .hword MOVE_STAHLGESTIRN
 .byte 0x1
@@ -32857,7 +32033,6 @@ pkmn_moveset_825:
 .byte 0xFF
 
 /* Lunala */
-.align 2
 pkmn_moveset_826:
 .hword MOVE_SCHATTENSTRAHL
 .byte 0x1
@@ -32899,7 +32074,6 @@ pkmn_moveset_826:
 .byte 0xFF
 
 /* Anego */
-.align 2
 pkmn_moveset_827:
 .hword MOVE_KRAFTTEILER
 .byte 0x1
@@ -32943,7 +32117,6 @@ pkmn_moveset_827:
 .byte 0xFF
 
 /* Masskito */
-.align 2
 pkmn_moveset_828:
 .hword MOVE_STACHELFINALE
 .byte 0x1
@@ -32963,7 +32136,7 @@ pkmn_moveset_828:
 .byte 0x7
 .hword MOVE_PROTZER
 .byte 0xD
-.hword MOVE_ÜBERWURF
+.hword MOVE_UEBERWURF
 .byte 0x13
 .hword MOVE_AUSDAUER
 .byte 0x17
@@ -32989,7 +32162,6 @@ pkmn_moveset_828:
 .byte 0xFF
 
 /* Schabelle */
-.align 2
 pkmn_moveset_829:
 .hword MOVE_FALTERREIGEN
 .byte 0x1
@@ -33033,7 +32205,6 @@ pkmn_moveset_829:
 .byte 0xFF
 
 /* Voltriant */
-.align 2
 pkmn_moveset_830:
 .hword MOVE_SCHWEIFGLANZ
 .byte 0x1
@@ -33075,7 +32246,6 @@ pkmn_moveset_830:
 .byte 0xFF
 
 /* Kaguron */
-.align 2
 pkmn_moveset_831:
 .hword MOVE_RUNDUMSCHUTZ
 .byte 0x1
@@ -33119,7 +32289,6 @@ pkmn_moveset_831:
 .byte 0xFF
 
 /* Katagami */
-.align 2
 pkmn_moveset_832:
 .hword MOVE_SANCTOKLINGE
 .byte 0x1
@@ -33163,7 +32332,6 @@ pkmn_moveset_832:
 .byte 0xFF
 
 /* Schlingking */
-.align 2
 pkmn_moveset_833:
 .hword MOVE_RUELPSER
 .byte 0x1
@@ -33207,7 +32375,6 @@ pkmn_moveset_833:
 .byte 0xFF
 
 /* Necrozma */
-.align 2
 pkmn_moveset_834:
 .hword MOVE_MONDSCHEIN
 .byte 0x1
@@ -33251,7 +32418,6 @@ pkmn_moveset_834:
 .byte 0xFF
 
 /* Magearna */
-.align 2
 pkmn_moveset_835:
 .hword MOVE_TRICKSCHUTZ
 .byte 0x1
@@ -33297,7 +32463,6 @@ pkmn_moveset_835:
 .byte 0xFF
 
 /* Marshadow */
-.align 2
 pkmn_moveset_836:
 .hword MOVE_KONZENTRATION
 .byte 0x1
@@ -33345,7 +32510,6 @@ pkmn_moveset_836:
 .byte 0xFF
 
 /* Venicro */
-.align 2
 pkmn_moveset_837:
 .hword MOVE_DRACHENPULS
 .byte 0x1
@@ -33377,7 +32541,6 @@ pkmn_moveset_837:
 .byte 0xFF
 
 /* Agoyon */
-.align 2
 pkmn_moveset_838:
 .hword MOVE_WINDSCHNITT
 .byte 0x1
@@ -33415,7 +32578,6 @@ pkmn_moveset_838:
 .byte 0xFF
 
 /* Muramura */
-.align 2
 pkmn_moveset_839:
 .hword MOVE_SCHUTZSCHILD
 .byte 0x1
@@ -33447,7 +32609,6 @@ pkmn_moveset_839:
 .byte 0xFF
 
 /* Kopplosio */
-.align 2
 pkmn_moveset_840:
 .hword MOVE_GLUT
 .byte 0x1
@@ -33477,7 +32638,6 @@ pkmn_moveset_840:
 .byte 0xFF
 
 /* Zeraora */
-.align 2
 pkmn_moveset_841:
 .hword MOVE_KRATZER
 .byte 0x1

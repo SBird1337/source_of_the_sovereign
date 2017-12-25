@@ -1,8 +1,9 @@
+#include <pkmn_names.h>
 .align 2
-
 .global habitat_header
 
 habitat_header:
+
 .word habitat_gras
 .hword 57, 0
 .word habitat_wald
@@ -22,122 +23,181 @@ habitat_header:
 .word habitat_selten
 .hword 39, 0
 
+
 .align 2
 habitat_gras:
+
 .word gras_seite_1
 .hword 2, 0
+
 .word gras_seite_2
 .hword 2, 0
+
 .word gras_seite_3
 .hword 2, 0
+
 .word gras_seite_4
 .hword 2, 0
+
 .word gras_seite_5
 .hword 3, 0
+
 .word gras_seite_6
 .hword 3, 0
+
 .word gras_seite_7
 .hword 2, 0
+
 .word gras_seite_8
 .hword 2, 0
+
 .word gras_seite_9
 .hword 2, 0
+
 .word gras_seite_10
 .hword 2, 0
+
 .word gras_seite_11
 .hword 3, 0
+
 .word gras_seite_12
 .hword 3, 0
+
 .word gras_seite_13
 .hword 4, 0
+
 .word gras_seite_14
 .hword 2, 0
+
 .word gras_seite_15
 .hword 3, 0
+
 .word gras_seite_16
 .hword 3, 0
+
 .word gras_seite_17
 .hword 3, 0
+
 .word gras_seite_18
 .hword 2, 0
+
 .word gras_seite_19
 .hword 2, 0
+
 .word gras_seite_20
 .hword 2, 0
+
 .word gras_seite_21
 .hword 2, 0
+
 .word gras_seite_22
 .hword 2, 0
+
 .word gras_seite_23
 .hword 2, 0
+
 .word gras_seite_24
 .hword 3, 0
+
 .word gras_seite_25
 .hword 3, 0
+
 .word gras_seite_26
 .hword 2, 0
+
 .word gras_seite_27
 .hword 2, 0
+
 .word gras_seite_28
 .hword 2, 0
+
 .word gras_seite_29
 .hword 2, 0
+
 .word gras_seite_30
 .hword 1, 0
+
 .word gras_seite_31
 .hword 2, 0
+
 .word gras_seite_32
 .hword 3, 0
+
 .word gras_seite_33
 .hword 3, 0
+
 .word gras_seite_34
 .hword 3, 0
+
 .word gras_seite_35
 .hword 3, 0
+
 .word gras_seite_36
 .hword 3, 0
+
 .word gras_seite_37
 .hword 1, 0
+
 .word gras_seite_38
 .hword 2, 0
+
 .word gras_seite_39
 .hword 3, 0
+
 .word gras_seite_40
 .hword 2, 0
+
 .word gras_seite_41
 .hword 3, 0
+
 .word gras_seite_42
 .hword 1, 0
+
 .word gras_seite_43
 .hword 1, 0
+
 .word gras_seite_44
 .hword 2, 0
+
 .word gras_seite_45
 .hword 2, 0
+
 .word gras_seite_46
 .hword 3, 0
+
 .word gras_seite_47
 .hword 3, 0
+
 .word gras_seite_48
 .hword 2, 0
+
 .word gras_seite_49
 .hword 4, 0
+
 .word gras_seite_50
 .hword 2, 0
+
 .word gras_seite_51
 .hword 1, 0
+
 .word gras_seite_52
 .hword 2, 0
+
 .word gras_seite_53
 .hword 2, 0
+
 .word gras_seite_54
 .hword 2, 0
+
 .word gras_seite_55
 .hword 3, 0
+
 .word gras_seite_56
 .hword 2, 0
+
 .word gras_seite_57
 .hword 2, 0
+
 
 .align 2
 gras_seite_1:
@@ -149,7 +209,7 @@ gras_seite_3:
 gras_seite_4:
 .hword PKMN_FIFFYEN, PKMN_MAGNAYEN
 gras_seite_5:
-.hword PKMN_NIDORAN_W, PKMN_NIDORINA, PKMN_NIDOQUEEN
+.hword PKMN_NIDORAN_F, PKMN_NIDORINA, PKMN_NIDOQUEEN
 gras_seite_6:
 .hword PKMN_NIDORAN_M, PKMN_NIDORINO, PKMN_NIDOKING
 gras_seite_7:
@@ -255,118 +315,175 @@ gras_seite_56:
 gras_seite_57:
 .hword PKMN_ALOLA_RATTFRATZ, PKMN_ALOLA_RATIKARL
 
+
 .align 2
 habitat_wald:
+
 .word wald_seite_1
 .hword 3, 0
+
 .word wald_seite_2
 .hword 3, 0
+
 .word wald_seite_3
 .hword 3, 0
+
 .word wald_seite_4
 .hword 2, 0
+
 .word wald_seite_5
 .hword 3, 0
+
 .word wald_seite_6
 .hword 2, 0
+
 .word wald_seite_7
 .hword 2, 0
+
 .word wald_seite_8
 .hword 4, 0
+
 .word wald_seite_9
 .hword 3, 0
+
 .word wald_seite_10
 .hword 2, 0
+
 .word wald_seite_11
 .hword 2, 0
+
 .word wald_seite_12
 .hword 3, 0
+
 .word wald_seite_13
 .hword 2, 0
+
 .word wald_seite_14
 .hword 2, 0
+
 .word wald_seite_15
 .hword 2, 0
+
 .word wald_seite_16
 .hword 4, 0
+
 .word wald_seite_17
 .hword 3, 0
+
 .word wald_seite_18
 .hword 2, 0
+
 .word wald_seite_19
 .hword 2, 0
+
 .word wald_seite_20
 .hword 3, 0
+
 .word wald_seite_21
 .hword 2, 0
+
 .word wald_seite_22
 .hword 2, 0
+
 .word wald_seite_23
 .hword 2, 0
+
 .word wald_seite_24
 .hword 3, 0
+
 .word wald_seite_25
 .hword 2, 0
+
 .word wald_seite_26
 .hword 2, 0
+
 .word wald_seite_27
 .hword 1, 0
+
 .word wald_seite_28
 .hword 1, 0
+
 .word wald_seite_29
 .hword 2, 0
+
 .word wald_seite_30
 .hword 2, 0
+
 .word wald_seite_31
 .hword 1, 0
+
 .word wald_seite_32
 .hword 3, 0
+
 .word wald_seite_33
 .hword 3, 0
+
 .word wald_seite_34
 .hword 3, 0
+
 .word wald_seite_35
 .hword 3, 0
+
 .word wald_seite_36
 .hword 2, 0
+
 .word wald_seite_37
 .hword 3, 0
+
 .word wald_seite_38
 .hword 2, 0
+
 .word wald_seite_39
 .hword 2, 0
+
 .word wald_seite_40
 .hword 2, 0
+
 .word wald_seite_41
 .hword 2, 0
+
 .word wald_seite_42
 .hword 2, 0
+
 .word wald_seite_43
 .hword 3, 0
+
 .word wald_seite_44
 .hword 3, 0
+
 .word wald_seite_45
 .hword 2, 0
+
 .word wald_seite_46
 .hword 2, 0
+
 .word wald_seite_47
 .hword 2, 0
+
 .word wald_seite_48
 .hword 2, 0
+
 .word wald_seite_49
 .hword 3, 0
+
 .word wald_seite_50
 .hword 3, 0
+
 .word wald_seite_51
 .hword 2, 0
+
 .word wald_seite_52
 .hword 2, 0
+
 .word wald_seite_53
 .hword 3, 0
+
 .word wald_seite_54
 .hword 3, 0
+
 .word wald_seite_55
 .hword 2, 0
+
 
 .align 2
 wald_seite_1:
@@ -480,66 +597,97 @@ wald_seite_54:
 wald_seite_55:
 .hword PKMN_WOMMEL, PKMN_BANDELBY
 
+
 .align 2
 habitat_ufer_und_see:
+
 .word seite_ufer_1
 .hword 2, 0
+
 .word seite_ufer_2
 .hword 2, 0
+
 .word seite_ufer_3
 .hword 4, 0
+
 .word seite_ufer_4
 .hword 2, 0
+
 .word seite_ufer_5
 .hword 3, 0
+
 .word seite_ufer_6
 .hword 2, 0
+
 .word seite_ufer_7
 .hword 2, 0
+
 .word seite_ufer_8
 .hword 2, 0
+
 .word seite_ufer_9
 .hword 4, 0
+
 .word seite_ufer_10
 .hword 3, 0
+
 .word seite_ufer_11
 .hword 3, 0
+
 .word seite_ufer_12
 .hword 2, 0
+
 .word seite_ufer_13
 .hword 2, 0
+
 .word seite_ufer_14
 .hword 3, 0
+
 .word seite_ufer_15
 .hword 3, 0
+
 .word seite_ufer_16
 .hword 3, 0
+
 .word seite_ufer_17
 .hword 3, 0
+
 .word seite_ufer_18
 .hword 3, 0
+
 .word seite_ufer_19
 .hword 2, 0
+
 .word seite_ufer_20
 .hword 2, 0
+
 .word seite_ufer_21
 .hword 2, 0
+
 .word seite_ufer_22
 .hword 2, 0
+
 .word seite_ufer_23
 .hword 2, 0
+
 .word seite_ufer_24
 .hword 3, 0
+
 .word seite_ufer_25
 .hword 3, 0
+
 .word seite_ufer_26
 .hword 2, 0
+
 .word seite_ufer_27
 .hword 2, 0
+
 .word seite_ufer_28
 .hword 2, 0
+
 .word seite_ufer_29
 .hword 3, 0
+
 
 .align 2
 seite_ufer_1:
@@ -601,76 +749,112 @@ seite_ufer_28:
 seite_ufer_29:
 .hword PKMN_REISSLAUS, PKMN_TECTASS, PKMN_GUFA
 
+
 .align 2
 habitat_wasser:
+
 .word seite_wasser_1
 .hword 2, 0
+
 .word seite_wasser_2
 .hword 2, 0
+
 .word seite_wasser_3
 .hword 2, 0
+
 .word seite_wasser_4
 .hword 2, 0
+
 .word seite_wasser_5
 .hword 2, 0
+
 .word seite_wasser_6
 .hword 2, 0
+
 .word seite_wasser_7
 .hword 3, 0
+
 .word seite_wasser_8
 .hword 2, 0
+
 .word seite_wasser_9
 .hword 1, 0
+
 .word seite_wasser_10
 .hword 2, 0
+
 .word seite_wasser_11
 .hword 1, 0
+
 .word seite_wasser_12
 .hword 2, 0
+
 .word seite_wasser_13
 .hword 3, 0
+
 .word seite_wasser_14
 .hword 2, 0
+
 .word seite_wasser_15
 .hword 3, 0
+
 .word seite_wasser_16
 .hword 3, 0
+
 .word seite_wasser_17
 .hword 1, 0
+
 .word seite_wasser_18
 .hword 4, 0
+
 .word seite_wasser_19
 .hword 2, 0
+
 .word seite_wasser_20
 .hword 3, 0
+
 .word seite_wasser_21
 .hword 2, 0
+
 .word seite_wasser_22
 .hword 3, 0
+
 .word seite_wasser_23
 .hword 3, 0
+
 .word seite_wasser_24
 .hword 1, 0
+
 .word seite_wasser_25
 .hword 2, 0
+
 .word seite_wasser_26
 .hword 2, 0
+
 .word seite_wasser_27
 .hword 1, 0
+
 .word seite_wasser_28
 .hword 1, 0
+
 .word seite_wasser_29
 .hword 2, 0
+
 .word seite_wasser_30
 .hword 2, 0
+
 .word seite_wasser_31
 .hword 2, 0
+
 .word seite_wasser_32
 .hword 3, 0
+
 .word seite_wasser_33
 .hword 1, 0
+
 .word seite_wasser_34
 .hword 1, 0
+
 
 .align 2
 seite_wasser_1:
@@ -742,60 +926,88 @@ seite_wasser_33:
 seite_wasser_34:
 .hword PKMN_MORUDA
 
+
 .align 2
 habitat_hoehl:
+
 .word seite_hoehle_1
 .hword 3, 0
+
 .word seite_hoehle_2
 .hword 4, 0
+
 .word seite_hoehle_3
 .hword 2, 0
+
 .word seite_hoehle_4
 .hword 3, 0
+
 .word seite_hoehle_5
 .hword 3, 0
+
 .word seite_hoehle_6
 .hword 3, 0
+
 .word seite_hoehle_7
 .hword 2, 0
+
 .word seite_hoehle_8
 .hword 1, 0
+
 .word seite_hoehle_9
 .hword 2, 0
+
 .word seite_hoehle_10
 .hword 1, 0
+
 .word seite_hoehle_11
 .hword 1, 0
+
 .word seite_hoehle_12
 .hword 3, 0
+
 .word seite_hoehle_13
 .hword 2, 0
+
 .word seite_hoehle_14
 .hword 2, 0
+
 .word seite_hoehle_15
 .hword 2, 0
+
 .word seite_hoehle_16
 .hword 2, 0
+
 .word seite_hoehle_17
 .hword 2, 0
+
 .word seite_hoehle_18
 .hword 3, 0
+
 .word seite_hoehle_19
 .hword 2, 0
+
 .word seite_hoehle_20
 .hword 3, 0
+
 .word seite_hoehle_21
 .hword 1, 0
+
 .word seite_hoehle_22
 .hword 2, 0
+
 .word seite_hoehle_23
 .hword 1, 0
+
 .word seite_hoehle_24
 .hword 2, 0
+
 .word seite_hoehle_25
 .hword 1, 0
+
 .word seite_hoehle_26
 .hword 3, 0
+
 
 .align 2
 seite_hoehle_1:
@@ -851,74 +1063,109 @@ seite_hoehle_25:
 seite_hoehle_26:
 .hword PKMN_ALOLA_KLEINSTEIN, PKMN_ALOLA_GEOROK, PKMN_ALOLA_GEOWAZ
 
+
 .align 2
 habitat_gebirge:
+
 .word seite_gebirge_1
 .hword 3, 0
+
 .word seite_gebirge_2
 .hword 2, 0
+
 .word seite_gebirge_3
 .hword 2, 0
+
 .word seite_gebirge_4
 .hword 3, 0
+
 .word seite_gebirge_5
 .hword 3, 0
+
 .word seite_gebirge_6
 .hword 3, 0
+
 .word seite_gebirge_7
 .hword 2, 0
+
 .word seite_gebirge_8
 .hword 3, 0
+
 .word seite_gebirge_9
 .hword 2, 0
+
 .word seite_gebirge_10
 .hword 2, 0
+
 .word seite_gebirge_11
 .hword 1, 0
+
 .word seite_gebirge_12
 .hword 2, 0
+
 .word seite_gebirge_13
 .hword 1, 0
+
 .word seite_gebirge_14
 .hword 2, 0
+
 .word seite_gebirge_15
 .hword 1, 0
+
 .word seite_gebirge_16
 .hword 3, 0
+
 .word seite_gebirge_17
 .hword 3, 0
+
 .word seite_gebirge_18
 .hword 3, 0
+
 .word seite_gebirge_19
 .hword 2, 0
+
 .word seite_gebirge_20
 .hword 1, 0
+
 .word seite_gebirge_21
 .hword 1, 0
+
 .word seite_gebirge_22
 .hword 3, 0
+
 .word seite_gebirge_23
 .hword 4, 0
+
 .word seite_gebirge_24
 .hword 3, 0
+
 .word seite_gebirge_25
 .hword 3, 0
+
 .word seite_gebirge_26
 .hword 2, 0
+
 .word seite_gebirge_27
 .hword 1, 0
+
 .word seite_gebirge_28
 .hword 3, 0
+
 .word seite_gebirge_29
 .hword 2, 0
+
 .word seite_gebirge_30
 .hword 2, 0
+
 .word seite_gebirge_31
 .hword 1, 0
+
 .word seite_gebirge_32
 .hword 2, 0
+
 .word seite_gebirge_33
 .hword 2, 0
+
 
 .align 2
 seite_gebirge_1:
@@ -988,104 +1235,154 @@ seite_gebirge_32:
 seite_gebirge_33:
 .hword PKMN_ALOLA_SANDAN, PKMN_ALOLA_SANDAMER
 
+
 .align 2
 habitat_wildniss:
+
 .word seite_wildniss_1
 .hword 2, 0
+
 .word seite_wildniss_2
 .hword 2, 0
+
 .word seite_wildniss_3
 .hword 3, 0
+
 .word seite_wildniss_4
 .hword 3, 0
+
 .word seite_wildniss_5
 .hword 2, 0
+
 .word seite_wildniss_6
 .hword 2, 0
+
 .word seite_wildniss_7
 .hword 2, 0
+
 .word seite_wildniss_8
 .hword 3, 0
+
 .word seite_wildniss_9
 .hword 1, 0
+
 .word seite_wildniss_10
 .hword 2, 0
+
 .word seite_wildniss_11
 .hword 3, 0
+
 .word seite_wildniss_12
 .hword 3, 0
+
 .word seite_wildniss_13
 .hword 3, 0
+
 .word seite_wildniss_14
 .hword 2, 0
+
 .word seite_wildniss_15
 .hword 1, 0
+
 .word seite_wildniss_16
 .hword 2, 0
+
 .word seite_wildniss_17
 .hword 2, 0
+
 .word seite_wildniss_18
 .hword 2, 0
+
 .word seite_wildniss_19
 .hword 2, 0
+
 .word seite_wildniss_20
 .hword 1, 0
+
 .word seite_wildniss_21
 .hword 3, 0
+
 .word seite_wildniss_22
 .hword 2, 0
+
 .word seite_wildniss_23
 .hword 3, 0
+
 .word seite_wildniss_24
 .hword 2, 0
+
 .word seite_wildniss_25
 .hword 3, 0
+
 .word seite_wildniss_26
 .hword 2, 0
+
 .word seite_wildniss_27
 .hword 1, 0
+
 .word seite_wildniss_28
 .hword 2, 0
+
 .word seite_wildniss_29
 .hword 3, 0
+
 .word seite_wildniss_30
 .hword 2, 0
+
 .word seite_wildniss_31
 .hword 2, 0
+
 .word seite_wildniss_32
 .hword 2, 0
+
 .word seite_wildniss_33
 .hword 3, 0
+
 .word seite_wildniss_34
 .hword 4, 0
+
 .word seite_wildniss_35
 .hword 2, 0
+
 .word seite_wildniss_36
 .hword 3, 0
+
 .word seite_wildniss_37
 .hword 2, 0
+
 .word seite_wildniss_38
 .hword 2, 0
+
 .word seite_wildniss_39
 .hword 2, 0
+
 .word seite_wildniss_40
 .hword 2, 0
+
 .word seite_wildniss_41
 .hword 1, 0
+
 .word seite_wildniss_42
 .hword 2, 0
+
 .word seite_wildniss_43
 .hword 3, 0
+
 .word seite_wildniss_44
 .hword 3, 1
+
 .word seite_wildniss_45
 .hword 2, 0
+
 .word seite_wildniss_46
 .hword 2, 2
+
 .word seite_wildniss_47
 .hword 3, 0
+
 .word seite_wildniss_48
 .hword 3, 3
+
 
 .align 2
 seite_wildniss_1:
@@ -1185,104 +1482,154 @@ seite_wildniss_47:
 seite_wildniss_48:
 .hword PKMN_MINIRAS, PKMN_MEDIRAS, PKMN_GRANDIRAS
 
+
 .align 2
 habitat_stadt:
+
 .word seite_stadt_1
 .hword 4, 0
+
 .word seite_stadt_2
 .hword 2, 0
+
 .word seite_stadt_3
 .hword 2, 0
+
 .word seite_stadt_4
 .hword 4, 0
+
 .word seite_stadt_5
 .hword 2, 0
+
 .word seite_stadt_6
 .hword 2, 0
+
 .word seite_stadt_7
 .hword 3, 0
+
 .word seite_stadt_8
 .hword 4, 0
+
 .word seite_stadt_9
 .hword 2, 0
+
 .word seite_stadt_10
 .hword 2, 0
+
 .word seite_stadt_11
 .hword 1, 0
+
 .word seite_stadt_12
 .hword 4, 0
+
 .word seite_stadt_13
 .hword 3, 0
+
 .word seite_stadt_14
 .hword 2, 0
+
 .word seite_stadt_15
 .hword 3, 0
+
 .word seite_stadt_16
 .hword 1, 0
+
 .word seite_stadt_17
 .hword 4, 0
+
 .word seite_stadt_18
 .hword 2, 0
+
 .word seite_stadt_19
 .hword 2, 0
+
 .word seite_stadt_20
 .hword 1, 0
+
 .word seite_stadt_21
 .hword 2, 0
+
 .word seite_stadt_22
 .hword 2, 0
+
 .word seite_stadt_23
 .hword 1, 0
+
 .word seite_stadt_24
 .hword 1, 0
+
 .word seite_stadt_25
 .hword 2, 0
+
 .word seite_stadt_26
 .hword 1, 0
+
 .word seite_stadt_27
 .hword 3, 0
+
 .word seite_stadt_28
 .hword 2, 0
+
 .word seite_stadt_29
 .hword 2, 0
+
 .word seite_stadt_30
 .hword 2, 0
+
 .word seite_stadt_31
 .hword 2, 0
+
 .word seite_stadt_32
 .hword 2, 0
+
 .word seite_stadt_33
 .hword 2, 0
+
 .word seite_stadt_34
 .hword 3, 0
+
 .word seite_stadt_35
 .hword 3, 0
+
 .word seite_stadt_36
 .hword 3, 0
+
 .word seite_stadt_37
 .hword 2, 0
+
 .word seite_stadt_38
 .hword 3, 0
+
 .word seite_stadt_39
 .hword 2, 0
+
 .word seite_stadt_40
 .hword 2, 0
+
 .word seite_stadt_41
 .hword 1, 0
+
 .word seite_stadt_42
 .hword 2, 0
+
 .word seite_stadt_43
 .hword 3, 0
+
 .word seite_stadt_44
 .hword 1, 0
+
 .word seite_stadt_45
 .hword 1, 0
+
 .word seite_stadt_46
 .hword 2, 0
+
 .word seite_stadt_47
 .hword 1, 0
+
 .word seite_stadt_48
 .hword 2, 0
+
 
 .align 2
 seite_stadt_1:
@@ -1368,7 +1715,7 @@ seite_stadt_40:
 seite_stadt_41:
 .hword PKMN_COIFFWAFF
 seite_stadt_42:
-.hword PKMN_PSIAU, PKMN_PSIAUGON_M
+.hword PKMN_PSIAU, PKMN_PSIAUGON
 seite_stadt_43:
 .hword PKMN_GRAMOKLES, PKMN_DUOKLES, PKMN_DURENGARD
 seite_stadt_44:
@@ -1382,86 +1729,127 @@ seite_stadt_47:
 seite_stadt_48:
 .hword PKMN_SANKABUH, PKMN_COLOSSAND
 
+
 .align 2
-habitat_selten:
+habitat_selten
+
 .word seite_selten_1
 .hword 1, 0
+
 .word seite_selten_2
 .hword 3, 0
+
 .word seite_selten_3
 .hword 2, 0
+
 .word seite_selten_4
 .hword 3, 0
+
 .word seite_selten_5
 .hword 1, 0
+
 .word seite_selten_6
 .hword 1, 0
+
 .word seite_selten_7
 .hword 1, 0
+
 .word seite_selten_8
 .hword 4, 0
+
 .word seite_selten_9
 .hword 4, 0
+
 .word seite_selten_10
 .hword 4, 0
+
 .word seite_selten_11
 .hword 3, 0
+
 .word seite_selten_12
 .hword 1, 0
+
 .word seite_selten_13
 .hword 1, 0
+
 .word seite_selten_14
 .hword 3, 0
+
 .word seite_selten_15
 .hword 2, 0
+
 .word seite_selten_16
 .hword 1, 0
+
 .word seite_selten_17
 .hword 1, 0
+
 .word seite_selten_18
 .hword 2, 0
+
 .word seite_selten_19
 .hword 2, 0
+
 .word seite_selten_20
 .hword 1, 0
+
 .word seite_selten_21
 .hword 1, 0
+
 .word seite_selten_22
 .hword 1, 0
+
 .word seite_selten_23
 .hword 1, 0
+
 .word seite_selten_24
 .hword 3, 0
+
 .word seite_selten_25
 .hword 3, 0
+
 .word seite_selten_26
 .hword 3, 0
+
 .word seite_selten_27
 .hword 1, 0
+
 .word seite_selten_28
 .hword 1, 0
+
 .word seite_selten_29
 .hword 1, 0
+
 .word seite_selten_30
 .hword 3, 0
+
 .word seite_selten_31
 .hword 1, 0
+
 .word seite_selten_32
 .hword 1, 0
+
 .word seite_selten_33
 .hword 1, 0
+
 .word seite_selten_34
 .hword 3, 1
+
 .word seite_selten_35
 .hword 4, 0
+
 .word seite_selten_36
 .hword 4, 2
+
 .word seite_selten_37
 .hword 4, 0
+
 .word seite_selten_38
 .hword 4, 3
+
 .word seite_selten_39
 .hword 1, 0
+
 
 .align 2
 seite_selten_1:
@@ -1531,7 +1919,7 @@ seite_selten_32:
 seite_selten_33:
 .hword PKMN_VOLCANION
 seite_selten_34:
-.hword PKMN_TYP_NULL, PKMN_AMIGENTO, PKMN_METENO
+.hword PKMN_TYP:NULL, PKMN_AMIGENTO, PKMN_METENO
 seite_selten_35:
 .hword PKMN_KAPU_RIKI, PKMN_KAPU_FALA, PKMN_KAPU_TORO, PKMN_KAPU_KIME
 seite_selten_36:

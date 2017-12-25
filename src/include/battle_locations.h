@@ -21,7 +21,7 @@
  ****************************************************************************/
 
 /**
- * @file attack_names.h
+ * @file pkmn_moves.h
  * @author Sturmvogel
  * @date 15 dec 2016
  * @brief Some globals used in-battle

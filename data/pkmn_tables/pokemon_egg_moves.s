@@ -1,14 +1,12 @@
-#include <pkmn_name.h>
+
+#include <pkmn_names.h>
 #include <pkmn_moves.h>
 
 .align 2
 .text
-
 .global pokemon_egg_moves
 pokemon_egg_moves:
 
-
-/* Bisasam */
 .hword PKMN_BISASAM+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_AUSDAUER
@@ -26,7 +24,6 @@ pokemon_egg_moves:
 .hword MOVE_VERWURZLER
 .hword MOVE_ZAUBERBLATT
 
-/* Glumanda */
 .hword PKMN_GLUMANDA+(20000)
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_BAUCHTROMMEL
@@ -43,7 +40,6 @@ pokemon_egg_moves:
 .hword MOVE_WINDSCHNITT
 .hword MOVE_WUTANFALL
 
-/* Schiggy */
 .hword PKMN_SCHIGGY+(20000)
 .hword MOVE_AURASPHAERE
 .hword MOVE_DRACHENPULS
@@ -62,7 +58,6 @@ pokemon_egg_moves:
 .hword MOVE_WASSERRING
 .hword MOVE_WEISSNEBEL
 
-/* Taubsi */
 .hword PKMN_TAUBSI+(20000)
 .hword MOVE_AUFLOCKERN
 .hword MOVE_AUFRUHR
@@ -74,7 +69,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_WINDSCHNITT
 
-/* Rattfratz */
 .hword PKMN_RATTFRATZ+(20000)
 .hword MOVE_AUFRUHR
 .hword MOVE_BISS
@@ -88,7 +82,6 @@ pokemon_egg_moves:
 .hword MOVE_WAGEMUT
 .hword MOVE_ZUFLUCHT
 
-/* Alola-Rattfratz */
 .hword PKMN_ALOLA_RATTFRATZ+(20000)
 .hword MOVE_AUFRUHR
 .hword MOVE_BISS
@@ -102,7 +95,6 @@ pokemon_egg_moves:
 .hword MOVE_WAGEMUT
 .hword MOVE_ZUFLUCHT
 
-/* Habitak */
 .hword PKMN_HABITAK+(20000)
 .hword MOVE_AUFRUHR
 .hword MOVE_DAUNENREIGEN
@@ -116,7 +108,6 @@ pokemon_egg_moves:
 .hword MOVE_TRIPLETTE
 .hword MOVE_WIRBELWIND
 
-/* Rettan */
 .hword PKMN_RETTAN+(20000)
 .hword MOVE_AUSSETZER
 .hword MOVE_EISENSCHWEIF
@@ -131,7 +122,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_WECHSELDICH
 
-/* Pikachu */
 .hword PKMN_PIKACHU+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_BESCHWOERUNG
@@ -151,7 +141,6 @@ pokemon_egg_moves:
 .hword MOVE_WUNSCHTRAUM
 .hword MOVE_ZUGABE
 
-/* Sandan */
 .hword PKMN_SANDAN+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_DRESSCHFLEGEL
@@ -166,7 +155,6 @@ pokemon_egg_moves:
 .hword MOVE_ZERMALMKLAUE
 .hword MOVE_ZERMUERBEN
 
-/* Alola-Sandan */
 .hword PKMN_ALOLA_SANDAN+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_DRESSCHFLEGEL
@@ -181,8 +169,7 @@ pokemon_egg_moves:
 .hword MOVE_ZERMALMKLAUE
 .hword MOVE_ZERMUERBEN
 
-/* Nidoran♀ */
-.hword PKMN_NIDORAN_W+(20000)
+.hword PKMN_NIDORAN_F+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_AUSSETZER
 .hword MOVE_BODYCHECK
@@ -198,7 +185,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_ZERMUERBEN
 
-/* Nidoran♂ */
 .hword PKMN_NIDORAN_M+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_AUSDAUER
@@ -215,7 +201,6 @@ pokemon_egg_moves:
 .hword MOVE_TIEFSCHLAG
 .hword MOVE_ZERMUERBEN
 
-/* Piepi */
 .hword PKMN_PIEPI+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_AROMAKUR
@@ -232,7 +217,6 @@ pokemon_egg_moves:
 .hword MOVE_TRUGTRAENE
 .hword MOVE_WUNSCHTRAUM
 
-/* Vulpix */
 .hword PKMN_VULPIX+(20000)
 .hword MOVE_AUSSETZER
 .hword MOVE_BUERDE
@@ -249,7 +233,6 @@ pokemon_egg_moves:
 .hword MOVE_LIEBREIZ
 .hword MOVE_SONDERSENSOR
 
-/* Alola-Vulpix */
 .hword PKMN_ALOLA_VULPIX+(20000)
 .hword MOVE_AUSSETZER
 .hword MOVE_BUERDE
@@ -266,7 +249,6 @@ pokemon_egg_moves:
 .hword MOVE_LIEBREIZ
 .hword MOVE_SONDERSENSOR
 
-/* Pummeluff */
 .hword PKMN_PUMMELUFF+(20000)
 .hword MOVE_ABGESANG
 .hword MOVE_BEZIRZER
@@ -282,7 +264,6 @@ pokemon_egg_moves:
 .hword MOVE_WUNSCHTRAUM
 .hword MOVE_ZUFLUCHT
 
-/* Zubat */
 .hword PKMN_ZUBAT+(20000)
 .hword MOVE_AUFLOCKERN
 .hword MOVE_FINTE
@@ -299,7 +280,6 @@ pokemon_egg_moves:
 .hword MOVE_WIRBELWIND
 .hword MOVE_ZEN_KOPFSTOSS
 
-/* Myrapla */
 .hword PKMN_MYRAPLA+(20000)
 .hword MOVE_CHARME
 .hword MOVE_DRESCHFLEGEL
@@ -313,7 +293,6 @@ pokemon_egg_moves:
 .hword MOVE_TAUMELTANZ
 .hword MOVE_VERWURZLER
 
-/* Paras */
 .hword PKMN_PARAS+(20000)
 .hword MOVE_AGILLITAET
 .hword MOVE_AUSDAUER
@@ -333,7 +312,6 @@ pokemon_egg_moves:
 .hword MOVE_STACHELFINALE
 .hword MOVE_VERFOLGUNG
 
-/* Bluzuk */
 .hword PKMN_BLUZUK+(20000)
 .hword MOVE_AGILLITAET
 .hword MOVE_AMPELLEUCHTE
@@ -346,7 +324,6 @@ pokemon_egg_moves:
 .hword MOVE_WERTWECHSEL
 .hword MOVE_WUTPULVER
 
-/* Digda */
 .hword PKMN_DIGDA+(20000)
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_AUFRUHR
@@ -362,7 +339,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_WAGEMUT
 
-/* Alola-Digda */
 .hword PKMN_ALOLA_DIGDA+(20000)
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_AUFRUHR
@@ -378,7 +354,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_WAGEMUT
 
-/* Mauzi */
 .hword PKMN_MAUZI+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_CHARME
@@ -394,7 +369,6 @@ pokemon_egg_moves:
 .hword MOVE_ZUFLUCHT
 .hword MOVE_ZUSCHUSS
 
-/* Alola-Mauzi */
 .hword PKMN_ALOLA_MAUZI+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_CHARME
@@ -410,7 +384,6 @@ pokemon_egg_moves:
 .hword MOVE_ZUFLUCHT
 .hword MOVE_ZUSCHUSS
 
-/* Enton */
 .hword PKMN_ENTON+(20000)
 .hword MOVE_GAEHNER
 .hword MOVE_GEHEIMPOWER
@@ -428,7 +401,6 @@ pokemon_egg_moves:
 .hword MOVE_WANKELSTRAHL
 .hword MOVE_ZUGABE
 
-/* Menki */
 .hword PKMN_MENKI+(20000)
 .hword MOVE_GEGENSCHLAG
 .hword MOVE_GESICHTE
@@ -444,7 +416,6 @@ pokemon_egg_moves:
 .hword MOVE_VERGELTUNG
 .hword MOVE_ZUGABE
 
-/* Fukano */
 .hword PKMN_FUKANO+(20000)
 .hword MOVE_AUSBRENNEN
 .hword MOVE_BEZIRZER
@@ -462,7 +433,6 @@ pokemon_egg_moves:
 .hword MOVE_NAHKAMPF
 .hword MOVE_RISIKOTACKLE
 
-/* Quapsel */
 .hword PKMN_QUAPSEL+(20000)
 .hword MOVE_AQUAWELLE
 .hword MOVE_AUSDAUER
@@ -478,7 +448,6 @@ pokemon_egg_moves:
 .hword MOVE_WILLENSLESER
 .hword MOVE_ZUGABE
 
-/* Abra */
 .hword PKMN_ABRA+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_BARRIERE
@@ -494,7 +463,6 @@ pokemon_egg_moves:
 .hword MOVE_WERTWECHSEL
 .hword MOVE_ZUGABE
 
-/* Machollo */
 .hword PKMN_MACHOLLO+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_DONNERSCHLAG
@@ -512,7 +480,6 @@ pokemon_egg_moves:
 .hword MOVE_SPASSKANONE
 .hword MOVE_ZUGABE
 
-/* Knofensa */
 .hword PKMN_KNOFENSA+(20000)
 .hword MOVE_BEERENKRAEFTE
 .hword MOVE_BLATTGEISSEL
@@ -531,7 +498,6 @@ pokemon_egg_moves:
 .hword MOVE_ZAUBERBLATT
 .hword MOVE_ZUGABE
 
-/* Tentacha */
 .hword PKMN_TENTACHA+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_AKUPRESSUR
@@ -545,7 +511,6 @@ pokemon_egg_moves:
 .hword MOVE_TURBODREHER
 .hword MOVE_WASSERRING
 
-/* Kleinstein */
 .hword PKMN_KLEINSTEIN+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_AUTOTOMIE
@@ -558,7 +523,6 @@ pokemon_egg_moves:
 .hword MOVE_RUECKENTZUG
 .hword MOVE_RUNDUMSCHUTZ
 
-/* Alola-Kleinstein */
 .hword PKMN_ALOLA_KLEINSTEIN+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_AUTOTOMIE
@@ -571,7 +535,6 @@ pokemon_egg_moves:
 .hword MOVE_RUECKENTZUG
 .hword MOVE_RUNDUMSCHUTZ
 
-/* Ponita */
 .hword PKMN_PONITA+(20000)
 .hword MOVE_CHARME
 .hword MOVE_DOPPELKICK
@@ -586,7 +549,6 @@ pokemon_egg_moves:
 .hword MOVE_RISIKOTACKLE
 .hword MOVE_SEITENTAUSCH
 
-/* Flegmon */
 .hword PKMN_FLEGMON+(20000)
 .hword MOVE_BAUCHTROMMEL
 .hword MOVE_EGOTRIP
@@ -600,7 +562,6 @@ pokemon_egg_moves:
 .hword MOVE_WUNDERRAUM
 .hword MOVE_ZEN_KOPFSTOSS
 
-/* Porenta */
 .hword PKMN_PORENTA+(20000)
 .hword MOVE_BEZIRZER
 .hword MOVE_DAUNENREIGEN
@@ -621,7 +582,6 @@ pokemon_egg_moves:
 .hword MOVE_WANKELSTRAHL
 .hword MOVE_WINDSTOSS
 
-/* Dodu */
 .hword PKMN_DODU+(20000)
 .hword MOVE_BEERENKRAEFTE
 .hword MOVE_DRESCHFLEGEL
@@ -634,7 +594,6 @@ pokemon_egg_moves:
 .hword MOVE_STURZFLUG
 .hword MOVE_SUPERSCHALL
 
-/* Jurob */
 .hword PKMN_JUROB+(20000)
 .hword MOVE_ABGESANG
 .hword MOVE_AMPELLEUCHTE
@@ -654,7 +613,6 @@ pokemon_egg_moves:
 .hword MOVE_ZUGABE
 .hword MOVE_ZWANGO
 
-/* Sleima */
 .hword PKMN_SLEIMA+(20000)
 .hword MOVE_BEGRENZER
 .hword MOVE_DUNKELNEBEL
@@ -670,7 +628,6 @@ pokemon_egg_moves:
 .hword MOVE_STEIGERUNGSHIEB
 .hword MOVE_VERZEHRER
 
-/* Alola-Sleima */
 .hword PKMN_ALOLA_SLEIMA+(20000)
 .hword MOVE_BEGRENZER
 .hword MOVE_DUNKELNEBEL
@@ -686,7 +643,6 @@ pokemon_egg_moves:
 .hword MOVE_STEIGERUNGSHIEB
 .hword MOVE_VERZEHRER
 
-/* Muschas */
 .hword PKMN_MUSCHAS+(20000)
 .hword MOVE_AQUAWELLE
 .hword MOVE_BARRIERE
@@ -701,7 +657,6 @@ pokemon_egg_moves:
 .hword MOVE_TURBODREHER
 .hword MOVE_WASSERRING
 
-/* Nebulak */
 .hword PKMN_NEBULAK+(20000)
 .hword MOVE_ABGESANG
 .hword MOVE_AUSSETZER
@@ -717,7 +672,6 @@ pokemon_egg_moves:
 .hword MOVE_SMOG
 .hword MOVE_TYPENSPIEGEL
 
-/* Onix */
 .hword PKMN_ONIX+(20000)
 .hword MOVE_DRESCHFLEGEL
 .hword MOVE_EINIGLER
@@ -730,7 +684,6 @@ pokemon_egg_moves:
 .hword MOVE_TARNSTEINE
 .hword MOVE_WALZER
 
-/* Traumato */
 .hword PKMN_TRAUMATO+(20000)
 .hword MOVE_BARRIERE
 .hword MOVE_DONNERSCHLAG
@@ -747,7 +700,6 @@ pokemon_egg_moves:
 .hword MOVE_WERTWECHSEL
 .hword MOVE_ZUSCHUSS
 
-/* Krabby */
 .hword PKMN_KRABBY+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_AGILLITAET
@@ -762,7 +714,6 @@ pokemon_egg_moves:
 .hword MOVE_SPASSKANONE
 .hword MOVE_ZERMUERBEN
 
-/* Owei */
 .hword PKMN_OWEI+(20000)
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_BEERENKRAEFTE
@@ -779,7 +730,6 @@ pokemon_egg_moves:
 .hword MOVE_VERWURZLER
 .hword MOVE_WERTWECHSEL
 
-/* Tragosso */
 .hword PKMN_TRAGOSSO+(20000)
 .hword MOVE_ABGESANG
 .hword MOVE_ANTIK_KRAFT
@@ -793,7 +743,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHAEDELWUME
 .hword MOVE_ZERMUERBEN
 
-/* Kicklee */
 .hword PKMN_KICKLEE+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_KONTER
@@ -806,7 +755,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_WILLENSLESER
 
-/* Nockchan */
 .hword PKMN_NOCKCHAN+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_KONTER
@@ -819,7 +767,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_WILLENSLESER
 
-/* Schlurp */
 .hword PKMN_SCHLURP+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_BAUCHTROMMEL
@@ -835,7 +782,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHNARCHER
 .hword MOVE_ZEN_KOPFSTOSS
 
-/* Smogon */
 .hword PKMN_SMOGON+(20000)
 .hword MOVE_ENTFESSLER
 .hword MOVE_FLUCH
@@ -849,7 +795,6 @@ pokemon_egg_moves:
 .hword MOVE_PSYWELLE
 .hword MOVE_VERZEHRER
 
-/* Rihorn */
 .hword PKMN_RIHORN+(20000)
 .hword MOVE_DONNERZAHN
 .hword MOVE_DRACHENSTOSS
@@ -868,7 +813,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHUTZTEILER
 .hword MOVE_ZERMALMKLAUE
 
-/* Chaneira */
 .hword PKMN_CHANEIRA+(20000)
 .hword MOVE_AROMAKUR
 .hword MOVE_AUSDAUER
@@ -882,7 +826,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHLAMMBOMBE
 .hword MOVE_VITALGLOCKE
 
-/* Tangela */
 .hword PKMN_TANGELA+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_BEERENKRAEFTE
@@ -898,7 +841,6 @@ pokemon_egg_moves:
 .hword MOVE_WECKRUF
 .hword MOVE_WUTPULVER
 
-/* Kangama */
 .hword PKMN_KANGAMA+(20000)
 .hword MOVE_AUFRUHR
 .hword MOVE_AUSSETZER
@@ -914,7 +856,6 @@ pokemon_egg_moves:
 .hword MOVE_UEBERKOPFWURF
 .hword MOVE_ZERMALMKLAUE
 
-/* Seeper */
 .hword PKMN_SEEPER+(20000)
 .hword MOVE_AMPELLEUCHTE
 .hword MOVE_AQUAWELLE
@@ -930,7 +871,6 @@ pokemon_egg_moves:
 .hword MOVE_PLATSCHER
 .hword MOVE_WUTANFALL
 
-/* Goldini */
 .hword PKMN_GOLDINI+(20000)
 .hword MOVE_AMPELLEUCHTE
 .hword MOVE_BODYSLAM
@@ -944,7 +884,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHAEDELWUMME
 .hword MOVE_SCHLAFREDE
 
-/* Pantimos */
 .hword PKMN_PANTIMOS+(20000)
 .hword MOVE_EISSTURM
 .hword MOVE_HYPNOSE
@@ -960,7 +899,6 @@ pokemon_egg_moves:
 .hword MOVE_TRICKBETRUG
 .hword MOVE_WECKRUF
 
-/* Sichlor */
 .hword PKMN_SICHLOR+(20000)
 .hword MOVE_AUFLOCKERN
 .hword MOVE_AUSDAUER
@@ -973,7 +911,6 @@ pokemon_egg_moves:
 .hword MOVE_STAFETTE
 .hword MOVE_STAHLFLUEGEL
 
-/* Rossana */
 .hword PKMN_ROSSANA+(20000)
 .hword MOVE_EISHIEB
 .hword MOVE_LIEBREIZ
@@ -984,7 +921,6 @@ pokemon_egg_moves:
 .hword MOVE_WUNDERAUGE
 .hword MOVE_WUNSCHTRAUM
 
-/* Elektek */
 .hword PKMN_ELEKTEK+(20000)
 .hword MOVE_BARRIERE
 .hword MOVE_EISHIEB
@@ -998,7 +934,6 @@ pokemon_egg_moves:
 .hword MOVE_POWER_PUNCH
 .hword MOVE_WUCHTSCHLAG
 
-/* Magmar */
 .hword PKMN_MAGMAR+(20000)
 .hword MOVE_BARRIERE
 .hword MOVE_BAUCHTROMMEL
@@ -1015,7 +950,6 @@ pokemon_egg_moves:
 .hword MOVE_TEMPOHIEB
 .hword MOVE_WUCHTSCHLAG
 
-/* Pinsir */
 .hword PKMN_PINSIR+(20000)
 .hword MOVE_DRESCHFLEGEL
 .hword MOVE_EGOTRIP
@@ -1027,7 +961,6 @@ pokemon_egg_moves:
 .hword MOVE_OFFENLEGUNG
 .hword MOVE_RUCKZUCKHIEB
 
-/* Lapras */
 .hword PKMN_LAPRAS+(20000)
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_DRACHENPULS
@@ -1044,7 +977,6 @@ pokemon_egg_moves:
 .hword MOVE_SPASSKANONE
 .hword MOVE_WHIRLPOOL
 
-/* Evoli */
 .hword PKMN_EVOLI+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_BEERENKRAEFTE
@@ -1061,7 +993,6 @@ pokemon_egg_moves:
 .hword MOVE_TRUGTRAENE
 .hword MOVE_WUNSCHTRAUM
 
-/* Amonitas */
 .hword PKMN_AMONITAS+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_AQUAWELLE
@@ -1078,7 +1009,6 @@ pokemon_egg_moves:
 .hword MOVE_TYPENSPIEGEL
 .hword MOVE_WHIRLPOOL
 
-/* Kabuto */
 .hword PKMN_KABUTO+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_AURORASTRAHL
@@ -1093,7 +1023,6 @@ pokemon_egg_moves:
 .hword MOVE_LEHMSCHUSS
 .hword MOVE_TURBODREHER
 
-/* Aerodactyl */
 .hword PKMN_AERODACTYL+(20000)
 .hword MOVE_BODYCHECK
 .hword MOVE_FEUERODEM
@@ -1107,7 +1036,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_WIRBELWIND
 
-/* Relaxo */
 .hword PKMN_RELAXO+(20000)
 .hword MOVE_BEERENKRAEFTE
 .hword MOVE_CHARME
@@ -1122,7 +1050,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_WIRBELWIND
 
-/* Dratini */
 .hword PKMN_DRATINI+(20000)
 .hword MOVE_AQUAWELLE
 .hword MOVE_DRACHENPULS
@@ -1136,7 +1063,6 @@ pokemon_egg_moves:
 .hword MOVE_WASSERDUESE
 .hword MOVE_WEISSNEBEL
 
-/* Endivie */
 .hword PKMN_ENDIVIE+(20000)
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_AROMAKUR
@@ -1154,7 +1080,6 @@ pokemon_egg_moves:
 .hword MOVE_RANKENHIEB
 .hword MOVE_VERWURZLER
 
-/* Feurigel */
 .hword PKMN_FEURIGEL+(20000)
 .hword MOVE_BEZIRZER
 .hword MOVE_DOPPELKICK
@@ -1171,7 +1096,6 @@ pokemon_egg_moves:
 .hword MOVE_SONDERSENSOR
 .hword MOVE_ZERMALMKLAUE
 
-/* Karnimani */
 .hword PKMN_KARNIMANI+(20000)
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_AQUAWELLE
@@ -1188,7 +1112,6 @@ pokemon_egg_moves:
 .hword MOVE_TRUGTRAENE
 .hword MOVE_WASSERDUESE
 
-/* Wiesor */
 .hword PKMN_WIESOR+(20000)
 .hword MOVE_BEERENKRAEFTE
 .hword MOVE_BEZIRZER
@@ -1205,7 +1128,6 @@ pokemon_egg_moves:
 .hword MOVE_ZUFLUCHT
 .hword MOVE_ZUSCHUSS
 
-/* Hoothoot */
 .hword PKMN_HOOTHOOT+(20000)
 .hword MOVE_AGILLITAET
 .hword MOVE_AUFLOCKERN
@@ -1220,7 +1142,6 @@ pokemon_egg_moves:
 .hword MOVE_SUPERSCHALL
 .hword MOVE_WIRBELWIND
 
-/* Ledyba */
 .hword PKMN_LEDYBA+(20000)
 .hword MOVE_ABLEITHIEB
 .hword MOVE_ABSCHLAG
@@ -1237,7 +1158,6 @@ pokemon_egg_moves:
 .hword MOVE_SILBERHAUCH
 .hword MOVE_ZUGABE
 
-/* Webarak */
 .hword PKMN_WEBARAK+(20000)
 .hword MOVE_AMPELLEUCHTE
 .hword MOVE_ANFALL
@@ -1253,7 +1173,6 @@ pokemon_egg_moves:
 .hword MOVE_VIELENDER
 .hword MOVE_WUTPULVER
 
-/* Lampi */
 .hword PKMN_LAMPI+(20000)
 .hword MOVE_AGILLITAET
 .hword MOVE_AMNESIE
@@ -1267,7 +1186,6 @@ pokemon_egg_moves:
 .hword MOVE_WEISSNEBEL
 .hword MOVE_WHIRLPOOL
 
-/* Pichu */
 .hword PKMN_PICHU+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_BESCHWOERUNG
@@ -1285,7 +1203,6 @@ pokemon_egg_moves:
 .hword MOVE_SPASSKANONE
 .hword MOVE_VOLTTACKLE
 
-/* Pii */
 .hword PKMN_PII+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_AROMAKUR
@@ -1302,7 +1219,6 @@ pokemon_egg_moves:
 .hword MOVE_TRUGTRAENE
 .hword MOVE_WUNSCHTRAUM
 
-/* Fluffeluff */
 .hword PKMN_FLUFFELUFF+(20000)
 .hword MOVE_ABGESANG
 .hword MOVE_BEZIRZER
@@ -1318,7 +1234,6 @@ pokemon_egg_moves:
 .hword MOVE_WUNSCHTRAUM
 .hword MOVE_ZUFLUCHT
 
-/* Togepi */
 .hword PKMN_TOGEPI+(20000)
 .hword MOVE_BESCHWOERUNG
 .hword MOVE_GEHEIMPOWER
@@ -1333,7 +1248,6 @@ pokemon_egg_moves:
 .hword MOVE_SONDERSENSOR
 .hword MOVE_SPIEGELTRICK
 
-/* Natu */
 .hword PKMN_NATU+(20000)
 .hword MOVE_BOHRSCHNABEL
 .hword MOVE_DAUNENREIGEN
@@ -1350,7 +1264,6 @@ pokemon_egg_moves:
 .hword MOVE_WERTWECHSEL
 .hword MOVE_ZEN_KOPFSTOSS
 
-/* Voltilamm */
 .hword PKMN_VOLTILAMM+(20000)
 .hword MOVE_AGILLITAET
 .hword MOVE_BODYCHECK
@@ -1365,7 +1278,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHMEICHLER
 .hword MOVE_SCHNUEFFLER
 
-/* Marill */
 .hword PKMN_MARILL+(20000)
 .hword MOVE_ABGESANG
 .hword MOVE_AMNESIE
@@ -1381,7 +1293,6 @@ pokemon_egg_moves:
 .hword MOVE_TARNUNG
 .hword MOVE_WASSERDUESE
 
-/* Mogelbaum */
 .hword PKMN_MOGELBAUM+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_EINIGLER
@@ -1393,7 +1304,6 @@ pokemon_egg_moves:
 .hword MOVE_TRANSTEINE
 .hword MOVE_WALZER
 
-/* Hoppspross */
 .hword PKMN_HOPPSPROSS+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_AROMAKUR
@@ -1407,7 +1317,6 @@ pokemon_egg_moves:
 .hword MOVE_WATTENSCHILD
 .hword MOVE_ZUGABE
 
-/* Griffel */
 .hword PKMN_GRIFFEL+(20000)
 .hword MOVE_AGILLITAET
 .hword MOVE_BEZIRZER
@@ -1425,7 +1334,6 @@ pokemon_egg_moves:
 .hword MOVE_VERGELTUNG
 .hword MOVE_WECHSELDICH
 
-/* Sonnkern */
 .hword PKMN_SONNKERN+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_BEERENKRAEFTE
@@ -1441,7 +1349,6 @@ pokemon_egg_moves:
 .hword MOVE_VERWURZLER
 .hword MOVE_ZUGABE
 
-/* Yanma */
 .hword PKMN_YANMA+(20000)
 .hword MOVE_AMPELLEUCHTE
 .hword MOVE_BLUTSAUGER
@@ -1454,7 +1361,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_WIRBELWIND
 
-/* Felino */
 .hword PKMN_FELINO+(20000)
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_BODYSLAM
@@ -1473,7 +1379,6 @@ pokemon_egg_moves:
 .hword MOVE_VERZEHRER
 .hword MOVE_ZUGABE
 
-/* Kramurx */
 .hword PKMN_KRAMURX+(20000)
 .hword MOVE_ABGESANG
 .hword MOVE_BOHRSCHNABEL
@@ -1492,7 +1397,6 @@ pokemon_egg_moves:
 .hword MOVE_STURZFLUG
 .hword MOVE_WIRBELWIND
 
-/* Traunfugil */
 .hword PKMN_TRAUNFUGIL+(20000)
 .hword MOVE_BEGRENZER
 .hword MOVE_EGOTRIP
@@ -1507,7 +1411,6 @@ pokemon_egg_moves:
 .hword MOVE_WERTWECHSEL
 .hword MOVE_WUNDERRAUM
 
-/* Girafarig */
 .hword PKMN_GIRAFARIG+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_BODYCHECK
@@ -1525,7 +1428,6 @@ pokemon_egg_moves:
 .hword MOVE_WERTWECHSEL
 .hword MOVE_WUNSCHTRAUM
 
-/* Tannza */
 .hword PKMN_TANNZA+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_DRESCHFLEGEL
@@ -1539,7 +1441,6 @@ pokemon_egg_moves:
 .hword MOVE_TRANSTEINE
 .hword MOVE_VERGELTUNG
 
-/* Dummisel */
 .hword PKMN_DUMMISEL+(20000)
 .hword MOVE_AGILLITAET
 .hword MOVE_ANTIK_KRAFT
@@ -1555,7 +1456,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHNARCHER
 .hword MOVE_TRUMPFKARTE
 
-/* Skorgla */
 .hword PKMN_SKORGLA+(20000)
 .hword MOVE_AGILLITAET
 .hword MOVE_FLUEGELSCHLAG
@@ -1572,7 +1472,6 @@ pokemon_egg_moves:
 .hword MOVE_SANDGRAB
 .hword MOVE_STAFETTE
 
-/* Snubbull */
 .hword PKMN_SNUBBULL+(20000)
 .hword MOVE_DONNERZAHN
 .hword MOVE_EISZAHN
@@ -1590,7 +1489,6 @@ pokemon_egg_moves:
 .hword MOVE_TRUGTRAENE
 .hword MOVE_VITALGLOCKE
 
-/* Pottrott */
 .hword PKMN_POTTROTT+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_AKUPRESSUR
@@ -1602,7 +1500,6 @@ pokemon_egg_moves:
 .hword MOVE_SANDGRAB
 .hword MOVE_WAGEMUT
 
-/* Skaraborn */
 .hword PKMN_SKARABORN+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_AKUPRESSUR
@@ -1614,7 +1511,6 @@ pokemon_egg_moves:
 .hword MOVE_SANDGRAB
 .hword MOVE_WAGEMUT
 
-/* Sniebel */
 .hword PKMN_SNIEBEL+(20000)
 .hword MOVE_BISS
 .hword MOVE_DOPPELSCHLAG
@@ -1633,7 +1529,6 @@ pokemon_egg_moves:
 .hword MOVE_ZERMALMKLAUE
 .hword MOVE_ZUSCHUSS
 
-/* Teddiursa */
 .hword PKMN_TEDDIURSA+(20000)
 .hword MOVE_BAUCHTROMMEL
 .hword MOVE_BODYCHECK
@@ -1651,7 +1546,6 @@ pokemon_egg_moves:
 .hword MOVE_TRUGTRAENE
 .hword MOVE_ZERMUERBEN
 
-/* Schneckmag */
 .hword PKMN_SCHNECKMAG+(20000)
 .hword MOVE_ENTFESSLER
 .hword MOVE_ERDKRAEFTE
@@ -1666,7 +1560,6 @@ pokemon_egg_moves:
 .hword MOVE_VERZEHRER
 .hword MOVE_WALZER
 
-/* Quiekel */
 .hword PKMN_QUIEKEL+(20000)
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_BISS
@@ -1682,7 +1575,6 @@ pokemon_egg_moves:
 .hword MOVE_RISKOTACKLE
 .hword MOVE_TARNSTEINE
 
-/* Corasonn */
 .hword PKMN_CORASONN+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_AQUADURCHSTOSS
@@ -1700,7 +1592,6 @@ pokemon_egg_moves:
 .hword MOVE_WASSERRING
 .hword MOVE_WEISSNEBEL
 
-/* Remoraid */
 .hword PKMN_REMORAID+(20000)
 .hword MOVE_AQUAWELLE
 .hword MOVE_AURORASTRAHL
@@ -1717,7 +1608,6 @@ pokemon_egg_moves:
 .hword MOVE_SUPERSCHALL
 .hword MOVE_ZWANGO
 
-/* Botogel */
 .hword PKMN_BOTOGEL+(20000)
 .hword MOVE_AURORASTRAHL
 .hword MOVE_EISHIEB
@@ -1734,7 +1624,6 @@ pokemon_egg_moves:
 .hword MOVE_STACHLER
 .hword MOVE_TURBODREHER
 
-/* Mantax */
 .hword PKMN_MANTAX+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_DUNKELNEBEL
@@ -1747,7 +1636,6 @@ pokemon_egg_moves:
 .hword MOVE_SPIEGELCAPE
 .hword MOVE_WINDHOSE
 
-/* Panzaeron */
 .hword PKMN_PANZAERON+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_BOHRSCHNABEL
@@ -1760,7 +1648,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_WIRBELWIND
 
-/* Hunduster */
 .hword PKMN_HUNDUSTER+(20000)
 .hword MOVE_DONNERZAHN
 .hword MOVE_FEUERWIRBEL
@@ -1776,7 +1663,6 @@ pokemon_egg_moves:
 .hword MOVE_TIEFSCHLAG
 .hword MOVE_VERFOLGUNG
 
-/* Phanpy */
 .hword PKMN_PHANPY+(20000)
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_BODYSLAM
@@ -1792,7 +1678,6 @@ pokemon_egg_moves:
 .hword MOVE_RAMMBOSS
 .hword MOVE_SCHNARCHER
 
-/* Damhirplex */
 .hword PKMN_DAMHIRPLEX+(20000)
 .hword MOVE_AUSSETZER
 .hword MOVE_BISS
@@ -1806,7 +1691,6 @@ pokemon_egg_moves:
 .hword MOVE_VIELENDER
 .hword MOVE_ZEN_KOPFSTOSS
 
-/* Rabauz */
 .hword PKMN_RABAUZ+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_KONTER
@@ -1819,7 +1703,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_WILLENSLESER
 
-/* Kapoera */
 .hword PKMN_KAPOERA+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_KONTER
@@ -1832,7 +1715,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_WILLENSLESER
 
-/* Kussilla */
 .hword PKMN_KUSSILLA+(20000)
 .hword MOVE_EISHIEB
 .hword MOVE_LIEBREIZ
@@ -1843,7 +1725,6 @@ pokemon_egg_moves:
 .hword MOVE_WUNDERRAUGE
 .hword MOVE_WUNSCHTRAUM
 
-/* Elekid */
 .hword PKMN_ELEKID+(20000)
 .hword MOVE_BARRIERE
 .hword MOVE_EISHIEB
@@ -1857,7 +1738,6 @@ pokemon_egg_moves:
 .hword MOVE_POWER_PUNCH
 .hword MOVE_WUCHTSCHLAG
 
-/* Magby */
 .hword PKMN_MAGBY+(20000)
 .hword MOVE_BARRIERE
 .hword MOVE_BAUCHTROMMEL
@@ -1874,7 +1754,6 @@ pokemon_egg_moves:
 .hword MOVE_TEMPOHIEB
 .hword MOVE_WUCHTSCHLAG
 
-/* Miltank */
 .hword PKMN_MILTANK+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_BEERENKRAEFTE
@@ -1891,7 +1770,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHLAFREDE
 .hword MOVE_STRAFATTACKE
 
-/* Larvitar */
 .hword PKMN_LARVITAR+(20000)
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_DRACHENTANZ
@@ -1906,7 +1784,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_WUTANFALL
 
-/* Geckarbor */
 .hword PKMN_GECKARBOR+(20000)
 .hword MOVE_BEERENKRAEFTE
 .hword MOVE_BLAETTERSTURM
@@ -1926,7 +1803,6 @@ pokemon_egg_moves:
 .hword MOVE_ZAUBERBLATT
 .hword MOVE_ZERMALMKLAUE
 
-/* Flemmli */
 .hword PKMN_FLEMMLI+(20000)
 .hword MOVE_AGILLITAET
 .hword MOVE_AUSDAUER
@@ -1943,7 +1819,6 @@ pokemon_egg_moves:
 .hword MOVE_ZERMALMKLAUE
 .hword MOVE_ZUFLUCHT
 
-/* Hydropi */
 .hword PKMN_HYDROPI+(20000)
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_AUFRUHR
@@ -1963,7 +1838,6 @@ pokemon_egg_moves:
 .hword MOVE_STAMPFER
 .hword MOVE_WHIRLPOOL
 
-/* Fiffyen */
 .hword PKMN_FIFFYEN+(20000)
 .hword MOVE_BEZIRZER
 .hword MOVE_DONNERZAHN
@@ -1979,12 +1853,11 @@ pokemon_egg_moves:
 .hword MOVE_TIEFSCHLAG
 .hword MOVE_UEBERNAHME
 
-/* Zigzachs */
 .hword PKMN_ZIGZACHS+(20000)
 .hword MOVE_CHARME
 .hword MOVE_KRAXLER
 .hword MOVE_LEHMSCHELLE
-.hword MOVE_RECHTE_HAND
+.hword MOVE_RECHTE HAND
 .hword MOVE_SCHLAFREDE
 .hword MOVE_SPASSKANONE
 .hword MOVE_TRICKBETRUG
@@ -1992,7 +1865,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_WANKELSTRAHL
 
-/* Loturzel */
 .hword PKMN_LOTURZEL+(20000)
 .hword MOVE_AQUAKNARRE
 .hword MOVE_DRESCHFLEGEL
@@ -2005,7 +1877,6 @@ pokemon_egg_moves:
 .hword MOVE_SYNTHESE
 .hword MOVE_TAUMELTANZ
 
-/* Samurzel */
 .hword PKMN_SAMURZEL+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_AUFLOCKERN
@@ -2021,7 +1892,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHMAROTZER
 .hword MOVE_SORGENSAMEN
 
-/* Schwalbini */
 .hword PKMN_SCHWALBINI+(20000)
 .hword MOVE_AUFLOCKERN
 .hword MOVE_HEILUNG
@@ -2037,7 +1907,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_WIRBELWIND
 
-/* Wingull */
 .hword PKMN_WINGULL+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_AGILITAET
@@ -2051,7 +1920,6 @@ pokemon_egg_moves:
 .hword MOVE_WINDHOSE
 .hword MOVE_WINDSTOSS
 
-/* Trasla */
 .hword PKMN_TRASLA+(20000)
 .hword MOVE_AUSSETZER
 .hword MOVE_HORRORBLICK
@@ -2065,7 +1933,6 @@ pokemon_egg_moves:
 .hword MOVE_WERTEWECHSEL
 .hword MOVE_ZUGABE
 
-/* Gehweiher */
 .hword PKMN_GEHWEIHER+(20000)
 .hword MOVE_AMPELLEUCHTE
 .hword MOVE_ANFALLEN
@@ -2080,20 +1947,18 @@ pokemon_egg_moves:
 .hword MOVE_WASSERDUESE
 .hword MOVE_WILLENSLESER
 
-/* Knilz */
 .hword PKMN_KNILZ+(20000)
 .hword MOVE_ABLEITHIEB
 .hword MOVE_BEERENKRAEFTE
 .hword MOVE_CHARME
 .hword MOVE_KUGELSAAT
 .hword MOVE_POWER_PUNCH
-.hword MOVE_RECHTE_HAND
+.hword MOVE_RECHTE HAND
 .hword MOVE_SAMENBOMBEN
 .hword MOVE_SORGENSAMEN
 .hword MOVE_TRUGTRAENE
 .hword MOVE_WECKRUF
 
-/* Bummelz */
 .hword PKMN_BUMMELZ+(20000)
 .hword MOVE_BODYSLAM
 .hword MOVE_FLUCH
@@ -2107,7 +1972,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_ZERMALMKLAUE
 
-/* Nincada */
 .hword PKMN_NINCADA+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_FINTE
@@ -2118,7 +1982,6 @@ pokemon_egg_moves:
 .hword MOVE_WAGEMUT
 .hword MOVE_WINDSTOSS
 
-/* Flurmel */
 .hword PKMN_FLURMEL+(20000)
 .hword MOVE_BODYCHECK
 .hword MOVE_HAMMERARM
@@ -2132,7 +1995,6 @@ pokemon_egg_moves:
 .hword MOVE_UEBERKOPFWURF
 .hword MOVE_WIRBELWIND
 
-/* Makuhita */
 .hword PKMN_MAKUHITA+(20000)
 .hword MOVE_FINTE
 .hword MOVE_GESICHTE
@@ -2141,7 +2003,7 @@ pokemon_egg_moves:
 .hword MOVE_OFFENLEGUNG
 .hword MOVE_PATRONENHIEB
 .hword MOVE_POWER_PUNCH
-.hword MOVE_RECHTE_HAND
+.hword MOVE_RECHTE HAND
 .hword MOVE_RUNDUMSCHUTZ
 .hword MOVE_SCANNER
 .hword MOVE_VERGELTUNG
@@ -2149,7 +2011,6 @@ pokemon_egg_moves:
 .hword MOVE_WUCHTSCHLAG
 .hword MOVE_ZERMUERBEN
 
-/* Azurill */
 .hword PKMN_AZURILL+(20000)
 .hword MOVE_BODYSLAM
 .hword MOVE_GESANG
@@ -2164,7 +2025,6 @@ pokemon_egg_moves:
 .hword MOVE_UEBERFLUTUNG
 .hword MOVE_ZUGABE
 
-/* Nasgnet */
 .hword PKMN_NASGNET+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_INTENSITAET
@@ -2174,13 +2034,12 @@ pokemon_egg_moves:
 .hword MOVE_TARNSTEINE
 .hword MOVE_WALZER
 
-/* Eneco */
 .hword PKMN_ENECO+(20000)
 .hword MOVE_AUFRUHR
 .hword MOVE_KOSMIK_KRAFT
 .hword MOVE_LIEBREIZ
 .hword MOVE_MOGELHIEB
-.hword MOVE_RECHTE_HAND
+.hword MOVE_RECHTE HAND
 .hword MOVE_SCHLAMMBOMBE
 .hword MOVE_SPASSKANONE
 .hword MOVE_STAFETTE
@@ -2191,7 +2050,6 @@ pokemon_egg_moves:
 .hword MOVE_ZEN_KOPFSTOSS
 .hword MOVE_ZUFLUCHT
 
-/* Zobiris */
 .hword PKMN_ZOBIRIS+(20000)
 .hword MOVE_BEGRENZER
 .hword MOVE_GENESUNG
@@ -2205,7 +2063,6 @@ pokemon_egg_moves:
 .hword MOVE_TIEFSCHLAG
 .hword MOVE_TRICKBETRUG
 
-/* Flunkifer */
 .hword PKMN_FLUNKIFER+(20000)
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_DONNERZAHN
@@ -2223,7 +2080,6 @@ pokemon_egg_moves:
 .hword MOVE_STRAFATTACKE
 .hword MOVE_TIEFSCHLAG
 
-/* Stollunior */
 .hword PKMN_STOLLUNIOR+(20000)
 .hword MOVE_BODYSLAM
 .hword MOVE_DRACHENSTOSS
@@ -2238,7 +2094,6 @@ pokemon_egg_moves:
 .hword MOVE_STAMPFER
 .hword MOVE_TARNSTEINE
 
-/* Meditie */
 .hword PKMN_MEDITIE+(20000)
 .hword MOVE_ABLEITHIEB
 .hword MOVE_DONNERSCHLAG
@@ -2255,7 +2110,6 @@ pokemon_egg_moves:
 .hword MOVE_STAFETTE
 .hword MOVE_WUCHTSCHLAG
 
-/* Frizelbliz */
 .hword PKMN_FRIZELBLIZ+(20000)
 .hword MOVE_AUFRUHR
 .hword MOVE_DONNERZAHN
@@ -2272,7 +2126,6 @@ pokemon_egg_moves:
 .hword MOVE_STERNSCHAUER
 .hword MOVE_WECHSELDICH
 
-/* Plusle */
 .hword PKMN_PLUSLE+(20000)
 .hword MOVE_BESCHWOERUNG
 .hword MOVE_BITTERKUSS
@@ -2283,7 +2136,6 @@ pokemon_egg_moves:
 .hword MOVE_TRUGTRAENE
 .hword MOVE_WUNSCHTRAUM
 
-/* Minun */
 .hword PKMN_MINUN+(20000)
 .hword MOVE_BESCHWOERUNG
 .hword MOVE_BITTERKUSS
@@ -2294,7 +2146,6 @@ pokemon_egg_moves:
 .hword MOVE_TRUGTRAENE
 .hword MOVE_WUNSCHTRAUM
 
-/* Volbeat */
 .hword PKMN_VOLBEAT+(20000)
 .hword MOVE_ANFALLEN
 .hword MOVE_GEOWURF
@@ -2305,7 +2156,6 @@ pokemon_egg_moves:
 .hword MOVE_TRICKBETRUG
 .hword MOVE_ZUGABE
 
-/* Illumise */
 .hword PKMN_ILLUMISE+(20000)
 .hword MOVE_AROMAKUR
 .hword MOVE_KAEFERGEBRUMM
@@ -2317,7 +2167,6 @@ pokemon_egg_moves:
 .hword MOVE_WACHSTUM
 .hword MOVE_ZUGABE
 
-/* Roselia */
 .hword PKMN_ROSELIA+(20000)
 .hword MOVE_BAUMWOLLSAAT
 .hword MOVE_BEERENKRAEFTE
@@ -2334,7 +2183,6 @@ pokemon_egg_moves:
 .hword MOVE_SYNTHESE
 .hword MOVE_WILLENSLESER
 
-/* Schluppuck */
 .hword PKMN_SCHLUPPUCK+(20000)
 .hword MOVE_FLUCH
 .hword MOVE_GIFTFALLE
@@ -2344,7 +2192,6 @@ pokemon_egg_moves:
 .hword MOVE_SAEUREPANZER
 .hword MOVE_SMOG
 
-/* Kanivanha */
 .hword PKMN_KANIVANHA+(20000)
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_FUCHTLER
@@ -2354,7 +2201,6 @@ pokemon_egg_moves:
 .hword MOVE_RISIKOTACKLE
 .hword MOVE_STERNSCHAUER
 
-/* Wailmer */
 .hword PKMN_WAILMER+(20000)
 .hword MOVE_BODYSLAM
 .hword MOVE_EINIGLER
@@ -2370,7 +2216,6 @@ pokemon_egg_moves:
 .hword MOVE_WASSERRING
 .hword MOVE_ZEN_KOPFSTOSS
 
-/* Camaub */
 .hword PKMN_CAMAUB+(20000)
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_AUSDAUER
@@ -2390,7 +2235,6 @@ pokemon_egg_moves:
 .hword MOVE_WACHSTUM
 .hword MOVE_WALZER
 
-/* Qurtel */
 .hword PKMN_QURTEL+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_ERUPTION
@@ -2402,7 +2246,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHAEDELWUMME
 .hword MOVE_SCHLAFREDE
 
-/* Spoink */
 .hword PKMN_SPOINK+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_AUSDAUER
@@ -2416,7 +2259,6 @@ pokemon_egg_moves:
 .hword MOVE_WIRBELWIND
 .hword MOVE_ZEN_KOPFSTOSS
 
-/* Pandir */
 .hword PKMN_PANDIR+(20000)
 .hword MOVE_AQUAWELLE
 .hword MOVE_AUSSETZER
@@ -2436,7 +2278,6 @@ pokemon_egg_moves:
 .hword MOVE_ZUGABE
 .hword MOVE_ZUSCHUSS
 
-/* Knacklion */
 .hword PKMN_KNACKLION+(20000)
 .hword MOVE_AMPELLEUCHTE
 .hword MOVE_AUSDAUER
@@ -2449,7 +2290,6 @@ pokemon_egg_moves:
 .hword MOVE_WINDSTOSS
 .hword MOVE_ZORNKLINGE
 
-/* Tuska */
 .hword PKMN_TUSKA+(20000)
 .hword MOVE_AUSSETZER
 .hword MOVE_FUSSKICK
@@ -2470,7 +2310,6 @@ pokemon_egg_moves:
 .hword MOVE_WUCHTSCHLAG
 .hword MOVE_ZAUBERBLATT
 
-/* Wablu */
 .hword PKMN_WABLU+(20000)
 .hword MOVE_AGILITAET
 .hword MOVE_DAUNENREIGEN
@@ -2484,7 +2323,6 @@ pokemon_egg_moves:
 .hword MOVE_STAHLFLUEGEL
 .hword MOVE_VERFOLGUNG
 
-/* Sengo */
 .hword PKMN_SENGO+(20000)
 .hword MOVE_AUSSETZER
 .hword MOVE_BAUCHTROMMEL
@@ -2502,7 +2340,6 @@ pokemon_egg_moves:
 .hword MOVE_RAPIDSCHUTZ
 .hword MOVE_WAGEMUT
 
-/* Vipitis */
 .hword PKMN_VIPITIS+(20000)
 .hword MOVE_AUSWRINGEN
 .hword MOVE_BODYSLAM
@@ -2517,7 +2354,6 @@ pokemon_egg_moves:
 .hword MOVE_WAGEMUT
 .hword MOVE_WECHSELDICH
 
-/* Schmerbe */
 .hword PKMN_SCHMERBE+(20000)
 .hword MOVE_BODYCHECK
 .hword MOVE_DRACHENTANZ
@@ -2530,7 +2366,6 @@ pokemon_egg_moves:
 .hword MOVE_LEHMSCHUSS
 .hword MOVE_WHIRLPOOL
 
-/* Krebscorps */
 .hword PKMN_KREBSCORPS+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_ANTIK_KRAFT
@@ -2546,7 +2381,6 @@ pokemon_egg_moves:
 .hword MOVE_WECHSELDICH
 .hword MOVE_ZERMUERBEN
 
-/* Liliep */
 .hword PKMN_LILIEP+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_AUSWRINGEN
@@ -2558,7 +2392,6 @@ pokemon_egg_moves:
 .hword MOVE_SPIEGELCAPE
 .hword MOVE_TARNSTEINE
 
-/* Anorith */
 .hword PKMN_ANORITH+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_AQUAWELLE
@@ -2570,7 +2403,6 @@ pokemon_egg_moves:
 .hword MOVE_TURBODREHER
 .hword MOVE_WASSERDUESE
 
-/* Barschwa */
 .hword PKMN_BARSCHWA+(20000)
 .hword MOVE_DRACHENPULS
 .hword MOVE_DUNKELNEBEL
@@ -2585,7 +2417,6 @@ pokemon_egg_moves:
 .hword MOVE_SPIEGELCAPE
 .hword MOVE_WEISSNEBEL
 
-/* Formeo */
 .hword PKMN_FORMEO+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_AUSSETZER
@@ -2598,7 +2429,6 @@ pokemon_egg_moves:
 .hword MOVE_TYPENSPIEGEL
 .hword MOVE_UNHEILBOEEN
 
-/* Kecleon */
 .hword PKMN_KECLEON+(20000)
 .hword MOVE_AUSSETZER
 .hword MOVE_GENESUNG
@@ -2613,7 +2443,6 @@ pokemon_egg_moves:
 .hword MOVE_UEBERNAHME
 .hword MOVE_WERTEWECHSEL
 
-/* Shuppet */
 .hword PKMN_SHUPPET+(20000)
 .hword MOVE_AUSSETZER
 .hword MOVE_BEGRENZER
@@ -2626,7 +2455,6 @@ pokemon_egg_moves:
 .hword MOVE_UNHEILBOEEN
 .hword MOVE_VERFOLGUNG
 
-/* Zwirrlicht */
 .hword PKMN_ZWIRRLICHT+(20000)
 .hword MOVE_BEGRENZER
 .hword MOVE_DUNKELNEBEL
@@ -2638,7 +2466,6 @@ pokemon_egg_moves:
 .hword MOVE_UNHEILBOEEN
 .hword MOVE_WERTEWECHSEL
 
-/* Tropius */
 .hword PKMN_TROPIUS+(20000)
 .hword MOVE_BEERENKRAEFTE
 .hword MOVE_BLAETTERSTURM
@@ -2654,7 +2481,6 @@ pokemon_egg_moves:
 .hword MOVE_SLAM
 .hword MOVE_SYNTHESE
 
-/* Palimpalim */
 .hword PKMN_PALIMPALIM+(20000)
 .hword MOVE_ABGESANG
 .hword MOVE_AUSSETZER
@@ -2668,7 +2494,6 @@ pokemon_egg_moves:
 .hword MOVE_WERTEWECHSEL
 .hword MOVE_WUNSCHTRAUM
 
-/* Absol */
 .hword PKMN_ABSOL+(20000)
 .hword MOVE_ABGESANG
 .hword MOVE_BUERDE
@@ -2686,7 +2511,6 @@ pokemon_egg_moves:
 .hword MOVE_VIELENDER
 .hword MOVE_ZEN_KOPFSTOSS
 
-/* Schneppke */
 .hword PKMN_SCHNEPPKE+(20000)
 .hword MOVE_AUSSETZER
 .hword MOVE_BUERDE
@@ -2699,7 +2523,6 @@ pokemon_egg_moves:
 .hword MOVE_WALZER
 .hword MOVE_WECHSELDICH
 
-/* Seemops */
 .hword PKMN_SEEMOPS+(20000)
 .hword MOVE_AMPELLEUCHTE
 .hword MOVE_AQUAWELLE
@@ -2715,7 +2538,6 @@ pokemon_egg_moves:
 .hword MOVE_WALZER
 .hword MOVE_WASSERRING
 
-/* Perlu */
 .hword PKMN_PERLU+(20000)
 .hword MOVE_AQUAWELLE
 .hword MOVE_AUSDAUER
@@ -2729,7 +2551,6 @@ pokemon_egg_moves:
 .hword MOVE_SUPERSCHALL
 .hword MOVE_WASSERRING
 
-/* Relicanth */
 .hword PKMN_RELICANTH+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_INTENSITAET
@@ -2744,7 +2565,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHNARCHER
 .hword MOVE_ZEN_KOPFSTOSS
 
-/* Liebiskus */
 .hword PKMN_LIEBISKUS+(20000)
 .hword MOVE_HEILWOGE
 .hword MOVE_LAKE
@@ -2757,7 +2577,6 @@ pokemon_egg_moves:
 .hword MOVE_WASSERRING
 .hword MOVE_ZWANGO
 
-/* Kindwurm */
 .hword PKMN_KINDWURM+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_DRACHENPULS
@@ -2770,7 +2589,6 @@ pokemon_egg_moves:
 .hword MOVE_HYDROPUMPE
 .hword MOVE_WINDHOSE
 
-/* Chelast */
 .hword PKMN_CHELAST+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_BODYSLAM
@@ -2790,7 +2608,6 @@ pokemon_egg_moves:
 .hword MOVE_VERZEHRER
 .hword MOVE_WACHSTUM
 
-/* Panflam */
 .hword PKMN_PANFLAM+(20000)
 .hword MOVE_DONNERSCHLAG
 .hword MOVE_DOPPELKICK
@@ -2802,13 +2619,12 @@ pokemon_egg_moves:
 .hword MOVE_MOGELHIEB
 .hword MOVE_POWER_PUNCH
 .hword MOVE_RAPIDSCHUTZ
-.hword MOVE_RECHTE_HAND
+.hword MOVE_RECHTE HAND
 .hword MOVE_STEIGERUNGSHIEB
 .hword MOVE_UEBERROLLER
 .hword MOVE_ZUGABE
 .hword MOVE_ZUSCHUSS
 
-/* Plinfa */
 .hword PKMN_PLINFA+(20000)
 .hword MOVE_AGILITAET
 .hword MOVE_DAUNENREIGEN
@@ -2825,7 +2641,6 @@ pokemon_egg_moves:
 .hword MOVE_UEBERHEBLICHKEIT
 .hword MOVE_WASSERRING
 
-/* Staralili */
 .hword PKMN_STARALILI+(20000)
 .hword MOVE_AUFRUHR
 .hword MOVE_DAUNENREIGEN
@@ -2841,7 +2656,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_VERGELTUNG
 
-/* Bidiza */
 .hword PKMN_BIDIZA+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_EINIGLER
@@ -2857,7 +2671,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHNUEFFLER
 .hword MOVE_WALZER
 
-/* Sheinux */
 .hword PKMN_SHEINUX+(20000)
 .hword MOVE_AMPELLEUCHTE
 .hword MOVE_BODYCHECK
@@ -2868,13 +2681,12 @@ pokemon_egg_moves:
 .hword MOVE_JAULER
 .hword MOVE_MYSTOWELLEN
 .hword MOVE_NACHTHIEB
-.hword MOVE_RECHTE_HAND
+.hword MOVE_RECHTE HAND
 .hword MOVE_RUCKZUCKHIEB
 .hword MOVE_SCHOCKWELLE
 .hword MOVE_STERNSCHAUER
 .hword MOVE_TRUGTRAENE
 
-/* Knospi */
 .hword PKMN_KNOSPI+(20000)
 .hword MOVE_BAUMWOLLSAAT
 .hword MOVE_BEERENKRAEFTE
@@ -2890,7 +2702,6 @@ pokemon_egg_moves:
 .hword MOVE_SYNTHESE
 .hword MOVE_WILLENSLESER
 
-/* Koknodon */
 .hword PKMN_KOKNODON+(20000)
 .hword MOVE_EISENSCHAEDEL
 .hword MOVE_EISENSCHWEIF
@@ -2904,7 +2715,6 @@ pokemon_egg_moves:
 .hword MOVE_STAMPFER
 .hword MOVE_WIRBELWIND
 
-/* Schilterus */
 .hword PKMN_SCHILTERUS+(20000)
 .hword MOVE_BODYSLAM
 .hword MOVE_ENERGIEFOKUS
@@ -2920,7 +2730,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHUTZTEILER
 .hword MOVE_TARNSTEINE
 
-/* Pachirisu */
 .hword PKMN_PACHIRISU+(20000)
 .hword MOVE_BEZIRZER
 .hword MOVE_BISS
@@ -2937,7 +2746,6 @@ pokemon_egg_moves:
 .hword MOVE_TRUGTRAENE
 .hword MOVE_WALZER
 
-/* Bamelin */
 .hword PKMN_BAMELIN+(20000)
 .hword MOVE_DUPLEXHIEB
 .hword MOVE_EGOTRIP
@@ -2946,7 +2754,7 @@ pokemon_egg_moves:
 .hword MOVE_KRATZFURIE
 .hword MOVE_LEHMSCHELLE
 .hword MOVE_NASSSCHWEIF
-.hword MOVE_RECHTE_HAND
+.hword MOVE_RECHTE HAND
 .hword MOVE_SCHLITZER
 .hword MOVE_SCHNUEFFLER
 .hword MOVE_STAFETTE
@@ -2955,7 +2763,6 @@ pokemon_egg_moves:
 .hword MOVE_WECHSELDICH
 .hword MOVE_ZORNKLINGE
 
-/* Kikugi */
 .hword PKMN_KIKUGI+(20000)
 .hword MOVE_AROMAKUR
 .hword MOVE_BEERENKRAEFTE
@@ -2973,7 +2780,6 @@ pokemon_egg_moves:
 .hword MOVE_SPASSKANONE
 .hword MOVE_WALZER
 
-/* Schalellos */
 .hword PKMN_SCHALELLOS+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_ENTFESSLER
@@ -2992,7 +2798,6 @@ pokemon_egg_moves:
 .hword MOVE_VERZEHRER
 .hword MOVE_WEISSNEBEL
 
-/* Driftlon */
 .hword PKMN_DRIFTLON+(20000)
 .hword MOVE_AUFLOCKERN
 .hword MOVE_AUSSETZER
@@ -3004,7 +2809,6 @@ pokemon_egg_moves:
 .hword MOVE_METEOROLOGE
 .hword MOVE_RUECKENWIND
 
-/* Haspiror */
 .hword PKMN_HASPIROR+(20000)
 .hword MOVE_BITTERKUSS
 .hword MOVE_DONNERSCHLAG
@@ -3025,7 +2829,6 @@ pokemon_egg_moves:
 .hword MOVE_UEBERKOPFWURF
 .hword MOVE_WECHSELDICH
 
-/* Charmian */
 .hword PKMN_CHARMIAN+(20000)
 .hword MOVE_BISS
 .hword MOVE_DRESCHFLEGEL
@@ -3038,7 +2841,6 @@ pokemon_egg_moves:
 .hword MOVE_WECKRUF
 .hword MOVE_ZUFLUCHT
 
-/* Klingplim */
 .hword PKMN_KLINGPLIM+(20000)
 .hword MOVE_AUSSETZER
 .hword MOVE_FLUCH
@@ -3050,7 +2852,6 @@ pokemon_egg_moves:
 .hword MOVE_WERTEWECHSEL
 .hword MOVE_WUNSCHTRAUM
 
-/* Skunkapuh */
 .hword PKMN_SKUNKAPUH+(20000)
 .hword MOVE_DUNKELNEBEL
 .hword MOVE_EISENSCHWEIF
@@ -3066,7 +2867,6 @@ pokemon_egg_moves:
 .hword MOVE_STRAFATTACKE
 .hword MOVE_VERFOLGUNG
 
-/* Mobai */
 .hword PKMN_MOBAI+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_EINIGLER
@@ -3078,7 +2878,6 @@ pokemon_egg_moves:
 .hword MOVE_TARNSTEINE
 .hword MOVE_WALZER
 
-/* Pantimimi */
 .hword PKMN_PANTIMIMI+(20000)
 .hword MOVE_CHARME
 .hword MOVE_EISSTURM
@@ -3096,7 +2895,6 @@ pokemon_egg_moves:
 .hword MOVE_TRICKBETRUG
 .hword MOVE_WECKRUF
 
-/* Wonneira */
 .hword PKMN_WONNEIRA+(20000)
 .hword MOVE_AROMAKUR
 .hword MOVE_AUSDAUER
@@ -3105,12 +2903,11 @@ pokemon_egg_moves:
 .hword MOVE_GESCHENK
 .hword MOVE_KONTER
 .hword MOVE_METRONOM
-.hword MOVE_RECHTE_HAND
+.hword MOVE_RECHTE HAND
 .hword MOVE_SCHLAMMBOMBE
 .hword MOVE_VITALGLOCKE
 .hword MOVE_ZUFLUCHT
 
-/* Plaudagei */
 .hword PKMN_PLAUDAGEI+(20000)
 .hword MOVE_AGILITAET
 .hword MOVE_AUFLOCKERN
@@ -3123,7 +2920,6 @@ pokemon_egg_moves:
 .hword MOVE_WINDSCHNITT
 .hword MOVE_ZUGABE
 
-/* Kryppuk */
 .hword PKMN_KRYPPUK+(20000)
 .hword MOVE_AUSSETZER
 .hword MOVE_BEGRENZER
@@ -3135,7 +2931,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHATTENSTOSS
 .hword MOVE_SCHMAROTZER
 
-/* Kaumalat */
 .hword PKMN_KAUMALAT+(20000)
 .hword MOVE_BODYSLAM
 .hword MOVE_EISENSCHAEDEL
@@ -3151,7 +2946,6 @@ pokemon_egg_moves:
 .hword MOVE_WINDHOSE
 .hword MOVE_WUTANFALL
 
-/* Mampfaxo */
 .hword PKMN_MAMPFAXO+(20000)
 .hword MOVE_BEERENKRAEFTE
 .hword MOVE_CHARME
@@ -3166,7 +2960,6 @@ pokemon_egg_moves:
 .hword MOVE_WIRBELWIND
 .hword MOVE_ZEN_KOPFSTOSS
 
-/* Riolu */
 .hword PKMN_RIOLU+(20000)
 .hword MOVE_AGILITAET
 .hword MOVE_BISS
@@ -3184,7 +2977,6 @@ pokemon_egg_moves:
 .hword MOVE_VAKUUMWELLE
 .hword MOVE_WILLENSLESER
 
-/* Hippopotas */
 .hword PKMN_HIPPOPOTAS+(20000)
 .hword MOVE_BODYSLAM
 .hword MOVE_ENTFESSLER
@@ -3197,7 +2989,6 @@ pokemon_egg_moves:
 .hword MOVE_VERZEHRER
 .hword MOVE_WIRBELWIND
 
-/* Pionskora */
 .hword PKMN_PIONSKORA+(20000)
 .hword MOVE_AGILITAET
 .hword MOVE_DUONADEL
@@ -3212,7 +3003,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_WIRBELWIND
 
-/* Glibunkel */
 .hword PKMN_GLIBUNKEL+(20000)
 .hword MOVE_ABLEITHIEB
 .hword MOVE_AKUPRESSUR
@@ -3230,7 +3020,6 @@ pokemon_egg_moves:
 .hword MOVE_WECKRUF
 .hword MOVE_WUCHTSCHLAG
 
-/* Venuflibis */
 .hword PKMN_VENUFLIBIS+(20000)
 .hword MOVE_EGELSAMEN
 .hword MOVE_GIGASAUGER
@@ -3245,7 +3034,6 @@ pokemon_egg_moves:
 .hword MOVE_WUTPULVER
 .hword MOVE_ZAUBERBLATT
 
-/* Finneon */
 .hword PKMN_FINNEON+(20000)
 .hword MOVE_AGILITAET
 .hword MOVE_AMPELLEUCHTE
@@ -3260,7 +3048,6 @@ pokemon_egg_moves:
 .hword MOVE_PSYSTRAHL
 .hword MOVE_SPASSKANONE
 
-/* Mantirps */
 .hword PKMN_MANTIRPS+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_AMPELLEUCHTE
@@ -3275,7 +3062,6 @@ pokemon_egg_moves:
 .hword MOVE_SPIEGELCAPE
 .hword MOVE_WINDHOSE
 
-/* Shnebedeck */
 .hword PKMN_SHNEBEDECK+(20000)
 .hword MOVE_BEERENKRAEFTE
 .hword MOVE_EGELSAMEN
@@ -3289,7 +3075,6 @@ pokemon_egg_moves:
 .hword MOVE_WEISSNEBEL
 .hword MOVE_ZAUBERBLATT
 
-/* Serpifeu */
 .hword PKMN_SERPIFEU+(20000)
 .hword MOVE_BEERENKRAEFTE
 .hword MOVE_EISENSCHWEIF
@@ -3303,7 +3088,6 @@ pokemon_egg_moves:
 .hword MOVE_WINDHOSE
 .hword MOVE_ZAUBERBLATT
 
-/* Floink */
 .hword PKMN_FLOINK+(20000)
 .hword MOVE_AUSBRENNEN
 .hword MOVE_BEZIRZER
@@ -3318,7 +3102,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHLAFREDE
 .hword MOVE_TIEFSCHLAG
 
-/* Ottaro */
 .hword PKMN_OTTARO+(20000)
 .hword MOVE_GEWISSHEIT
 .hword MOVE_IMITATOR
@@ -3330,7 +3113,6 @@ pokemon_egg_moves:
 .hword MOVE_SCANNER
 .hword MOVE_TRUMPFKARTE
 
-/* Nagelotz */
 .hword PKMN_NAGELOTZ+(20000)
 .hword MOVE_DRESCHFLEGEL
 .hword MOVE_EISENSCHWEIF
@@ -3342,7 +3124,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_VERGELTUNG
 
-/* Yorkleff */
 .hword PKMN_YORKLEFF+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_CHARME
@@ -3358,7 +3139,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHLECKER
 .hword MOVE_VERFOLGUNG
 
-/* Felilou */
 .hword PKMN_FELILOU+(20000)
 .hword MOVE_BEZIRZER
 .hword MOVE_CHARME
@@ -3370,7 +3150,6 @@ pokemon_egg_moves:
 .hword MOVE_ZAHLTAG
 .hword MOVE_ZUGABE
 
-/* Vegimak */
 .hword PKMN_VEGIMAK+(20000)
 .hword MOVE_BEZIRZER
 .hword MOVE_BLAETTERSTURM
@@ -3385,7 +3164,6 @@ pokemon_egg_moves:
 .hword MOVE_SPASSKANONE
 .hword MOVE_ZAUBERBLATT
 
-/* Grillmak */
 .hword PKMN_GRILLMAK+(20000)
 .hword MOVE_BEZIRZER
 .hword MOVE_ERSTAUNER
@@ -3401,7 +3179,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHLAFREDE
 .hword MOVE_SPASSKANONE
 
-/* Sodamak */
 .hword PKMN_SODAMAK+(20000)
 .hword MOVE_BEZIRZER
 .hword MOVE_ERSTAUNER
@@ -3415,20 +3192,18 @@ pokemon_egg_moves:
 .hword MOVE_SPASSKANONE
 .hword MOVE_WASSERRING
 
-/* Somniam */
 .hword PKMN_SOMNIAM+(20000)
 .hword MOVE_BARRIERE
 .hword MOVE_FLUCH
 .hword MOVE_GEHEIMPOWER
 .hword MOVE_HEILOPFER
 .hword MOVE_MAGIEMANTEL
-.hword MOVE_RECHTE_HAND
+.hword MOVE_RECHTE HAND
 .hword MOVE_SCHLAFREDE
 .hword MOVE_STAFETTE
 .hword MOVE_STERNSCHAUER
 .hword MOVE_ULTRASCHALL
 
-/* Dusselgurr */
 .hword PKMN_DUSSELGURR+(20000)
 .hword MOVE_AUFRUHR
 .hword MOVE_BESCHWOERUNG
@@ -3439,7 +3214,6 @@ pokemon_egg_moves:
 .hword MOVE_STAHLFLUEGEL
 .hword MOVE_WUNSCHTRAUM
 
-/* Elezeba */
 .hword PKMN_ELEZEBA+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_BODYCHECK
@@ -3453,7 +3227,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHOCKWELLE
 .hword MOVE_UEBERNAHME
 
-/* Kiesling */
 .hword PKMN_KIESLING+(20000)
 .hword MOVE_AUTOTOMIE
 .hword MOVE_BODYCHECK
@@ -3465,7 +3238,6 @@ pokemon_egg_moves:
 .hword MOVE_RUNDUMSCHUTZ
 .hword MOVE_ZIELSCHUSS
 
-/* Fleknoil */
 .hword PKMN_FLEKNOIL+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_CHARME
@@ -3473,14 +3245,13 @@ pokemon_egg_moves:
 .hword MOVE_KRAFTVORRAT
 .hword MOVE_LIEBREIZ
 .hword MOVE_PSYBANN
-.hword MOVE_RECHTE_HAND
+.hword MOVE_RECHTE HAND
 .hword MOVE_RUHEORT
 .hword MOVE_SCHMEICHLER
 .hword MOVE_SUPERSCHALL
 .hword MOVE_SYNCHROLAERM
 .hword MOVE_TRUGTRAENE
 
-/* Rotomurf */
 .hword PKMN_ROTOMURF+(20000)
 .hword MOVE_EISENABWEHR
 .hword MOVE_ERDKRAEFTE
@@ -3491,7 +3262,6 @@ pokemon_egg_moves:
 .hword MOVE_UEBERROLLER
 .hword MOVE_ZERMALMKLAUE
 
-/* Ohrdoch */
 .hword PKMN_OHRDOCH+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_BESCHWOERUNG
@@ -3505,7 +3275,6 @@ pokemon_egg_moves:
 .hword MOVE_WUNSCHTRAUM
 .hword MOVE_ZUGABE
 
-/* Praktibalk */
 .hword PKMN_PRAKTIBALK+(20000)
 .hword MOVE_ABLEITHIEB
 .hword MOVE_AUSDAUER
@@ -3520,7 +3289,6 @@ pokemon_egg_moves:
 .hword MOVE_STEIGERUNGSHIEB
 .hword MOVE_TEMPOHIEB
 
-/* Schallquap */
 .hword PKMN_SCHALLQUAP+(20000)
 .hword MOVE_AQUAWELLE
 .hword MOVE_ERDKRAEFTE
@@ -3533,7 +3301,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHNARCHER
 .hword MOVE_WEISSNEBEL
 
-/* Strawickl */
 .hword PKMN_STRAWICKL+(20000)
 .hword MOVE_AGILITAET
 .hword MOVE_EGOTRIP
@@ -3546,7 +3313,6 @@ pokemon_egg_moves:
 .hword MOVE_TARNUNG
 .hword MOVE_WILLENSLESER
 
-/* Toxiped */
 .hword PKMN_TOXIPED+(20000)
 .hword MOVE_BODYCHECK
 .hword MOVE_DUONADEL
@@ -3555,7 +3321,6 @@ pokemon_egg_moves:
 .hword MOVE_NADELRAKETE
 .hword MOVE_STACHLER
 
-/* Waumboll */
 .hword PKMN_WAUMBOLL+(20000)
 .hword MOVE_BEERENKRAEFTE
 .hword MOVE_GRASFLOETE
@@ -3569,7 +3334,6 @@ pokemon_egg_moves:
 .hword MOVE_WECHSELDICH
 .hword MOVE_ZUGABE
 
-/* Lilminip */
 .hword PKMN_LILMINIP+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_BEERENKRAEFTE
@@ -3582,7 +3346,6 @@ pokemon_egg_moves:
 .hword MOVE_VERWURZLER
 .hword MOVE_ZUGABE
 
-/* Barschuft */
 .hword PKMN_BARSCHUFT+(20000)
 .hword MOVE_AGILITAET
 .hword MOVE_BLUBBSTRAHL
@@ -3595,7 +3358,6 @@ pokemon_egg_moves:
 .hword MOVE_VERGELTUNG
 .hword MOVE_WHIRLPOOL
 
-/* Ganovil */
 .hword PKMN_GANOVIL+(20000)
 .hword MOVE_AUFRUHR
 .hword MOVE_DONNERZAHN
@@ -3610,7 +3372,6 @@ pokemon_egg_moves:
 .hword MOVE_UEBERHEBLICHKEIT
 .hword MOVE_VERFOLGUNG
 
-/* Flampion */
 .hword PKMN_FLAMPION+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_BODYCHECK
@@ -3624,7 +3385,6 @@ pokemon_egg_moves:
 .hword MOVE_UEBERNAHME
 .hword MOVE_ZUGABE
 
-/* Maracamba */
 .hword PKMN_MARACAMBA+(20000)
 .hword MOVE_EGELSAMEN
 .hword MOVE_GRASFELD
@@ -3636,7 +3396,6 @@ pokemon_egg_moves:
 .hword MOVE_SPRUNGFEDER
 .hword MOVE_STACHLER
 
-/* Lithomith */
 .hword PKMN_LITHOMITH+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_EISENABWEHR
@@ -3649,7 +3408,6 @@ pokemon_egg_moves:
 .hword MOVE_SANDGRAB
 .hword MOVE_STACHLER
 
-/* Zurrokex */
 .hword PKMN_ZURROKEX+(20000)
 .hword MOVE_ABLEITHIEB
 .hword MOVE_AMNESIE
@@ -3666,7 +3424,6 @@ pokemon_egg_moves:
 .hword MOVE_STEIGERUNGSHIEB
 .hword MOVE_ZEN_KOPFSTOSS
 
-/* Symvolara */
 .hword PKMN_SYMVOLARA+(20000)
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_KRAFTVORRAT
@@ -3676,7 +3433,6 @@ pokemon_egg_moves:
 .hword MOVE_STAHLFLUEGEL
 .hword MOVE_WERTEWECHSEL
 
-/* Makabaja */
 .hword PKMN_MAKABAJA+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_AUSSETZER
@@ -3690,7 +3446,6 @@ pokemon_egg_moves:
 .hword MOVE_TRICKSCHUTZ
 .hword MOVE_TRUGTRAENE
 
-/* Galapaflos */
 .hword PKMN_GALAPAFLOS+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_AQUADURCHSTOSS
@@ -3704,7 +3459,6 @@ pokemon_egg_moves:
 .hword MOVE_STEINWURF
 .hword MOVE_WHIRLPOOL
 
-/* Flapteryx */
 .hword PKMN_FLAPTERYX+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_AUFLOCKERN
@@ -3716,7 +3470,6 @@ pokemon_egg_moves:
 .hword MOVE_STAHLFLUEGEL
 .hword MOVE_WECHSELDICH
 
-/* UnratUEtox */
 .hword PKMN_UNRATUETOX+(20000)
 .hword MOVE_AUTOTOMIE
 .hword MOVE_DUNKELNEBEL
@@ -3728,7 +3481,6 @@ pokemon_egg_moves:
 .hword MOVE_STACHLER
 .hword MOVE_WALZER
 
-/* Zorua */
 .hword PKMN_ZORUA+(20000)
 .hword MOVE_FINSTERAURA
 .hword MOVE_IMITATOR
@@ -3740,7 +3492,6 @@ pokemon_egg_moves:
 .hword MOVE_TIEFSCHLAG
 .hword MOVE_UEBERNAHME
 
-/* Picochilla */
 .hword PKMN_PICOCHILLA+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_AUSDAUER
@@ -3752,7 +3503,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHLAFREDE
 .hword MOVE_TRUGTRAENE
 
-/* Mollimorba */
 .hword PKMN_MOLLIMORBA+(20000)
 .hword MOVE_AUFRUHR
 .hword MOVE_FINSTERAURA
@@ -3762,18 +3512,16 @@ pokemon_egg_moves:
 .hword MOVE_SPIEGELCAPE
 .hword MOVE_WUNDERAUGE
 
-/* Monozyto */
 .hword PKMN_MONOZYTO+(20000)
 .hword MOVE_BEGRENZER
 .hword MOVE_ERSTAUNER
 .hword MOVE_GEHEIMPOWER
 .hword MOVE_KONFUSTRAHL
 .hword MOVE_NACHTNEBEL
-.hword MOVE_RECHTE_HAND
+.hword MOVE_RECHTE HAND
 .hword MOVE_SAEUREPANZER
 .hword MOVE_TRICKBETRUG
 
-/* Piccolente */
 .hword PKMN_PICCOLENTE+(20000)
 .hword MOVE_BESCHWOERUNG
 .hword MOVE_EGOTRIP
@@ -3785,7 +3533,6 @@ pokemon_egg_moves:
 .hword MOVE_WINDSCHNITT
 .hword MOVE_WINDSTOSS
 
-/* Gelatini */
 .hword PKMN_GELATINI+(20000)
 .hword MOVE_AQUAWELLE
 .hword MOVE_AUTOTOMIE
@@ -3796,7 +3543,6 @@ pokemon_egg_moves:
 .hword MOVE_MAGNETFLUG
 .hword MOVE_PULVERSCHNEE
 
-/* Sesokitz */
 .hword PKMN_SESOKITZ+(20000)
 .hword MOVE_AGILITAET
 .hword MOVE_BEERENKRAEFTE
@@ -3809,7 +3555,6 @@ pokemon_egg_moves:
 .hword MOVE_SYNTHESE
 .hword MOVE_TRUGTRAENE
 
-/* Emolga */
 .hword PKMN_EMOLGA+(20000)
 .hword MOVE_BEZIRZER
 .hword MOVE_CHARME
@@ -3823,7 +3568,6 @@ pokemon_egg_moves:
 .hword MOVE_SPASSKANONE
 .hword MOVE_STAFETTE
 
-/* Laukaps */
 .hword PKMN_LAUKAPS+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_FINTE
@@ -3835,7 +3579,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_VIELENDER
 
-/* Tarnpignon */
 .hword PKMN_TARNPIGNON+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_BODYSLAM
@@ -3846,7 +3589,6 @@ pokemon_egg_moves:
 .hword MOVE_WACHSTUM
 .hword MOVE_WALZER
 
-/* Quabbel */
 .hword PKMN_QUABBEL+(20000)
 .hword MOVE_GENESUNG
 .hword MOVE_KONFUSTRAHL
@@ -3855,7 +3597,6 @@ pokemon_egg_moves:
 .hword MOVE_UMKLAMMERUNG
 .hword MOVE_WEISSNEBEL
 
-/* Mamolida */
 .hword PKMN_MAMOLIDA+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_HEILUNG
@@ -3864,7 +3605,6 @@ pokemon_egg_moves:
 .hword MOVE_SPIEGELCAPE
 .hword MOVE_WEISSNEBEL
 
-/* Wattzapf */
 .hword PKMN_WATTZAPF+(20000)
 .hword MOVE_ANFALLEN
 .hword MOVE_AUSSETZER
@@ -3876,7 +3616,6 @@ pokemon_egg_moves:
 .hword MOVE_TARNUNG
 .hword MOVE_VERFOLGUNG
 
-/* Kastadur */
 .hword PKMN_KASTADUR+(20000)
 .hword MOVE_EGELSAMEN
 .hword MOVE_ERDANZIEHUNG
@@ -3888,7 +3627,6 @@ pokemon_egg_moves:
 .hword MOVE_STACHLER
 .hword MOVE_TARNSTEINE
 
-/* Pygraulon */
 .hword PKMN_PYGRAULON+(20000)
 .hword MOVE_AUSSETZER
 .hword MOVE_BARRIERE
@@ -3901,7 +3639,6 @@ pokemon_egg_moves:
 .hword MOVE_TELEPORT
 .hword MOVE_WERTEWECHSEL
 
-/* Lichtel */
 .hword PKMN_LICHTEL+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_DUNKELNEBEL
@@ -3912,7 +3649,6 @@ pokemon_egg_moves:
 .hword MOVE_SAEURE
 .hword MOVE_SAEUREPANZER
 
-/* Milza */
 .hword PKMN_MILZA+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_DRACHENPULS
@@ -3925,7 +3661,6 @@ pokemon_egg_moves:
 .hword MOVE_NACHTHIEB
 .hword MOVE_NOTSITUATION
 
-/* Petznief */
 .hword PKMN_PETZNIEF+(20000)
 .hword MOVE_EISHIEB
 .hword MOVE_GAEHNER
@@ -3937,7 +3672,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHLAFREDE
 .hword MOVE_ZUGABE
 
-/* Schnuthelm */
 .hword PKMN_SCHNUTHELM+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_GIFTSPITZEN
@@ -3951,7 +3685,6 @@ pokemon_egg_moves:
 .hword MOVE_WILLENSLESER
 .hword MOVE_ZUGABE
 
-/* Flunschlik */
 .hword PKMN_FLUNSCHLIK+(20000)
 .hword MOVE_EGOTRIP
 .hword MOVE_ERDKRAEFTE
@@ -3966,7 +3699,6 @@ pokemon_egg_moves:
 .hword MOVE_SCHOCKWELLE
 .hword MOVE_TYPENSPIEGEL
 
-/* Lin-Fu */
 .hword PKMN_LIN_FU+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_AUSDAUER
@@ -3978,7 +3710,6 @@ pokemon_egg_moves:
 .hword MOVE_STAFETTE
 .hword MOVE_UEBERWURF
 
-/* Shardrago */
 .hword PKMN_SHARDRAGO+(20000)
 .hword MOVE_DONNERZAHN
 .hword MOVE_EISENSCHWEIF
@@ -3992,7 +3723,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_ZERMALMKLAUE
 
-/* Gladiantri */
 .hword PKMN_GLADIANTRI+(20000)
 .hword MOVE_HORRORBLICK
 .hword MOVE_KOPFNUSS
@@ -4003,7 +3733,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_VERGELTUNG
 
-/* Bisofank */
 .hword PKMN_BISOFANK+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_EISENSCHAEDEL
@@ -4016,7 +3745,6 @@ pokemon_egg_moves:
 .hword MOVE_STAMPFER
 .hword MOVE_WATTESCHILD
 
-/* Skallyk */
 .hword PKMN_SKALLYK+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_GRIMASSE
@@ -4026,7 +3754,6 @@ pokemon_egg_moves:
 .hword MOVE_STAHLFLUEGEL
 .hword MOVE_TRUGTRAENE
 
-/* Furnifrass */
 .hword PKMN_FURNIFRASS+(20000)
 .hword MOVE_BODYSLAM
 .hword MOVE_FINTE
@@ -4040,7 +3767,6 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_WICKEL
 
-/* Fermicula */
 .hword PKMN_FERMICULA+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_DONNERZAHN
@@ -4049,7 +3775,6 @@ pokemon_egg_moves:
 .hword MOVE_KREIDESCHREI
 .hword MOVE_STAFETTE
 
-/* Kapuno */
 .hword PKMN_KAPUNO+(20000)
 .hword MOVE_DONNERZAHN
 .hword MOVE_DOPPELSCHLAG
@@ -4063,7 +3788,6 @@ pokemon_egg_moves:
 .hword MOVE_KREIDESCHREI
 .hword MOVE_RUELPSER
 
-/* Ignivor */
 .hword PKMN_IGNIVOR+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_FADENSCHUSS
@@ -4073,7 +3797,6 @@ pokemon_egg_moves:
 .hword MOVE_MORGENGRAUEN
 .hword MOVE_ZEN_KOPFSTOSS
 
-/* Igamaro */
 .hword PKMN_IGAMARO+(20000)
 .hword MOVE_BAUCHTROMMEL
 .hword MOVE_EINIGLER
@@ -4084,7 +3807,6 @@ pokemon_egg_moves:
 .hword MOVE_SYNTHESE
 .hword MOVE_WALZER
 
-/* Fynx */
 .hword PKMN_FYNX+(20000)
 .hword MOVE_HITZEWELLE
 .hword MOVE_HYPNOSE
@@ -4092,7 +3814,6 @@ pokemon_egg_moves:
 .hword MOVE_PSYCHOFELD
 .hword MOVE_WUNSCHTRAUM
 
-/* Froxy */
 .hword PKMN_FROXY+(20000)
 .hword MOVE_GIFTSPITZEN
 .hword MOVE_LEHMSUHLER
@@ -4102,25 +3823,21 @@ pokemon_egg_moves:
 .hword MOVE_TARNUNG
 .hword MOVE_WILLENSLESER
 
-/* Scoppel */
 .hword PKMN_SCOPPEL+(20000)
 .hword MOVE_EINIGLER
 .hword MOVE_STACHLER
 .hword MOVE_WALZER
 
-/* Dartiri */
 .hword PKMN_DARTIRI+(20000)
 .hword MOVE_RAPIDSCHUTZ
 .hword MOVE_RUECKENWIND
 .hword MOVE_UEBERNAHME
 
-/* Purmel */
 .hword PKMN_PURMEL+(20000)
 .hword MOVE_GIFTPUDER
 .hword MOVE_STACHELSPORE
 .hword MOVE_WUTPULVER
 
-/* Leufeo */
 .hword PKMN_LEUFEO+(20000)
 .hword MOVE_FEUERWIRBEL
 .hword MOVE_FLAMMENBLITZ
@@ -4128,21 +3845,18 @@ pokemon_egg_moves:
 .hword MOVE_UEBERNAHME
 .hword MOVE_ZWANGO
 
-/* Flabébé */
 .hword PKMN_FLABEBE+(20000)
 .hword MOVE_IMITATOR
 .hword MOVE_LIEBREIZ
 .hword MOVE_TARNUNG
 .hword MOVE_TRAENENDRUESE
 
-/* MAEhikel */
 .hword PKMN_MAEHIKEL+(20000)
 .hword MOVE_EINIGLER
 .hword MOVE_GRASFELD
 .hword MOVE_MILCHGETRAENK
 .hword MOVE_WALZER
 
-/* Pam-Pam */
 .hword PKMN_PAM_PAM+(20000)
 .hword MOVE_BERGSTURM
 .hword MOVE_EGOTRIP
@@ -4151,7 +3865,6 @@ pokemon_egg_moves:
 .hword MOVE_UEBERHEBLICHKEIT
 .hword MOVE_VERZOEGERUNG
 
-/* Coiffwaff */
 .hword PKMN_COIFFWAFF+(20000)
 .hword MOVE_HEILUNG
 .hword MOVE_KRAFTSCHUB
@@ -4159,20 +3872,17 @@ pokemon_egg_moves:
 .hword MOVE_MIMIKRY
 .hword MOVE_ROLLENTAUSCH
 
-/* Psiau */
 .hword PKMN_PSIAU+(20000)
 .hword MOVE_BARRIERE
 .hword MOVE_GAEHNER
 .hword MOVE_TRICKBETRUG
 .hword MOVE_ZUSCHUSS
 
-/* Gramokles */
 .hword PKMN_GRAMOKLES+(20000)
 .hword MOVE_METALLSOUND
 .hword MOVE_RUNDUMSCHUTZ
 .hword MOVE_SCHATTENSTOSS
 
-/* Parfi */
 .hword PKMN_PARFI+(20000)
 .hword MOVE_AUSSETZER
 .hword MOVE_HEILUNG
@@ -4180,7 +3890,6 @@ pokemon_egg_moves:
 .hword MOVE_RAENKESCHMIED
 .hword MOVE_WUNSCHTRAUM
 
-/* Flaushling */
 .hword PKMN_FLAUSHLING+(20000)
 .hword MOVE_BAUCHTROMMEL
 .hword MOVE_GAEHNER
@@ -4188,7 +3897,6 @@ pokemon_egg_moves:
 .hword MOVE_IMITATOR
 .hword MOVE_KLEBENETZ
 
-/* Iscalar */
 .hword PKMN_ISCALAR+(20000)
 .hword MOVE_KRAFTTEILER
 .hword MOVE_SCHMEICHLER
@@ -4196,14 +3904,12 @@ pokemon_egg_moves:
 .hword MOVE_TARNUNG
 .hword MOVE_WANKELSTRAHL
 
-/* Bithora */
 .hword PKMN_BITHORA+(20000)
 .hword MOVE_NASSMACHER
-.hword MOVE_RECHTE_HAND
+.hword MOVE_RECHTE HAND
 .hword MOVE_SPASSKANONE
 .hword MOVE_WECHSELDICH
 
-/* Algitt */
 .hword PKMN_ALGITT+(20000)
 .hword MOVE_DUNKELNEBEL
 .hword MOVE_GIFTFALLE
@@ -4211,22 +3917,19 @@ pokemon_egg_moves:
 .hword MOVE_KNUDDLER
 .hword MOVE_SAEUREPANZER
 
-/* Scampisto */
 .hword PKMN_SCAMPISTO+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_KRABBHAMMER
-.hword MOVE_RECHTE_HAND
+.hword MOVE_RECHTE HAND
 .hword MOVE_WASSERDUESE
 .hword MOVE_ZWANGO
 
-/* Eguana */
 .hword PKMN_EGUANA+(20000)
 .hword MOVE_AGILITAET
 .hword MOVE_ELEKTROFELD
 .hword MOVE_GIFTBLICK
 .hword MOVE_TARNUNG
 
-/* Balgoras */
 .hword PKMN_BALGORAS+(20000)
 .hword MOVE_DONNERZAHN
 .hword MOVE_DRACHENTANZ
@@ -4236,7 +3939,6 @@ pokemon_egg_moves:
 .hword MOVE_GIFTZAHN
 .hword MOVE_STEINPOLITUR
 
-/* Amarino */
 .hword PKMN_AMARINO+(20000)
 .hword MOVE_BARRIERE
 .hword MOVE_DUNKELNEBEL
@@ -4244,7 +3946,6 @@ pokemon_egg_moves:
 .hword MOVE_MAGNETFLUG
 .hword MOVE_SPIEGELCAPE
 
-/* Resladero */
 .hword PKMN_RESLADERO+(20000)
 .hword MOVE_AGILITAET
 .hword MOVE_EGOTRIP
@@ -4255,15 +3956,13 @@ pokemon_egg_moves:
 .hword MOVE_STAFETTE
 .hword MOVE_ZWANGO
 
-/* Dedenne */
 .hword PKMN_DEDENNE+(20000)
 .hword MOVE_BEERENKRAEFTE
 .hword MOVE_BEZIRZER
 .hword MOVE_MYSTOWELLEN
-.hword MOVE_RECHTE_HAND
+.hword MOVE_RECHTE HAND
 .hword MOVE_TRAENENDRUESE
 
-/* Viscora */
 .hword PKMN_VISCORA+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_EISENSCHWEIF
@@ -4272,14 +3971,12 @@ pokemon_egg_moves:
 .hword MOVE_KONTER
 .hword MOVE_SAEUREPANZER
 
-/* Clavion */
 .hword PKMN_CLAVION+(20000)
 .hword MOVE_EISENABWEHR
 .hword MOVE_RAUB
 .hword MOVE_WECHSELDICH
 .hword MOVE_ZIELSCHUSS
 
-/* Paragoni */
 .hword PKMN_PARAGONI+(20000)
 .hword MOVE_BEGRENZER
 .hword MOVE_GIFTFALLE
@@ -4287,27 +3984,23 @@ pokemon_egg_moves:
 .hword MOVE_OFFERTE
 .hword MOVE_STEIGERUNGSHIEB
 
-/* Irrbis */
 .hword PKMN_IRRBIS+(20000)
 .hword MOVE_AUSSETZER
 .hword MOVE_FLUCH
 .hword MOVE_OFFERTE
 
-/* Arktip */
 .hword PKMN_ARKTIP+(20000)
 .hword MOVE_BARRIERE
 .hword MOVE_GENESUNG
 .hword MOVE_SPIEGELCAPE
 .hword MOVE_WEISSNEBEL
 
-/* eF-eM */
 .hword PKMN_EF_EM+(20000)
 .hword MOVE_RUECKENWIND
 .hword MOVE_UEBERNAHME
 .hword MOVE_WECHSELDICH
 .hword MOVE_WUTANFALL
 
-/* Bauz */
 .hword PKMN_BAUZ+(20000)
 .hword MOVE_AUFLOCKERN
 .hword MOVE_DUNKELNEBEL
@@ -4316,7 +4009,6 @@ pokemon_egg_moves:
 .hword MOVE_STAFETTE
 .hword MOVE_UNHEILBOEEN
 
-/* Flamiau */
 .hword PKMN_FLAMIAU+(20000)
 .hword MOVE_BODYSLAM
 .hword MOVE_HITZEWELLE
@@ -4326,7 +4018,6 @@ pokemon_egg_moves:
 .hword MOVE_UEBERHEBLICHKEIT
 .hword MOVE_VERGELTUNG
 
-/* Robball */
 .hword PKMN_ROBBALL+(20000)
 .hword MOVE_ABGESANG
 .hword MOVE_AMNESIE
@@ -4335,7 +4026,6 @@ pokemon_egg_moves:
 .hword MOVE_WASSERRING
 .hword MOVE_WUNDERRAUM
 
-/* Peppeck */
 .hword PKMN_PEPPECK+(20000)
 .hword MOVE_AUFRUHR
 .hword MOVE_RUECKENWIND
@@ -4343,7 +4033,6 @@ pokemon_egg_moves:
 .hword MOVE_STURZFLUG
 .hword MOVE_UEBERSCHALLKNALL
 
-/* Mangunior */
 .hword PKMN_MANGUNIOR+(20000)
 .hword MOVE_DONNERZAHN
 .hword MOVE_EISZAHN
@@ -4351,28 +4040,24 @@ pokemon_egg_moves:
 .hword MOVE_VERGELTUNG
 .hword MOVE_ZUFLUCHT
 
-/* Mabula */
 .hword PKMN_MABULA+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_ELEKTRONETZ
 .hword MOVE_HAERTNER
 .hword MOVE_LEHMSCHUSS
 
-/* Krabbox */
 .hword PKMN_KRABBOX+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_KRAFTKOLOSS
 .hword MOVE_NOTSITUATION
 .hword MOVE_RUNDUMSCHUTZ
 
-/* Choreogel */
 .hword PKMN_CHOREOGEL+(20000)
 .hword MOVE_BODYGUARD
 .hword MOVE_LIEBREIZ
 .hword MOVE_PFLUECKER
 .hword MOVE_RUECKENWIND
 
-/* Wommel */
 .hword PKMN_WOMMEL+(20000)
 .hword MOVE_INITIATIVETAUSCH
 .hword MOVE_KLEBENETZ
@@ -4382,7 +4067,6 @@ pokemon_egg_moves:
 .hword MOVE_STAFETTE
 .hword MOVE_WERTEWECHSEL
 
-/* Wuffels */
 .hword PKMN_WUFFELS+(20000)
 .hword MOVE_DONNERZAHN
 .hword MOVE_FEUERZAHN
@@ -4390,7 +4074,6 @@ pokemon_egg_moves:
 .hword MOVE_TIEFSCHLAG
 .hword MOVE_ZERMALMKLAUE
 
-/* Lusardin */
 .hword PKMN_LUSARDIN+(20000)
 .hword MOVE_AQUAWELLE
 .hword MOVE_LEHMBRUEHE
@@ -4398,14 +4081,12 @@ pokemon_egg_moves:
 .hword MOVE_WEISSNEBEL
 .hword MOVE_WHIRLPOOL
 
-/* Garstella */
 .hword PKMN_GARSTELLA+(20000)
 .hword MOVE_DUNKELNEBEL
 .hword MOVE_ENTFESSLER
 .hword MOVE_HORTER
 .hword MOVE_VERZEHRER
 
-/* Pampuli */
 .hword PKMN_PAMPULI+(20000)
 .hword MOVE_BODYSLAM
 .hword MOVE_INTENSITAET
@@ -4413,7 +4094,6 @@ pokemon_egg_moves:
 .hword MOVE_RISIKOTACKLE
 .hword MOVE_SCHLAMMBOMBE
 
-/* Araqua */
 .hword PKMN_ARAQUA+(20000)
 .hword MOVE_AURORASTRAHL
 .hword MOVE_ENTFESSLER
@@ -4421,7 +4101,6 @@ pokemon_egg_moves:
 .hword MOVE_KLEBENETZ
 .hword MOVE_KRAFTTEILER
 
-/* Imantis */
 .hword PKMN_IMANTIS+(20000)
 .hword MOVE_AROMAKUR
 .hword MOVE_AUFLOCKERN
@@ -4429,7 +4108,6 @@ pokemon_egg_moves:
 .hword MOVE_GIGASAUGER
 .hword MOVE_METEOROLOGE
 
-/* Bubungus */
 .hword PKMN_BUBUNGUS+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_EGELSAMEN
@@ -4437,7 +4115,6 @@ pokemon_egg_moves:
 .hword MOVE_STACHELSPORE
 .hword MOVE_WACHSTUM
 
-/* Molunk */
 .hword PKMN_MOLUNK+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_MOGELHIEB
@@ -4445,7 +4122,6 @@ pokemon_egg_moves:
 .hword MOVE_SANDWIRBEL
 .hword MOVE_UEBERNAHME
 
-/* Velursi */
 .hword PKMN_VELURSI+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_DONNERSCHLAG
@@ -4455,7 +4131,6 @@ pokemon_egg_moves:
 .hword MOVE_MEGAKICK
 .hword MOVE_RUNDUMSCHUTZ
 
-/* Frubberl */
 .hword PKMN_FRUBBERL+(20000)
 .hword MOVE_AKUPRESSUR
 .hword MOVE_CHARME
@@ -4464,20 +4139,17 @@ pokemon_egg_moves:
 .hword MOVE_OFFENLEGUNG
 .hword MOVE_SYNTHESE
 
-/* Curelei */
 .hword PKMN_CURELEI+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_AUSDAUER
 .hword MOVE_BESCHWOERUNG
 .hword MOVE_GALANTERIE
 
-/* Oranguru */
 .hword PKMN_ORANGURU+(20000)
 .hword MOVE_PSYCHOFELD
 .hword MOVE_SONDERSENSOR
 .hword MOVE_WUNDERRAUM
 
-/* Quartermak */
 .hword PKMN_QUARTERMAK+(20000)
 .hword MOVE_EISENSCHAEDEL
 .hword MOVE_GEOWURF
@@ -4486,7 +4158,6 @@ pokemon_egg_moves:
 .hword MOVE_RUCKZUCKHIEB
 .hword MOVE_UEBERWURF
 
-/* ReiSSlaus */
 .hword PKMN_REISSLAUS+(20000)
 .hword MOVE_HAERTNER
 .hword MOVE_METALLKLAUE
@@ -4494,7 +4165,6 @@ pokemon_egg_moves:
 .hword MOVE_STACHLER
 .hword MOVE_WASSERDUESE
 
-/* Sankabuh */
 .hword PKMN_SANKABUH+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_ANTIK_KRAFT
@@ -4503,7 +4173,6 @@ pokemon_egg_moves:
 .hword MOVE_HORTER
 .hword MOVE_VERZEHRER
 
-/* Gufa */
 .hword PKMN_GUFA+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_GIFTFALLE
@@ -4511,21 +4180,18 @@ pokemon_egg_moves:
 .hword MOVE_OFFERTE
 .hword MOVE_SPASSKANONE
 
-/* Koalelu */
 .hword PKMN_KOALELU+(20000)
 .hword MOVE_CHARME
 .hword MOVE_GESANG
 .hword MOVE_KNUDDLER
 .hword MOVE_WUNSCHTRAUM
 
-/* Tortunator */
 .hword PKMN_TORTUNATOR+(20000)
 .hword MOVE_FEUERWIRBEL
 .hword MOVE_KOPFSTOSS
 .hword MOVE_RUNDUMSCHUTZ
 .hword MOVE_VERGELTUNG
 
-/* Togedemaru */
 .hword PKMN_TOGEDEMARU+(20000)
 .hword MOVE_DRESCHFLEGEL
 .hword MOVE_DUONADEL
@@ -4537,20 +4203,17 @@ pokemon_egg_moves:
 .hword MOVE_WUNSCHTRAUM
 .hword MOVE_ZUGABE
 
-/* Mimigma */
 .hword PKMN_MIMIGMA+(20000)
 .hword MOVE_FLUCH
 .hword MOVE_NACHSPIEL
 .hword MOVE_NACHTMAHR
 
-/* Knirfish */
 .hword PKMN_KNIRFISH+(20000)
 .hword MOVE_AQUAWELLE
 .hword MOVE_EISZAHN
 .hword MOVE_GIFTZAHN
 .hword MOVE_RASEREI
 
-/* Sen-Long */
 .hword PKMN_SEN_LONG+(20000)
 .hword MOVE_DRACHENSTOSS
 .hword MOVE_KLINGENSTURM
@@ -4558,13 +4221,11 @@ pokemon_egg_moves:
 .hword MOVE_ORKAN
 .hword MOVE_WEISSNEBEL
 
-/* Miniras */
 .hword PKMN_MINIRAS+(20000)
 .hword MOVE_FEUERODEM
 .hword MOVE_GEGENSCHLAG
 .hword MOVE_KONTER
 
-/* Schalellos [west] */
 .hword PKMN_SCHALELLOS_WEST+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_ENTFESSLER
@@ -4583,7 +4244,6 @@ pokemon_egg_moves:
 .hword MOVE_VERZEHRER
 .hword MOVE_WEISSNEBEL
 
-/* Barschuft [west] */
 .hword PKMN_BARSCHUFT_WEST+(20000)
 .hword MOVE_AGILITAET
 .hword MOVE_BLUBBSTRAHL
@@ -4596,7 +4256,6 @@ pokemon_egg_moves:
 .hword MOVE_VERGELTUNG
 .hword MOVE_WHIRLPOOL
 
-/* Sesokitz (Sommerform) */
 .hword PKMN_SESOKITZ_SOMMERFORM+(20000)
 .hword MOVE_AGILITAET
 .hword MOVE_BEERENKRAEFTE
@@ -4609,7 +4268,6 @@ pokemon_egg_moves:
 .hword MOVE_SYNTHESE
 .hword MOVE_TRUGTRAENE
 
-/* Sesokitz (Herbstform) */
 .hword PKMN_SESOKITZ_HERBSTFORM+(20000)
 .hword MOVE_AGILITAET
 .hword MOVE_BEERENKRAEFTE
@@ -4622,74 +4280,63 @@ pokemon_egg_moves:
 .hword MOVE_SYNTHESE
 .hword MOVE_TRUGTRAENE
 
-/* Flabébé [weiSS] */
 .hword PKMN_FLABEBE_WEISS+(20000)
 .hword MOVE_IMITATOR
 .hword MOVE_LIEBREIZ
 .hword MOVE_TARNUNG
 .hword MOVE_TRAENENDRUESE
 
-/* Flabébé [Gelb] */
 .hword PKMN_FLABEBE_GELB+(20000)
 .hword MOVE_IMITATOR
 .hword MOVE_LIEBREIZ
 .hword MOVE_TARNUNG
 .hword MOVE_TRAENENDRUESE
 
-/* Flabébé [Orange] */
 .hword PKMN_FLABEBE_ORANGE+(20000)
 .hword MOVE_IMITATOR
 .hword MOVE_LIEBREIZ
 .hword MOVE_TARNUNG
 .hword MOVE_TRAENENDRUESE
 
-/* Flabébé [blau] */
 .hword PKMN_FLABEBE_BLAU+(20000)
 .hword MOVE_IMITATOR
 .hword MOVE_LIEBREIZ
 .hword MOVE_TARNUNG
 .hword MOVE_TRAENENDRUESE
 
-/* Irrbis M */
 .hword PKMN_IRRBIS_M+(20000)
 .hword MOVE_AUSSETZER
 .hword MOVE_FLUCH
 .hword MOVE_OFFERTE
 
-/* Irrbis L */
 .hword PKMN_IRRBIS_L+(20000)
 .hword MOVE_AUSSETZER
 .hword MOVE_FLUCH
 .hword MOVE_OFFERTE
 
-/* Irrbis XL */
 .hword PKMN_IRRBIS_XL+(20000)
 .hword MOVE_AUSSETZER
 .hword MOVE_FLUCH
 .hword MOVE_OFFERTE
 
-/* Choreogel (Cheerleading-Stil) */
 .hword PKMN_CHOREOGEL_CHEERLEADING_STIL+(20000)
 .hword MOVE_BODYGUARD
 .hword MOVE_LIEBREIZ
 .hword MOVE_PFLUECKER
 .hword MOVE_RUECKENWIND
 
-/* Choreogel (Buyo-Stil) */
 .hword PKMN_CHOREOGEL_BUYO_STIL+(20000)
 .hword MOVE_BODYGUARD
 .hword MOVE_LIEBREIZ
 .hword MOVE_PFLUECKER
 .hword MOVE_RUECKENWIND
 
-/* Choreogel (Hula-Stil) */
 .hword PKMN_CHOREOGEL_HULA_STIL+(20000)
 .hword MOVE_BODYGUARD
 .hword MOVE_LIEBREIZ
 .hword MOVE_PFLUECKER
 .hword MOVE_RUECKENWIND
 
-/* Lusardin (Schwarmform) */
 .hword PKMN_LUSARDIN_SCHWARMFORM+(20000)
 .hword MOVE_AQUAWELLE
 .hword MOVE_LEHMBRUEHE
@@ -4697,14 +4344,12 @@ pokemon_egg_moves:
 .hword MOVE_WEISSNEBEL
 .hword MOVE_WHIRLPOOL
 
-/* Mimigma (Entlarvte Form) */
 .hword PKMN_MIMIGMA_ENTLARVTE_FORM+(20000)
 .hword MOVE_FLUCH
 .hword MOVE_NACHSPIEL
 .hword MOVE_NACHTMAHR
 
-/* Rattfratz [w] */
-.hword PKMN_RATTFRATZ_W+(20000)
+.hword PKMN_RATTFRATZ_F+(20000)
 .hword MOVE_AUFRUHR
 .hword MOVE_BISS
 .hword MOVE_EGOTRIP
@@ -4717,8 +4362,7 @@ pokemon_egg_moves:
 .hword MOVE_WAGEMUT
 .hword MOVE_ZUFLUCHT
 
-/* Pikachu [w] */
-.hword PKMN_PIKACHU_W+(20000)
+.hword PKMN_PIKACHU_F+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_BESCHWOERUNG
 .hword MOVE_DONNERSCHLAG
@@ -4737,8 +4381,7 @@ pokemon_egg_moves:
 .hword MOVE_WUNSCHTRAUM
 .hword MOVE_ZUGABE
 
-/* Zubat [w] */
-.hword PKMN_ZUBAT_W+(20000)
+.hword PKMN_ZUBAT_F+(20000)
 .hword MOVE_AUFLOCKERN
 .hword MOVE_FINTE
 .hword MOVE_FLUCH
@@ -4754,8 +4397,7 @@ pokemon_egg_moves:
 .hword MOVE_WIRBELWIND
 .hword MOVE_ZEN_KOPFSTOSS
 
-/* Dodu [w] */
-.hword PKMN_DODU_W+(20000)
+.hword PKMN_DODU_F+(20000)
 .hword MOVE_BEERENKRAEFTE
 .hword MOVE_DRESCHFLEGEL
 .hword MOVE_DUNKELNEBEL
@@ -4767,8 +4409,7 @@ pokemon_egg_moves:
 .hword MOVE_STURZFLUG
 .hword MOVE_SUPERSCHALL
 
-/* Goldini [w] */
-.hword PKMN_GOLDINI_W+(20000)
+.hword PKMN_GOLDINI_F+(20000)
 .hword MOVE_AMPELLEUCHTE
 .hword MOVE_BODYSLAM
 .hword MOVE_DUNKELNEBEL
@@ -4781,8 +4422,7 @@ pokemon_egg_moves:
 .hword MOVE_SCHAEDELWUMME
 .hword MOVE_SCHLAFREDE
 
-/* Sichlor [w] */
-.hword PKMN_SICHLOR_W+(20000)
+.hword PKMN_SICHLOR_F+(20000)
 .hword MOVE_AUFLOCKERN
 .hword MOVE_AUSDAUER
 .hword MOVE_GEGENSCHLAG
@@ -4794,8 +4434,7 @@ pokemon_egg_moves:
 .hword MOVE_STAFETTE
 .hword MOVE_STAHLFLUEGEL
 
-/* Ledyba [w] */
-.hword PKMN_LEDYBA_W+(20000)
+.hword PKMN_LEDYBA_F+(20000)
 .hword MOVE_ABLEITHIEB
 .hword MOVE_ABSCHLAG
 .hword MOVE_AUSDAUER
@@ -4811,8 +4450,7 @@ pokemon_egg_moves:
 .hword MOVE_SILBERHAUCH
 .hword MOVE_ZUGABE
 
-/* Griffel [w] */
-.hword PKMN_GRIFFEL_W+(20000)
+.hword PKMN_GRIFFEL_F+(20000)
 .hword MOVE_AGILLITAET
 .hword MOVE_BEZIRZER
 .hword MOVE_DUPLEXHIEB
@@ -4829,8 +4467,7 @@ pokemon_egg_moves:
 .hword MOVE_VERGELTUNG
 .hword MOVE_WECHSELDICH
 
-/* Felino [w] */
-.hword PKMN_FELINO_W+(20000)
+.hword PKMN_FELINO_F+(20000)
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_BODYSLAM
 .hword MOVE_DOPPELKICK
@@ -4848,8 +4485,7 @@ pokemon_egg_moves:
 .hword MOVE_VERZEHRER
 .hword MOVE_ZUGABE
 
-/* Kramurx [w] */
-.hword PKMN_KRAMURX_W+(20000)
+.hword PKMN_KRAMURX_F+(20000)
 .hword MOVE_ABGESANG
 .hword MOVE_BOHRSCHNABEL
 .hword MOVE_DAUNENREIGEN
@@ -4867,8 +4503,7 @@ pokemon_egg_moves:
 .hword MOVE_STURZFLUG
 .hword MOVE_WIRBELWIND
 
-/* Girafarig [w] */
-.hword PKMN_GIRAFARIG_W+(20000)
+.hword PKMN_GIRAFARIG_F+(20000)
 .hword MOVE_AMNESIE
 .hword MOVE_BODYCHECK
 .hword MOVE_DOPPELKICK
@@ -4885,8 +4520,7 @@ pokemon_egg_moves:
 .hword MOVE_WERTWECHSEL
 .hword MOVE_WUNSCHTRAUM
 
-/* Skorgla [w] */
-.hword PKMN_SKORGLA_W+(20000)
+.hword PKMN_SKORGLA_F+(20000)
 .hword MOVE_AGILLITAET
 .hword MOVE_FLUEGELSCHLAG
 .hword MOVE_GIFTSCHWEIF
@@ -4902,8 +4536,7 @@ pokemon_egg_moves:
 .hword MOVE_SANDGRAB
 .hword MOVE_STAFETTE
 
-/* Skaraborn [w] */
-.hword PKMN_SKARABORN_W+(20000)
+.hword PKMN_SKARABORN_F+(20000)
 .hword MOVE_ABSCHLAG
 .hword MOVE_AKUPRESSUR
 .hword MOVE_FELSWURF
@@ -4914,8 +4547,7 @@ pokemon_egg_moves:
 .hword MOVE_SANDGRAB
 .hword MOVE_WAGEMUT
 
-/* Sniebel [w] */
-.hword PKMN_SNIEBEL_W+(20000)
+.hword PKMN_SNIEBEL_F+(20000)
 .hword MOVE_BISS
 .hword MOVE_DOPPELSCHLAG
 .hword MOVE_EISHIEB
@@ -4933,8 +4565,7 @@ pokemon_egg_moves:
 .hword MOVE_ZERMALMKLAUE
 .hword MOVE_ZUSCHUSS
 
-/* Flemmli [w] */
-.hword PKMN_FLEMMLI_W+(20000)
+.hword PKMN_FLEMMLI_F+(20000)
 .hword MOVE_AGILLITAET
 .hword MOVE_AUSDAUER
 .hword MOVE_DAUNENREIGEN
@@ -4950,8 +4581,7 @@ pokemon_egg_moves:
 .hword MOVE_ZERMALMKLAUE
 .hword MOVE_ZUFLUCHT
 
-/* Meditie [w] */
-.hword PKMN_MEDITIE_W+(20000)
+.hword PKMN_MEDITIE_F+(20000)
 .hword MOVE_ABLEITHIEB
 .hword MOVE_DONNERSCHLAG
 .hword MOVE_EISHIEB
@@ -4967,8 +4597,7 @@ pokemon_egg_moves:
 .hword MOVE_STAFETTE
 .hword MOVE_WUCHTSCHLAG
 
-/* Schluppuck [w] */
-.hword PKMN_SCHLUPPUCK_W+(20000)
+.hword PKMN_SCHLUPPUCK_F+(20000)
 .hword MOVE_FLUCH
 .hword MOVE_GIFTFALLE
 .hword MOVE_LEHMSCHELLE
@@ -4977,8 +4606,7 @@ pokemon_egg_moves:
 .hword MOVE_SAEUREPANZER
 .hword MOVE_SMOG
 
-/* Camaub [w] */
-.hword PKMN_CAMAUB_W+(20000)
+.hword PKMN_CAMAUB_F+(20000)
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_AUSDAUER
 .hword MOVE_BODYSLAM
@@ -4997,8 +4625,7 @@ pokemon_egg_moves:
 .hword MOVE_WACHSTUM
 .hword MOVE_WALZER
 
-/* Staralili [w] */
-.hword PKMN_STARALILI_W+(20000)
+.hword PKMN_STARALILI_F+(20000)
 .hword MOVE_AUFRUHR
 .hword MOVE_DAUNENREIGEN
 .hword MOVE_ERSTAUNER
@@ -5013,8 +4640,7 @@ pokemon_egg_moves:
 .hword MOVE_VERFOLGUNG
 .hword MOVE_VERGELTUNG
 
-/* Bidiza [w] */
-.hword PKMN_BIDIZA_W+(20000)
+.hword PKMN_BIDIZA_F+(20000)
 .hword MOVE_AUSDAUER
 .hword MOVE_EINIGLER
 .hword MOVE_KRATZFURIE
@@ -5029,8 +4655,7 @@ pokemon_egg_moves:
 .hword MOVE_SCHNUEFFLER
 .hword MOVE_WALZER
 
-/* Sheinux [w] */
-.hword PKMN_SHEINUX_W+(20000)
+.hword PKMN_SHEINUX_F+(20000)
 .hword MOVE_AMPELLEUCHTE
 .hword MOVE_BODYCHECK
 .hword MOVE_DONNERZAHN
@@ -5040,14 +4665,13 @@ pokemon_egg_moves:
 .hword MOVE_JAULER
 .hword MOVE_MYSTOWELLEN
 .hword MOVE_NACHTHIEB
-.hword MOVE_RECHTE_HAND
+.hword MOVE_RECHTE HAND
 .hword MOVE_RUCKZUCKHIEB
 .hword MOVE_SCHOCKWELLE
 .hword MOVE_STERNSCHAUER
 .hword MOVE_TRUGTRAENE
 
-/* Pachirisu [w] */
-.hword PKMN_PACHIRISU_W+(20000)
+.hword PKMN_PACHIRISU_F+(20000)
 .hword MOVE_BEZIRZER
 .hword MOVE_BISS
 .hword MOVE_DRESCHFLEGEL
@@ -5063,8 +4687,7 @@ pokemon_egg_moves:
 .hword MOVE_TRUGTRAENE
 .hword MOVE_WALZER
 
-/* Bamelin [w] */
-.hword PKMN_BAMELIN_W+(20000)
+.hword PKMN_BAMELIN_F+(20000)
 .hword MOVE_DUPLEXHIEB
 .hword MOVE_EGOTRIP
 .hword MOVE_KEHRSCHELLE
@@ -5072,7 +4695,7 @@ pokemon_egg_moves:
 .hword MOVE_KRATZFURIE
 .hword MOVE_LEHMSCHELLE
 .hword MOVE_NASSSCHWEIF
-.hword MOVE_RECHTE_HAND
+.hword MOVE_RECHTE HAND
 .hword MOVE_SCHLITZER
 .hword MOVE_SCHNUEFFLER
 .hword MOVE_STAFETTE
@@ -5081,8 +4704,7 @@ pokemon_egg_moves:
 .hword MOVE_WECHSELDICH
 .hword MOVE_ZORNKLINGE
 
-/* Kaumalat [w] */
-.hword PKMN_KAUMALAT_W+(20000)
+.hword PKMN_KAUMALAT_F+(20000)
 .hword MOVE_BODYSLAM
 .hword MOVE_EISENSCHAEDEL
 .hword MOVE_EISENSCHWEIF
@@ -5097,8 +4719,7 @@ pokemon_egg_moves:
 .hword MOVE_WINDHOSE
 .hword MOVE_WUTANFALL
 
-/* Hippopotas [w] */
-.hword PKMN_HIPPOPOTAS_W+(20000)
+.hword PKMN_HIPPOPOTAS_F+(20000)
 .hword MOVE_BODYSLAM
 .hword MOVE_ENTFESSLER
 .hword MOVE_FLUCH
@@ -5110,8 +4731,7 @@ pokemon_egg_moves:
 .hword MOVE_VERZEHRER
 .hword MOVE_WIRBELWIND
 
-/* Glibunkel [w] */
-.hword PKMN_GLIBUNKEL_W+(20000)
+.hword PKMN_GLIBUNKEL_F+(20000)
 .hword MOVE_ABLEITHIEB
 .hword MOVE_AKUPRESSUR
 .hword MOVE_EGOTRIP
@@ -5128,8 +4748,7 @@ pokemon_egg_moves:
 .hword MOVE_WECKRUF
 .hword MOVE_WUCHTSCHLAG
 
-/* Finneon [w] */
-.hword PKMN_FINNEON_W+(20000)
+.hword PKMN_FINNEON_F+(20000)
 .hword MOVE_AGILITAET
 .hword MOVE_AMPELLEUCHTE
 .hword MOVE_AURORASTRAHL
@@ -5143,8 +4762,7 @@ pokemon_egg_moves:
 .hword MOVE_PSYSTRAHL
 .hword MOVE_SPASSKANONE
 
-/* Shnebedeck [w] */
-.hword PKMN_SHNEBEDECK_W+(20000)
+.hword PKMN_SHNEBEDECK_F+(20000)
 .hword MOVE_BEERENKRAEFTE
 .hword MOVE_EGELSAMEN
 .hword MOVE_KUGELSAAT
@@ -5157,8 +4775,7 @@ pokemon_egg_moves:
 .hword MOVE_WEISSNEBEL
 .hword MOVE_ZAUBERBLATT
 
-/* Quabbel [w] */
-.hword PKMN_QUABBEL_W+(20000)
+.hword PKMN_QUABBEL_F+(20000)
 .hword MOVE_GENESUNG
 .hword MOVE_KONFUSTRAHL
 .hword MOVE_LEIDTEILER

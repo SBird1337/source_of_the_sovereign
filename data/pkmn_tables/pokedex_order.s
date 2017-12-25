@@ -1,10 +1,11 @@
-#include <pkmn_name.h>
+#include <pkmn_names.h>
 .align 2
 .thumb
 .text
 .global pokedex_order
 pokedex_order:
 
+.hword PKMN_UNBEKANNT
 .hword PKMN_BISASAM
 .hword PKMN_BISAKNOSP
 .hword PKMN_BISAFLOR
@@ -33,7 +34,7 @@ pokedex_order:
 .hword PKMN_RAICHU
 .hword PKMN_SANDAN
 .hword PKMN_SANDAMER
-.hword PKMN_NIDORAN_W
+.hword PKMN_NIDORAN_F
 .hword PKMN_NIDORINA
 .hword PKMN_NIDOQUEEN
 .hword PKMN_NIDORAN_M
@@ -280,7 +281,7 @@ pokedex_order:
 .hword PKMN_MAMOI
 .hword PKMN_LUMOYO
 .hword PKMN_LIOSU
-.hword PKMN_PSIAUGON_M
+.hword PKMN_PSIAUGON
 .hword PKMN_GECKARBOR
 .hword PKMN_REPTAIN
 .hword PKMN_GEWALDRO
@@ -416,7 +417,7 @@ pokedex_order:
 .hword PKMN_JIRACHI
 .hword PKMN_DEOXYS
 .hword PKMN_PALIMPALIM
-#NV
+.hword PKMN_UNBEKANNT
 .hword PKMN_ICOGNITO
 .hword PKMN_ICOGNITO
 .hword PKMN_ICOGNITO
@@ -735,7 +736,7 @@ pokedex_order:
 .hword PKMN_PANDAGRO
 .hword PKMN_COIFFWAFF
 .hword PKMN_PSIAU
-.hword PKMN_PSIAUGON_W
+.hword PKMN_PSIAUGON
 .hword PKMN_GRAMOKLES
 .hword PKMN_DUOKLES
 .hword PKMN_DURENGARD
@@ -829,7 +830,7 @@ pokedex_order:
 .hword PKMN_SANKABUH
 .hword PKMN_COLOSSAND
 .hword PKMN_GUFA
-.hword PKMN_TYP_NULL
+.hword PKMN_TYP:NULL
 .hword PKMN_AMIGENTO
 .hword PKMN_METENO
 .hword PKMN_KOALELU
@@ -1121,3 +1122,4 @@ pokedex_order:
 .hword PKMN_OHRDOCH
 .hword PKMN_DIANCIE
 .hword PKMN_KYOGRE
+.hword PKMN_GROUDON
