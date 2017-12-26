@@ -158,7 +158,7 @@ $(B_ENGINE):
 	$(MAKE) -C battle_engine build/linked.o
 
 .PHONY: cleansrcdatascript
-cleansrc:
+cleansrcdatascript:
 	rm -rf object/src/*
 	rm -rf object/data/*
 	rm -rf object/sots-private/map/script/*
