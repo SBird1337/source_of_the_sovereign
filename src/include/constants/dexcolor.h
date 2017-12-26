@@ -1,0 +1,15 @@
+#ifndef DEXCOLOR_S_
+#define DEXCOLOR_S_
+
+#define DEXCOLOR_ROT 0x0
+#define DEXCOLOR_BLAU 0x1
+#define DEXCOLOR_GELB 0x2
+#define DEXCOLOR_GRUEN 0x3
+#define DEXCOLOR_SCHWARZ 0x4
+#define DEXCOLOR_BRAUN 0x5
+#define DEXCOLOR_VIOLETT 0x6
+#define DEXCOLOR_GRAU 0x7
+#define DEXCOLOR_WEISS 0x8
+#define DEXCOLOR_ROSA 0x9
+
+#endif
