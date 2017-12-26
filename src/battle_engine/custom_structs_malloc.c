@@ -31,7 +31,7 @@
 /* === INCLUDE === */
 
 #include <battle_custom_structs.h>
-#include <config.h>
+#include <config/core.h>
 #include <game_engine.h>
 #include <memory.h>
 #include <constants/moves.h>

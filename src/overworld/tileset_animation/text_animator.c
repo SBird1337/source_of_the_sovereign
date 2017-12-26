@@ -1,7 +1,7 @@
 #include <pokeagb/pokeagb.h>
 #include <agb_debug.h>
 #include <tileset_animation/font.h>
-#include <config.h>
+#include <config/core.h>
 #include <assert.h>
 
 #define CANVAS_X_START (22)

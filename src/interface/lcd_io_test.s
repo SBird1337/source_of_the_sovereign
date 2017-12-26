@@ -1,4 +1,4 @@
-#include <config.h>
+#include <config/core.h>
 
 .EQU BLDMOD,0x50
 .EQU LCD_WIN_IN,0x48

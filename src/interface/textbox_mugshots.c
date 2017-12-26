@@ -31,7 +31,7 @@
 /* === INCLUDES === */
 #include <objects.h>
 #include <callback.h>
-#include <config.h>
+#include <config/core.h>
 #include <lcd.h>
 #include <debug.h>
 #include <game_engine.h>

@@ -30,7 +30,7 @@
 
 
 /* === INCLUDE === */
-#include <config.h>
+#include <config/core.h>
 #include <types.h>
 
 /* === PROTOTYPES === */

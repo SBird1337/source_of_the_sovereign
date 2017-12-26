@@ -33,7 +33,7 @@
 /* === INCLUDE === */
 #include <types.h>
 #include <game_engine.h>
-#include <config.h>
+#include <config/core.h>
 #include <save_one.h>
 
 /* === PROTOTYPES === */

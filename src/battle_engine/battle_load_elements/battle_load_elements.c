@@ -23,7 +23,7 @@
 #include <battlescreen/battlescreen_7.h>
 #include <battlescreen/battlescreen_8.h>
 #include <battlescreen/battlescreen_9.h>
-#include <config.h>
+#include <config/core.h>
 #include <pokeagb/pokeagb.h>
 
 #define SIZEOF_ARR(a) (sizeof(a) / sizeof(a[0]))

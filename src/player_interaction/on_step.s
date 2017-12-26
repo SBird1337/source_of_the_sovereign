@@ -1,4 +1,4 @@
-#include <config.h>
+#include <config/core.h>
 
 .text
 .align 2

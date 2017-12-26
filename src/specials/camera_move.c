@@ -35,7 +35,7 @@
 #include "camera_move.h"
 #include <callback.h>
 #include <fade.h>
-#include <config.h>
+#include <config/core.h>
 #include <lcd.h>
 
 /* === PROTOTYPES === */

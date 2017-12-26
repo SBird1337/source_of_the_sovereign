@@ -6,7 +6,7 @@
 #include "fade.h"
 #include "lcd.h"
 #include <callback.h>
-#include <config.h>
+#include <config/core.h>
 #include <pkmn_attributes.h>
 #include <battle_structs.h>
 

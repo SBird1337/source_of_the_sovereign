@@ -7,9 +7,9 @@
 script_fang_flinch:
 
 setbyte 0x2023E85 0x8
-jumpifhalfword 0x0 0x2023D4A FIRE_FANG firefang
-jumpifhalfword 0x0 0x2023D4A ICE_FANG icefang
-jumpifhalfword 0x0 0x2023D4A THUNDER_FANG thunderfang
+jumpifhalfword 0x0 0x2023D4A MOVE_FIRE_FANG firefang
+jumpifhalfword 0x0 0x2023D4A MOVE_ICE_FANG icefang
+jumpifhalfword 0x0 0x2023D4A MOVE_THUNDER_FANG thunderfang
 goto 0x81D6900
 
 firefang:

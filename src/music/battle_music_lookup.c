@@ -6,7 +6,7 @@
 #include <pokemon.h>
 #include <agb_debug.h>
 #include <sound.h>
-#include <config.h>
+#include <config/core.h>
 
 #define SONG_ID_SKIP_PLAY 0xFFFF
 

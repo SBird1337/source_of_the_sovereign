@@ -32,7 +32,7 @@
 
 #include <agb_debug.h>
 #include <callback.h>
-#include <config.h>
+#include <config/core.h>
 #include <debug.h>
 #include <game_engine.h>
 #include <types.h>

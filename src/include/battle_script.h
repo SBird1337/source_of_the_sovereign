@@ -28,7 +28,7 @@
  */
 
 
-#include <attack_names.h>
+#include <constants/moves.h>
 
 @@ Banks
 #define BANK_USER	1

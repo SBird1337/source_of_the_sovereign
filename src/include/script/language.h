@@ -1,11 +1,12 @@
 #ifndef SCRIPT_LANG_H_
 #define SCRIPT_LANG_H_
 
-#include <config.h>
-#include <applymovements.h>
-#include <mugssprites.h>
-#include <battlescreen.h>
-#include <script_constant.h>
+#include <config/core.h>
+#include <script/movement.h>
+#include <script/mugshot.h>
+#include <script/battlescreen.h>
+
+#include <script_constant.h> /*TODO: REMOVE ONCE THIS IS DEALT WITH*/
 
 @@ Costum Specials
 .equ SP_BATCHMAPTILE, 0x7

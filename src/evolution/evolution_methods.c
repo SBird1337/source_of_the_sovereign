@@ -31,7 +31,7 @@
 #include <pkmn_attributes.h>
 #include <agb_debug.h>
 #include <math.h>
-#include <config.h>
+#include <config/core.h>
 #include <constants/moves.h>
 #include <pokemon.h>
 #include <constants/ptypes.h>

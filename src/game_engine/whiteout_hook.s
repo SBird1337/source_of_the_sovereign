@@ -1,4 +1,4 @@
-#include <config.h>
+#include <config/core.h>
 
 .align 2
 .thumb

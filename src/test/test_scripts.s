@@ -1,4 +1,4 @@
-#include <script_language.h>
+#include <script/language.h>
 
 .align 2
 .thumb

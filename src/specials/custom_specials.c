@@ -32,7 +32,7 @@
 
 #include "camera_move.h"
 #include "cutscene_meteor.h"
-#include <config.h>
+#include <config/core.h>
 #include <pokeagb/pokeagb.h>
 
 /* === TYPES === */
