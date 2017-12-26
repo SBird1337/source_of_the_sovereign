@@ -30,7 +30,7 @@
 /* === INCLUDE === */
 
 #include <battle_structs.h>
-#include <pkmn_types.h>
+#include <constants/ptypes.h>
 
 /* === PROTOTYPES === */
 

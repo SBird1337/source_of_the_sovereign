@@ -1,6 +1,6 @@
 #include <battle_locations.h>
 #include <battle_structs.h>
-#include <moves.h>
+#include <constants/moves.h>
 
 extern void* str_guard_split_ref;
 extern void* str_power_split_ref;

@@ -1,5 +1,5 @@
 #include <battle_common.h>
-#include <moves.h>
+#include <constants/moves.h>
 #include <battle_structs.h>
 #include <battle_locations.h>
 

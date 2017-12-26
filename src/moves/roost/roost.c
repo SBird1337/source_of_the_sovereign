@@ -1,5 +1,5 @@
 #include <battle_structs.h>
-#include <pkmn_types.h>
+#include <constants/ptypes.h>
 #include <battle_locations.h>
 
 u8 roost_change_type()

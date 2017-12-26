@@ -30,10 +30,10 @@
 /* === INCLUDE === */
 #include <battle_help.h>
 #include <battle_locations.h>
-#include <moves.h>
+#include <constants/moves.h>
 #include <battle_structs.h>
 #include <battle_custom_structs.h>
-#include <pkmn_types.h>
+#include <constants/ptypes.h>
 #include <battle_common.h>
 
 /* === EXTERN STATICS === */

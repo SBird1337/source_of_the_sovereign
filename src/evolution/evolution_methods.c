@@ -32,9 +32,9 @@
 #include <agb_debug.h>
 #include <math.h>
 #include <config.h>
-#include <moves.h>
+#include <constants/moves.h>
 #include <pokemon.h>
-#include <pkmn_types.h>
+#include <constants/ptypes.h>
 
 #define EVO_NULL              \
     {                         \

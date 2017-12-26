@@ -31,7 +31,7 @@
 #include <battle_test.h>
 #include <debug.h>
 #include <battle_initiative.h>
-#include <pkmn_abilities.h>
+#include <constants/abilities.h>
 #include <battle_structs.h>
 #include <battle_common.h>
 #include <battle_custom_structs.h>

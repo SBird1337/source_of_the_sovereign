@@ -34,7 +34,7 @@
 #include <config.h>
 #include <game_engine.h>
 #include <memory.h>
-#include <moves.h>
+#include <constants/moves.h>
 #include <battle_common.h>
 #include <battle_locations.h>
 

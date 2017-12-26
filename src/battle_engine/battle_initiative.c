@@ -33,7 +33,7 @@
 #include <pkmn_item_effects.h>
 #include <pokemon.h>
 #include <battle_help.h>
-#include <pkmn_abilities.h>
+#include <constants/abilities.h>
 #include <math.h>
 #include <battle_common.h>
 #include <battle_abilities.h>

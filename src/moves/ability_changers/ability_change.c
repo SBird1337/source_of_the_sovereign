@@ -1,8 +1,8 @@
 #include <battle_locations.h>
 #include <types.h>
 #include <battle_structs.h>
-#include <pkmn_abilities.h>
-#include <moves.h>
+#include <constants/abilities.h>
+#include <constants/moves.h>
 
 extern void* str_worry_seed_ref;
 extern void* str_entrainment_ref;

@@ -1,5 +1,5 @@
 #include <battle_script.h>
-#include <moves.h>
+#include <constants/moves.h>
 
 .align 2
 .thumb

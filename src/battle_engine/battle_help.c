@@ -34,11 +34,11 @@
 #include <battle_help.h>
 #include <battle_locations.h>
 #include <game_engine.h>
-#include <pkmn_abilities.h>
-#include <pkmn_attributes.h>
+#include <constants/abilities.h>
+#include <pkmn_attributes.h> /*TODO: POKEAGB */
 #include <pkmn_item_effects.h>
-#include <pkmn_items.h>
-#include <pkmn_types.h>
+#include <constants/items.h>
+#include <constants/ptypes.h>
 
 /* === STATICS === */
 
