@@ -157,6 +157,12 @@ $(MAP_PROJ_S): $(MAP_PROJ)
 $(B_ENGINE):
 	$(MAKE) -C battle_engine build/linked.o
 
+.PHONY: cleansrcdatascript
+cleansrc:
+	rm -rf object/src/*
+	rm -rf object/data/*
+	rm -rf object/sots-private/map/script/*
+
 .PHONY: clean
 clean:
 	rm -f  $(OUTPATH)/__symbols.sym $(OUTPATH)/pkmn_sots.gba
