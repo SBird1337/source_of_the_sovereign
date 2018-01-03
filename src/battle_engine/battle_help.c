@@ -143,7 +143,7 @@ u8 battle_item_get_effect(u8 bank, u8 check_negating_effects) {
             custom_battle_elements.ptr->bank_affecting[bank].embargo)
             return ITEM_EFFECT_NOEFFECT;
     }
-    if (battle_participants[bank].held_item == ITEM_ENIGMABERRY) {
+    if (battle_participants[bank].held_item == ITEM_ENIGMABEERE) {
         return battle_enigma_berry[bank].battle_effect_x12;
     } else {
         return item_get_x12(battle_participants[bank].held_item);
