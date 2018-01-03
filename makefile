@@ -18,6 +18,7 @@ PYMAPS	:= $(PYTHON_BIN) ../tools/v_tools/pymap2s.py
 PYSETS	:= $(PYTHON_BIN) ../tools/v_tools/pyset2s.py
 
 export PATH := $(realpath ../tools):$(PATH)
+export GCC_COLORS := error=01;31:warning=01;35:note=01;36:range1=32:range2=34:locus=01:quote=01:fixit-insert=32:fixit-delete=31:diff-filename=01:diff-hunk=32:diff-delete=31:diff-insert=32
 
 PAGB_MAIN := g3headers
 PAGB_INCLUDE := $(PAGB_MAIN)/build/include
@@ -29,7 +30,7 @@ CHARMAP := charmap.txt
 
 DEFINES   := -DBPRE -DSOFTWARE_VERSION=0 -DLAN_DE
 ASFLAGS   := -mthumb
-CFLAGS    := -mthumb -mthumb-interwork -g -mcpu=arm7tdmi -fdiagnostics-show-option -mlong-calls -march=armv4t -Og -std=c11 -Wall -Wextra -Wunreachable-code -I$(PAGB_INCLUDE) -Isrc/include -Igenerated_image -fdiagnostics-color $(DEFINES)
+CFLAGS    := -mthumb -mthumb-interwork -g -mcpu=arm7tdmi -fdiagnostics-show-option -mlong-calls -march=armv4t -Og -std=c11 -Wall -Wextra -Wunreachable-code -I$(PAGB_INCLUDE) -Isrc/include -Igenerated_image -fdiagnostics-color=always $(DEFINES)
 GRITFLAGS := -ftc -fa
 LDFLAGS   := -z muldefs
 BLDPATH   := object
@@ -142,7 +143,7 @@ rom: main.asm $(MAIN_OBJ)
 	@echo "*** SUCCESSFULLY BUILT PROJECT ***"
 	@echo "*** REMOVING INTERMEDIATE FILES ***"
 	
-$(MAIN_OBJ): $(ALL_OBJ) $(ICONS_AR) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR) $()#$(B_ENGINE)
+$(MAIN_OBJ): $(ALL_OBJ) $(ICONS_AR) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR) #$(B_ENGINE)
 	$(MAKE) -f assets.makefile
 	@echo -e "\e[1;32mLinking ELF binary $@\e[0m"
 	@echo "INPUT($^)" > $(TMP_LD)
@@ -155,7 +156,7 @@ $(MAP_PROJ_S): $(MAP_PROJ)
 
 .PHONY: $(B_ENGINE)
 $(B_ENGINE):
-	$(MAKE) -C battle_engine build/linked.o
+	$(MAKE) -C battle_engine build/linked.o PAGB_INCLUDE=../$(PAGB_MAIN)/build
 
 .PHONY: cleansrcdatascript
 cleansrcdatascript:
