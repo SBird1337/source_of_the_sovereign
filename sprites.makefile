@@ -98,39 +98,39 @@ $(GFX_BUILD_DIR)/sprites/normal_pal/%.s: $(ASSET_ROOT)/pkmn_sprites/%.png
 
 
 # Shiny Palette Targets
-$(GFX_BUILD_DIR)/sprites/shiny_pal/%.o: $(GFX_BUILD_DIR)/sprites/shiny_pal/%.s
-	@echo -e "\e[32mAssembling $<\e[0m"
-	$(AS) -o $@ $<
+#$(GFX_BUILD_DIR)/sprites/shiny_pal/%.o: $(GFX_BUILD_DIR)/sprites/shiny_pal/%.s
+#	@echo -e "\e[32mAssembling $<\e[0m"
+#	$(AS) -o $@ $<
 
-$(GFX_BUILD_DIR)/sprites/shiny_pal/%.s: $(ASSET_ROOT)/pkmn_sprites/%.png
-	@echo -e "\e[34mProcessing palette $< (shiny)\e[0m"
-	$(GRIT) $< -fts -fh! -g! -gB 4 -gt -m! -p -pzl -pu16 -pn 16 \
-		-s $(shell echo $(notdir $(basename $<)) | sed "s/shiny_/s_p_/g") \
-		-o $@
+#$(GFX_BUILD_DIR)/sprites/shiny_pal/%.s: $(ASSET_ROOT)/pkmn_sprites/%.png
+#	@echo -e "\e[34mProcessing palette $< (shiny)\e[0m"
+#	$(GRIT) $< -fts -fh! -g! -gB 4 -gt -m! -p -pzl -pu16 -pn 16 \
+#		-s $(shell echo $(notdir $(basename $<)) | sed "s/shiny_/s_p_/g") \
+#		-o $@
 
 
 # Front Sprite Targets
-$(GFX_BUILD_DIR)/sprites/front_sprites/%.o: $(GFX_BUILD_DIR)/sprites/front_sprites/%.s
-	@echo -e "\e[32mAssembling $<\e[0m"
-	$(AS) -o $@ $<
+#$(GFX_BUILD_DIR)/sprites/front_sprites/%.o: $(GFX_BUILD_DIR)/sprites/front_sprites/%.s
+#	@echo -e "\e[32mAssembling $<\e[0m"
+#	$(AS) -o $@ $<
 
-$(GFX_BUILD_DIR)/sprites/front_sprites/%.s: $(ASSET_ROOT)/pkmn_sprites/%.png
-	@echo -e "\e[34mProcessing sprite $< (front)\e[0m"
-	$(GRIT) $< -fts -fh! -g -gB 4 -gt -gzl -al 0 -aw 64 -m! -p! \
-		-s $(shell echo $(notdir $(basename $<)) | sed "s/normal_/front_/g") \
-		-o $@
+#$(GFX_BUILD_DIR)/sprites/front_sprites/%.s: $(ASSET_ROOT)/pkmn_sprites/%.png
+#	@echo -e "\e[34mProcessing sprite $< (front)\e[0m"
+#	$(GRIT) $< -fts -fh! -g -gB 4 -gt -gzl -al 0 -aw 64 -m! -p! \
+#		-s $(shell echo $(notdir $(basename $<)) | sed "s/normal_/front_/g") \
+#		-o $@
 
 
 # Back Sprite Targets
-$(GFX_BUILD_DIR)/sprites/back_sprites/%.o: $(GFX_BUILD_DIR)/sprites/bacj_sprites/%.s
-	@echo -e "\e[32mAssembling $<\e[0m"
-	$(AS) -o $@ $<
+#$(GFX_BUILD_DIR)/sprites/back_sprites/%.o: $(GFX_BUILD_DIR)/sprites/bacj_sprites/%.s
+#	@echo -e "\e[32mAssembling $<\e[0m"
+#	$(AS) -o $@ $<
 
-$(GFX_BUILD_DIR)/sprites/back_sprites/%.s: $(ASSET_ROOT)/pkmn_sprites/%.png
-	@echo -e "\e[34mProcessing sprite $< (back)\e[0m"
-	$(GRIT) $< -fts -fh! -g -gB 4 -gt -gzl -al 64 -aw 64 -m! -p! \
-		-s $(shell echo $(notdir $(basename $<)) | sed "s/normal_/back_/g") \
-		-o $@
+#$(GFX_BUILD_DIR)/sprites/back_sprites/%.s: $(ASSET_ROOT)/pkmn_sprites/%.png
+#	@echo -e "\e[34mProcessing sprite $< (back)\e[0m"
+#	$(GRIT) $< -fts -fh! -g -gB 4 -gt -gzl -al 64 -aw 64 -m! -p! \
+#		-s $(shell echo $(notdir $(basename $<)) | sed "s/normal_/back_/g") \
+#		-o $@
 
 
 # Misc hardcoded targets
