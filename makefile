@@ -143,7 +143,7 @@ rom: main.asm $(MAIN_OBJ)
 	@echo "*** SUCCESSFULLY BUILT PROJECT ***"
 	@echo "*** REMOVING INTERMEDIATE FILES ***"
 	
-$(MAIN_OBJ): $(ALL_OBJ) $(ICONS_AR) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR) #$(B_ENGINE)
+$(MAIN_OBJ): $(ALL_OBJ) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR) #$(B_ENGINE)
 	$(MAKE) -f assets.makefile
 	@echo -e "\e[1;32mLinking ELF binary $@\e[0m"
 	@echo "INPUT($^)" > $(TMP_LD)
