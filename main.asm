@@ -61,6 +61,7 @@
 .include "patches/text_system.asm"
 
 .include "patches/game_engine/quick_hacks.asm"
+.include "patches/game_engine/localization.asm"
 
 //.include "battle_engine/patches/battle_hooks.s"
 
