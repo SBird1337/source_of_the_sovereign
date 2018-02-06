@@ -148,6 +148,23 @@ trainerbattle 0x8 \doublegymbattle_id 0x0 \doublegymbattle_before \doublegymbatt
 trainerbattle 0x9 \winlosebattle_id 0x3 \winlosebattle_win \winlosebattle_lose
 .endm
 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@                                                                                               @@@
+@@@   special version of the trainerbattle command to be caught by the custom handler             @@@
+@@@   if the player is spotted and spotscript_flag is set, spotscript_ptr_true is executed        @@@
+@@@   if the player is spotted and spotscript_flag is not set, spotscript_ptr_false is executed   @@@
+@@@   if the player talks to an npc who has this as its first command, it is ignored              @@@
+@@@   THIS COMMAND WORKS IF AND ONLY IF THE TRAINER BIT IS SET ON THE NPC TEMPLATE                @@@
+@@@                                                                                               @@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.macro spotscript spotscript_flag:req spotscript_ptr_true:req spotscript_ptr_false:req
+.byte 0x5C, 0xFF
+.hword \spotscript_flag
+.hword 0xFFFF
+.word \spotscript_ptr_true
+.word \spotscript_ptr_false
+.endm
+
 .macro msgbox msgbox_textpointer:req msgbox_callstd:req
 loadpointer 0x0 \msgbox_textpointer
 callstd \msgbox_callstd

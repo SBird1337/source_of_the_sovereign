@@ -31,12 +31,8 @@
 /* === INCLUDE === */
 
 #include <agb_debug.h>
-#include <callback.h>
 #include <config/core.h>
-#include <debug.h>
-#include <game_engine.h>
-#include <types.h>
-
+#include <pokeagb/pokeagb.h>
 
 /* === ENGINE EXTERNS === */
 extern void battle_init();
@@ -101,7 +97,7 @@ u32 load_word(void *ptr) {
  * @return flag +1 for medium, flag +2 for hard
  */
 u16 tb_modify_flag_id(u16 flag) {
-    u16 difficulty = var_get(0x5052);
+    u16 difficulty = var_load(0x5052);
     u16 new_flag = flag;
     switch (difficulty) {
     case 0:
@@ -186,7 +182,7 @@ void *tb_configure_by_script(void *ptr_script) {
         trainerbattle_message_intro = NULL;
 
         trainerbattle_message_defeat = tb_modify_text((char *)load_word(ptr_script), 0);
-        ptr_script+= 4;
+        ptr_script += 4;
 
         trainerbattle_message_2 = NULL;
         trainerbattle_message_need_2_poke = NULL;
@@ -280,6 +276,11 @@ void *tb_configure_by_script(void *ptr_script) {
         battle_80801F0_something();
 
         return (void *)(0x081A4EC1); /* some script to execute */
+
+    case 0xFF:
+        /* this is a registered on-spot script */
+        /* since this is a trainerbattle configuration we will skip the TB command. */
+        return ptr_script + 13;
     default:
         trainerbattle_battle_type = load_byte(ptr_script);
         ptr_script++;
@@ -306,4 +307,25 @@ void *tb_configure_by_script(void *ptr_script) {
     /* should never be reached */
     // assert(0);
     // return NULL;
+}
+
+void tb_on_spot(u8 npc_id, void *ptr_script) {
+    scripting_npc = npc_id;
+    var_800F = npc_states[npc_id].local_id;
+    u8 tb_battle_type = load_byte(ptr_script + 1);
+
+    if (tb_battle_type != 0xFF) {
+        tb_configure_by_script(ptr_script + 1);
+        script_env_init_script((void *)0x081A4EB4);
+        script_env_enable();
+    } else {
+        u16 flag = load_hword(ptr_script + 2);
+        void *scr_true = (void *)load_word(ptr_script + 6);
+        void *scr_false = (void *)load_word(ptr_script + 10);
+        if (flag_check(flag))
+            script_env_init_script(scr_true);
+        else
+            script_env_init_script(scr_false);
+        script_env_enable();
+    }
 }

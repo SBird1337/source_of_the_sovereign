@@ -3,4 +3,8 @@ ldr r1, =trainer_check_flag_on_spot+1
 bx r1
 .pool
 
+.org 0x08080334
+ldr r2, =tb_on_spot+1
+bx r2
+.pool
 
