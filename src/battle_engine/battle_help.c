@@ -33,12 +33,12 @@
 #include <battle_custom_structs.h>
 #include <battle_help.h>
 #include <battle_locations.h>
-#include <game_engine.h>
 #include <constants/abilities.h>
-#include <pkmn_attributes.h> /*TODO: POKEAGB */
-#include <pkmn_item_effects.h>
 #include <constants/items.h>
 #include <constants/ptypes.h>
+#include <game_engine.h>
+#include <pkmn_attributes.h> /*TODO: POKEAGB */
+#include <pkmn_item_effects.h>
 
 /* === STATICS === */
 

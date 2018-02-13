@@ -8,3 +8,7 @@ ldr r2, =tb_on_spot+1
 bx r2
 .pool
 
+.org 0x080BC3A0
+ldr r1, =battle_intro_launch+1
+bx r1
+.pool

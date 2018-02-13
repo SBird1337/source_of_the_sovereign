@@ -29,8 +29,7 @@
 
 /* === INCLUDE === */
 
-#include <battle_structs.h>
-#include <constants/ptypes.h>
+#include <pokeagb/pokeagb.h>
 
 /* === PROTOTYPES === */
 
@@ -41,11 +40,11 @@ void battle_end_of_turn();
 
 /* === IMPLEMENTATIONS === */
 void battle_end_of_turn() {
-    for (int i = 0; i < 4; ++i) {
-        if (battle_participants[i].type1 == TYPE_EGG)
-            battle_participants[i].type1 = TYPE_FLYING;
-        if (battle_participants[i].type2 == TYPE_EGG)
-            battle_participants[i].type2 = TYPE_FLYING;
+    for (u32 i = 0; i < 4; ++i) {
+        if (battle_data[i].type1 == TYPE_NONE)
+            battle_data[i].type1 = TYPE_FLYING;
+        if (battle_data[i].type2 == TYPE_NONE)
+            battle_data[i].type2 = TYPE_FLYING;
     }
     return;
 }

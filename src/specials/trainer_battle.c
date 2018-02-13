@@ -60,7 +60,7 @@ char *str_invalid_text_ref;
  * @param ptr pointer to load byte from
  * @return byte loaded
  */
-u8 load_byte(void *ptr) {
+inline u8 load_byte(void *ptr) {
     u8 *to_load = (u8 *)ptr;
     return (u8)(*to_load);
 }

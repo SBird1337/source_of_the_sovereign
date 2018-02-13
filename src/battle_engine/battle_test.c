@@ -27,14 +27,14 @@
  * @brief Unit tests for battles, very temporary and undocumented
  */
 
-#include <types.h>
-#include <battle_test.h>
-#include <debug.h>
-#include <battle_initiative.h>
-#include <constants/abilities.h>
-#include <battle_structs.h>
 #include <battle_common.h>
 #include <battle_custom_structs.h>
+#include <battle_initiative.h>
+#include <battle_structs.h>
+#include <battle_test.h>
+#include <constants/abilities.h>
+#include <debug.h>
+#include <types.h>
 
 #define TEST_AMOUNT 10000
 
@@ -69,7 +69,7 @@ void test_speed() {
     debug_printf("bank_one.spd: %d\n", battle_participants[0].spd);
     debug_printf("bank_two.spd: %d\n", battle_participants[1].spd);
 
-    //trick room
+    // trick room
     custom_battle_elements.ptr->field_affecting.trick_room = 1;
     debug_print("activating trick room...\n");
     debug_print("testing (await ONE):");
@@ -104,7 +104,7 @@ void test_speed() {
     }
     custom_battle_elements.ptr->field_affecting.trick_room = 0;
     debug_print("stall test (-tr): ");
-    
+
     result = get_first_to_strike(0, 1, 0);
     if (result == ONE)
         debug_print("\xFE\x1 pass\n\xFE\x0");
@@ -238,7 +238,6 @@ void test_speed() {
     battle_weather.flags.sun = 0;
     battle_weather.flags.sandstorm = 0;
 
-
     debug_print("quick feet: ");
     battle_participants[0].ability_id = ABILITY_QUICK_FEET;
     battle_participants[1].ability_id = ABILITY_QUICK_FEET;
@@ -271,7 +270,7 @@ void test_speed() {
     battle_participants[1].ability_id = 0;
     debug_wait_for_btn(8);
     debug_clean();
-    //stress
+    // stress
     battle_participants[0].spd = 20;
     battle_participants[1].spd = 20;
     debug_printf("bank_one.spd: %d\n", battle_participants[0].spd);
@@ -296,7 +295,6 @@ void test_speed() {
 
     debug_wait_for_btn(1);
     debug_clean();
-
 
     if (pass)
         debug_set_bg(0x3E0);

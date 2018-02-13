@@ -30,23 +30,23 @@
 /* === INCLUDE === */
 #include <battle_abilities.h>
 #include <battle_custom_structs.h>
-#include <battle_structs.h>
+//#include <battle_structs.h>
+#include <pokeagb/pokeagb.h>
 
 /* === IMPLEMENTATIONS === */
-u8 ability_has_effect(u8 bank, u8 mold_breaker, u8 gastro)
-{
-    if(gastro && custom_battle_elements.ptr->bank_affecting[bank].gastro_acided)
+u8 ability_has_effect(u8 bank, u8 mold_breaker, u8 gastro) {
+    (void)mold_breaker;
+
+    if (gastro && custom_battle_elements.ptr->bank_affecting[bank].gastro_acided)
         return false;
     return true;
-    //TODO: MOLD BREAKER
+    // TODO: MOLD BREAKER
 }
 
-u8 ability_weather_effects()
-{
-    //TODO: AIR LOCK AND CLOUD NINE
+u8 ability_weather_effects() {
+    // TODO: AIR LOCK AND CLOUD NINE
     return true;
 }
-u8 ability_has_ability(u8 bank, u8 ability)
-{
-    return (ability_has_effect(bank,0,1) && battle_participants[bank].ability_id == ability);
+u8 ability_has_ability(u8 bank, u8 ability) {
+    return (ability_has_effect(bank, 0, 1) && battle_data[bank].ability_id == ability);
 }
