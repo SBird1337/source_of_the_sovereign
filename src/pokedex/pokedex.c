@@ -1,10 +1,14 @@
 #include <agb_debug.h>
+#include <constants/pkmns.h>
 #include <pokeagb/pokeagb.h>
 #include <pokedex/pdexBall.h>
 #include <pokedex/pdexBg.h>
 #include <pokedex/pdexSelectHalf.h>
 
+#define PDEX_LAST_SHOWN PKMN_AMIGENTO
+
 #define PDEX_FADEIN_SPD 1
+
 #define TB_TITLE 0
 #define TB_PKMN 1
 #define TB_SEEN 2
@@ -45,8 +49,7 @@ extern const pchar pdex_str_seen[];
 extern const pchar pdex_str_caught[];
 extern const pchar pdex_str_empty[];
 
-static const u8 pdex_y_offset[] = {3,          16 + 2,     2 * 16 + 1, 3 * 16,    4 * 16 - 1,
-                                   5 * 16 - 2, 6 * 16 - 3, 7 * 16 - 4, 8 * 16 - 5};
+static const u8 pdex_y_offset[] = {19, 34, 49, 64, 79, 94, 109, 124, 139};
 
 const u16 pdex_text_pal[] = {rgb5(255, 0, 255), rgb5(255, 255, 255), rgb5(0, 0, 0),     rgb5(255, 0, 255),
                              rgb5(255, 0, 255), rgb5(255, 0, 255),   rgb5(255, 0, 255), rgb5(255, 0, 255),
@@ -61,7 +64,7 @@ struct TextboxTemplate pdex_boxes[] = {
     {.bg_id = 0, .x = 3, .y = 14, .width = 9, .height = 3, .pal_id = 15, .charbase = 41},
     {.bg_id = 0, .x = 3, .y = 17, .width = 9, .height = 2, .pal_id = 15, .charbase = 59},
 
-    {.bg_id = 0, .x = 16, .y = 2, .width = 11, .height = 17, .pal_id = 15, .charbase = 77},
+    {.bg_id = 1, .x = 16, .y = 0, .width = 11, .height = 32, .pal_id = 15, .charbase = 77},
 
     {.bg_id = 0xFF},
 };
@@ -109,24 +112,37 @@ const struct BgConfig pdex_bg_config[4] = {
     },
 };
 
-void pdex_main_box_species_fill(u8 n, u16 species, bool seen, bool caught) {
-    rboxid_fill_rectangle(TB_MAIN, 0, 0, pdex_y_offset[n], 11 * 8, 12);
+u16 pdex_get_y_offset(s8 n) {
+    s8 modOffset = n + pokedex_context->hardware_scroll_amount;
+    if (modOffset < -1)
+        modOffset += 8;
+    if (modOffset > 15)
+        modOffset -= 8;
+    return 19 + (15 * modOffset);
+}
+
+void pdex_main_box_species_fill(s8 n, u16 species, bool seen, bool caught) {
     const pchar *stringToPrint = (seen || caught) ? &pokemon_names[species][0] : &pdex_str_empty[0];
     const pchar stringWhitespace[] = {0x0, 0xFF};
-    fmt_int_10(string_buffer, species, 2, 3);
+    fmt_int_10(string_buffer, pokedex_context->cursor_position_top + n, 2, 3);
     pstrcat(string_buffer, &stringWhitespace[0]);
     pstrcat(string_buffer, stringToPrint);
-    rboxid_print(TB_MAIN, FONT_DEX_STD, 4, pdex_y_offset[n], &pdex_text_color, 0, string_buffer);
+    rboxid_print(TB_MAIN, FONT_DEX_STD, 4, pdex_get_y_offset(n), &pdex_text_color, 0, string_buffer);
     // show the pokéball if necessary
 }
 
-void pdex_init_dex_boxes(void) {
-    /* fill with dummy data */
+void pdex_update_page_full() {
     rboxid_clear_pixels(TB_MAIN, 0);
-    for (u8 i = 0; i < 9; ++i) {
-        pdex_main_box_species_fill(i, i + 1, false, false);
+    for (s8 i = pokedex_context->cursor_position_top - 1; i < pokedex_context->cursor_position_top + 9 + 7; ++i) {
+        pdex_main_box_species_fill(i - pokedex_context->cursor_position_top, pokedex_context->lookup[i].species,
+                                   pokedex_context->lookup[i].seen, pokedex_context->lookup[i].caught);
     }
-    // rboxid_fill_rectangle(TB_MAIN, 1, 0,0, 10*8, 18*8);
+    for (u8 i = 0; i < 9; ++i) {
+        if (pokedex_context->lookup[i + pokedex_context->cursor_position_top].caught)
+            OBJID_SHOW(pokedex_context->ball_oams[i]);
+        else
+            OBJID_HIDE(pokedex_context->ball_oams[i]);
+    }
     rboxid_update_tilemap_and_tileset(TB_MAIN);
 }
 
@@ -168,27 +184,30 @@ void pdex_pokemon_load(u16 species) {
     u32 twidth = font_get_width_of_string(FONT_DEX_STD, &pokemon_names[species][0], 0x0000);
     rboxid_print(TB_PKMN, FONT_DEX_STD, TB_STD_CENTER(twidth), 3, &pdex_text_color, 0, &pokemon_names[species][0]);
     if (pokedex_context->pokemon_oam != -1) {
-        obj_delete_and_free(&objects[pokedex_context->pokemon_oam]);
+        lz77UnCompVram(pokemon_graphics_front[species].data,
+                       ((void *)(objects[pokedex_context->pokemon_oam].final_oam.tile_num * 32) + ADDR_VRAM + 0x10000));
+        gpu_pal_apply_compressed(pokemon_palette_normal[species].data,
+                                 16 * (objects[pokedex_context->pokemon_oam].final_oam.palette_num + 16), 32);
+    } else {
+        struct SpriteTiles pkmnTiles = {pokemon_graphics_front[species].data, 2048, DEX_PKMN_TAG};
+        struct SpritePalette pkmnPal = {pokemon_palette_normal[species].data, DEX_PKMN_TAG};
+        const struct Template pkmnTemplate = {
+            .tiles_tag = DEX_PKMN_TAG,
+            .pal_tag = DEX_PKMN_TAG,
+            .oam = &pdex_oam_pkmn,
+            .animation = &anim_image_empty,
+            .graphics = &pkmnTiles,
+            .rotscale = &rotscale_empty,
+            .callback = oac_nullsub,
+        };
+        gpu_tile_obj_decompress_alloc_tag_and_upload(&pkmnTiles);
+
+        gpu_pal_decompress_alloc_tag_and_upload(&pkmnPal);
+        pokedex_context->pokemon_oam = (s8)template_instanciate_forward_search(&pkmnTemplate, 10, 10, 0);
+
+        objects[pokedex_context->pokemon_oam].pos1.x = 55;
+        objects[pokedex_context->pokemon_oam].pos1.y = 80;
     }
-    struct SpriteTiles pkmnTiles = {pokemon_graphics_front[species].data, 2048, DEX_PKMN_TAG};
-    struct SpritePalette pkmnPal = {pokemon_palette_normal[species].data, DEX_PKMN_TAG};
-    const struct Template pkmnTemplate = {
-        .tiles_tag = DEX_PKMN_TAG,
-        .pal_tag = DEX_PKMN_TAG,
-        .oam = &pdex_oam_pkmn,
-        .animation = &anim_image_empty,
-        .graphics = &pkmnTiles,
-        .rotscale = &rotscale_empty,
-        .callback = oac_nullsub,
-    };
-    gpu_tile_obj_decompress_alloc_tag_and_upload(&pkmnTiles);
-
-    gpu_pal_decompress_alloc_tag_and_upload(&pkmnPal);
-    pokedex_context->pokemon_oam = (s8)template_instanciate_forward_search(&pkmnTemplate, 10, 10, 0);
-
-    objects[pokedex_context->pokemon_oam].pos1.x = 55;
-    objects[pokedex_context->pokemon_oam].pos1.y = 80;
-
     rboxid_update_tilemap_and_tileset(TB_PKMN);
 }
 
@@ -217,15 +236,14 @@ void pdex_pokeballs_init(void) {
     gpu_pal_obj_alloc_tag_and_apply(&pdex_ball_pal);
     for (u8 i = 0; i < 9; ++i) {
         pokedex_context->ball_oams[i] =
-            template_instanciate_forward_search(&pdex_ball_template, 124, 24 + pdex_y_offset[i], 0);
-        OBJID_HIDE(pokedex_context->ball_oams[i]);
+            template_instanciate_forward_search(&pdex_ball_template, 124, 8 + pdex_y_offset[i], 1);
     }
 }
 
 void pdex_oac_cursor_follow(struct Object *obj) { obj->pos1.y = objects[pokedex_context->cursor_main_oam].pos1.y; }
 
 void pdex_oac_cursor_main(struct Object *obj) {
-    obj->pos1.y = 29 + pdex_y_offset[pokedex_context->cursor_position_internal];
+    obj->pos1.y = 13 + pdex_y_offset[pokedex_context->cursor_position_internal];
 }
 
 struct SpriteTiles pdex_cursor_tiles = {pdexSelectHalfTiles, 1024, DEX_CURSOR_TAG};
@@ -267,6 +285,82 @@ void pdex_cursor_init(void) {
     objects[pokedex_context->cursor_follow_oam].final_oam.h_flip = true;
 }
 
+void pdex_data_setup(void) {
+    /* fill the LUT */
+    /* TODO: get data from various pokedex lists */
+    bool first = false;
+    for (u32 i = 0; i <= PDEX_LAST_SHOWN; ++i) {
+        u16 species = pokedex_index_to_species(i);
+        if (species > 0) {
+            pokedex_context->lookup[i].species = species;
+            pokedex_context->lookup[i].seen = dex_flag_pokedex_index(i, DEX_FLAG_CHECK_SEEN);
+            pokedex_context->lookup[i].caught = dex_flag_pokedex_index(i, DEX_FLAG_CHECK_CAUGHT);
+            if (!first && (pokedex_context->lookup[i].seen)) {
+                pokedex_context->first_seen = i;
+                pokedex_context->cursor_position_top = i;
+                first = true;
+            }
+        }
+    }
+}
+
+void pdex_hardware_scroll(bool up) {
+    /* somewhat hacky wraparound scrolling, works though */
+    if (up) {
+        if (pokedex_context->hardware_scroll_amount > -16) {
+            if (pokedex_context->hardware_scroll_amount != -8) {
+                bgid_mod_y_offset(1, -3840, 1);
+
+            } else {
+                bgid_mod_y_offset(1, -4096, 1);
+            }
+            pokedex_context->hardware_scroll_amount--;
+        } else {
+            pokedex_context->hardware_scroll_amount = 0;
+            bgid_mod_y_offset(1, 0, 0);
+        }
+    } else {
+        if (pokedex_context->hardware_scroll_amount < 16) {
+            if (pokedex_context->hardware_scroll_amount != 8) {
+                bgid_mod_y_offset(1, 3840, 1);
+            } else {
+                bgid_mod_y_offset(1, 4096, 1);
+            }
+            pokedex_context->hardware_scroll_amount++;
+        } else {
+            pokedex_context->hardware_scroll_amount = 0;
+            bgid_mod_y_offset(1, 0, 0);
+        }
+    }
+}
+
+void pdex_try_advance(u8 reverse) {
+    bool dirty = false;
+    if (reverse) {
+        if (pokedex_context->cursor_position_internal > 0) {
+            pokedex_context->cursor_position_internal--;
+        } else if ((pokedex_context->cursor_position_top) > (pokedex_context->first_seen)) {
+            pokedex_context->cursor_position_top--;
+            dirty = true;
+        }
+    } else {
+        if (pokedex_context->cursor_position_internal < 8) {
+            pokedex_context->cursor_position_internal++;
+        } else if (pokedex_context->cursor_position_top < (PDEX_LAST_SHOWN - 8)) {
+            pokedex_context->cursor_position_top++;
+            dirty = true;
+        }
+    }
+    if (dirty) {
+        pdex_update_page_full();
+    }
+    u16 pkIndexToLoad = pokedex_context->cursor_position_internal + pokedex_context->cursor_position_top;
+    if (pokedex_context->lookup[pkIndexToLoad].seen || pokedex_context->lookup[pkIndexToLoad].caught)
+        pdex_pokemon_load(pokedex_context->lookup[pkIndexToLoad].species);
+    else
+        pdex_pokemon_load(0);
+}
+
 void pdex_loop(u8 tid) {
     (void)tid;
     switch (pokedex_context->state) {
@@ -280,37 +374,32 @@ void pdex_loop(u8 tid) {
         rboxid_print(TB_TITLE, FONT_DEX_STD, 0, 0, &pdex_text_color, 0, &pdex_str_title[0]);
         rboxid_update_tilemap_and_tileset(TB_TITLE);
 
-        pdex_pokemon_load(0);
-        pdex_load_sc();
-        pdex_init_dex_boxes();
-        pdex_pokeballs_init();
+        pdex_data_setup();
         pdex_cursor_init();
+
+        pdex_pokeballs_init();
+        pdex_pokemon_load(pokedex_context->lookup[pokedex_context->first_seen].species);
+        pdex_load_sc();
+        pdex_update_page_full();
+
         palette_bg_faded_fill_black();
         pokedex_context->state++;
         break;
     case 2:
         gpu_sync_bg_show(0);
-        gpu_sync_bg_hide(1);
+        gpu_sync_bg_show(1);
         gpu_sync_bg_hide(3);
 
         gpu_sync_bg_show(2);
-        if (pokedex_context->delay_count >= 5) {
-            fade_screen(0xFFFFFFFF, PDEX_FADEIN_SPD, 16, 0, 0x0000);
-            pokedex_context->state++;
-            pokedex_context->delay_count = 0;
-        } else {
-            pokedex_context->delay_count++;
-        }
+        fade_screen(0xFFFFFFFF, PDEX_FADEIN_SPD, 16, 0, 0x0000);
+        pokedex_context->state++;
 
         break;
     case 3:
         if ((super.buttons_new & KEY_DOWN)) {
-            if (pokedex_context->cursor_position_internal < 8) {
-                pokedex_context->cursor_position_internal++;
-            }
+            pdex_try_advance(false);
         } else if ((super.buttons_new & KEY_UP)) {
-            if (pokedex_context->cursor_position_internal > 0)
-                pokedex_context->cursor_position_internal--;
+            pdex_try_advance(true);
         }
         break;
     default:
@@ -332,11 +421,13 @@ bool sm_pdex_init(void) {
 void pdex_vram_setup(void) {
     vblank_handler_set(NULL);
     pal_fade_control_and_dead_struct_reset();
+    gpu_tile_bg_drop_all_sets(true);
     obj_and_aux_reset_all();
     gpu_tile_obj_tags_reset();
+    gpu_pal_allocator_reset();
     rboxes_free();
+    malloc_init((void *)0x2000000, 0x1C000);
     tasks_init();
-    gpu_tile_bg_drop_all_sets(true);
 
     bg_vram_setup(0, &pdex_bg_config[0], 4);
 
@@ -356,6 +447,12 @@ void pdex_vram_setup(void) {
     gpu_pal_apply_compressed(pdexBgPal, 0, 32);
     gpu_pal_apply(pdex_text_pal, 15 * 16, 32);
 
+    /*setup window*/
+    lcd_io_set(REG_ID_WIN0H, (128 << 8) | (216));
+    lcd_io_set(REG_ID_WIN0V, ((20 << 8) | (152)));
+    lcd_io_set(REG_ID_WININ, WIN_BG0 | WIN_BG1 | WIN_BG2 | WIN_BG3 | WIN_OBJ);
+    lcd_io_set(REG_ID_WINOUT, WIN_BG0 | WIN_BG2 | WIN_BG3 | WIN_OBJ);
+
     vblank_handler_set(pdex_vblank_handler);
     interrupts_enable(INTERRUPT_VBLANK);
     bgid_mod_x_offset(0, 0, 0);
@@ -369,11 +466,11 @@ void pdex_vram_setup(void) {
 }
 
 void pdex_load(void) {
+
     pdex_vram_setup();
-    pokedex_context = malloc(sizeof(struct PdexCtx));
-    pokedex_context->state = 0;
+    pokedex_context = malloc_and_clear(sizeof(struct PdexCtx));
     pokedex_context->pokemon_oam = -1;
-    pokedex_context->delay_count = 0;
+    pokedex_context->lookup = malloc_and_clear((PDEX_LAST_SHOWN + 1) * sizeof(struct PdexLookup));
     task_add(pdex_loop, 0);
     set_callback2(pdex_cb_handler);
 }
