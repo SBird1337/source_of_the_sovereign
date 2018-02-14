@@ -112,37 +112,50 @@ const struct BgConfig pdex_bg_config[4] = {
     },
 };
 
-u16 pdex_get_y_offset(s8 n) {
+s16 pdex_get_y_offset(s8 n) {
     s8 modOffset = n + pokedex_context->hardware_scroll_amount;
-    if (modOffset < -1)
-        modOffset += 8;
-    if (modOffset > 15)
-        modOffset -= 8;
-    return 19 + (15 * modOffset);
+    s8 wrapOffset = 0;
+    dprintf("mod_offset: %d\n", modOffset);
+    if (modOffset < -1) {
+        modOffset += 17;
+        wrapOffset = 1;
+    }
+
+    if (modOffset > 15) {
+        wrapOffset = -1;
+        modOffset -= 17;
+    }
+    return (19 + (15 * modOffset)) + wrapOffset + (pokedex_context->overdo_amount);
 }
 
 void pdex_main_box_species_fill(s8 n, u16 species, bool seen, bool caught) {
+    s16 y = pdex_get_y_offset(n);
+    dprintf("trying to print box to y: %d\n", y);
+    rboxid_fill_rectangle(TB_MAIN, 0, 0, y, 11 * 8, 15);
     const pchar *stringToPrint = (seen || caught) ? &pokemon_names[species][0] : &pdex_str_empty[0];
     const pchar stringWhitespace[] = {0x0, 0xFF};
     fmt_int_10(string_buffer, pokedex_context->cursor_position_top + n, 2, 3);
     pstrcat(string_buffer, &stringWhitespace[0]);
     pstrcat(string_buffer, stringToPrint);
-    rboxid_print(TB_MAIN, FONT_DEX_STD, 4, pdex_get_y_offset(n), &pdex_text_color, 0, string_buffer);
-    // show the pokéball if necessary
+    rboxid_print(TB_MAIN, FONT_DEX_STD, 4, y, &pdex_text_color, 0, string_buffer);
 }
 
-void pdex_update_page_full() {
-    rboxid_clear_pixels(TB_MAIN, 0);
-    for (s8 i = pokedex_context->cursor_position_top - 1; i < pokedex_context->cursor_position_top + 9 + 7; ++i) {
-        pdex_main_box_species_fill(i - pokedex_context->cursor_position_top, pokedex_context->lookup[i].species,
-                                   pokedex_context->lookup[i].seen, pokedex_context->lookup[i].caught);
-    }
+void pdex_update_balls(void) {
     for (u8 i = 0; i < 9; ++i) {
         if (pokedex_context->lookup[i + pokedex_context->cursor_position_top].caught)
             OBJID_SHOW(pokedex_context->ball_oams[i]);
         else
             OBJID_HIDE(pokedex_context->ball_oams[i]);
     }
+}
+
+void pdex_update_page_full() {
+    rboxid_clear_pixels(TB_MAIN, 0);
+    for (s8 i = pokedex_context->cursor_position_top; i < pokedex_context->cursor_position_top + 9; ++i) {
+        pdex_main_box_species_fill(i - pokedex_context->cursor_position_top, pokedex_context->lookup[i].species,
+                                   pokedex_context->lookup[i].seen, pokedex_context->lookup[i].caught);
+    }
+    pdex_update_balls();
     rboxid_update_tilemap_and_tileset(TB_MAIN);
 }
 
@@ -306,59 +319,69 @@ void pdex_data_setup(void) {
 
 void pdex_hardware_scroll(bool up) {
     /* somewhat hacky wraparound scrolling, works though */
+    /* TODO: Fix the one pixel off */
     if (up) {
         if (pokedex_context->hardware_scroll_amount > -16) {
-            if (pokedex_context->hardware_scroll_amount != -8) {
-                bgid_mod_y_offset(1, -3840, 1);
-
-            } else {
-                bgid_mod_y_offset(1, -4096, 1);
-            }
+            bgid_mod_y_offset(1, -(15 << 8), 1);
             pokedex_context->hardware_scroll_amount--;
         } else {
             pokedex_context->hardware_scroll_amount = 0;
+            // pokedex_context->overdo_amount++;
             bgid_mod_y_offset(1, 0, 0);
+            bgid_mod_y_offset(1, (256 * pokedex_context->overdo_amount), 1);
         }
     } else {
+
         if (pokedex_context->hardware_scroll_amount < 16) {
-            if (pokedex_context->hardware_scroll_amount != 8) {
-                bgid_mod_y_offset(1, 3840, 1);
-            } else {
-                bgid_mod_y_offset(1, 4096, 1);
-            }
+            bgid_mod_y_offset(1, 15 << 8, 1);
             pokedex_context->hardware_scroll_amount++;
         } else {
             pokedex_context->hardware_scroll_amount = 0;
+            // pokedex_context->overdo_amount--;
             bgid_mod_y_offset(1, 0, 0);
+            bgid_mod_y_offset(1, (256 * pokedex_context->overdo_amount), 1);
         }
     }
 }
 
+void pdex_fill_previous_slot(void) {
+    u16 pIndex = pokedex_context->cursor_position_top - 1;
+    pdex_main_box_species_fill(-1, pokedex_context->lookup[pIndex].species, pokedex_context->lookup[pIndex].seen,
+                               pokedex_context->lookup[pIndex].caught);
+}
+
+void pdex_fill_next_slot(void) {
+    u16 pIndex = pokedex_context->cursor_position_top + 9;
+    pdex_main_box_species_fill(9, pokedex_context->lookup[pIndex].species, pokedex_context->lookup[pIndex].seen,
+                               pokedex_context->lookup[pIndex].caught);
+}
+
 void pdex_try_advance(u8 reverse) {
-    bool dirty = false;
     if (reverse) {
         if (pokedex_context->cursor_position_internal > 0) {
             pokedex_context->cursor_position_internal--;
         } else if ((pokedex_context->cursor_position_top) > (pokedex_context->first_seen)) {
+            pdex_fill_previous_slot();
             pokedex_context->cursor_position_top--;
-            dirty = true;
+
+            pdex_hardware_scroll(true);
         }
     } else {
         if (pokedex_context->cursor_position_internal < 8) {
             pokedex_context->cursor_position_internal++;
         } else if (pokedex_context->cursor_position_top < (PDEX_LAST_SHOWN - 8)) {
+            pdex_fill_next_slot();
             pokedex_context->cursor_position_top++;
-            dirty = true;
+            pdex_hardware_scroll(false);
         }
     }
-    if (dirty) {
-        pdex_update_page_full();
-    }
+
     u16 pkIndexToLoad = pokedex_context->cursor_position_internal + pokedex_context->cursor_position_top;
     if (pokedex_context->lookup[pkIndexToLoad].seen || pokedex_context->lookup[pkIndexToLoad].caught)
         pdex_pokemon_load(pokedex_context->lookup[pkIndexToLoad].species);
     else
         pdex_pokemon_load(0);
+    pdex_update_balls();
 }
 
 void pdex_loop(u8 tid) {
@@ -396,15 +419,29 @@ void pdex_loop(u8 tid) {
 
         break;
     case 3:
-        if ((super.buttons_new & KEY_DOWN)) {
+    if ((super.buttons_held & KEY_DOWN)) {
+        pokedex_context->held_frames++;
+        if (pokedex_context->held_frames == 10) {
             pdex_try_advance(false);
-        } else if ((super.buttons_new & KEY_UP)) {
-            pdex_try_advance(true);
+            pokedex_context->held_frames = 0;
         }
-        break;
-    default:
-        break;
+    } else if ((super.buttons_held & KEY_UP)) {
+        pokedex_context->held_frames++;
+        if (pokedex_context->held_frames == 10) {
+            pdex_try_advance(true);
+            pokedex_context->held_frames = 0;
+        }
+    } else if ((super.buttons_new & KEY_DOWN)) {
+        pokedex_context->held_frames = 0;
+        pdex_try_advance(false);
+    } else if ((super.buttons_new & KEY_UP)) {
+        pokedex_context->held_frames = 0;
+        pdex_try_advance(true);
     }
+    break;
+default:
+    break;
+}
 }
 
 bool sm_pdex_init(void) {
