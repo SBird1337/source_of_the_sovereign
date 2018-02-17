@@ -33,10 +33,20 @@ u16 region_icons[] = {PKMN_BISASAM,   PKMN_SCHIGGY,  PKMN_GLUMANDA, PKMN_ENDIVIE
                      PKMN_SERPIFEU,  PKMN_OTTARO,  PKMN_FLOINK,   PKMN_IGAMARO, PKMN_FROXY,     PKMN_FYNX,
                      PKMN_BAUZ,      PKMN_ROBBALL, PKMN_FLAMIAU};
 
-u16 region_icons_x_offset[] = {37, 49, 58, 110, 122, 133, 183, 193, 206, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120};
+u16 region_icons_x_offset[] = {37, 49, 58, 110, 122, 133, 182, 193, 206,
+                               22, 33, 43,
+                               80, 93, 103,
+                               139, 150, 161,
+                               196, 207, 219};
 
-u16 region_icons_y_offset[] = {39,  17,  39, 39,  19,  39, 39,  19,  39, 100, 90,
-                              100, 100, 90, 100, 100, 90, 100, 100, 90, 100};
+u16 region_icons_y_offset[] = {39,  17,  39,
+                               39,  19,  39,
+                               39,  19,  39,
+                               117, 94, 116,
+                               116, 95, 115,
+                               116, 95, 116,
+                               120, 99, 120
+};
 
 bool sm_pdex_init(void) {
     if (pal_fade_control.active)
