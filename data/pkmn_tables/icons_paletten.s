@@ -2,8 +2,8 @@
 .text
 .thumb
 
-.global icon_palette_table
-icon_palette_table:
+.global pokeicon_pal_indices
+pokeicon_pal_indices:
 
 .byte 0
 .byte 1

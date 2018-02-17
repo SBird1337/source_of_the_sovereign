@@ -2,8 +2,8 @@
 .thumb
 .text
 
-.global icon_table
-icon_table:
+.global pokeicon_table
+pokeicon_table:
 
 .word icon_0000Tiles
 .word icon_0001Tiles

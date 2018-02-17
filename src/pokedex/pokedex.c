@@ -7,9 +7,9 @@
 #include <pokedex/pdexScrollBar.h>
 #include <pokedex/pdexSelectHalf.h>
 
-#define PDEX_LAST_SHOWN PKMN_AMIGENTO
+#include "pokedex_common.h"
 
-#define PDEX_FADEIN_SPD 1
+#define PDEX_LAST_SHOWN PKMN_AMIGENTO
 
 #define TB_TITLE 0
 #define TB_PKMN 1
@@ -17,35 +17,17 @@
 #define TB_CAUGHT 3
 #define TB_MAIN 4
 
-#define FONT_DEX_STD 1
+
 #define TB_STD_LEN 10
 #define TB_STD_LEN_PX (TB_STD_LEN * 8)
 #define TB_BOT_LEN 9
 #define TB_BOT_LEN_PX (TB_BOT_LEN * 8)
-#define TB_STD_CENTER(t) (((TB_STD_LEN_PX - t) >> 1) + 2)
-#define TB_STD_RIGHT(t) ((TB_BOT_LEN_PX - t))
-
-#define OBJID_HIDE(objid) objects[objid].final_oam.affine_mode = 2
-#define OBJID_SHOW(objid) objects[objid].final_oam.affine_mode = 0
 
 #define TB_SEEN_Y (6)
 #define TB_CAUGHT_Y 3
 
 #define DEX_SCROLL_MIN 23
 #define DEX_SCROLL_MAX 146
-
-#define DEX_PKMN_TAG 0x1300
-#define DEX_BALL_TAG 0x1301
-#define DEX_CURSOR_TAG 0x1302
-#define DEX_ARROW_TAG 0x1303
-#define DEX_ARROW_TAG_EPAL 0x1304
-#define DEX_SCROLL_TAG 0x1305
-
-#define MAX3_COUNT_DIGITS(n) (n >= 100 ? 3 : (n >= 10 ? 2 : 1))
-
-#define CPUFSCPY 0
-#define CPUFSSET 1
-#define CPUModeFS(size, mode) ((size >> 2) | (mode << 24))
 
 void pdex_load(void);
 void pdex_vblank_handler(void);
@@ -59,13 +41,6 @@ extern const pchar pdex_str_empty[];
 
 static const u8 pdex_y_offset[] = {19, 35, 51, 67, 83, 99, 115, 131};
 
-const u16 pdex_text_pal[] = {rgb5(255, 0, 255), rgb5(255, 255, 255), rgb5(0, 0, 0),     rgb5(255, 0, 255),
-                             rgb5(255, 0, 255), rgb5(255, 0, 255),   rgb5(255, 0, 255), rgb5(255, 0, 255),
-                             rgb5(255, 0, 255), rgb5(255, 0, 255),   rgb5(255, 0, 255), rgb5(255, 0, 255),
-                             rgb5(255, 0, 255), rgb5(255, 0, 255),   rgb5(255, 0, 255), rgb5(255, 0, 255)};
-
-struct TextColor pdex_text_color = {0, 1, 2};
-
 struct TextboxTemplate pdex_boxes[] = {
     {.bg_id = 0, .x = 11, .y = 0, .width = 10, .height = 2, .pal_id = 15, .charbase = 1},
     {.bg_id = 0, .x = 2, .y = 2, .width = 10, .height = 2, .pal_id = 15, .charbase = 21},
@@ -77,48 +52,7 @@ struct TextboxTemplate pdex_boxes[] = {
     {.bg_id = 0xFF},
 };
 
-const struct BgConfig pdex_bg_config[4] = {
-    {
-        .padding = 0,
-        .b_padding = 0,
-        .priority = 0,
-        .palette = 0,
-        .size = 0,
-        .map_base = 29,
-        .character_base = 0,
-        .bgid = 0,
-    },
-    {
-        .padding = 0,
-        .b_padding = 0,
-        .priority = 1,
-        .palette = 0,
-        .size = 0,
-        .map_base = 28,
-        .character_base = 0,
-        .bgid = 1,
-    },
-    {
-        .padding = 0,
-        .b_padding = 0,
-        .priority = 2,
-        .palette = 0,
-        .size = 0,
-        .map_base = 30,
-        .character_base = 3,
-        .bgid = 2,
-    },
-    {
-        .padding = 0,
-        .b_padding = 0,
-        .priority = 3,
-        .palette = 0,
-        .size = 1,
-        .map_base = 31,
-        .character_base = 3,
-        .bgid = 3,
-    },
-};
+
 
 s16 pdex_get_y_offset(s8 n) {
     s8 modOffset = n + pokedex_context->hardware_scroll_amount;
@@ -304,7 +238,8 @@ void pdex_cursor_init(void) {
 }
 
 void pdex_oac_scroll_bar(struct Object *obj) {
-    obj->pos1.y = 23 + (((pokedex_context->cursor_position_top + pokedex_context->cursor_position_internal) * 123) / PDEX_LAST_SHOWN);
+    obj->pos1.y = 23 + (((pokedex_context->cursor_position_top + pokedex_context->cursor_position_internal) * 123) /
+                        PDEX_LAST_SHOWN);
 }
 
 void pdex_oac_arrow(struct Object *obj) {
@@ -312,18 +247,14 @@ void pdex_oac_arrow(struct Object *obj) {
         // this is the down facing arrow
         if (pokedex_context->cursor_position_top + 8 > PDEX_LAST_SHOWN) {
             obj->final_oam.palette_num = obj->priv[2];
-        }
-        else
-        {
+        } else {
             obj->final_oam.palette_num = obj->priv[1];
         }
     } else {
         // this is the up facing arrow
         if (pokedex_context->cursor_position_top == pokedex_context->first_seen) {
             obj->final_oam.palette_num = obj->priv[2];
-        }
-        else
-        {
+        } else {
             obj->final_oam.palette_num = obj->priv[1];
         }
     }
@@ -392,6 +323,7 @@ void pdex_load_scroll_ui(void) {
 void pdex_data_setup(void) {
     /* fill the LUT */
     /* TODO: get data from various pokedex lists */
+    pokedex_context->lookup = malloc_and_clear((PDEX_LAST_SHOWN + 1) * sizeof(struct PdexLookup));
     bool first = false;
     for (u32 i = 0; i <= PDEX_LAST_SHOWN; ++i) {
         u16 species = pokedex_index_to_species(i);
@@ -512,12 +444,10 @@ void pdex_loop(u8 tid) {
         if (super.buttons_new & KEY_B) {
             pokedex_context->state = 10;
         }
-        if ((super.buttons_new & KEY_DOWN) || (super.buttons_held & KEY_DOWN))
-        {
+        if ((super.buttons_new & KEY_DOWN) || (super.buttons_held & KEY_DOWN)) {
             pdex_try_advance(false);
         }
-        if((super.buttons_new & KEY_UP) || (super.buttons_held & KEY_UP))
-        {
+        if ((super.buttons_new & KEY_UP) || (super.buttons_held & KEY_UP)) {
             pdex_try_advance(true);
         }
         break;
@@ -540,43 +470,12 @@ void pdex_loop(u8 tid) {
     }
 }
 
-bool sm_pdex_init(void) {
-    if (pal_fade_control.active)
-        return false;
-    audioDampenMaybe();
-    sav1_secure_increment(0x29); // this is something the original dex routine does, probably for statistics
-    /* maybe clean up safari stuff here if necessary */
-    overworld_free_bgmaps();
-    set_callback2(pdex_load);
-    return true;
-}
-
-void pdex_vram_setup(void) {
-    vblank_handler_set(NULL);
-    pal_fade_control_and_dead_struct_reset();
-    gpu_tile_bg_drop_all_sets(true);
-    obj_and_aux_reset_all();
-    gpu_tile_obj_tags_reset();
-    gpu_pal_allocator_reset();
-    rboxes_free();
-    malloc_init((void *)0x2000000, 0x1C000);
-    tasks_init();
-
-    bg_vram_setup(0, &pdex_bg_config[0], 4);
-
-    u8 *bgMap = malloc(0x800);
-    u8 *strMap = malloc(0x800);
-    bgid_set_tilemap(2, bgMap);
-    bgid_set_tilemap(0, strMap);
-    bgid_mark_for_sync(0);
-
+void pdex_load_gfx(void) {
     /*TODO: setup text boxes here */
     rbox_init_from_templates(&pdex_boxes[0]);
-    u32 set = 0;
-    CpuFastSet((void *)&set, (void *)0x06000000, CPUModeFS(0x10000, CPUFSSET));
 
     lz77UnCompVram(pdexBgTiles, (void *)0x0600C000);
-    LZ77UnCompWram(pdexBgMap, bgMap);
+    LZ77UnCompWram(pdexBgMap, bgid_get_tilemap(2));
     gpu_pal_apply_compressed(pdexBgPal, 0, 32);
     gpu_pal_apply(pdex_text_pal, 15 * 16, 32);
 
@@ -585,43 +484,16 @@ void pdex_vram_setup(void) {
     lcd_io_set(REG_ID_WIN0V, ((20 << 8) | (148)));
     lcd_io_set(REG_ID_WININ, WIN_BG0 | WIN_BG1 | WIN_BG2 | WIN_BG3 | WIN_OBJ);
     lcd_io_set(REG_ID_WINOUT, WIN_BG0 | WIN_BG2 | WIN_BG3 | WIN_OBJ);
-
-    vblank_handler_set(pdex_vblank_handler);
-    interrupts_enable(INTERRUPT_VBLANK);
-    bgid_mod_x_offset(0, 0, 0);
-    bgid_mod_y_offset(0, 0, 0);
-    bgid_mod_x_offset(1, 0, 0);
-    bgid_mod_y_offset(1, 0, 0);
-    bgid_mod_x_offset(2, 0, 0);
-    bgid_mod_y_offset(2, 0, 0);
-    bgid_mod_x_offset(3, 0, 0);
-    bgid_mod_y_offset(3, 0, 0);
+    bgid_mark_for_sync(0);
 }
 
 void pdex_load(void) {
 
     pdex_vram_setup();
-    pokedex_context = malloc_and_clear(sizeof(struct PdexCtx));
+    pdex_load_gfx();
+
     pokedex_context->pokemon_oam = -1;
-    pokedex_context->lookup = malloc_and_clear((PDEX_LAST_SHOWN + 1) * sizeof(struct PdexLookup));
+
     task_add(pdex_loop, 0);
     set_callback2(pdex_cb_handler);
-}
-
-void pdex_vblank_handler(void) {
-    gpu_sprites_upload();
-    copy_queue_process();
-    gpu_pal_upload();
-}
-
-void pdex_cb_handler(void) {
-    if (pal_fade_control.active)
-        process_palfade();
-    else {
-        task_exec();
-        objc_exec();
-        obj_sync_superstate();
-        tilemaps_sync();
-        remoboxes_upload_tilesets();
-    }
 }
