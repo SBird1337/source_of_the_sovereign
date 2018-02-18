@@ -33,6 +33,8 @@ void pdex_cb_handler(void);
 void pdex_vblank_handler(void);
 void pdex_vram_setup(void);
 
+void pdex_load(void);
+
 const u16 pdex_text_pal[16];
 const struct BgConfig pdex_bg_config[4];
 struct TextColor pdex_text_color;
