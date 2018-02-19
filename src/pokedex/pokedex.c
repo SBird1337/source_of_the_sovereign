@@ -68,6 +68,7 @@ s16 pdex_get_y_offset(s8 n) {
 }
 
 void pdex_main_box_species_fill(s8 n, u16 species, bool seen, bool caught) {
+    seen = true;
     s16 y = pdex_get_y_offset(n);
     dprintf("trying to print box to y: %d\n", y);
     rboxid_fill_rectangle(TB_MAIN, 0, 0, y, 11 * 8, 16);
@@ -332,8 +333,8 @@ void pdex_data_setup(void) {
             pokedex_context->lookup[i].seen = dex_flag_pokedex_index(i, DEX_FLAG_CHECK_SEEN);
             pokedex_context->lookup[i].caught = dex_flag_pokedex_index(i, DEX_FLAG_CHECK_CAUGHT);
             if (!first && (pokedex_context->lookup[i].seen)) {
-                pokedex_context->first_seen = i;
-                pokedex_context->cursor_position_top = i;
+                pokedex_context->first_seen = 1; //i
+                pokedex_context->cursor_position_top = 1; //i
                 first = true;
             }
         }
@@ -397,7 +398,7 @@ void pdex_try_advance(u8 reverse) {
     if (pokedex_context->lookup[pkIndexToLoad].seen || pokedex_context->lookup[pkIndexToLoad].caught)
         pdex_pokemon_load(pokedex_context->lookup[pkIndexToLoad].species);
     else
-        pdex_pokemon_load(0);
+        pdex_pokemon_load(pokedex_context->lookup[pkIndexToLoad].species); /* debug, just display the mofo */
     pdex_update_balls();
 }
 
@@ -493,7 +494,7 @@ void pdex_load(void) {
     pdex_load_gfx();
 
     pokedex_context->pokemon_oam = -1;
-
+    pokedex_context->state = 0;
     task_add(pdex_loop, 0);
     set_callback2(pdex_cb_handler);
 }

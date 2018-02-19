@@ -28,25 +28,16 @@ u8 region_text_y_offset[] = {7, 7, 7, 2, 2, 2, 2};
 u8 region_select_x_offset[] = {54, 128, 198, 38, 97, 156, 215};
 u8 region_select_y_offset[] = {40, 40, 40, 115, 115, 115, 115};
 
-u16 region_icons[] = {PKMN_BISASAM,   PKMN_SCHIGGY,  PKMN_GLUMANDA, PKMN_ENDIVIE, PKMN_KARNIMANI, PKMN_FEURIGEL,
-                     PKMN_GECKARBOR, PKMN_HYDROPI, PKMN_FLEMMLI,  PKMN_CHELAST, PKMN_PLINFA,    PKMN_PANFLAM,
-                     PKMN_SERPIFEU,  PKMN_OTTARO,  PKMN_FLOINK,   PKMN_IGAMARO, PKMN_FROXY,     PKMN_FYNX,
-                     PKMN_BAUZ,      PKMN_ROBBALL, PKMN_FLAMIAU};
+u16 region_icons[] = {PKMN_BISASAM,   PKMN_SCHIGGY, PKMN_GLUMANDA, PKMN_ENDIVIE, PKMN_KARNIMANI, PKMN_FEURIGEL,
+                      PKMN_GECKARBOR, PKMN_HYDROPI, PKMN_FLEMMLI,  PKMN_CHELAST, PKMN_PLINFA,    PKMN_PANFLAM,
+                      PKMN_SERPIFEU,  PKMN_OTTARO,  PKMN_FLOINK,   PKMN_IGAMARO, PKMN_FROXY,     PKMN_FYNX,
+                      PKMN_BAUZ,      PKMN_ROBBALL, PKMN_FLAMIAU};
 
-u16 region_icons_x_offset[] = {37, 49, 58, 110, 122, 133, 182, 193, 206,
-                               22, 33, 43,
-                               80, 93, 103,
-                               139, 150, 161,
-                               196, 207, 219};
+u16 region_icons_x_offset[] = {37, 49, 58, 110, 122, 133, 182, 193, 206, 22, 33,
+                               43, 80, 93, 103, 139, 150, 161, 196, 207, 219};
 
-u16 region_icons_y_offset[] = {39,  17,  39,
-                               39,  19,  39,
-                               39,  19,  39,
-                               117, 94, 116,
-                               116, 95, 115,
-                               116, 95, 116,
-                               120, 99, 120
-};
+u16 region_icons_y_offset[] = {39,  17,  39, 39,  19,  39, 39,  19,  39, 117, 94,
+                               116, 116, 95, 115, 116, 95, 116, 120, 99, 120};
 
 bool sm_pdex_init(void) {
     if (pal_fade_control.active)
@@ -147,9 +138,9 @@ void region_loop(u8 tid) {
 
         region_load_border();
         region_load_icon_palettes();
-        for(u8 i = 0; i < 21; ++i)
+        for (u8 i = 0; i < 21; ++i)
             region_load_icon(i);
-        
+
         palette_bg_faded_fill_black();
         pokedex_context->state++;
         break;
@@ -184,11 +175,37 @@ void region_loop(u8 tid) {
             if ((pokedex_context->region_selected > 2) && (pokedex_context->region_selected < 6))
                 pokedex_context->region_selected -= 3;
             break;
+        case KEY_A:
+            fade_screen(0xFFFFFFFF, PDEX_FADEIN_SPD, 0, 16, 0x0000);
+            pokedex_context->state = 10;
+            break;
+        case KEY_B:
+            fade_screen(0xFFFFFFFF, PDEX_FADEIN_SPD, 0, 16, 0x0000);
+            pokedex_context->state = 11;
         default:
             break;
         }
         break;
+    case 10:
+        if (!pal_fade_control.active) {
+            task_del(tid);
+            if(bgid_get_tilemap(2) != NULL)
+                free(bgid_get_tilemap(2));
+            set_callback2(pdex_load);
+        }
+        break;
+    case 11:
+        if (!pal_fade_control.active) {
+            task_del(tid);
+            if(pokedex_context->lookup != NULL)
+                free(pokedex_context->lookup);
+            free(pokedex_context);
+            set_callback2(c2_overworld_switch_start_menu);
+            set_callback1(c1_overworld);
+        }
+        break;
     default:
+
         break;
     }
 }
