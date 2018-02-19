@@ -7,7 +7,7 @@ pokedex_spezies_name0=Unbekannt
 @word 0, 536, 17, 256, 0, 0
 
 pokedex_spezies_name1=Samen
-@hword 7,  69
+@hword 7, 69
 @word str_pokedex_eintraege_text_1
 @word str_pokedex_eintraege_text_1
 @word 0, 436, 13, 256, 0, 0
@@ -25,7 +25,7 @@ pokedex_spezies_name3=Samen
 @word 0, 256, 0, 296, 4, 0
 
 pokedex_spezies_name4=Echse
-@hword 6,  85
+@hword 6, 85
 @word str_pokedex_eintraege_text_4
 @word str_pokedex_eintraege_text_4
 @word 0, 456, 14, 256, 0, 0
@@ -43,7 +43,7 @@ pokedex_spezies_name6=Flamme
 @word 0, 256, 0, 266, 1, 0
 
 pokedex_spezies_name7=Minikröte
-@hword 5,  90
+@hword 5, 90
 @word str_pokedex_eintraege_text_7
 @word str_pokedex_eintraege_text_7
 @word 0, 476, 15, 256, 0, 0
@@ -61,13 +61,13 @@ pokedex_spezies_name9=Panzertier
 @word 0, 256, 0, 256, 0, 0
 
 pokedex_spezies_name10=Wurm
-@hword 3,  29
+@hword 3, 29
 @word str_pokedex_eintraege_text_10
 @word str_pokedex_eintraege_text_10
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name11=Kokon
-@hword 7,  99
+@hword 7, 99
 @word str_pokedex_eintraege_text_11
 @word str_pokedex_eintraege_text_11
 @word 0, 436, 13, 256, 0, 0
@@ -79,7 +79,7 @@ pokedex_spezies_name12=Falter
 @word 0, 356, 9, 256, 0, 0
 
 pokedex_spezies_name13=Raupe
-@hword 3,  32
+@hword 3, 32
 @word str_pokedex_eintraege_text_13
 @word str_pokedex_eintraege_text_13
 @word 0, 496, 15, 256, 0, 0
@@ -97,7 +97,7 @@ pokedex_spezies_name15=Giftbiene
 @word 0, 376, 10, 256, 0, 0
 
 pokedex_spezies_name16=Kleinvogel
-@hword 3,  18
+@hword 3, 18
 @word str_pokedex_eintraege_text_16
 @word str_pokedex_eintraege_text_16
 @word 0, 496, 15, 256, 0, 0
@@ -115,7 +115,7 @@ pokedex_spezies_name18=Vogel
 @word 0, 276, 2, 256, 0, 0
 
 pokedex_spezies_name19=Maus
-@hword 3,  35
+@hword 3, 35
 @word str_pokedex_eintraege_text_19
 @word str_pokedex_eintraege_text_19
 @word 0, 496, 15, 256, 0, 0
@@ -126,8 +126,20 @@ pokedex_spezies_name20=Maus
 @word str_pokedex_eintraege_text_20
 @word 0, 436, 13, 256, 0, 0
 
+pokedex_spezies_name814=Maus
+@hword 3, 38
+@word str_pokedex_eintraege_text_814
+@word str_pokedex_eintraege_text_814
+@word 0, 496, 15, 256, 0, 0
+
+pokedex_spezies_name815=Maus
+@hword 7, 255
+@word str_pokedex_eintraege_text_815
+@word str_pokedex_eintraege_text_815
+@word 0, 436, 13, 256, 0, 0
+
 pokedex_spezies_name21=Kleinvogel
-@hword 3,  20
+@hword 3, 20
 @word str_pokedex_eintraege_text_21
 @word str_pokedex_eintraege_text_21
 @word 0, 496, 15, 256, 0, 0
@@ -139,7 +151,7 @@ pokedex_spezies_name22=Pickvogel
 @word 0, 336, 8, 256, 0, 0
 
 pokedex_spezies_name23=Schlange
-@hword 20,  69
+@hword 20, 69
 @word str_pokedex_eintraege_text_23
 @word str_pokedex_eintraege_text_23
 @word 0, 256, 0, 296, 4, 0
@@ -151,7 +163,7 @@ pokedex_spezies_name24=Kobra
 @word 0, 256, 0, 446, 14, 0
 
 pokedex_spezies_name25=Maus
-@hword 4,  60
+@hword 4, 60
 @word str_pokedex_eintraege_text_25
 @word str_pokedex_eintraege_text_25
 @word 0, 496, 15, 256, 0, 0
@@ -161,6 +173,12 @@ pokedex_spezies_name26=Maus
 @word str_pokedex_eintraege_text_26
 @word str_pokedex_eintraege_text_26
 @word 0, 416, 12, 256, 0, 0
+
+pokedex_spezies_name816=Maus
+@hword 7, 210
+@word str_pokedex_eintraege_text_816
+@word str_pokedex_eintraege_text_816
+@word 0, 436, 13, 256, 0, 0
 
 pokedex_spezies_name27=Maus
 @hword 6, 120
@@ -174,8 +192,20 @@ pokedex_spezies_name28=Maus
 @word str_pokedex_eintraege_text_28
 @word 0, 376, 10, 256, 0, 0
 
+pokedex_spezies_name817=Maus
+@hword 7, 400
+@word str_pokedex_eintraege_text_817
+@word str_pokedex_eintraege_text_817
+@word 0, 436, 13, 256, 0, 0
+
+pokedex_spezies_name818=Maus
+@hword 12, 550
+@word str_pokedex_eintraege_text_818
+@word str_pokedex_eintraege_text_818
+@word 0, 336, 8, 256, 0, 0
+
 pokedex_spezies_name29=Giftdorn
-@hword 4,  70
+@hword 4, 70
 @word str_pokedex_eintraege_text_29
 @word str_pokedex_eintraege_text_29
 @word 0, 496, 15, 256, 0, 0
@@ -193,7 +223,7 @@ pokedex_spezies_name31=Bohrer
 @word 0, 316, 6, 256, 0, 0
 
 pokedex_spezies_name32=Giftdorn
-@hword 5,  90
+@hword 5, 90
 @word str_pokedex_eintraege_text_32
 @word str_pokedex_eintraege_text_32
 @word 0, 476, 15, 256, 0, 0
@@ -211,7 +241,7 @@ pokedex_spezies_name34=Bohrer
 @word 0, 296, 4, 256, 0, 0
 
 pokedex_spezies_name35=Fee
-@hword 6,  75
+@hword 6, 75
 @word str_pokedex_eintraege_text_35
 @word str_pokedex_eintraege_text_35
 @word 0, 456, 14, 256, 0, 0
@@ -223,7 +253,7 @@ pokedex_spezies_name36=Fee
 @word 0, 316, 6, 256, 0, 0
 
 pokedex_spezies_name37=Fuchs
-@hword 6,  99
+@hword 6, 99
 @word str_pokedex_eintraege_text_37
 @word str_pokedex_eintraege_text_37
 @word 0, 456, 14, 256, 0, 0
@@ -234,8 +264,20 @@ pokedex_spezies_name38=Fuchs
 @word str_pokedex_eintraege_text_38
 @word 0, 356, 9, 256, 0, 0
 
+pokedex_spezies_name819=Fuchs
+@hword 6, 99
+@word str_pokedex_eintraege_text_819
+@word str_pokedex_eintraege_text_819
+@word 0, 456, 14, 256, 0, 0
+
+pokedex_spezies_name820=Fuchs
+@hword 11, 199
+@word str_pokedex_eintraege_text_820
+@word str_pokedex_eintraege_text_820
+@word 0, 356, 9, 256, 0, 0
+
 pokedex_spezies_name39=Ballon
-@hword 5,  55
+@hword 5, 55
 @word str_pokedex_eintraege_text_39
 @word str_pokedex_eintraege_text_39
 @word 0, 476, 15, 256, 0, 0
@@ -247,7 +289,7 @@ pokedex_spezies_name40=Ballon
 @word 0, 376, 10, 256, 0, 0
 
 pokedex_spezies_name41=Fledermaus
-@hword 8,  75
+@hword 8, 75
 @word str_pokedex_eintraege_text_41
 @word str_pokedex_eintraege_text_41
 @word 0, 416, 12, 256, 0, 0
@@ -259,13 +301,13 @@ pokedex_spezies_name42=Fledermaus
 @word 0, 256, 0, 256, 0, 0
 
 pokedex_spezies_name43=Unkraut
-@hword 5,  54
+@hword 5, 54
 @word str_pokedex_eintraege_text_43
 @word str_pokedex_eintraege_text_43
 @word 0, 476, 15, 256, 0, 0
 
 pokedex_spezies_name44=Unkraut
-@hword 8,  86
+@hword 8, 86
 @word str_pokedex_eintraege_text_44
 @word str_pokedex_eintraege_text_44
 @word 0, 416, 12, 256, 0, 0
@@ -277,7 +319,7 @@ pokedex_spezies_name45=Blume
 @word 0, 336, 8, 256, 0, 0
 
 pokedex_spezies_name46=Pilz
-@hword 3,  54
+@hword 3, 54
 @word str_pokedex_eintraege_text_46
 @word str_pokedex_eintraege_text_46
 @word 0, 496, 15, 256, 0, 0
@@ -312,8 +354,20 @@ pokedex_spezies_name51=Maulwurf
 @word str_pokedex_eintraege_text_51
 @word 0, 436, 13, 256, 0, 0
 
+pokedex_spezies_name821=Maulwurf
+@hword 2, 10
+@word str_pokedex_eintraege_text_821
+@word str_pokedex_eintraege_text_821
+@word 0, 516, 16, 256, 0, 0
+
+pokedex_spezies_name822=Maulwurf
+@hword 7, 666
+@word str_pokedex_eintraege_text_822
+@word str_pokedex_eintraege_text_822
+@word 0, 436, 13, 256, 0, 0
+
 pokedex_spezies_name52=Katze
-@hword 4,  42
+@hword 4, 42
 @word str_pokedex_eintraege_text_52
 @word str_pokedex_eintraege_text_52
 @word 0, 496, 15, 256, 0, 0
@@ -323,6 +377,18 @@ pokedex_spezies_name53=Rassekatze
 @word str_pokedex_eintraege_text_53
 @word str_pokedex_eintraege_text_53
 @word 0, 376, 10, 256, 0, 0
+
+pokedex_spezies_name823=Katze
+@hword 4, 42
+@word str_pokedex_eintraege_text_823
+@word str_pokedex_eintraege_text_823
+@word 0, 496, 15, 256, 0, 0
+
+pokedex_spezies_name824=Rassekatze
+@hword 11, 330
+@word str_pokedex_eintraege_text_824
+@word str_pokedex_eintraege_text_824
+@word 0, 356, 9, 256, 0, 0
 
 pokedex_spezies_name54=Ente
 @hword 8, 196
@@ -336,13 +402,13 @@ pokedex_spezies_name55=Ente
 @word str_pokedex_eintraege_text_55
 @word 0, 256, 0, 266, 1, 0
 
-pokedex_spezies_name56=Schw./ Affe
+pokedex_spezies_name56=Schw./Affe
 @hword 5, 280
 @word str_pokedex_eintraege_text_56
 @word str_pokedex_eintraege_text_56
 @word 0, 476, 15, 256, 0, 0
 
-pokedex_spezies_name57=Schw./ Affe
+pokedex_spezies_name57=Schw./Affe
 @hword 10, 320
 @word str_pokedex_eintraege_text_57
 @word str_pokedex_eintraege_text_57
@@ -415,13 +481,13 @@ pokedex_spezies_name68=Kraftprotz
 @word 0, 256, 0, 256, 0, 0
 
 pokedex_spezies_name69=Blume
-@hword 7,  40
+@hword 7, 40
 @word str_pokedex_eintraege_text_69
 @word str_pokedex_eintraege_text_69
 @word 0, 436, 13, 256, 0, 0
 
 pokedex_spezies_name70=Fliegentot
-@hword 10,  64
+@hword 10, 64
 @word str_pokedex_eintraege_text_70
 @word str_pokedex_eintraege_text_70
 @word 0, 376, 10, 256, 0, 0
@@ -462,6 +528,24 @@ pokedex_spezies_name76=Urgestein
 @word str_pokedex_eintraege_text_76
 @word 0, 296, 4, 256, 0, 0
 
+pokedex_spezies_name827=Gestein
+@hword 4, 203
+@word str_pokedex_eintraege_text_827
+@word str_pokedex_eintraege_text_827
+@word 0, 496, 15, 256, 0, 0
+
+pokedex_spezies_name828=Gestein
+@hword 10, 1100
+@word str_pokedex_eintraege_text_828
+@word str_pokedex_eintraege_text_828
+@word 0, 376, 10, 256, 0, 0
+
+pokedex_spezies_name829=Urgestein
+@hword 17, 3160
+@word str_pokedex_eintraege_text_829
+@word str_pokedex_eintraege_text_829
+@word 0, 256, 0, 266, 1, 0
+
 pokedex_spezies_name77=Feuerpferd
 @hword 10, 300
 @word str_pokedex_eintraege_text_77
@@ -487,7 +571,7 @@ pokedex_spezies_name80=Symbiose
 @word 0, 256, 0, 256, 0, 0
 
 pokedex_spezies_name81=Magnet
-@hword 3,  60
+@hword 3, 60
 @word str_pokedex_eintraege_text_81
 @word str_pokedex_eintraege_text_81
 @word 0, 496, 15, 256, 0, 0
@@ -540,8 +624,20 @@ pokedex_spezies_name89=Schlamm
 @word str_pokedex_eintraege_text_89
 @word 0, 336, 8, 256, 0, 0
 
+pokedex_spezies_name825=Schlamm
+@hword 7, 420
+@word str_pokedex_eintraege_text_825
+@word str_pokedex_eintraege_text_825
+@word 0, 436, 13, 256, 0, 0
+
+pokedex_spezies_name826=Schlamm
+@hword 10, 520
+@word str_pokedex_eintraege_text_826
+@word str_pokedex_eintraege_text_826
+@word 0, 376, 10, 256, 0, 0
+
 pokedex_spezies_name90=Muschel
-@hword 3,  40
+@hword 3, 40
 @word str_pokedex_eintraege_text_90
 @word str_pokedex_eintraege_text_90
 @word 0, 496, 15, 256, 0, 0
@@ -553,13 +649,13 @@ pokedex_spezies_name91=Muschel
 @word 0, 276, 2, 256, 0, 0
 
 pokedex_spezies_name92=Gas
-@hword 13,  01
+@hword 13, 01
 @word str_pokedex_eintraege_text_92
 @word str_pokedex_eintraege_text_92
 @word 0, 316, 6, 256, 0, 0
 
 pokedex_spezies_name93=Gas
-@hword 16,  01
+@hword 16, 01
 @word str_pokedex_eintraege_text_93
 @word str_pokedex_eintraege_text_93
 @word 0, 256, 0, 256, 0, 0
@@ -589,7 +685,7 @@ pokedex_spezies_name97=Hypnose
 @word 0, 256, 0, 256, 0, 0
 
 pokedex_spezies_name98=Krabbe
-@hword 4,  65
+@hword 4, 65
 @word str_pokedex_eintraege_text_98
 @word str_pokedex_eintraege_text_98
 @word 0, 496, 15, 256, 0, 0
@@ -613,7 +709,7 @@ pokedex_spezies_name101=Ball
 @word 0, 336, 8, 256, 0, 0
 
 pokedex_spezies_name102=Ei
-@hword 4,  25
+@hword 4, 25
 @word str_pokedex_eintraege_text_102
 @word str_pokedex_eintraege_text_102
 @word 0, 496, 15, 256, 0, 0
@@ -624,8 +720,14 @@ pokedex_spezies_name103=Palmfrucht
 @word str_pokedex_eintraege_text_103
 @word 0, 256, 0, 296, 4, 0
 
+pokedex_spezies_name830=Palmfrucht
+@hword 109, 4156
+@word str_pokedex_eintraege_text_830
+@word str_pokedex_eintraege_text_830
+@word 0, 256, 0, 1100, 25, 0
+
 pokedex_spezies_name104=Einsam
-@hword 4,  65
+@hword 4, 65
 @word str_pokedex_eintraege_text_104
 @word str_pokedex_eintraege_text_104
 @word 0, 496, 15, 256, 0, 0
@@ -634,6 +736,12 @@ pokedex_spezies_name105=Knochenfan
 @hword 10, 450
 @word str_pokedex_eintraege_text_105
 @word str_pokedex_eintraege_text_105
+@word 0, 376, 10, 256, 0, 0
+
+pokedex_spezies_name831=Knochenfan
+@hword 10, 340
+@word str_pokedex_eintraege_text_831
+@word str_pokedex_eintraege_text_831
 @word 0, 376, 10, 256, 0, 0
 
 pokedex_spezies_name106=Kicker
@@ -655,13 +763,13 @@ pokedex_spezies_name108=Schlecker
 @word 0, 336, 8, 256, 0, 0
 
 pokedex_spezies_name109=Giftwolke
-@hword 6,  10
+@hword 6, 10
 @word str_pokedex_eintraege_text_109
 @word str_pokedex_eintraege_text_109
 @word 0, 456, 14, 256, 0, 0
 
 pokedex_spezies_name110=Giftwolke
-@hword 12,  95
+@hword 12, 95
 @word str_pokedex_eintraege_text_110
 @word str_pokedex_eintraege_text_110
 @word 0, 336, 8, 256, 0, 0
@@ -697,7 +805,7 @@ pokedex_spezies_name115=Muttertier
 @word 0, 256, 0, 316, 6, 0
 
 pokedex_spezies_name116=Drache
-@hword 4,  80
+@hword 4, 80
 @word str_pokedex_eintraege_text_116
 @word str_pokedex_eintraege_text_116
 @word 0, 496, 15, 256, 0, 0
@@ -793,13 +901,13 @@ pokedex_spezies_name131=Transport
 @word 0, 256, 0, 346, 8, 0
 
 pokedex_spezies_name132=Transform
-@hword 3,  40
+@hword 3, 40
 @word str_pokedex_eintraege_text_132
 @word str_pokedex_eintraege_text_132
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name133=Evolution
-@hword 3,  65
+@hword 3, 65
 @word str_pokedex_eintraege_text_133
 @word str_pokedex_eintraege_text_133
 @word 0, 496, 15, 256, 0, 0
@@ -829,7 +937,7 @@ pokedex_spezies_name137=Virtuell
 @word 0, 416, 12, 256, 0, 0
 
 pokedex_spezies_name138=Spirale
-@hword 4,  75
+@hword 4, 75
 @word str_pokedex_eintraege_text_138
 @word str_pokedex_eintraege_text_138
 @word 0, 496, 15, 256, 0, 0
@@ -883,7 +991,7 @@ pokedex_spezies_name146=Flamme
 @word 0, 256, 0, 296, 4, 0
 
 pokedex_spezies_name147=Drache
-@hword 18,  33
+@hword 18, 33
 @word str_pokedex_eintraege_text_147
 @word str_pokedex_eintraege_text_147
 @word 0, 256, 0, 276, 2, 0
@@ -906,14 +1014,14 @@ pokedex_spezies_name150=Genmutant
 @word str_pokedex_eintraege_text_150
 @word 0, 256, 0, 296, 4, 0
 
-pokedex_spezies_name151=Neue Art
-@hword 4,  40
+pokedex_spezies_name151=NeueArt
+@hword 4, 40
 @word str_pokedex_eintraege_text_151
 @word str_pokedex_eintraege_text_151
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name152=Laub
-@hword 9,  64
+@hword 9, 64
 @word str_pokedex_eintraege_text_152
 @word str_pokedex_eintraege_text_152
 @word 0, 396, 11, 256, 0, 0
@@ -931,7 +1039,7 @@ pokedex_spezies_name154=Kräuter
 @word 0, 256, 0, 276, 2, 0
 
 pokedex_spezies_name155=Feuermaus
-@hword 5,  79
+@hword 5, 79
 @word str_pokedex_eintraege_text_155
 @word str_pokedex_eintraege_text_155
 @word 0, 476, 15, 256, 0, 0
@@ -949,7 +1057,7 @@ pokedex_spezies_name157=Vulkan
 @word 0, 256, 0, 266, 1, 0
 
 pokedex_spezies_name158=Großmaul
-@hword 6,  95
+@hword 6, 95
 @word str_pokedex_eintraege_text_158
 @word str_pokedex_eintraege_text_158
 @word 0, 456, 14, 256, 0, 0
@@ -967,7 +1075,7 @@ pokedex_spezies_name160=Großmaul
 @word 0, 256, 0, 326, 7, 0
 
 pokedex_spezies_name161=Späher
-@hword 8,  60
+@hword 8, 60
 @word str_pokedex_eintraege_text_161
 @word str_pokedex_eintraege_text_161
 @word 0, 416, 12, 256, 0, 0
@@ -1003,7 +1111,7 @@ pokedex_spezies_name166=Fünf-Punkt
 @word 0, 296, 4, 256, 0, 0
 
 pokedex_spezies_name167=Fadenwurf
-@hword 5,  85
+@hword 5, 85
 @word str_pokedex_eintraege_text_167
 @word str_pokedex_eintraege_text_167
 @word 0, 476, 15, 256, 0, 0
@@ -1033,37 +1141,37 @@ pokedex_spezies_name171=Leuchte
 @word 0, 336, 8, 256, 0, 0
 
 pokedex_spezies_name172=Babymaus
-@hword 3,  20
+@hword 3, 20
 @word str_pokedex_eintraege_text_172
 @word str_pokedex_eintraege_text_172
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name173=Sternform
-@hword 3,  30
+@hword 3, 30
 @word str_pokedex_eintraege_text_173
 @word str_pokedex_eintraege_text_173
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name174=Ballon
-@hword 3,  10
+@hword 3, 10
 @word str_pokedex_eintraege_text_174
 @word str_pokedex_eintraege_text_174
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name175=Zackenball
-@hword 3,  15
+@hword 3, 15
 @word str_pokedex_eintraege_text_175
 @word str_pokedex_eintraege_text_175
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name176=Freude
-@hword 6,  32
+@hword 6, 32
 @word str_pokedex_eintraege_text_176
 @word str_pokedex_eintraege_text_176
 @word 0, 456, 14, 256, 0, 0
 
 pokedex_spezies_name177=Kleinvogel
-@hword 2,  20
+@hword 2, 20
 @word str_pokedex_eintraege_text_177
 @word str_pokedex_eintraege_text_177
 @word 0, 516, 16, 256, 0, 0
@@ -1075,7 +1183,7 @@ pokedex_spezies_name178=Mystik
 @word 0, 276, 2, 256, 0, 0
 
 pokedex_spezies_name179=Wolle
-@hword 6,  78
+@hword 6, 78
 @word str_pokedex_eintraege_text_179
 @word str_pokedex_eintraege_text_179
 @word 0, 456, 14, 256, 0, 0
@@ -1093,13 +1201,13 @@ pokedex_spezies_name181=Leuchte
 @word 0, 296, 4, 256, 0, 0
 
 pokedex_spezies_name182=Blume
-@hword 4,  58
+@hword 4, 58
 @word str_pokedex_eintraege_text_182
 @word str_pokedex_eintraege_text_182
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name183=Aquamaus
-@hword 4,  85
+@hword 4, 85
 @word str_pokedex_eintraege_text_183
 @word str_pokedex_eintraege_text_183
 @word 0, 496, 15, 256, 0, 0
@@ -1123,19 +1231,19 @@ pokedex_spezies_name186=Frosch
 @word 0, 356, 9, 256, 0, 0
 
 pokedex_spezies_name187=Löwenzahn
-@hword 4,  05
+@hword 4, 05
 @word str_pokedex_eintraege_text_187
 @word str_pokedex_eintraege_text_187
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name188=Löwenzahn
-@hword 6,  10
+@hword 6, 10
 @word str_pokedex_eintraege_text_188
 @word str_pokedex_eintraege_text_188
 @word 0, 456, 14, 256, 0, 0
 
 pokedex_spezies_name189=Löwenzahn
-@hword 8,  30
+@hword 8, 30
 @word str_pokedex_eintraege_text_189
 @word str_pokedex_eintraege_text_189
 @word 0, 416, 12, 256, 0, 0
@@ -1147,13 +1255,13 @@ pokedex_spezies_name190=Langschweif
 @word 0, 416, 12, 256, 0, 0
 
 pokedex_spezies_name191=Samen
-@hword 3,  18
+@hword 3, 18
 @word str_pokedex_eintraege_text_191
 @word str_pokedex_eintraege_text_191
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name192=Sonne
-@hword 8,  85
+@hword 8, 85
 @word str_pokedex_eintraege_text_192
 @word str_pokedex_eintraege_text_192
 @word 0, 416, 12, 256, 0, 0
@@ -1165,7 +1273,7 @@ pokedex_spezies_name193=Libelle
 @word 0, 336, 8, 256, 0, 0
 
 pokedex_spezies_name194=Fisch
-@hword 4,  85
+@hword 4, 85
 @word str_pokedex_eintraege_text_194
 @word str_pokedex_eintraege_text_194
 @word 0, 496, 15, 256, 0, 0
@@ -1189,7 +1297,7 @@ pokedex_spezies_name197=Mondschein
 @word 0, 376, 10, 256, 0, 0
 
 pokedex_spezies_name198=Finsternis
-@hword 5,  21
+@hword 5, 21
 @word str_pokedex_eintraege_text_198
 @word str_pokedex_eintraege_text_198
 @word 0, 476, 15, 256, 0, 0
@@ -1201,13 +1309,13 @@ pokedex_spezies_name199=Monarch
 @word 0, 256, 0, 296, 4, 0
 
 pokedex_spezies_name200=Kreischer
-@hword 7,  10
+@hword 7, 10
 @word str_pokedex_eintraege_text_200
 @word str_pokedex_eintraege_text_200
 @word 0, 436, 13, 256, 0, 0
 
 pokedex_spezies_name201=Symbol
-@hword 5,  50
+@hword 5, 50
 @word str_pokedex_eintraege_text_201
 @word str_pokedex_eintraege_text_201
 @word 0, 476, 15, 256, 0, 0
@@ -1225,7 +1333,7 @@ pokedex_spezies_name203=Langhals
 @word 0, 276, 2, 256, 0, 0
 
 pokedex_spezies_name204=Beutelwurm
-@hword 6,  72
+@hword 6, 72
 @word str_pokedex_eintraege_text_204
 @word str_pokedex_eintraege_text_204
 @word 0, 456, 14, 256, 0, 0
@@ -1255,7 +1363,7 @@ pokedex_spezies_name208=Stahlboa
 @word 0, 256, 0, 980, 24, 0
 
 pokedex_spezies_name209=Fee
-@hword 6,  78
+@hword 6, 78
 @word str_pokedex_eintraege_text_209
 @word str_pokedex_eintraege_text_209
 @word 0, 456, 14, 256, 0, 0
@@ -1267,7 +1375,7 @@ pokedex_spezies_name210=Fee
 @word 0, 296, 4, 256, 0, 0
 
 pokedex_spezies_name211=Ballon
-@hword 5,  39
+@hword 5, 39
 @word str_pokedex_eintraege_text_211
 @word str_pokedex_eintraege_text_211
 @word 0, 476, 15, 256, 0, 0
@@ -1297,7 +1405,7 @@ pokedex_spezies_name215=Stichklaue
 @word 0, 396, 11, 256, 0, 0
 
 pokedex_spezies_name216=Kleinbär
-@hword 6,  88
+@hword 6, 88
 @word str_pokedex_eintraege_text_216
 @word str_pokedex_eintraege_text_216
 @word 0, 456, 14, 256, 0, 0
@@ -1321,7 +1429,7 @@ pokedex_spezies_name219=Lava
 @word 0, 416, 12, 256, 0, 0
 
 pokedex_spezies_name220=Ferkel
-@hword 4,  65
+@hword 4, 65
 @word str_pokedex_eintraege_text_220
 @word str_pokedex_eintraege_text_220
 @word 0, 496, 15, 256, 0, 0
@@ -1333,7 +1441,7 @@ pokedex_spezies_name221=Schwein
 @word 0, 356, 9, 256, 0, 0
 
 pokedex_spezies_name222=Koralle
-@hword 6,  50
+@hword 6, 50
 @word str_pokedex_eintraege_text_222
 @word str_pokedex_eintraege_text_222
 @word 0, 456, 14, 256, 0, 0
@@ -1429,7 +1537,7 @@ pokedex_spezies_name237=Kopfstand
 @word 0, 296, 4, 256, 0, 0
 
 pokedex_spezies_name238=Kuss
-@hword 4,  60
+@hword 4, 60
 @word str_pokedex_eintraege_text_238
 @word str_pokedex_eintraege_text_238
 @word 0, 496, 15, 256, 0, 0
@@ -1507,13 +1615,13 @@ pokedex_spezies_name250=Regenbogen
 @word 0, 256, 0, 476, 15, 0
 
 pokedex_spezies_name251=Zeitreise
-@hword 6,  50
+@hword 6, 50
 @word str_pokedex_eintraege_text_251
 @word str_pokedex_eintraege_text_251
 @word 0, 456, 14, 256, 0, 0
 
 pokedex_spezies_name252=Waldgecko
-@hword 5,  50
+@hword 5, 50
 @word str_pokedex_eintraege_text_252
 @word str_pokedex_eintraege_text_252
 @word 0, 476, 15, 256, 0, 0
@@ -1531,7 +1639,7 @@ pokedex_spezies_name254=Dschungel
 @word 0, 256, 0, 266, 1, 0
 
 pokedex_spezies_name255=Küken
-@hword 4,  25
+@hword 4, 25
 @word str_pokedex_eintraege_text_255
 @word str_pokedex_eintraege_text_255
 @word 0, 496, 15, 256, 0, 0
@@ -1549,7 +1657,7 @@ pokedex_spezies_name257=Großbrand
 @word 0, 256, 0, 286, 3, 0
 
 pokedex_spezies_name258=Lehmhüpfer
-@hword 4,  76
+@hword 4, 76
 @word str_pokedex_eintraege_text_258
 @word str_pokedex_eintraege_text_258
 @word 0, 496, 15, 256, 0, 0
@@ -1591,7 +1699,7 @@ pokedex_spezies_name264=Sprinter
 @word 0, 476, 15, 256, 0, 0
 
 pokedex_spezies_name265=Wurm
-@hword 3,  36
+@hword 3, 36
 @word str_pokedex_eintraege_text_265
 @word str_pokedex_eintraege_text_265
 @word 0, 496, 15, 256, 0, 0
@@ -1621,7 +1729,7 @@ pokedex_spezies_name269=Giftmotte
 @word 0, 336, 8, 256, 0, 0
 
 pokedex_spezies_name270=Wasserlinse
-@hword 5,  26
+@hword 5, 26
 @word str_pokedex_eintraege_text_270
 @word str_pokedex_eintraege_text_270
 @word 0, 476, 15, 256, 0, 0
@@ -1639,7 +1747,7 @@ pokedex_spezies_name272=Sorglos
 @word 0, 276, 2, 256, 0, 0
 
 pokedex_spezies_name273=Eichelnuss
-@hword 5,  40
+@hword 5, 40
 @word str_pokedex_eintraege_text_273
 @word str_pokedex_eintraege_text_273
 @word 0, 476, 15, 256, 0, 0
@@ -1657,7 +1765,7 @@ pokedex_spezies_name275=Verschlagen
 @word 0, 316, 6, 256, 0, 0
 
 pokedex_spezies_name276=Schwälblein
-@hword 3,  23
+@hword 3, 23
 @word str_pokedex_eintraege_text_276
 @word str_pokedex_eintraege_text_276
 @word 0, 496, 15, 256, 0, 0
@@ -1669,7 +1777,7 @@ pokedex_spezies_name277=Schwalbe
 @word 0, 436, 13, 256, 0, 0
 
 pokedex_spezies_name278=Seemöwe
-@hword 6,  95
+@hword 6, 95
 @word str_pokedex_eintraege_text_278
 @word str_pokedex_eintraege_text_278
 @word 0, 456, 14, 256, 0, 0
@@ -1681,7 +1789,7 @@ pokedex_spezies_name279=Wasservogel
 @word 0, 336, 8, 256, 0, 0
 
 pokedex_spezies_name280=Gefühl
-@hword 4,  66
+@hword 4, 66
 @word str_pokedex_eintraege_text_280
 @word str_pokedex_eintraege_text_280
 @word 0, 496, 15, 256, 0, 0
@@ -1699,19 +1807,19 @@ pokedex_spezies_name282=Umarmung
 @word 0, 256, 0, 256, 0, 0
 
 pokedex_spezies_name283=Wassergeher
-@hword 5,  17
+@hword 5, 17
 @word str_pokedex_eintraege_text_283
 @word str_pokedex_eintraege_text_283
 @word 0, 476, 15, 256, 0, 0
 
 pokedex_spezies_name284=Auge
-@hword 8,  36
+@hword 8, 36
 @word str_pokedex_eintraege_text_284
 @word str_pokedex_eintraege_text_284
 @word 0, 416, 12, 256, 0, 0
 
 pokedex_spezies_name285=Pilz
-@hword 4,  45
+@hword 4, 45
 @word str_pokedex_eintraege_text_285
 @word str_pokedex_eintraege_text_285
 @word 0, 496, 15, 256, 0, 0
@@ -1741,7 +1849,7 @@ pokedex_spezies_name289=Müßig
 @word 0, 256, 0, 296, 4, 0
 
 pokedex_spezies_name290=Vorbereiter
-@hword 5,  55
+@hword 5, 55
 @word str_pokedex_eintraege_text_290
 @word str_pokedex_eintraege_text_290
 @word 0, 476, 15, 256, 0, 0
@@ -1753,7 +1861,7 @@ pokedex_spezies_name291=Ninja
 @word 0, 416, 12, 256, 0, 0
 
 pokedex_spezies_name292=Häutung
-@hword 8,  12
+@hword 8, 12
 @word str_pokedex_eintraege_text_292
 @word str_pokedex_eintraege_text_292
 @word 0, 416, 12, 256, 0, 0
@@ -1789,7 +1897,7 @@ pokedex_spezies_name297=Armwurf
 @word 0, 256, 0, 326, 7, 0
 
 pokedex_spezies_name298=Gepunktet
-@hword 2,  20
+@hword 2, 20
 @word str_pokedex_eintraege_text_298
 @word str_pokedex_eintraege_text_298
 @word 0, 516, 16, 256, 0, 0
@@ -1867,13 +1975,13 @@ pokedex_spezies_name310=Entladung
 @word 0, 276, 2, 256, 0, 0
 
 pokedex_spezies_name311=Jubel
-@hword 4,  42
+@hword 4, 42
 @word str_pokedex_eintraege_text_311
 @word str_pokedex_eintraege_text_311
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name312=Jubel
-@hword 4,  42
+@hword 4, 42
 @word str_pokedex_eintraege_text_312
 @word str_pokedex_eintraege_text_312
 @word 0, 496, 15, 256, 0, 0
@@ -1891,7 +1999,7 @@ pokedex_spezies_name314=Libelle
 @word 0, 456, 14, 256, 0, 0
 
 pokedex_spezies_name315=Dorn
-@hword 3,  20
+@hword 3, 20
 @word str_pokedex_eintraege_text_315
 @word str_pokedex_eintraege_text_315
 @word 0, 496, 15, 256, 0, 0
@@ -1963,7 +2071,7 @@ pokedex_spezies_name326=Manipulator
 @word 0, 396, 11, 256, 0, 0
 
 pokedex_spezies_name327=Punkt-Panda
-@hword 11,  50
+@hword 11, 50
 @word str_pokedex_eintraege_text_327
 @word str_pokedex_eintraege_text_327
 @word 0, 356, 9, 256, 0, 0
@@ -1999,7 +2107,7 @@ pokedex_spezies_name332=Vogelschock
 @word 0, 316, 6, 256, 0, 0
 
 pokedex_spezies_name333=Wollvogel
-@hword 4,  12
+@hword 4, 12
 @word str_pokedex_eintraege_text_333
 @word str_pokedex_eintraege_text_333
 @word 0, 496, 15, 256, 0, 0
@@ -2035,7 +2143,7 @@ pokedex_spezies_name338=Meteorit
 @word 0, 336, 8, 256, 0, 0
 
 pokedex_spezies_name339=Barthaar
-@hword 4,  19
+@hword 4, 19
 @word str_pokedex_eintraege_text_339
 @word str_pokedex_eintraege_text_339
 @word 0, 496, 15, 256, 0, 0
@@ -2095,7 +2203,7 @@ pokedex_spezies_name348=Schild
 @word 0, 276, 2, 256, 0, 0
 
 pokedex_spezies_name349=Fisch
-@hword 6,  74
+@hword 6, 74
 @word str_pokedex_eintraege_text_349
 @word str_pokedex_eintraege_text_349
 @word 0, 456, 14, 256, 0, 0
@@ -2119,7 +2227,7 @@ pokedex_spezies_name352=Farbenspiel
 @word 0, 376, 10, 256, 0, 0
 
 pokedex_spezies_name353=Puppe
-@hword 6,  23
+@hword 6, 23
 @word str_pokedex_eintraege_text_353
 @word str_pokedex_eintraege_text_353
 @word 0, 456, 14, 256, 0, 0
@@ -2149,7 +2257,7 @@ pokedex_spezies_name357=Obst
 @word 0, 256, 0, 296, 4, 0
 
 pokedex_spezies_name358=Windspiel
-@hword 6,  10
+@hword 6, 10
 @word str_pokedex_eintraege_text_358
 @word str_pokedex_eintraege_text_358
 @word 0, 456, 14, 256, 0, 0
@@ -2221,7 +2329,7 @@ pokedex_spezies_name369=Bestand
 @word 0, 376, 10, 256, 0, 0
 
 pokedex_spezies_name370=Rendezvous
-@hword 6,  87
+@hword 6, 87
 @word str_pokedex_eintraege_text_370
 @word str_pokedex_eintraege_text_370
 @word 0, 456, 14, 256, 0, 0
@@ -2280,11 +2388,47 @@ pokedex_spezies_name379=Eisen
 @word str_pokedex_eintraege_text_379
 @word 0, 256, 0, 286, 3, 0
 
+pokedex_spezies_name808=Äon
+@hword 1, 10
+@word str_pokedex_eintraege_text_808
+@word str_pokedex_eintraege_text_808
+@word 0, 536, 17, 256, 0, 0
+
+pokedex_spezies_name809=Äon
+@hword 3, 20
+@word str_pokedex_eintraege_text_809
+@word str_pokedex_eintraege_text_809
+@word 0, 496, 15, 256, 0, 0
+
+pokedex_spezies_name810=Äon
+@hword 9, 35
+@word str_pokedex_eintraege_text_810
+@word str_pokedex_eintraege_text_810
+@word 0, 396, 11, 256, 0, 0
+
 pokedex_spezies_name380=Äon
 @hword 14, 400
 @word str_pokedex_eintraege_text_380
 @word str_pokedex_eintraege_text_380
 @word 0, 296, 4, 256, 0, 0
+
+pokedex_spezies_name811=Äon
+@hword 1, 10
+@word str_pokedex_eintraege_text_811
+@word str_pokedex_eintraege_text_811
+@word 0, 536, 17, 256, 0, 0
+
+pokedex_spezies_name812=Äon
+@hword 3, 20
+@word str_pokedex_eintraege_text_812
+@word str_pokedex_eintraege_text_812
+@word 0, 496, 15, 256, 0, 0
+
+pokedex_spezies_name813=Äon
+@hword 9, 35
+@word str_pokedex_eintraege_text_813
+@word str_pokedex_eintraege_text_813
+@word 0, 396, 11, 256, 0, 0
 
 pokedex_spezies_name381=Äon
 @hword 20, 600
@@ -2311,7 +2455,7 @@ pokedex_spezies_name384=Himmelhoch
 @word 0, 256, 0, 760, 21, 0
 
 pokedex_spezies_name385=Wünscher
-@hword 3,  11
+@hword 3, 11
 @word str_pokedex_eintraege_text_385
 @word str_pokedex_eintraege_text_385
 @word 0, 496, 15, 256, 0, 0
@@ -2341,7 +2485,7 @@ pokedex_spezies_name389=Kontinent
 @word 0, 256, 0, 316, 6, 0
 
 pokedex_spezies_name390=Schimpanse
-@hword 5,  65
+@hword 5, 65
 @word str_pokedex_eintraege_text_390
 @word str_pokedex_eintraege_text_390
 @word 0, 476, 15, 256, 0, 0
@@ -2359,7 +2503,7 @@ pokedex_spezies_name392=Flamme
 @word 0, 336, 8, 256, 0, 0
 
 pokedex_spezies_name393=Pinguin
-@hword 4,  52
+@hword 4, 52
 @word str_pokedex_eintraege_text_393
 @word str_pokedex_eintraege_text_393
 @word 0, 496, 15, 256, 0, 0
@@ -2377,7 +2521,7 @@ pokedex_spezies_name395=Kaiser
 @word 0, 256, 0, 266, 1, 0
 
 pokedex_spezies_name396=Star
-@hword 3,  20
+@hword 3, 20
 @word str_pokedex_eintraege_text_396
 @word str_pokedex_eintraege_text_396
 @word 0, 496, 15, 256, 0, 0
@@ -2407,7 +2551,7 @@ pokedex_spezies_name400=Biber
 @word 0, 376, 10, 256, 0, 0
 
 pokedex_spezies_name401=Zirper
-@hword 3,  22
+@hword 3, 22
 @word str_pokedex_eintraege_text_401
 @word str_pokedex_eintraege_text_401
 @word 0, 496, 15, 256, 0, 0
@@ -2419,7 +2563,7 @@ pokedex_spezies_name402=Zirper
 @word 0, 376, 10, 256, 0, 0
 
 pokedex_spezies_name403=Flacker
-@hword 5,  95
+@hword 5, 95
 @word str_pokedex_eintraege_text_403
 @word str_pokedex_eintraege_text_403
 @word 0, 476, 15, 256, 0, 0
@@ -2437,7 +2581,7 @@ pokedex_spezies_name405=Glühauge
 @word 0, 296, 4, 256, 0, 0
 
 pokedex_spezies_name406=Knospe
-@hword 2,  12
+@hword 2, 12
 @word str_pokedex_eintraege_text_406
 @word str_pokedex_eintraege_text_406
 @word 0, 516, 16, 256, 0, 0
@@ -2473,13 +2617,13 @@ pokedex_spezies_name411=Schild
 @word 0, 316, 6, 256, 0, 0
 
 pokedex_spezies_name412=Beutelwurm
-@hword 2,  34
+@hword 2, 34
 @word str_pokedex_eintraege_text_412
 @word str_pokedex_eintraege_text_412
 @word 0, 516, 16, 256, 0, 0
 
 pokedex_spezies_name413=Beutelwurm
-@hword 5,  65
+@hword 5, 65
 @word str_pokedex_eintraege_text_413
 @word str_pokedex_eintraege_text_413
 @word 0, 476, 15, 256, 0, 0
@@ -2491,7 +2635,7 @@ pokedex_spezies_name414=Fruchtmotte
 @word 0, 396, 11, 256, 0, 0
 
 pokedex_spezies_name415=Baby-Biene
-@hword 3,  55
+@hword 3, 55
 @word str_pokedex_eintraege_text_415
 @word str_pokedex_eintraege_text_415
 @word 0, 496, 15, 256, 0, 0
@@ -2503,7 +2647,7 @@ pokedex_spezies_name416=Bienenstock
 @word 0, 336, 8, 256, 0, 0
 
 pokedex_spezies_name417=Elektromaus
-@hword 4,  39
+@hword 4, 39
 @word str_pokedex_eintraege_text_417
 @word str_pokedex_eintraege_text_417
 @word 0, 496, 15, 256, 0, 0
@@ -2521,19 +2665,19 @@ pokedex_spezies_name419=Meerwiesel
 @word 0, 356, 9, 256, 0, 0
 
 pokedex_spezies_name420=Kirsche
-@hword 4,  33
+@hword 4, 33
 @word str_pokedex_eintraege_text_420
 @word str_pokedex_eintraege_text_420
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name421=Blüte
-@hword 5,  93
+@hword 5, 93
 @word str_pokedex_eintraege_text_421
 @word str_pokedex_eintraege_text_421
 @word 0, 476, 15, 256, 0, 0
 
 pokedex_spezies_name422=Seeschnecke
-@hword 3,  63
+@hword 3, 63
 @word str_pokedex_eintraege_text_422
 @word str_pokedex_eintraege_text_422
 @word 0, 496, 15, 256, 0, 0
@@ -2551,7 +2695,7 @@ pokedex_spezies_name424=Langschweif
 @word 0, 336, 8, 256, 0, 0
 
 pokedex_spezies_name425=Ballon
-@hword 4,  12
+@hword 4, 12
 @word str_pokedex_eintraege_text_425
 @word str_pokedex_eintraege_text_425
 @word 0, 496, 15, 256, 0, 0
@@ -2563,7 +2707,7 @@ pokedex_spezies_name426=Luftschiff
 @word 0, 336, 8, 256, 0, 0
 
 pokedex_spezies_name427=Hase
-@hword 4,  55
+@hword 4, 55
 @word str_pokedex_eintraege_text_427
 @word str_pokedex_eintraege_text_427
 @word 0, 496, 15, 256, 0, 0
@@ -2575,7 +2719,7 @@ pokedex_spezies_name428=Kaninchen
 @word 0, 336, 8, 256, 0, 0
 
 pokedex_spezies_name429=Magisch
-@hword 9,  44
+@hword 9, 44
 @word str_pokedex_eintraege_text_429
 @word str_pokedex_eintraege_text_429
 @word 0, 396, 11, 256, 0, 0
@@ -2587,7 +2731,7 @@ pokedex_spezies_name430=Anführer
 @word 0, 396, 11, 256, 0, 0
 
 pokedex_spezies_name431=Fies
-@hword 5,  39
+@hword 5, 39
 @word str_pokedex_eintraege_text_431
 @word str_pokedex_eintraege_text_431
 @word 0, 476, 15, 256, 0, 0
@@ -2599,7 +2743,7 @@ pokedex_spezies_name432=Tigerkatze
 @word 0, 376, 10, 256, 0, 0
 
 pokedex_spezies_name433=Glöckchen
-@hword 2,  06
+@hword 2, 06
 @word str_pokedex_eintraege_text_433
 @word str_pokedex_eintraege_text_433
 @word 0, 516, 16, 256, 0, 0
@@ -2647,7 +2791,7 @@ pokedex_spezies_name440=Spielhaus
 @word 0, 456, 14, 256, 0, 0
 
 pokedex_spezies_name441=Musiknote
-@hword 5,  19
+@hword 5, 19
 @word str_pokedex_eintraege_text_441
 @word str_pokedex_eintraege_text_441
 @word 0, 476, 15, 256, 0, 0
@@ -2737,7 +2881,7 @@ pokedex_spezies_name455=Käfertot
 @word 0, 296, 4, 256, 0, 0
 
 pokedex_spezies_name456=Flügelfisch
-@hword 4,  70
+@hword 4, 70
 @word str_pokedex_eintraege_text_456
 @word str_pokedex_eintraege_text_456
 @word 0, 496, 15, 256, 0, 0
@@ -2875,25 +3019,25 @@ pokedex_spezies_name478=Eisgebiet
 @word 0, 316, 6, 256, 0, 0
 
 pokedex_spezies_name479=Plasma
-@hword 3,  03
+@hword 3, 03
 @word str_pokedex_eintraege_text_479
 @word str_pokedex_eintraege_text_479
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name480=Wissen
-@hword 3,  03
+@hword 3, 03
 @word str_pokedex_eintraege_text_480
 @word str_pokedex_eintraege_text_480
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name481=Emotion
-@hword 3,  03
+@hword 3, 03
 @word str_pokedex_eintraege_text_481
 @word str_pokedex_eintraege_text_481
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name482=Dynamik
-@hword 3,  03
+@hword 3, 03
 @word str_pokedex_eintraege_text_482
 @word str_pokedex_eintraege_text_482
 @word 0, 496, 15, 256, 0, 0
@@ -2935,13 +3079,13 @@ pokedex_spezies_name488=Lunar
 @word 0, 276, 2, 256, 0, 0
 
 pokedex_spezies_name489=Seedrift
-@hword 4,  31
+@hword 4, 31
 @word str_pokedex_eintraege_text_489
 @word str_pokedex_eintraege_text_489
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name490=Seefahrer
-@hword 3,  14
+@hword 3, 14
 @word str_pokedex_eintraege_text_490
 @word str_pokedex_eintraege_text_490
 @word 0, 496, 15, 256, 0, 0
@@ -2953,7 +3097,7 @@ pokedex_spezies_name491=Dunkelnacht
 @word 0, 276, 2, 256, 0, 0
 
 pokedex_spezies_name492=Dankbarkeit
-@hword 2,  21
+@hword 2, 21
 @word str_pokedex_eintraege_text_492
 @word str_pokedex_eintraege_text_492
 @word 0, 516, 16, 256, 0, 0
@@ -2965,13 +3109,13 @@ pokedex_spezies_name493=Alpha
 @word 0, 256, 0, 416, 12, 0
 
 pokedex_spezies_name494=Triumph
-@hword 4,  40
+@hword 4, 40
 @word str_pokedex_eintraege_text_494
 @word str_pokedex_eintraege_text_494
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name495=Grasschlan.
-@hword 6,  81
+@hword 6, 81
 @word str_pokedex_eintraege_text_495
 @word str_pokedex_eintraege_text_495
 @word 0, 456, 14, 256, 0, 0
@@ -2989,7 +3133,7 @@ pokedex_spezies_name497=Hoheit
 @word 0, 256, 0, 426, 13, 0
 
 pokedex_spezies_name498=Feuerferkel
-@hword 5,  99
+@hword 5, 99
 @word str_pokedex_eintraege_text_498
 @word str_pokedex_eintraege_text_498
 @word 0, 476, 15, 256, 0, 0
@@ -3007,7 +3151,7 @@ pokedex_spezies_name500=Feuerferkel
 @word 0, 256, 0, 256, 0, 0
 
 pokedex_spezies_name501=Otter
-@hword 5,  59
+@hword 5, 59
 @word str_pokedex_eintraege_text_501
 @word str_pokedex_eintraege_text_501
 @word 0, 476, 15, 256, 0, 0
@@ -3037,7 +3181,7 @@ pokedex_spezies_name505=Wachsamkeit
 @word 0, 356, 9, 256, 0, 0
 
 pokedex_spezies_name506=Hund
-@hword 4,  41
+@hword 4, 41
 @word str_pokedex_eintraege_text_506
 @word str_pokedex_eintraege_text_506
 @word 0, 496, 15, 256, 0, 0
@@ -3115,7 +3259,7 @@ pokedex_spezies_name518=Halbschlaf
 @word 0, 356, 9, 256, 0, 0
 
 pokedex_spezies_name519=Täubchen
-@hword 3,  21
+@hword 3, 21
 @word str_pokedex_eintraege_text_519
 @word str_pokedex_eintraege_text_519
 @word 0, 496, 15, 256, 0, 0
@@ -3163,7 +3307,7 @@ pokedex_spezies_name526=Kompression
 @word 0, 256, 0, 266, 1, 0
 
 pokedex_spezies_name527=Fledermaus
-@hword 4,  21
+@hword 4, 21
 @word str_pokedex_eintraege_text_527
 @word str_pokedex_eintraege_text_527
 @word 0, 496, 15, 256, 0, 0
@@ -3175,7 +3319,7 @@ pokedex_spezies_name528=Balz
 @word 0, 396, 11, 256, 0, 0
 
 pokedex_spezies_name529=Maulwurf
-@hword 3,  85
+@hword 3, 85
 @word str_pokedex_eintraege_text_529
 @word str_pokedex_eintraege_text_529
 @word 0, 496, 15, 256, 0, 0
@@ -3211,7 +3355,7 @@ pokedex_spezies_name534=Muskel
 @word 0, 296, 4, 256, 0, 0
 
 pokedex_spezies_name535=Kaulquappe
-@hword 5,  45
+@hword 5, 45
 @word str_pokedex_eintraege_text_535
 @word str_pokedex_eintraege_text_535
 @word 0, 476, 15, 256, 0, 0
@@ -3241,13 +3385,13 @@ pokedex_spezies_name539=Karate
 @word 0, 296, 4, 256, 0, 0
 
 pokedex_spezies_name540=Schneider
-@hword 3,  25
+@hword 3, 25
 @word str_pokedex_eintraege_text_540
 @word str_pokedex_eintraege_text_540
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name541=Wickelblatt
-@hword 5,  73
+@hword 5, 73
 @word str_pokedex_eintraege_text_541
 @word str_pokedex_eintraege_text_541
 @word 0, 476, 15, 256, 0, 0
@@ -3259,7 +3403,7 @@ pokedex_spezies_name542=Kinderpfl.
 @word 0, 336, 8, 256, 0, 0
 
 pokedex_spezies_name543=Tausendfüß.
-@hword 4,  53
+@hword 4, 53
 @word str_pokedex_eintraege_text_543
 @word str_pokedex_eintraege_text_543
 @word 0, 496, 15, 256, 0, 0
@@ -3277,19 +3421,19 @@ pokedex_spezies_name545=Riesenfüßer
 @word 0, 256, 0, 346, 8, 0
 
 pokedex_spezies_name546=Wattebausch
-@hword 3,  06
+@hword 3, 06
 @word str_pokedex_eintraege_text_546
 @word str_pokedex_eintraege_text_546
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name547=Windschatt.
-@hword 7,  66
+@hword 7, 66
 @word str_pokedex_eintraege_text_547
 @word str_pokedex_eintraege_text_547
 @word 0, 436, 13, 256, 0, 0
 
 pokedex_spezies_name548=Wurzel
-@hword 5,  66
+@hword 5, 66
 @word str_pokedex_eintraege_text_548
 @word str_pokedex_eintraege_text_548
 @word 0, 476, 15, 256, 0, 0
@@ -3373,7 +3517,7 @@ pokedex_spezies_name561=Vogelgleich
 @word 0, 296, 4, 256, 0, 0
 
 pokedex_spezies_name562=Seele
-@hword 5,  15
+@hword 5, 15
 @word str_pokedex_eintraege_text_562
 @word str_pokedex_eintraege_text_562
 @word 0, 476, 15, 256, 0, 0
@@ -3397,7 +3541,7 @@ pokedex_spezies_name565=Urzeitkröte
 @word 0, 336, 8, 256, 0, 0
 
 pokedex_spezies_name566=Urzeitvogel
-@hword 5,  95
+@hword 5, 95
 @word str_pokedex_eintraege_text_566
 @word str_pokedex_eintraege_text_566
 @word 0, 476, 15, 256, 0, 0
@@ -3433,19 +3577,19 @@ pokedex_spezies_name571=Polymorfu.
 @word 0, 256, 0, 256, 0, 0
 
 pokedex_spezies_name572=Chinchilla
-@hword 4,  58
+@hword 4, 58
 @word str_pokedex_eintraege_text_572
 @word str_pokedex_eintraege_text_572
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name573=Schal
-@hword 5,  75
+@hword 5, 75
 @word str_pokedex_eintraege_text_573
 @word str_pokedex_eintraege_text_573
 @word 0, 476, 15, 256, 0, 0
 
 pokedex_spezies_name574=Glotz
-@hword 4,  58
+@hword 4, 58
 @word str_pokedex_eintraege_text_574
 @word str_pokedex_eintraege_text_574
 @word 0, 496, 15, 256, 0, 0
@@ -3463,13 +3607,13 @@ pokedex_spezies_name576=Gestirn
 @word 0, 276, 2, 256, 0, 0
 
 pokedex_spezies_name577=Zelle
-@hword 3,  10
+@hword 3, 10
 @word str_pokedex_eintraege_text_577
 @word str_pokedex_eintraege_text_577
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name578=Zellteilung
-@hword 6,  80
+@hword 6, 80
 @word str_pokedex_eintraege_text_578
 @word str_pokedex_eintraege_text_578
 @word 0, 456, 14, 256, 0, 0
@@ -3481,7 +3625,7 @@ pokedex_spezies_name579=Vermehrung
 @word 0, 376, 10, 256, 0, 0
 
 pokedex_spezies_name580=Wasservogel
-@hword 5,  55
+@hword 5, 55
 @word str_pokedex_eintraege_text_580
 @word str_pokedex_eintraege_text_580
 @word 0, 476, 15, 256, 0, 0
@@ -3493,7 +3637,7 @@ pokedex_spezies_name581=Schwan
 @word 0, 316, 6, 256, 0, 0
 
 pokedex_spezies_name582=Neuschnee
-@hword 4,  57
+@hword 4, 57
 @word str_pokedex_eintraege_text_582
 @word str_pokedex_eintraege_text_582
 @word 0, 496, 15, 256, 0, 0
@@ -3523,13 +3667,13 @@ pokedex_spezies_name586=Jahreszeit
 @word 0, 256, 0, 286, 3, 0
 
 pokedex_spezies_name587=Flughörnch.
-@hword 4,  50
+@hword 4, 50
 @word str_pokedex_eintraege_text_587
 @word str_pokedex_eintraege_text_587
 @word 0, 496, 15, 256, 0, 0
 
 pokedex_spezies_name588=Schnappbiss
-@hword 5,  59
+@hword 5, 59
 @word str_pokedex_eintraege_text_588
 @word str_pokedex_eintraege_text_588
 @word 0, 476, 15, 256, 0, 0
@@ -3541,7 +3685,7 @@ pokedex_spezies_name589=Kavallerie
 @word 0, 376, 10, 256, 0, 0
 
 pokedex_spezies_name590=Pilz
-@hword 2,  10
+@hword 2, 10
 @word str_pokedex_eintraege_text_590
 @word str_pokedex_eintraege_text_590
 @word 0, 516, 16, 256, 0, 0
@@ -3571,7 +3715,7 @@ pokedex_spezies_name594=Fürsorge
 @word 0, 336, 8, 256, 0, 0
 
 pokedex_spezies_name595=Kleben
-@hword 1,  06
+@hword 1, 06
 @word str_pokedex_eintraege_text_595
 @word str_pokedex_eintraege_text_595
 @word 0, 536, 17, 256, 0, 0
@@ -3613,7 +3757,7 @@ pokedex_spezies_name601=Getriebe
 @word 0, 456, 14, 256, 0, 0
 
 pokedex_spezies_name602=Stromfisch
-@hword 2,  03
+@hword 2, 03
 @word str_pokedex_eintraege_text_602
 @word str_pokedex_eintraege_text_602
 @word 0, 516, 16, 256, 0, 0
@@ -3631,7 +3775,7 @@ pokedex_spezies_name604=Stromfisch
 @word 0, 256, 0, 306, 5, 0
 
 pokedex_spezies_name605=Grips
-@hword 5,  95
+@hword 5, 95
 @word str_pokedex_eintraege_text_605
 @word str_pokedex_eintraege_text_605
 @word 0, 476, 15, 256, 0, 0
@@ -3643,7 +3787,7 @@ pokedex_spezies_name606=Grips
 @word 0, 376, 10, 256, 0, 0
 
 pokedex_spezies_name607=Kerze
-@hword 3,  31
+@hword 3, 31
 @word str_pokedex_eintraege_text_607
 @word str_pokedex_eintraege_text_607
 @word 0, 496, 15, 256, 0, 0
@@ -3679,7 +3823,7 @@ pokedex_spezies_name612=Beilkiefer
 @word 0, 256, 0, 276, 2, 0
 
 pokedex_spezies_name613=Eisscholle
-@hword 5,  85
+@hword 5, 85
 @word str_pokedex_eintraege_text_613
 @word str_pokedex_eintraege_text_613
 @word 0, 476, 15, 256, 0, 0
@@ -3697,7 +3841,7 @@ pokedex_spezies_name615=Kristall
 @word 0, 356, 9, 256, 0, 0
 
 pokedex_spezies_name616=Schnecke
-@hword 4,  77
+@hword 4, 77
 @word str_pokedex_eintraege_text_616
 @word str_pokedex_eintraege_text_616
 @word 0, 496, 15, 256, 0, 0
@@ -3775,7 +3919,7 @@ pokedex_spezies_name628=Kühnheit
 @word 0, 276, 2, 256, 0, 0
 
 pokedex_spezies_name629=Windel
-@hword 5,  90
+@hword 5, 90
 @word str_pokedex_eintraege_text_629
 @word str_pokedex_eintraege_text_629
 @word 0, 476, 15, 256, 0, 0
@@ -3858,13 +4002,13 @@ pokedex_spezies_name642=Torpedo
 @word str_pokedex_eintraege_text_642
 @word 0, 276, 2, 256, 0, 0
 
-pokedex_spezies_name643=Wahres Weiß
+pokedex_spezies_name643=WahresWeiß
 @hword 32, 3300
 @word str_pokedex_eintraege_text_643
 @word str_pokedex_eintraege_text_643
 @word 0, 256, 0, 416, 12, 0
 
-pokedex_spezies_name644=Reines Sch.
+pokedex_spezies_name644=ReinesSch.
 @hword 29, 3450
 @word str_pokedex_eintraege_text_644
 @word str_pokedex_eintraege_text_644
@@ -3889,7 +4033,7 @@ pokedex_spezies_name647=Fohlen
 @word 0, 296, 4, 256, 0, 0
 
 pokedex_spezies_name648=Melodie
-@hword 6,  65
+@hword 6, 65
 @word str_pokedex_eintraege_text_648
 @word str_pokedex_eintraege_text_648
 @word 0, 456, 14, 256, 0, 0
@@ -4847,147 +4991,3 @@ pokedex_spezies_name807=Donner
 @word str_pokedex_eintraege_text_807
 @word str_pokedex_eintraege_text_807
 @word 0, 276, 2, 256, 0, 0
-
-pokedex_spezies_name808=Äon
-@hword 1, 10
-@word str_pokedex_eintraege_text_808
-@word str_pokedex_eintraege_text_808
-@word 0, 536, 17, 256, 0, 0
-
-pokedex_spezies_name809=Äon
-@hword 3, 20
-@word str_pokedex_eintraege_text_809
-@word str_pokedex_eintraege_text_809
-@word 0, 496, 15, 256, 0, 0
-
-pokedex_spezies_name810=Äon
-@hword 9, 35
-@word str_pokedex_eintraege_text_810
-@word str_pokedex_eintraege_text_810
-@word 0, 396, 11, 256, 0, 0
-
-pokedex_spezies_name811=Äon
-@hword 1, 10
-@word str_pokedex_eintraege_text_811
-@word str_pokedex_eintraege_text_811
-@word 0, 536, 17, 256, 0, 0
-
-pokedex_spezies_name812=Äon
-@hword 3, 20
-@word str_pokedex_eintraege_text_812
-@word str_pokedex_eintraege_text_812
-@word 0, 496, 15, 256, 0, 0
-
-pokedex_spezies_name813=Äon
-@hword 9, 35
-@word str_pokedex_eintraege_text_813
-@word str_pokedex_eintraege_text_813
-@word 0, 396, 11, 256, 0, 0
-
-pokedex_spezies_name814=Maus
-@hword 3, 38
-@word str_pokedex_eintraege_text_814
-@word str_pokedex_eintraege_text_814
-@word 0, 496, 15, 256, 0, 0
-
-pokedex_spezies_name815=Maus
-@hword 7, 255
-@word str_pokedex_eintraege_text_815
-@word str_pokedex_eintraege_text_815
-@word 0, 436, 13, 256, 0, 0
-
-pokedex_spezies_name816=Maus
-@hword 7, 210
-@word str_pokedex_eintraege_text_816
-@word str_pokedex_eintraege_text_816
-@word 0, 436, 13, 256, 0, 0
-
-pokedex_spezies_name817=Maus
-@hword 7, 400
-@word str_pokedex_eintraege_text_817
-@word str_pokedex_eintraege_text_817
-@word 0, 436, 13, 256, 0, 0
-
-pokedex_spezies_name818=Maus
-@hword 12, 550
-@word str_pokedex_eintraege_text_818
-@word str_pokedex_eintraege_text_818
-@word 0, 336, 8, 256, 0, 0
-
-pokedex_spezies_name819=Fuchs
-@hword 6, 99
-@word str_pokedex_eintraege_text_819
-@word str_pokedex_eintraege_text_819
-@word 0, 456, 14, 256, 0, 0
-
-pokedex_spezies_name820=Fuchs
-@hword 11, 199
-@word str_pokedex_eintraege_text_820
-@word str_pokedex_eintraege_text_820
-@word 0, 356, 9, 256, 0, 0
-
-pokedex_spezies_name821=Maulwurf
-@hword 2, 10
-@word str_pokedex_eintraege_text_821
-@word str_pokedex_eintraege_text_821
-@word 0, 516, 16, 256, 0, 0
-
-pokedex_spezies_name822=Maulwurf
-@hword 7, 666
-@word str_pokedex_eintraege_text_822
-@word str_pokedex_eintraege_text_822
-@word 0, 436, 13, 256, 0, 0
-
-pokedex_spezies_name823=Katze
-@hword 4, 42
-@word str_pokedex_eintraege_text_823
-@word str_pokedex_eintraege_text_823
-@word 0, 496, 15, 256, 0, 0
-
-pokedex_spezies_name824=Rassekatze
-@hword 11, 330
-@word str_pokedex_eintraege_text_824
-@word str_pokedex_eintraege_text_824
-@word 0, 356, 9, 256, 0, 0
-
-pokedex_spezies_name825=Schlamm
-@hword 7, 420
-@word str_pokedex_eintraege_text_825
-@word str_pokedex_eintraege_text_825
-@word 0, 436, 13, 256, 0, 0
-
-pokedex_spezies_name826=Schlamm
-@hword 10, 520
-@word str_pokedex_eintraege_text_826
-@word str_pokedex_eintraege_text_826
-@word 0, 376, 10, 256, 0, 0
-
-pokedex_spezies_name827=Gestein
-@hword 4, 203
-@word str_pokedex_eintraege_text_827
-@word str_pokedex_eintraege_text_827
-@word 0, 496, 15, 256, 0, 0
-
-pokedex_spezies_name828=Gestein
-@hword 10, 1100
-@word str_pokedex_eintraege_text_828
-@word str_pokedex_eintraege_text_828
-@word 0, 376, 10, 256, 0, 0
-
-pokedex_spezies_name829=Urgestein
-@hword 17, 3160
-@word str_pokedex_eintraege_text_829
-@word str_pokedex_eintraege_text_829
-@word 0, 256, 0, 266, 1, 0
-
-pokedex_spezies_name830=Palmfrucht
-@hword 109, 4156
-@word str_pokedex_eintraege_text_830
-@word str_pokedex_eintraege_text_830
-@word 0, 256, 0, 1100, 25, 0
-
-pokedex_spezies_name831=Knochenfan
-@hword 10, 340
-@word str_pokedex_eintraege_text_831
-@word str_pokedex_eintraege_text_831
-@word 0, 376, 10, 256, 0, 0
