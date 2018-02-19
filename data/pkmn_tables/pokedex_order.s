@@ -4,7 +4,6 @@
 .global pokedex_order
 pokedex_order:
 
-.hword 0
 .hword 1
 .hword 2
 .hword 3
