@@ -1,5 +1,5 @@
-#include <pokeagb/pokeagb.h>
 #include "pokedex_common.h"
+#include <pokeagb/pokeagb.h>
 
 const u16 pdex_text_pal[] = {rgb5(255, 0, 255), rgb5(255, 255, 255), rgb5(0, 0, 0),     rgb5(255, 0, 255),
                              rgb5(255, 0, 255), rgb5(255, 0, 255),   rgb5(255, 0, 255), rgb5(255, 0, 255),
@@ -57,6 +57,16 @@ void pdex_vblank_handler(void) {
     gpu_pal_upload();
 }
 
+u8 pstr_lines(pchar *str) {
+    u8 lines = 1;
+    while (*str != 0xFF) {
+        if (*str == 0xFE)
+            lines++;
+        str++;
+    }
+    return lines;
+}
+
 void pdex_cb_handler(void) {
     if (pal_fade_control.active)
         process_palfade();
@@ -67,6 +77,22 @@ void pdex_cb_handler(void) {
         tilemaps_sync();
         remoboxes_upload_tilesets();
     }
+}
+
+void pdex_vram_free_bgmaps(void) {
+    for (u8 i = 0; i < 3; ++i) {
+        void *tmap = bgid_get_tilemap(i);
+        if (tmap != NULL) {
+            free(tmap);
+            bgid_nullify_tilemap(i);
+        }
+    }
+}
+
+void pdex_vram_allocate_bgmaps(void) {
+    bgid_set_tilemap(0, malloc(0x800));
+    bgid_set_tilemap(1, malloc(0x800));
+    bgid_set_tilemap(2, malloc(0x800));
 }
 
 void pdex_vram_setup(void) {
@@ -93,8 +119,5 @@ void pdex_vram_setup(void) {
 
     vblank_handler_set(pdex_vblank_handler);
     interrupts_enable(INTERRUPT_VBLANK);
-
-    u8 *bgMap = malloc(0x800);
-    bgid_set_tilemap(2, bgMap);
-    
+    pdex_vram_allocate_bgmaps();
 }

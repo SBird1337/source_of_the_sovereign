@@ -15,8 +15,13 @@
 
 #define FONT_DEX_STD 1
 
-#define TB_STD_CENTER(t) (((TB_STD_LEN_PX - t) >> 1) + 2)
-#define TB_STD_RIGHT(t) ((TB_BOT_LEN_PX - t))
+#define TB_STD_LEN 10
+#define TB_STD_LEN_PX (TB_STD_LEN * 8)
+#define TB_BOT_LEN 9
+#define TB_BOT_LEN_PX (TB_BOT_LEN * 8)
+
+#define TB_STD_CENTER(t,w) (((w - t) >> 1) + 2)
+#define TB_STD_RIGHT(t,w) ((w - t))
 
 #define DEX_PKMN_TAG 0x1300
 #define DEX_BALL_TAG 0x1301
@@ -32,11 +37,13 @@
 void pdex_cb_handler(void);
 void pdex_vblank_handler(void);
 void pdex_vram_setup(void);
+void pdex_vram_free_bgmaps(void);
 
 void pdex_load(void);
 
 const u16 pdex_text_pal[16];
 const struct BgConfig pdex_bg_config[4];
 struct TextColor pdex_text_color;
+u8 pstr_lines(pchar* str);
 
 #endif

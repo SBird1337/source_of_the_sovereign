@@ -16,11 +16,32 @@ pdex_str_caught:
     .string LAN_DE "Gef.:"
     .string LAN_EN "Caught:"
 
+.global pdex_str_size
+pdex_str_size:
+    .string LAN_DE "Größe:"
+    .string LAN_EN "Size:"
+
+.global pdex_str_weight
+pdex_str_weight:
+    .string LAN_DE "Gewicht:"
+    .string LAN_EN "Weight:"
+
+.global pdex_str_size_unit
+pdex_str_size_unit:
+    .string LAN_DE "m"
+    .string LAN_EN "m"
+
+.global pdex_str_weight_unit
+pdex_str_weight_unit:
+    .string LAN_DE "kg"
+    .string LAN_EN "kg"
+
 .global pdex_str_empty
 pdex_str_empty:
     .string LAN_DE "----------"
     .string LAN_EN "----------"
 
+.align 2
 .global pdex_str_regions
 pdex_str_regions:
 .word pdex_str_empty
@@ -59,3 +80,8 @@ pdex_str_kalos:
 pdex_str_alola:
     .string LAN_DE "Alola"
     .string LAN_EN "Alola"
+
+.global pdex_entry_debug
+pdex_entry_debug:
+    .string LAN_DE "Glurak fliegt durch die Lüfte, um starke\nGegner aufzuspüren. Sein heißer Feuer-\natem bringt alles zum Schmelzen.\nAber es richtet seinen Feueratem nie auf\nschwächere Gegner."
+    .string LAN_EN "Glurak fliegt durch die Lüfte, um starke Gegner aufzuspüren.\nSein heißer Feueratem bringt alles zum Schmelzen.\nAber es richtet seinen Feueratem nie auf schwächere Gegner."

@@ -189,8 +189,7 @@ void region_loop(u8 tid) {
     case 10:
         if (!pal_fade_control.active) {
             task_del(tid);
-            if(bgid_get_tilemap(2) != NULL)
-                free(bgid_get_tilemap(2));
+            pdex_vram_free_bgmaps();
             set_callback2(pdex_load);
         }
         break;

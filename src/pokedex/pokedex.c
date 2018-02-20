@@ -17,12 +17,6 @@
 #define TB_CAUGHT 3
 #define TB_MAIN 4
 
-
-#define TB_STD_LEN 10
-#define TB_STD_LEN_PX (TB_STD_LEN * 8)
-#define TB_BOT_LEN 9
-#define TB_BOT_LEN_PX (TB_BOT_LEN * 8)
-
 #define TB_SEEN_Y (6)
 #define TB_CAUGHT_Y 3
 
@@ -115,8 +109,8 @@ void pdex_load_sc(void) {
     rboxid_print(TB_SEEN, FONT_DEX_STD, 0, TB_SEEN_Y, &pdex_text_color, 0, &pdex_str_seen[0]);
     rboxid_print(TB_CAUGHT, FONT_DEX_STD, 0, TB_CAUGHT_Y, &pdex_text_color, 0, &pdex_str_caught[0]);
 
-    rboxid_print(TB_SEEN, FONT_DEX_STD, TB_STD_RIGHT(twidthSeen), TB_SEEN_Y + 1, &pdex_text_color, 0, seenBuffer);
-    rboxid_print(TB_CAUGHT, FONT_DEX_STD, TB_STD_RIGHT(twidthCaught), TB_CAUGHT_Y + 1, &pdex_text_color, 0,
+    rboxid_print(TB_SEEN, FONT_DEX_STD, TB_STD_RIGHT(twidthSeen,TB_BOT_LEN_PX), TB_SEEN_Y + 1, &pdex_text_color, 0, seenBuffer);
+    rboxid_print(TB_CAUGHT, FONT_DEX_STD, TB_STD_RIGHT(twidthCaught,TB_BOT_LEN_PX), TB_CAUGHT_Y + 1, &pdex_text_color, 0,
                  caughtBuffer);
 
     rboxid_update_tilemap_and_tileset(TB_SEEN);
@@ -135,7 +129,7 @@ void pdex_pokemon_load(u16 species) {
     /* this is very temporary */
     rboxid_clear_pixels(TB_PKMN, 0);
     u32 twidth = font_get_width_of_string(FONT_DEX_STD, &pokemon_names[species][0], 0x0000);
-    rboxid_print(TB_PKMN, FONT_DEX_STD, TB_STD_CENTER(twidth), 3, &pdex_text_color, 0, &pokemon_names[species][0]);
+    rboxid_print(TB_PKMN, FONT_DEX_STD, TB_STD_CENTER(twidth,TB_STD_LEN_PX), 3, &pdex_text_color, 0, &pokemon_names[species][0]);
     if (pokedex_context->pokemon_oam != -1) {
         lz77UnCompVram(pokemon_graphics_front[species].data,
                        ((void *)(objects[pokedex_context->pokemon_oam].final_oam.tile_num * 32) + ADDR_VRAM + 0x10000));
@@ -442,6 +436,10 @@ void pdex_loop(u8 tid) {
         break;
     case 4:
         /* main control */
+        if(super.buttons_new & KEY_A)
+        {
+            pokedex_context->state = 15;
+        }
         if (super.buttons_new & KEY_B) {
             pokedex_context->state = 10;
         }
@@ -460,12 +458,26 @@ void pdex_loop(u8 tid) {
     case 11:
         if (!pal_fade_control.active) {
             task_del(tid);
+            pdex_vram_free_bgmaps();
             free(pokedex_context->lookup);
             free(pokedex_context);
             set_callback2(c2_overworld_switch_start_menu);
             set_callback1(c1_overworld);
         }
         break;
+    case 15:
+        /* load the detail screen */
+        fade_screen(0xFFFFFFFF, PDEX_FADEIN_SPD, 0, 16, 0x0000);
+        pokedex_context->state++;
+        break;
+    case 16:
+        if(!pal_fade_control.active)
+        {
+            pdex_vram_free_bgmaps();
+            task_del(tid);
+            void dexdetail_load(void);
+            set_callback2(dexdetail_load);
+        }
     default:
         break;
     }
