@@ -1,8 +1,19 @@
 #include <pokeagb/pokeagb.h>
+#include <agb_debug.h>
 #include <tileset_animation/smoke.h>
 #include <tileset_animation/water_stone.h>
 #include <tileset_animation/flowers_mag.h>
 #include <tileset_animation/flowers_ora.h>
+
+#define NUM_MAX_ANIMATIONS 16
+
+struct TilesetAnimationState {
+    u16 cur_frame[NUM_MAX_ANIMATIONS];
+    u16 cur_tile[NUM_MAX_ANIMATIONS];
+};
+
+static struct TilesetAnimationState *anim_state = (struct TilesetAnimationState *)0x203FAB4;
+
 struct TilesetAnimation {
     u16 tile_start;
     u16 frame_length;
@@ -21,16 +32,30 @@ const struct TilesetAnimation hesperia_second_animations[] = {
 
 void animate_from_structure(const struct TilesetAnimation *anim, u16 tile_skip, u16 current_frame) {
     void *vram_address = (void *)(0x06000000 + (tile_skip * 0x20));
-    u8 current_animation = 0;
-    while (anim[current_animation].image != (void *)0xFFFFFFFF) {
-        void *current_vram = vram_address + (0x20 * anim[current_animation].tile_start);
-        u16 max_frame = anim[current_animation].frame_length * anim[current_animation].frame_count;
-        u16 used_frame = current_frame % max_frame;
-        used_frame /= anim[current_animation].frame_length;
-        dprintf("using tile %d.\n",used_frame);
-        memcpy(current_vram, anim[current_animation].image + (0x20 * anim[current_animation].tile_length * used_frame),
-               anim[current_animation].tile_length * 0x20);
-        current_animation++;
+    u8 cur_anim = 0;
+    while (anim[cur_anim].image != (void *)0xFFFFFFFF && cur_anim < NUM_MAX_ANIMATIONS) {
+        void *current_vram = vram_address + (0x20 * anim[cur_anim].tile_start);
+
+        if (anim_state->cur_frame[cur_anim] == 0) {
+            memcpy(current_vram, anim[cur_anim].image +
+                    (0x20 * anim[cur_anim].tile_length * anim_state->cur_tile[cur_anim]),
+                    anim[cur_anim].tile_length * 0x20);
+        }
+
+        anim_state->cur_frame[cur_anim] += 1;
+        if (anim_state->cur_frame[cur_anim] >= anim[cur_anim].frame_length) {
+            anim_state->cur_frame[cur_anim] = 0;
+            anim_state->cur_tile[cur_anim] += 1;
+            if (anim_state->cur_tile[cur_anim] >= anim[cur_anim].frame_count) {
+                anim_state->cur_tile[cur_anim] = 0;
+            }
+        }
+
+        cur_anim++;
+    }
+    if (cur_anim >= NUM_MAX_ANIMATIONS) {
+        dprintf("Warning! Animation State array not big enough to play all animations\n"
+                "Please increase the limit in %s\n", __FILE__);
     }
 }
 
@@ -53,4 +78,8 @@ void main_second_animator_init(void) {
     blockset_two_current_frame = 0;
     blockset_two_max_frame = 0x3C0;
     blockset_two_animator = main_second_animator;
+
+    for (int i = 0; i < NUM_MAX_ANIMATIONS; i++) {
+        anim_state->cur_frame[i] = 0;
+    }
 }
