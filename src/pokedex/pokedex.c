@@ -9,6 +9,7 @@
 
 #include "pokedex_common.h"
 
+
 #define PDEX_LAST_SHOWN 813
 
 #define TB_TITLE 0
