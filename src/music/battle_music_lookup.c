@@ -5,8 +5,8 @@
 #include <battle_common.h>
 #include <pokemon.h>
 #include <agb_debug.h>
-#include <sound.h>
 #include <config/core.h>
+#include <pokeagb/core/m4a.h>
 
 #define SONG_ID_SKIP_PLAY 0xFFFF
 

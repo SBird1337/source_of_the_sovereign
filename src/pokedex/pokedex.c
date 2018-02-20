@@ -365,19 +365,22 @@ void pdex_try_advance(u8 reverse) {
     if (reverse) {
         if (pokedex_context->cursor_position_internal > 0) {
             pokedex_context->cursor_position_internal--;
+            m4aSongNumStart(600);
         } else if ((pokedex_context->cursor_position_top) > (pokedex_context->first_seen)) {
             pdex_fill_previous_slot();
             pokedex_context->cursor_position_top--;
-
             pdex_hardware_scroll(true);
+            m4aSongNumStart(600);
         }
     } else {
         if (pokedex_context->cursor_position_internal < 7) {
             pokedex_context->cursor_position_internal++;
+            m4aSongNumStart(600);
         } else if (pokedex_context->cursor_position_top < (PDEX_LAST_SHOWN - 7)) {
             pdex_fill_next_slot();
             pokedex_context->cursor_position_top++;
             pdex_hardware_scroll(false);
+            m4aSongNumStart(600);
         }
     }
 
@@ -432,9 +435,11 @@ void pdex_loop(u8 tid) {
         if(super.buttons_new & KEY_A)
         {
             pokedex_context->state = 15;
+            m4aSongNumStart(5);
         }
         if (super.buttons_new & KEY_B) {
             pokedex_context->state = 10;
+            m4aSongNumStart(601);
         }
         if ((super.buttons_new & KEY_DOWN) || (super.buttons_held & KEY_DOWN)) {
             pdex_try_advance(false);

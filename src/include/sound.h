@@ -36,30 +36,6 @@
 
 #include "types.h"
 
-typedef struct music_player_area music_player_area;
-typedef struct music_player_track music_player_track;
-typedef struct song_header song_header;
-
-typedef struct
-{
-    music_player_area *ma;
-    music_player_track *ta;
-    u32 tn;
-} m_play_table;
-
-typedef struct
-{
-    song_header *so;
-    u16 ms, me;
-} song_table;
-
-extern m_play_table mplay_table[];
-extern song_table _songtable[];
-void m4aSongNumStart(u16 songid);
-void MPlayStart_rev01(music_player_area *ma, song_header *so);
-void MPlayContinue(music_player_area *ma);
-void MPlayAllStop(void);
-
 // battle and map related stuff
 void current_map_music_set(u16);
 void current_map_music_set_to_zero(void);

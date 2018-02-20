@@ -162,28 +162,38 @@ void region_loop(u8 tid) {
     case 3:
         switch (super.buttons_new) {
         case KEY_RIGHT:
-            if (pokedex_context->region_selected < 6)
+            if (pokedex_context->region_selected < 6) {
                 pokedex_context->region_selected++;
+                m4aSongNumStart(102);
+            }
             break;
         case KEY_DOWN:
-            if (pokedex_context->region_selected < 3)
+            if (pokedex_context->region_selected < 3) {
                 pokedex_context->region_selected += 3;
+                m4aSongNumStart(102);
+            }
             break;
         case KEY_LEFT:
-            if (pokedex_context->region_selected > 0)
+            if (pokedex_context->region_selected > 0) {
                 pokedex_context->region_selected--;
+                m4aSongNumStart(102);
+            }
             break;
         case KEY_UP:
-            if ((pokedex_context->region_selected > 2) && (pokedex_context->region_selected < 6))
+            if ((pokedex_context->region_selected > 2) && (pokedex_context->region_selected < 6)) {
                 pokedex_context->region_selected -= 3;
+                m4aSongNumStart(102);
+            }
             break;
         case KEY_A:
             fade_screen(0xFFFFFFFF, PDEX_FADEIN_SPD, 0, 16, 0x0000);
             pokedex_context->state = 10;
+            m4aSongNumStart(5);
             break;
         case KEY_B:
             fade_screen(0xFFFFFFFF, PDEX_FADEIN_SPD, 0, 16, 0x0000);
             pokedex_context->state = 11;
+            m4aSongNumStart(601);
         default:
             break;
         }
