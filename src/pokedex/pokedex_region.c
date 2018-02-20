@@ -10,6 +10,8 @@ void region_select_load(void);
 extern const pchar *pdex_str_regions[];
 extern const pchar *pdex_str_empty;
 
+const u16 region_to_dex[] = {1, 152, 252, 393, 501, 656, 728};
+
 struct TextboxTemplate region_select_boxes[] = {
     {.bg_id = 0, .x = 4, .y = 7, .width = 6, .height = 3, .pal_id = 15, .charbase = 1},
     {.bg_id = 0, .x = 13, .y = 7, .width = 6, .height = 3, .pal_id = 15, .charbase = 19},
@@ -190,6 +192,7 @@ void region_loop(u8 tid) {
         if (!pal_fade_control.active) {
             task_del(tid);
             pdex_vram_free_bgmaps();
+            pokedex_context->cursor_position_top = region_to_dex[pokedex_context->region_selected];
             set_callback2(pdex_load);
         }
         break;

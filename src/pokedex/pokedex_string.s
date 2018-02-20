@@ -36,6 +36,11 @@ pdex_str_weight_unit:
     .string LAN_DE "kg"
     .string LAN_EN "kg"
 
+.global pdex_str_comma
+pdex_str_comma:
+    .string LAN_DE ","
+    .string LAN_EN ","
+
 .global pdex_str_empty
 pdex_str_empty:
     .string LAN_DE "----------"
