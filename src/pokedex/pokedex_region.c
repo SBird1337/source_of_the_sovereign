@@ -1,6 +1,7 @@
 #include <agb_debug.h>
 #include <constants/pkmns.h>
 #include <pokeagb/pokeagb.h>
+#include <pokeagb/core/m4a.h>
 #include <pokedex/pdexSelectBg.h>
 #include <pokedex/pdexSelectRegion.h>
 
@@ -164,25 +165,25 @@ void region_loop(u8 tid) {
         case KEY_RIGHT:
             if (pokedex_context->region_selected < 6) {
                 pokedex_context->region_selected++;
-                m4aSongNumStart(102);
+                m4aSongNumStart(101);
             }
             break;
         case KEY_DOWN:
             if (pokedex_context->region_selected < 3) {
                 pokedex_context->region_selected += 3;
-                m4aSongNumStart(102);
+                m4aSongNumStart(101);
             }
             break;
         case KEY_LEFT:
             if (pokedex_context->region_selected > 0) {
                 pokedex_context->region_selected--;
-                m4aSongNumStart(102);
+                m4aSongNumStart(101);
             }
             break;
         case KEY_UP:
             if ((pokedex_context->region_selected > 2) && (pokedex_context->region_selected < 6)) {
                 pokedex_context->region_selected -= 3;
-                m4aSongNumStart(102);
+                m4aSongNumStart(101);
             }
             break;
         case KEY_A:
