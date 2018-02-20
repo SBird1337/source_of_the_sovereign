@@ -9,7 +9,8 @@
 
 #include "pokedex_common.h"
 
-#define PDEX_LAST_SHOWN PKMN_AMIGENTO
+
+#define PDEX_LAST_SHOWN 813
 
 #define TB_TITLE 0
 #define TB_PKMN 1
@@ -85,7 +86,7 @@ void pdex_update_balls(void) {
 
 void pdex_update_page_full() {
     rboxid_clear_pixels(TB_MAIN, 0);
-    for (s8 i = pokedex_context->cursor_position_top; i < pokedex_context->cursor_position_top + 8; ++i) {
+    for (u16 i = pokedex_context->cursor_position_top; i < pokedex_context->cursor_position_top + 8; ++i) {
         pdex_main_box_species_fill(i - pokedex_context->cursor_position_top, pokedex_context->lookup[i].species,
                                    pokedex_context->lookup[i].seen, pokedex_context->lookup[i].caught);
     }
@@ -116,14 +117,6 @@ void pdex_load_sc(void) {
     rboxid_update_tilemap_and_tileset(TB_SEEN);
     rboxid_update_tilemap_and_tileset(TB_CAUGHT);
 }
-
-const struct OamData pdex_oam_pkmn = {
-    .affine_mode = 0,
-    .obj_mode = 0,
-    .mosaic = false,
-    .shape = 0,
-    .size = 3,
-};
 
 void pdex_pokemon_load(u16 species) {
     /* this is very temporary */
@@ -328,7 +321,7 @@ void pdex_data_setup(void) {
             pokedex_context->lookup[i].caught = dex_flag_pokedex_index(i, DEX_FLAG_CHECK_CAUGHT);
             if (!first && (pokedex_context->lookup[i].seen)) {
                 pokedex_context->first_seen = 1; //i
-                pokedex_context->cursor_position_top = 1; //i
+                //pokedex_context->cursor_position_top = 1; //i is set in region dex
                 first = true;
             }
         }
@@ -413,7 +406,7 @@ void pdex_loop(u8 tid) {
 
         pdex_pokeballs_init();
         pdex_load_scroll_ui();
-        pdex_pokemon_load(pokedex_context->lookup[pokedex_context->first_seen].species);
+        pdex_pokemon_load(pokedex_context->lookup[pokedex_context->cursor_position_top].species);
         pdex_load_sc();
         pdex_update_page_full();
 

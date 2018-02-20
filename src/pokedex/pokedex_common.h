@@ -44,6 +44,8 @@ void pdex_load(void);
 const u16 pdex_text_pal[16];
 const struct BgConfig pdex_bg_config[4];
 struct TextColor pdex_text_color;
+const struct OamData pdex_oam_pkmn;
+
 u8 pstr_lines(pchar* str);
 
 #endif

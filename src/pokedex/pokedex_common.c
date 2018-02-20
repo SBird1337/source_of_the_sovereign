@@ -49,6 +49,14 @@ const struct BgConfig pdex_bg_config[4] = {
     },
 };
 
+const struct OamData pdex_oam_pkmn = {
+    .affine_mode = 0,
+    .obj_mode = 0,
+    .mosaic = false,
+    .shape = 0,
+    .size = 3,
+};
+
 struct TextColor pdex_text_color = {0, 1, 2};
 
 void pdex_vblank_handler(void) {
