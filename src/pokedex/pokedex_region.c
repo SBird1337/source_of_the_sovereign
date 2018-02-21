@@ -210,9 +210,7 @@ void region_loop(u8 tid) {
     case 11:
         if (!pal_fade_control.active) {
             task_del(tid);
-            if(pokedex_context->lookup != NULL)
-                free(pokedex_context->lookup);
-            free(pokedex_context);
+            pdex_free_memory();
             set_callback2(c2_overworld_switch_start_menu);
             set_callback1(c1_overworld);
         }
@@ -225,7 +223,6 @@ void region_loop(u8 tid) {
 
 void region_select_load(void) {
     pdex_vram_setup();
-
     pokedex_context = malloc_and_clear(sizeof(struct PdexCtx));
 
     region_select_load_gfx();

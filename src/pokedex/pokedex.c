@@ -457,10 +457,9 @@ void pdex_loop(u8 tid) {
         if (!pal_fade_control.active) {
             task_del(tid);
             pdex_vram_free_bgmaps();
-            free(pokedex_context->lookup);
-            free(pokedex_context);
-            set_callback2(c2_overworld_switch_start_menu);
-            set_callback1(c1_overworld);
+            pdex_free_memory();
+            void region_select_load(void);
+            set_callback2(region_select_load);
         }
         break;
     case 15:
@@ -505,6 +504,7 @@ void pdex_load(void) {
 
     pokedex_context->pokemon_oam = -1;
     pokedex_context->state = 0;
+    pokedex_context->hardware_scroll_amount = 0;
     task_add(pdex_loop, 0);
     set_callback2(pdex_cb_handler);
 }

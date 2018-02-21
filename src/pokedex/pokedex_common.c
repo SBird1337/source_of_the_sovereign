@@ -97,6 +97,13 @@ void pdex_vram_free_bgmaps(void) {
     }
 }
 
+void pdex_free_memory(void)
+{
+    if(pokedex_context->lookup != NULL)
+        free(pokedex_context->lookup);
+    free(pokedex_context);
+}
+
 void pdex_vram_allocate_bgmaps(void) {
     bgid_set_tilemap(0, malloc(0x800));
     bgid_set_tilemap(1, malloc(0x800));

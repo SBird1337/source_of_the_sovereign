@@ -30,6 +30,9 @@
 #define DEX_ARROW_TAG_EPAL 0x1304
 #define DEX_SCROLL_TAG 0x1305
 #define DEX_REGION_SELECT 0x1306
+#define DEX_DETAIL_TYPE1 0x130E
+#define DEX_DETAIL_TYPE2 0x130F
+#define DEX_DETAIL_TYPEPAL 0x130E
 
 #define DEX_REGION_PAL(i) (0x1307 + i)
 #define DEX_REGION_ICON(i) (0x1307 + i)
@@ -38,6 +41,7 @@ void pdex_cb_handler(void);
 void pdex_vblank_handler(void);
 void pdex_vram_setup(void);
 void pdex_vram_free_bgmaps(void);
+void pdex_free_memory(void);
 
 void pdex_load(void);
 
