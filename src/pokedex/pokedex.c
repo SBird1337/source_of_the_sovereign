@@ -77,7 +77,7 @@ void pdex_main_box_species_fill(s8 n, u16 species, bool seen, bool caught) {
 
 void pdex_update_balls(void) {
     for (u8 i = 0; i < 8; ++i) {
-        if (pokedex_context->lookup[i + pokedex_context->cursor_position_top].caught)
+        if (pdex_lazy_lookup_entry(i + pokedex_context->cursor_position_top)->caught)
             OBJID_SHOW(pokedex_context->ball_oams[i]);
         else
             OBJID_HIDE(pokedex_context->ball_oams[i]);
@@ -87,8 +87,8 @@ void pdex_update_balls(void) {
 void pdex_update_page_full() {
     rboxid_clear_pixels(TB_MAIN, 0);
     for (u16 i = pokedex_context->cursor_position_top; i < pokedex_context->cursor_position_top + 8; ++i) {
-        pdex_main_box_species_fill(i - pokedex_context->cursor_position_top, pokedex_context->lookup[i].species,
-                                   pokedex_context->lookup[i].seen, pokedex_context->lookup[i].caught);
+        pdex_main_box_species_fill(i - pokedex_context->cursor_position_top, pdex_lazy_lookup_entry(i)->species,
+                                   pdex_lazy_lookup_entry(i)->seen, pdex_lazy_lookup_entry(i)->caught);
     }
     pdex_update_balls();
     rboxid_update_tilemap_and_tileset(TB_MAIN);
@@ -309,23 +309,7 @@ void pdex_load_scroll_ui(void) {
 }
 
 void pdex_data_setup(void) {
-    /* fill the LUT */
-    /* TODO: get data from various pokedex lists */
-    pokedex_context->lookup = malloc_and_clear((PDEX_LAST_SHOWN + 1) * sizeof(struct PdexLookup));
-    bool first = false;
-    for (u32 i = 0; i <= PDEX_LAST_SHOWN; ++i) {
-        u16 species = pokedex_index_to_species(i);
-        if (species > 0) {
-            pokedex_context->lookup[i].species = species;
-            pokedex_context->lookup[i].seen = dex_flag_pokedex_index(i, DEX_FLAG_CHECK_SEEN);
-            pokedex_context->lookup[i].caught = dex_flag_pokedex_index(i, DEX_FLAG_CHECK_CAUGHT);
-            if (!first && (pokedex_context->lookup[i].seen)) {
-                pokedex_context->first_seen = 1; //i
-                //pokedex_context->cursor_position_top = 1; //i is set in region dex
-                first = true;
-            }
-        }
-    }
+    pokedex_context->first_seen = 1;
 }
 
 void pdex_hardware_scroll(bool up) {
@@ -351,14 +335,14 @@ void pdex_hardware_scroll(bool up) {
 
 void pdex_fill_previous_slot(void) {
     u16 pIndex = pokedex_context->cursor_position_top - 1;
-    pdex_main_box_species_fill(-1, pokedex_context->lookup[pIndex].species, pokedex_context->lookup[pIndex].seen,
-                               pokedex_context->lookup[pIndex].caught);
+    pdex_main_box_species_fill(-1, pdex_lazy_lookup_entry(pIndex)->species, pdex_lazy_lookup_entry(pIndex)->seen,
+                               pdex_lazy_lookup_entry(pIndex)->caught);
 }
 
 void pdex_fill_next_slot(void) {
     u16 pIndex = pokedex_context->cursor_position_top + 8;
-    pdex_main_box_species_fill(8, pokedex_context->lookup[pIndex].species, pokedex_context->lookup[pIndex].seen,
-                               pokedex_context->lookup[pIndex].caught);
+    pdex_main_box_species_fill(8, pdex_lazy_lookup_entry(pIndex)->species, pdex_lazy_lookup_entry(pIndex)->seen,
+                               pdex_lazy_lookup_entry(pIndex)->caught);
 }
 
 void pdex_try_advance(u8 reverse) {
@@ -385,10 +369,10 @@ void pdex_try_advance(u8 reverse) {
     }
 
     u16 pkIndexToLoad = pokedex_context->cursor_position_internal + pokedex_context->cursor_position_top;
-    if (pokedex_context->lookup[pkIndexToLoad].seen || pokedex_context->lookup[pkIndexToLoad].caught)
-        pdex_pokemon_load(pokedex_context->lookup[pkIndexToLoad].species);
+    if (pdex_lazy_lookup_entry(pkIndexToLoad)->seen || pdex_lazy_lookup_entry(pkIndexToLoad)->caught)
+        pdex_pokemon_load(pdex_lazy_lookup_entry(pkIndexToLoad)->species);
     else
-        pdex_pokemon_load(pokedex_context->lookup[pkIndexToLoad].species); /* debug, just display the mofo */
+        pdex_pokemon_load(pdex_lazy_lookup_entry(pkIndexToLoad)->species); /* debug, just display the mofo */
     pdex_update_balls();
 }
 
@@ -409,7 +393,7 @@ void pdex_loop(u8 tid) {
 
         pdex_pokeballs_init();
         pdex_load_scroll_ui();
-        pdex_pokemon_load(pokedex_context->lookup[pokedex_context->cursor_position_top + pokedex_context->cursor_position_internal].species);
+        pdex_pokemon_load(pdex_lazy_lookup_entry(pokedex_context->cursor_position_top + pokedex_context->cursor_position_internal)->species);
         pdex_load_sc();
         pdex_update_page_full();
 

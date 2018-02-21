@@ -97,11 +97,32 @@ void pdex_vram_free_bgmaps(void) {
     }
 }
 
-void pdex_free_memory(void)
-{
-    if(pokedex_context->lookup != NULL)
+struct PdexLookup *pdex_fill_lookup(u16 dexIndex) {
+    u16 species = pokedex_index_to_species(dexIndex);
+    pokedex_context->lookup[dexIndex].species = species;
+    pokedex_context->lookup[dexIndex].seen = dex_flag_pokedex_index(dexIndex, DEX_FLAG_CHECK_SEEN);
+    pokedex_context->lookup[dexIndex].caught = dex_flag_pokedex_index(dexIndex, DEX_FLAG_CHECK_CAUGHT);
+    return &pokedex_context->lookup[dexIndex];
+}
+
+struct PdexLookup *pdex_lazy_lookup_entry(u16 dexIndex) {
+    if (pokedex_context->lookup[dexIndex].species != -1) {
+        return &pokedex_context->lookup[dexIndex];
+    } else {
+        return pdex_fill_lookup(dexIndex);
+    }
+}
+
+void pdex_free_memory(void) {
+    if (pokedex_context->lookup != NULL)
         free(pokedex_context->lookup);
     free(pokedex_context);
+}
+
+void pdex_alloc_memory(void) {
+    pokedex_context = malloc_and_clear(sizeof(struct PdexCtx));
+    pokedex_context->lookup = malloc_and_clear((PDEX_LAST_SHOWN + 1) * sizeof(struct PdexLookup));
+    memset(pokedex_context->lookup, 0xFF, (PDEX_LAST_SHOWN + 1) * sizeof(struct PdexLookup));
 }
 
 void pdex_vram_allocate_bgmaps(void) {
