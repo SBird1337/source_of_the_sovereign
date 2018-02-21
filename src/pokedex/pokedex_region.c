@@ -223,7 +223,7 @@ void region_loop(u8 tid) {
 
 void region_select_load(void) {
     pdex_vram_setup();
-    pokedex_context = malloc_and_clear(sizeof(struct PdexCtx));
+    pdex_alloc_memory();
 
     region_select_load_gfx();
     task_add(region_loop, 0);

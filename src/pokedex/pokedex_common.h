@@ -44,6 +44,8 @@ void pdex_vblank_handler(void);
 void pdex_vram_setup(void);
 void pdex_vram_free_bgmaps(void);
 void pdex_free_memory(void);
+void pdex_alloc_memory(void);
+struct PdexLookup *pdex_lazy_lookup_entry(u16 dexIndex);
 
 void pdex_load(void);
 

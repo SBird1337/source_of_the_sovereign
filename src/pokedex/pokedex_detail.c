@@ -63,7 +63,7 @@ s8 dexdetail_load_type_oam(u8 type, u16 tag) {
 }
 
 void dexdetail_load_pokemon(u16 dexindex) {
-    u16 species = pokedex_context->lookup[dexindex].species;
+    u16 species = pdex_lazy_lookup_entry(dexindex)->species;
     rboxid_clear_pixels(TB_PKNAME, 0);
     rboxid_clear_pixels(TB_PKSIZE, 0);
     rboxid_clear_pixels(TB_DESC, 0);
@@ -180,17 +180,14 @@ void dexdetail_loop(u8 tid) {
         case KEY_B:
             pokedex_context->state = 12;
             u16 dexindex = pokedex_context->cursor_position_top + pokedex_context->cursor_position_internal;
-            if(dexindex <= PDEX_LAST_SHOWN - 7)
-            {
+            if (dexindex <= PDEX_LAST_SHOWN - 7) {
                 pokedex_context->cursor_position_top = dexindex;
                 pokedex_context->cursor_position_internal = 0;
-            }
-            else
-            {
+            } else {
                 pokedex_context->cursor_position_top = PDEX_LAST_SHOWN - 7;
                 pokedex_context->cursor_position_internal = (dexindex - pokedex_context->cursor_position_top);
             }
-            
+
             fade_screen(0xFFFFFFFF, PDEX_FADEIN_SPD, 0, 16, 0x0000);
             break;
         }
