@@ -63,15 +63,9 @@
 .include "patches/game_engine/quick_hacks.asm"
 .include "patches/game_engine/localization.asm"
 .include "patches/game_engine/start_menu.asm"
+.include "patches/game_engine/script_replace.asm"
 
 //.include "battle_engine/patches/battle_hooks.s"
-
-.org 0x0815F9B8
-    .word 0x08069ED5 // fix nop1 for now...
-
-// In order to test the scripts
-//.org 0x08727994
-    //.word the_old_test_script
 
 .org 0x09000000
 .importobj "object/linked.o"
