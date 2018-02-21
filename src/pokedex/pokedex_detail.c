@@ -26,7 +26,7 @@ struct TextboxTemplate dexdetail_boxes[] = {
     {.bg_id = 0xFF},
 };
 
-u8 dexdetail_type_to_oam_type[18] = {0, 9, 8, 12, 6, 5, 11, 10, 14, 17, 1, 2, 3,4, 13, 7, 16, 15};
+u8 dexdetail_type_to_oam_type[18] = {0, 9, 8, 12, 6, 5, 11, 10, 14, 17, 1, 2, 3, 4, 13, 7, 16, 15};
 
 #define O_TYPE(t) (dexdetail_type_to_oam_type[t])
 
@@ -179,9 +179,18 @@ void dexdetail_loop(u8 tid) {
         switch (super.buttons_new) {
         case KEY_B:
             pokedex_context->state = 12;
-            pokedex_context->cursor_position_top =
-                pokedex_context->cursor_position_top + pokedex_context->cursor_position_internal;
-            pokedex_context->cursor_position_internal = 0;
+            u16 dexindex = pokedex_context->cursor_position_top + pokedex_context->cursor_position_internal;
+            if(dexindex <= PDEX_LAST_SHOWN - 7)
+            {
+                pokedex_context->cursor_position_top = dexindex;
+                pokedex_context->cursor_position_internal = 0;
+            }
+            else
+            {
+                pokedex_context->cursor_position_top = PDEX_LAST_SHOWN - 7;
+                pokedex_context->cursor_position_internal = (dexindex - pokedex_context->cursor_position_top);
+            }
+            
             fade_screen(0xFFFFFFFF, PDEX_FADEIN_SPD, 0, 16, 0x0000);
             break;
         }

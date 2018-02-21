@@ -10,7 +10,7 @@
 #include "pokedex_common.h"
 
 
-#define PDEX_LAST_SHOWN 813
+
 
 #define TB_TITLE 0
 #define TB_PKMN 1
@@ -409,7 +409,7 @@ void pdex_loop(u8 tid) {
 
         pdex_pokeballs_init();
         pdex_load_scroll_ui();
-        pdex_pokemon_load(pokedex_context->lookup[pokedex_context->cursor_position_top].species);
+        pdex_pokemon_load(pokedex_context->lookup[pokedex_context->cursor_position_top + pokedex_context->cursor_position_internal].species);
         pdex_load_sc();
         pdex_update_page_full();
 

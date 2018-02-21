@@ -3,6 +3,8 @@
 
 #include <pokeagb/pokeagb.h>
 
+#define PDEX_LAST_SHOWN 813
+
 #define CPUFSCPY 0
 #define CPUFSSET 1
 #define CPUModeFS(size, mode) ((size >> 2) | (mode << 24))
