@@ -9,9 +9,6 @@
 
 #include "pokedex_common.h"
 
-
-
-
 #define TB_TITLE 0
 #define TB_PKMN 1
 #define TB_SEEN 2
@@ -23,6 +20,7 @@
 
 #define DEX_SCROLL_MIN 23
 #define DEX_SCROLL_MAX 146
+#define SCROLL_SPEED_MAX 6
 
 void pdex_load(void);
 void pdex_vblank_handler(void);
@@ -35,6 +33,7 @@ extern const pchar pdex_str_caught[];
 extern const pchar pdex_str_empty[];
 
 static const u8 pdex_y_offset[] = {19, 35, 51, 67, 83, 99, 115, 131};
+static const u16 scroll_speed_delays[] = {20, 20, 20, 20,10, 5, 0};
 
 struct TextboxTemplate pdex_boxes[] = {
     {.bg_id = 0, .x = 11, .y = 0, .width = 10, .height = 2, .pal_id = 15, .charbase = 1},
@@ -46,8 +45,6 @@ struct TextboxTemplate pdex_boxes[] = {
 
     {.bg_id = 0xFF},
 };
-
-
 
 s16 pdex_get_y_offset(s8 n) {
     s8 modOffset = n + pokedex_context->hardware_scroll_amount;
@@ -110,9 +107,10 @@ void pdex_load_sc(void) {
     rboxid_print(TB_SEEN, FONT_DEX_STD, 0, TB_SEEN_Y, &pdex_text_color, 0, &pdex_str_seen[0]);
     rboxid_print(TB_CAUGHT, FONT_DEX_STD, 0, TB_CAUGHT_Y, &pdex_text_color, 0, &pdex_str_caught[0]);
 
-    rboxid_print(TB_SEEN, FONT_DEX_STD, TB_STD_RIGHT(twidthSeen,TB_BOT_LEN_PX), TB_SEEN_Y + 1, &pdex_text_color, 0, seenBuffer);
-    rboxid_print(TB_CAUGHT, FONT_DEX_STD, TB_STD_RIGHT(twidthCaught,TB_BOT_LEN_PX), TB_CAUGHT_Y + 1, &pdex_text_color, 0,
-                 caughtBuffer);
+    rboxid_print(TB_SEEN, FONT_DEX_STD, TB_STD_RIGHT(twidthSeen, TB_BOT_LEN_PX), TB_SEEN_Y + 1, &pdex_text_color, 0,
+                 seenBuffer);
+    rboxid_print(TB_CAUGHT, FONT_DEX_STD, TB_STD_RIGHT(twidthCaught, TB_BOT_LEN_PX), TB_CAUGHT_Y + 1, &pdex_text_color,
+                 0, caughtBuffer);
 
     rboxid_update_tilemap_and_tileset(TB_SEEN);
     rboxid_update_tilemap_and_tileset(TB_CAUGHT);
@@ -122,7 +120,8 @@ void pdex_pokemon_load(u16 species) {
     /* this is very temporary */
     rboxid_clear_pixels(TB_PKMN, 0);
     u32 twidth = font_get_width_of_string(FONT_DEX_STD, &pokemon_names[species][0], 0x0000);
-    rboxid_print(TB_PKMN, FONT_DEX_STD, TB_STD_CENTER(twidth,TB_STD_LEN_PX), 3, &pdex_text_color, 0, &pokemon_names[species][0]);
+    rboxid_print(TB_PKMN, FONT_DEX_STD, TB_STD_CENTER(twidth, TB_STD_LEN_PX), 3, &pdex_text_color, 0,
+                 &pokemon_names[species][0]);
     if (pokedex_context->pokemon_oam != -1) {
         lz77UnCompVram(pokemon_graphics_front[species].data,
                        ((void *)(objects[pokedex_context->pokemon_oam].final_oam.tile_num * 32) + ADDR_VRAM + 0x10000));
@@ -308,9 +307,7 @@ void pdex_load_scroll_ui(void) {
     objects[downArrow].priv[2] = grayPal;
 }
 
-void pdex_data_setup(void) {
-    pokedex_context->first_seen = 1;
-}
+void pdex_data_setup(void) { pokedex_context->first_seen = 1; }
 
 void pdex_hardware_scroll(bool up) {
     if (up) {
@@ -393,7 +390,9 @@ void pdex_loop(u8 tid) {
 
         pdex_pokeballs_init();
         pdex_load_scroll_ui();
-        pdex_pokemon_load(pdex_lazy_lookup_entry(pokedex_context->cursor_position_top + pokedex_context->cursor_position_internal)->species);
+        pdex_pokemon_load(
+            pdex_lazy_lookup_entry(pokedex_context->cursor_position_top + pokedex_context->cursor_position_internal)
+                ->species);
         pdex_load_sc();
         pdex_update_page_full();
 
@@ -416,8 +415,7 @@ void pdex_loop(u8 tid) {
         break;
     case 4:
         /* main control */
-        if(super.buttons_new & KEY_A)
-        {
+        if (super.buttons_new & KEY_A) {
             pokedex_context->state = 15;
             m4aSongNumStart(5);
         }
@@ -425,11 +423,39 @@ void pdex_loop(u8 tid) {
             pokedex_context->state = 10;
             m4aSongNumStart(601);
         }
-        if ((super.buttons_new & KEY_DOWN) || (super.buttons_held & KEY_DOWN)) {
+        if ((super.buttons_new & KEY_DOWN)) {
             pdex_try_advance(false);
+            pokedex_context->scroll_speed = 0;
+            pokedex_context->delay_count = 0;
+        } else if (super.buttons_held & KEY_DOWN) {
+            if (pokedex_context->scroll_speed < SCROLL_SPEED_MAX) {
+                if (pokedex_context->delay_count >= scroll_speed_delays[pokedex_context->scroll_speed]) {
+                    pdex_try_advance(false);
+                    pokedex_context->delay_count = 0;
+                    pokedex_context->scroll_speed++;
+                } else {
+                    pokedex_context->delay_count++;
+                }
+            } else {
+                pdex_try_advance(false);
+            }
         }
-        if ((super.buttons_new & KEY_UP) || (super.buttons_held & KEY_UP)) {
+        if ((super.buttons_new & KEY_UP)) {
             pdex_try_advance(true);
+            pokedex_context->scroll_speed = 0;
+            pokedex_context->delay_count = 0;
+        } else if (super.buttons_held & KEY_UP) {
+            if (pokedex_context->scroll_speed < SCROLL_SPEED_MAX) {
+                if (pokedex_context->delay_count >= scroll_speed_delays[pokedex_context->scroll_speed]) {
+                    pdex_try_advance(true);
+                    pokedex_context->delay_count = 0;
+                    pokedex_context->scroll_speed++;
+                } else {
+                    pokedex_context->delay_count++;
+                }
+            } else {
+                pdex_try_advance(true);
+            }
         }
         break;
     case 10:
@@ -452,8 +478,7 @@ void pdex_loop(u8 tid) {
         pokedex_context->state++;
         break;
     case 16:
-        if(!pal_fade_control.active)
-        {
+        if (!pal_fade_control.active) {
             pdex_vram_free_bgmaps();
             task_del(tid);
             void dexdetail_load(void);
