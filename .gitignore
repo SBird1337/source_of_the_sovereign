@@ -1,15 +1,11 @@
 *.gba
 *.o
-object
 temp
 *.ogg
 *.wav
 *.mid
 *.a
 *.i
-base/*.*
 nbproject/private/tools/
-build/*
-generated_image/*
 .vscode/*
 todo/
