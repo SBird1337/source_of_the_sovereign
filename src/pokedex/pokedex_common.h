@@ -3,7 +3,9 @@
 
 #include <pokeagb/pokeagb.h>
 
-#define PDEX_LAST_SHOWN 813
+#define PDEX_ALOLA_COUNT (18)
+#define PDEX_LAST_ENTRY (813 + PDEX_ALOLA_COUNT)
+#define PDEX_LAST_SHOWN (813)
 
 #define CPUFSCPY 0
 #define CPUFSSET 1
@@ -38,6 +40,14 @@
 
 #define DEX_REGION_PAL(i) (0x1307 + i)
 #define DEX_REGION_ICON(i) (0x1307 + i)
+#define MAX_FORMS 7
+#define FORM_COUNT 20
+
+struct DexForm
+{
+    u16 index;
+    struct DexFormEntry forms[MAX_FORMS];
+};
 
 void pdex_cb_handler(void);
 void pdex_vblank_handler(void);
@@ -46,13 +56,13 @@ void pdex_vram_free_bgmaps(void);
 void pdex_free_memory(void);
 void pdex_alloc_memory(void);
 struct PdexLookup *pdex_lazy_lookup_entry(u16 dexIndex);
-
 void pdex_load(void);
 
 const u16 pdex_text_pal[16];
 const struct BgConfig pdex_bg_config[4];
 struct TextColor pdex_text_color;
 const struct OamData pdex_oam_pkmn;
+struct DexForm pdex_forms[FORM_COUNT];
 
 u8 pstr_lines(pchar* str);
 

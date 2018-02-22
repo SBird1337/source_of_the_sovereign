@@ -1,4 +1,5 @@
 #include "pokedex_common.h"
+#include <constants/pkmns.h>
 #include <pokeagb/pokeagb.h>
 
 const u16 pdex_text_pal[] = {rgb5(255, 0, 255), rgb5(255, 255, 255), rgb5(0, 0, 0),     rgb5(255, 0, 255),
@@ -47,6 +48,13 @@ const struct BgConfig pdex_bg_config[4] = {
         .character_base = 3,
         .bgid = 3,
     },
+};
+
+struct DexForm pdex_forms[FORM_COUNT] = 
+{
+    {.index = 19, .forms = {{814, PKMN_ALOLA_RATTFRATZ, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
+    {.index = 20, .forms = {{815, PKMN_ALOLA_RATIKARL, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
+    {.index = 0xFFFF, .forms = {{0xFFFF, 0xFFFF, FORM_END}}},
 };
 
 const struct OamData pdex_oam_pkmn = {
@@ -121,8 +129,8 @@ void pdex_free_memory(void) {
 
 void pdex_alloc_memory(void) {
     pokedex_context = malloc_and_clear(sizeof(struct PdexCtx));
-    pokedex_context->lookup = malloc_and_clear((PDEX_LAST_SHOWN + 1) * sizeof(struct PdexLookup));
-    memset(pokedex_context->lookup, 0xFF, (PDEX_LAST_SHOWN + 1) * sizeof(struct PdexLookup));
+    pokedex_context->lookup = malloc_and_clear((PDEX_LAST_ENTRY + 1) * sizeof(struct PdexLookup));
+    memset(pokedex_context->lookup, 0xFF, (PDEX_LAST_ENTRY + 1) * sizeof(struct PdexLookup));
 }
 
 void pdex_vram_allocate_bgmaps(void) {

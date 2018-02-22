@@ -46,6 +46,11 @@ pdex_str_empty:
     .string LAN_DE "----------"
     .string LAN_EN "----------"
 
+.global pdex_str_form_alola
+pdex_str_form_alola:
+    .string LAN_DE " (Alola)"
+    .string LAN_DE " (Alola)"
+
 .align 2
 .global pdex_str_regions
 pdex_str_regions:
