@@ -48,7 +48,6 @@ struct TextboxTemplate pdex_boxes[] = {
 
 s16 pdex_get_y_offset(s8 n) {
     s8 modOffset = n + pokedex_context->hardware_scroll_amount;
-    dprintf("mod_offset: %d\n", modOffset);
     if (modOffset < -1) {
         modOffset += 16;
     }
@@ -62,7 +61,6 @@ s16 pdex_get_y_offset(s8 n) {
 void pdex_main_box_species_fill(s8 n, u16 species, bool seen, bool caught) {
     seen = true;
     s16 y = pdex_get_y_offset(n);
-    dprintf("trying to print box to y: %d\n", y);
     rboxid_fill_rectangle(TB_MAIN, 0, 0, y, 11 * 8, 16);
     const pchar *stringToPrint = (seen || caught) ? &pokemon_names[species][0] : &pdex_str_empty[0];
     const pchar stringWhitespace[] = {0x0, 0xFF};
