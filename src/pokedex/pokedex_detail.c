@@ -265,11 +265,10 @@ void dexdetail_load_form_arrows(void) {
 }
 
 void dexdetail_loop(u8 tid) {
-    (void)tid;
+    u16 currentIndex = pokedex_context->cursor_position_top + pokedex_context->cursor_position_internal;
     switch (pokedex_context->state) {
     case 0:
         bgid_send_tilemap(2);
-        u16 currentIndex = pokedex_context->cursor_position_top + pokedex_context->cursor_position_internal;
         dexdetail_load_form_arrows();
         dexdetail_load_pokemon(currentIndex, NORMAL);
         pokedex_context->detail_form_position = 0;
@@ -297,6 +296,12 @@ void dexdetail_loop(u8 tid) {
         pokedex_context->state++;
         break;
     case 2:
+        if (!pal_fade_control.active) {
+            pokecry_play(pdex_lazy_lookup_entry(currentIndex)->species, 0);
+            pokedex_context->state++;
+        }
+        break;
+    case 3:
         switch (super.buttons_new) {
         case KEY_B:
             pokedex_context->state = 12;
@@ -308,7 +313,7 @@ void dexdetail_loop(u8 tid) {
                 pokedex_context->cursor_position_top = PDEX_LAST_SHOWN - 7;
                 pokedex_context->cursor_position_internal = (dexindex - pokedex_context->cursor_position_top);
             }
-
+            m4aSongNumStart(601);
             fade_screen(0xFFFFFFFF, PDEX_FADEIN_SPD, 0, 16, 0x0000);
             break;
         case KEY_LEFT:
@@ -323,6 +328,8 @@ void dexdetail_loop(u8 tid) {
                 dexdetail_update_form(pokedex_context->detail_form_position);
             }
             break;
+        case KEY_START:
+            pokecry_play(pdex_lazy_lookup_entry(currentIndex)->species, 0);
         }
         break;
     case 12:
