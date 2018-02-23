@@ -251,8 +251,8 @@ void dexdetail_load_form_arrows(void) {
     u8 normalPal = gpu_pal_obj_alloc_tag_and_apply(&pdex_arrow_rot_pal);
     u8 grayPal = gpu_pal_obj_alloc_tag_and_apply(&pdex_arrow_rot_pal_gray);
     tint_palette_gray(&palette_bg_unfaded[16 * (16 + grayPal)], 16);
-    u8 leftArrow = template_instanciate_forward_search(&pdex_arrow_rot_template, 20, 80, 0);
-    u8 rightArrow = template_instanciate_forward_search(&pdex_arrow_rot_template, 80, 80, 0);
+    u8 leftArrow = template_instanciate_forward_search(&pdex_arrow_rot_template, 10, 55, 0);
+    u8 rightArrow = template_instanciate_forward_search(&pdex_arrow_rot_template, 100, 55, 0);
     objects[leftArrow].priv[0] = true;
     objects[leftArrow].final_oam.h_flip = true;
     objects[leftArrow].priv[1] = normalPal;

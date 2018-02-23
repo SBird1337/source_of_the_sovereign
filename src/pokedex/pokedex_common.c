@@ -54,6 +54,22 @@ struct DexForm pdex_forms[FORM_COUNT] =
 {
     {.index = 19, .forms = {{814, PKMN_ALOLA_RATTFRATZ, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
     {.index = 20, .forms = {{815, PKMN_ALOLA_RATIKARL, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
+    {.index = 26, .forms = {{816, PKMN_ALOLA_RAICHU, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
+    {.index = 27, .forms = {{817, PKMN_ALOLA_SANDAN, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
+    {.index = 28, .forms = {{818, PKMN_ALOLA_SANDAMER, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
+    {.index = 37, .forms = {{819, PKMN_ALOLA_VULPIX, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
+    {.index = 38, .forms = {{820, PKMN_ALOLA_VULNONA, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
+    {.index = 50, .forms = {{821, PKMN_ALOLA_DIGDA, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
+    {.index = 51, .forms = {{822, PKMN_ALOLA_DIGDRI, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
+    {.index = 52, .forms = {{823, PKMN_ALOLA_MAUZI, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
+    {.index = 53, .forms = {{824, PKMN_ALOLA_SNOBILIKAT, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
+    {.index = 74, .forms = {{825, PKMN_ALOLA_KLEINSTEIN, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
+    {.index = 75, .forms = {{826, PKMN_ALOLA_GEOROK, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
+    {.index = 76, .forms = {{827, PKMN_ALOLA_GEOWAZ, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
+    {.index = 88, .forms = {{828, PKMN_ALOLA_SLEIMA, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
+    {.index = 89, .forms = {{829, PKMN_ALOLA_SLEIMOK, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
+    {.index = 103, .forms = {{830, PKMN_ALOLA_KOKOWEI, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
+    {.index = 105, .forms = {{831, PKMN_ALOLA_KNOGGA, ALOLA}, {0xFFFF, 0xFFFF, FORM_END}}},
     {.index = 0xFFFF, .forms = {{0xFFFF, 0xFFFF, FORM_END}}},
 };
 
