@@ -122,11 +122,11 @@ void dexdetail_load_pokemon(u16 dexindex, enum DexFormType formType) {
         gpu_pal_apply_compressed(pokemon_palette_normal[species].data,
                                  16 * (objects[pokedex_context->detail_pokemon_oam].final_oam.palette_num + 16), 32);
     } else {
-        struct SpriteTiles pkmnTiles = {pokemon_graphics_front[species].data, 2048, DEX_PKMN_TAG};
-        struct SpritePalette pkmnPal = {pokemon_palette_normal[species].data, DEX_PKMN_TAG};
+        struct SpriteTiles pkmnTiles = {pokemon_graphics_front[species].data, 2048, DEX_PKMN_TAG_ONE};
+        struct SpritePalette pkmnPal = {pokemon_palette_normal[species].data, DEX_PKMN_TAG_ONE};
         const struct Template pkmnTemplate = {
-            .tiles_tag = DEX_PKMN_TAG,
-            .pal_tag = DEX_PKMN_TAG,
+            .tiles_tag = DEX_PKMN_TAG_ONE,
+            .pal_tag = DEX_PKMN_TAG_ONE,
             .oam = &pdex_oam_pkmn,
             .animation = &anim_image_empty,
             .graphics = &pkmnTiles,
