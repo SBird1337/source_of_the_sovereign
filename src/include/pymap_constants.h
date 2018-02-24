@@ -1782,10 +1782,19 @@
 @ARM Assembly macro definitions for map_namespaces
 
 
-.equ MAP_AMONIA, 0x58
-.equ MAP_MERIANA_CITY, 0x59
-.equ MAP_AKTANIA, 0x5a
-.equ MAP_SILVANIA, 0x5b
+.equ MAP_HESPERIA, 0x58
+.equ MAP_CARUN_CITY, 0x59
+.equ MAP_UNUMA, 0x5a
+.equ MAP_URBANIA_CITY, 0x5b
+.equ MAP_ROUTE_1, 0x5c
+.equ MAP_ROUTE_2, 0x5d
+.equ MAP_ROUTE_3, 0x5e
+.equ MAP_ROUTE_4, 0x5f
+.equ MAP_ROUTE_5, 0x60
+.equ MAP_WALD_VON_YELNIA, 0x61
+.equ MAP_TEAM_TUNDRA_HQ, 0x62
+.equ MAP_BAUM_DES_LEBENS, 0x63
+.equ MAP_HOEHLE_DER_WEACHTER, 0x64
 
 
 
