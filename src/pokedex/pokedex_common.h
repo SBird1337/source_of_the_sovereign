@@ -27,7 +27,9 @@
 #define TB_STD_CENTER(t,w) (((w - t) >> 1) + 2)
 #define TB_STD_RIGHT(t,w) ((w - t))
 
-#define DEX_PKMN_TAG 0x1300
+#define DEX_PKMN_TAG_ONE 0x1300
+#define DEX_PKMN_TAG_TWO 0x1310
+#define DEX_PKMN_TAG_THREE 0x1311
 #define DEX_BALL_TAG 0x1301
 #define DEX_CURSOR_TAG 0x1302
 #define DEX_ARROW_TAG 0x1303

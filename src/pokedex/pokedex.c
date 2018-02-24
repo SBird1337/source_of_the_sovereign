@@ -33,7 +33,7 @@ extern const pchar pdex_str_caught[];
 extern const pchar pdex_str_empty[];
 
 static const u8 pdex_y_offset[] = {19, 35, 51, 67, 83, 99, 115, 131};
-static const u16 scroll_speed_delays[] = {20, 20, 20, 20,10, 5, 0};
+static const u16 scroll_speed_delays[] = {20, 20, 20, 20, 10, 5, 0};
 
 struct TextboxTemplate pdex_boxes[] = {
     {.bg_id = 0, .x = 11, .y = 0, .width = 10, .height = 2, .pal_id = 15, .charbase = 1},
@@ -113,6 +113,35 @@ void pdex_load_sc(void) {
     rboxid_update_tilemap_and_tileset(TB_SEEN);
     rboxid_update_tilemap_and_tileset(TB_CAUGHT);
 }
+void pdex_pokemon_oam_update(u16 species, s8 objid) {
+    gpu_pal_apply_compressed(pokemon_palette_normal[species].data, 16 * (objects[objid].final_oam.palette_num + 16),
+                             32);
+    lz77UnCompVram(pokemon_graphics_front[species].data,
+                   ((void *)(objects[objid].final_oam.tile_num * 32) + ADDR_VRAM + 0x10000));
+}
+
+s8 pdex_pokemon_oam_load(u16 species, u16 tag) {
+    struct SpriteTiles pkmnTiles = {pokemon_graphics_front[species].data, 2048, tag};
+    struct SpritePalette pkmnPal = {pokemon_palette_normal[species].data, tag};
+    const struct Template pkmnTemplate = {
+        .tiles_tag = tag,
+        .pal_tag = tag,
+        .oam = &pdex_oam_pkmn,
+        .animation = &anim_image_empty,
+        .graphics = &pkmnTiles,
+        .rotscale = &rotscale_empty,
+        .callback = oac_nullsub,
+    };
+    gpu_tile_obj_decompress_alloc_tag_and_upload(&pkmnTiles);
+
+    gpu_pal_decompress_alloc_tag_and_upload(&pkmnPal);
+    s8 objid = (s8)template_instanciate_forward_search(&pkmnTemplate, 10, 10, 0);
+
+    objects[objid].pos1.x = 55;
+    objects[objid].pos1.y = 76;
+    OBJID_HIDE(objid);
+    return objid;
+}
 
 void pdex_pokemon_load(u16 species) {
     /* this is very temporary */
@@ -120,31 +149,9 @@ void pdex_pokemon_load(u16 species) {
     u32 twidth = font_get_width_of_string(FONT_DEX_STD, &pokemon_names[species][0], 0x0000);
     rboxid_print(TB_PKMN, FONT_DEX_STD, TB_STD_CENTER(twidth, TB_STD_LEN_PX), 3, &pdex_text_color, 0,
                  &pokemon_names[species][0]);
-    if (pokedex_context->pokemon_oam != -1) {
-        lz77UnCompVram(pokemon_graphics_front[species].data,
-                       ((void *)(objects[pokedex_context->pokemon_oam].final_oam.tile_num * 32) + ADDR_VRAM + 0x10000));
-        gpu_pal_apply_compressed(pokemon_palette_normal[species].data,
-                                 16 * (objects[pokedex_context->pokemon_oam].final_oam.palette_num + 16), 32);
-    } else {
-        struct SpriteTiles pkmnTiles = {pokemon_graphics_front[species].data, 2048, DEX_PKMN_TAG};
-        struct SpritePalette pkmnPal = {pokemon_palette_normal[species].data, DEX_PKMN_TAG};
-        const struct Template pkmnTemplate = {
-            .tiles_tag = DEX_PKMN_TAG,
-            .pal_tag = DEX_PKMN_TAG,
-            .oam = &pdex_oam_pkmn,
-            .animation = &anim_image_empty,
-            .graphics = &pkmnTiles,
-            .rotscale = &rotscale_empty,
-            .callback = oac_nullsub,
-        };
-        gpu_tile_obj_decompress_alloc_tag_and_upload(&pkmnTiles);
 
-        gpu_pal_decompress_alloc_tag_and_upload(&pkmnPal);
-        pokedex_context->pokemon_oam = (s8)template_instanciate_forward_search(&pkmnTemplate, 10, 10, 0);
+    // pokedex_context->pokemon_oam = pdex_pokemon_oam_load(species, pokedex_context->pokemon_oam);
 
-        objects[pokedex_context->pokemon_oam].pos1.x = 55;
-        objects[pokedex_context->pokemon_oam].pos1.y = 76;
-    }
     rboxid_update_tilemap_and_tileset(TB_PKMN);
 }
 
@@ -350,6 +357,8 @@ void pdex_try_advance(u8 reverse) {
             pokedex_context->cursor_position_top--;
             pdex_hardware_scroll(true);
             m4aSongNumStart(600);
+        } else {
+            return;
         }
     } else {
         if (pokedex_context->cursor_position_internal < 7) {
@@ -360,14 +369,35 @@ void pdex_try_advance(u8 reverse) {
             pokedex_context->cursor_position_top++;
             pdex_hardware_scroll(false);
             m4aSongNumStart(600);
+        } else {
+            return;
         }
     }
 
     u16 pkIndexToLoad = pokedex_context->cursor_position_internal + pokedex_context->cursor_position_top;
-    if (pdex_lazy_lookup_entry(pkIndexToLoad)->seen || pdex_lazy_lookup_entry(pkIndexToLoad)->caught)
-        pdex_pokemon_load(pdex_lazy_lookup_entry(pkIndexToLoad)->species);
-    else
-        pdex_pokemon_load(pdex_lazy_lookup_entry(pkIndexToLoad)->species); /* debug, just display the mofo */
+    u16 speciesToLoad = (pdex_lazy_lookup_entry(pkIndexToLoad)->seen || pdex_lazy_lookup_entry(pkIndexToLoad)->caught)
+                            ? pdex_lazy_lookup_entry(pkIndexToLoad)->species
+                            : pdex_lazy_lookup_entry(pkIndexToLoad)->species; /* debug, just display the mofo */
+
+    pdex_pokemon_load(speciesToLoad);
+    if (reverse) {
+        s8 oam = pokedex_context->pokemon_oam; // current oam id
+        OBJID_HIDE(oam);
+        pokedex_context->pokemon_oam = pokedex_context->prev_pokemon_oam;
+        OBJID_SHOW(pokedex_context->pokemon_oam);
+        pokedex_context->prev_pokemon_oam = pokedex_context->next_pokemon_oam;
+        pokedex_context->next_pokemon_oam = oam;
+
+        pdex_pokemon_oam_update(pdex_lazy_lookup_entry(pkIndexToLoad - 1)->species, pokedex_context->prev_pokemon_oam);
+    } else {
+        s8 oam = pokedex_context->pokemon_oam;
+        OBJID_HIDE(oam);
+        pokedex_context->pokemon_oam = pokedex_context->next_pokemon_oam;
+        OBJID_SHOW(pokedex_context->pokemon_oam);
+        pokedex_context->next_pokemon_oam = pokedex_context->prev_pokemon_oam;
+        pokedex_context->prev_pokemon_oam = oam;
+        pdex_pokemon_oam_update(pdex_lazy_lookup_entry(pkIndexToLoad + 1)->species, pokedex_context->next_pokemon_oam);
+    }
     pdex_update_balls();
 }
 
@@ -388,9 +418,22 @@ void pdex_loop(u8 tid) {
 
         pdex_pokeballs_init();
         pdex_load_scroll_ui();
-        pdex_pokemon_load(
-            pdex_lazy_lookup_entry(pokedex_context->cursor_position_top + pokedex_context->cursor_position_internal)
-                ->species);
+        u16 currentIndex = pokedex_context->cursor_position_top + pokedex_context->cursor_position_internal;
+        pdex_pokemon_load(pdex_lazy_lookup_entry(currentIndex)->species);
+
+        pokedex_context->pokemon_oam =
+            pdex_pokemon_oam_load(pdex_lazy_lookup_entry(currentIndex)->species, DEX_PKMN_TAG_ONE);
+        OBJID_SHOW(pokedex_context->pokemon_oam);
+
+        pokedex_context->next_pokemon_oam =
+            pdex_pokemon_oam_load(pdex_lazy_lookup_entry(currentIndex + 1)->species, DEX_PKMN_TAG_TWO);
+
+        if (currentIndex != pokedex_context->first_seen) {
+            pokedex_context->prev_pokemon_oam =
+                pdex_pokemon_oam_load(pdex_lazy_lookup_entry(currentIndex - 1)->species, DEX_PKMN_TAG_THREE);
+        } else {
+            pokedex_context->prev_pokemon_oam = pdex_pokemon_oam_load(0, DEX_PKMN_TAG_THREE);
+        }
         pdex_load_sc();
         pdex_update_page_full();
 

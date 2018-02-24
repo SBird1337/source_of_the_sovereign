@@ -98,7 +98,7 @@ void dexdetail_load_pokemon(u16 dexindex, enum DexFormType formType) {
     pstrcat(string_buffer, pdex_str_weight_unit);
     u16 weightTwidth = font_get_width_of_string(FONT_DEX_STD, string_buffer, 0x0000);
 
-    rboxid_print(TB_PKSIZE, FONT_DEX_STD, TB_STD_RIGHT(weightTwidth, TB_SW_W * 8) - 6, 1, &pdex_text_color, 0,
+    rboxid_print(TB_PKSIZE, FONT_DEX_STD, TB_STD_RIGHT(weightTwidth, TB_SW_W * 8) - 6, 14, &pdex_text_color, 0,
                  string_buffer);
 
     u16 sizeNumber = pokedex_data[dexindex].height / 10;
@@ -109,7 +109,7 @@ void dexdetail_load_pokemon(u16 dexindex, enum DexFormType formType) {
     pstrcat(string_buffer, buffer);
     pstrcat(string_buffer, pdex_str_size_unit);
 
-    rboxid_print(TB_PKSIZE, FONT_DEX_STD, TB_STD_RIGHT(weightTwidth, TB_SW_W * 8) - 6, 14, &pdex_text_color, 0,
+    rboxid_print(TB_PKSIZE, FONT_DEX_STD, TB_STD_RIGHT(weightTwidth, TB_SW_W * 8) - 6, 1, &pdex_text_color, 0,
                  string_buffer);
 
     rboxid_print(TB_DESC, FONT_DEX_STD, 3, 2, &pdex_text_color, 0, pokedex_data[dexindex].description1);
