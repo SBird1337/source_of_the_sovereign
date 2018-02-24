@@ -1608,6 +1608,7 @@ trainer_pkmn_data:
 @@ PKMN Daten der Trainer
 @@ --------------------------------------------------------------------------------------------
 
+
 .align 2
 pokemon_von_id_1:
 .hword 0
@@ -1921,6 +1922,7 @@ pokemon_von_id_29:
 .hword MOVE_HAERTNER
 .hword MOVE_ABSORBER
 .hword MOVE_KEINS
+.hword 0x0
 .hword 20
 .hword 6
 .hword PKMN_SAFCON
@@ -1928,6 +1930,7 @@ pokemon_von_id_29:
 .hword MOVE_FADENSCHUSS
 .hword MOVE_HAERTNER
 .hword MOVE_KEINS
+.hword 0x0
 .hword 0xFFFF
 
 .align 2
@@ -1939,6 +1942,7 @@ pokemon_von_id_30:
 .hword MOVE_HAERTNER
 .hword MOVE_ABSORBER
 .hword MOVE_KEINS
+.hword 0x0
 .hword 50
 .hword 6
 .hword PKMN_SAFCON
@@ -1946,6 +1950,7 @@ pokemon_von_id_30:
 .hword MOVE_FADENSCHUSS
 .hword MOVE_HAERTNER
 .hword MOVE_KEINS
+.hword 0x0
 .hword 0xFFFF
 
 .align 2
@@ -1977,6 +1982,7 @@ pokemon_von_id_32:
 .hword MOVE_SUPERSCHALL
 .hword MOVE_KEINS
 .hword MOVE_KEINS
+.hword 0x0
 .hword 20
 .hword 4
 .hword PKMN_KOKUNA
@@ -1984,6 +1990,7 @@ pokemon_von_id_32:
 .hword MOVE_FADENSCHUSS
 .hword MOVE_HAERTNER
 .hword MOVE_KEINS
+.hword 0x0
 .hword 20
 .hword 5
 .hword PKMN_SAFCON
@@ -1991,6 +1998,7 @@ pokemon_von_id_32:
 .hword MOVE_FADENSCHUSS
 .hword MOVE_HAERTNER
 .hword MOVE_KEINS
+.hword 0x0
 .hword 20
 .hword 5
 .hword PKMN_PANEKON
@@ -1998,6 +2006,7 @@ pokemon_von_id_32:
 .hword MOVE_FADENSCHUSS
 .hword MOVE_HAERTNER
 .hword MOVE_KEINS
+.hword 0x0
 .hword 0xFFFF
 
 .align 2
@@ -2009,6 +2018,7 @@ pokemon_von_id_33:
 .hword MOVE_SUPERSCHALL
 .hword MOVE_KEINS
 .hword MOVE_KEINS
+.hword 0x0
 .hword 50
 .hword 4
 .hword PKMN_KOKUNA
@@ -2016,6 +2026,7 @@ pokemon_von_id_33:
 .hword MOVE_FADENSCHUSS
 .hword MOVE_HAERTNER
 .hword MOVE_KEINS
+.hword 0x0
 .hword 50
 .hword 5
 .hword PKMN_SAFCON
@@ -2023,6 +2034,7 @@ pokemon_von_id_33:
 .hword MOVE_FADENSCHUSS
 .hword MOVE_HAERTNER
 .hword MOVE_KEINS
+.hword 0x0
 .hword 50
 .hword 5
 .hword PKMN_PANEKON
@@ -2030,6 +2042,7 @@ pokemon_von_id_33:
 .hword MOVE_FADENSCHUSS
 .hword MOVE_HAERTNER
 .hword MOVE_KEINS
+.hword 0x0
 .hword 50
 .hword 5
 .hword PKMN_SCHALOKO
@@ -2037,6 +2050,7 @@ pokemon_von_id_33:
 .hword MOVE_FADENSCHUSS
 .hword MOVE_HAERTNER
 .hword MOVE_KEINS
+.hword 0x0
 .hword 0xFFFF
 
 .align 2
@@ -2079,11 +2093,11 @@ pokemon_von_id_36:
 pokemon_von_id_37:
 .hword 0
 .hword 5
-.hword PKMN_PEPPECK
+.hword PKMN_BURMY
 .hword 0x0
 .hword 0
 .hword 6
-.hword PKMN_WUFFELS
+.hword PKMN_ILLUMISE
 .hword 0x0
 .hword 0xFFFF
 
@@ -2091,11 +2105,11 @@ pokemon_von_id_37:
 pokemon_von_id_38:
 .hword 20
 .hword 5
-.hword PKMN_PEPPECK
+.hword PKMN_BURMY
 .hword 0x0
 .hword 20
 .hword 6
-.hword PKMN_WUFFELS
+.hword PKMN_ILLUMISE
 .hword 0x0
 .hword 0xFFFF
 
@@ -2103,11 +2117,11 @@ pokemon_von_id_38:
 pokemon_von_id_39:
 .hword 50
 .hword 5
-.hword PKMN_PEPPECK
+.hword PKMN_BURMY
 .hword 0x0
 .hword 50
 .hword 6
-.hword PKMN_WUFFELS
+.hword PKMN_ILLUMISE
 .hword 0x0
 .hword 0xFFFF
 
@@ -2255,7 +2269,7 @@ pokemon_von_id_51:
 pokemon_von_id_52:
 .hword 0
 .hword 7
-.hword PKMN_PANEKON
+.hword PKMN_FLEMMLI
 .hword 0x0
 .hword 0xFFFF
 
@@ -2263,7 +2277,7 @@ pokemon_von_id_52:
 pokemon_von_id_53:
 .hword 20
 .hword 7
-.hword PKMN_PANEKON
+.hword PKMN_FLEMMLI
 .hword 0x0
 .hword 0xFFFF
 
@@ -2271,7 +2285,7 @@ pokemon_von_id_53:
 pokemon_von_id_54:
 .hword 50
 .hword 8
-.hword PKMN_PANEKON
+.hword PKMN_FLEMMLI
 .hword 0x0
 .hword 0xFFFF
 
@@ -2788,6 +2802,7 @@ pokemon_von_id_87:
 .hword MOVE_GESCHENK
 .hword MOVE_EISSPLITTER
 .hword MOVE_MOGELHIEB
+.hword 0x0
 .hword 100
 .hword 12
 .hword PKMN_QUIEKEL
@@ -2795,6 +2810,7 @@ pokemon_von_id_87:
 .hword MOVE_LEHMSCHELLE
 .hword MOVE_ANTIK_KRAFT
 .hword MOVE_EISSPEER
+.hword 0x0
 .hword 100
 .hword 13
 .hword PKMN_ALOLA_SANDAN
@@ -2802,6 +2818,7 @@ pokemon_von_id_87:
 .hword MOVE_FROSTBEULE
 .hword MOVE_FLUCH
 .hword MOVE_METALLKLAUE
+.hword 0x0
 .hword 100
 .hword 13
 .hword PKMN_ALOLA_VULPIX
@@ -2809,6 +2826,7 @@ pokemon_von_id_87:
 .hword MOVE_CHARME
 .hword MOVE_AUSSETZER
 .hword MOVE_KONFUSTRAHL
+.hword 0x0
 .hword 100
 .hword 14
 .hword PKMN_FORMEO
@@ -2816,6 +2834,7 @@ pokemon_von_id_87:
 .hword MOVE_PULVERSCHNEE
 .hword MOVE_GLUT
 .hword MOVE_AQUAKNARRE
+.hword 0x0
 .hword 100
 .hword 15
 .hword PKMN_AUSTOS
@@ -2823,6 +2842,7 @@ pokemon_von_id_87:
 .hword MOVE_SCHUTZSCHILD
 .hword MOVE_DUONADEL
 .hword MOVE_FELSWURF
+.hword 0x0
 .hword 0xFFFF
 
 .align 2
