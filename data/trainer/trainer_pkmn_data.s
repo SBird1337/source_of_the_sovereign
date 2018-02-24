@@ -98,6 +98,7 @@
 .global pokemon_von_id_92
 .global pokemon_von_id_93
 
+
 .align 2
 pokemon_von_id_1:
 .hword 0
@@ -448,6 +449,14 @@ pokemon_von_id_31:
 .hword 4
 .hword PKMN_KOKUNA
 .hword 0x0
+.hword 0
+.hword 5
+.hword PKMN_SAFCON
+.hword 0x0
+.hword 0
+.hword 5
+.hword PKMN_PANEKON
+.hword 0x0
 .hword 0xFFFF
 
 .align 2
@@ -670,10 +679,6 @@ pokemon_von_id_46:
 .hword 0
 .hword 6
 .hword PKMN_WEBARAK
-.hword 0x0
-.hword 0
-.hword 7
-.hword PKMN_VOLBEAT
 .hword 0x0
 .hword 0xFFFF
 
