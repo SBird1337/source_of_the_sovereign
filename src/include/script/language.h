@@ -860,7 +860,7 @@ clearflag FLAG_SKIP_BATTLE_MUSIC
 .macro bufferstd bufferstd_buffernumber:req bufferstd_variable:req
 .byte 0x84
 .byte \bufferstd_buffernumber
-.hword \bufferstd_stdnumber
+.hword \bufferstd_variable
 .endm
 
 .macro bufferstring bufferstring_buffernumber:req bufferstring_string:req
