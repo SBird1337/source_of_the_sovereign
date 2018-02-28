@@ -42,7 +42,7 @@ const struct TilesetAnimation hesperia_second_animations[] = {
     {.tile_start = 0, .frame_length = 0, .tile_length = 0, .frame_count = 0, .image = (void *)0xFFFFFFFF},
 };
 
-void animate_from_structure(const struct TilesetAnimation *anim, u16 tile_skip, u16 current_frame) {
+void animate_from_structure(const struct TilesetAnimation *anim, u16 tile_skip) {
     void *vram_address = (void *)(0x06000000 + (tile_skip * 0x20));
     u8 cur_anim = 0;
     while (anim[cur_anim].image != (void *)0xFFFFFFFF && cur_anim < NUM_MAX_ANIMATIONS) {
@@ -78,7 +78,8 @@ extern struct MapBlockset maptileset128;
 extern struct MapBlockset maptileset0;
 
 void main_second_animator(u16 current_frame) {
-    animate_from_structure(hesperia_second_animations, 0x280, current_frame);
+    (void)current_frame;
+    animate_from_structure(hesperia_second_animations, 0x280);
 }
 
 void main_animator_init(void) {
