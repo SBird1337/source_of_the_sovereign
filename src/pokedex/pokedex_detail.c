@@ -12,7 +12,6 @@
 #define TB_PKNAME_W 30
 #define TB_SW_W 12
 
-extern pchar pdex_entry_debug[];
 extern pchar pdex_str_size[];
 extern pchar pdex_str_weight[];
 extern pchar pdex_str_size_unit[];

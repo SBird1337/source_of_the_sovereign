@@ -90,8 +90,3 @@ pdex_str_kalos:
 pdex_str_alola:
     .string LAN_DE "Alola"
     .string LAN_EN "Alola"
-
-.global pdex_entry_debug
-pdex_entry_debug:
-    .string LAN_DE "Glurak fliegt durch die Lüfte, um starke\nGegner aufzuspüren. Sein heißer Feuer-\natem bringt alles zum Schmelzen.\nAber es richtet seinen Feueratem nie auf\nschwächere Gegner."
-    .string LAN_EN "Glurak fliegt durch die Lüfte, um starke Gegner aufzuspüren.\nSein heißer Feueratem bringt alles zum Schmelzen.\nAber es richtet seinen Feueratem nie auf schwächere Gegner."
