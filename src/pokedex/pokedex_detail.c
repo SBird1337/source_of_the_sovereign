@@ -272,6 +272,7 @@ void dexdetail_load_form_arrows(void) {
 }
 
 void dexdetail_scroll_update(void) {
+    /* base of -24576 + (scroll_amount * pixel_length * 14 pixels) */
     bgid_mod_y_offset(1, -24576 + (pokedex_context->detail_scroll_amount * 256 * 14), 0);
 }
 
