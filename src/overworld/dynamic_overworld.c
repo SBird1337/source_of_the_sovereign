@@ -191,35 +191,6 @@ u8 npc_spawn_with_provided_template(struct RomNpc *npc, struct Template *templat
     return state;
 }
 
-void oec01_load_pal_impl(u32 *oe_script) {
-    struct SpritePalette *pal = (struct SpritePalette *)oe_read_word(oe_script);
-    s8 allocated = npc_dynamic_find_palette(pal->tag);
-    if (allocated == -1)
-        allocated = npc_dynamic_allocate_palette(pal->tag);
-    if (allocated > 0) {
-        gpu_pal_apply(pal->data, 256 + (16 * allocated), 32);
-        tint_palette_switch(allocated);
-        palette_obj_807AA8C(allocated);
-    } else {
-        dprintf("ERROR: RAN OUT OF PALETTES FOR DYNAMIC SYSTEM\n");
-    }
-    *oe_script += 4;
-}
-
-void oec02_load_pal_impl(u32 *oe_script) {
-    struct SpritePalette *pal = (struct SpritePalette *)oe_read_word(oe_script);
-    s8 allocated = npc_dynamic_find_palette(pal->tag);
-    if (allocated == -1)
-        allocated = npc_dynamic_allocate_palette(pal->tag);
-    if (allocated > 0) {
-        gpu_pal_apply(pal->data, 256 + (16 * allocated), 32);
-        tint_palette_switch(allocated);
-    } else {
-        dprintf("ERROR: RAN OUT OF PALETTES FOR DYNAMIC SYSTEM\n");
-    }
-    *oe_script += 4;
-}
-
 void npc_delete_obj_and_free_tiles_for_npc_hack(struct NpcState *state) {
     struct SpriteTiles tiles;
     u16 npc_id = ((u16)state->type_id) | (((u16)state->field1A << 8));

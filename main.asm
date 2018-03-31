@@ -46,7 +46,8 @@
 
 .include "patches/overworlds/pkm_wild.asm"
 .include "patches/overworlds/trainer.asm"
-//.include "patches/dns/core.asm"
+
+.include "patches/dns/core.asm"
 
 .include "patches/overworlds/overworld.asm"
 
