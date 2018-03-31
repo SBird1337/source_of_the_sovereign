@@ -1,6 +1,7 @@
 #include <pokeagb/pokeagb.h>
 #include <agb_debug.h>
 #include <dns.h>
+#include <rtc.h>
 
 #define DNS_BUF_SIZE 256
 #define DNS_SEC_PAL_START 224
@@ -62,6 +63,9 @@ void dns_blockset_load_palette(struct MapBlockset* blockset, u16 offset, u16 siz
 }
 
 void dns_oec01_load_pal_impl(u32 *oe_script) {
+    struct RtcTimestamp stamp;
+    rtc_get_time(&stamp);
+    dprintf("rtc data was read: %x.%x.%x\n", stamp.day, stamp.month, stamp.year);
     struct SpritePalette *pal = (struct SpritePalette *)oe_read_word(oe_script);
     struct SpritePalette palToApply = {
         .data = NULL,
@@ -115,7 +119,6 @@ void dns_pal_patch_for_npc(u16 tag, u8 idx)
     memcpy(buffer, ow_pal_table[npcPalIdx].data,32);
     dns_modify_palette(buffer,16);
     gpu_pal_apply(buffer, 256 + 16*idx, 32);
-
     free(buffer);
     tint_palette_switch(idx);
 }

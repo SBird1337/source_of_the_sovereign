@@ -203,6 +203,10 @@ current_map_block_role_get = 0x08058F78|1;
 
 current_oe_state = 0x020386E0;
 
+rtc_data = 0x080000C4;
+rtc_direction = 0x080000C6;
+rtc_control = 0x080000C8;
+
 /*__aeabi_idiv = 0x081E4018|1;
 __aeabi_idivmod = 0x081E40F4|1;
 __aeabi_uidiv = 0x081E460C|1;
