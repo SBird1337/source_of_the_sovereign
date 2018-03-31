@@ -1,19 +1,10 @@
 #include <pokeagb/pokeagb.h>
+#include <rtc.h>
 
 #define HIGH 1
 #define LOW 0
 #define IN 0
 #define OUT 1
-
-struct RtcTimestamp {
-    u8 year;
-    u8 month;
-    u8 day;
-    u8 day_of_week;
-    u8 hour;
-    u8 minute;
-    u8 second;
-};
 
 struct RtcGpioData {
     u16 sck : 1;
