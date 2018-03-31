@@ -21,7 +21,6 @@ union Color dns_color_multiply(union Color a, union Color b);
 
 
 void dns_blockset_load_palette(struct MapBlockset* blockset, u16 offset, u16 size){
-    dprintf("loading blocset 0x%x\n", blockset);
     if(blockset != NULL){
         union Color *dns_buffer = malloc(DNS_BUF_SIZE*2);
         if(blockset->secondary > 0)
