@@ -6,7 +6,11 @@
 #define IN 0
 #define OUT 1
 
-struct RtcGpioData {
+#define SCK 0
+#define SIO 1
+#define CS 2
+
+struct RtcGpioDataStruct {
     u16 sck : 1;
     u16 sio : 1;
     u16 cs : 1;
@@ -14,9 +18,14 @@ struct RtcGpioData {
     u16 free : 12;
 };
 
-ASSERT_SIZEOF(struct RtcGpioData, 2);
+union RtcGpioData {
+    struct RtcGpioDataStruct ports;
+    u16 packed;
+};
 
-struct RtcGpioDirection {
+ASSERT_SIZEOF(union RtcGpioData, 2);
+
+struct RtcGpioDirectionStruct {
     u16 sck : 1;
     u16 sio : 1;
     u16 cs : 1;
@@ -24,10 +33,15 @@ struct RtcGpioDirection {
     u16 free : 12;
 };
 
-ASSERT_SIZEOF(struct RtcGpioDirection, 2);
+union RtcGpioDirection {
+    struct RtcGpioDirectionStruct ports;
+    u16 packed;
+};
 
-extern struct RtcGpioData rtc_data;
-extern struct RtcGpioDirection rtc_direction;
+ASSERT_SIZEOF(union RtcGpioDirection, 2);
+
+extern union RtcGpioData rtc_data;
+extern union RtcGpioDirection rtc_direction;
 extern u16 rtc_control;
 
 void rtc_wait_cycles(volatile u16 cycles);
@@ -38,17 +52,20 @@ void rtc_get_time(struct RtcTimestamp* out)
 {
     rtc_control = 1;
 
-    rtc_direction.sck = OUT;
-    rtc_direction.cs = OUT;
-    rtc_data.cs = LOW;
-    rtc_data.sck = HIGH;
+    //rtc_direction.sck = OUT;
+    //rtc_direction.cs = OUT;
+    rtc_direction.packed = ( (OUT << SCK) | (OUT << CS) );
+    rtc_data.packed = HIGH << SCK;
+    //rtc_data.cs = LOW;
+    //rtc_data.sck = HIGH;
 
     rtc_wait_cycles(20);
 
-    rtc_data.cs = HIGH;
+    rtc_data.ports.cs = HIGH;
     rtc_wait_cycles(20);
-    rtc_direction.sck = OUT;
-    rtc_direction.cs = OUT;
+    //rtc_direction.packed = ( (OUT << SCK) | (OUT << CS) | (OUT << SIO));
+    //rtc_direction.sck = OUT;
+    //rtc_direction.cs = OUT;
     rtc_write(0x65);
 
     out->year = rtc_read();
@@ -59,36 +76,41 @@ void rtc_get_time(struct RtcTimestamp* out)
     out->minute = rtc_read();
     out->second = rtc_read();
 
-    rtc_data.sck = LOW;
-    rtc_data.sio = LOW;
-    rtc_data.cs = LOW;
+    rtc_data.packed = 0;
+    //rtc_data.sck = LOW;
+    //rtc_data.sio = LOW;
+    //rtc_data.cs = LOW;
 }
 
 void rtc_write(u8 b){
-    rtc_direction.sio = OUT;
-    rtc_direction.sck = OUT;
+    //all out
+    rtc_direction.packed = ( (OUT << SCK) | (OUT << CS) | (OUT << SIO));
     for(u8 i = 0; i < 8; ++i) {
-        rtc_data.sck = LOW;
-        rtc_data.sio = (b & 0x80) >> 7;
+        u8 bit = (u8) ((b & 0x80) >> 7);
+        rtc_data.packed = ( (LOW << SCK) | (bit << SIO) | (LOW << CS));
+        
+        rtc_wait_cycles(100);
+        rtc_data.packed = ( (HIGH << SCK) | (bit << SIO) | (LOW << CS));
+        rtc_wait_cycles(100);
         b <<= 1;
-        rtc_wait_cycles(100);
-        rtc_data.sck = HIGH;
-        rtc_wait_cycles(100);
     }
 }
 
 u8 rtc_read(void){
-    u8 val = 0;
-    rtc_direction.sio = IN;
-    rtc_direction.sck = OUT;
+    u16 val = 0;
+    rtc_direction.packed = ((SIO << IN) | (SCK << OUT) | (CS << OUT));
+    //rtc_direction.sio = IN;
+    //rtc_direction.sck = OUT;
     for(u8 i = 0; i < 8; ++i) {
-        rtc_data.sck = LOW;
+        rtc_data.packed = 0;
+        //rtc_data.sck = LOW;
         rtc_wait_cycles(100);
-        rtc_data.sck = HIGH;
-        val |= (rtc_data.sio << i);
+        rtc_data.packed = ((HIGH << SCK) | (LOW << SIO) | (LOW << CS));
+        //rtc_data.sck = HIGH;
         rtc_wait_cycles(100);
+        val |= (rtc_data.ports.sio << i);
     }
-    return val;
+    return (u8)(val >> 1);
 }
 
 //this is a blocking wait, because fk IRQ
