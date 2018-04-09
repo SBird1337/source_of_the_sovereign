@@ -1,11 +1,11 @@
 ﻿EGG_HATCH_LEVEL EQU 1
 EV_CAP EQU 252
 
-PLAYER_S_X EQU 7
-PLAYER_S_Y EQU 0x13
+PLAYER_S_X EQU 0x40
+PLAYER_S_Y EQU 0x10
 
-PLAYER_S_B EQU 5
-PLAYER_S_M EQU 0
+PLAYER_S_B EQU 0x0
+PLAYER_S_M EQU 0x0
 
 // Something //
 .org 0x080441D6
@@ -72,16 +72,16 @@ PLAYER_S_M EQU 0
 .word 0x00000000
 
 .org 0x08054A08
-.byte 0x7
+.byte PLAYER_S_X
 
 .org 0x08054A00
-.byte 0x13
+.byte PLAYER_S_Y
 
 .org 0x08054A04
-.byte 0x5
+.byte PLAYER_S_B
 
 .org 0x08054A06
-.byte 0x0
+.byte PLAYER_S_M
 
 .org 0x0807F5EC
 .word scr_whiteout_mom
