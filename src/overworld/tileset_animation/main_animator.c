@@ -27,7 +27,7 @@ struct TilesetAnimation {
     const void *image;
 };
 
-#define AS_WATER 9
+#define AS_WATER 15
 
 const struct TilesetAnimation hesperia_second_animations[] = {
     {.tile_start = 0x10C, .frame_length = 14, .tile_length = 4, .frame_count = 10, .image = flowers_magTiles},
