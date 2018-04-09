@@ -1,4 +1,4 @@
-#include <pokeagb/pokeagb.h>
+/*#include <pokeagb/pokeagb.h>
 
 typedef bool (*MovementCallback)(struct NpcState *npc, struct Object *obj);
 
@@ -249,4 +249,4 @@ const MovementCallback *movement_animations[] = {
     mv_set_frame_eighteen,
     mv_set_frame_nineteen,
     mv_set_frame_twenty,
-};
+};*/

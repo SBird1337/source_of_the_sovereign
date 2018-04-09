@@ -46,6 +46,7 @@
 
 .include "patches/overworlds/pkm_wild.asm"
 .include "patches/overworlds/trainer.asm"
+.include "patches/overworlds/npc_walk.asm"
 
 .include "patches/dns/core.asm"
 

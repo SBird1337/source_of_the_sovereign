@@ -22,9 +22,9 @@ union Color dns_color_multiply(union Color a, union Color b);
 
 
 void dns_blockset_load_palette(struct MapBlockset* blockset, u16 offset, u16 size){
-    struct RtcTimestamp stamp;
-    rtc_get_time(&stamp);
-    dprintf("rtc data was read: %x.%x.%x\n", stamp.day, stamp.month, stamp.year);
+    //struct RtcTimestamp stamp;
+    //rtc_get_time(&stamp);
+    //dprintf("rtc data was read: %x.%x.%x\n", stamp.day, stamp.month, stamp.year);
     if(blockset != NULL){
         union Color *dns_buffer = malloc(DNS_BUF_SIZE*2);
         if(blockset->secondary > 0)
