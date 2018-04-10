@@ -124,11 +124,11 @@ void dns_pal_patch_for_npc(u16 tag, u8 idx)
 }
 
 void dns_modify_palette(union Color* buffer, u16 size){
-    if(current_map_header.light == 8)
+   /* if(current_map_header.light == 8)
         return;
     for(u16 i = 0; i < size; ++i) {
         buffer[i] = dns_color_multiply(dns_color_times[0], buffer[i]);
-    }
+    }*/
 }
 
 union Color dns_color_multiply(union Color a, union Color b) {
