@@ -51,7 +51,7 @@ DYN_OVER  := built/dynamic_overworld.o
 
 TMP_LD	  := tmp.ld
 
-SND_ROOT := sots-private/sound
+SND_ROOT := assets/sound
 MUSIC_AR := $(SND_ROOT)/Music/music.a
 SMPL_AR  := $(SND_ROOT)/Samples/sample.a
 VOICE_AR := $(SND_ROOT)/Voicegroup/voice.a
