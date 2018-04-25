@@ -2,8 +2,6 @@
 *.o
 temp
 *.ogg
-*.wav
-*.mid
 *.a
 *.i
 nbproject/private/tools/
