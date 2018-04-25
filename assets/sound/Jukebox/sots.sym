@@ -1,0 +1,80 @@
+__aeabi_uidiv = 0x082FD4D0;
+
+dummyAnimData = 0x083023E8;
+dummyAnimRoutine = 0x08007429;
+
+OAM_Mem = 0x030022F8;
+OBJ_PaletteMem = 0x02037914;
+BG_PaletteMem = 0x02037714;
+BG_PaletteMem2 = 0x02037B14;
+OBJ_PaletteMem2 = 0x02037D14;
+
+KEYS = 0x030022EE;
+KEYSHOLD = 0x030022EC;
+KEYSSCROLL = 0x030022F0;
+KEYSLR = 0x030022EF;
+KEYSHOLDLR = 0x030022ED;
+KEYSSCROLLLR = 0x030022F1;
+
+LASTRESULT = 0x20375F0;
+var8004 = 0x20375E0;
+fadeScreenDone = (0x02037FD4 + 7);
+globalVars = 0x0203BCD0;
+boxInitStuff = 0x0859CB38;
+nullCallback = 0x080861CD;
+
+someExitFunc = 0x08003605;
+
+malloc = 0x08000B39;
+free = 0x08000B61;
+fadeScreen = 0x080A1AF1;
+playFanfare = 0x080A3101;
+waitForFanfare = 0x080A313D;
+playSound = 0x080A37C1;
+waitForSound = 0x080A38BD;
+
+m4aSongNumStart = 0x082F5E71;
+m4aSongNumStartOrChange = 0x082F5E9D;
+m4aSongNumStartOrContinue = 0x082F5EE9;
+m4aSongNumStop = 0x082F5F3D;
+
+changeIO = 0x080010B5;
+enableBG = 0x08001B31;
+clearOAM = 0x08006975;
+
+storeCallback = 0x08000541;
+storeCallback2 = 0x080006F1;
+
+loadPalette = 0x080A1955;
+boxPrint = 0x08199971;
+writeBoxesToTilemap = 0x08003659;
+initMapData = 0x080017E9;
+forceNewBoxAndInitBG = 0x080031C1;
+loadSpritePal = 0x08008745;
+
+ResetSystem = 0x082FCDED;
+
+RegisterRamReset = 0x082FCDE9;
+VBlankIntrWait = 0x082FCE09;
+Div = 0x082FCDC9;
+Sqrt = 0x082FCE05;
+ArcTan2 = 0x082FCDB9;
+CpuSet = 0x082FCDC5;
+CpuFastSet = 0x082FCDC1;
+BgAffineSet = 0x082FCDBD;
+ObjAffineSet = 0x082FCDDD;
+LZ77UnCompWram = 0x082FCDD1;
+LZ77UnCompVram = 0x082FCDCD;
+RLUnCompWram = 0x082FCDE3;
+RLUnCompVram = 0x082FCDE1;
+MultiBoot = 0x082FCDD45;
+
+
+
+initStuff = 0x09E10001;
+createSprite = 0x09e100c9;
+deleteSprite = 0x09e10105;
+updateEverything = 0x09e10029;
+updateEverything2 = 0x09e10059;
+fadeScreenBlack = 0x09e10081;
+fadeScreenNormal = 0x09e100a5;

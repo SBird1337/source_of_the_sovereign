@@ -1,0 +1,14 @@
+Content				| MIDI Code			| Internal .s Label
+-------------------------------------------------------------------------------------------------
+Bend Range			| $Bx, 20, vv			| BENDR
+LFO(Modulation)Speed 		| $Bx, 21, vv  			| LFOS
+LFO(Modulation)delay 		| $Bx, 26, vv  			| LFODL
+Modulation Type    		| $Bx, 22, vv  			| MODT
+Tuning 				| $Bx, 24, vv  			| TUNE
+Pseudo-echo Volume 		| $Bx, 30, 8,  $Bx, 31, vv	| XCMD, xIECV
+Pseudo-echo Length 		| $Bx, 30, 9,  $Bx, 31, vv 	| XCMD, xIECL
+Priority   			| $Bx, 33, vv  			| PRIO
+Loop Start Point for each Track | $Bx, 30, 100    	 	|
+Loop End Point for each Track 	| $Bx, 30, 101    	 	|
+
+NOTE: $Bx = MIDI Controller Event on channel x
