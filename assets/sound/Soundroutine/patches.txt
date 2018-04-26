@@ -1,9 +1,0 @@
-Patch the following addresses:
-
-[0x080007B4] = 0x0203E000
-[0x081DD0C0] = 0x0203E000
-[0x081DD0B4] = ROUTINE_POINTER+1		(+1 probably can be omitted, but original keeps it)
-[0x081DD0B8] = 0x03005F50
-[0x081DC094] = 0x03005F51
-[0x081DD0BC] = 0x04000000 + BINARY_LENGTH	(BINARY_LENGTH = (main_mixer - main_mixer_end))
-						("main_mixer" and "main_mixer_end" are defined as global symbols in assembly file)
