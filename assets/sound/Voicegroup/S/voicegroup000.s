@@ -417,7 +417,7 @@ voicegroup000:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_45_pizzicato_str
+	.word	snd_45_pizzicato_st
 	.byte	255, 0, 255, 165
 
 @**************** Voice 046 ****************@
