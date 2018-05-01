@@ -29,13 +29,8 @@
  */
 
 /* === INCLUDES === */
-#include <objects.h>
-#include <callback.h>
+#include <pokeagb/pokeagb.h>
 #include <config/core.h>
-#include <lcd.h>
-#include <debug.h>
-#include <game_engine.h>
-#include <memory.h>
 
 /* === PROTOTYPES === */
 
@@ -43,7 +38,7 @@
  * @brief null callback
  * @param self object
  */
-void mug_cb_null(struct obj_entity *self);
+void mug_cb_null(struct Object *self);
 
 /**
  * @brief called when tb is opened to create mugshot
@@ -58,24 +53,33 @@ void mug_delete();
 
 /* === STRUCTURES === */
 
-typedef struct mug_mugshot {
+typedef struct Mugshot {
     void *gfx;
     void *pal;
-} mug_mugshot;
+} Mugshot;
 
 /* === STATIC GLOBALS === */
 
-extern mug_mugshot mugshots[0xFF];
+extern Mugshot mugshots[0xFF];
 
 u8 *temp_obj_id1 = (u8*) OBJ_1_TEMP;
 u8 *temp_obj_id2 = (u8*) OBJ_2_TEMP;
 
-struct obj_oam_attributes mug_sprite = {0, 0x8000, 0, 0};
+struct OamData mug_sprite = {.size = 3};
 
-struct obj_template mugshot_1_template = {MUGSHOT_1_TAG, MUGSHOT_1_TAG, &mug_sprite, (struct obj_frame **) 0x08231CF0, 0, (struct obj_rotscale_frame **) 0x08231CFC, mug_cb_null};
-struct obj_template mugshot_2_template = {MUGSHOT_2_TAG, MUGSHOT_2_TAG, &mug_sprite, (struct obj_frame **) 0x08231CF0, 0, (struct obj_rotscale_frame **) 0x08231CFC, mug_cb_null};
+struct Template mugshot_1_template = {.tiles_tag = MUGSHOT_1_TAG,
+                                      .pal_tag = MUGSHOT_1_TAG, 
+                                      .oam = &mug_sprite, .graphics = NULL, 
+                                      .animation=SPRITE_NO_ANIMATION,
+                                      .rotscale = SPRITE_NO_ROTSCALE,
+                                      .callback=mug_cb_null};
 
-
+struct Template mugshot_2_template = {.tiles_tag = MUGSHOT_2_TAG,
+                                      .pal_tag = MUGSHOT_2_TAG, 
+                                      .oam = &mug_sprite, .graphics = NULL, 
+                                      .animation=SPRITE_NO_ANIMATION,
+                                      .rotscale = SPRITE_NO_ROTSCALE,
+                                      .callback=mug_cb_null};
 
 /* === IMPLEMENTATIONS === */
 
@@ -90,22 +94,22 @@ void mug_create_on_variable() {
         u16 *mug1_y = var_access(MUGSHOT_1_Y);
 
         mug_id_1--;
-        struct obj_resource gfx_mugshot_1 = {(mugshots[mug_id_1].gfx), 0x1C00, MUGSHOT_1_TAG};
-        struct obj_resource pal_mugshot_1 = {(mugshots[mug_id_1].pal), MUGSHOT_1_TAG};
+        struct SpriteTiles gfx_mugshot_1 = {(mugshots[mug_id_1].gfx), 0x1C00, MUGSHOT_1_TAG};
+        struct SpritePalette pal_mugshot_1 = {(mugshots[mug_id_1].pal), MUGSHOT_1_TAG};
 
 
-        obj_gpu_pal_alloc_tag_and_apply(&pal_mugshot_1);
-        obj_gpu_tile_decompress_alloc_tag_and_upload(&gfx_mugshot_1);
+        gpu_pal_obj_alloc_tag_and_apply(&pal_mugshot_1);
+        gpu_tile_obj_decompress_alloc_tag_and_upload(&gfx_mugshot_1);
 
-        *temp_obj_id1 = (u16) obj_template_instanciate_forward_search(&mugshot_1_template, 0, 100, 1);
+        *temp_obj_id1 = (u16) template_instanciate_forward_search(&mugshot_1_template, 0, 100, 1);
 
         if (h_flip)
-            objects[*temp_obj_id1].final_oam.attr1 |= 0x1000;
+            objects[*temp_obj_id1].final_oam.h_flip = true;
         if (v_flip)
-            objects[*temp_obj_id1].final_oam.attr1 |= 0x2000;
+            objects[*temp_obj_id1].final_oam.v_flip = true;
 
-        objects[*temp_obj_id1].x = *mug1_x;
-        objects[*temp_obj_id1].y = *mug1_y;
+        objects[*temp_obj_id1].pos1.x = *mug1_x;
+        objects[*temp_obj_id1].pos1.y = *mug1_y;
     }
     u16 *mug2_var = var_access(MUGHSOT_2_TABLE);
     u16 c_mug2_var = *mug2_var;
@@ -117,23 +121,23 @@ void mug_create_on_variable() {
         u16 *mug2_y = var_access(MUGSHOT_2_Y);
 
         mug_id_2--;
-        struct obj_resource gfx_mugshot_2 = {(mugshots[mug_id_2].gfx), 0x1C00, MUGSHOT_2_TAG};
-        struct obj_resource pal_mugshot_2 = {(mugshots[mug_id_2].pal), MUGSHOT_2_TAG};
+        struct SpriteTiles gfx_mugshot_2 = {(mugshots[mug_id_2].gfx), 0x1C00, MUGSHOT_2_TAG};
+        struct SpritePalette pal_mugshot_2 = {(mugshots[mug_id_2].pal), MUGSHOT_2_TAG};
 
 
-        obj_gpu_pal_alloc_tag_and_apply(&pal_mugshot_2);
-        obj_gpu_tile_decompress_alloc_tag_and_upload(&gfx_mugshot_2);
+        gpu_pal_obj_alloc_tag_and_apply(&pal_mugshot_2);
+        gpu_tile_obj_decompress_alloc_tag_and_upload(&gfx_mugshot_2);
 
         c_mug2_var = *mug2_var;
-        *temp_obj_id2 = (u16) obj_template_instanciate_forward_search(&mugshot_2_template, 0, 100, 1);
+        *temp_obj_id2 = (u16) template_instanciate_forward_search(&mugshot_2_template, 0, 100, 1);
 
         if (h_flip)
-            objects[*temp_obj_id2].final_oam.attr1 |= 0x1000;
+            objects[*temp_obj_id2].final_oam.h_flip = true;
         if (v_flip)
-            objects[*temp_obj_id2].final_oam.attr1 |= 0x2000;
+            objects[*temp_obj_id2].final_oam.v_flip = true;
 
-        objects[*temp_obj_id2].x = *mug2_x;
-        objects[*temp_obj_id2].y = *mug2_y;
+        objects[*temp_obj_id2].pos1.x = *mug2_x;
+        objects[*temp_obj_id2].pos1.y = *mug2_y;
     }
 }
 
@@ -143,7 +147,7 @@ void mug_delete() {
 
     if (*temp_obj_id1 != 0) {
         gpu_pal_free_by_tag(MUGSHOT_1_TAG);
-        obj_gpu_tile_free_by_tag(MUGSHOT_1_TAG);
+        gpu_tile_obj_free_by_tag(MUGSHOT_1_TAG);
 
         //*mug1_var = 0;
         //do reset mugshot var ; set it to old value instead
@@ -157,7 +161,7 @@ void mug_delete() {
     //return;
     if (*temp_obj_id2 != 0) {
         gpu_pal_free_by_tag(MUGSHOT_2_TAG);
-        obj_gpu_tile_free_by_tag(MUGSHOT_2_TAG);
+        gpu_tile_obj_free_by_tag(MUGSHOT_2_TAG);
 
         //*mug2_var = 0;
         //do reset mugshot var ; set it to old value instead
@@ -170,6 +174,7 @@ void mug_delete() {
 
 }
 
-void mug_cb_null(struct obj_entity *self) {
+void mug_cb_null(struct Object *self) {
+    (void)self;
     return;
 }
