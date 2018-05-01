@@ -375,12 +375,14 @@ struct evo_result evolve_by_move_type(struct evo_call_arguments arguments)
 
 struct evo_result evolve_no_method(struct evo_call_arguments arguments)
 {
+    (void)arguments;
     //For shedninja
     return EVO_NO_EVO;
 }
 
 struct evo_result evolve_invalid_method(struct evo_call_arguments arguments)
 {
+    (void)arguments;
     dprintf("A pokemon tried to execute an evolution method that is not yet implemented.\n");
     return (struct evo_result){false, false, 0};
 }

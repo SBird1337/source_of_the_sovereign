@@ -124,6 +124,9 @@ void dns_pal_patch_for_npc(u16 tag, u8 idx)
 }
 
 void dns_modify_palette(union Color* buffer, u16 size){
+    (void)buffer;
+    (void)size;
+    //to activate remove the above
    /* if(current_map_header.light == 8)
         return;
     for(u16 i = 0; i < size; ++i) {
