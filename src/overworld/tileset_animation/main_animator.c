@@ -46,11 +46,11 @@ void animate_from_structure(const struct TilesetAnimation *anim, u16 tile_skip) 
     void *vram_address = (void *)(0x06000000 + (tile_skip * 0x20));
     u8 cur_anim = 0;
     while (anim[cur_anim].image != (void *)0xFFFFFFFF && cur_anim < NUM_MAX_ANIMATIONS) {
-        void *current_vram = vram_address + (0x20 * anim[cur_anim].tile_start);
+        void *current_vram = (u8*)vram_address + (0x20 * anim[cur_anim].tile_start);
 
         if (anim_state->cur_frame[cur_anim] == 0) {
             memcpy(current_vram,
-                   anim[cur_anim].image + (0x20 * anim[cur_anim].tile_length * anim_state->cur_tile[cur_anim]),
+                   (u8*)anim[cur_anim].image + (0x20 * anim[cur_anim].tile_length * anim_state->cur_tile[cur_anim]),
                    anim[cur_anim].tile_length * 0x20);
         }
 
