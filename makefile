@@ -95,40 +95,40 @@ SCRIPT_OBJ	:= $(SCRIPT_SRC:%.s=$(BLDPATH)/%.o)
 ALL_OBJ     := $(GEN_OBJ) $(C_OBJ) $(ASM_OBJ) $(DATA_OBJ) $(STRING_OBJ) $(SCRIPT_OBJ) $(MAP_PROJ_O) $(MAP_FILES_O) $(TS_FILES_O) $(TS_GEN_O)
 
 $(MAPMAPS)/%.s: $(MAPMAPS)/%.pmh
-	@echo "\033[96mGenerating map $<\033[0m"
+	@printf "\e[1;33mGenerating map\e[0m $<\n"
 	$(PYMAPS) -o $@ $<
 
 $(MAPTS)/%.s: $(MAPTS)/%.pts
-	@echo "\033[94mGenerating tileset $<\033[0m"
+	@printf "\e[1;33mGenerating tileset\e[0m $<\n"
 	$(PYSETS) -o $@ $<
 
 $(STRINGDIR)/%.s: $(STRINGDIR)/%.txt
-	@echo "\033[93mGenerating strings $<\033[0m"
+	@printf "\e[1;36mGenerating strings\e[0m $<\n"
 	$(STRAGB) -o $@ -i $< -t string/table.tbl -e 0xFF
 
 $(BLDPATH)/%.o: %.c $(ASSETS) $(PAGB_INCLUDE)/pokeagb/pokeagb.h
-	@echo "\033[32mCompiling $<\033[0m"		
+	@printf "\e[1;31mCompiling\e[0m $<\n"
 	$(shell mkdir -p $(dir $@))		
 	$(CC) $(CFLAGS) -c $< -o $@		
 		
 $(BLDPATH)/%.o: %.s $(PAGB_INCLUDE)/pokeagb/pokeagb.h
-	@echo "\033[32mAssembling $<\033[0m"		
-	$(shell mkdir -p $(dir $@))		
-	$(PREPROC) $< $(CHARMAP) > $*.i		
+	@printf "\e[1;31mAssembling\e[0m $<\n"
+	$(shell mkdir -p $(dir $@))
+	$(PREPROC) $< $(CHARMAP) > $*.i
 	$(CC) $(CFLAGS) -c -x assembler-with-cpp $*.i -o $@		
 	@rm -f $*.i
 
 $(MAPTS)/%.s: $(MAPTS)/%.png
-	@echo "\033[34mProcessing image (tileset) $<\033[0m"
+	@printf "\e[1;33mProcessing image (tileset)\e[0m $<\n"
 	$(GRIT) $< -o $@ -fts -gzl -pz! -pu16 -gB4 -m! -mR!
 
 generated_image/%.c generated_image/%.h: $(AUTO_ASSET_ROOT)/%.png $(AUTO_ASSET_ROOT)/%.grit
-	@echo "\033[34mProcessing image $<\033[0m"
+	@printf "\e[1;33mProcessing image\e[0m $<\n"
 	$(shell mkdir -p $(dir $@))
 	$(GRIT) $< -o $@ -ftc -ff $(<:%.png=%.grit)
 
 generated_image/%.c generated_image/%.h: $(AUTO_ASSET_ROOT)/%.png
-	@echo "\033[34mProcessing image $< (using directory grit file)\033[0m"
+	@printf "\e[1;33mProcessing image (using directory grit file)\e[0m $<\n"
 	$(shell mkdir -p $(dir $@))
 	$(GRIT) $< -o $@ -ftc -ff $(<D)/$(notdir $(<D)).grit
 
@@ -136,7 +136,7 @@ all: $(GEN_H) rom
 
 .PHONY: rom
 rom: main.asm $(MAIN_OBJ)
-	@echo "\033[1;32mCreating ROM\033[0m"
+	@printf "\e[1;30;41mCreating ROM\e[0m\n"
 	$(ARS) $<
 	$(NM) $(BLDPATH)/linked.o -n -g --defined-only | \
 		sed -e '{s/^/0x/g};{/.*\sA\s.*/d};{s/\sT\s/ /g}' > $(OUTPATH)/__symbols.sym
@@ -145,7 +145,7 @@ rom: main.asm $(MAIN_OBJ)
 	
 $(MAIN_OBJ): $(ALL_OBJ) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR) #$(B_ENGINE)
 	$(MAKE) -f assets.makefile
-	@echo "\033[1;32mLinking ELF binary $@\033[0m"
+	@printf "\e[1;30;41mLinking ELF binary\e[0m $@\n"
 	@echo "INPUT($^)" > $(TMP_LD)
 	$(LD) $(LDFLAGS) -T $(PAGB_LINK) -T linker.ld -T bpre.sym --whole-archive -r -o $@ --start-group -T $(TMP_LD) --end-group
 	$(LD) $(LDFLAGS) -T $(PAGB_LINK) -T linker.ld -T bpre.sym --whole-archive -o $@.dbg --start-group -T $(TMP_LD) --end-group
@@ -153,7 +153,7 @@ $(MAIN_OBJ): $(ALL_OBJ) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR)
 	@rm -f $(TMP_LD)
 
 $(MAP_PROJ_S): $(MAP_PROJ)
-	@echo "\033[91mGenerating map project $<\033[0m"
+	@printf "\e[1;33mGenerating map project\e[0m $<\n"
 	$(PYPROJS) -b sovereign_banks -f sovereign_footer -o $@ $<
 
 .PHONY: $(B_ENGINE)
@@ -191,42 +191,42 @@ clean:
 
 .PHONY: $(ASSETS)
 $(ASSETS):
-	@echo "\033[95mMaking Assets\033[0m"
+	@printf "\e[1;33mMaking Assets\e[0m\n"
 	$(MAKE) -f assets.makefile
 
 .PHONY: $(SPRITES)
 $(SPRITES):
-	@echo "\033[95mMaking Sprites\033[0m"
+	@printf "\e[1,33mMaking Sprites\e[0m\n"
 	$(MAKE) -f sprites.makefile
 
 .PHONY: $(ICONS_AR)
 $(ICONS_AR):
-	@echo "\033[95mMaking Icons\033[0m"
+	@printf "\e[1,33mMaking Icons\e[0m\n"
 	$(MAKE) -f icons.makefile
 
 .PHONY: $(MUSIC_AR)
 $(MUSIC_AR):
-	@echo "\033[95mMaking Music\033[0m"
+	@printf "\e[1,32mMaking Music\e[0m\n"
 	$(MAKE) -C $(dir $@) all
 
 .PHONY: $(SMPL_AR)
 $(SMPL_AR):
-	@echo "\033[95mMaking Sampler\033[0m"
+	@printf "\e[1,32mMaking Sampler\e[0m\n"
 	$(MAKE) -C $(dir $@) all
 
 .PHONY: $(VOICE_AR)
 $(VOICE_AR):
-	@echo "\033[95mMaking Voice\033[0m"
+	@printf "\e[1,32mMaking Voice\e[0m\n"
 	$(MAKE) -C $(dir $@) all
 
 .PHONY: $(LIST_AR)
 $(LIST_AR):
-	@echo "\033[95mMaking Songlist\033[0m"
+	@printf "\e[1,32mMaking Songlist\e[0m\n"
 	$(MAKE) -C $(dir $@) all
 
 .PHONY: $(CRY_AR)
 $(CRY_AR):
-	@echo "\033[95mMaking Cries\033[0m"
+	@printf "\e[1,32mMaking Cries\e[0m\n"
 	$(MAKE) -C $(dir $@) all
 
 .PHONY: constants
