@@ -68,6 +68,9 @@ u8 type_effectiveness_table[TYPE_FAIRY - 0x4][TYPE_FAIRY - 0x4] = {
 /* === IMPLEMENTATIONS === */
 u16 battle_damage_type_effectiveness_update(u8 attacking_type, u8 defending_type, u8 atk_bank, u8 def_bank,
                                             u16 chained_effect, u8 airstatus) {
+
+    (void)airstatus; //TODO
+
     u8 effect, atype = attacking_type, dtype = defending_type;
     if (!chained_effect || atype == TYPE_EGG || dtype == TYPE_EGG)
         return chained_effect;
@@ -124,6 +127,9 @@ u16 battle_apply_type_effectiveness(u16 chained_effect, u8 move_type, u8 target_
 
 u16 battle_type_effectiveness_calc(u16 move, u8 move_type, u8 atk_bank, u8 def_bank,
                                    u8 effects_handling_and_recording) {
+    (void)move;
+    (void)effects_handling_and_recording;
+    
     u16 chained_effect = 64;
     // TODO: double_type moves
     // TODO: get air status

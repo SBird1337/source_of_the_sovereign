@@ -1,7 +1,7 @@
 AS      := @arm-none-eabi-as
 LD      := @arm-none-eabi-ld
 OBJCOPY := @arm-none-eabi-objcopy
-GRIT    := grit
+GRIT    := @grit
 CC      := @arm-none-eabi-gcc
 ARS     := @armips
 MAKE    := make
@@ -30,7 +30,7 @@ CHARMAP := charmap.txt
 
 DEFINES   := -DBPRE -DSOFTWARE_VERSION=0 -DLAN_DE
 ASFLAGS   := -mthumb
-CFLAGS    := -mthumb -mthumb-interwork -g -mcpu=arm7tdmi -fdiagnostics-show-option -mlong-calls -march=armv4t -Og -std=c11 -Wall -Wextra -Wunreachable-code -I$(PAGB_INCLUDE) -Isrc/include -Igenerated_image -fdiagnostics-color=always $(DEFINES)
+CFLAGS    := -mthumb -mthumb-interwork -g -mcpu=arm7tdmi -fdiagnostics-show-option -mlong-calls -march=armv4t -Og -std=c11 -Werror -Wall -Wextra -Wunreachable-code -I$(PAGB_INCLUDE) -Isrc/include -Igenerated_image -fdiagnostics-color=always $(DEFINES)
 GRITFLAGS := -ftc -fa
 LDFLAGS   := -z muldefs
 BLDPATH   := object
@@ -95,40 +95,40 @@ SCRIPT_OBJ	:= $(SCRIPT_SRC:%.s=$(BLDPATH)/%.o)
 ALL_OBJ     := $(GEN_OBJ) $(C_OBJ) $(ASM_OBJ) $(DATA_OBJ) $(STRING_OBJ) $(SCRIPT_OBJ) $(MAP_PROJ_O) $(MAP_FILES_O) $(TS_FILES_O) $(TS_GEN_O)
 
 $(MAPMAPS)/%.s: $(MAPMAPS)/%.pmh
-	@echo -e "\e[96mGenerating map $<\e[0m"
+	@echo "\033[96mGenerating map $<\033[0m"
 	$(PYMAPS) -o $@ $<
 
 $(MAPTS)/%.s: $(MAPTS)/%.pts
-	@echo -e "\e[94mGenerating tileset $<\e[0m"
+	@echo "\033[94mGenerating tileset $<\033[0m"
 	$(PYSETS) -o $@ $<
 
 $(STRINGDIR)/%.s: $(STRINGDIR)/%.txt
-	@echo -e "\e[93mGenerating strings $<\e[0m"
+	@echo "\033[93mGenerating strings $<\033[0m"
 	$(STRAGB) -o $@ -i $< -t string/table.tbl -e 0xFF
 
 $(BLDPATH)/%.o: %.c $(ASSETS) $(PAGB_INCLUDE)/pokeagb/pokeagb.h
-	@echo -e "\e[32mCompiling $<\e[0m"		
+	@echo "\033[32mCompiling $<\033[0m"		
 	$(shell mkdir -p $(dir $@))		
 	$(CC) $(CFLAGS) -c $< -o $@		
 		
 $(BLDPATH)/%.o: %.s $(PAGB_INCLUDE)/pokeagb/pokeagb.h
-	@echo -e "\e[32mAssembling $<\e[0m"		
+	@echo "\033[32mAssembling $<\033[0m"		
 	$(shell mkdir -p $(dir $@))		
 	$(PREPROC) $< $(CHARMAP) > $*.i		
 	$(CC) $(CFLAGS) -c -x assembler-with-cpp $*.i -o $@		
 	@rm -f $*.i
 
 $(MAPTS)/%.s: $(MAPTS)/%.png
-	@echo -e "\e[34mProcessing image (tileset) $<\e[0m"
+	@echo "\033[34mProcessing image (tileset) $<\033[0m"
 	$(GRIT) $< -o $@ -fts -gzl -pz! -pu16 -gB4 -m! -mR!
 
 generated_image/%.c generated_image/%.h: $(AUTO_ASSET_ROOT)/%.png $(AUTO_ASSET_ROOT)/%.grit
-	@echo -e "\e[34mProcessing image $<\e[0m"
+	@echo "\033[34mProcessing image $<\033[0m"
 	$(shell mkdir -p $(dir $@))
 	$(GRIT) $< -o $@ -ftc -ff $(<:%.png=%.grit)
 
 generated_image/%.c generated_image/%.h: $(AUTO_ASSET_ROOT)/%.png
-	@echo -e "\e[34mProcessing image $< (using directory grit file)\e[0m"
+	@echo "\033[34mProcessing image $< (using directory grit file)\033[0m"
 	$(shell mkdir -p $(dir $@))
 	$(GRIT) $< -o $@ -ftc -ff $(<D)/$(notdir $(<D)).grit
 
@@ -136,7 +136,7 @@ all: $(GEN_H) rom
 
 .PHONY: rom
 rom: main.asm $(MAIN_OBJ)
-	@echo -e "\e[1;32mCreating ROM\e[0m"
+	@echo "\033[1;32mCreating ROM\033[0m"
 	$(ARS) $<
 	$(NM) $(BLDPATH)/linked.o -n -g --defined-only | \
 		sed -e '{s/^/0x/g};{/.*\sA\s.*/d};{s/\sT\s/ /g}' > $(OUTPATH)/__symbols.sym
@@ -145,7 +145,7 @@ rom: main.asm $(MAIN_OBJ)
 	
 $(MAIN_OBJ): $(ALL_OBJ) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR) $(CRY_AR) #$(B_ENGINE)
 	$(MAKE) -f assets.makefile
-	@echo -e "\e[1;32mLinking ELF binary $@\e[0m"
+	@echo "\033[1;32mLinking ELF binary $@\033[0m"
 	@echo "INPUT($^)" > $(TMP_LD)
 	$(LD) $(LDFLAGS) -T $(PAGB_LINK) -T linker.ld -T bpre.sym --whole-archive -r -o $@ --start-group -T $(TMP_LD) --end-group
 	$(LD) $(LDFLAGS) -T $(PAGB_LINK) -T linker.ld -T bpre.sym --whole-archive -o $@.dbg --start-group -T $(TMP_LD) --end-group
@@ -153,7 +153,7 @@ $(MAIN_OBJ): $(ALL_OBJ) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR)
 	@rm -f $(TMP_LD)
 
 $(MAP_PROJ_S): $(MAP_PROJ)
-	@echo -e "\e[91mGenerating map project $<\e[0m"
+	@echo "\033[91mGenerating map project $<\033[0m"
 	$(PYPROJS) -b sovereign_banks -f sovereign_footer -o $@ $<
 
 .PHONY: $(B_ENGINE)
@@ -191,42 +191,42 @@ clean:
 
 .PHONY: $(ASSETS)
 $(ASSETS):
-	@echo -e "\e[95mMaking Assets\e[0m"
+	@echo "\033[95mMaking Assets\033[0m"
 	$(MAKE) -f assets.makefile
 
 .PHONY: $(SPRITES)
 $(SPRITES):
-	@echo -e "\e[95mMaking Sprites\e[0m"
+	@echo "\033[95mMaking Sprites\033[0m"
 	$(MAKE) -f sprites.makefile
 
 .PHONY: $(ICONS_AR)
 $(ICONS_AR):
-	@echo -e "\e[95mMaking Icons\e[0m"
+	@echo "\033[95mMaking Icons\033[0m"
 	$(MAKE) -f icons.makefile
 
 .PHONY: $(MUSIC_AR)
 $(MUSIC_AR):
-	@echo -e "\e[95mMaking Music\e[0m"
+	@echo "\033[95mMaking Music\033[0m"
 	$(MAKE) -C $(dir $@) all
 
 .PHONY: $(SMPL_AR)
 $(SMPL_AR):
-	@echo -e "\e[95mMaking Sampler\e[0m"
+	@echo "\033[95mMaking Sampler\033[0m"
 	$(MAKE) -C $(dir $@) all
 
 .PHONY: $(VOICE_AR)
 $(VOICE_AR):
-	@echo -e "\e[95mMaking Voice\e[0m"
+	@echo "\033[95mMaking Voice\033[0m"
 	$(MAKE) -C $(dir $@) all
 
 .PHONY: $(LIST_AR)
 $(LIST_AR):
-	@echo -e "\e[95mMaking Songlist\e[0m"
+	@echo "\033[95mMaking Songlist\033[0m"
 	$(MAKE) -C $(dir $@) all
 
 .PHONY: $(CRY_AR)
 $(CRY_AR):
-	@echo -e "\e[95mMaking Cries\e[0m"
+	@echo "\033[95mMaking Cries\033[0m"
 	$(MAKE) -C $(dir $@) all
 
 .PHONY: constants

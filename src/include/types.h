@@ -19,6 +19,6 @@ typedef     double                  f64;
 #include <stddef.h>
 #include <stdbool.h>
 
-#define rgb5(r,g,b)                 (u16)( r | ( g << 5) | ( b << 10) )
+//#define rgb5(r,g,b)                 (u16)( r | ( g << 5) | ( b << 10) )
 
 #endif

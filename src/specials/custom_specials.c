@@ -31,7 +31,7 @@
 /* === INCLUDES === */
 
 #include "camera_move.h"
-#include "cutscene_meteor.h"
+//#include "cutscene_meteor.h"
 #include <config/core.h>
 #include <pokeagb/pokeagb.h>
 
@@ -81,7 +81,7 @@ extern pchar name_rival_female[5];
 /* === STATICS === */
 
 static special_func special_routines[10] = {
-    met_play,         cam_sp_move_camera, sp_init_script,  NULL, NULL,
+    NULL,         cam_sp_move_camera, sp_init_script,  NULL, NULL,
     sp_random_number, sp_check_tileset,   sp_batchmaptile, sp_crystal_fade, sp_set_rival,
 };
 
