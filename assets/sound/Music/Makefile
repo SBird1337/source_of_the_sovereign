@@ -1,7 +1,7 @@
 AS = arm-none-eabi-as
 AR = arm-none-eabi-ar
-M_FLAGS = -V100 -E -P000 -R000 -G000
-SE_FLAGS = -V127 -E -P005 -R000 -G001
+M_FLAGS = -m 100 -n -p 0 -r 0 -g voicegroup000
+SE_FLAGS = -p 5 -r 0 -g voicegroup001
 FIX_FLAGS = 
 
 MID_FILES = $(sort $(wildcard MID/*.mid))
@@ -20,22 +20,18 @@ all: music.a
 clean:
 	rm -f OBJ/*.o OBJ_DUMP/*.o OBJ_SE/*.o music.a
 
-#.PRECIOUS: MID_FINAL/%.mid
-MID_FINAL/%.mid: MID/%.mid
-	midfix4agb $< $@ $(FIX_FLAGS)
-
 #.PRECIOUS: S_FINAL/%.s
-S_FINAL/%.s: MID_FINAL/%.mid
-	mid2agb $< $@ $(M_FLAGS)
+S/%.s: MID/%.mid
+	midi2agb $< $@ $(M_FLAGS)
 
 #.PRECIOUS: S_SE/%.s
 S_SE/%.s: MID_SE/%.mid
-	mid2agb $< $@ $(SE_FLAGS)
+	midi2agb $< $@ $(SE_FLAGS)
 
 OBJ_SE/%.o: S_SE/%.s
 	$(AS) $< -o $@
 
-OBJ/%.o: S_FINAL/%.s
+OBJ/%.o: S/%.s
 	$(AS) $< -o $@
 
 OBJ_DUMP/%.o: S_DUMP/%.s

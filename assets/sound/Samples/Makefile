@@ -1,7 +1,7 @@
 AS = arm-none-eabi-as
 AR = arm-none-eabi-ar
 
-S_FILES = $(sort $(wildcard S_CUSTOM/*.s))
+S_FILES = $(sort $(wildcard S/*.s))
 OBJ_S_FILES = $(S_FILES:.s=.o)
 
 WAV_FILES = $(sort $(wildcard WAV/*.wav))

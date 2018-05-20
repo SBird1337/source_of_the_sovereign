@@ -170,12 +170,12 @@ voicegroup000:
 
 @**************** Voice 018 ****************@
 
-	.byte	DirectSound
+	.byte	SquareWave1
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_18_rock_organ
-	.byte	255, 230, 160, 165
+	.word	WaveDuty50
+	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 019 ****************@
 
@@ -458,12 +458,12 @@ voicegroup000:
 
 @**************** Voice 050 ****************@
 
-	.byte	DirectSound
+	.byte	SquareWave1
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_50_synth_strings
-	.byte	64, 248, 200, 200
+	.word	WaveDuty50
+	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 051 ****************@
 
@@ -935,12 +935,12 @@ voicegroup000:
 
 @**************** Voice 103 ****************@
 
-	.byte	DirectSound
+	.byte	ProgNoise
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_103_scratch
-	.byte	255, 0, 255, 0
+	.word	RoughNoise
+	.byte	0, 0, 0xF, 0
 
 @**************** Voice 104 ****************@
 

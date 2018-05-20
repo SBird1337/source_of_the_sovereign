@@ -260,12 +260,12 @@ DrumTblNoise:
 
 @**************** Voice 028 ****************@
 
-	.byte	DirectSound
+	.byte	ProgNoise
 	.byte	Cn1
 	.byte	0x0
 	.byte	0x0
-	.word	snd_103_scratch
-	.byte	255, 0x0, 255, 0x0
+	.word	RoughNoise
+	.byte	0x0, 0x0, 0xF, 0x0
 
 @**************** Voice 029 ****************@
 
