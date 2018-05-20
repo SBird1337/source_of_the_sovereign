@@ -15,7 +15,7 @@ all: sample.a
 
 .PHONY: clean
 clean:
-	rm -f OBJ/*.o OBJ_DUMP/*.o sample.a S/*.s
+	rm -f WAV/*.o S_DUMP/*.o sample.a S/*.o
 
 #----------------
 
