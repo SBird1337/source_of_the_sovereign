@@ -382,7 +382,7 @@ DrumTbl1:
 	.byte	0x0
 	.byte	c_v-32
 	.word	snd_127_tom_45
-	.byte	255, 0x0, 255, 165
+	.byte	255, 240, 0, 165
 
 @**************** Voice 042 ****************@
 
@@ -400,7 +400,7 @@ DrumTbl1:
 	.byte	0x0
 	.byte	c_v-16
 	.word	snd_127_tom_45
-	.byte	255, 0x0, 255, 165
+	.byte	255, 240, 0, 165
 
 @**************** Voice 044 ****************@
 
@@ -418,7 +418,7 @@ DrumTbl1:
 	.byte	0x0
 	.byte	c_v+0
 	.word	snd_127_tom_45
-	.byte	255, 0x0, 255, 165
+	.byte	255, 240, 0, 165
 
 @**************** Voice 046 ****************@
 
@@ -432,20 +432,20 @@ DrumTbl1:
 @**************** Voice 047 ****************@
 
 	.byte	DirectSound
-	.byte	Gs2
+	.byte	En3
 	.byte	0x0
 	.byte	c_v+16
-	.word	snd_127_tom_48
-	.byte	255, 0x0, 255, 165
+	.word	snd_127_tom_45
+	.byte	255, 240, 0, 165
 
 @**************** Voice 048 ****************@
 
 	.byte	DirectSound
-	.byte	Cn3
+	.byte	Gn3
 	.byte	0x0
 	.byte	c_v+32
-	.word	snd_127_tom_48
-	.byte	255, 0x0, 255, 165
+	.word	snd_127_tom_45
+	.byte	255, 240, 0, 165
 
 @**************** Voice 049 ****************@
 
@@ -459,11 +459,11 @@ DrumTbl1:
 @**************** Voice 050 ****************@
 
 	.byte	DirectSound
-	.byte	Ds3
+	.byte   Bn3
 	.byte	0x0
 	.byte	c_v+40
-	.word	snd_127_tom_48
-	.byte	255, 0x0, 255, 165
+	.word	snd_127_tom_45
+	.byte	255, 240, 0, 165
 
 @**************** Voice 051 ****************@
 
