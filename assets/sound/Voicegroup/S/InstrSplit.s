@@ -29,7 +29,7 @@ snd_0_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_0_piano_Fs0
+	.word	snd_0_piano_fs0
 	.byte	255, 255, 0, 226
 
 @**************** Voice 001 ****************@
@@ -38,7 +38,7 @@ snd_0_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_0_piano_Ds1
+	.word	snd_0_piano_ds1
 	.byte	255, 254, 0, 226
 
 @**************** Voice 002 ****************@
@@ -47,7 +47,7 @@ snd_0_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_0_piano_A1
+	.word	snd_0_piano_a1
 	.byte	255, 253, 0, 226
 
 @**************** Voice 003 ****************@
@@ -56,7 +56,7 @@ snd_0_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_0_piano_Fs2
+	.word	snd_0_piano_fs2
 	.byte	255, 252, 0, 226
 
 @**************** Voice 004 ****************@
@@ -65,7 +65,7 @@ snd_0_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_0_piano_Ds3
+	.word	snd_0_piano_ds3
 	.byte	255, 251, 0, 226
 
 @**************** Voice 005 ****************@
@@ -74,7 +74,7 @@ snd_0_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_0_piano_C4
+	.word	snd_0_piano_c4
 	.byte	255, 249, 0, 226
 
 
@@ -84,7 +84,7 @@ snd_0_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_0_piano_A4
+	.word	snd_0_piano_a4
 	.byte	255, 248, 0, 226
 
 @**************** Voice 007 ****************@
@@ -93,7 +93,7 @@ snd_0_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_0_piano_A5
+	.word	snd_0_piano_a5
 	.byte	255, 247, 0, 226
 
 snd_24_table:
@@ -104,7 +104,7 @@ snd_24_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_24_guitar_E1
+	.word	snd_24_guitar_e1
 	.byte	255, 255, 64, 189
 
 @**************** Voice 001 ****************@
@@ -113,7 +113,7 @@ snd_24_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_24_guitar_A1
+	.word	snd_24_guitar_a1
 	.byte	255, 253, 56, 189
 
 @**************** Voice 002 ****************@
@@ -122,7 +122,7 @@ snd_24_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_24_guitar_D2
+	.word	snd_24_guitar_d2
 	.byte	255, 250, 48, 189
 
 @**************** Voice 003 ****************@
@@ -131,7 +131,7 @@ snd_24_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_24_guitar_G2
+	.word	snd_24_guitar_g2
 	.byte	255, 248, 40, 189
 
 @**************** Voice 004 ****************@
@@ -140,7 +140,7 @@ snd_24_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_24_guitar_E3
+	.word	snd_24_guitar_e3
 	.byte	255, 245, 32, 189
 
 snd_25_table:
@@ -151,7 +151,7 @@ snd_25_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_25_guitar_E1
+	.word	snd_25_guitar_e1
 	.byte	255, 255, 64, 189
 
 @**************** Voice 001 ****************@
@@ -160,7 +160,7 @@ snd_25_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_25_guitar_A1
+	.word	snd_25_guitar_a1
 	.byte	255, 253, 56, 189
 
 @**************** Voice 002 ****************@
@@ -169,7 +169,7 @@ snd_25_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_25_guitar_D2
+	.word	snd_25_guitar_d2
 	.byte	255, 252, 48, 189
 
 @**************** Voice 003 ****************@
@@ -178,7 +178,7 @@ snd_25_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_25_guitar_G2
+	.word	snd_25_guitar_g2
 	.byte	255, 251, 40, 189
 
 @**************** Voice 004 ****************@
@@ -187,7 +187,7 @@ snd_25_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_25_guitar_B2
+	.word	snd_25_guitar_b2
 	.byte	255, 250, 32, 189
 
 @**************** Voice 005 ****************@
@@ -196,7 +196,7 @@ snd_25_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_25_guitar_E3
+	.word	snd_25_guitar_e3
 	.byte	255, 249, 32, 189
 
 snd_29_table:
@@ -207,7 +207,7 @@ snd_29_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_29_guitar_E2
+	.word	snd_29_guitar_e2
 	.byte	255, 0, 255, 186
 
 @**************** Voice 001 ****************@
@@ -216,7 +216,7 @@ snd_29_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_29_guitar_D3
+	.word	snd_29_guitar_d3
 	.byte	255, 0, 255, 186
 
 @**************** Voice 002 ****************@
@@ -225,7 +225,7 @@ snd_29_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_29_guitar_B3
+	.word	snd_29_guitar_b3
 	.byte	255, 0, 255, 186
 
 snd_33_table:
@@ -236,7 +236,7 @@ snd_33_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_33_bass_A1
+	.word	snd_33_bass_a1
 	.byte	255, 254, 0, 165
 
 @**************** Voice 001 ****************@
@@ -245,7 +245,7 @@ snd_33_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_33_bass_D2
+	.word	snd_33_bass_d2
 	.byte	255, 252, 0, 165
 
 @**************** Voice 002 ****************@
@@ -254,7 +254,7 @@ snd_33_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_33_bass_G2
+	.word	snd_33_bass_g2
 	.byte	255, 250, 0, 165
 
 @**************** Voice 003 ****************@
@@ -263,7 +263,7 @@ snd_33_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_33_bass_D3
+	.word	snd_33_bass_d3
 	.byte	255, 247, 0, 165
 
 snd_35_table:
@@ -274,7 +274,7 @@ snd_35_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_35_fles_bass_A1
+	.word	snd_35_fles_bass_a1
 	.byte	255, 254, 0, 180
 
 @**************** Voice 001 ****************@
@@ -283,7 +283,7 @@ snd_35_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_35_fles_bass_D2
+	.word	snd_35_fles_bass_d2
 	.byte	255, 252, 0, 180
 
 @**************** Voice 002 ****************@
@@ -292,7 +292,7 @@ snd_35_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_35_fles_bass_G2
+	.word	snd_35_fles_bass_g2
 	.byte	255, 250, 0, 180
 
 @**************** Voice 003 ****************@
@@ -301,7 +301,7 @@ snd_35_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_35_fles_bass_C3
+	.word	snd_35_fles_bass_c3
 	.byte	255, 247, 0, 180
 
 snd_40_table:
@@ -312,7 +312,7 @@ snd_40_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_40_violin_D3
+	.word	snd_40_violin_d3
 	.byte	255, 0, 255, 190
 
 @**************** Voice 001 ****************@
@@ -321,7 +321,7 @@ snd_40_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_40_violin_D4
+	.word	snd_40_violin_d4
 	.byte	255, 0, 255, 190
 
 snd_46_table:
@@ -332,7 +332,7 @@ snd_46_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_46_harp_Cs3
+	.word	snd_46_harp_cs3
 	.byte	255, 249, 0, 165
 
 @**************** Voice 001 ****************@
@@ -341,7 +341,7 @@ snd_46_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_46_harp_Ds4
+	.word	snd_46_harp_ds4
 	.byte	255, 245, 0, 165
 
 @**************** Voice 002 ****************@
@@ -350,7 +350,7 @@ snd_46_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_46_harp_C5
+	.word	snd_46_harp_c5
 	.byte	255, 242, 0, 165
 
 snd_48_table:
@@ -361,7 +361,7 @@ snd_48_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_B0
+	.word	snd_48_strings_b0
 	.byte	255, 0, 255, 200
 
 @**************** Voice 001 ****************@
@@ -370,7 +370,7 @@ snd_48_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_E1
+	.word	snd_48_strings_e1
 	.byte	255, 0, 255, 200
 
 @**************** Voice 002 ****************@
@@ -379,7 +379,7 @@ snd_48_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_B1
+	.word	snd_48_strings_b1
 	.byte	255, 0, 255, 200
 
 @**************** Voice 003 ****************@
@@ -388,7 +388,7 @@ snd_48_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_E2
+	.word	snd_48_strings_e2
 	.byte	255, 0, 255, 200
 
 @**************** Voice 004 ****************@
@@ -397,7 +397,7 @@ snd_48_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_B2
+	.word	snd_48_strings_b2
 	.byte	255, 0, 255, 200
 
 @**************** Voice 005 ****************@
@@ -406,7 +406,7 @@ snd_48_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_E3
+	.word	snd_48_strings_e3
 	.byte	255, 0, 255, 200
 
 @**************** Voice 006 ****************@
@@ -415,7 +415,7 @@ snd_48_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_B3
+	.word	snd_48_strings_b3
 	.byte	255, 0, 255, 200
 
 @**************** Voice 007 ****************@
@@ -424,7 +424,7 @@ snd_48_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_E4
+	.word	snd_48_strings_e4
 	.byte	255, 0, 255, 200
 
 @**************** Voice 008 ****************@
@@ -433,7 +433,7 @@ snd_48_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_B4
+	.word	snd_48_strings_b4
 	.byte	255, 0, 255, 200
 
 @**************** Voice 009 ****************@
@@ -442,7 +442,7 @@ snd_48_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_E5
+	.word	snd_48_strings_e5
 	.byte	255, 0, 255, 200
 
 snd_49_table:
@@ -453,7 +453,7 @@ snd_49_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_B0
+	.word	snd_48_strings_b0
 	.byte	255, 0, 255, 200
 
 @**************** Voice 001 ****************@
@@ -462,7 +462,7 @@ snd_49_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_E1
+	.word	snd_48_strings_e1
 	.byte	255, 0, 255, 200
 
 @**************** Voice 002 ****************@
@@ -471,7 +471,7 @@ snd_49_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_B1
+	.word	snd_48_strings_b1
 	.byte	255, 0, 255, 200
 
 @**************** Voice 003 ****************@
@@ -480,7 +480,7 @@ snd_49_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_E2
+	.word	snd_48_strings_e2
 	.byte	255, 0, 255, 200
 
 @**************** Voice 004 ****************@
@@ -489,7 +489,7 @@ snd_49_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_B2
+	.word	snd_48_strings_b2
 	.byte	255, 0, 255, 200
 
 @**************** Voice 005 ****************@
@@ -498,7 +498,7 @@ snd_49_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_E3
+	.word	snd_48_strings_e3
 	.byte	255, 0, 255, 200
 
 @**************** Voice 006 ****************@
@@ -507,7 +507,7 @@ snd_49_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_B3
+	.word	snd_48_strings_b3
 	.byte	255, 0, 255, 200
 
 @**************** Voice 007 ****************@
@@ -516,7 +516,7 @@ snd_49_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_E4
+	.word	snd_48_strings_e4
 	.byte	255, 0, 255, 200
 
 @**************** Voice 008 ****************@
@@ -525,7 +525,7 @@ snd_49_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_B4
+	.word	snd_48_strings_b4
 	.byte	255, 0, 255, 200
 
 @**************** Voice 009 ****************@
@@ -534,7 +534,7 @@ snd_49_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_48_strings_E5
+	.word	snd_48_strings_e5
 	.byte	255, 0, 255, 200
 
 snd_56_table:
@@ -565,7 +565,7 @@ snd_61_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_61_horns_C3
+	.word	snd_61_horns_c3
 	.byte	255, 0, 255, 190
 
 @**************** Voice 001 ****************@
@@ -574,7 +574,7 @@ snd_61_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_61_horns_As3
+	.word	snd_61_horns_as3
 	.byte	255, 0, 255, 190
 
 snd_66_table:
@@ -585,7 +585,7 @@ snd_66_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_66_tsax_E3
+	.word	snd_66_tsax_e3
 	.byte	255, 0, 255, 165
 
 @**************** Voice 001 ****************@
@@ -594,7 +594,7 @@ snd_66_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_66_tsax_A3
+	.word	snd_66_tsax_a3
 	.byte	255, 0, 255, 165
 
 @**************** Voice 002 ****************@
@@ -603,7 +603,7 @@ snd_66_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_66_tsax_D4
+	.word	snd_66_tsax_d4
 	.byte	255, 0, 255, 165
 
 snd_68_table:
@@ -614,7 +614,7 @@ snd_68_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_68_oboe_G3
+	.word	snd_68_oboe_g3
 	.byte	255, 0, 255, 165
 
 @**************** Voice 001 ****************@
@@ -623,7 +623,7 @@ snd_68_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_68_oboe_D4
+	.word	snd_68_oboe_d4
 	.byte	255, 0, 255, 165
 
 @**************** Voice 002 ****************@
@@ -632,7 +632,7 @@ snd_68_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_68_oboe_A4
+	.word	snd_68_oboe_a4
 	.byte	255, 0, 255, 165
 
 snd_73_table:
@@ -643,7 +643,7 @@ snd_73_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_73_flute_Fs3
+	.word	snd_73_flute_fs3
 	.byte	255, 0, 255, 165
 
 @**************** Voice 001 ****************@
@@ -652,7 +652,7 @@ snd_73_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_73_flute_A3
+	.word	snd_73_flute_a3
 	.byte	255, 0, 255, 165
 
 @**************** Voice 002 ****************@
@@ -661,7 +661,7 @@ snd_73_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_73_flute_D4
+	.word	snd_73_flute_d4
 	.byte	255, 0, 255, 165
 
 @**************** Voice 003 ****************@
@@ -670,7 +670,7 @@ snd_73_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_73_flute_A4
+	.word	snd_73_flute_a4
 	.byte	255, 0, 255, 165
 
 @**************** Voice 004 ****************@
@@ -679,7 +679,7 @@ snd_73_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_73_flute_E5
+	.word	snd_73_flute_e5
 	.byte	255, 0, 255, 165
 
 @**************** Voice 005 ****************@
@@ -688,7 +688,7 @@ snd_73_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_73_flute_G5
+	.word	snd_73_flute_g5
 	.byte	255, 0, 255, 165
 
 snd_77_table:
@@ -699,7 +699,7 @@ snd_77_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_77_shakuhachi_A3
+	.word	snd_77_shakuhachi_a3
 	.byte	255, 0, 255, 165
 
 @**************** Voice 001 ****************@
@@ -708,7 +708,7 @@ snd_77_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_77_shakuhachi_E4
+	.word	snd_77_shakuhachi_e4
 	.byte	255, 0, 255, 165
 
 @**************** Voice 002 ****************@
@@ -717,7 +717,7 @@ snd_77_table:
 	.byte	Cn3
 	.byte	0x0
 	.byte	0x0
-	.word	snd_77_shakuhachi_C5
+	.word	snd_77_shakuhachi_c5
 	.byte	255, 0, 255, 165
 
 	.end
