@@ -46,7 +46,6 @@ SCRIPTROOT := $(MAPROOT)/script
 MAIN_OBJ  := $(BLDPATH)/linked.o
 B_ENGINE  := battle_engine/build/linked.o
 SPRITES   := $(BLDPATH)/pkmn_sprites.o
-ICONS_AR  := $(BLDPATH)/pkmn_icons.a
 DYN_OVER  := built/dynamic_overworld.o
 
 TMP_LD	  := tmp.ld
@@ -177,7 +176,6 @@ clean:
 	$(MAKE) -C $(dir $(LIST_AR)) clean
 	$(MAKE) -C $(dir $(CRY_AR)) clean
 	$(MAKE) -f sprites.makefile clean
-	$(MAKE) -f icons.makefile clean
 
 .PHONY: cleannogfx
 	rm -f  $(OUTPATH)/__symbols.sym $(OUTPATH)/pkmn_sots.gba
@@ -198,11 +196,6 @@ $(ASSETS):
 $(SPRITES):
 	@printf "\e[1,33mMaking Sprites\e[0m\n"
 	$(MAKE) -f sprites.makefile
-
-.PHONY: $(ICONS_AR)
-$(ICONS_AR):
-	@printf "\e[1,33mMaking Icons\e[0m\n"
-	$(MAKE) -f icons.makefile
 
 .PHONY: $(MUSIC_AR)
 $(MUSIC_AR):
