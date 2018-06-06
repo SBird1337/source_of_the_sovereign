@@ -202,7 +202,7 @@ bank_002:
 	.byte	Cn3 
 	.byte	0x00
 	.byte	0x00
-	.word	wave_014
+	.word	wave_fr_orchsnare
 	.byte	255, 0, 255, 127
 
 @**************** Voice 022 ****************@
@@ -229,7 +229,7 @@ bank_002:
 	.byte	Cn3 
 	.byte	0x00
 	.byte	0x00
-	.word	wave_017
+	.word	wave_fr_snare_soft
 	.byte	255, 0, 255, 127
 
 @**************** Voice 025 ****************@
@@ -481,7 +481,7 @@ bank_002:
 	.byte	Cn3 
 	.byte	0x00
 	.byte	0x00
-	.word	wave_031
+	.word	wave_fr_cymbal
 	.byte	26, 0, 255, 127
 
 @**************** Voice 053 ****************@

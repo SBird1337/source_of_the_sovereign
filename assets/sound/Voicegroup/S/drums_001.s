@@ -76,7 +76,7 @@ drums_001:
 	.byte	Cn3 
 	.byte	0x00
 	.byte	c_v+0
-	.word	wave_058
+	.word	wave_fr_bd_clean
 	.byte	255, 0, 255, 242
 
 @**************** Voice 008 ****************@
@@ -94,7 +94,7 @@ drums_001:
 	.byte	Cn3 
 	.byte	0x00
 	.byte	c_v+0
-	.word	wave_017
+	.word	wave_fr_snare_soft
 	.byte	255, 0, 255, 242
 
 @**************** Voice 010 ****************@
@@ -112,7 +112,7 @@ drums_001:
 	.byte	Cn3 
 	.byte	0x00
 	.byte	c_v+0
-	.word	wave_014
+	.word	wave_fr_orchsnare
 	.byte	255, 0, 255, 242
 
 @**************** Voice 012 ****************@
@@ -265,7 +265,7 @@ drums_001:
 	.byte	Fs0 
 	.byte	0x00
 	.byte	c_v-10
-	.word	wave_031
+	.word	wave_fr_cymbal
 	.byte	255, 246, 0, 216
 
 @**************** Voice 029 ****************@
@@ -283,7 +283,7 @@ drums_001:
 	.byte	Fs0 
 	.byte	0x00
 	.byte	c_v-10
-	.word	wave_031
+	.word	wave_fr_cymbal
 	.byte	255, 246, 0, 216
 
 @**************** Voice 031 ****************@
@@ -292,7 +292,7 @@ drums_001:
 	.byte	Fs0 
 	.byte	0x00
 	.byte	c_v+0
-	.word	wave_031
+	.word	wave_fr_cymbal
 	.byte	8, 0, 255, 216
 
 @**************** Voice 032 ****************@
@@ -337,7 +337,7 @@ drums_001:
 	.byte	En3 
 	.byte	0x00
 	.byte	c_v+0
-	.word	wave_061
+	.word	wave_fr_bd_hally
 	.byte	255, 0, 255, 0
 
 @**************** Voice 037 ****************@
@@ -373,7 +373,7 @@ drums_001:
 	.byte	En3 
 	.byte	0x00
 	.byte	c_v+0
-	.word	wave_014
+	.word	wave_fr_orchsnare
 	.byte	255, 0, 255, 242
 
 @**************** Voice 041 ****************@
@@ -391,7 +391,7 @@ drums_001:
 	.byte	En3 
 	.byte	0x00
 	.byte	c_v+16
-	.word	wave_014
+	.word	wave_fr_orchsnare
 	.byte	255, 0, 255, 242
 
 @**************** Voice 043 ****************@
@@ -409,7 +409,7 @@ drums_001:
 	.byte	Cn3 
 	.byte	0x00
 	.byte	c_v+0
-	.word	wave_017
+	.word	wave_fr_snare_soft
 	.byte	255, 0, 255, 242
 
 @**************** Voice 045 ****************@
@@ -454,7 +454,7 @@ drums_001:
 	.byte	An0 
 	.byte	0x00
 	.byte	c_v+25
-	.word	wave_031
+	.word	wave_fr_cymbal
 	.byte	255, 235, 0, 231
 
 @**************** Voice 050 ****************@
@@ -481,7 +481,7 @@ drums_001:
 	.byte	Ds3 
 	.byte	0x00
 	.byte	c_v+0
-	.word	wave_031
+	.word	wave_fr_cymbal
 	.byte	255, 235, 0, 231
 
 @**************** Voice 053 ****************@
@@ -526,7 +526,7 @@ drums_001:
 	.byte	En3 
 	.byte	0x00
 	.byte	c_v-35
-	.word	wave_031
+	.word	wave_fr_cymbal
 	.byte	255, 235, 0, 231
 
 @**************** Voice 058 ****************@
@@ -544,7 +544,7 @@ drums_001:
 	.byte	En3 
 	.byte	0x00
 	.byte	c_v-10
-	.word	wave_031
+	.word	wave_fr_cymbal
 	.byte	255, 235, 0, 231
 
 @**************** Voice 060 ****************@
@@ -553,7 +553,7 @@ drums_001:
 	.byte	En3 
 	.byte	0x00
 	.byte	c_v-10
-	.word	wave_031
+	.word	wave_fr_cymbal
 	.byte	8, 0, 255, 216
 
 @**************** Voice 061 ****************@
