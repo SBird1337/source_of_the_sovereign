@@ -76,7 +76,7 @@ drums_001:
 	.byte	Cn3 
 	.byte	0x00
 	.byte	c_v+0
-	.word	wave_058
+	.word	wave_fr_bd_clean
 	.byte	255, 0, 255, 242
 
 @**************** Voice 008 ****************@
@@ -94,7 +94,7 @@ drums_001:
 	.byte	Cn3 
 	.byte	0x00
 	.byte	c_v+0
-	.word	wave_017
+	.word	wave_fr_snare_soft
 	.byte	255, 0, 255, 242
 
 @**************** Voice 010 ****************@
@@ -337,7 +337,7 @@ drums_001:
 	.byte	En3 
 	.byte	0x00
 	.byte	c_v+0
-	.word	wave_061
+	.word	wave_fr_bd_hally
 	.byte	255, 0, 255, 0
 
 @**************** Voice 037 ****************@
@@ -409,7 +409,7 @@ drums_001:
 	.byte	Cn3 
 	.byte	0x00
 	.byte	c_v+0
-	.word	wave_017
+	.word	wave_fr_snare_soft
 	.byte	255, 0, 255, 242
 
 @**************** Voice 045 ****************@

@@ -769,7 +769,7 @@ drums_004:
 	.byte	En3 
 	.byte	0x00
 	.byte	c_v+0
-	.word	wave_061
+	.word	wave_fr_bd_hally
 	.byte	255, 0, 255, 0
 
 @**************** Voice 085 ****************@
@@ -841,7 +841,7 @@ drums_004:
 	.byte	Cn3 
 	.byte	0x00
 	.byte	c_v+0
-	.word	wave_017
+	.word	wave_fr_snare_soft
 	.byte	255, 0, 255, 242
 
 @**************** Voice 093 ****************@

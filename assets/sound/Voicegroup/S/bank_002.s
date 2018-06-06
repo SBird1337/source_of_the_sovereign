@@ -229,7 +229,7 @@ bank_002:
 	.byte	Cn3 
 	.byte	0x00
 	.byte	0x00
-	.word	wave_017
+	.word	wave_fr_snare_soft
 	.byte	255, 0, 255, 127
 
 @**************** Voice 025 ****************@
