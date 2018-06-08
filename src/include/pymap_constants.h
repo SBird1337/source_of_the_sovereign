@@ -1,3 +1,13 @@
+@ARM Assembly macro definitions for map_namespaces
+
+
+.equ MAP_HESPERIA, 0x58
+.equ MAP_CARUN_CITY, 0x59
+.equ MAP_HESPERIAPFAD, 0x60
+.equ MAP_HESPERIAZWEIG, 0x61
+.equ MAP_CARUNPFAD, 0x62
+.equ MAP_TRAINERSCHULE, 0x62
+
 @ARM Assembly macro definitions for item
 
 
@@ -1776,25 +1786,6 @@
 .equ BEHAVIOUR_AUF_DER_STELLE_GEHEN_OBEN_, 0x4e
 .equ BEHAVIOUR_AUF_DER_STELLE_GEHEN_LINKS_, 0x4f
 .equ BEHAVIOUR_AUF_DER_STELLE_GEHEN_RECHTS_TWO, 0x50
-
-
-
-@ARM Assembly macro definitions for map_namespaces
-
-
-.equ MAP_HESPERIA, 0x58
-.equ MAP_CARUN_CITY, 0x59
-.equ MAP_UNUMA, 0x5a
-.equ MAP_URBANIA_CITY, 0x5b
-.equ MAP_ROUTE_1, 0x5c
-.equ MAP_ROUTE_2, 0x5d
-.equ MAP_ROUTE_3, 0x5e
-.equ MAP_ROUTE_4, 0x5f
-.equ MAP_ROUTE_5, 0x60
-.equ MAP_WALD_VON_YELNIA, 0x61
-.equ MAP_TEAM_TUNDRA_HQ, 0x62
-.equ MAP_BAUM_DES_LEBENS, 0x63
-.equ MAP_HOEHLE_DER_WEACHTER, 0x64
 
 
 
