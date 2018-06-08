@@ -607,7 +607,7 @@ drums_000:
 	.byte	En3 
 	.byte	0x00
 	.byte	c_v+0
-	.word	wave_062
+	.word	wave_fr_snare_side
 	.byte	255, 180, 175, 228
 
 @**************** Voice 067 ****************@
@@ -616,7 +616,7 @@ drums_000:
 	.byte	En3 
 	.byte	0x00
 	.byte	c_v+0
-	.word	wave_062
+	.word	wave_fr_snare_side
 	.byte	255, 0, 255, 242
 
 @**************** Voice 068 ****************@
