@@ -20,11 +20,9 @@
 // titlescreen cry id fix
 
 .org 0x080791EE
-ldr r2, =titlescreen_cry_id_override+1
-bx  r2
-.pool
-
-
+    mov r0, #80
+    bl  m4aSongNumStart
+    nop
 
 // titlescreen music length extension
 .org 0x08078C1C
