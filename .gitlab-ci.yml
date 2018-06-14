@@ -1,0 +1,16 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+stages:
+  - build
+
+build-sots:
+  stage: build
+  only:
+    - tags
+    - web
+    - triggers
+  script:
+    - echo "Building Pokémon SotS"
+    - apt-get install -qq -y binutils-arm-none-eabi
+    - make -j4 all
