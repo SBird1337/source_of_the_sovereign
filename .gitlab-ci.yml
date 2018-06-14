@@ -10,14 +10,17 @@ build-sots:
     - tags
     - web
     - triggers
-  script:
-    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+
+before_script:
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
 
     ##
     ## Run ssh-agent (inside the build environment)
     ##
-    - eval $(ssh-agent -s)
+  - eval $(ssh-agent -s)
 
-    - echo "Building Pokémon SotS"
-    - apt-get install -qq -y binutils-arm-none-eabi
-    - make -j4 all
+
+script:
+  - echo "Building Pokémon SotS"
+  - apt-get install -qq -y binutils-arm-none-eabi
+  - make -j4 all
