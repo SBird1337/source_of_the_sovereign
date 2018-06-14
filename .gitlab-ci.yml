@@ -24,8 +24,10 @@ before_script:
   - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
   - chmod 644 ~/.ssh/known_hosts
 
-  - echo "$SSH_HOST2 > ~/.ssh/config
+  - echo "$SSH_HOST" > ~/.ssh/config
   - chmod 644 ~/.ssh/config
+  - git submodule sync --recursive
+  - git submodule update --init
 
 stages:
   - build
