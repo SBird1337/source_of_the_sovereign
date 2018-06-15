@@ -46,4 +46,4 @@ build-sots:
 
   script:
     - echo "Building Pokémon SotS"
-    - make -j4 all
+    - make all
