@@ -32,7 +32,8 @@ before_script:
 
   ## Move pymap from the docker image to the tools folder
   - mkdir -p ../tools
-  - mv /sots-tools/v_tools ../tools
+  - rm -rf ../tools/v_tools
+  - cp -r /sots-tools/v_tools ../tools
 stages:
   - build
 
