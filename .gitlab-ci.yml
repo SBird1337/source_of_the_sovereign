@@ -29,6 +29,10 @@ before_script:
   - git submodule sync --recursive
   - git submodule update --init
 
+
+  ## Move pymap from the docker image to the tools folder
+  - mkdir -p ../tools
+  - mv /sots-tools/v_tools ../tools
 stages:
   - build
 
