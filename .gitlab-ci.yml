@@ -35,7 +35,8 @@ before_script:
   - rm -rf ../tools/v_tools
   - cp -r /sots-tools/v_tools ../tools
   - rm -f base/bpre0.gba
-  - cp /bpre0.gba base/bpre0.gba
+  - cp /bpre0.gba ./base/bpre0.gba
+  - chmod 644 ./base/bpre0.gba
 
 stages:
   - build
