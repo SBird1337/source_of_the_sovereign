@@ -51,3 +51,6 @@ build-sots:
   script:
     - echo "Building Pokémon SotS"
     - make all
+
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
