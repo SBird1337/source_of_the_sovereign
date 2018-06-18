@@ -6,7 +6,6 @@ clone:
 pipeline:
   pull_build:
     image: sots:latest
-    repo: Karathan/source_of_the_sovereign
     secrets: [ssh_private_key, ssh_known_hosts, ssh_host]
     commands:
       - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
