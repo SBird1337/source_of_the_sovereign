@@ -1,7 +1,7 @@
 clone:
   git:
     image: plugins/git
-    recursive=false
+    recursive: false
 
 pipeline:
 
