@@ -1,0 +1,29 @@
+clone:
+  git:
+    image: plugins/git
+    recursive=false
+
+pipeline:
+
+  pull_build:
+    image: sots:latest
+    commands:
+      - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+      - eval $(ssh-agent -s)
+      - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+      - mkdir -p ~/.ssh
+      - chmod 700 ~/.ssh
+      - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+      - chmod 644 ~/.ssh/known_hosts
+      - echo "$SSH_HOST" > ~/.ssh/config
+      - git submodule sync --recursive
+      - git submodule update --init
+
+      - mkdir -p ../tools
+      - rm -rf ../tools/v_tools
+      - cp -r /sots-tools/v_tools ../tools
+      - rm -f /base/bpre0.gba
+      - cp /bpre0.gba ./base/bpre0.gba
+      - chmod 644 ./base/bpre0.gba
+      
+      - make all
