@@ -4,7 +4,6 @@ clone:
     recursive: false
 
 pipeline:
-
   pull_build:
     image: sots:latest
     commands:
