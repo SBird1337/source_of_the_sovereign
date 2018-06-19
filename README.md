@@ -1,6 +1,7 @@
 # Pokémon Sovereign of the Skies
 ## Build Status
-[![pipeline status](https://drone.karathan.at/api/badges/Karathan/source_of_the_sovereign/status.svg)](https://gitlab.karathan.at/Karathan/source_of_the_sovereign/commits/master)
+[![pipeline 
+status](https://drone.karathan.at/api/badges/SBird1337/source_of_the_sovereign/status.svg)](https://github.com/SBird1337/source_of_the_sovereign/commits/master)
 
 ## General
 This repository provides insight into the Fangame `Pokémon Sovereign of the Skies` which is maintained since 2010. The project is lead by a 
