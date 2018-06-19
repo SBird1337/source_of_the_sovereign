@@ -1,4 +1,3 @@
-@no hate plz
 .text
 .thumb
 
