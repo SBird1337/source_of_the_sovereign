@@ -26,4 +26,4 @@ pipeline:
       - cp /bpre0.gba ./base/bpre0.gba
       - chmod 644 ./base/bpre0.gba
       
-      - make all
+      - make -j4 all
