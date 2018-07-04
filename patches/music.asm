@@ -21,7 +21,7 @@
 
 .org 0x080791EE
     mov r0, #80
-    bl  m4aSongNumStart
+    bl  (m4aSongNumStart-1) // -1 because armips apparently cannot deal with that +1 in the symbol
     nop
 
 // titlescreen music length extension
