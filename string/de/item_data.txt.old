@@ -1,0 +1,6863 @@
+@include <pkmn_item_effects.h>
+
+@string_len=14
+
+str_item_name0=Kein Item 
+@hword 0x0, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_0 
+@byte 0, 0, 1, 4 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name1=Meisterball 
+@hword 0x1, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_1 
+@byte 0, 0, 3, 0 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 0, 0, 0, 0 
+
+str_item_name2=Hyperball 
+@hword 0x2, 1200 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_2 
+@byte 0, 0, 3, 1 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 1, 0, 0, 0 
+
+str_item_name3=Superball 
+@hword 0x3, 600 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_3 
+@byte 0, 0, 3, 2 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 2, 0, 0, 0 
+
+str_item_name4=Pokéball 
+@hword 0x4, 200 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_4 
+@byte 0, 0, 3, 3 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 3, 0, 0, 0 
+
+str_item_name5=Safariball 
+@hword 0x5, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_5 
+@byte 0, 0, 3, 4 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 4, 0, 0, 0 
+
+str_item_name6=Netzball 
+@hword 0x6, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_6 
+@byte 0, 0, 3, 5 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 5, 0, 0, 0 
+
+str_item_name7=Tauchball 
+@hword 0x7, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_7 
+@byte 0, 0, 3, 6 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 6, 0, 0, 0 
+
+str_item_name8=Nestball 
+@hword 0x8, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_8 
+@byte 0, 0, 3, 7 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 7, 0, 0, 0 
+
+str_item_name9=Wiederball 
+@hword 0x9, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_9 
+@byte 0, 0, 3, 8 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 8, 0, 0, 0 
+
+str_item_name10=Timerball 
+@hword 0xA, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_10 
+@byte 0, 0, 3, 9 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 9, 0, 0, 0 
+
+str_item_name11=Luxusball 
+@hword 0xB, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_11 
+@byte 0, 0, 3, 10 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 10, 0, 0, 0 
+
+str_item_name12=Premierball 
+@hword 0xC, 200 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_12 
+@byte 0, 0, 3, 11 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 11, 0, 0, 0 
+
+str_item_name13=Trank 
+@hword 0xD, 300 
+@byte ITEM_EFFECT_NOEFFECT, 14 
+@word str_item_description_13 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name14=Gegengift 
+@hword 0xE, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_14 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name15=Feuerheiler 
+@hword 0xF, 250 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_15 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name16=Eisheiler 
+@hword 0x10, 250 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_16 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name17=Aufwecker 
+@hword 0x11, 250 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_17 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name18=Para-Heiler 
+@hword 0x12, 200 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_18 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name19=Top-Genesung 
+@hword 0x13, 3000 
+@byte ITEM_EFFECT_NOEFFECT, 255 
+@word str_item_description_19 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name20=Top-Trank 
+@hword 0x14, 2500 
+@byte ITEM_EFFECT_NOEFFECT, 255 
+@word str_item_description_20 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name21=Hypertrank 
+@hword 0x15, 1400 
+@byte ITEM_EFFECT_NOEFFECT, 200 
+@word str_item_description_21 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name22=Supertrank 
+@hword 0x16, 700 
+@byte ITEM_EFFECT_NOEFFECT, 50 
+@word str_item_description_22 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name23=Hyperheiler 
+@hword 0x17, 600 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_23 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name24=Beleber 
+@hword 0x18, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_24 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name25=Top-Beleber 
+@hword 0x19, 4000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_25 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name26=Tafelwasser 
+@hword 0x1A, 200 
+@byte ITEM_EFFECT_NOEFFECT, 50 
+@word str_item_description_26 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name27=Sprufel 
+@hword 0x1B, 300 
+@byte ITEM_EFFECT_NOEFFECT, 60 
+@word str_item_description_27 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name28=Limonade 
+@hword 0x1C, 350 
+@byte ITEM_EFFECT_NOEFFECT, 80 
+@word str_item_description_28 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name29=Kuhmuh-Milch 
+@hword 0x1D, 500 
+@byte ITEM_EFFECT_NOEFFECT, 100 
+@word str_item_description_29 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name30=Energiestaub 
+@hword 0x1E, 500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_30 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name31=Kraftwurzel 
+@hword 0x1F, 800 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_31 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name32=Heilpuder 
+@hword 0x20, 450 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_32 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name33=Vitalkraut 
+@hword 0x21, 2800 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_33 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name34=Äther 
+@hword 0x22, 1200 
+@byte ITEM_EFFECT_NOEFFECT, 10 
+@word str_item_description_34 
+@byte 0, 0, 1, 1 
+@word 0x80A16FD 
+@byte 1, 0, 0, 0 
+@word 0x80A1FF5 
+@byte 0, 0, 0, 0 
+
+str_item_name35=Top-Äther 
+@hword 0x23, 2000 
+@byte ITEM_EFFECT_NOEFFECT, 255 
+@word str_item_description_35 
+@byte 0, 0, 1, 1 
+@word 0x80A16FD 
+@byte 1, 0, 0, 0 
+@word 0x80A1FF5 
+@byte 0, 0, 0, 0 
+
+str_item_name36=Elixier 
+@hword 0x24, 3000 
+@byte ITEM_EFFECT_NOEFFECT, 10 
+@word str_item_description_36 
+@byte 0, 0, 1, 1 
+@word 0x80A16FD 
+@byte 1, 0, 0, 0 
+@word 0x80A1FF5 
+@byte 0, 0, 0, 0 
+
+str_item_name37=Top-Elixier 
+@hword 0x25, 4500 
+@byte ITEM_EFFECT_NOEFFECT, 255 
+@word str_item_description_37 
+@byte 0, 0, 1, 1 
+@word 0x80A16FD 
+@byte 1, 0, 0, 0 
+@word 0x80A1FF5 
+@byte 0, 0, 0, 0 
+
+str_item_name38=Lavakeks 
+@hword 0x26, 200 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_38 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name39=Blaue Flöte 
+@hword 0x27, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_39 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name40=Gelbe Flöte 
+@hword 0x28, 200 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_40 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name41=Rote Flöte 
+@hword 0x29, 300 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_41 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name42=Schw. Flöte 
+@hword 0x2A, 400 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_42 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name43=Weiße Flöte 
+@hword 0x2B, 500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_43 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name44=Beerensaft 
+@hword 0x2C, 150 
+@byte ITEM_EFFECT_ORANBERRY, 50 
+@word str_item_description_44 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name45=Zauberasche 
+@hword 0x2D, 65000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_45 
+@byte 0, 0, 1, 1 
+@word 0x80A176D 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name46=Küstensalz 
+@hword 0x2E, 20 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_46 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name47=Küstenschale 
+@hword 0x2F, 20 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_47 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name48=Purpurstück 
+@hword 0x30, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_48 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name49=Inidgostück 
+@hword 0x31, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_49 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name50=Gelbstück 
+@hword 0x32, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_50 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name51=Grünstück 
+@hword 0x33, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_51 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name52=Herzkonfekt 
+@hword 0x34, 50 
+@byte ITEM_EFFECT_NOEFFECT, 20 
+@word str_item_description_52 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name53=Galette 
+@hword 0x35, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_53 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name54=Spezialität 
+@hword 0x36, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_54 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name55=Stratos-Eis 
+@hword 0x37, 50 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_55 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name56=Wutkeks 
+@hword 0x38, 150 
+@byte ITEM_EFFECT_NOEFFECT, 20 
+@word str_item_description_56 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name57=Yantarasablé 
+@hword 0x39, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_57 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name58=Zauberfeder 
+@hword 0x3A, 45000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_58 
+@byte 0, 0, 1, 1 
+@word 0x80A176D 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name59=Honig 
+@hword 0x3B, 100 
+@byte ITEM_EFFECT_ORANBERRY, 50 
+@word str_item_description_59 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name60=Pokéwedel 
+@hword 0x3C, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_60 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A2011 
+@byte 0, 0, 0, 0 
+
+str_item_name61=Rabattmarke 
+@hword 0x3D, 20 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_61 
+@byte 0, 0, 1, 4 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name62=Fähig.Kapsel 
+@hword 0x3E, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_62 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name63=Kp-Plus 
+@hword 0x3F, 9800 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_63 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name64=Protein 
+@hword 0x40, 9800 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_64 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name65=Eisen 
+@hword 0x41, 9800 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_65 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name66=Carbon 
+@hword 0x42, 9800 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_66 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name67=Kalzium 
+@hword 0x43, 9800 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_67 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name68=Sonerbonbon 
+@hword 0x44, 9800 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_68 
+@byte 0, 0, 1, 1 
+@word 0x80A1735 
+@byte 1, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name69=Ap-Plus 
+@hword 0x45, 9800 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_69 
+@byte 0, 0, 1, 1 
+@word 0x80A1719 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name70=Zink 
+@hword 0x46, 9800 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_70 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name71=Ap-Top 
+@hword 0x47, 9800 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_71 
+@byte 0, 0, 1, 1 
+@word 0x80A1719 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name72=Ultratrank 
+@hword 0x48, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 100 
+@word str_item_description_72 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name73=Megablock 
+@hword 0x49, 700 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_73 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name74=Angriffplus 
+@hword 0x4A, 650 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_74 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name75=X-Angriff 
+@hword 0x4B, 500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_75 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name76=X-Abwehr 
+@hword 0x4C, 550 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_76 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name77=X-Tempo 
+@hword 0x4D, 350 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_77 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name78=X-Treffer 
+@hword 0x4E, 950 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_78 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name79=X-Spezial 
+@hword 0x4F, 350 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_79 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name80=Poképuppe 
+@hword 0x50, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_80 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A2011 
+@byte 0, 0, 0, 0 
+
+str_item_name81=Eneco-Rute 
+@hword 0x51, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_81 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A2011 
+@byte 0, 0, 0, 0 
+
+str_item_name82=X-Sp.Vert. 
+@hword 0x52, 350 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_82 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name83=Superschutz 
+@hword 0x53, 500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_83 
+@byte 0, 0, 1, 4 
+@word 0x80A1999 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name84=Top-Schutz 
+@hword 0x54, 700 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_84 
+@byte 0, 0, 1, 4 
+@word 0x80A1999 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name85=Fluchtseil 
+@hword 0x55, 550 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_85 
+@byte 0, 0, 1, 4 
+@word 0x80A1BAD 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name86=Schutz 
+@hword 0x56, 350 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_86 
+@byte 0, 0, 1, 4 
+@word 0x80A1999 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name87=Abwehrfeder 
+@hword 0x57, 3000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_87 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name88=Espritfeder 
+@hword 0x58, 3000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_88 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name89=Flinkfeder 
+@hword 0x59, 3000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_89 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name90=Geniefeder 
+@hword 0x5A, 3000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_90 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name91=Heilfeder 
+@hword 0x5B, 3000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_91 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name92=Kraftfeder 
+@hword 0x5C, 3000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_92 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name93=Sonnenstein 
+@hword 0x5D, 15000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_93 
+@byte 0, 0, 1, 1 
+@word 0x80A1751 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name94=Mondstein 
+@hword 0x5E, 15000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_94 
+@byte 0, 0, 1, 1 
+@word 0x80A1751 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name95=Feuerstein 
+@hword 0x5F, 15000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_95 
+@byte 0, 0, 1, 1 
+@word 0x80A1751 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name96=Donnerstein 
+@hword 0x60, 15000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_96 
+@byte 0, 0, 1, 1 
+@word 0x80A1751 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name97=Wasserstein 
+@hword 0x61, 15000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_97 
+@byte 0, 0, 1, 1 
+@word 0x80A1751 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name98=Blattstein 
+@hword 0x62, 15000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_98 
+@byte 0, 0, 1, 1 
+@word 0x80A1751 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name99=Finsterstein 
+@hword 0x63, 15000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_99 
+@byte 0, 0, 1, 1 
+@word 0x80A1751 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name100=Funkelstein 
+@hword 0x64, 15000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_100 
+@byte 0, 0, 1, 1 
+@word 0x80A1751 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name101=Leuchtstein 
+@hword 0x65, 15000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_101 
+@byte 0, 0, 1, 1 
+@word 0x80A1751 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name102=Shocker 
+@hword 0x66, 15000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_102 
+@byte 0, 0, 1, 1 
+@word 0x80A1751 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name103=IM-Schocker 
+@hword 0x67, 15000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_103 
+@byte 0, 0, 1, 1 
+@word 0x80A1751 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name104=Minipilz 
+@hword 0x68, 250 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_104 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name105=Riesenpilz 
+@hword 0x69, 2500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_105 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name106=Perle 
+@hword 0x6A, 700 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_106 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name107=Riesenperle 
+@hword 0x6B, 3750 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_107 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name108=Sternenstaub 
+@hword 0x6C, 2000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_108 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name109=Sternenstück 
+@hword 0x6D, 4900 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_109 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name110=Herzschuppe 
+@hword 0x6E, 5000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_110 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name111=Koakobeere 
+@hword 0x6F, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_111 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name112=Foepasbeere 
+@hword 0x70, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_112 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name113=Kerzalbeere 
+@hword 0x71, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_113 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name114=Grindobeere 
+@hword 0x72, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_114 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name115=Kiroyabeere 
+@hword 0x73, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_115 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name116=Rospelbeere 
+@hword 0x74, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_116 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name117=Grarzbeere 
+@hword 0x75, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_117 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name118=Schukebeere 
+@hword 0x76, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_118 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name119=Kobabeere 
+@hword 0x77, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_119 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name120=Pyapabeere 
+@hword 0x78, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_120 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name121=Tanigabeere 
+@hword 0x79, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_121 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name122=Chiaribeere 
+@hword 0x7A, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_122 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name123=Zitarzbeere 
+@hword 0x7B, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_123 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name124=Terirobeere 
+@hword 0x7C, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_124 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name125=Burleobeere 
+@hword 0x7D, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_125 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name126=Babiribeere 
+@hword 0x7E, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_126 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name127=Latchibeere 
+@hword 0x7F, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_127 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name128=Wunfrubeere 
+@hword 0x80, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_128 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name129=Eipfelbeere 
+@hword 0x81, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_129 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name130=Jabocabeere 
+@hword 0x82, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_130 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name131=Roselbeere 
+@hword 0x83, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_131 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name132=Hibisbeere 
+@hword 0x84, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_132 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name133=Amrenabeere 
+@hword 0x85, 200 
+@byte ITEM_EFFECT_CHERIBERRY, 0 
+@word str_item_description_133 
+@byte 0, 0, 5, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name134=Maronbeere 
+@hword 0x86, 250 
+@byte ITEM_EFFECT_CHESTOBERRY, 0 
+@word str_item_description_134 
+@byte 0, 0, 5, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name135=Pirsifbeere 
+@hword 0x87, 100 
+@byte ITEM_EFFECT_PECHABERRY, 0 
+@word str_item_description_135 
+@byte 0, 0, 5, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name136=Fragiabeere 
+@hword 0x88, 250 
+@byte ITEM_EFFECT_RAWSTBERRY, 0 
+@word str_item_description_136 
+@byte 0, 0, 5, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name137=Wilbirbeere 
+@hword 0x89, 250 
+@byte ITEM_EFFECT_ASPEARBERRY, 0 
+@word str_item_description_137 
+@byte 0, 0, 5, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name138=Jonagobeere 
+@hword 0x8A, 2000 
+@byte ITEM_EFFECT_LEPPABERRY, 10 
+@word str_item_description_138 
+@byte 0, 0, 5, 1 
+@word 0x80A16FD 
+@byte 0, 0, 0, 0 
+@word 0x80A1FF5 
+@byte 0, 0, 0, 0 
+
+str_item_name139=Sinelbeere 
+@hword 0x8B, 100 
+@byte ITEM_EFFECT_ORANBERRY, 10 
+@word str_item_description_139 
+@byte 0, 0, 5, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name140=Persimbeere 
+@hword 0x8C, 150 
+@byte ITEM_EFFECT_PERSIMBERRY, 0 
+@word str_item_description_140 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name141=Prunusbeere 
+@hword 0x8D, 600 
+@byte ITEM_EFFECT_LUMBERRY, 0 
+@word str_item_description_141 
+@byte 0, 0, 5, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name142=Tsitrubeere 
+@hword 0x8E, 400 
+@byte ITEM_EFFECT_ORANBERRY, 30 
+@word str_item_description_142 
+@byte 0, 0, 5, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name143=Giefebeere 
+@hword 0x8F, 2500 
+@byte ITEM_EFFECT_FIGYBERRY, 254 
+@word str_item_description_143 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name144=Wikibeere 
+@hword 0x90, 2500 
+@byte ITEM_EFFECT_WIKIBERRY, 254 
+@word str_item_description_144 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name145=Magobeere 
+@hword 0x91, 2500 
+@byte ITEM_EFFECT_MAGOBERRY, 254 
+@word str_item_description_145 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name146=Gauvebeere 
+@hword 0x92, 2500 
+@byte ITEM_EFFECT_AGUAVBERRY, 254 
+@word str_item_description_146 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name147=Yapabeere 
+@hword 0x93, 2500 
+@byte ITEM_EFFECT_IAPAPABERRY, 254 
+@word str_item_description_147 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name148=Himmihbeere 
+@hword 0x94, 1500 
+@byte ITEM_EFFECT_ORANBERRY, 50 
+@word str_item_description_148 
+@byte 0, 0, 5, 4 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name149=Morbbeere 
+@hword 0x95, 1500 
+@byte ITEM_EFFECT_ORANBERRY, 80 
+@word str_item_description_149 
+@byte 0, 0, 5, 4 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name150=Nanabeere 
+@hword 0x96, 1500 
+@byte ITEM_EFFECT_ORANBERRY, 100 
+@word str_item_description_150 
+@byte 0, 0, 5, 4 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name151=Nirbebeere 
+@hword 0x97, 1500 
+@byte ITEM_EFFECT_ORANBERRY, 150 
+@word str_item_description_151 
+@byte 0, 0, 5, 4 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name152=Sananabeere 
+@hword 0x98, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_152 
+@byte 0, 0, 5, 4 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name153=Granabeere 
+@hword 0x99, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_153 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name154=Setangbeere 
+@hword 0x9A, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_154 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name155=Qualotbeere 
+@hword 0x9B, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_155 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name156=Honmelbeere 
+@hword 0x9C, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_156 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name157=Labrusbeere 
+@hword 0x9D, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_157 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name158=Tamotbeere 
+@hword 0x9E, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_158 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name159=Saimbeere 
+@hword 0x9F, 1500 
+@byte ITEM_EFFECT_ORANBERRY, 200 
+@word str_item_description_159 
+@byte 0, 0, 5, 4 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name160=Magostbeere 
+@hword 0xA0, 1500 
+@byte ITEM_EFFECT_ORANBERRY, 255 
+@word str_item_description_160 
+@byte 0, 0, 5, 4 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name161=Rabutabeere 
+@hword 0xA1, 1500 
+@byte ITEM_EFFECT_ORANBERRY, 255 
+@word str_item_description_161 
+@byte 0, 0, 5, 4 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name162=Tronzibeere 
+@hword 0xA2, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_162 
+@byte 0, 0, 5, 4 
+@word 0x80A16FD 
+@byte 1, 0, 0, 0 
+@word 0x80A1FF5 
+@byte 0, 0, 0, 0 
+
+str_item_name163=Kiwanbeere 
+@hword 0xA3, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_163 
+@byte 0, 0, 5, 4 
+@word 0x80A16FD 
+@byte 1, 0, 0, 0 
+@word 0x80A1FF5 
+@byte 0, 0, 0, 0 
+
+str_item_name164=Pallmbeere 
+@hword 0xA4, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_164 
+@byte 0, 0, 5, 4 
+@word 0x80A16FD 
+@byte 1, 0, 0, 0 
+@word 0x80A1FF5 
+@byte 0, 0, 0, 0 
+
+str_item_name165=Wasmelbeere 
+@hword 0xA5, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_165 
+@byte 0, 0, 5, 4 
+@word 0x80A16FD 
+@byte 1, 0, 0, 0 
+@word 0x80A1FF5 
+@byte 0, 0, 0, 0 
+
+str_item_name166=Durinbeere 
+@hword 0xA6, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_166 
+@byte 0, 0, 5, 4 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name167=Myrtilbeere 
+@hword 0xA7, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_167 
+@byte 0, 0, 5, 4 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name168=Lydzibeere 
+@hword 0xA8, 1500 
+@byte ITEM_EFFECT_LIECHIBERRY, 10 
+@word str_item_description_168 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name169=Liganbeere 
+@hword 0xA9, 1500 
+@byte ITEM_EFFECT_GANLONBERRY, 10 
+@word str_item_description_169 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name170=Salkabeere 
+@hword 0xAA, 1500 
+@byte ITEM_EFFECT_SALACBERRY, 10 
+@word str_item_description_170 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name171=Tahaybeere 
+@hword 0xAB, 1500 
+@byte ITEM_EFFECT_PETAYABERRY, 10 
+@word str_item_description_171 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name172=Apikobeere 
+@hword 0xAC, 1500 
+@byte ITEM_EFFECT_APICOTBERRY, 10 
+@word str_item_description_172 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name173=Lansatbeere 
+@hword 0xAD, 1500 
+@byte ITEM_EFFECT_LANSATBERRY, 10 
+@word str_item_description_173 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name174=Krambobeere 
+@hword 0xAE, 1500 
+@byte ITEM_EFFECT_STARFBERRY, 10 
+@word str_item_description_174 
+@byte 0, 0, 5, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name175=Enigmabeere 
+@hword 0xAF, 95000 
+@byte ITEM_EFFECT_ORANBERRY, 255 
+@word str_item_description_175 
+@byte 0, 0, 5, 1 
+@word 0x80A176D 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name176=Akibeere 
+@hword 0xB0, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_176 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name177=Tarabeere 
+@hword 0xB1, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_177 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name178=Banngefäß 
+@hword 0xB2, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_178 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name179=Blendpuder 
+@hword 0xB3, 10 
+@byte ITEM_EFFECT_BRIGHTPOWDER, 10 
+@word str_item_description_179 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name180=Schlohkraut 
+@hword 0xB4, 100 
+@byte ITEM_EFFECT_WHITEHERB, 0 
+@word str_item_description_180 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name181=Machoband 
+@hword 0xB5, 3000 
+@byte ITEM_EFFECT_MACHOBRACE, 0 
+@word str_item_description_181 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name182=Ep-Teiler 
+@hword 0xB6, 3000 
+@byte ITEM_EFFECT_EXPSHARE, 0 
+@word str_item_description_182 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name183=Flinkklaue 
+@hword 0xB7, 100 
+@byte ITEM_EFFECT_QUICKCLAW, 20 
+@word str_item_description_183 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name184=Sanftglocke 
+@hword 0xB8, 100 
+@byte ITEM_EFFECT_SOOTHEBELL, 0 
+@word str_item_description_184 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name185=Mentalkraut 
+@hword 0xB9, 100 
+@byte ITEM_EFFECT_MENTALHERB, 0 
+@word str_item_description_185 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name186=Wahlband 
+@hword 0xBA, 200 
+@byte ITEM_EFFECT_CHOICEBAND, 0 
+@word str_item_description_186 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name187=King-Stein 
+@hword 0xBB, 100 
+@byte ITEM_EFFECT_KINGSROCK, 10 
+@word str_item_description_187 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name188=Silberstaub 
+@hword 0xBC, 100 
+@byte ITEM_EFFECT_SILVERPOWDER, 10 
+@word str_item_description_188 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name189=Münzamulett 
+@hword 0xBD, 100 
+@byte ITEM_EFFECT_AMULETCOIN, 10 
+@word str_item_description_189 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name190=Schutzband 
+@hword 0xBE, 200 
+@byte ITEM_EFFECT_CLENSEATAG, 0 
+@word str_item_description_190 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name191=Seelentau 
+@hword 0xBF, 200 
+@byte ITEM_EFFECT_SOULDEW, 0 
+@word str_item_description_191 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name192=Abysszahn 
+@hword 0xC0, 200 
+@byte ITEM_EFFECT_DEEPSEATOOTH, 0 
+@word str_item_description_192 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name193=Abyssplatte 
+@hword 0xC1, 200 
+@byte ITEM_EFFECT_DEEPSEASCALE, 0 
+@word str_item_description_193 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name194=Rauchball 
+@hword 0xC2, 200 
+@byte ITEM_EFFECT_SMOKEBALL, 0 
+@word str_item_description_194 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name195=Ewigstein 
+@hword 0xC3, 200 
+@byte ITEM_EFFECT_EVERSTONE, 0 
+@word str_item_description_195 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name196=Fokus-Band 
+@hword 0xC4, 200 
+@byte ITEM_EFFECT_FOCUSBAND, 10 
+@word str_item_description_196 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name197=Glücks-Ei 
+@hword 0xC5, 200 
+@byte ITEM_EFFECT_LUCKYEGG, 0 
+@word str_item_description_197 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name198=Scope-Linse 
+@hword 0xC6, 200 
+@byte ITEM_EFFECT_SCOPELENS, 0 
+@word str_item_description_198 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name199=Metallmantel 
+@hword 0xC7, 100 
+@byte ITEM_EFFECT_METALCOAT, 20 
+@word str_item_description_199 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name200=Überreste 
+@hword 0xC8, 200 
+@byte ITEM_EFFECT_LEFTOVERS, 10 
+@word str_item_description_200 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name201=Drachenhaut 
+@hword 0xC9, 2100 
+@byte ITEM_EFFECT_DRAGONSCALE, 10 
+@word str_item_description_201 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name202=Kugelblitz 
+@hword 0xCA, 100 
+@byte ITEM_EFFECT_LIGHTBALL, 0 
+@word str_item_description_202 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name203=Pudersand 
+@hword 0xCB, 100 
+@byte ITEM_EFFECT_SOFTSAND, 20 
+@word str_item_description_203 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name204=Granitstein 
+@hword 0xCC, 100 
+@byte ITEM_EFFECT_HARDSTONE, 20 
+@word str_item_description_204 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name205=Wundersaat 
+@hword 0xCD, 100 
+@byte ITEM_EFFECT_MIRACLESEED, 20 
+@word str_item_description_205 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name206=Schattenglas 
+@hword 0xCE, 100 
+@byte ITEM_EFFECT_BLACKGLASSES, 20 
+@word str_item_description_206 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name207=Schwarzgurt 
+@hword 0xCF, 100 
+@byte ITEM_EFFECT_BLACKBELT, 20 
+@word str_item_description_207 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name208=Magnet 
+@hword 0xD0, 100 
+@byte ITEM_EFFECT_MAGNET, 20 
+@word str_item_description_208 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name209=Zauberwasser 
+@hword 0xD1, 100 
+@byte ITEM_EFFECT_MYSTICWATER, 20 
+@word str_item_description_209 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name210=Hackattack 
+@hword 0xD2, 100 
+@byte ITEM_EFFECT_SHARPBEAK, 20 
+@word str_item_description_210 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name211=Giftstich 
+@hword 0xD3, 100 
+@byte ITEM_EFFECT_POISONBARB, 20 
+@word str_item_description_211 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name212=Ewiges Eis 
+@hword 0xD4, 100 
+@byte ITEM_EFFECT_NEVERMELTICE, 20 
+@word str_item_description_212 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name213=Bannsticker 
+@hword 0xD5, 100 
+@byte ITEM_EFFECT_SPELLTAG, 20 
+@word str_item_description_213 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name214=Krummlöffel 
+@hword 0xD6, 100 
+@byte ITEM_EFFECT_TWISTEDSPOON, 20 
+@word str_item_description_214 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name215=Holzkohle 
+@hword 0xD7, 100 
+@byte ITEM_EFFECT_CHARCOAL, 20 
+@word str_item_description_215 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name216=Drachenzahn 
+@hword 0xD8, 100 
+@byte ITEM_EFFECT_DRAGONFANG, 20 
+@word str_item_description_216 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name217=Seidenschal 
+@hword 0xD9, 100 
+@byte ITEM_EFFECT_SILKSCARF, 20 
+@word str_item_description_217 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name218=Upgrade 
+@hword 0xDA, 2100 
+@byte ITEM_EFFECT_UPGRADE, 0 
+@word str_item_description_218 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name219=Seegesang 
+@hword 0xDB, 200 
+@byte ITEM_EFFECT_SHELLBELL, 8 
+@word str_item_description_219 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name220=Seerauch 
+@hword 0xDC, 9600 
+@byte ITEM_EFFECT_MYSTICWATER, 10 
+@word str_item_description_220 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name221=Laxrauch 
+@hword 0xDD, 9600 
+@byte ITEM_EFFECT_BRIGHTPOWDER, 10 
+@word str_item_description_221 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name222=Lucky Punch 
+@hword 0xDE, 10 
+@byte ITEM_EFFECT_LUCKYPUNCH, 0 
+@word str_item_description_222 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name223=Metallstaub 
+@hword 0xDF, 10 
+@byte ITEM_EFFECT_METALPOWDER, 0 
+@word str_item_description_223 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name224=Kampfknochen 
+@hword 0xE0, 500 
+@byte ITEM_EFFECT_THICKCLUB, 0 
+@word str_item_description_224 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name225=Lauchstange 
+@hword 0xE1, 200 
+@byte ITEM_EFFECT_STICK, 0 
+@word str_item_description_225 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name226=Akku 
+@hword 0xE2, 200 
+@byte ITEM_EFFECT_CELLBATTERY, 0 
+@word str_item_description_226 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name227=Beulenhelm 
+@hword 0xE3, 200 
+@byte ITEM_EFFECT_ROCKYHELMET, 0 
+@word str_item_description_227 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name228=Eisbrocken 
+@hword 0xE4, 200 
+@byte ITEM_EFFECT_ICYROCK, 0 
+@word str_item_description_228 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name229=Glattbrocken 
+@hword 0xE5, 200 
+@byte ITEM_EFFECT_SMOOTHROCK, 0 
+@word str_item_description_229 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name230=Heißbrocken 
+@hword 0xE6, 200 
+@byte ITEM_EFFECT_HEATROCK, 0 
+@word str_item_description_230 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name231=Nassbrocken 
+@hword 0xE7, 200 
+@byte ITEM_EFFECT_DAMPROCK, 0 
+@word str_item_description_231 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name232=Eisenkugel 
+@hword 0xE8, 200 
+@byte ITEM_EFFECT_IRONBALL, 0 
+@word str_item_description_232 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name233=Evolith 
+@hword 0xE9, 1000 
+@byte ITEM_EFFECT_EVIOLITE, 0 
+@word str_item_description_233 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name234=Fatumknoten 
+@hword 0xEA, 200 
+@byte ITEM_EFFECT_DESTINYKNOT, 0 
+@word str_item_description_234 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name235=Fluchtknopf 
+@hword 0xEB, 200 
+@byte ITEM_EFFECT_EJECTBUTTON, 0 
+@word str_item_description_235 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name236=Giftschleim 
+@hword 0xEC, 200 
+@byte ITEM_EFFECT_BLACKSLUDGE, 10 
+@word str_item_description_236 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name237=Großlinse 
+@hword 0xED, 200 
+@byte ITEM_EFFECT_WIDELENS, 0 
+@word str_item_description_237 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name238=Schlauglas 
+@hword 0xEE, 200 
+@byte ITEM_EFFECT_WISEGLASSES, 0 
+@word str_item_description_238 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name239=Zoomlinse 
+@hword 0xEF, 200 
+@byte ITEM_EFFECT_ZOOMLENS, 0 
+@word str_item_description_239 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name240=Griffklaue 
+@hword 0xF0, 200 
+@byte ITEM_EFFECT_GRIPCLAW, 0 
+@word str_item_description_240 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name241=Großwurzel 
+@hword 0xF1, 200 
+@byte ITEM_EFFECT_BIGROOT, 0 
+@word str_item_description_241 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name242=Expertengurt 
+@hword 0xF2, 200 
+@byte ITEM_EFFECT_EXPERTBELT, 0 
+@word str_item_description_242 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name243=Fokusgurt 
+@hword 0xF3, 200 
+@byte ITEM_EFFECT_FOCUSSASH, 0 
+@word str_item_description_243 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name244=Klammerband 
+@hword 0xF4, 200 
+@byte ITEM_EFFECT_BINDINGBAND, 0 
+@word str_item_description_244 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name245=Klettdorn 
+@hword 0xF5, 200 
+@byte ITEM_EFFECT_STICKYBARB, 0 
+@word str_item_description_245 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name246=Knolle 
+@hword 0xF6, 200 
+@byte ITEM_EFFECT_ABSORBBULB, 0 
+@word str_item_description_246 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name247=Energiekraut 
+@hword 0xF7, 200 
+@byte ITEM_EFFECT_POWERHERB, 0 
+@word str_item_description_247 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name248=Leichtstein 
+@hword 0xF8, 200 
+@byte ITEM_EFFECT_FLOATSTONE, 0 
+@word str_item_description_248 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name249=Leuchtmoos 
+@hword 0xF9, 200 
+@byte ITEM_EFFECT_LUMINOUSMOSS, 0 
+@word str_item_description_249 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name250=Lichtlehm 
+@hword 0xFA, 200 
+@byte ITEM_EFFECT_LIGHTCLAY, 0 
+@word str_item_description_250 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name251=Luftballon 
+@hword 0xFB, 200 
+@byte ITEM_EFFECT_AIRBALLOON, 0 
+@word str_item_description_251 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name252=Metronom 
+@hword 0xFC, 200 
+@byte ITEM_EFFECT_METRONOME, 0 
+@word str_item_description_252 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name253=Muskelband 
+@hword 0xFD, 200 
+@byte ITEM_EFFECT_MUSCLEBAND, 0 
+@word str_item_description_253 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name254=Offen.weste 
+@hword 0xFE, 200 
+@byte ITEM_EFFECT_ASSAULTVEST, 0 
+@word str_item_description_254 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name255=Heiß-Orb 
+@hword 0xFF, 200 
+@byte ITEM_EFFECT_FLAMEORB, 0 
+@word str_item_description_255 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name256=Leben-Orb 
+@hword 0x100, 200 
+@byte ITEM_EFFECT_LIFEORB, 30 
+@word str_item_description_256 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name257=Toxik-Orb 
+@hword 0x101, 200 
+@byte ITEM_EFFECT_TOXICORB, 0 
+@word str_item_description_257 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name258=Rote Karte 
+@hword 0x102, 200 
+@byte ITEM_EFFECT_REDCARD, 0 
+@word str_item_description_258 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name259=Scharfklaue 
+@hword 0x103, 15000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_259 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name260=Scharfzahn 
+@hword 0x104, 15000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_260 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name261=Schneeball 
+@hword 0x105, 200 
+@byte ITEM_EFFECT_SNOWBALL, 0 
+@word str_item_description_261 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name262=Schutzbrille 
+@hword 0x106, 1000 
+@byte ITEM_EFFECT_SAFETYGOOGLES, 0 
+@word str_item_description_262 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name263=Schw.schutz 
+@hword 0x107, 1000 
+@byte ITEM_EFFECT_WEAKNESSPOLICY, 0 
+@word str_item_description_263 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name264=Schwerschwf. 
+@hword 0x108, 200 
+@byte ITEM_EFFECT_LAGGINGTAIL, 0 
+@word str_item_description_264 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name265=Wahlglas 
+@hword 0x109, 200 
+@byte ITEM_EFFECT_CHOICESPECS, 1 
+@word str_item_description_265 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name266=Wahlschal 
+@hword 0x10A, 200 
+@byte ITEM_EFFECT_CHOICESCARF, 2 
+@word str_item_description_266 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name267=Wechselhülle 
+@hword 0x10B, 100 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_267 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name268=Zielscheibe 
+@hword 0x10C, 200 
+@byte ITEM_EFFECT_RINGTARGET, 0 
+@word str_item_description_268 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name269=Bodenjuwel 
+@hword 0x10D, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 50 
+@word str_item_description_269 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name270=Drakojuwel 
+@hword 0x10E, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 50 
+@word str_item_description_270 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name271=Eisjuwel 
+@hword 0x10F, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 50 
+@word str_item_description_271 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name272=Elektrojuwel 
+@hword 0x110, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 50 
+@word str_item_description_272 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name273=Geistjuwel 
+@hword 0x111, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 50 
+@word str_item_description_273 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name274=Gesteinjuwel 
+@hword 0x112, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 50 
+@word str_item_description_274 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name275=Giftjuwel 
+@hword 0x113, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 50 
+@word str_item_description_275 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name276=Feuerjuwel 
+@hword 0x114, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 50 
+@word str_item_description_276 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name277=Flugjuwel 
+@hword 0x115, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 50 
+@word str_item_description_277 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name278=Käferjuwel 
+@hword 0x116, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 50 
+@word str_item_description_278 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name279=Kampfjuwel 
+@hword 0x117, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 50 
+@word str_item_description_279 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name280=Normaljuwel 
+@hword 0x118, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 50 
+@word str_item_description_280 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name281=Pflanzjuwel 
+@hword 0x119, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 50 
+@word str_item_description_281 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name282=Psychojuwel 
+@hword 0x11A, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 50 
+@word str_item_description_282 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name283=Stahljuwel 
+@hword 0x11B, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 50 
+@word str_item_description_283 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name284=Unlichtjuwel 
+@hword 0x11C, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 50 
+@word str_item_description_284 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name285=Wasserjuwel 
+@hword 0x11D, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 50 
+@word str_item_description_285 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name286=Feenjuwel 
+@hword 0x11E, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 50 
+@word str_item_description_286 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name287=Wahrspiegel 
+@hword 0x11F, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_287 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name288=Gracidea 
+@hword 0x120, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_288 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name289=TM 71 
+@hword 0x121, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_289 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name290=TM 72 
+@hword 0x122, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_290 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name291=TM 73 
+@hword 0x123, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_291 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name292=TM 74 
+@hword 0x124, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_292 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name293=TM 75 
+@hword 0x125, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_293 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name294=TM 76 
+@hword 0x126, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_294 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name295=TM 77 
+@hword 0x127, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_295 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name296=TM 78 
+@hword 0x128, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_296 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name297=TM 79 
+@hword 0x129, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_297 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name298=TM 80 
+@hword 0x12A, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_298 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name299=TM 81 
+@hword 0x12B, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_299 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name300=TM 82 
+@hword 0x12C, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_300 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name301=TM 83 
+@hword 0x12D, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_301 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name302=TM 84 
+@hword 0x12E, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_302 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name303=TM 85 
+@hword 0x12F, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_303 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name304=TM 86 
+@hword 0x130, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_304 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name305=TM 87 
+@hword 0x131, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_305 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name306=TM 88 
+@hword 0x132, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_306 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name307=TM 89 
+@hword 0x133, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_307 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name308=TM 90 
+@hword 0x134, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_308 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name309=TM 91 
+@hword 0x135, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_309 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name310=TM 92 
+@hword 0x136, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_310 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name311=TM 93 
+@hword 0x137, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_311 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name312=TM 94 
+@hword 0x138, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_312 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name313=TM 95 
+@hword 0x139, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_313 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name314=TM 96 
+@hword 0x13A, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_314 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name315=TM 97 
+@hword 0x13B, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_315 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name316=TM 98 
+@hword 0x13C, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_316 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name317=TM 99 
+@hword 0x13D, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_317 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name318=TM 100 
+@hword 0x13E, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_318 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name319=TM 101 
+@hword 0x13F, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_319 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name320=TM 102 
+@hword 0x140, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_320 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name321=TM 103 
+@hword 0x141, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_321 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name322=TM 104 
+@hword 0x142, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_322 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name323=TM 105 
+@hword 0x143, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_323 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name324=TM 106 
+@hword 0x144, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_324 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name325=TM 107 
+@hword 0x145, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_325 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name326=TM 108 
+@hword 0x146, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_326 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name327=TM 109 
+@hword 0x147, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_327 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name328=TM 110 
+@hword 0x148, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_328 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name329=TM 111 
+@hword 0x149, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_329 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name330=TM 112 
+@hword 0x14A, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_330 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name331=TM 113 
+@hword 0x14B, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_331 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name332=TM 114 
+@hword 0x14C, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_332 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name333=TM 115 
+@hword 0x14D, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_333 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name334=TM 116 
+@hword 0x14E, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_334 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name335=TM 117 
+@hword 0x14F, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_335 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name336=TM 118 
+@hword 0x150, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_336 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name337=TM 119 
+@hword 0x151, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_337 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name338=TM 120 
+@hword 0x152, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_338 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name339=VM 01 
+@hword 0x153, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_339 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name340=VM 02 
+@hword 0x154, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_340 
+@byte 1, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name341=VM 03 
+@hword 0x155, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_341 
+@byte 1, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name342=VM 04 
+@hword 0x156, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_342 
+@byte 1, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name343=VM 05 
+@hword 0x157, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_343 
+@byte 1, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name344=VM 06 
+@hword 0x158, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_344 
+@byte 1, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name345=VM 07 
+@hword 0x159, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_345 
+@byte 1, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name346=VM 08 
+@hword 0x15A, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_346 
+@byte 1, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name347=Helixfossil 
+@hword 0x15B, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_347 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name348=Domfossil 
+@hword 0x15C, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_348 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name349=Altbernstein 
+@hword 0x15D, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_349 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name350=Klauenfossil 
+@hword 0x15E, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_350 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name351=Wurzelfossil 
+@hword 0x15F, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_351 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name352=Kopffossil 
+@hword 0x160, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_352 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name353=Panzerfossil 
+@hword 0x161, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_353 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name354=Schildfossil 
+@hword 0x162, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_354 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name355=Federfossil 
+@hword 0x163, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_355 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name356=Kieferfossil 
+@hword 0x164, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_356 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name357=Flossenfos. 
+@hword 0x165, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_357 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name358=Meteorit 
+@hword 0x166, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_358 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name359=DNS-Keil 
+@hword 0x167, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_359 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name360=Fahrrad 
+@hword 0x168, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_360 
+@byte 1, 1, 2, 2 
+@word 0x80A122D 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name361=Karte 
+@hword 0x169, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_361 
+@byte 1, 1, 2, 4 
+@word 0x80A1C61 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name362=Kampffahnder 
+@hword 0x16A, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_362 
+@byte 1, 1, 2, 4 
+@word 0x80A1D9D 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name363=Ruhmesdatei 
+@hword 0x16B, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_363 
+@byte 1, 1, 2, 4 
+@word 0x80A1CF9 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name364=VM/TM-Box 
+@hword 0x16C, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_364 
+@byte 1, 1, 2, 4 
+@word 0x80A1789 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name365=Beerentüte 
+@hword 0x16D, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_365 
+@byte 1, 1, 2, 4 
+@word 0x80A1821 
+@byte 3, 0, 0, 0 
+@word 0x80A18B9 
+@byte 0, 0, 0, 0 
+
+str_item_name366=Itemradar 
+@hword 0x16E, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_366 
+@byte 1, 1, 2, 2 
+@word 0x80A1439 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name367=Münzkorb 
+@hword 0x16F, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_367 
+@byte 1, 1, 2, 4 
+@word 0x80A1461 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name368=Pokéflöte 
+@hword 0x170, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_368 
+@byte 1, 1, 2, 4 
+@word 0x80A156D 
+@byte 2, 0, 0, 0 
+@word 0x80A1E65 
+@byte 0, 0, 0, 0 
+
+str_item_name369=Angel 
+@hword 0x171, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_369 
+@byte 1, 1, 2, 2 
+@word 0x80A1339 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name370=Profiangel 
+@hword 0x172, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_370 
+@byte 1, 1, 2, 2 
+@word 0x80A1339 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 1, 0, 0, 0 
+
+str_item_name371=Superangel 
+@hword 0x173, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_371 
+@byte 1, 1, 2, 2 
+@word 0x80A1339 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 2, 0, 0, 0 
+
+str_item_name372=Entonkanne 
+@hword 0x174, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_372 
+@byte 1, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name373=Wüstenglas 
+@hword 0x175, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_373 
+@byte 1, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name374=Silph Scope 
+@hword 0x176, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_374 
+@byte 1, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name375=TM 01 
+@hword 0x177, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_375 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name376=TM 02 
+@hword 0x178, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_376 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name377=TM 03 
+@hword 0x179, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_377 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name378=TM 04 
+@hword 0x17A, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_378 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name379=TM 05 
+@hword 0x17B, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_379 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name380=TM 06 
+@hword 0x17C, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_380 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name381=TM 07 
+@hword 0x17D, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_381 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name382=TM 08 
+@hword 0x17E, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_382 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name383=TM 09 
+@hword 0x17F, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_383 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name384=TM 10 
+@hword 0x180, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_384 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name385=TM 11 
+@hword 0x181, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_385 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name386=TM 12 
+@hword 0x182, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_386 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name387=TM 13 
+@hword 0x183, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_387 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name388=TM 14 
+@hword 0x184, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_388 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name389=TM 15 
+@hword 0x185, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_389 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name390=TM 16 
+@hword 0x186, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_390 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name391=TM 17 
+@hword 0x187, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_391 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name392=TM 18 
+@hword 0x188, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_392 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name393=TM 19 
+@hword 0x189, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_393 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name394=TM 20 
+@hword 0x18A, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_394 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name395=TM 21 
+@hword 0x18B, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_395 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name396=TM 22 
+@hword 0x18C, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_396 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name397=TM 23 
+@hword 0x18D, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_397 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name398=TM 24 
+@hword 0x18E, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_398 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name399=TM 25 
+@hword 0x18F, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_399 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name400=TM 26 
+@hword 0x190, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_400 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name401=TM 27 
+@hword 0x191, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_401 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name402=TM 28 
+@hword 0x192, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_402 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name403=TM 29 
+@hword 0x193, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_403 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name404=TM 30 
+@hword 0x194, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_404 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name405=TM 31 
+@hword 0x195, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_405 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name406=TM 32 
+@hword 0x196, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_406 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name407=TM 33 
+@hword 0x197, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_407 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name408=TM 34 
+@hword 0x198, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_408 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name409=TM 35 
+@hword 0x199, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_409 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name410=TM 36 
+@hword 0x19A, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_410 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name411=TM 37 
+@hword 0x19B, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_411 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name412=TM 38 
+@hword 0x19C, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_412 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name413=TM 39 
+@hword 0x19D, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_413 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name414=TM 40 
+@hword 0x19E, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_414 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name415=TM 41 
+@hword 0x19F, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_415 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name416=TM 42 
+@hword 0x1A0, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_416 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name417=TM 43 
+@hword 0x1A1, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_417 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name418=TM 44 
+@hword 0x1A2, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_418 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name419=TM 45 
+@hword 0x1A3, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_419 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name420=TM 46 
+@hword 0x1A4, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_420 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name421=TM 47 
+@hword 0x1A5, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_421 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name422=TM 48 
+@hword 0x1A6, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_422 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name423=TM 49 
+@hword 0x1A7, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_423 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name424=TM 50 
+@hword 0x1A8, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_424 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name425=TM 51 
+@hword 0x1A9, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_425 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name426=TM 52 
+@hword 0x1AA, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_426 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name427=TM 53 
+@hword 0x1AB, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_427 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name428=TM 54 
+@hword 0x1AC, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_428 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name429=TM 55 
+@hword 0x1AD, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_429 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name430=TM 56 
+@hword 0x1AE, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_430 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name431=TM 57 
+@hword 0x1AF, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_431 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name432=TM 58 
+@hword 0x1B0, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_432 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name433=TM 59 
+@hword 0x1B1, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_433 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name434=TM 60 
+@hword 0x1B2, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_434 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name435=TM 61 
+@hword 0x1B3, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_435 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name436=TM 62 
+@hword 0x1B4, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_436 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name437=TM 63 
+@hword 0x1B5, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_437 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name438=TM 64 
+@hword 0x1B6, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_438 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name439=TM 65 
+@hword 0x1B7, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_439 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name440=TM 66 
+@hword 0x1B8, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_440 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name441=TM 67 
+@hword 0x1B9, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_441 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name442=TM 68 
+@hword 0x1BA, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_442 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name443=TM 69 
+@hword 0x1BB, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_443 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name444=TM 70 
+@hword 0x1BC, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_444 
+@byte 0, 0, 4, 1 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name445=X-Angriff 2 
+@hword 0x1BD, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_445 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name446=X-Abwehr 2 
+@hword 0x1BE, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_446 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name447=X-Tempo 2 
+@hword 0x1BF, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_447 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name448=X-Treffer 2 
+@hword 0x1C0, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_448 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name449=X-Spezial 2 
+@hword 0x1C1, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_449 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name450=X-Sp.Vert. 2 
+@hword 0x1C2, 1500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_450 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name451=X-Angriff 3 
+@hword 0x1C3, 2500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_451 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name452=X-Abwehr 3 
+@hword 0x1C4, 2500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_452 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name453=X-Tempo 3 
+@hword 0x1C5, 2500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_453 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name454=X-Treffer 3 
+@hword 0x1C6, 2500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_454 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name455=X-Spezial 3 
+@hword 0x1C7, 2500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_455 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name456=X-Sp.Vert. 3 
+@hword 0x1C8, 2500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_456 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name457=X-Angriff 6 
+@hword 0x1C9, 6500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_457 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name458=X-Abwehr 6 
+@hword 0x1CA, 6500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_458 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name459=X-Tempo 6 
+@hword 0x1CB, 6500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_459 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name460=X-Treffer 6 
+@hword 0x1CC, 6500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_460 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name461=X-Spezial 6 
+@hword 0x1CD, 6500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_461 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name462=X-Sp.Vert. 6 
+@hword 0x1CE, 6500 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_462 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 2, 0, 0, 0 
+@word 0x80A1E7D 
+@byte 0, 0, 0, 0 
+
+str_item_name463=Adamant-Orb 
+@hword 0x1CF, 65000 
+@byte ITEM_EFFECT_ADAMANTORB, 0 
+@word str_item_description_463 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name464=Flottstaub 
+@hword 0x1D0, 10 
+@byte ITEM_EFFECT_QUICKPOWDER, 0 
+@word str_item_description_464 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name465=Platinum-Orb 
+@hword 0x1D1, 65000 
+@byte ITEM_EFFECT_GRISEOUSORB, 0 
+@word str_item_description_465 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name466=Weiß-Orb 
+@hword 0x1D2, 65000 
+@byte ITEM_EFFECT_LUSTROUSORB, 0 
+@word str_item_description_466 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name467=Blitztafel 
+@hword 0x1D3, 2000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 30 
+@word str_item_description_467 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name468=Dracotafel 
+@hword 0x1D4, 2000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 30 
+@word str_item_description_468 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name469=Eisentafel 
+@hword 0x1D5, 2000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 30 
+@word str_item_description_469 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name470=Erdtafel 
+@hword 0x1D6, 2000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 30 
+@word str_item_description_470 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name471=Fausttafel 
+@hword 0x1D7, 2000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 30 
+@word str_item_description_471 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name472=Feentafel 
+@hword 0x1D8, 2000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 30 
+@word str_item_description_472 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name473=Feuertafel 
+@hword 0x1D9, 2000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 30 
+@word str_item_description_473 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name474=Frosttafel 
+@hword 0x1DA, 2000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 30 
+@word str_item_description_474 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name475=Furchtafel 
+@hword 0x1DB, 2000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 30 
+@word str_item_description_475 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name476=Gifttafel 
+@hword 0x1DC, 2000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 30 
+@word str_item_description_476 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name477=Hirntafel 
+@hword 0x1DD, 2000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 30 
+@word str_item_description_477 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name478=Käfertafel 
+@hword 0x1DE, 2000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 30 
+@word str_item_description_478 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name479=Spuktafel 
+@hword 0x1DF, 2000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 30 
+@word str_item_description_479 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name480=Steintafel 
+@hword 0x1E0, 2000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 30 
+@word str_item_description_480 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name481=Wassertafel 
+@hword 0x1E1, 2000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 30 
+@word str_item_description_481 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name482=Wiesentafel 
+@hword 0x1E2, 2000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 30 
+@word str_item_description_482 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name483=Wolkentafel 
+@hword 0x1E3, 2000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 30 
+@word str_item_description_483 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name484=Aquamodul 
+@hword 0x1E4, 1000 
+@byte ITEM_EFFECT_DOUSEDRIVE, 0 
+@word str_item_description_484 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name485=Blitzmodul 
+@hword 0x1E5, 1000 
+@byte ITEM_EFFECT_SHOCKDRIVE, 0 
+@word str_item_description_485 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name486=Flammenmodul 
+@hword 0x1E6, 1000 
+@byte ITEM_EFFECT_BURNDRIVE, 0 
+@word str_item_description_486 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name487=Gefriermodul 
+@hword 0x1E7, 1000 
+@byte ITEM_EFFECT_CHILLDRIVE, 0 
+@word str_item_description_487 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name488=Absolnit 
+@hword 0x1E8, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_488 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name489=Aeroda.onit 
+@hword 0x1E9, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_489 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name490=Altarianit 
+@hword 0x1EA, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_490 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name491=Ampharosnit 
+@hword 0x1EB, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_491 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name492=Banetteonit 
+@hword 0x1EC, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_492 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name493=Bibornit 
+@hword 0x1ED, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_493 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name494=Bisaflornit 
+@hword 0x1EE, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_494 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name495=Brutal.nit 
+@hword 0x1EF, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_495 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name496=Cameruptnit 
+@hword 0x1F0, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_496 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name497=Despotarnit 
+@hword 0x1F1, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_497 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name498=Diancienit 
+@hword 0x1F2, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_498 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name499=Firnontornit 
+@hword 0x1F3, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_499 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name500=Flunkifernit 
+@hword 0x1F4, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_500 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name501=Galagladinit 
+@hword 0x1F5, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_501 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name502=Garadosnit 
+@hword 0x1F6, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_502 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name503=Gengarnit 
+@hword 0x1F7, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_503 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name504=Gewaldronit 
+@hword 0x1F8, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_504 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name505=Gluraknit X 
+@hword 0x1F9, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_505 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name506=Gluraknit Y 
+@hword 0x1FA, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_506 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name507=Guardevoirn. 
+@hword 0x1FB, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_507 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name508=Hundemonit 
+@hword 0x1FC, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_508 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name509=Kangamanit 
+@hword 0x1FD, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_509 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name510=Knakracknit 
+@hword 0x1FE, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_510 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name511=Lahmusnit 
+@hword 0x1FF, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_511 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name512=Latiasnit 
+@hword 0x200, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_512 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name513=Latiosnit 
+@hword 0x201, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_513 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name514=Lohgocknit 
+@hword 0x202, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_514 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name515=Lucarionit 
+@hword 0x203, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_515 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name516=Meditalisnit 
+@hword 0x204, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_516 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name517=Metagrossnit 
+@hword 0x205, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_517 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name518=Mewtunit X 
+@hword 0x206, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_518 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name519=Mewtunit Y 
+@hword 0x207, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_519 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name520=Ohrdochnit 
+@hword 0x208, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_520 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name521=Pinsirnit 
+@hword 0x209, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_521 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name522=Rexblisarnit 
+@hword 0x20A, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_522 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name523=Scheroxnit 
+@hword 0x20B, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_523 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name524=Schlapornit 
+@hword 0x20C, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_524 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name525=Simsalanit 
+@hword 0x20D, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_525 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name526=Skarabornit 
+@hword 0x20E, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_526 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name527=Stahlosnit 
+@hword 0x20F, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_527 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name528=Stollossnit 
+@hword 0x210, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_528 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name529=Sumpexnit 
+@hword 0x211, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_529 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name530=Taubossnit 
+@hword 0x212, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_530 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name531=Tohaidonit 
+@hword 0x213, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_531 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name532=Turtoknit 
+@hword 0x214, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_532 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name533=Voltensonit 
+@hword 0x215, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_533 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name534=Zobirisnit 
+@hword 0x216, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_534 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name535=R. Edelstein 
+@hword 0x217, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_535 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name536=B. Edelstein 
+@hword 0x218, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_536 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name537=Ä. Edelstein 
+@hword 0x219, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_537 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name538=Glücksrauch 
+@hword 0x21A, 1500 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_538 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name539=Lahmrauch 
+@hword 0x21B, 1500 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_539 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name540=Rosenrauch 
+@hword 0x21C, 1500 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_540 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name541=Scheuchrauch 
+@hword 0x21D, 1500 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_541 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name542=Schrägrauch 
+@hword 0x21E, 1500 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_542 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name543=Steinrauch 
+@hword 0x21F, 1500 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_543 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name544=Wellenrauch 
+@hword 0x220, 1500 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_544 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name545=Machtband 
+@hword 0x221, 3000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_545 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name546=Machtgewicht 
+@hword 0x222, 3000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_546 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name547=Machtgurt 
+@hword 0x223, 3000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_547 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name548=Machtkette 
+@hword 0x224, 3000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_548 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name549=Machtlinse 
+@hword 0x225, 3000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_549 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name550=Machtreif 
+@hword 0x226, 3000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_550 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name551=Atemgerät 
+@hword 0x227, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_551 
+@byte 1, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name552=Gischtglocke 
+@hword 0x228, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_552 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name553=Klarglocke 
+@hword 0x229, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_553 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name554=Mega-Armreif 
+@hword 0x22A, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_554 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name555=Levelball 
+@hword 0x22B, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_555 
+@byte 0, 0, 3, 20 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name556=Köderball 
+@hword 0x22C, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_556 
+@byte 0, 0, 3, 22 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 0, 0, 0, 0 
+
+str_item_name557=Mondball 
+@hword 0x22D, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_557 
+@byte 0, 0, 3, 23 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 0, 0, 0, 0 
+
+str_item_name558=Freundesball 
+@hword 0x22E, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_558 
+@byte 0, 0, 3, 18 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 0, 0, 0, 0 
+
+str_item_name559=Turboball 
+@hword 0x22F, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_559 
+@byte 0, 0, 3, 17 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 0, 0, 0, 0 
+
+str_item_name560=Schwerball 
+@hword 0x230, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_560 
+@byte 0, 0, 3, 19 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 0, 0, 0, 0 
+
+str_item_name561=Sympalball 
+@hword 0x231, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_561 
+@byte 0, 0, 3, 21 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 0, 0, 0, 0 
+
+str_item_name562=Turnierball 
+@hword 0x232, 600 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_562 
+@byte 0, 0, 3, 2 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 0, 0, 0, 0 
+
+str_item_name563=Heilball 
+@hword 0x233, 300 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_563 
+@byte 0, 0, 3, 15 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 0, 0, 0, 0 
+
+str_item_name564=Finsterball 
+@hword 0x234, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_564 
+@byte 0, 0, 3, 13 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 0, 0, 0, 0 
+
+str_item_name565=Jubelball 
+@hword 0x235, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_565 
+@byte 0, 0, 3, 16 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 0, 0, 0, 0 
+
+str_item_name566=Flottball 
+@hword 0x236, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_566 
+@byte 0, 0, 3, 12 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 0, 0, 0, 0 
+
+str_item_name567=Parkball 
+@hword 0x237, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_567 
+@byte 0, 0, 3, 14 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 0, 0, 0, 0 
+
+str_item_name568=Traumball 
+@hword 0x238, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_568 
+@byte 0, 0, 3, 0 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 0, 0, 0, 0 
+
+str_item_name569=Alter Heller 
+@hword 0x239, 10000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_569 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name570=Alter Taler 
+@hword 0x23A, 20000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_570 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name571=Alter Dukat 
+@hword 0x23B, 30000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_571 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name572=Alte Vase 
+@hword 0x23C, 40000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_572 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name573=Alter Reif 
+@hword 0x23D, 50000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_573 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name574=Alte Statue 
+@hword 0x23E, 60000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_574 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name575=Alte Krone 
+@hword 0x23F, 65000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_575 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name576=Nugget 
+@hword 0x240, 5000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_576 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name577=Riesennugget 
+@hword 0x241, 10000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_577 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name578=Triperle 
+@hword 0x242, 30000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_578 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name579=Duftpilz 
+@hword 0x243, 6250 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_579 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name580=Spiritkern 
+@hword 0x244, 1050 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_580 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name581=Steinknochen 
+@hword 0x245, 30000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_581 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name582=Azurflöte 
+@hword 0x246, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_582 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name583=Skulptur 
+@hword 0x247, 10 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_583 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name584=Kometstück 
+@hword 0x248, 8000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_584 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name585=Dubiosdisc 
+@hword 0x249, 15000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_585 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name586=Duftbeutel 
+@hword 0x24A, 15000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_586 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name587=Düsterumhang 
+@hword 0x24B, 15000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_587 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name588=Magmaisierer 
+@hword 0x24C, 15000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_588 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name589=Ovaler Stein 
+@hword 0x24D, 15000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_589 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name590=Sahnehäubch. 
+@hword 0x24E, 15000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_590 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name591=Schönschuppe 
+@hword 0x24F, 15000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_591 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name592=Schützer 
+@hword 0x250, 15000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_592 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name593=Stromisierer 
+@hword 0x251, 15000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_593 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name594=Rote Kugel 
+@hword 0x252, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_594 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name595=Blaue Kugel 
+@hword 0x253, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_595 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name596=Grüne Kugel 
+@hword 0x254, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_596 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name597=Magmastein 
+@hword 0x255, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_597 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name598=Lunarfeder 
+@hword 0x256, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_598 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name599=Dunkelstein 
+@hword 0x257, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_599 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name600=Lichtstein 
+@hword 0x258, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_600 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name601=Geheimtrank 
+@hword 0x259, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_601 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name602=Meteorstück 
+@hword 0x25A, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_602 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name603=Buntschwinge 
+@hword 0x25B, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_603 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name604=Silberflügel 
+@hword 0x25C, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_604 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name605=Bootsticket 
+@hword 0x25D, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_605 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name606=Tarnanzug 
+@hword 0x25E, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_606 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name607=Fahrschein 
+@hword 0x25F, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_607 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name608=TMVM-Box 
+@hword 0x260, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_608 
+@byte 1, 1, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name609=Rote Kette 
+@hword 0x261, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_609 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name610=Talisman 
+@hword 0x262, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_610 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name611=Mytokristall 
+@hword 0x263, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_611 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name612=Fäh.-Appell 
+@hword 0x264, 1500 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_612 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name613=Itemabwurf 
+@hword 0x265, 1500 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_613 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name614=Itemappell 
+@hword 0x266, 1500 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_614 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name615=Umkehrappell 
+@hword 0x267, 1500 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_615 
+@byte 0, 0, 1, 1 
+@word 0x80A16E1 
+@byte 1, 0, 0, 0 
+@word 0x80A1FBD 
+@byte 0, 0, 0, 0 
+
+str_item_name616=Ovalpin 
+@hword 0x268, 0 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_616 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name617=Schillerpin 
+@hword 0x269, 0 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_617 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name618=Äon-Flöte 
+@hword 0x26A, 0 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_618 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name619=Normium Z 
+@hword 0x26B, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_619 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name620=Pyrium Z 
+@hword 0x26C, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_620 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name621=Aquium Z 
+@hword 0x26D, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_621 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name622=Voltium Z 
+@hword 0x26E, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_622 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name623=Botanium Z 
+@hword 0x26F, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_623 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name624=Glacium Z 
+@hword 0x270, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_624 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name625=Battalium Z 
+@hword 0x271, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_625 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name626=Toxium Z 
+@hword 0x272, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_626 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name627=Terrium Z 
+@hword 0x273, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_627 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name628=Aerium Z 
+@hword 0x274, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_628 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name629=Psium Z 
+@hword 0x275, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_629 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name630=Insectium Z 
+@hword 0x276, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_630 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name631=Petrium Z 
+@hword 0x277, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_631 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name632=Phantomium Z 
+@hword 0x278, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_632 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name633=Dracium Z 
+@hword 0x279, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_633 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name634=Noctium Z 
+@hword 0x27A, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_634 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name635=Metallium Z 
+@hword 0x27B, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_635 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name636=Sylphium Z 
+@hword 0x27C, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_636 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name637=Pikachium Z 
+@hword 0x27D, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_637 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name638=Silberkorken 
+@hword 0x27E, 5000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_638 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name639=Goldkorken 
+@hword 0x27F, 10000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_639 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name640=Z-Ring 
+@hword 0x280, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_640 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name641=Silvarron. Z 
+@hword 0x281, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_641 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name642=Fuegronium Z 
+@hword 0x282, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_642 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name643=Primaren. Z 
+@hword 0x283, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_643 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name644=Kapium Z 
+@hword 0x284, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_644 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name645=A-Raichun. Z 
+@hword 0x285, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_645 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name646=Relaxonium Z 
+@hword 0x286, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_646 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name647=Evolium Z 
+@hword 0x287, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_647 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name648=Mewnium Z 
+@hword 0x288, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_648 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name649=Ash-Pika. Z 
+@hword 0x289, 100 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_649 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name650=Glitzerstein 
+@hword 0x28A, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_650 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name651=Zitterorb 
+@hword 0x28B, 200 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_651 
+@byte 0, 0, 1, 1 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name652=Z-Würfel 
+@hword 0x28C, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_652 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name653=Eisstein 
+@hword 0x28D, 15000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_653 
+@byte 0, 0, 1, 1 
+@word 0x80A1751 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name654=Ultraball 
+@hword 0x28E, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_654 
+@byte 0, 0, 3, 23 
+@word 0x0 
+@byte 2, 0, 0, 0 
+@word 0x80A1E1D 
+@byte 0, 0, 0, 0 
+
+str_item_name655=Nektar-Rot 
+@hword 0x28F, 300 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_655 
+@byte 0, 0, 1, 1 
+@word 0x80A1751 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name656=Nektar-Gelb 
+@hword 0x290, 300 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_656 
+@byte 0, 0, 1, 1 
+@word 0x80A1751 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name657=Nektar-Rosa 
+@hword 0x291, 300 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_657 
+@byte 0, 0, 1, 1 
+@word 0x80A1751 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name658=Nektar-Purp. 
+@hword 0x292, 300 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 0 
+@word str_item_description_658 
+@byte 0, 0, 1, 1 
+@word 0x80A1751 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name659=Sonnenflöte 
+@hword 0x293, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_659 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name660=Mondflöte 
+@hword 0x294, 0 
+@byte ITEM_EFFECT_NOEFFECT, 0 
+@word str_item_description_660 
+@byte 0, 0, 2, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name661=Feldschicht 
+@hword 0x295, 100 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 20 
+@word str_item_description_661 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name662=Schutzpolst. 
+@hword 0x296, 100 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 20 
+@word str_item_description_662 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name663=Elekt.-Samen 
+@hword 0x297, 4000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 20 
+@word str_item_description_663 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name664=Psycho-Samen 
+@hword 0x298, 4000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 20 
+@word str_item_description_664 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name665=Nebel-Samen 
+@hword 0x299, 4000 
+@byte ITEM_EFFECT_EMPTY_EFFECT, 20 
+@word str_item_description_665 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name666=Gras-Samen 
+@hword 0x29A, 4000 
+@byte ITEM_EFFECT_NOEFFECT, 20 
+@word str_item_description_666 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name667=Kampf-Disc 
+@hword 0x29B, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 30 
+@word str_item_description_667 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name668=Flug-Disc 
+@hword 0x29C, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 30 
+@word str_item_description_668 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name669=Gift-Disc 
+@hword 0x29D, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 30 
+@word str_item_description_669 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name670=Boden-Disc 
+@hword 0x29E, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 30 
+@word str_item_description_670 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name671=Steins-Disc 
+@hword 0x29F, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 30 
+@word str_item_description_671 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name672=Käfer-Disc 
+@hword 0x2A0, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 30 
+@word str_item_description_672 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name673=Geister-Disc 
+@hword 0x2A1, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 30 
+@word str_item_description_673 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name674=Stahl-Disc 
+@hword 0x2A2, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 30 
+@word str_item_description_674 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name675=Feuer-Disc 
+@hword 0x2A3, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 30 
+@word str_item_description_675 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name676=Wasser-Disc 
+@hword 0x2A4, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 30 
+@word str_item_description_676 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name677=Gras-Disc 
+@hword 0x2A5, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 30 
+@word str_item_description_677 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name678=Elektro-Disc 
+@hword 0x2A6, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 30 
+@word str_item_description_678 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name679=Psycho-Disc 
+@hword 0x2A7, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 30 
+@word str_item_description_679 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name680=Eis-Disc 
+@hword 0x2A8, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 30 
+@word str_item_description_680 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name681=Drachen-Disc 
+@hword 0x2A9, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 30 
+@word str_item_description_681 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name682=Unlicht-Disc 
+@hword 0x2AA, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 30 
+@word str_item_description_682 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name683=Feen-Disc 
+@hword 0x2AB, 1000 
+@byte ITEM_EFFECT_NOEFFECT, 30 
+@word str_item_description_683 
+@byte 0, 0, 1, 4 
+@word 0x80A2239 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name684=Angriffplus2 
+@hword 0x2AC, 0 
+@byte 0, 0 
+@word str_item_description_684 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+
+str_item_name685=Angriffplus3 
+@hword 0x2AD, 0 
+@byte 0, 0 
+@word str_item_description_685 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0 
+@word 0x0 
+@byte 0, 0, 0, 0
