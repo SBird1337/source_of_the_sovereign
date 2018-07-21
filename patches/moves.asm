@@ -91,10 +91,10 @@
 //attack desc. table
 
 .org 0x080E5440
-.word move_descriptions_array
+.word move_description_list
 
 .org 0x08137BC8
-.word move_descriptions_array
+.word move_description_list
 
 //end of attack desc. table
 

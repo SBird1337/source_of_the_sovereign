@@ -3,9 +3,9 @@
 #include <battle_structs.h>
 #include <battle_locations.h>
 
-extern void* str_power_swap_ref;
-extern void* str_guard_swap_ref;
-extern void* str_heart_swap_ref;
+extern char str_power_swap[];
+extern char str_guard_swap[];
+extern char str_heart_swap[];
 
 u8 set_swap_moves() {
     struct battle_participant* attacker = &battle_participants[battle_attacker_bank];
@@ -19,7 +19,7 @@ u8 set_swap_moves() {
             swap = attacker->sp_atk_buff;
             attacker->sp_atk_buff = defender->sp_atk_buff;
             defender->sp_atk_buff = swap;
-            battle_string_chooser = str_power_swap_ref;
+            battle_string_chooser = str_power_swap;
             break;
         case MOVE_GUARD_SWAP:
             swap = attacker->def_buff;
@@ -28,7 +28,7 @@ u8 set_swap_moves() {
             swap = attacker->sp_def_buff;
             attacker->sp_def_buff = defender->sp_def_buff;
             defender->sp_def_buff = swap;
-            battle_string_chooser = str_guard_swap_ref;
+            battle_string_chooser = str_guard_swap;
             break;
         case MOVE_HEART_SWAP:
             swap = attacker->hp_buff;
@@ -58,7 +58,7 @@ u8 set_swap_moves() {
             swap = attacker->sp_atk_buff;
             attacker->sp_atk_buff = defender->sp_atk_buff;
             defender->sp_atk_buff = swap;
-            battle_string_chooser = str_heart_swap_ref;
+            battle_string_chooser = str_heart_swap;
             
             swap = attacker->acc_buff;
             attacker->acc_buff = defender->acc_buff;

@@ -2,8 +2,8 @@
 #include <battle_structs.h>
 #include <constants/moves.h>
 
-extern void* str_guard_split_ref;
-extern void* str_power_split_ref;
+extern char str_guard_split[];
+extern char str_power_split[];
 
 u8 split_status() {
     if (battle_executed_move == MOVE_GUARD_SPLIT) {
@@ -14,7 +14,7 @@ u8 split_status() {
         battle_participants[battle_attacker_bank].sp_def = sdefense;
         battle_participants[battle_defender_bank].def = defense;
         battle_participants[battle_defender_bank].sp_def = sdefense;
-        battle_string_chooser = str_guard_split_ref;
+        battle_string_chooser = str_guard_split;
     }
     else if (battle_executed_move == MOVE_POWER_SPLIT) {
         u16 attack = (battle_participants[battle_attacker_bank].atk + battle_participants[battle_defender_bank].atk) >> 1;
@@ -24,7 +24,7 @@ u8 split_status() {
         battle_participants[battle_attacker_bank].sp_atk = sattack;
         battle_participants[battle_defender_bank].atk = attack;
         battle_participants[battle_defender_bank].sp_atk = sattack;
-        battle_string_chooser = str_power_split_ref;
+        battle_string_chooser = str_power_split;
     }
     return false;
 }

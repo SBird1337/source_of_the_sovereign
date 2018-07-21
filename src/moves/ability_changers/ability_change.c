@@ -4,11 +4,11 @@
 #include <constants/abilities.h>
 #include <constants/moves.h>
 
-extern void* str_worry_seed_ref;
-extern void* str_entrainment_ref;
-extern void* str_simple_beam_ref;
-extern void* str_role_play_ref;
-extern void* str_skill_swap_ref;
+extern char str_worry_seed[];
+extern char str_entrainment[];
+extern char str_simple_beam[];
+extern char str_role_play[];
+extern char str_skill_swap[];
 
 u8 worry_seed() {
     u8 def_ability = battle_participants[battle_defender_bank].ability_id;
@@ -19,7 +19,7 @@ u8 worry_seed() {
     } else {
         battle_participants[battle_defender_bank].ability_id = ABILITY_INSOMNIA;
         battle_last_used_ability = ABILITY_INSOMNIA;
-        battle_string_chooser = str_worry_seed_ref;
+        battle_string_chooser = str_worry_seed;
         return false;
     }
     return false;
@@ -34,7 +34,7 @@ u8 entrainment() {
     } else {
         battle_participants[battle_defender_bank].ability_id = battle_participants[battle_attacker_bank].ability_id;
         battle_last_used_ability = battle_participants[battle_defender_bank].ability_id;
-        battle_string_chooser = str_entrainment_ref;
+        battle_string_chooser = str_entrainment;
         return false;
     }
     return false;
@@ -49,7 +49,7 @@ u8 simple_beam() {
     } else {
         battle_participants[battle_defender_bank].ability_id = ABILITY_SIMPLE;
         battle_last_used_ability = ABILITY_SIMPLE;
-        battle_string_chooser = str_simple_beam_ref;
+        battle_string_chooser = str_simple_beam;
         return false;
     }
     return false;
@@ -64,7 +64,7 @@ u8 role_play() {
     } else {
         battle_participants[battle_attacker_bank].ability_id = battle_participants[battle_defender_bank].ability_id;
         battle_last_used_ability = battle_participants[battle_attacker_bank].ability_id;
-        battle_string_chooser = str_role_play_ref;
+        battle_string_chooser = str_role_play;
         return false;
     }
     return false;
@@ -87,7 +87,7 @@ u8 skill_swap() {
             u8 swap = battle_participants[battle_defender_bank].ability_id;
             battle_participants[battle_defender_bank].ability_id = battle_participants[battle_attacker_bank].ability_id;
             battle_participants[battle_attacker_bank].ability_id = swap;
-            battle_string_chooser = str_skill_swap_ref;
+            battle_string_chooser = str_skill_swap;
             return false;
         }
     }

@@ -51,7 +51,7 @@ extern void* bs_sticky_lain;
 
 extern void* bs_lunar_dance_exec;
 
-extern void* str_lunardance_executed_ref;
+extern char str_lunardance_executed[];
 
 /* === PROTOTYPES === */
 /**
@@ -80,7 +80,7 @@ u8 execute_entry_hazards() {
         mark_buffer_bank_for_execution(battle_active_bank);
         
         battle_script_push();
-        battle_string_chooser = str_lunardance_executed_ref;
+        battle_string_chooser = str_lunardance_executed;
         battlescript_cursor = bs_lunar_dance_exec;
         has_effect = 1;
     } else if (side_affecting_halfword[active_side].spikes_on && !(side_affecting_halfword[active_side].spikes_damage_done)) {
