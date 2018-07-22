@@ -175,7 +175,11 @@ callstd \msgbox_callstd
 .macro giveitem giveitem_item:req giveitem_quantity:req giveitem_messagetyp:req
 copyvarifnotzero 0x8000 \giveitem_item
 copyvarifnotzero 0x8001 \giveitem_quantity
+setvar 0x5006 10
+special 0x68
 callstd \giveitem_messagetyp
+setvar 0x5006 11
+special 0x68
 .endm
 
 .macro giveitem2 giveitem2_item:req giveitem2_quantity:req giveitem2_song:req

@@ -65,6 +65,8 @@ void sp_clear_variables();
  */
 void sp_random_number();
 
+void sp_show_item(void);
+
 extern void sp_batchmaptile(void);
 
 void get_text_pointer_from_lookup();
@@ -73,6 +75,8 @@ void sp_check_tileset();
 
 void sp_set_rival(void);
 
+void hide_item_unload_gfx(void);
+
 extern void sp_crystal_fade(void);
 
 extern pchar name_rival_male[5];
@@ -80,9 +84,10 @@ extern pchar name_rival_female[5];
 
 /* === STATICS === */
 
-static special_func special_routines[10] = {
+static special_func special_routines[12] = {
     NULL,         cam_sp_move_camera, sp_init_script,  NULL, NULL,
     sp_random_number, sp_check_tileset,   sp_batchmaptile, sp_crystal_fade, sp_set_rival,
+    sp_show_item, hide_item_unload_gfx
 };
 
 /* === IMPLEMENTATIONS === */
