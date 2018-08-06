@@ -4,6 +4,7 @@ clone:
     recursive: false
 
 pipeline:
+
   pull_build:
     image: sots:latest
     secrets: [ssh_private_key, ssh_known_hosts, ssh_host]
@@ -27,3 +28,18 @@ pipeline:
       - chmod 644 ./base/bpre0.gba
       
       - make -j4 all
+
+  build_story:
+    image: xelatex:latest
+    commands:
+      - cd sots-private/story && make
+      - mv build/story.pdf build/master.pdf
+
+  deploy_story:
+    image: appleboy/drone-scp
+    host: gitlab.karathan.at
+    port: 22
+    strip_components: 3
+    target: /var/www/sots/story/
+    source: sots-private/story/build/master.pdf
+    secrets: [ ssh_password, ssh_username ]
