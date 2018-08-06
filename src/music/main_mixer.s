@@ -890,78 +890,61 @@ C_downsampler:
     LDR     R9, [SP, #ARG_BUFFER_POS]
     LDR     R10, hq_buffer
     MOV     R11, #0xFF000000
-    MOV     LR, #0x007F0000
+    MOV     LR, #0xC0000000
 
 C_downsampler_loop:
         LDMIA   R10, {R0, R1, R2, R3}
-
         ADD     R12, R4, R0         @ left sample #1
-        CMP     R12, #0x3FC00000
-        MOVGE   R12, #0x3FC00000
-        CMP     R12, #-0x40000000
-        MOVLT   R12, #-0x40000000
-        AND     R4, LR, R12
+        ADDS    R4, R12, R12
+        EORVS   R12, LR, R4, ASR#31
+        AND     R4, R12, #0x007F0000
         AND     R6, R11, R12, LSL#1
 
         ADD     R0, R5, R0, LSL#16  @ right
-        CMP     R0, #0x3FC00000
-        MOVGE   R0, #0x3FC00000
-        CMP     R0, #-0x40000000
-        MOVLT   R0, #-0x40000000
-        AND     R5, LR, R0
+        ADDS    R5, R0, R0
+        EORVS   R0, LR, R5, ASR#31
+        AND     R5, R0, #0x007F0000
         AND     R7, R11, R0, LSL#1
 
         ADD     R12, R4, R1         @ left sample #2
-        CMP     R12, #0x3FC00000
-        MOVGE   R12, #0x3FC00000
-        CMP     R12, #-0x40000000
-        MOVLT   R12, #-0x40000000
-        AND     R4, LR, R12
+        ADDS    R4, R12, R12
+        EORVS   R12, LR, R4, ASR#31
+        AND     R4, R12, #0x007F0000
         AND     R12, R11, R12, LSL#1
         ORR     R6, R12, R6, LSR#8
 
         ADD     R1, R5, R1, LSL#16  @ right
-        CMP     R1, #0x3FC00000
-        MOVGE   R1, #0x3FC00000
-        CMP     R1, #-0x40000000
-        MOVLT   R1, #-0x40000000
-        AND     R5, LR, R1
+        ADDS    R5, R1, R1
+        EORVS   R1, LR, R5, ASR#31
+        AND     R5, R1, #0x007F0000
         AND     R1, R11, R1, LSL#1
         ORR     R7, R1, R7, LSR#8
 
         ADD     R12, R4, R2         @ left sample #3
-        CMP     R12, #0x3FC00000
-        MOVGE   R12, #0x3FC00000
-        CMP     R12, #-0x40000000
-        MOVLT   R12, #-0x40000000
-        AND     R4, LR, R12
+        ADDS    R4, R12, R12
+        EORVS   R12, LR, R4, ASR#31
+        AND     R4, R12, #0x007F0000
         AND     R12, R11, R12, LSL#1
         ORR     R6, R12, R6, LSR#8
 
         ADD     R2, R5, R2, LSL#16  @ right
-        CMP     R2, #0x3FC00000
-        MOVGE   R2, #0x3FC00000
-        CMP     R2, #-0x40000000
-        MOVLT   R2, #-0x40000000
-        AND     R5, LR, R2
+        ADDS    R5, R2, R2
+        EORVS   R2, LR, R5, ASR#31
+        AND     R5, R2, #0x007F0000
         AND     R2, R11, R2, LSL#1
         ORR     R7, R2, R7, LSR#8
 
         ADD     R12, R4, R3         @ left sample #4
-        CMP     R12, #0x3FC00000
-        MOVGE   R12, #0x3FC00000
-        CMP     R12, #-0x40000000
-        MOVLT   R12, #-0x40000000
-        AND     R4, LR, R12
+        ADDS    R4, R12, R12
+        EORVS   R12, LR, R4, ASR#31
+        AND     R4, R12, #0x007F0000
         AND     R12, R11, R12, LSL#1
         ORR     R6, R12, R6, LSR#8
 
         ADD     R3, R5, R3, LSL#16  @ right
-        CMP     R3, #0x3FC00000
-        MOVGE   R3, #0x3FC00000
-        CMP     R3, #-0x40000000
-        MOVLT   R3, #-0x40000000
-        AND     R5, LR, R3
+        ADDS    R5, R3, R3
+        EORVS   R3, LR, R5, ASR#31
+        AND     R5, R3, #0x007F0000
         AND     R3, R11, R3, LSL#1
         ORR     R7, R3, R7, LSR#8
 
