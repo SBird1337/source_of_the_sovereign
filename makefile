@@ -166,18 +166,22 @@ cleansrcdatascript:
 	rm -rf object/sots-private/map/script/*
 
 .PHONY: clean
-clean:
+clean: cleansnd
 	rm -f  $(OUTPATH)/__symbols.sym $(OUTPATH)/pkmn_sots.gba
 	rm -rf generated_image/*
 	rm -R -f object/*
+	$(MAKE) -f sprites.makefile clean
+
+.PHONY: cleansnd
+cleansnd:
 	$(MAKE) -C $(dir $(MUSIC_AR)) clean
 	$(MAKE) -C $(dir $(SMPL_AR)) clean
 	$(MAKE) -C $(dir $(VOICE_AR)) clean
 	$(MAKE) -C $(dir $(LIST_AR)) clean
 	$(MAKE) -C $(dir $(CRY_AR)) clean
-	$(MAKE) -f sprites.makefile clean
 
 .PHONY: cleannogfx
+cleannogfx:
 	rm -f  $(OUTPATH)/__symbols.sym $(OUTPATH)/pkmn_sots.gba
 	rm -rf generated_image/*
 	rm -R -f object/*
