@@ -32,20 +32,25 @@ u8 npc_get_walkable_status(struct NpcState *npc, u16 x, u16 y, enum Direction di
     if (direction == WEST) {
         dprintf("WEST with from: %d\n", roleFrom);
         if(roleFrom == BEHAVIOR_STAIR_WEST) {
+            
             //walk up the stair to the west
             dummyNpc.from.y--;
             dummyNpc.to.y--;
             u8 altBlocked = npc_block_way(&dummyNpc, x,y-1, direction);
             dprintf("trying NW: %d\n", altBlocked);
-            return (altBlocked == 0) ? BLOCK_STATE_SIDEWAY_NW : altBlocked;
+            u8 roleStairTo = cur_mapdata_block_role_at(x, y-1);
+            if(roleStairTo == BEHAVIOR_STAIR_WEST)
+                return (altBlocked == 0) ? BLOCK_STATE_SIDEWAY_NW : altBlocked;
         }
         else if(roleFrom == BEHAVIOR_STAIR_EAST){
             //walk down the stair to the west
             dummyNpc.from.y++;
             dummyNpc.to.y++;
             u8 altBlocked = npc_block_way(&dummyNpc, x,y+1, direction);
-            dprintf("trying SE: %d\n", altBlocked);
-            return (altBlocked == 0) ? BLOCK_STATE_SIDEWAY_SW : altBlocked;
+            dprintf("trying SW: %d\n", altBlocked);
+            u8 roleStairTo = cur_mapdata_block_role_at(x, y+1);
+            if(roleStairTo == BEHAVIOR_STAIR_EAST)
+                return (altBlocked == 0) ? BLOCK_STATE_SIDEWAY_SW : altBlocked;
         }
     } else if(direction == EAST) {
         if(roleFrom == BEHAVIOR_STAIR_EAST) {
@@ -54,14 +59,20 @@ u8 npc_get_walkable_status(struct NpcState *npc, u16 x, u16 y, enum Direction di
             dummyNpc.to.y--;
             u8 altBlocked = npc_block_way(&dummyNpc, x,y-1, direction);
             dprintf("trying NE: %d\n", altBlocked);
-            return (altBlocked == 0) ? BLOCK_STATE_SIDEWAY_NE : altBlocked;
+            u8 roleStairTo = cur_mapdata_block_role_at(x, y-1);
+            dprintf("x: %d, y: %d, roleStairTo: %d\n",x, dummyNpc.to.y, roleStairTo);
+            if(roleStairTo == BEHAVIOR_STAIR_EAST)
+                return (altBlocked == 0) ? BLOCK_STATE_SIDEWAY_NE : altBlocked;
+
         } else if (roleFrom == BEHAVIOR_STAIR_WEST) {
             //walk down the stair to the east
             dummyNpc.from.y++;
             dummyNpc.to.y++;
             u8 altBlocked = npc_block_way(&dummyNpc, x,y+1, direction);
             dprintf("trying SW: %d\n", altBlocked);
-            return (altBlocked == 0) ? BLOCK_STATE_SIDEWAY_SE : altBlocked;
+            u8 roleStairTo = cur_mapdata_block_role_at(x, y+1);
+            if(roleStairTo == BEHAVIOR_STAIR_WEST)
+                return (altBlocked == 0) ? BLOCK_STATE_SIDEWAY_SE : altBlocked;
         }
     }
 
