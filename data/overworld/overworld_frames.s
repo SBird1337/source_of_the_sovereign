@@ -16485,22 +16485,40 @@ ow_frames_objekt_0021:
 .hword 0x800
 .hword 0x0
 
-.align 2
+.align 2 
 ow_frames_objekt_0022:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x80
+.word ow_objekt_0022Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0022Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0022Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0022Tiles+(3*0x800)
+.hword 0x800
 .hword 0x0
 
-.align 2
+.align 2 
 ow_frames_objekt_0023:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x80
+.word ow_objekt_0023Tiles+(0*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0023Tiles+(1*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0023Tiles+(2*0x800)
+.hword 0x800
+.hword 0x0
+.word ow_objekt_0023Tiles+(3*0x800)
+.hword 0x800
 .hword 0x0
 
 .align 2
 ow_frames_objekt_0024:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x80
+.word ow_objekt_0024Tiles+(0*0x800)
+.hword 0x800
 .hword 0x0
 
 .align 2
