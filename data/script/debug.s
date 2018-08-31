@@ -8,8 +8,7 @@
 debug_script:
     lock
     faceplayer
-    giveitem 1 1 0
-    msgbox debug 6
+    callasm blackboard_start+1
     release
     end
 
