@@ -7,11 +7,11 @@
 extern pchar *blackboard_text[];
 
 const struct TextboxTemplate blackboard_box[] = {
-    {.bg_id = 0, .x = 4, .y = 7, .width = 6, .height = 3, .pal_id = 15, .charbase = 1},
+    {.bg_id = 0, .x = 2, .y = 5, .width = 28, .height = 10, .pal_id = 15, .charbase = 1},
 };
 
 const u16 blackboard_text_pal[] = 
-                            {rgb5(255, 255, 255), rgb5(255, 255, 255), rgb5(255, 255, 255), rgb5(255, 255, 255),
+                            {rgb5(255, 255, 255), rgb5(255, 255, 255), rgb5(000, 163, 131), rgb5(255, 255, 255),
                              rgb5(255, 255, 255), rgb5(255, 255, 255), rgb5(255, 255, 255), rgb5(255, 255, 255),
                              rgb5(255, 255, 255), rgb5(255, 255, 255), rgb5(255, 255, 255), rgb5(255, 255, 255),
                              rgb5(255, 255, 255), rgb5(255, 255, 255), rgb5(255, 255, 255), rgb5(255, 255, 255)};
@@ -48,6 +48,20 @@ void blackboard_loop(u8 id) {
             rboxid_print(0, 1, 0, 0, &scene_default_text_color, BLACKBOARD_TEXT_SPEED,
                          blackboard_text[0]);
             tasks[id].priv[0]++;
+        break;
+        case 4:
+            if(!dialogid_was_acknowledged(0)) {
+                fade_screen(0xFFFFFFFF, 1, 0, 16, 0x0000);
+                tasks[id].priv[0]++;
+            }
+        break;
+        case 5:
+            if(!pal_fade_control.active){
+                task_del(id);
+                scene_free_bg_maps();
+                set_callback2(c2_exit_to_overworld_2_switch);
+                set_callback1(c1_overworld);
+            }
         break;
         default:
         break;

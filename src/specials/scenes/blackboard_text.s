@@ -6,4 +6,4 @@ blackboard_text:
 .word bbtext_zero
 
 bbtext_zero:
-    .autostring 40 LAN_DE "Feuer, Wasser, Erde, Luft. Aus den vier Elementen erschuf Arceus einst das Universum, ein Ort voller Chaos, in welchem sich letztlich unsere Welt formen konnte."
+    .string LAN_DE "Feuer, Wasser, Erde, Luft. Aus den\nvier Elementen erschuf Arceus einst\ndas Universum, ein Ort voller\nChaos, in welchem sich letztlich\nunsere Welt formen konnte.\p"

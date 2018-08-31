@@ -58,6 +58,17 @@ void scene_default_cb_handler(void) {
         obj_sync_superstate();
         tilemaps_sync();
         remoboxes_upload_tilesets();
+        rboxid_update_tilemap_and_tileset(0);
+    }
+}
+
+void scene_free_bg_maps(void) {
+    for (u8 i = 0; i < 3; ++i) {
+        void *tmap = bgid_get_tilemap(i);
+        if (tmap != NULL) {
+            free(tmap);
+            bgid_nullify_tilemap(i);
+        }
     }
 }
 
