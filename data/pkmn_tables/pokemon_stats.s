@@ -3,7 +3,7 @@
 #include <constants/egggroup.h>
 #include <constants/ep.h>
 #include <constants/gender.h>
-#include <constants/items.h>
+#include <pymap_constants.h>
 #include <constants/ptypes.h>
 
 .text

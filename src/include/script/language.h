@@ -5,8 +5,10 @@
 #include <script/movement.h>
 #include <script/mugshot.h>
 #include <script/battlescreen.h>
+#include <script/items.h>
 
-#include <script_constant.h> /*TODO: REMOVE ONCE THIS IS DEALT WITH*/
+@@Some Constants
+.equ PLAYER, 0xFF
 
 @@ Costum Specials
 .equ SP_BATCHMAPTILE, 0x7
@@ -18,6 +20,12 @@
 .equ B_LE, 0x3
 .equ B_GE, 0x4
 .equ B_NE, 0x5
+
+@@Spritefacing
+.equ SPRITEFACE_DOWN, 0x1
+.equ SPRITEFACE_UP, 0x2
+.equ SPRITEFACE_LEFT, 0x3
+.equ SPRITEFACE_RIGHT, 0x4
 
 @@ Important flags
 .equ FLAG_PKMN_MENU, 0x828
@@ -67,6 +75,19 @@
 @@@@@@@@@@@@@@@@@ Macro
 
 @@ Custom commands
+
+.macro camerafreeze
+special 0x113
+.endm
+
+.macro cameraunfreeze
+special 0x114
+.endm
+
+.macro spritefacedelay spritefacedelay_id:req spritefacedelay_facing:req
+spriteface \spritefacedelay_id spritefacedelay_facing
+pause 0x20
+.endm
 
 .macro batchmaptilefromto batchmaptile_tiles_from:req batchmaptile_tiles_to:req batchmaptile_kollision_from:req batchmaptile_kollision_to:req
 setvar 0x8000 \batchmaptile_tiles_from
@@ -232,8 +253,7 @@ msgbox \mugmsg_textpointer \mugmsg_callstd
 setvar MUGHSOT_1_TABLE 0x0
 .endm
 
-.macro mugrival mugrival_textpointer:req mugrival_callstd:req mugrival_facing:req mugrival_emot=0
-setvar 0x8000 \mugrival_emot
+.macro mugrival mugrival_textpointer:req mugrival_callstd:req mugrival_facing:req
 .if \mugrival_facing==MUGFACE_LEFT
     call scr_mugrival_left
 .endif
@@ -283,6 +303,12 @@ setflag FLAG_SKIP_BATTLE_MUSIC
 .macro writemusikoff
 clearflag FLAG_SKIP_BATTLE_MUSIC
 .endm
+
+.macro changeowto changeowto_from:req changeowto_to:req
+setvar CHANGE_OW_FROM \changeowto_from
+setvar CHANGE_OW_TO \changeowto_to
+.endm
+
 
 @@ Index commands
 

@@ -26,6 +26,10 @@
 /*Variables for walking script control*/
 #define WALK_SCRIPT_VAR         0x5009
 
+/*Variables for Change OW Sprite*/
+#define CHANGE_OW_FROM         0x500A
+#define CHANGE_OW_TO           0x500B
+
 /*Variable for custom text*/
 #define TEXT_VAR                0x500C
 
