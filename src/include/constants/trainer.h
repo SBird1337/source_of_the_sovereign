@@ -1,5 +1,5 @@
 #include <constants/pkmns.h>
-#include <pymap_constants.h>
+#include <items.h>
 #include <constants/moves.h>
 
 #ifndef TRAINER_IDS_H
