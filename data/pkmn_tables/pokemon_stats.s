@@ -3,7 +3,7 @@
 #include <constants/egggroup.h>
 #include <constants/ep.h>
 #include <constants/gender.h>
-#include <items.h>
+#include <constants/items.h>
 #include <constants/ptypes.h>
 
 .text
