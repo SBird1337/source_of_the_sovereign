@@ -1,5 +1,5 @@
 #include <constants/pkmns.h>
-#include <items.h>
+#include <constants/items.h>
 #include <constants/moves.h>
 
 #ifndef TRAINER_IDS_H
