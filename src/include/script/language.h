@@ -5,7 +5,8 @@
 #include <script/movement.h>
 #include <script/mugshot.h>
 #include <script/battlescreen.h>
-#include <script/items.h>
+#include <constants/items.h>
+#include <pymap_constants.h>
 
 @@Some Constants
 .equ PLAYER, 0xFF
@@ -26,19 +27,6 @@
 .equ SPRITEFACE_UP, 0x2
 .equ SPRITEFACE_LEFT, 0x3
 .equ SPRITEFACE_RIGHT, 0x4
-
-@@ Important flags
-.equ FLAG_PKMN_MENU, 0x828
-.equ FLAG_POKDEX, 0x829
-.equ FLAG_RUNNING_SHOES, 0x82F
-.equ FLAG_ORDEN_1, 0x820
-.equ FLAG_ORDEN_2, 0x821
-.equ FLAG_ORDEN_3, 0x822
-.equ FLAG_ORDEN_4, 0x823
-.equ FLAG_ORDEN_5, 0x824
-.equ FLAG_ORDEN_6, 0x825
-.equ FLAG_ORDEN_7, 0x826
-.equ FLAG_ORDEN_8, 0x827
 
 @@ LED NAMES
 .equ LED_CARUN_CITY_LINKS, 0x1

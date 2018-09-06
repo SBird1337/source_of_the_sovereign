@@ -24,10 +24,19 @@
 // Special Places
 
 #define SEQ_BGM_DESERT              350
+#define SEQ_BGM_P_TOL               436
 
 // Forests
 
 #define SEQ_BGM_FOREST_YELINA       352
+#define SEQ_BGM_P_DFOY              347
+
+// Cave
+#define SEQ_BGM_CAVE_GUARDIAN       390
+
+// Indoor
+#define SEQ_BGM_GYM_GHOST           419
+#define SEQ_BGM_GYM_WATER           420
 
 // Encounter
 
