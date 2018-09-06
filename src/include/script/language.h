@@ -10,6 +10,7 @@
 
 @@Some Constants
 .equ PLAYER, 0xFF
+.equ CAMERA, 0x7F
 
 @@ Costum Specials
 .equ SP_BATCHMAPTILE, 0x7
