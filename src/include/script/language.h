@@ -23,6 +23,11 @@
 .equ B_GE, 0x4
 .equ B_NE, 0x5
 
+@@ Variable
+.equ VAR_LASTRESULT, 0x800d
+.equ VAR_PLAYERFACING, 0x800c
+.equ VAR_LASTTALKED, 0x800f
+
 @@Spritefacing
 .equ SPRITEFACE_DOWN, 0x1
 .equ SPRITEFACE_UP, 0x2
@@ -61,6 +66,18 @@
 .equ EFFECT_GREY, 0x1
 .equ EFFECT_SERPIA, 0x2
 
+@@ Emotion
+.equ EMOT_NORMAL, 0x1
+.equ EMOT_UEBERLEGT, 0x2
+.equ EMOT_ERSTAUNT, 0x3
+.equ EMOT_TRAURIG, 0x4
+.equ EMOT_SAUER, 0x5
+.equ EMOT_GRINST, 0x6
+.equ EMOT_ZWINKERT, 0x7
+.equ EMOT_SCHOCKIERT, 0x8
+.equ EMOT_BOESESLACHEN, 0x9
+.equ EMOT_GENERVT, 0xa
+
 @@@@@@@@@@@@@@@@@ Macro
 
 @@ Custom commands
@@ -74,7 +91,7 @@ special 0x114
 .endm
 
 .macro spritefacedelay spritefacedelay_id:req spritefacedelay_facing:req
-spriteface \spritefacedelay_id spritefacedelay_facing
+spriteface \spritefacedelay_id \spritefacedelay_facing
 pause 0x20
 .endm
 
@@ -227,30 +244,32 @@ setvar 0x5006 0x8
 special 0x68
 .endm
 
-.macro mugmsg mugmsg_textpointer:req mugmsg_callstd:req mugmsg_sprite:req mugmsg_facing:req
-.if \mugmsg_facing==MUGFACE_LEFT
-    setvar MUGHSOT_1_TABLE \mugmsg_sprite | 0x8000
-    setvar MUGSHOT_1_X 0x16
-    setvar MUGSHOT_1_Y 0x60
+.macro mugmsg mugmsg_textpointer:req mugmsg_callstd:req mugmsg_sprite:req mugmsg_facing:req mugmsg_emot=0
+setvar 0x8000 0x0
+.if \mugmsg_sprite==MUG_RIVALE
+    .if \mugmsg_facing==MUGFACE_LEFT
+        call scr_mugrival_left
+    .endif
+    .if \mugmsg_facing==MUGFACE_RIGHT
+        call scr_mugrival_right
+    .endif
 .endif
-.if \mugmsg_facing==MUGFACE_RIGHT
-    setvar MUGHSOT_1_TABLE \mugmsg_sprite
-    setvar MUGSHOT_1_X 0xD0
-    setvar MUGSHOT_1_Y 0x60
+.if \mugmsg_sprite!=MUG_RIVALE
+    .if \mugmsg_facing==MUGFACE_LEFT
+        setvar MUGHSOT_1_TABLE \mugmsg_sprite|0x8000
+        setvar MUGSHOT_1_X 0x16
+        setvar MUGSHOT_1_Y 0x60
+    .endif
+    .if \mugmsg_facing==MUGFACE_RIGHT
+        setvar MUGHSOT_1_TABLE \mugmsg_sprite
+        setvar MUGSHOT_1_X 0xD0
+        setvar MUGSHOT_1_Y 0x60
+    .endif
 .endif
+addvar MUGHSOT_1_TABLE \mugmsg_emot
 msgbox \mugmsg_textpointer \mugmsg_callstd
 setvar MUGHSOT_1_TABLE 0x0
-.endm
-
-.macro mugrival mugrival_textpointer:req mugrival_callstd:req mugrival_facing:req
-.if \mugrival_facing==MUGFACE_LEFT
-    call scr_mugrival_left
-.endif
-.if \mugrival_facing==MUGFACE_RIGHT
-    call scr_mugrival_right
-.endif
-msgbox \mugrival_textpointer \mugrival_callstd
-setvar MUGHSOT_1_TABLE 0x0
+pause 0x20
 .endm
 
 .macro transparenzon
@@ -294,8 +313,9 @@ clearflag FLAG_SKIP_BATTLE_MUSIC
 .endm
 
 .macro changeowto changeowto_from:req changeowto_to:req
-setvar CHANGE_OW_FROM \changeowto_from
-setvar CHANGE_OW_TO \changeowto_to
+setvar OW_REPLACE_VAR \changeowto_from
+addvar OW_REPLACE_VAR 0x1
+setvar OW_REPLACE_TO_VAR \changeowto_to
 .endm
 
 
