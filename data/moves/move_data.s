@@ -6,6 +6,8 @@
 
 .global move_table
 move_table:
+.global pokemon_moves
+pokemon_moves:
 
 @Move			DATA		.BYTE		EFFECT		DMG		TYPE		ACCUR		PP		EF_ACC		TARGET		PRIO		FLAGS		AGR_1		SPLIT		AGR_2
 /*Nichts*/		move_data_0:	.byte		0,		0,		0,		0,		0,		0,		0,		0,		0,		0,		0,		0
