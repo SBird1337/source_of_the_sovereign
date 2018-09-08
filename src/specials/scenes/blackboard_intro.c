@@ -59,7 +59,7 @@ void blackboard_loop(u8 id) {
             if(!pal_fade_control.active){
                 task_del(id);
                 scene_free_bg_maps();
-                set_callback2(c2_exit_to_overworld_2_switch);
+                set_callback2(c2_exit_to_overworld_1_continue_scripts_and_music);
                 set_callback1(c1_overworld);
             }
         break;
