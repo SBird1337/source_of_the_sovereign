@@ -77,6 +77,7 @@
 .equ EMOT_SCHOCKIERT, 0x8
 .equ EMOT_BOESESLACHEN, 0x9
 .equ EMOT_GENERVT, 0xa
+.equ EMOT_ERFREUT, 0xb
 
 @@@@@@@@@@@@@@@@@ Macro
 
