@@ -65,7 +65,7 @@ extern Mugshot mugshots[0xFF];
 u8 *temp_obj_id1 = (u8*) OBJ_1_TEMP;
 u8 *temp_obj_id2 = (u8*) OBJ_2_TEMP;
 
-struct OamData mug_sprite = {.size = 3};
+struct OamData mug_sprite = {.size = 2};
 
 struct Template mugshot_1_template = {.tiles_tag = MUGSHOT_1_TAG,
                                       .pal_tag = MUGSHOT_1_TAG, 
