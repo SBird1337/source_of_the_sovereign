@@ -6,7 +6,9 @@
 #include <script/mugshot.h>
 #include <script/battlescreen.h>
 #include <constants/items.h>
+#include <constants/pkmns.h>
 #include <pymap_constants.h>
+#include <script/trainerid.h>
 
 @@Some Constants
 .equ PLAYER, 0xFF
@@ -67,17 +69,17 @@
 .equ EFFECT_SERPIA, 0x2
 
 @@ Emotion
-.equ EMOT_NORMAL, 0x1
-.equ EMOT_UEBERLEGT, 0x2
-.equ EMOT_ERSTAUNT, 0x3
-.equ EMOT_TRAURIG, 0x4
-.equ EMOT_SAUER, 0x5
-.equ EMOT_GRINST, 0x6
-.equ EMOT_ZWINKERT, 0x7
-.equ EMOT_SCHOCKIERT, 0x8
-.equ EMOT_BOESESLACHEN, 0x9
-.equ EMOT_GENERVT, 0xa
-.equ EMOT_ERFREUT, 0xb
+.equ EMOT_NORMAL, 0x0
+.equ EMOT_UEBERLEGT, 0x1
+.equ EMOT_ERSTAUNT, 0x2
+.equ EMOT_TRAURIG, 0x3
+.equ EMOT_SAUER, 0x4
+.equ EMOT_LAECHELN, 0x5
+.equ EMOT_ZWINKERT, 0x6
+.equ EMOT_SCHOCKIERT, 0x7
+.equ EMOT_BOESESLACHEN, 0x8
+.equ EMOT_GENERVT, 0x9
+.equ EMOT_ERFREUT, 0xa
 
 @@@@@@@@@@@@@@@@@ Macro
 
@@ -268,7 +270,13 @@ setvar 0x8000 0x0
     .endif
 .endif
 addvar MUGHSOT_1_TABLE \mugmsg_emot
-msgbox \mugmsg_textpointer \mugmsg_callstd
+.if \mugmsg_callstd==5
+    msgbox \mugmsg_textpointer \mugmsg_callstd
+    closeonkeypress
+.endif
+.if \mugmsg_callstd!=5
+    msgbox \mugmsg_textpointer \mugmsg_callstd
+.endif
 setvar MUGHSOT_1_TABLE 0x0
 pause 0x20
 .endm
