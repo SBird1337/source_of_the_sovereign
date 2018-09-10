@@ -3,8 +3,8 @@
 .align 2
 .text
 .thumb
-.global trainer_pkmn_data
-trainer_pkmn_data:
+.global trainer_data
+trainer_data:
 
 .byte 0x0
 .byte 0x0
@@ -21,6 +21,7 @@ trainer_pkmn_data:
 .hword 0x0, 0x0
 .byte 0x0
 .byte 0x0, 0x0, 0x0
+.word 0x00000000 @@this is actually important, because otherwise the structure offset will be off
 
 .byte MOVE_NEIN_ITEM_NEIN
 .byte TRAINERCLASS_PKMN_TRAINER

@@ -12,3 +12,8 @@ bx r2
 ldr r1, =battle_intro_launch+1
 bx r1
 .pool
+
+.org 0x080112E0
+ldr r2, =battle_trainer_build_party+1
+bx r2
+.pool

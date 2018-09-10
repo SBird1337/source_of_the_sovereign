@@ -1,4 +1,5 @@
 #include <pokeagb/pokeagb.h>
+#include <agb_debug.h>
 
 void battle_intro_launch(u8 environment) {
     TaskCallback introTask;
@@ -19,13 +20,14 @@ u8 battle_trainer_build_party(struct Pokemon *party, u16 tid) {
     if(tid == 0x400)
         return 0;
     //ignore some type of battles like old man or trainer tower where the party is determined otherwise
+    dprintf("battle_type_flags: %x, tid: %d\n", battle_type_flags, tid);
     if ((battle_type_flags & 0x80908) == 8) {
         party_opponent_purge();
         for(u8 i = 0; i < trainer_data[tid].party_size; ++i) {
             u32 personalityValue;
             if(trainer_data[tid].is_double)
                 personalityValue = 0x80;
-            else if (trainer_data[tid].gender)
+            else if (trainer_data[tid].gender & 0x80)
                 personalityValue = 0x78;
             else
                 personalityValue = 0x88;
@@ -41,8 +43,11 @@ u8 battle_trainer_build_party(struct Pokemon *party, u16 tid) {
                 {
                     //nothing
                     const struct TrainerPokemonBase *pokeData = (const struct TrainerPokemonBase*)(trainer_data[tid].party);
-                    for(u8 j = 0; pokemon_names[pokeData[i].species][j] != 0xFF; ++j)
+                    dprintf("making pokemon with species: %d, struct: 0x%x\n", pokeData[i].species, pokeData);
+                    for(u8 j = 0; pokemon_names[pokeData[i].species][j] != 0xFF; ++j) {
                         nameHash += pokemon_names[pokeData[i].species][j];
+                    }
+                    
                     personalityValue += nameHash << 8;
                     u8 iv = pokeData[i].iv * 31 / 255;
 
@@ -53,6 +58,7 @@ u8 battle_trainer_build_party(struct Pokemon *party, u16 tid) {
                 case TRAINER_PARTY_MOVESET:
                 {
                     const struct TrainerPokemonMoves *pokeData = (const struct TrainerPokemonMoves*)(trainer_data[tid].party);
+                    dprintf("making pokemon with species: %d\n", pokeData[i].base.species);
                     //custom moveset
                     for(u8 j = 0; pokemon_names[pokeData[i].base.species][j] != 0xFF; ++j)
                         nameHash += pokemon_names[pokeData[i].base.species][j];
@@ -68,7 +74,9 @@ u8 battle_trainer_build_party(struct Pokemon *party, u16 tid) {
                 case TRAINER_PARTY_HELD_ITEM:
                 {
                     //custom item
+                    
                     const struct TrainerPokemonBase *pokeData = (const struct TrainerPokemonBase*)(trainer_data[tid].party);
+                    dprintf("making pokemon with species: %d\n", pokeData[i].species);
                     for(u8 j = 0; pokemon_names[pokeData[i].species][j] != 0xFF; ++j)
                         nameHash += pokemon_names[pokeData[i].species][j];
                     personalityValue += nameHash << 8;
@@ -81,7 +89,8 @@ u8 battle_trainer_build_party(struct Pokemon *party, u16 tid) {
                 case TRAINER_PARTY_HELD_ITEM | TRAINER_PARTY_MOVESET:
                 {
                     //custom all the things
-                    const struct TrainerPokemonMoves *pokeData = (const struct TrainerPokemonMoves*)(trainer_data[tid].party);  
+                    const struct TrainerPokemonMoves *pokeData = (const struct TrainerPokemonMoves*)(trainer_data[tid].party);
+                    dprintf("making pokemon with species: %d\n", pokeData[i].base.species);  
                     for(u8 j = 0; pokemon_names[pokeData[i].base.species][j] != 0xFF; ++j)
                         nameHash += pokemon_names[pokeData[i].base.species][j];
                     personalityValue += nameHash << 8;
