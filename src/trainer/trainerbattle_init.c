@@ -1,6 +1,6 @@
 #include <pokeagb/pokeagb.h>
 #include <agb_debug.h>
-#include "trainer_rival_encounters.h"
+#include <trainer_rival_encounters.h>
 
 void battle_intro_launch(u8 environment) {
     TaskCallback introTask;
