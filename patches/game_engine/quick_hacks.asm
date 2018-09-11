@@ -67,6 +67,7 @@ PLAYER_S_M EQU 0x0
 .halfword 0x0001
 .halfword 0x0001
 
+// Remove OAKs Text in Trainerbattle 0x9
 .org 0x08080484
 .word 0x00000000
 .word 0x00000000
