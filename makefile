@@ -42,6 +42,7 @@ MAPMAPS	  := $(MAPROOT)/maps
 MAPTS	  := $(MAPROOT)/tileset
 MAP_PROJ	:= $(MAPROOT)/sots.json
 SCRIPTROOT := $(MAPROOT)/script
+PDATAROOT := sots-private/data
 
 MAIN_OBJ  := $(BLDPATH)/linked.o
 B_ENGINE  := battle_engine/build/linked.o
@@ -73,6 +74,7 @@ DATA_SRC    := $(call rwildcard,data/,*.s)
 STRING		:= $(call rwildcard,string/$(LAN)/,*.txt)
 STRING_SRC	:= $(STRING:%.txt=%.s)
 SCRIPT_SRC	:= $(call rwildcard,$(SCRIPTROOT)/,*.s)
+PDATA_SRC   := $(call rwildcard,$(PDATAROOT)/,*.c)
 
 MAP_PROJ_S	:= $(MAP_PROJ:%.json=%.s)
 MAP_PROJ_O	:= $(MAP_PROJ:%.json=$(BLDPATH)/%.o)
@@ -91,7 +93,8 @@ ASM_OBJ     := $(ASM_SRC:%.s=$(BLDPATH)/%.o)
 C_OBJ       := $(C_SRC:%.c=$(BLDPATH)/%.o)
 DATA_OBJ    := $(DATA_SRC:%.s=$(BLDPATH)/%.o)
 SCRIPT_OBJ	:= $(SCRIPT_SRC:%.s=$(BLDPATH)/%.o)
-ALL_OBJ     := $(GEN_OBJ) $(C_OBJ) $(ASM_OBJ) $(DATA_OBJ) $(STRING_OBJ) $(SCRIPT_OBJ) $(MAP_PROJ_O) $(MAP_FILES_O) $(TS_FILES_O) $(TS_GEN_O)
+PDATA_OBJ   := $(PDATA_SRC:%.c=$(BLDPATH)/%.o)
+ALL_OBJ     := $(GEN_OBJ) $(C_OBJ) $(ASM_OBJ) $(DATA_OBJ) $(STRING_OBJ) $(SCRIPT_OBJ) $(MAP_PROJ_O) $(MAP_FILES_O) $(TS_FILES_O) $(TS_GEN_O) $(PDATA_OBJ)
 
 $(MAPMAPS)/%.s: $(MAPMAPS)/%.pmh
 	@printf "\e[1;33mGenerating map\e[0m $<\n"
@@ -101,9 +104,14 @@ $(MAPTS)/%.s: $(MAPTS)/%.pts
 	@printf "\e[1;33mGenerating tileset\e[0m $<\n"
 	$(PYSETS) -o $@ $<
 
-$(STRINGDIR)/%.s: $(STRINGDIR)/%.txt
-	@printf "\e[1;36mGenerating strings\e[0m $<\n"
-	$(STRAGB) -o $@ -i $< -t string/table.tbl -e 0xFF
+$(BLDPATH)/sots-private/data/%.o: $(PDATAROOT)/%.c
+	@printf "\e[1;31mCompiling\e[0m $<\n"
+	$(shell mkdir -p $(dir $@))
+	$(CC) $(CFLAGS) -E -x c $< -o $(PDATAROOT)/$*.i
+	$(PREPROC) $(PDATAROOT)/$*.i $(CHARMAP) > $(PDATAROOT)/$*.ci
+	$(CC) $(CFLAGS) -c -x c $(PDATAROOT)/$*.ci -o $@
+	@rm -f $(PDATAROOT)/$*.ci  $(PDATAROOT)/$*.i
+	
 
 $(BLDPATH)/%.o: %.c $(ASSETS) $(PAGB_INCLUDE)/pokeagb/pokeagb.h
 	@printf "\e[1;31mCompiling\e[0m $<\n"

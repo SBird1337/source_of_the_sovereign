@@ -1,4 +1,4 @@
-#include <constants/trainer.h>
+/*#include <constants/trainer.h>
 
 .align 2
 .text
@@ -172,4 +172,4 @@ pokemon_von_id_6:
 .hword 50 
 .hword 6 
 .hword PKMN_BISASAM 
-.hword ITEM_SINELBEERE
+.hword ITEM_SINELBEERE*/

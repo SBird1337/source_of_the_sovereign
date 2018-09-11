@@ -4,6 +4,7 @@ temp
 *.ogg
 *.a
 *.i
+*.ci
 nbproject/private/tools/
 .vscode/*
 todo/
