@@ -275,7 +275,7 @@ void *tb_configure_by_script(void *ptr_script) {
 
         battle_80801F0_something();
 
-        return (void *)(0x081A4EC1); /* some script to execute */
+        return (void *)(0x081A4F21); /* some script to execute */
 
     case 0xFF:
         /* this is a registered on-spot script */
