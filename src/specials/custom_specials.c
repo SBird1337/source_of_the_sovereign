@@ -95,8 +95,10 @@ static special_func special_routines[12] = {
 void sp_set_rival(void) {
     if (saveblock2->gender == GENDER_MALE) {
         pstrcpy(&(saveblock1->rival_name[0]), &name_rival_female[0]);
+        pstrcpy(&(saveblock2->name[0]), &name_rival_male[0]);
     } else {
         pstrcpy(&(saveblock1->rival_name[0]), &name_rival_male[0]);
+        pstrcpy(&(saveblock2->name[0]), &name_rival_female[0]);
     }
 }
 
