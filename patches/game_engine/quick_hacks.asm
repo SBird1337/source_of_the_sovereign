@@ -95,5 +95,7 @@ ldr r0, =whiteout_hook|1
 bx r0
 .pool
 
-//.org 0x0812EB54
-//.word 0x08056644|1 //new game callback, skip the intro
+.org 0x0812EB2C
+ldr r0, =launch_tutorial|1
+bx r0
+.pool
