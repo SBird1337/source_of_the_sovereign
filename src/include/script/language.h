@@ -14,6 +14,10 @@
 .equ PLAYER, 0xFF
 .equ CAMERA, 0x7F
 
+@@Some Gender
+.equ GENDER_MALE, 0x0
+.equ GENDER_FEMALE, 0x1
+
 @@ Costum Specials
 .equ SP_BATCHMAPTILE, 0x7
 
@@ -85,11 +89,30 @@
 .equ EMOT_SCHOCKIERT, 0x7
 .equ EMOT_BOESESLACHEN, 0x8
 .equ EMOT_GENERVT, 0x9
-.equ EMOT_ERFREUT, 0xa
 
 @@@@@@@@@@@@@@@@@ Macro
 
 @@ Custom commands
+
+.macro callifvar callifvar_var:req callifvar_value:req callifvar_operands:req callifvar_pointer:req
+compare \callifvar_var \callifvar_value
+callif \callifvar_operands \callifvar_pointer
+.endm
+
+.macro gotoifvar gotoifvar_var:req gotoifvar_value:req gotoifvar_operands:req gotoifvar_pointer:req
+compare \gotoifvar_var \gotoifvar_value
+gotoif \gotoifvar_operands \gotoifvar_pointer
+.endm
+
+.macro callifflag callifflag_flag:req callifflag_operands:req callifflag_pointer:req
+checkflag \callifflag_flag
+callif \callifflag_operands \callifflag_pointer
+.endm
+
+.macro gotoifflag gotoifflag_flag:req gotoifflag_operands:req gotoifflag_pointer:req
+checkflag \gotoifflag_flag
+gotoif \gotoifflag_operands \gotoifflag_pointer
+.endm
 
 .macro camerafreeze
 special 0x113
@@ -263,7 +286,15 @@ setvar 0x8000 0x0
         call scr_mugrival_right
     .endif
 .endif
-.if \mugmsg_sprite!=MUG_RIVALE
+.if \mugmsg_sprite==MUG_PLAYER
+    .if \mugmsg_facing==MUGFACE_LEFT
+        call scr_mugrival_player_left
+    .endif
+    .if \mugmsg_facing==MUGFACE_RIGHT
+        call scr_mugrival_player_right
+    .endif
+.endif
+.if \mugmsg_sprite!=MUG_RIVALE&&\mugmsg_sprite!=MUG_PLAYER
     .if \mugmsg_facing==MUGFACE_LEFT
         setvar MUGHSOT_1_TABLE \mugmsg_sprite|0x8000
         setvar MUGSHOT_1_X 0x16
@@ -275,6 +306,7 @@ setvar 0x8000 0x0
         setvar MUGSHOT_1_Y 0x60
     .endif
 .endif
+
 addvar MUGHSOT_1_TABLE \mugmsg_emot
 .if \mugmsg_callstd==5
     msgbox \mugmsg_textpointer \mugmsg_callstd
