@@ -2,8 +2,8 @@
 .thumb
 .text
 
-.global ts_image_maintable
-ts_image_maintable:
+.global trainer_battle_sprites
+trainer_battle_sprites:
 
 .word ts_0000Tiles
 .hword 0x0800

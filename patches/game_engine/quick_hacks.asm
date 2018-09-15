@@ -96,6 +96,6 @@ bx r0
 .pool
 
 .org 0x0812EB2C
-ldr r0, =launch_tutorial|1
+ldr r0, =settings_launch|1
 bx r0
 .pool
