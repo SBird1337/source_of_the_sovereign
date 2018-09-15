@@ -2,8 +2,8 @@
 .thumb
 .text
 
-.global ts_pal_maintable
-ts_pal_maintable:
+.global trainer_battle_palettes
+trainer_battle_palettes:
 
 .word ts_0000Pal
 .hword 0

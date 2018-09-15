@@ -16,12 +16,6 @@ const u16 blackboard_text_pal[] =
                              rgb5(255, 255, 255), rgb5(255, 255, 255), rgb5(255, 255, 255), rgb5(255, 255, 255),
                              rgb5(255, 255, 255), rgb5(255, 255, 255), rgb5(255, 255, 255), rgb5(255, 255, 255)};
 
-void blackboard_vblank(void) {
-    gpu_sprites_upload();
-    copy_queue_process();
-    gpu_pal_upload();
-}
-
 void blackboard_loop(u8 id) {
     switch(tasks[id].priv[0]){
         case 0:
@@ -78,7 +72,7 @@ void blackboard_load_gfx(void){
 }
 
 void blackboard_start(void) {
-    scene_vram_init(blackboard_vblank, &scene_default_config[0]);
+    scene_vram_default_init();
     bgid_set_tilemap(0, malloc(0x800));
     bgid_set_tilemap(2, malloc(0x800));
     blackboard_load_gfx();

@@ -47,6 +47,12 @@ const struct BgConfig scene_default_config[4] = {
     },
 };
 
+void scene_default_vblank(void) {
+    gpu_sprites_upload();
+    copy_queue_process();
+    gpu_pal_upload();
+}
+
 const struct TextColor scene_default_text_color = {0, 1, 2};
 
 void scene_default_cb_handler(void) {
@@ -94,6 +100,14 @@ void scene_vram_init(SuperCallback vblank_handler, const struct BgConfig* config
     bgid_mod_x_offset(3, 0, 0);
     bgid_mod_y_offset(3, 0, 0);
 
+    //windows
+
+    lcd_io_set(REG_ID_WININ, WININ_BUILD(WIN_ENALL_NO_BLD,WIN_ENALL_NO_BLD));
+    lcd_io_set(REG_ID_WINOUT, WINOUT_BUILD(WIN_ENALL_NO_BLD,WIN_ENALL_BLD));
     vblank_handler_set(vblank_handler);
     interrupts_enable(INTERRUPT_VBLANK);
+}
+
+void scene_vram_default_init(void) {
+    scene_vram_init(scene_default_vblank, &scene_default_config[0]);
 }

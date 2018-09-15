@@ -7,9 +7,6 @@
 #define DNS_SEC_PAL_START 224
 #define DNS_SEC_PAL_START_C (DNS_SEC_PAL_START / 2)
 
-#define crgb5(r,g,b) (union Color)(((u16)(((b) << 10) | ((g)<<5) | ((r)))))
-#define rgb82rgb5(r,g,b) (crgb5(r/8, g/8, b/8))
-
 const union Color dns_color_times[5] = {
     rgb82rgb5(70, 70, 196),
     rgb82rgb5(70, 70, 196),
