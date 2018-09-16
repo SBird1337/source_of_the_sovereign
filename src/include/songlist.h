@@ -80,3 +80,4 @@
 // Misc
 
 #define SEQ_BGM_TITLE_SCREEN        278
+#define SEQ_BGM_MENU                503
