@@ -97,7 +97,7 @@ u32 load_word(void *ptr) {
  * @return flag +1 for medium, flag +2 for hard
  */
 u16 tb_modify_flag_id(u16 flag) {
-    u16 difficulty = var_load(0x5052);
+    u16 difficulty = var_load(0x5050);
     u16 new_flag = flag;
     switch (difficulty) {
     case 0:
