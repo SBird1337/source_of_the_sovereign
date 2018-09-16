@@ -13,11 +13,12 @@ STRAGB	:= string2agb
 
 PYTHON_BIN := $(shell ./python_version.sh)
 
-PYPROJS := $(PYTHON_BIN) ../tools/v_tools/pyproj2s.py
-PYMAPS	:= $(PYTHON_BIN) ../tools/v_tools/pymap2s.py
-PYSETS	:= $(PYTHON_BIN) ../tools/v_tools/pyset2s.py
+PYPROJS := pyproj2s.py
+PYMAPS	:= pymap2s.py
+PYSETS	:= pyset2s.py
 
-export PATH := $(realpath ../tools):$(PATH)
+# we don't need those anymore I think
+# export PATH := $(realpath ../tools):$(PATH)
 export GCC_COLORS := error=01;31:warning=01;35:note=01;36:range1=32:range2=34:locus=01:quote=01:fixit-insert=32:fixit-delete=31:diff-filename=01:diff-hunk=32:diff-delete=31:diff-insert=32
 
 PAGB_MAIN := g3headers
@@ -98,7 +99,7 @@ ALL_OBJ     := $(GEN_OBJ) $(C_OBJ) $(ASM_OBJ) $(DATA_OBJ) $(STRING_OBJ) $(SCRIPT
 
 $(MAPMAPS)/%.s: $(MAPMAPS)/%.pmh
 	@printf "\e[1;33mGenerating map\e[0m $<\n"
-	$(PYMAPS) -o $@ $<
+	$(PYMAPS) -o $@ $< $(MAP_PROJ)
 
 $(MAPTS)/%.s: $(MAPTS)/%.pts
 	@printf "\e[1;33mGenerating tileset\e[0m $<\n"
@@ -236,7 +237,8 @@ $(CRY_AR):
 
 .PHONY: constants
 constants:
-	$(PYTHON_BIN) ../tools/v_tools/constants.py src/include/
+	pymapconstex.py sots-private/map/sots.json
+	$(shell  ./generate_pymap_header.sh)
 
 run: rom
 	$(VBA) "build/pkmn_sots.gba"

@@ -1,0 +1,4 @@
+#define EBENE_IMMER 0x0
+#define EBENE_SUFER 0x1
+#define EBENE_NORMAL 0x3
+#define EBENE_BRUECKE 0x4

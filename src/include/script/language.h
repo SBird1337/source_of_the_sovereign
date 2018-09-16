@@ -29,11 +29,6 @@
 .equ B_GE, 0x4
 .equ B_NE, 0x5
 
-@@ Variable
-.equ VAR_LASTRESULT, 0x800d
-.equ VAR_PLAYERFACING, 0x800c
-.equ VAR_LASTTALKED, 0x800f
-
 @@Spritefacing
 .equ SPRITEFACE_DOWN, 0x1
 .equ SPRITEFACE_UP, 0x2

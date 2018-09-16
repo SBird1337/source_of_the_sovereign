@@ -1,0 +1,7 @@
+.equ ANB_KEINS, 0x0
+.equ ANB_UNTEN, 0x1
+.equ ANB_OBEN, 0x2
+.equ ANB_LINKS, 0x3
+.equ ANB_RECHTS, 0x4
+.equ ANB_ABTAUCHEN, 0x5
+.equ ANB_AUFTAUCHEN, 0x6

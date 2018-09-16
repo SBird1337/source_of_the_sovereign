@@ -1,0 +1,4 @@
+.equ VAR_MODI, 0x5050
+.equ MODI_LEICHT, 0x0
+.equ MODI_MITTEL, 0x1
+.equ MODI_SCHWER, 0x2

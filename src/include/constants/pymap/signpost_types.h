@@ -1,0 +1,6 @@
+#define SIGN_IMMER 0x0
+#define SIGN_OBEN 0x1
+#define SIGN_UNTEN 0x2
+#define SIGN_RECHTS 0x3
+#define SIGN_LINKS 0x4
+#define SIGN_VERSTECKTES_ITEM 0x7
