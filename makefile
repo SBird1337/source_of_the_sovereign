@@ -140,10 +140,6 @@ generated_image/%.c generated_image/%.h: $(AUTO_ASSET_ROOT)/%.png
 	$(shell mkdir -p $(dir $@))
 	$(GRIT) $< -o $@ -ftc -ff $(<D)/$(notdir $(<D)).grit
 
-src/include/pymap_constants.h: sots-private/map/sots.json.constants sots-private/map/sots.json.config
-	pymapconstex.py sots-private/map/sots.json
-	$(shell  ./generate_pymap_header.sh)
-
 all: src/include/pymap_constants.h $(GEN_H) rom 
 
 .PHONY: rom
@@ -241,3 +237,7 @@ $(CRY_AR):
 
 run: rom
 	$(VBA) "build/pkmn_sots.gba"
+
+src/include/pymap_constants.h: sots-private/map/sots.json.constants sots-private/map/sots.json.config
+	pymapconstex.py sots-private/map/sots.json
+	$(shell  ./generate_pymap_header.sh)
