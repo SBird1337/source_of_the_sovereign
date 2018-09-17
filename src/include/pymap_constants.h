@@ -7,6 +7,7 @@
 #include <constants/pymap/items.h>
 #include <constants/pymap/level_types.h>
 #include <constants/pymap/main_story_variables.h>
+#include <constants/pymap/map_adjacency_types.h>
 #include <constants/pymap/map_battle_styles.h>
 #include <constants/pymap/map_carun_city_maps.h>
 #include <constants/pymap/map_connections.h>
