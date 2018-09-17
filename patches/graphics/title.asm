@@ -24,10 +24,10 @@
 .word title_tileset_logo_nameTiles
 
 .org 0x08078A94
-.word ts_pals
+.word titlescreen_palette
 
 .org 0x080796C0
-.word ts_pals
+.word titlescreen_palette
 
 .org 0x08078A9C
 .word title_tileset_logo_nameMap
