@@ -159,6 +159,7 @@ void settings_loop(u8 id) {
                 saveblock2->gender = GENDER_MALE;
                 pstrcpy(saveblock1->rival_name, &name_rival_female[0]);
             }
+            saveblock2->name[0] = 0;
             tasks[id].priv[0]++;
             break;
         case 9:
