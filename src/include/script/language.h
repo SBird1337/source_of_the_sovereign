@@ -301,7 +301,6 @@ setvar 0x8000 0x0
         setvar MUGSHOT_1_Y 0x60
     .endif
 .endif
-
 addvar MUGHSOT_1_TABLE \mugmsg_emot
 .if \mugmsg_callstd==5
     msgbox \mugmsg_textpointer \mugmsg_callstd
