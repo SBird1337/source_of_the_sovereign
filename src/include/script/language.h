@@ -859,6 +859,14 @@ setvar OW_REPLACE_TO_VAR \changeowto_to
 .byte \multichoice3_determines
 .endm
 
+.macro hidebox hidebox_leftpos:req hidebox_toppos:req hidebox_width:req hidebox_length:req
+.byte 0x73
+.byte \hidebox_leftpos
+.byte \hidebox_toppos
+.byte \hidebox_width
+.byte \hidebox_length
+.endm
+
 .macro showpokepic showpokepic_spezies:req showpokepic_x:req showpokepic_y:req
 .byte 0x75
 .hword \showpokepic_spezies

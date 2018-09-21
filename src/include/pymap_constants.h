@@ -4,6 +4,7 @@
 #include <constants/pymap/difficulty_variables.h>
 #include <constants/pymap/engine_flags.h>
 #include <constants/pymap/engine_variables.h>
+#include <constants/pymap/farbkugel_raetsel.h>
 #include <constants/pymap/items.h>
 #include <constants/pymap/level_types.h>
 #include <constants/pymap/main_story_variables.h>
