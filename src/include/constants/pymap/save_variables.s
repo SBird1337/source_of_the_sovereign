@@ -1,3 +1,4 @@
-.equ VAR_XPOS, 0x505b
-.equ VAR_YPOS, 0x505c
-.equ VAR_SPEICHER, 0x505d
+.equ VAR_XPOS, 0x505c
+.equ VAR_YPOS, 0x505d
+.equ VAR_SPEICHER, 0x505e
+.equ VAR_SPRITEFACE, 0x505f

@@ -1,3 +1,4 @@
-#define VAR_XPOS 0x505b
-#define VAR_YPOS 0x505c
-#define VAR_SPEICHER 0x505d
+#define VAR_XPOS 0x505c
+#define VAR_YPOS 0x505d
+#define VAR_SPEICHER 0x505e
+#define VAR_SPRITEFACE 0x505f
