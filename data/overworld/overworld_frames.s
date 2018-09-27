@@ -16523,8 +16523,32 @@ ow_frames_objekt_0024:
 
 .align 2
 ow_frames_objekt_0025:
-.word ow_00000Tiles+(0*0x80)
-.hword 0x80
+.word ow_objekt_0025Tiles+(0*0x200)
+.hword 0x200
+.hword 0x0
+.word ow_objekt_0025Tiles+(0*0x200)
+.hword 0x200 
+.hword 0x0
+.word ow_objekt_0025Tiles+(0*0x200)
+.hword 0x200 
+.hword 0x0
+.word ow_objekt_0025Tiles+(1*0x200)
+.hword 0x200 
+.hword 0x0
+.word ow_objekt_0025Tiles+(2*0x200)
+.hword 0x200 
+.hword 0x0
+.word ow_objekt_0025Tiles+(1*0x200)
+.hword 0x200 
+.hword 0x0
+.word ow_objekt_0025Tiles+(2*0x200)
+.hword 0x200 
+.hword 0x0
+.word ow_objekt_0025Tiles+(1*0x200)
+.hword 0x200 
+.hword 0x0
+.word ow_objekt_0025Tiles+(2*0x200)
+.hword 0x200 
 .hword 0x0
 
 .align 2
