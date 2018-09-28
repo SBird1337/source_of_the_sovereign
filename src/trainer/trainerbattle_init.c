@@ -1,6 +1,7 @@
 #include <pokeagb/pokeagb.h>
 #include <agb_debug.h>
 #include <trainer_rival_encounters.h>
+#include <pymap_constants.h>
 
 void battle_intro_launch(u8 environment) {
     TaskCallback introTask;
@@ -42,12 +43,10 @@ union TrainerPokemonPtr battle_trainer_get_rival(u8 chosenStarterValue, u8 encou
     return (union TrainerPokemonPtr)(rival_encounters[encounterNumber].partyArray.undefinedStructure + (chosenStarterValue * partyCount * structureSize));
 }
 
-#define VAR_STARTER 0x5052
-
 union TrainerPokemonPtr battle_trainer_get_rival_or_null(u8 tid) {
     for(u16 i = 0; i < RIVAL_ENCOUNTER_COUNT; ++i) {
         if(rival_encounters[i].trainerId == tid) {
-            return battle_trainer_get_rival(var_load(VAR_STARTER), i, trainer_data[tid].flags);
+            return battle_trainer_get_rival(var_load(VAR_STARTER_PLAYER_POKEMON), i, trainer_data[tid].flags);
         }
     }
     union TrainerPokemonPtr nullPokemon = {.undefinedStructure = NULL};

@@ -794,10 +794,10 @@ ow_pal_table:
 .word ow_objekt_0019Pal, 0xC313
 .word ow_objekt_0020Pal, 0xC314
 .word ow_objekt_0021Pal, 0xC315
-.word ow_00000Pal, 0xC316
-.word ow_00000Pal, 0xC317
-.word ow_00000Pal, 0xC318
-.word ow_00000Pal, 0xC319
+.word ow_objekt_0022Pal, 0xC316
+.word ow_objekt_0023Pal, 0xC317
+.word ow_objekt_0024Pal, 0xC318
+.word ow_objekt_0025Pal, 0xC319
 .word ow_00000Pal, 0xC31A
 .word ow_00000Pal, 0xC31B
 .word ow_00000Pal, 0xC31C

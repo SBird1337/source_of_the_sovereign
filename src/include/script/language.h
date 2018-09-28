@@ -89,6 +89,14 @@
 
 @@ Custom commands
 
+.macro showcitynameon
+setflag 0x4000
+.endm
+
+.macro showcitynameoff
+clearflag 0x4000
+.endm
+
 .macro callifvar callifvar_var:req callifvar_value:req callifvar_operands:req callifvar_pointer:req
 compare \callifvar_var \callifvar_value
 callif \callifvar_operands \callifvar_pointer
