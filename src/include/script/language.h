@@ -14,6 +14,10 @@
 .equ PLAYER, 0xFF
 .equ CAMERA, 0x7F
 
+@@Yesnos
+.equ MSG_NO, 0x0
+.equ MSG_YES, 0x1
+
 @@Some Gender
 .equ GENDER_MALE, 0x0
 .equ GENDER_FEMALE, 0x1
@@ -52,8 +56,8 @@
 .equ LED_URBANIA_CITY_RECHTS, 0x8
 
 @@ Flag operands
-.equ B_T, 0x0
-.equ B_F, 0x1
+.equ B_F, 0x0
+.equ B_T, 0x1
 
 @@ callstd alias
 .equ ITEM_OBTAIN, 0x0
@@ -156,7 +160,7 @@ call sethiddenflagsall
 writebytetooffset \seteffect_effect_id 0x02036E28
 .endm
 
-.macro setecutscene
+.macro setcutscene
 writebytetooffset 0x80 0x4000044
 writebytetooffset 0x20 0x4000045
 .endm
@@ -335,10 +339,18 @@ setvar BATTLE_SEA_VAR \battlescreen_sea
 .endm
 
 .macro cameramove cameramove_xpos:req cameramove_ypos:req
-setvar CAMERA_VAR_X \cameramove_xpos
-setvar CAMERA_VAR_Y \cameramove_ypos
+.if \cameramove_xpos==VAR_XPOS&&\cameramove_ypos==VAR_YPOS
+    copyvar CAMERA_VAR_X \cameramove_xpos
+    copyvar CAMERA_VAR_Y \cameramove_ypos
+.endif
+.if \cameramove_xpos!=VAR_XPOS&&\cameramove_ypos!=VAR_YPOS
+    setvar CAMERA_VAR_X \cameramove_xpos
+    setvar CAMERA_VAR_Y \cameramove_ypos
+.endif
 setvar CALLASM_VAR 0x1
 special 0x68
+waitstate
+pause 0x20
 .endm
 
 .macro walkingscript walkingscript_value:req
