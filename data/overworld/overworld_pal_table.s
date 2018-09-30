@@ -201,10 +201,10 @@ ow_pal_table:
 .word ow_npcs_0194Pal, 0xC0AD
 .word ow_npcs_0195Pal, 0xC0AE
 .word ow_npcs_0196Pal, 0xC0AF
-.word ow_00000Pal, 0xC0B0
-.word ow_00000Pal, 0xC0B1
-.word ow_00000Pal, 0xC0B2
-.word ow_00000Pal, 0xC0B3
+.word ow_npcs_0197Pal, 0xC0B0
+.word ow_npcs_0198Pal, 0xC0B1
+.word ow_npcs_0199Pal, 0xC0B2
+.word ow_npcs_0200Pal, 0xC0B3
 .word ow_00000Pal, 0xC0B4
 .word ow_00000Pal, 0xC0B5
 .word ow_00000Pal, 0xC0B6
@@ -798,7 +798,7 @@ ow_pal_table:
 .word ow_objekt_0023Pal, 0xC317
 .word ow_objekt_0024Pal, 0xC318
 .word ow_objekt_0025Pal, 0xC319
-.word ow_00000Pal, 0xC31A
+.word ow_objekt_0026Pal, 0xC31A
 .word ow_00000Pal, 0xC31B
 .word ow_00000Pal, 0xC31C
 .word ow_00000Pal, 0xC31D
