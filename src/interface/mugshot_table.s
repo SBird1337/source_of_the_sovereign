@@ -178,48 +178,48 @@ mugshots:
 @@-----------------------------------------------------------------------------------------------------------
     .word mug_08_01Tiles
     .word mug_08_01Pal
-    @.word mug_08_02Tiles
-    @.word mug_08_02Pal
-    @.word mug_08_03Tiles
-    @.word mug_08_03Pal
-    @.word mug_08_04Tiles
-    @.word mug_08_04Pal
-    @.word mug_08_05Tiles
-    @.word mug_08_05Pal
-    @.word mug_08_06Tiles
-    @.word mug_08_06Pal
-    @.word mug_08_07Tiles
-    @.word mug_08_07Pal
-    @.word mug_08_08Tiles
-    @.word mug_08_08Pal
-    @.word mug_08_09Tiles
-    @.word mug_08_09Pal
-    @.word mug_08_10Tiles
-    @.word mug_08_10Pal
+    .word mug_08_01Tiles
+    .word mug_08_01Pal
+    .word mug_08_01Tiles
+    .word mug_08_01Pal
+    .word mug_08_01Tiles
+    .word mug_08_01Pal
+    .word mug_08_01Tiles
+    .word mug_08_01Pal
+    .word mug_08_01Tiles
+    .word mug_08_01Pal
+    .word mug_08_01Tiles
+    .word mug_08_01Pal
+    .word mug_08_01Tiles
+    .word mug_08_01Pal
+    .word mug_08_01Tiles
+    .word mug_08_01Pal
+    .word mug_08_01Tiles
+    .word mug_08_01Pal
 
 @@-----------------------------------------------------------------------------------------------------------
 @@ Nadine - Mugsprites
 @@-----------------------------------------------------------------------------------------------------------
     .word mug_09_01Tiles
     .word mug_09_01Pal
-    @.word mug_09_02Tiles
-    @.word mug_09_02Pal
-    @.word mug_09_03Tiles
-    @.word mug_09_03Pal
-    @.word mug_09_04Tiles
-    @.word mug_09_04Pal
-    @.word mug_09_05Tiles
-    @.word mug_09_05Pal
-    @.word mug_09_06Tiles
-    @.word mug_09_06Pal
-    @.word mug_09_07Tiles
-    @.word mug_09_07Pal
-    @.word mug_09_08Tiles
-    @.word mug_09_08Pal
-    @.word mug_09_09Tiles
-    @.word mug_09_09Pal
-    @.word mug_09_10Tiles
-    @.word mug_09_10Pal
+    .word mug_09_01Tiles
+    .word mug_09_01Pal
+    .word mug_09_01Tiles
+    .word mug_09_01Pal
+    .word mug_09_01Tiles
+    .word mug_09_01Pal
+    .word mug_09_01Tiles
+    .word mug_09_01Pal
+    .word mug_09_01Tiles
+    .word mug_09_01Pal
+    .word mug_09_01Tiles
+    .word mug_09_01Pal
+    .word mug_09_01Tiles
+    .word mug_09_01Pal
+    .word mug_09_01Tiles
+    .word mug_09_01Pal
+    .word mug_09_01Tiles
+    .word mug_09_01Pal
 
 @@-----------------------------------------------------------------------------------------------------------
 @@ Diana - Mugsprites

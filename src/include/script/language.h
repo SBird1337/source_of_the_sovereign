@@ -283,46 +283,70 @@ setvar 0x5006 0x8
 special 0x68
 .endm
 
-.macro mugmsg mugmsg_textpointer:req mugmsg_callstd:req mugmsg_sprite:req mugmsg_facing:req mugmsg_emot=0
+.macro mugmsg mugmsg_textpointer:req mugmsg_callstd:req mugmsg_sprite:req mugmsg_facing:req mugmsg_emot=0        mugmsg_sprite2=0 mugmsg_emot2=0
 setvar 0x8000 0x0
-.if \mugmsg_sprite==MUG_RIVALE
-    .if \mugmsg_facing==MUGFACE_LEFT
-        call scr_mugrival_left
-    .endif
-    .if \mugmsg_facing==MUGFACE_RIGHT
-        call scr_mugrival_right
-    .endif
-.endif
-.if \mugmsg_sprite==MUG_PLAYER
-    .if \mugmsg_facing==MUGFACE_LEFT
-        call scr_mugrival_player_left
-    .endif
-    .if \mugmsg_facing==MUGFACE_RIGHT
-        call scr_mugrival_player_right
-    .endif
-.endif
-.if \mugmsg_sprite!=MUG_RIVALE&&\mugmsg_sprite!=MUG_PLAYER
-    .if \mugmsg_facing==MUGFACE_LEFT
-        setvar MUGHSOT_1_TABLE \mugmsg_sprite|0x8000
-        setvar MUGSHOT_1_X 0x16
-        setvar MUGSHOT_1_Y 0x60
-    .endif
-    .if \mugmsg_facing==MUGFACE_RIGHT
-        setvar MUGHSOT_1_TABLE \mugmsg_sprite
-        setvar MUGSHOT_1_X 0xD0
-        setvar MUGSHOT_1_Y 0x60
-    .endif
-.endif
-addvar MUGHSOT_1_TABLE \mugmsg_emot
-.if \mugmsg_callstd==5
-    msgbox \mugmsg_textpointer \mugmsg_callstd
-    closeonkeypress
-.endif
-.if \mugmsg_callstd!=5
-    msgbox \mugmsg_textpointer \mugmsg_callstd
-.endif
-setvar MUGHSOT_1_TABLE 0x0
-pause 0x20
+ .if \mugmsg_sprite==MUG_RIVALE
+     .if \mugmsg_facing==MUGFACE_LEFT
+         call scr_mugrival_left
+     .endif
+     .if \mugmsg_facing==MUGFACE_RIGHT
+         call scr_mugrival_right
+     .endif
+ .endif
+ .if \mugmsg_sprite==MUG_PLAYER
+     .if \mugmsg_facing==MUGFACE_LEFT
+         call scr_mugrival_player_left
+     .endif
+     .if \mugmsg_facing==MUGFACE_RIGHT
+         call scr_mugrival_player_right
+     .endif
+ .endif
+ .if \mugmsg_sprite==MUG_RIVALE&&\mugmsg_sprite2==MUG_PLAYER||\mugmsg_sprite2==MUG_RIVALE&&\mugmsg_sprite==MUG_PLAYER
+     .if \mugmsg_facing==MUGFACE_LEFT
+         call scr_mugrival_left_both
+     .endif
+     .if \mugmsg_facing==MUGFACE_RIGHT
+         call scr_mugrival_right_both
+     .endif
+ .endif
+ .if \mugmsg_sprite!=MUG_RIVALE&&\mugmsg_sprite!=MUG_PLAYER
+     .if \mugmsg_facing==MUGFACE_LEFT
+         setvar MUGHSOT_1_TABLE \mugmsg_sprite|0x8000
+         setvar MUGSHOT_1_X 0x16
+         setvar MUGSHOT_1_Y 0x60
+         .if \mugmsg_sprite2!=0
+             setvar MUGHSOT_2_TABLE \mugmsg_sprite2
+             setvar MUGSHOT_2_X 0xD0
+             setvar MUGSHOT_2_Y 0x60
+         .endif
+     .endif
+     .if \mugmsg_facing==MUGFACE_RIGHT
+         setvar MUGHSOT_1_TABLE \mugmsg_sprite
+         setvar MUGSHOT_1_X 0xD0
+         setvar MUGSHOT_1_Y 0x60
+         .if \mugmsg_sprite2!=0
+             setvar MUGHSOT_2_TABLE \mugmsg_sprite2|0x8000
+             setvar MUGSHOT_2_X 0x16
+             setvar MUGSHOT_2_Y 0x60
+         .endif
+     .endif
+ .endif
+ addvar MUGHSOT_1_TABLE \mugmsg_emot
+ .if \mugmsg_sprite2!=0
+     addvar MUGHSOT_2_TABLE \mugmsg_emot2
+ .endif
+ .if \mugmsg_callstd==5
+     msgbox \mugmsg_textpointer \mugmsg_callstd
+     closeonkeypress
+ .endif
+ .if \mugmsg_callstd!=5
+     msgbox \mugmsg_textpointer \mugmsg_callstd
+ .endif
+ setvar MUGHSOT_1_TABLE 0x0
+ .if \mugmsg_sprite2!=0
+     setvar MUGHSOT_2_TABLE 0x0
+ .endif
+ pause 0x20
 .endm
 
 .macro transparenzon
@@ -545,7 +569,7 @@ setvar OW_REPLACE_TO_VAR \changeowto_to
 .byte 0x32
 .endm
 
-.macro playsong playsong_song:req playsong_value:req
+.macro playsong playsong_song:req playsong_value=0
 .byte 0x33
 .hword \playsong_song
 .byte \playsong_value
