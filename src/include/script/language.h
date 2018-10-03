@@ -403,9 +403,7 @@ addvar OW_REPLACE_VAR 0x1
 setvar OW_REPLACE_TO_VAR \changeowto_to
 .endm
 
-
 @@ Index commands
-
 .macro nop
 .byte 0x0
 .endm

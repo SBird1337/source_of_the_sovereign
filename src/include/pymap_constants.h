@@ -30,7 +30,6 @@
 #include <constants/pymap/npc_sprite_table4.h>
 #include <constants/pymap/person_behaviours.h>
 #include <constants/pymap/riddle_variables.h>
-#include <constants/pymap/rival_pokemon_variables.h>
 #include <constants/pymap/save_variables.h>
 #include <constants/pymap/sidequest_flags.h>
 #include <constants/pymap/signpost_types.h>
