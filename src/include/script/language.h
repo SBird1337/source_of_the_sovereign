@@ -283,7 +283,7 @@ setvar 0x5006 0x8
 special 0x68
 .endm
 
-.macro mugmsg mugmsg_textpointer:req mugmsg_callstd:req mugmsg_sprite:req mugmsg_facing:req mugmsg_emot=0        mugmsg_sprite2=0 mugmsg_emot2=0
+.macro mugmsg mugmsg_textpointer:req mugmsg_callstd:req mugmsg_sprite:req mugmsg_facing:req mugmsg_emot=0 mugmsg_sprite2=0 mugmsg_emot2=0
 setvar 0x8000 0x0
  .if \mugmsg_sprite==MUG_RIVALE
      .if \mugmsg_facing==MUGFACE_LEFT
@@ -424,6 +424,7 @@ setvar OW_REPLACE_TO_VAR \changeowto_to
 .byte 0x4
 .word \call_address
 .endm
+
 
 .macro goto goto_address:req
 .byte 0x5
