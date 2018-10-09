@@ -157,7 +157,6 @@ $(MAIN_OBJ): $(ALL_OBJ) $(SPRITES) $(MUSIC_AR) $(SMPL_AR) $(VOICE_AR) $(LIST_AR)
 	@echo "INPUT($^)" > $(TMP_LD)
 	$(LD) $(LDFLAGS) -T $(PAGB_LINK) -T linker.ld -T bpre.sym --whole-archive -r -o $@ --start-group -T $(TMP_LD) --end-group
 	$(LD) $(LDFLAGS) -T $(PAGB_LINK) -T linker.ld -T bpre.sym --whole-archive -o $@.dbg --start-group -T $(TMP_LD) --end-group
-	@rm -f $@.dbg
 	@rm -f $(TMP_LD)
 
 $(MAP_PROJ_S): $(MAP_PROJ)
