@@ -1,4 +1,4 @@
-#include <songlist.h>
+#include <constants/pymap/songs.h>
 #include <game_engine.h>
 #include <bpre.h>
 #include <battle_structs.h>
@@ -377,7 +377,7 @@ u16 mhk_intro_music_id_to_song(u8 introid) {
             res = 483;
             break;
         default:
-            res = SEQ_FRLG_E_1;
+            res = 283;
             break;
     }
 
@@ -390,7 +390,7 @@ u16 mhk_song_id_for_battle(void) {
     if (battle_type_flags._battle_unk_3) {
         res = SEQ_BGM_VS_POKE;
     } else if (battle_type_flags._battle_unk_5 || battle_type_flags.battle_link) {
-        res = SEQ_BGM_VS_RSE;
+        res = 266;
     } else if (battle_type_flags.battle_trainer) {
         switch (trainer_data[trainerbattle_flag_id].trainer_class) {
             case 88:
@@ -457,10 +457,10 @@ void mhk_trainer_battle_play_defeat(void) {
     switch (trainer_data[trainerbattle_flag_id].trainer_class) {
         case 84:
         case 90:
-            song = SEQ_BGM_VIC_LEADER;
+            song = 312;
             break;
         default:
-            song = SEQ_BGM_VIC_TRAINER;
+            song = 310;
             break;
     }
 
@@ -479,7 +479,7 @@ u16 mhk_species_to_song(u16 species) {
 
     switch (species) {
         case POKE_MEWTWO:
-            res = SEQ_BGM_VS_MEWTWO;
+            res = 340;
             break;
         case POKE_ARTICUNO:
         case POKE_ZAPDOS:
@@ -492,7 +492,7 @@ u16 mhk_species_to_song(u16 species) {
             res = 525;
             break;
         default:
-            res = SEQ_BGM_VS_RSE;
+            res = 266;
             break;
     }
 

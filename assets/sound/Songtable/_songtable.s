@@ -1962,7 +1962,7 @@ _songtable:
 
 @**************** Song 0391 ****************@
 
-	.word	SEQ_BGM_INVALID
+	.word	SEQ_BGM_CAVE_02
 	.byte	0x00, 0x00, 0x00, 0x00
 
 @**************** Song 0392 ****************@
@@ -2072,7 +2072,7 @@ _songtable:
 
 @**************** Song 0413 ****************@
 
-    .word   SEQ_BGM_INVALID
+    .word   SEQ_BGM_SCHOOL
     .byte   0x00, 0x00, 0x00, 0x00
 
 @**************** Song 0414 ****************@
@@ -2112,7 +2112,7 @@ _songtable:
 
 @**************** Song 0421 ****************@
 
-    .word   SEQ_BGM_INVALID
+    .word   SEQ_BGM_GYM_FOREST
     .byte   0x00, 0x00, 0x00, 0x00
 
 @**************** Song 0422 ****************@
@@ -2197,12 +2197,12 @@ _songtable:
 
 @**************** Song 0438 ****************@
 
-    .word   SEQ_BGM_INVALID
+    .word   SEQ_BGM_P_MT_1
     .byte   0x00, 0x00, 0x00, 0x00
 
 @**************** Song 0439 ****************@
 
-    .word   SEQ_BGM_INVALID
+    .word   SEQ_BGM_P_ROGI
     .byte   0x00, 0x00, 0x00, 0x00
 
 @**************** Song 0440 ****************@

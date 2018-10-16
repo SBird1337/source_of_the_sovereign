@@ -4,7 +4,7 @@
 #include <scene.h>
 #include <agb_debug.h>
 #include <constants/pkmns.h>
-#include <songlist.h>
+#include <constants/pymap/songs.h>
 
 extern u8 settings_gender_script[];
 extern u8 settings_gender_script_sure[];
@@ -92,7 +92,7 @@ void settings_loop(u8 id) {
             objects[tasks[id].priv[1]].pos1 = male_position;
             objects[tasks[id].priv[2]].pos1 = female_position;
             fade_screen(0xFFFFFFFF, 1, 16, 0, 0x0000);
-            m4aSongNumStart(SEQ_BGM_MENU);
+            m4aSongNumStart(503);
             tasks[id].priv[0]++;
         break;
         case 2:
