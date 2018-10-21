@@ -1,6 +1,6 @@
 #define SEQ_BGM_TOWN_HESPERIA 0x15e
 #define SEQ_BGM_CITY_CARUN 0x15f
-#define SEQ_BGM_P_FOY 0x160
+#define SEQ_BGM_CITY_URBANIA 0x160
 #define SEQ_BGM_TOWN_04 0x161
 #define SEQ_BGM_TOWN_02 0x162
 #define SEQ_BGM_TOWN_06 0x163
@@ -23,8 +23,6 @@
 #define SEQ_BGM_R_08 0x179
 #define SEQ_BGM_CAVE_GUARDIAN 0x186
 #define SEQ_BGM_CAVE_02 0x187
-#define SEQ_BGM_PC 0x15b
-#define SEQ_BGM_LAB 0x17e
 #define SEQ_BGM_GYM 0x19b
 #define SEQ_BGM_LAB 0x19c
 #define SEQ_BGM_SCHOOL 0x19d
