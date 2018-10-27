@@ -14,6 +14,9 @@ multichoice_array:
     .word smc_left_right
     .word 2
 
+    .word smc_red_blue
+    .word 2
+
 
 smc_yes_no:
     .word str_yes
@@ -33,4 +36,10 @@ smc_left_right:
     .word str_left
     .word 0
     .word str_right
+    .word 0
+
+smc_red_blue:
+    .word str_redstone
+    .word 0
+    .word str_blaustone
     .word 0

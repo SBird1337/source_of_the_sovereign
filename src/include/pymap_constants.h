@@ -6,6 +6,7 @@
 #include <constants/pymap/engine_variables.h>
 #include <constants/pymap/farbkugel_raetsel.h>
 #include <constants/pymap/items.h>
+#include <constants/pymap/latias_latios_var.h>
 #include <constants/pymap/level_types.h>
 #include <constants/pymap/main_story_variables.h>
 #include <constants/pymap/map_adjacency_types.h>
