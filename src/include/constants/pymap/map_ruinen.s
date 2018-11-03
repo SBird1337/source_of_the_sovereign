@@ -1,0 +1,8 @@
+.equ MAPID_RDWE, 0x0
+.equ MAPID_RDW1, 0x1
+.equ MAPID_RDW2, 0x2
+.equ MAPID_RDW3, 0x3
+.equ MAPID_RDW4, 0x4
+.equ MAPID_RDWVI, 0x5
+.equ MAPID_RDWIB, 0x6
+.equ MAPID_RDWVB, 0x7

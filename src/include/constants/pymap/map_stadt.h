@@ -1,0 +1,5 @@
+#define MAPID_HESNORD 0x0
+#define MAPID_HESSUED 0x1
+#define MAPID_CAROD 0x2
+#define MAPID_URBANOST 0x3
+#define MAPID_URBANWEST 0x4
