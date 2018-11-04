@@ -84,7 +84,7 @@ void npc_dynamic_reset() {
 void npc_dynamic_remove_entry(u8 id) {
     if (stored_palettes[id].reference_count > 0) {
         stored_palettes[id].reference_count--;
-        dprintf("npc_dynamic: removed entry #%d\n", id);
+        //dprintf("npc_dynamic: removed entry #%d\n", id);
         if (stored_palettes[id].reference_count == 0)
             stored_palettes[id].tag = 0;
     }
@@ -200,5 +200,5 @@ void npc_delete_obj_and_free_tiles_for_npc_hack(struct NpcState *state) {
     u8 pal_num = objects[state->oam_id].final_oam.palette_num;
     obj_delete_and_free(&objects[state->oam_id]);
     npc_dynamic_remove_entry(pal_num);
-    dprintf("deleted npc state at x: %d y: %d\n", state->to.x, state->to.y);
+    //dprintf("deleted npc state at x: %d y: %d\n", state->to.x, state->to.y);
 }
